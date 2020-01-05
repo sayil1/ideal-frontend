@@ -95,6 +95,7 @@ export default {
 };
 </script>
 
+
 <style lang="css" scoped>
 .img {
   background-image: url("../assets/y.jpg");
