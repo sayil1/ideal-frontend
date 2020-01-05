@@ -1,30 +1,51 @@
 <template>
-    <div>
-          <v-alert color="primary" dark dense prominent>
-      <div>
-        <p class="font-weight-black display-1" style="margin-top:50px">
-          Need to get in touch with our counsellor's? We're all ears..
-          <v-btn class="ma-2" outlined large color="white">
-            <v-icon>mdi-phone</v-icon>Contact Us
-          </v-btn>
-        </p>
-      </div>
+     <v-footer
+    dark
+    padless
+     width="100%"
+  >
+    <v-card
+      flat
+      tile
+      class="blue lighten-1 white--text text-center"
+    >
+      <v-card-text>
+        <v-btn
+          v-for="icon in icons"
+          :key="icon"
+          class="mx-4 white--text"
+          icon
+        >
+          <v-icon size="24px">{{ icon }}</v-icon>
+        </v-btn>
+      </v-card-text>
+
+      <v-card-text class="white--text pt-0">
+        <div class="display-1">
+We find the solution together for your career path! In our one stop center and professional hub answers are found...
+        </div>
+
+      </v-card-text>
+
       <v-divider></v-divider>
-      <div
-        class="headline"
-        style="margin-bottom:50px"
-      >Become a part of young professionals without borders, internationally certified and with various career option paths.</div>
-    </v-alert>
-    <v-footer padless>
-      <v-col class="text-center" cols="12">
-        {{ new Date().getFullYear() }} —
-        <strong>Vuetify</strong>
-      </v-col>
-    </v-footer>
-    </div>
+
+      <v-card-text class="white--text">
+        {{ new Date().getFullYear() }} — <strong>IDEal IT</strong>
+      </v-card-text>
+    </v-card>
+  </v-footer>
 </template>
 <script>
 export default {
+  data: () => ({
+      icons: [
+        'mdi-facebook',
+        ' mdi-twitter',
+        ' mdi-google-plus',
+        ' mdi-linkedin',
+        ' mdi-instagram',
+      ],
+    }),
     
 }
 </script>
