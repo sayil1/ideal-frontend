@@ -3,7 +3,9 @@
     <div class="nav">
       <input type="checkbox" id="nav-check" />
       <div class="nav-header">
-        <div class="nav-title"> <router-link to="/">IDEAL IT</router-link></div>
+        <div class="nav-title">
+          <router-link to="/">IDEAL IT</router-link>
+        </div>
         <!-- <img src="../assets/ttt.png" alt="" srcset=""> -->
       </div>
       <div class="nav-btn">
@@ -27,7 +29,7 @@
           </div>
         </a>
 
-         <a class="dropdown">
+        <a class="dropdown">
           <button class="dropbtn">
             Take An Exam
             <i class="fa fa-caret-down"></i>
@@ -35,7 +37,6 @@
           <div class="dropdown-content">
             <a href="#">TOEFL</a>
             <a href="#">PEARSON VUE</a>
-            
           </div>
         </a>
 
@@ -49,10 +50,9 @@
             <a href="#">Icm Uk Qualification</a>
             <a href="#">Train The Trainer Workshop</a>
             <a href="#">Test Preparation</a>
-             <a href="#">Oversees Admission Consultiong</a>
+            <a href="#">Oversees Admission Consultiong</a>
           </div>
         </a>
-       
       </div>
     </div>
   </div>
@@ -134,7 +134,7 @@ export default {};
 
 .dropdown-content a:hover {
   background-color: #ddd;
-  color: #333
+  color: #333;
 }
 
 .dropdown:hover .dropdown-content {

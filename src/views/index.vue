@@ -278,7 +278,7 @@
 import { Hooper, Slide } from "hooper";
 import "hooper/dist/hooper.css";
 import foota from "../components/footer";
-import nava from "../components/nav";
+import nava from "../components/testnav";
 export default {
   components: {
     Hooper,

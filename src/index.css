@@ -5,58 +5,13 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
-body {
-	color: #5a5a5a;
-	font-family: 'Lato', sans-serif;
-}
-h1, h2, h3, h4, h5 {
-	font-family: 'Montserrat', sans-serif;
-}
-.parallax-section {
-	background-attachment: fixed!important;
-}
-.btn-capsul {
-	border-radius: 30px;
-}
-.btn-aqua {
-	background: #0297FF;
-	color: #fff;
-}
-.btn-aqua:hover {
-	background: #10629b;
-	color: #fff;
-}
-.btn-dark-blue {
-	background: #0C242E;
-	color: #fff;
-}
-.btn-dark-blue:hover {
-	background: #063d28;
-	color: #fff;
-}
-.btn-transparent-white {
-	border: 2px solid #fff;
-	color: #fff;
-}
-.btn-transparent-white:hover, .btn-transparent-white:focus {
-	background: #fff;
-	color: #0297FF
-}
-.relative-box {
-	position: relative
-}
-section {
-	float: left;
-	width: 100%;
-	padding: 80px 0;
-}
 
 
 /* TOP HEADER
 -------------------------------------------------- */
 
 .navbar.scrolled {
-	background-color:rgb(26, 22, 22) !important;
+	background-color:rgb(35, 159, 216) !important;
 	transition: background-color 200ms linear;
   }
   
@@ -66,7 +21,7 @@ section {
 
 .navbar.top-bar {
 	border-radius: 0;
-	padding: 16px 0;
+	padding: 10px 0;
 	z-index: 16;
 }
 .navbar-toggler {
