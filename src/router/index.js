@@ -6,19 +6,43 @@ import foota from '../components/footer.vue'
 import about from '../views/about.vue'
 import gallery from '../views/gallery.vue'
 import tnav from '../components/testnav.vue'
+import profEd from '../views/profEdu'
+import icm from '../views/icm'
+import train from '../views/train'
+import test from '../views/test'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'about',
+    name: 'index',
     component: () => import(/* webpackChunkName: "about" */ '../views/index.vue')
   },
   {
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/icm',
+    name: 'icm',
+    component: icm
+  },
+  {
+    path: '/train',
+    name: 'train',
+    component: train
+  },
+  {
+    path: '/test',
+    name: 'test',
+    component: test
+  },
+  {
+    path: '/prof',
+    name: 'prof',
+    component: profEd
   },
   {
     path: '/tnav',

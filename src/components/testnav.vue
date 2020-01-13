@@ -1,10 +1,7 @@
 <template>
   <div>
     <!-- for first nav -->
-   
-   
-   
-  
+
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
         <a style="color:white" href="#">Ideal-It Center</a>
@@ -57,14 +54,17 @@
                 aria-expanded="false"
               >What we do</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/about">Who we are</router-link>
+                <router-link class="dropdown-item" to="/prof">Professional Examination</router-link>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/gal">Gallery</a>
+                <a class="dropdown-item" href="/icm">ICM UK Qualification</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Career</a>
+                <a class="dropdown-item" href="/train">Train The Trainer Workshop</a>
+                 <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/gal">Test Preparation</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Overseas Admission Consulting</a>
               </div>
             </li>
-
 
             <li class="nav-item">
               <a class="nav-link" href="#">Take an exam</a>
