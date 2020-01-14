@@ -38,8 +38,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-12 col-md-5" style=" margin:20px">
-          <table class="table card-size">
+        <div class="col-sm-12 col-md-5" style=" margin:2px">
+          <table class="table table-bordered card-size">
             <thead>
               <tr>
                 <th scope="col">COURSE LENGTH</th>
@@ -67,11 +67,6 @@
                 For weekdays (Monday-Thursday, with morning and afternoon classes only)
                 For weekends (Saturdays and Sundays 4 hours per day)
               </td>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
             </tbody>
           </table>
         </div>
@@ -80,17 +75,12 @@
     <div class style="margin-top:50px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
-        <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
-        </div>
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-6">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                <span>Business Development</span>
-                <br />Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
-                For information on a specific exam duration, fee, language, etc., please refer to the website of the particular provider.
-                Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
+                <span>Other Standardized tests (GRE®, SAT, ACT, GMAT)</span>
+                <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and topics to expect, ultimately improving your score on the test.
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
                   <v-list-item-group v-model="item2" color="primary">
@@ -111,8 +101,42 @@
             </div>
           </div>
         </div>
+
+        <div class="col-sm col-md-5" style=" margin:2px">
+          <table class="table table-bordered card-size">
+            <thead>
+              <tr>
+                <th scope="col">COURSE LENGTH</th>
+                <th scope="col">6- 12 Weeks</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="col">ENTRY LEVEL</th>
+                <th scope="col">TOEFL 70, IELTS 6.5</th>
+              </tr>
+              <tr>
+                <th scope="col">LESSON LENGTH</th>
+                <th scope="col">2 hours per weekday</th>
+              </tr>
+              <tr>
+                <th scope="row">CLASS SIZE</th>
+                <th>
+                  10 persons:
+                  Note that seats fill up quickly, and is on a first-come-first-serve basis. Register now.
+                </th>
+              </tr>
+              <th scope="col">TIMETABLE</th>
+              <td scope="col">
+                All courses are Monday-Thursday, with morning and afternoon classes only
+                Weekends Saturdays and Sundays 3 hours per day
+              </td>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
+
     <foota />
   </div>
 </template>
@@ -131,34 +155,35 @@ export default {
     item2: 1,
     items: [
       {
-        text:
-          "Want to attain a good score on the internationally recognized English exams – IELTS (Academic & General), PTE, and Cambridge English.",
+        text: "Study guides",
         icon: "mdi-charity"
       },
       {
-        text:
-          "Want to prepare for university in the USA or Canada or other countries that require the scores.",
+        text: "Practice Test",
         icon: "mdi-briefcase"
       }
     ],
     items2: [
       {
-        text: "Students planning to study at a higher education institution",
+        text: "Study guides",
+        icon: "mdi-charity"
+      },
+      {
+        text: "Practice Test",
+        icon: "mdi-briefcase"
+      },
+      {
+        text: "Strcutured study sessions",
         icon: "mdi-school"
       },
       {
-        text: "English-language learning program admissions and exit",
+        text: "Preparation lessons",
         icon: "mdi-school-outline"
       },
       {
-        text: "Scholarship and certification candidates",
+        text: "Online and Papper Bassed Simulation tests",
         icon: "mdi-page-next"
-      },
-      {
-        text: "English-language learners who want to track their progress",
-        icon: "mdi-radar"
-      },
-      { text: "Students and workers applying for visas", icon: "mdi-passport" }
+      }
     ]
   })
 };

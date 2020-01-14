@@ -60,14 +60,28 @@
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="/train">Train The Trainer Workshop</a>
                  <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/gal">Test Preparation</a>
+                <a class="dropdown-item" href="/test">Test Preparation</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Overseas Admission Consulting</a>
+                <a class="dropdown-item" href="/over">Overseas Admission Consulting</a>
               </div>
             </li>
 
-            <li class="nav-item">
-              <a class="nav-link" href="#">Take an exam</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >Take an exam</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <router-link class="dropdown-item" to="/prof">TOEFL</router-link>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/icm">PEARSON VUE</a>
+                <div class="dropdown-divider"></div>
+              </div>
             </li>
             <li class="nav-item"></li>
 

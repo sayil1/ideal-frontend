@@ -10,6 +10,8 @@ import profEd from '../views/profEdu'
 import icm from '../views/icm'
 import train from '../views/train'
 import test from '../views/test'
+import overs from '../views/over-seas'
+import toefl from '../views/toefl'
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,16 @@ const routes = [
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/toefl',
+    name: 'toefl',
+    component: toefl
+  },
+  {
+    path: '/over',
+    name: 'over',
+    component: overs
   },
   {
     path: '/icm',
