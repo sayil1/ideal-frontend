@@ -101,6 +101,67 @@
               <div class="fill-height bottom-gradient"></div>
             </v-img>
           </div>
+          <!-- Button trigger modal -->
+          
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModalCenter"
+            tabindex="-1"
+            role="dialog"
+            aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <v-card flat>
+                    <v-card-title>
+                      <span class="headline">User Profile</span>
+                    </v-card-title>
+                    <v-card-text>
+                      <v-container>
+                        <v-row>
+                          <v-col cols="12" sm="6" md="12">
+                            <v-text-field label="first name*" required></v-text-field>
+                          </v-col>
+                          
+                          <v-col cols="12" sm="6" md="12">
+                            <v-text-field
+                              label="last name*"
+                        
+                              persistent-hint
+                              required
+                            ></v-text-field>
+                          </v-col>
+                          <v-col cols="12">
+                            <v-text-field label="Email*" required></v-text-field>
+                          </v-col>
+                           <v-col cols="12">
+                            <v-text-field label="Phone*" required></v-text-field>
+                          </v-col>
+                         
+                          <v-col cols="12" sm="12">
+                            <v-autocomplete
+                              :items="['SCHOOL BOOKS', 'UNIFORMS', 'FEES', 'SCHOOL RENOVATION', 'TRAINING', 'COMPUTER SERVER']"
+                              label="Interests"
+                              multiple
+                            ></v-autocomplete>
+                          </v-col>
+                        </v-row>
+                      </v-container>
+                      <small>*indicates required field</small>
+                    </v-card-text>
+                  </v-card>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </v-container>
     </div>
@@ -130,62 +191,6 @@
                   <br />“Knowledge is power.Information is liberating.education is the premise of progress,in every society,in every family” .Kofi Anan
                 </small>
                 <br />
-                <v-dialog v-model="dialog" persistent max-width="600px">
-                  <template v-slot:activator="{ on }">
-                    <v-row>
-                      <v-col sm="12" md="4"></v-col>
-                      <v-col sm="12" md="4">
-                        <v-btn
-                          color="primary"
-                          dark
-                          v-on="on"
-                          style="margin:50px; margin-left:50px"
-                        >Surport A Project</v-btn>
-                      </v-col>
-                      <v-col sm="12" md="4"></v-col>
-                    </v-row>
-                  </template>
-                  <v-card>
-                    <v-card-title>
-                      <span class="headline">Kindly Fill The Fields</span>
-                    </v-card-title>
-                    <v-card-text>
-                      <v-container>
-                        <v-row>
-                          <v-col cols="12" sm="12" md="12">
-                            <v-text-field label="Full Name" required></v-text-field>
-                          </v-col>
-                          <v-col cols="12" sm="12" md="12">
-                            <v-text-field
-                              label="Email Address"
-                              hint="example of helper text only on focus"
-                            ></v-text-field>
-                          </v-col>
-                          <v-col cols="12" sm="12" md="12">
-                            <v-text-field label="Phone Number" hint persistent-hint required></v-text-field>
-                          </v-col>
-
-                          <v-col cols="12" sm="12" md="12">
-                            <v-autocomplete
-                              :items="['School Books', 'Uniforms', 'Fees', 'School Renovation', 'Training', 'Computer Server']"
-                              label="Interests"
-                              multiple
-                            ></v-autocomplete>
-                          </v-col>
-                        </v-row>
-                      </v-container>
-
-                      <v-btn class="ma-2" tile outlined color="primary" @click="dialog = false">
-                        <v-icon left>mdi-pencil</v-icon>Submit
-                      </v-btn>
-                    </v-card-text>
-                    <v-card-actions>
-                      <v-spacer></v-spacer>
-                      <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-                      <v-btn color="blue darken-1" text @click="dialog = false">Save</v-btn>
-                    </v-card-actions>
-                  </v-card>
-                </v-dialog>
 
                 <div class="row" style="text-align:center">
                   <div class="col-md-2 subtitle-2 font-weight-black">
@@ -215,6 +220,12 @@
                   </div>
                 </div>
                 <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
+                <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#exampleModalCenter"
+          >Surport a project</button>
               </h3>
             </div>
           </div>
@@ -248,22 +259,22 @@
             </v-col>
           </slide>
           <slide>
-            <v-col >
+            <v-col>
               <img src="../assets/3.jpeg" style="width:7em; height:10em;" />
             </v-col>
           </slide>
-          <slide >
-            <v-col >
+          <slide>
+            <v-col>
               <img src="../assets/5.png" style="width:7em; height:10em;" />
             </v-col>
           </slide>
-          <slide >
-            <v-col >
+          <slide>
+            <v-col>
               <img src="../assets/5.png" style="width:7em; height:10em;" />
             </v-col>
           </slide>
-          <slide >
-            <v-col >
+          <slide>
+            <v-col>
               <img src="../assets/5.png" style="width:7em; height:10em;" />
             </v-col>
           </slide>

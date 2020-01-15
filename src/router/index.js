@@ -12,6 +12,9 @@ import train from '../views/train'
 import test from '../views/test'
 import overs from '../views/over-seas'
 import toefl from '../views/toefl'
+import pearson from '../views/pearson'
+import itCenter from '../views/it-center'
+import career from '../views/career'
 
 Vue.use(VueRouter)
 
@@ -25,6 +28,21 @@ const routes = [
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/career',
+    name: 'career',
+    component: career
+  },
+  {
+    path: '/it-center',
+    name: 'it-center',
+    component: itCenter
+  },
+  {
+    path: '/pearson',
+    name: 'pearson',
+    component: pearson
   },
   {
     path: '/toefl',

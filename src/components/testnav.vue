@@ -77,13 +77,30 @@
                 aria-expanded="false"
               >Take an exam</a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/prof">TOEFL</router-link>
+                   <a class="dropdown-item" href="/toefl">TOEFL</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/icm">PEARSON VUE</a>
+                <a class="dropdown-item" href="/pearson">PEARSON VUE</a>
                 <div class="dropdown-divider"></div>
               </div>
             </li>
-            <li class="nav-item"></li>
+           <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >Project</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <router-link class="dropdown-item" to="/it-center">IT-Center</router-link>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/gal">Career Development Hub</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Career</a>
+              </div>
+            </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#">Services</a>
