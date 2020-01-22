@@ -4,7 +4,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container">
-        <a style="color:white" href="#">Ideal-It Center</a>
+        <a style="color:white" class="bold" href="/">IDEAL-IT center</a>
         <!-- <img src="../assets/logo.png" alt="..." class="img-thumbnail"> -->
         <button
           class="navbar-toggler"
@@ -19,12 +19,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <!-- <li class="nav-item active">
               <a class="nav-link" href="/">
                 Home
                 <span class="sr-only">(current)</span>
               </a>
-            </li>
+            </li> -->
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -65,7 +65,6 @@
                 <a class="dropdown-item" href="/over">Overseas Admission Consulting</a>
               </div>
             </li>
-
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"

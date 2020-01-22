@@ -26,7 +26,7 @@
                   <v-list-item-group v-model="item" color="rgb(35, 159, 216)">
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
-                        <v-icon v-text="item.icon"></v-icon>
+                        <v-icon v-text="item.icon" v-bind:color="item.color"></v-icon>
                       </v-list-item-icon>
                       <v-list-item-content>
                         <v-list-item-title v-text="item.text"></v-list-item-title>
@@ -62,7 +62,7 @@
                   <v-list-item-group v-model="item2" color="primary">
                     <v-list-item v-for="(item2, i) in items2" :key="i">
                       <v-list-item-icon>
-                        <v-icon v-text="item2.icon"></v-icon>
+                        <v-icon v-text="item2.icon" v-bind:color="item2.color"></v-icon>
                       </v-list-item-icon>
                       <v-list-item-content>
                         <v-list-item-title v-text="item2.text"></v-list-item-title>
@@ -96,33 +96,33 @@ export default {
     item: 1,
     item2: 1,
     items: [
-      { text: "Getting Hired", icon: "mdi-charity" },
-      { text: "Job Retention", icon: "mdi-briefcase" },
-      { text: "Promotion", icon: "mdi-arrow-up-bold" },
-      { text: "Networking Opportunities", icon: "mdi-lan-connect" },
-      { text: "Professional Credibility", icon: "mdi-briefcase-check" },
-      { text: "New and Current Technologies", icon: "mdi-arrow-up-bold" },
-      { text: "Personal Goal", icon: "mdi-check-decagram" },
+      { text: "Getting Hired", icon: "mdi-charity" , color:'red'},
+      { text: "Job Retention", icon: "mdi-briefcase", color:"purple" },
+      { text: "Promotion", icon: "mdi-arrow-up-bold" , color:'orange'},
+      { text: "Networking Opportunities", icon: "mdi-lan-connect" , color:'green'},
+      { text: "Professional Credibility", icon: "mdi-briefcase-check", color:'yellow' },
+      { text: "New and Current Technologies", icon: "mdi-arrow-up-bold", color:'brown'},
+      { text: "Personal Goal", icon: "mdi-check-decagram", color:'pink' },
       {
         text: "Professional or Corporate Requirement",
-        icon: "mdi-bullseye-arrow"
+        icon: "mdi-bullseye-arrow", color:'indigo'
       }
     ],
     items2: [
       {
         text: "Students planning to study at a higher education institution",
-        icon: "mdi-school"
+        icon: "mdi-school", color:'pink'
       },
       {
         text: "English-language learning program admissions and exit",
-        icon: "mdi-school-outline"
+        icon: "mdi-school-outline", color:'indigo'
       },
-      { text: "Scholarship and certification candidates", icon: "mdi-page-next" },
+      { text: "Scholarship and certification candidates", icon: "mdi-page-next", color:'green' },
       {
         text: "English-language learners who want to track their progress",
-        icon: "mdi-radar"
+        icon: "mdi-radar", color:'red'
       },
-      { text: "Students and workers applying for visas", icon : "mdi-passport" }
+      { text: "Students and workers applying for visas", icon : "mdi-passport", color:'yellow' }
     ]
   })
 };

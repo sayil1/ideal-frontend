@@ -7,7 +7,7 @@
     <div class="primary" style="padding:50px; padding-top:80px;  ">
       <h1
         class="white--text font-weight-bold"
-        style="opacity:0.3; text-align:center; margin-top:50px"
+        style="text-align:center; margin-top:50px"
       >OUR MAJOR GOAL!!</h1>
       <hr class="my-4" />
 
@@ -22,7 +22,7 @@
               <p
                 class=" card-text white--text font-weight-regular"
               >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
-              <h4 class="card-subtitle mb-2 blue--text font-weight-bold">Vision</h4>
+              <h2 class="card-subtitle mb-2 mt-4 white--text font-weight-bold">Vision</h2>
               <hr class="my-4" style=" border-top: 1px solid white;" />
               <p
                 class="card-text white--text font-weight-regular"
@@ -42,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 class="display-4 white--text font-weight-regular" style="text-align:center; margin-top:70px">MISSION</h1>
+            <h1 class="display-4 white--text font-weight-regular" style=" margin-top:70px">MISSION</h1>
           </div>
 
           <div class="col-sm col-md-8">

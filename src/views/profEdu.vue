@@ -23,7 +23,8 @@
                   <v-list-item-group v-model="item" color="rgb(35, 159, 216)" >
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
-                        <v-icon v-text="item.icon"></v-icon>
+                        <v-icon v-text="item.icon" v-bind:color="item.color"></v-icon>
+                      
                       </v-list-item-icon>
                       <v-list-item-content>
                         <v-list-item-title v-text="item.text"></v-list-item-title>
@@ -59,7 +60,7 @@
                   <v-list-item-group v-model="item2" color="primary" >
                     <v-list-item v-for="(item2, i) in items2" :key="i">
                       <v-list-item-icon>
-                        <v-icon v-text="item2.icon"></v-icon>
+                        <v-icon v-text="item2.icon" v-bind:color="item2.color"></v-icon>
                       </v-list-item-icon>
                       <v-list-item-content>
                         <v-list-item-title v-text="item2.text"></v-list-item-title>
@@ -91,16 +92,16 @@ export default {
     item: 1,
     item2: 1,
     items: [
-      { text: "System Administration", icon: "mdi-account-settings" },
-      { text: "IT Security", icon: "mdi-security" },
-      { text: "Database Security", icon: "mdi-database-lock" },
-      { text: "Application Development", icon: "mdi-application" }
+      { text: "System Administration", icon: "mdi-account-settings" , color:'red'},
+      { text: "IT Security", icon: "mdi-security", color:"purple" },
+      { text: "Database Security", icon: "mdi-database-lock", color:'green'},
+      { text: "Application Development", icon: "mdi-application", color:'orange' }
     ],
     items2: [
-      { text: "System Administration", icon: "mdi-handshake" },
-      { text: "Project Management", icon: "mdi-wan" },
-      { text: "Customer Service Training", icon: "mdi-face-agent" },
-      { text: "Soft skills Training for Employees", icon: "mdi-laptop" }
+      { text: "System Administration", icon: "mdi-handshake", color:'yellow' },
+      { text: "Project Management", icon: "mdi-wan", color:'green' },
+      { text: "Customer Service Training", icon: "mdi-face-agent", color:'red' },
+      { text: "Soft skills Training for Employees", icon: "mdi-laptop", color:'brown' }
     ]
   })
 };

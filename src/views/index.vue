@@ -102,7 +102,6 @@
             </v-img>
           </div>
           <!-- Button trigger modal -->
-          
 
           <!-- Modal -->
           <div
@@ -126,22 +125,17 @@
                           <v-col cols="12" sm="6" md="12">
                             <v-text-field label="first name*" required></v-text-field>
                           </v-col>
-                          
+
                           <v-col cols="12" sm="6" md="12">
-                            <v-text-field
-                              label="last name*"
-                        
-                              persistent-hint
-                              required
-                            ></v-text-field>
+                            <v-text-field label="last name*" persistent-hint required></v-text-field>
                           </v-col>
                           <v-col cols="12">
                             <v-text-field label="Email*" required></v-text-field>
                           </v-col>
-                           <v-col cols="12">
+                          <v-col cols="12">
                             <v-text-field label="Phone*" required></v-text-field>
                           </v-col>
-                         
+
                           <v-col cols="12" sm="12">
                             <v-autocomplete
                               :items="['SCHOOL BOOKS', 'UNIFORMS', 'FEES', 'SCHOOL RENOVATION', 'TRAINING', 'COMPUTER SERVER']"
@@ -221,11 +215,11 @@
                 </div>
                 <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
                 <button
-            type="button"
-            class="btn btn-primary"
-            data-toggle="modal"
-            data-target="#exampleModalCenter"
-          >Surport a project</button>
+                  type="button"
+                  class="btn btn-primary"
+                  data-toggle="modal"
+                  data-target="#exampleModalCenter"
+                >Surport a project</button>
               </h3>
             </div>
           </div>
@@ -250,32 +244,32 @@
               <!-- <v-img src="../assets/1.jpeg" aspect-ratio="2">1
                 <div class="fill-height bottom-gradient"></div>
               </v-img>-->
-              <img src="../assets/1.jpeg" style="width:7em; height:10em;" />
+              <img class="col-sm-12" src="../assets/1.jpeg" style="width:7em; height:10em;" />
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img src="../assets/2.png" style="width:7em; height:10em;" />
+              <img class="col-sm-12" src="../assets/2.png" style="width:7em; height:10em;" />
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img src="../assets/3.jpeg" style="width:7em; height:10em;" />
+              <img class="col-sm-12" src="../assets/3.jpeg" style="width:7em; height:10em;" />
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img src="../assets/5.png" style="width:7em; height:10em;" />
+              <img class="col-sm-12" src="../assets/5.png" style="width:7em; height:10em;" />
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img src="../assets/5.png" style="width:7em; height:10em;" />
+              <img class="col-sm-12" src="../assets/5.png" style="width:7em; height:10em;" />
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img src="../assets/5.png" style="width:7em; height:10em;" />
+              <img class="col-sm-12" src="../assets/5.png" style="width:7em; height:10em;" />
             </v-col>
           </slide>
         </hooper>

@@ -15,6 +15,9 @@ import toefl from '../views/toefl'
 import pearson from '../views/pearson'
 import itCenter from '../views/it-center'
 import career from '../views/career'
+import contact from '../views/contactUs';
+import adminLogin from '../views/adminViews/adminLogin'
+import adminIndex from '../views/adminViews/adminIndex'
 
 Vue.use(VueRouter)
 
@@ -28,6 +31,21 @@ const routes = [
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/admin',
+    name: 'admin',
+    component: adminLogin
+  },
+  {
+    path: '/adminIndex',
+    name: 'adminIndex',
+    component: adminIndex
+  },
+  {
+    path: '/cont',
+    name: 'contact',
+    component: contact
   },
   {
     path: '/career',
