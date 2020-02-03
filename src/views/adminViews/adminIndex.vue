@@ -11,7 +11,6 @@
         <!-- Main Content -->
         <div id="content">
           <div class="container-fluid">
-          
             <div class="d-sm-flex align-items-center justify-content-between mb-4">
               <h1 class="h3 mb-0 mt-2 text-gray-800">Dashboard</h1>
               <!-- <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
@@ -73,13 +72,13 @@
                                       </v-flex>
 
                                       <v-flex xs12 sm6 d-flex>
-                                        <!-- <input
+                                        <input
                                           type="file"
                                           class="form-control"
                                           accept="image/*"
                                           name="image"
-                                          v-on:change="upload($event.target.files)"
-                                        />-->
+                                         @change="onFileChanged"
+                                        />
                                         <v-file-input accept="image/*" label="Image"></v-file-input>
                                       </v-flex>
 
@@ -108,7 +107,7 @@
                                           v-model="menu2"
                                           :close-on-content-click="false"
                                           :nudge-right="40"
-                                          :return-value.sync="date"
+                                          :return-value.sync="startDate"
                                           lazy
                                           transition="scale-transition"
                                           offset-y
@@ -117,14 +116,14 @@
                                         >
                                           <template v-slot:activator="{ on }">
                                             <v-text-field
-                                              v-model="date"
-                                              label="Date"
+                                              v-model="startDate"
+                                              label="Start Date"
                                               prepend-icon="mdi-calendar"
                                               readonly
                                               v-on="on"
                                             ></v-text-field>
                                           </template>
-                                          <v-date-picker v-model="date" no-title scrollable>
+                                          <v-date-picker v-model="startDate" no-title scrollable>
                                             <v-spacer></v-spacer>
                                             <v-btn
                                               flat
@@ -134,7 +133,44 @@
                                             <v-btn
                                               flat
                                               color="primary"
-                                              @click="$refs.menu2.save(date)"
+                                              @click="$refs.menu2.save(startDate)"
+                                            >OK</v-btn>
+                                          </v-date-picker>
+                                        </v-menu>
+                                      </v-flex>
+                                      <v-flex xs12 sm6 d-flex>
+                                        <v-menu
+                                          ref="menu1"
+                                          v-model="menu1"
+                                          :close-on-content-click="false"
+                                          :nudge-right="40"
+                                          :return-value.sync="endDate"
+                                          lazy
+                                          transition="scale-transition"
+                                          offset-y
+                                          full-width
+                                          min-width="290px"
+                                        >
+                                          <template v-slot:activator="{ on }">
+                                            <v-text-field
+                                              v-model="endDate"
+                                              label="End Date"
+                                              prepend-icon="mdi-calendar"
+                                              readonly
+                                              v-on="on"
+                                            ></v-text-field>
+                                          </template>
+                                          <v-date-picker v-model="endDate" no-title scrollable>
+                                            <v-spacer></v-spacer>
+                                            <v-btn
+                                              flat
+                                              color="primary"
+                                              @click="menu1 = false"
+                                            >Cancel</v-btn>
+                                            <v-btn
+                                              flat
+                                              color="primary"
+                                              @click="$refs.menu1.save(endDate)"
                                             >OK</v-btn>
                                           </v-date-picker>
                                         </v-menu>
@@ -156,7 +192,7 @@
                                           <template v-slot:activator="{ on }">
                                             <v-text-field
                                               v-model="time"
-                                              label="Picker in menu"
+                                              label="Time"
                                               prepend-icon="mdi-clock-outline"
                                               readonly
                                               v-on="on"
@@ -178,7 +214,7 @@
                                       </v-flex>
 
                                       <v-flex xs12 sm3 d-flex>
-                                        <v-btn outline color="purple" v-on:click="onSubmit">Submit</v-btn>
+                                        <v-btn outline color="purple" v-on:click="save">Submit</v-btn>
                                       </v-flex>
                                       <br />
                                       <v-flex xs12 sm3 d-flex>
@@ -263,6 +299,9 @@
 </template>
 
 <script>
+// eslint-disable-next-line no-console
+import { Services } from "../../service";
+var serv = new Services();
 import side from "../../components/adminside";
 import menus from "../../components/adminMenu";
 export default {
@@ -272,9 +311,11 @@ export default {
   },
   data: () => ({
     menu: false,
-    date: new Date().toISOString().substr(0, 10),
+    startDate: new Date().toISOString().substr(0, 10),
+    endDate: new Date().toISOString().substr(0, 10),
     time: null,
     menu2: false,
+    menu1: false,
     modal2: false,
     Locations: ["Abuja", "Lagos", "Asaba", "Benin"],
     categories: ["Gospel", "Social", "Dance and fitness", "Comedy"],
@@ -284,24 +325,15 @@ export default {
       image: null
     },
 
-   
-    name: "hello youS",
-    count: null,
-    msg: "welcome to sayil",
     events: {
+      image: null,
       title: null,
       description: "",
-      category: "",
       location: "",
       venue: "",
-      date: "",
-      time: "",
-      accessType: "Open",
-      tickets: {
-        vip: null,
-        regular: null
-      },
-      ownerId: ""
+      startDate: "",
+      endDate: "",
+      time: ""
     },
     dialog: false,
     headers: [
@@ -312,9 +344,9 @@ export default {
         value: "name"
       },
       { text: "Date", value: "calories" },
-      { text: "Time (g)", value: "fat" },
-      { text: "Location (g)", value: "carbs" },
-      { text: "Protein (g)", value: "protein" },
+      { text: "Time ", value: "fat" },
+      { text: "Location", value: "carbs" },
+
       { text: "Actions", value: "action", sortable: false }
     ],
     desserts: [],
@@ -355,18 +387,18 @@ export default {
     initialize() {
       this.desserts = [
         {
-          name: "Frozen Yogurt",
-          calories: 159,
-          fat: 6.0,
-          carbs: 24,
-          protein: 4.0
+          name: "USPF",
+          calories: "26-06-19",
+          fat: "2:30 pm",
+          carbs: "Abuja, Maitama",
+          protein: "4.0"
         },
         {
-          name: "Ice cream sandwich",
-          calories: 237,
-          fat: 9.0,
-          carbs: 37,
-          protein: 4.3
+          name: "Web developers hangout",
+          calories: "26-06-19",
+          fat: "2:30 pm",
+          carbs: "Delta State, Asaba",
+          protein: "4.0"
         }
       ];
     },
@@ -390,13 +422,30 @@ export default {
         this.editedIndex = -1;
       }, 300);
     },
-
+   
+   onFileChanged (event) {
+    this.events.image = event.target.files[0]
+  },
+  
     save() {
-      if (this.editedIndex > -1) {
-        Object.assign(this.desserts[this.editedIndex], this.editedItem);
-      } else {
-        this.desserts.push(this.editedItem);
-      }
+      // if (this.editedIndex > -1) {
+      //   Object.assign(this.desserts[this.editedIndex], this.editedItem);
+      // } else {
+      //   this.desserts.push(this.editedItem);
+      // }
+      const formData = new FormData();
+      formData.append("image", this.events.image);
+      formData.append("title", this.events.title);
+      formData.append("description", this.events.description);
+      formData.append("location", this.events.location);
+      formData.append("venue", this.events.venue);
+      formData.append("startDate", this.startDate);
+      formData.append("endDate", this.endDate);
+      formData.append("time", this.time);
+
+      // eslint-disable-next-line no-console
+      console.log(this.events, this.startDate, this.endDate, this.time);
+      serv.postRequest("eve/newEve", formData);
       this.close();
     }
   }

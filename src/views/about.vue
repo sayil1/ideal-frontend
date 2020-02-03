@@ -4,7 +4,7 @@
 
     <!-- who we are -->
 
-    <div class="primary" style="padding:50px; padding-top:80px;  ">
+    <div  style="padding:50px; padding-top:80px; background-color:rgb(24, 160, 214) ">
       <h1
         class="white--text font-weight-bold"
         style="text-align:center; margin-top:50px"

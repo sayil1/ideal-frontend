@@ -123,25 +123,34 @@
                       <v-container>
                         <v-row>
                           <v-col cols="12" sm="6" md="12">
-                            <v-text-field label="first name*" required></v-text-field>
+                            <v-text-field label="first name*" v-model="project.fname" required></v-text-field>
                           </v-col>
 
                           <v-col cols="12" sm="6" md="12">
-                            <v-text-field label="last name*" persistent-hint required></v-text-field>
+                            <v-text-field
+                              label="last name*"
+                              v-model="project.lname"
+                              persistent-hint
+                              required
+                            ></v-text-field>
                           </v-col>
                           <v-col cols="12">
-                            <v-text-field label="Email*" required></v-text-field>
+                            <v-text-field label="Email*" v-model="project.email" required></v-text-field>
                           </v-col>
                           <v-col cols="12">
-                            <v-text-field label="Phone*" required></v-text-field>
+                            <v-text-field label="Phone*" v-model="project.phone" required></v-text-field>
                           </v-col>
 
                           <v-col cols="12" sm="12">
-                            <v-autocomplete
-                              :items="['SCHOOL BOOKS', 'UNIFORMS', 'FEES', 'SCHOOL RENOVATION', 'TRAINING', 'COMPUTER SERVER']"
+                            <v-select
+                              :items="items"
                               label="Interests"
                               multiple
-                            ></v-autocomplete>
+                              v-model="project.interests"
+                              chips
+                              hint="Interests"
+                              persistent-hint
+                            ></v-select>
                           </v-col>
                         </v-row>
                       </v-container>
@@ -151,7 +160,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
+                  <button type="button" class="btn btn-primary" v-on:click="submit">Save changes</button>
                 </div>
               </div>
             </div>
@@ -219,7 +228,7 @@
                   class="btn btn-primary"
                   data-toggle="modal"
                   data-target="#exampleModalCenter"
-                >Surport a project</button>
+                >Support a project</button>
               </h3>
             </div>
           </div>
@@ -280,6 +289,8 @@
 </template>
   
 <script>
+import { Services } from "../service";
+var serv = new Services();
 import { Hooper, Slide } from "hooper";
 import "hooper/dist/hooper.css";
 import foota from "../components/footer";
@@ -302,8 +313,33 @@ export default {
       playspeed: 1000
     },
     msg: "heyyy",
-    dialog: false
-  })
+    dialog: false,
+    items: ["fees", " school renovations", 'uniforms', 'trainings', 'computer server', 'school books'],
+    project: {
+      fname: "",
+      lname: "",
+      email: "",
+      phone: "",
+      interests: ""
+    }
+  }),
+  methods: {
+    test: function() {
+      serv.testers();
+      alert("see me");
+    },
+    submit: function() {
+      let newData = {
+        fname: this.project.fname,
+        lname: this.project.lname,
+        email: this.project.email,
+        phone: this.project.phone,
+        Interests: this.project.interests
+      };
+      alert(newData);
+      serv.postRequest("proj/newProj", newData);
+    }
+  }
 };
 </script>
 

@@ -45,10 +45,12 @@
                       <a href="admin.html" class="btn btn-primary btn-user btn-block">Login Admin</a> -->
                       <hr />
                       <div class="text-center">
-                        <v-btn rounded block large color="primary" dark>Login</v-btn>
+                        <a href="adminIndex">    <v-btn rounded block large color="primary" dark>Login</v-btn> </a>
+                    
                       </div>
                       <hr>
-                        <v-btn rounded block large class="" outlined color="indigo">Home</v-btn>
+                      <a href="/">  <v-btn rounded block large class="" outlined color="indigo">Home</v-btn>   </a>
+                       
                       <!-- <a href="index.html" class="btn btn-facebook btn-user btn-block">
                         <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
                       </a> -->

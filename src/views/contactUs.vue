@@ -24,22 +24,28 @@
             <v-container>
               <v-row>
                 <v-col cols="12" sm="6" md="6">
-                  <v-text-field label="first name*" required></v-text-field>
+                  <v-text-field v-model="contact.fname" label="first name*" required></v-text-field>
                 </v-col>
 
                 <v-col cols="12" sm="6" md="6">
-                  <v-text-field label="last name*" persistent-hint required></v-text-field>
+                  <v-text-field v-model="contact.lname" label="last name*" persistent-hint required></v-text-field>
                 </v-col>
                 <v-col cols="12">
-                  <v-text-field label="Email*" required></v-text-field>
+                  <v-text-field v-model="contact.email" label="Email*" required></v-text-field>
                 </v-col>
                 <v-col cols="12">
-                  <v-text-field label="Phone*" required></v-text-field>
+                  <v-text-field v-model="contact.phone" label="Phone*" required></v-text-field>
                 </v-col>
                 <v-col cols="12" md="12" sm="6">
-                  <v-textarea filled name="input-7-4" label="Filled textarea" value></v-textarea>
+                  <v-textarea
+                    v-model="contact.message"
+                    filled
+                    name="input-7-4"
+                    label="Filled textarea"
+                    value
+                  ></v-textarea>
                 </v-col>
-                <v-btn class="ma-2" tile outlined color="primary">
+                <v-btn class="ma-2" v-on:click="submit" tile outlined color="primary">
                   <v-icon left>mdi-phone</v-icon>send
                 </v-btn>
               </v-row>
@@ -61,11 +67,11 @@
       </div>
 
       <div class="col-sm" style="background-color:rgb(224, 224, 209)">
-        <div class="container" >
+        <div class="container">
           <h1 class>
-            <span class="thin m-3">
-             We're here to help answer any question you might have. We look forward to hearing from you.
-            </span>
+            <span
+              class="thin m-3"
+            >We're here to help answer any question you might have. We look forward to hearing from you.</span>
             <div class>
               <div class="row title" style="text-align:center; margin-top:50px">
                 <div class="col-sm">
@@ -94,6 +100,8 @@
 
 
 <script>
+import { Services } from "../service";
+var serv = new Services();
 import nava from "../components/testnav";
 import foota from "../components/footer";
 
@@ -101,6 +109,28 @@ export default {
   components: {
     nava,
     foota
+  },
+  data: () => ({
+    contact: {
+      fname: "",
+      lname: "",
+      email: "",
+      phone: "",
+      message: ""
+    }
+  }),
+  methods: {
+    submit() {
+      let newData = {
+        fname: this.contact.fname,
+        lname: this.contact.lname,
+        email: this.contact.email,
+        phone: this.contact.phone,
+        message: this.contact.message
+      };
+      alert(newData);
+      serv.postRequest("cont/newCont", newData);
+    }
   }
 };
 </script>
