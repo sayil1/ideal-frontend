@@ -5,7 +5,7 @@
       class="jumbotron jumbotron-fluid"
       style="background-color:rgb(35, 159, 216); margin-bottom:0px"
     >
-      <div class="container" style="margin-top:50px">
+      <div class="container" style="margin-top:80px; margin-bottom:-80px">
         <h1 class="display-2">PEARSON VUE CENTER</h1>
       </div>
     </div>
@@ -16,11 +16,14 @@
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-       
                 <br />
-                <span v-subheader>PEARSON VUE CENTER</span>
+                <strong>PEARSON VUE CENTER</strong>
                 <br />Our Authorized Pearson VUE Test center runs IT certification examinations for leading vendors like Microsoft, Cisco, Nursing and Midwifery Council (NMC), PMI, Linux, Juniper, Oracle, CompTIA, CIW, HP, PeopleCert etc.
-                IT CERTIFICATIONS are recognized worldwide and serve as benchmarks to specific skills set based on standardized testing. They help demonstrate your dedication and technical knowledge on a specific platform.
+                <br />
+                <br />
+                <strong>IT CERTIFICATIONS</strong>
+                are recognized worldwide and serve as benchmarks to specific skills set based on standardized testing. They help demonstrate your dedication and technical knowledge on a specific platform.
+                <br />Once earned, IT Certifications can you help achieve the following:
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
                   <v-list-item-group v-model="item" color="rgb(35, 159, 216)">
@@ -46,20 +49,20 @@
     <div class style="margin-top:50px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
-        <div class="col-sm col-md-4">
+        <!-- <div class="col-sm col-md-4">
           <v-img src="../assets/app.svg" style=" width:700px"></v-img>
-        </div>
-        <div class="col-sm-12 col-md-8">
+        </div> -->
+        <div class="col-sm-12 ">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                <span>Business Development</span>
-                <br />Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
+                Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
                 For information on a specific exam duration, fee, language, etc., please refer to the website of the particular provider.
-                Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
+                <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
+                <br />
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item2" color="primary">
+                  <!-- <v-list-item-group v-model="item2" color="primary">
                     <v-list-item v-for="(item2, i) in items2" :key="i">
                       <v-list-item-icon>
                         <v-icon v-text="item2.icon"></v-icon>
@@ -68,7 +71,7 @@
                         <v-list-item-title v-text="item2.text"></v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
-                  </v-list-item-group>
+                  </v-list-item-group>-->
                   <div
                     class="card-text blue--text font-weight-regular"
                   >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>

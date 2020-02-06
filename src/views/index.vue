@@ -2,72 +2,137 @@
   <div class>
     <nava />
     <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div
-            class="carousel-item active"
-            style="background-image: url('https://source.unsplash.com/RCAhiGJsUUE/1920x1080')"
-          >
-            <div class="carousel-caption">
-              <h3 class="display-3 primary" style="font-size:8vw;">First Slide</h3>
-              <p class="lead" style="font-size:2vw;">
-                BUILDING A COMMUNITY FOR SOCIALLY RESPONSIBLE CITIZENS AND LETTING ACTIONS SPEAK IN THE ACHIEVEMENT OF SDG GOAL 4, GOAL 7 AND GOAL 17.
-                WE CREATE THE PLATFORM FOR COLLABORATION, REFLEXIVITY, AND IDEA NURTURING AND COMMUNITY PROJECT IMPLEMENTATION!!!BE A PART OF IT TODAY……
-              </p>
+      <v-carousel  hide-delimiter-background delimiter-icon="mdi-minus" cycle height="600" show-arrows-on-hover>
+        <v-carousel-item class="div1">
+          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+            <div class="card-size">
+              <div class="card-body" style>
+                <div style="margin-top:150px">
+                  <p
+                    class="card-text white--text font-weight-regular"
+                    style="margin-left:40px; margin-right:40px"
+                  >
+                    <span
+                      class="display-2 text-center"
+                      style="text-align:center; "
+                    >PROFESSIONAL EDUCATION</span>
+                    <br />
+                    <br />Our professional education programs enable learners acquire content knowledge and learn to apply techniques relevant to jobs and careers across the
+                    <strong>Information Technology</strong> and
+                    <strong>Business Development</strong> spectrum.
+                    <br />On completion, participants are able to develop cutting-edge skills, earn must-have certifications as well as learn best practices for a rewarding long-term career.
+                    <br />
+                  </p>
+                  <div class="text-center">
+                     <router-link to="/prof"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
+                   
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div
-            class="carousel-item"
-            style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1920x1080')"
-          >
-            <div class="carousel-caption">
-              <h3 class="display-3 primary" style="font-size:8vw;">Second Slide</h3>
-              <p
-                class="lead"
-                style="font-size:2vw;"
-              >OUR PROFESSIONAL EDUCATION PROGRAMS ENABLE LEARNERS ACQUIRE CONTENT KNOWLEDGE AND LEARN TO APPLY TECHNIQUES RELEVANT TO JOBS AND CAREERS ACROSS THE INFORMATION TECHNOLOGY AND BUSINESS DEVELOPMENT SPECTRUM.</p>
+        </v-carousel-item>
+        <v-carousel-item class="div2">
+          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+            <div class="card-size">
+              <div class="card-body" style>
+                <div style="margin-top:150px">
+                  <p
+                    class="card-text white--text font-weight-regular"
+                    style="margin-left:40px; margin-right:40px"
+                  >
+                    <span
+                      class="display-2 text-center"
+                      style="text-align:center; "
+                    >ICM UK Approved Center</span>
+                    <br />
+                    <br />The Institute of Commercial Management (ICM) UK is a leading professional body providing qualifications at
+                    <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma</strong> and
+                    <strong>Post Graduate Diploma</strong>
+                    <br />levels that are recognized globally in business, management and related vocational areas.
+                  </p>
+                   <div class="text-center">
+                     <router-link to="/icm"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
+                   
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div
-            class="carousel-item"
-            style="background-image: url('https://source.unsplash.com/O7fzqFEfLlo/1920x1080')"
-          >
-            <div class="carousel-caption">
-              <h3 class="display-3 primary" style="font-size:8vw;">OVERSEAS ADMISSION CONSULTING</h3>
-              <p
-                class="lead"
-                style="font-size:2vw;"
-              >WE HAVE A UNIQUE TRACK RECORD OF ENLISTING STUDENTS WITH DIVERSE QUALIFICATIONS AND CAREER DRIVES INTO OUR PARTNER FOREIGN UNIVERSITIES AND COLLEGES.</p>
+        </v-carousel-item>
+        <v-carousel-item class="div3">
+          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+            <div class="card-size">
+              <div class="card-body" style>
+                <div style="margin-top:150px">
+                  <p
+                    class="card-text white--text font-weight-regular"
+                    style="margin-left:40px; margin-right:40px"
+                  >
+                    <span
+                      class="display-2 text-center"
+                      style="text-align:center; "
+                    >TRAIN-THE-TRAINER WORKSHOPS</span>
+                    <br />
+                    <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize their current methods of instruction or wish to engage in careers such
+                  </p>
+                   <div class="text-center">
+                     <router-link to="/train"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
+                   
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+        </v-carousel-item>
+        <v-carousel-item class="div4">
+          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+            <div class="card-size">
+              <div class="card-body" style>
+                <div style="margin-top:150px">
+                  <p
+                    class="card-text white--text font-weight-regular"
+                    style="margin-left:40px; margin-right:40px"
+                  >
+                    <span class="display-2 text-center" style="text-align:center; ">TEST PREPARATION</span>
+                    <br />
+                    <br />Acquire exceptional support to improve your exam techniques and increase your performance on standardized tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT
+                  </p>
+                   <div class="text-center">
+                     <router-link to="/test"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </v-carousel-item>
+        <v-carousel-item class="div5">
+          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+            <div class="card-size">
+              <div class="card-body" style>
+                <div style="margin-top:150px">
+                  <p
+                    class="card-text white--text font-weight-regular"
+                    style="margin-left:40px; margin-right:40px"
+                  >
+                    <span
+                      class="display-2 text-center"
+                      style="text-align:center; "
+                    >OVERSEAS ADMISSION CONSULTING</span>
+                    <br />
+                    <br />We have a unique track record of enlisting students with diverse qualifications and career drives into our partner foreign universities and colleges.
+                  </p>
+                   <div class="text-center">
+                     <router-link to="/over"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </v-carousel-item>
+      </v-carousel>
     </header>
 
     <div>
@@ -295,6 +360,7 @@ import { Hooper, Slide } from "hooper";
 import "hooper/dist/hooper.css";
 import foota from "../components/footer";
 import nava from "../components/testnav";
+
 export default {
   components: {
     Hooper,
@@ -312,16 +378,39 @@ export default {
       autoreplay: true,
       playspeed: 1000
     },
+    image: { backgroundImage: "url('../../images/banner.jpg')" },
+
     msg: "heyyy",
     dialog: false,
-    items: ["fees", " school renovations", 'uniforms', 'trainings', 'computer server', 'school books'],
+    items: [
+      "fees",
+      " school renovations",
+      "uniforms",
+      "trainings",
+      "computer server",
+      "school books"
+    ],
     project: {
       fname: "",
       lname: "",
       email: "",
       phone: "",
       interests: ""
-    }
+    },
+    itemss: [
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+      },
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+      },
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+      },
+      {
+        src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
+      }
+    ]
   }),
   methods: {
     test: function() {
@@ -346,6 +435,13 @@ export default {
 
 
 <style lang="css" scoped>
+@media only screen and (max-width: 600px) {
+p{
+  font-size: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  color: blue
+}}
 .carousel-item {
   height: 85vh;
   min-height: 350px;
@@ -359,5 +455,35 @@ export default {
   border-left: 2px solid green;
   height: 50px;
 }
+.div1 {
+  background-image: url("../assets/ideal2.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+}
+.div2 {
+  background-image: url("../assets/ideal1.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+}
+.div3 {
+  background-image: url("../assets/ideal10.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+}
+.div4 {
+  background-image: url("../assets/ideal15.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+}
+.div5 {
+  background-image: url("../assets/ideal6.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+}
+.card-size {
+  font-size: 30px;
+}
+
+  
 </style>
 

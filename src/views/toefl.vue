@@ -5,10 +5,10 @@
       class="jumbotron jumbotron-fluid"
       style="background-color:rgb(35, 159, 216); margin-bottom:0px"
     >
-      <div class="container" style="margin-top:50px">
+      <div class="container" style="margin-top:80px; margin-bottom:-80px">
         <h1 class="display-2">TOEFL IBT TEST CENTER</h1>
         <div>
-            The Test of English as a Foreign Language® TOEFL is a standardized test that measures the ability of non- native speakers to use and understand English at the university level, evaluating how well they combine reading, listening, speaking and writing skills to perform academic tasks.
+         
         </div>
       </div>
     </div>
@@ -19,9 +19,10 @@
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-              As an Authorized TOEFL iBT® Test center, we administer the test all year round, particularly on weekends. Due to the high demand for the test, seats fill up quickly, so students are encouraged to register ahead of time in order to get their preferred test dates.
-                <br />
-                <span v-subheader>Why Take the TOEFL Test?</span>
+                   The <strong>Test of English as a Foreign Language® TOEFL </strong>is a standardized test that measures the ability of non- native speakers to use and understand English at the university level, evaluating how well they combine reading, listening, speaking and writing skills to perform academic tasks. <br> <br>
+              As an <strong>Authorized TOEFL iBT® Test center</strong> , we administer the test all year round, particularly on weekends. Due to the high demand for the test, seats fill up quickly, so students are encouraged to register ahead of time in order to get their preferred test dates.
+                <br /> <br>
+                <strong v-subheader>Why Take the TOEFL Test?</strong>
                 <br />
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
@@ -55,7 +56,7 @@
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                <span>Who Takes the TOEFL Test? </span>
+                <strong>Who Takes the TOEFL Test? </strong> <br>
                 <br />More than 35 million people from all over the world have taken the TOEFL test to demonstrate their English-language proficiency.
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->

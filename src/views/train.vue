@@ -5,7 +5,7 @@
       class="jumbotron jumbotron-fluid"
       style="background-color:rgb(35, 159, 216); margin-bottom:0px"
     >
-      <div class="container" style="margin-top:50px">
+      <div class="container" style="margin-top:80px; margin-bottom:-80px">
         <h1 class="display-2">TRAINING WORKSHOPS</h1>
       </div>
     </div>
@@ -17,9 +17,10 @@
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
                 Our Train the Trainer program empowers teachers/trainers to improve and professionalize their current methods of instruction and understand how people learn.
-                Participants will have a comprehensive understanding of the Training and Development industry as well as training packaging. Some areas of focus include:
                 <br />
-                <span v-subheader>Subjects</span>
+                <br />Participants will have a comprehensive understanding of the Training and Development industry as well as training packaging. Some areas of focus include:
+                <br />
+
                 <br />
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
@@ -28,14 +29,15 @@
                       <v-list-item-icon>
                         <v-icon v-text="item.icon"></v-icon>
                       </v-list-item-icon>
-                      <v-list-item-content>
+                      <v-list-item-content color="rgb(35, 159, 216)">
                         <v-list-item-title v-text="item.text"></v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-list-item-group>
                 </v-list>
+They will also develop on the main areas of Training and Assessment including design, delivery, and assessment.
               </p>
-              <p style="text-align:center">Our Targets</p>
+              <div style="text-align:center; color:rgb(35, 159, 216)" class="display-1">Our Targets</div>
 
               <v-list dense>
                 <!-- <v-subheader>REPORTS</v-subheader> -->
@@ -68,7 +70,7 @@
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                <span>Workshops Structure</span>
+                <strong class='display-1'	>Workshops Structure</strong> <br>
                 <br />The scope of training and support each learner requires will vary according to their existing involvement, knowledge and skills in this area.
                 IDEaL Train-the-trainer workshops have three student cohorts:
                 <v-list-item>
@@ -90,12 +92,10 @@
                     <v-list-item-title>Advanced Cohort</v-list-item-title>
                     <v-list-item-subtitle>Consists of individuals with a broad knowledge and skill in the competence contained in this qualification. Related industry work experience of one year or more.</v-list-item-subtitle>
                   </v-list-item-content>
-                </v-list-item>
-                
-                Please send a message on available options, dates and needs. <br>
-                
+                </v-list-item>Please send a message on available options, dates and needs.
+                <br />
               </p>
-                <v-btn class="ma-2" outlined color="blue">Send Message</v-btn>
+              <v-btn class="ma-2" outlined color="blue">Send Message</v-btn>
             </div>
           </div>
         </div>

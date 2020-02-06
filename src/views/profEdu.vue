@@ -2,7 +2,7 @@
   <div style="background-color:">
     <nava />
     <div class="jumbotron jumbotron-fluid" style="background-color:rgb(35, 159, 216); margin-bottom:0px">
-      <div class="container" style="margin-top:50px">
+      <div class="container" style="margin-top:80px; margin-bottom:-80px">
         <h1 class="display-2">PROFESSIONAL EDUCATION</h1>
       </div>
     </div>
@@ -13,11 +13,12 @@
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                Our training solutions offer job and career relevant courses for individuals, teams and organizations across the Information and Communication Technology (ICT) and Business Development spectrum.
+                Our training solutions offer job and career relevant courses for individuals, teams and organizations<strong> across the Information and Communication Technology (ICT) and Business Development spectrum.</strong> <br> <br>
                 In partnership with reputable service providers across the globe, these programs are tailored to equip learners with the technical and practical skills for a rewarding long-term career.
-                <br />
-                <span v-subheader>Information and Communication Technology (ICT)</span>
-                <br />The ICT industry is a stirring innovator that helps solve problems in the environment, business, defense, research, health, and education sectors. Trainings in this area cover the entirety of these:
+                <br /><br>
+                <strong>Information and Communication Technology (ICT)</strong> <br>
+
+                The ICT industry is a stirring innovator that helps solve problems in the environment, business, defense, research, health, and education sectors. Trainings in this area cover the entirety of these:
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
                   <v-list-item-group v-model="item" color="rgb(35, 159, 216)" >
@@ -53,7 +54,7 @@
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
                
-                <span>Business Development</span>
+                <strong>Business Development</strong>
                 <br />Setting your business onto the path of success through constant business training can lead to exciting business opportunities and personal development. Our quality programs are your best starting point.
                 <v-list dense >
                   <!-- <v-subheader>REPORTS</v-subheader> -->

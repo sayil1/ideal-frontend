@@ -5,7 +5,7 @@
       class="jumbotron jumbotron-fluid"
       style="background-color:rgb(35, 159, 216); margin-bottom:0px"
     >
-      <div class="container" style="margin-top:50px">
+      <div class="container" style="margin-top:80px; margin-bottom:-80px">
         <h1 class="display-2">TEST PREPARATION</h1>
       </div>
     </div>
@@ -17,11 +17,14 @@
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
                 We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
-                Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
                 <br />
-                <span v-subheader>English Test preparation (IELTS, PTE, Cambridge English)</span>
+                <br />Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
+                <br />
+                <br />
+                <strong>English Test preparation (IELTS, PTE, Cambridge English)</strong>
+                <br />
                 <br />Classes are centered on test-taking tactics that highlights the skills needed for exam success in the English exams and covers reading, listening, speaking and writing.
-                This preparatory course is ideal for students who:
+                <br />This preparatory course is ideal for students who:
                 <v-list-item>
                   <v-list-item-content>
                     <v-list-item-subtitle>- Want to attain a good score on the internationally recognized English exams.</v-list-item-subtitle>
@@ -39,6 +42,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-5" style=" margin:2px">
+          <div style="color:white; text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
           <table class="table table-bordered card-size">
             <thead>
               <tr>
@@ -79,7 +83,7 @@
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                <span>Other Standardized tests (GRE®, SAT, ACT, GMAT)</span>
+                <strong class="display-1">Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong> <br>
                 <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and topics to expect, ultimately improving your score on the test.
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
@@ -92,7 +96,7 @@
                         <v-list-item-title v-text="item2.text"></v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
-                  </v-list-item-group>
+                  </v-list-item-group> <br>
                   <div
                     class="card-text blue--text font-weight-regular"
                   >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
@@ -103,6 +107,7 @@
         </div>
 
         <div class="col-sm col-md-5" style=" margin:2px">
+             <div style="color:rgb(35, 159, 216); text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
           <table class="table table-bordered card-size">
             <thead>
               <tr>
@@ -132,7 +137,11 @@
                 Weekends Saturdays and Sundays 3 hours per day
               </td>
             </tbody>
+           
           </table>
+           <div>
+           Students also have Acess to Study guides, Practice tests, Structured study sessions, Preparation lessons, Online and paper-based simulation tests
+            </div>
         </div>
       </div>
     </div>

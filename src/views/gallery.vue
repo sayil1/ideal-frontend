@@ -10,20 +10,19 @@
         <div class="grid">
           <div class="column-xs-12 column-md-4">
             <figure class="img-container">
-              <img src="https://source.unsplash.com/8b1cWDyvT7Y" />
+              <img src="../assets/ideal5.jpg" />
               <figcaption class="img-content">
-                <h2 class="title">Smart Watch</h2>
-                <h3 class="category">Showcase</h3>
+                <h2 class="title">IDEAL IT</h2>
+                <h3 class="category">Library</h3>
               </figcaption>
               <span class="img-content-hover">
-                <h2 class="title">Smart Watch</h2>
-                <h3 class="category">Showcase</h3>
+                <h3 class="category">Library</h3>
               </span>
             </figure>
           </div>
           <div class="column-xs-12 column-md-4">
             <figure class="img-container">
-              <img src="https://source.unsplash.com/5VXH4RG88gc" />
+              <img src="../assets/ideal11.jpg" />
               <figcaption class="img-content">
                 <h2 class="title">Camera Film</h2>
                 <h3 class="category">Showcase</h3>
@@ -36,7 +35,7 @@
           </div>
           <div class="column-xs-12 column-md-4">
             <figure class="img-container">
-              <img src="https://source.unsplash.com/XtUd5SiX464" />
+              <img src="../assets/ideal7.jpg" />
               <figcaption class="img-content">
                 <h2 class="title">Coffee</h2>
                 <h3 class="category">Showcase</h3>
@@ -49,7 +48,7 @@
           </div>
           <div class="column-xs-12 column-md-6">
             <figure class="img-container">
-              <img src="https://source.unsplash.com/JYGnB9gTCls" />
+              <img src="../assets/ideal12.jpg" />
               <figcaption class="img-content">
                 <h2 class="title">Phone</h2>
                 <h3 class="category">Showcase</h3>
@@ -62,7 +61,7 @@
           </div>
           <div class="column-xs-12 column-md-6">
             <figure class="img-container">
-              <img src="https://source.unsplash.com/-RBuQ2PK_L8" />
+              <img src="../assets/ideal14.jpg" />
               <figcaption class="img-content">
                 <h2 class="title">Keyboard</h2>
                 <h3 class="category">Showcase</h3>
@@ -75,7 +74,7 @@
           </div>
           <div class="column-xs-12">
             <figure class="img-container">
-              <img src="https://source.unsplash.com/P44RIGl9V54" />
+              <img src="../assets/ideal2.jpg" />
               <figcaption class="img-content">
                 <h2 class="title">Wrist Watch</h2>
                 <h3 class="category">Showcase</h3>

@@ -5,7 +5,7 @@
       class="jumbotron jumbotron-fluid"
       style="background-color:rgb(35, 159, 216); margin-bottom:0px"
     >
-      <div class="container" style="margin-top:50px">
+      <div class="container" style="margin-top:80px; margin-bottom:-80px">
         <h1 class="display-2" >OVERSEAS ADMISSION CONSULTING</h1>
       </div>
     </div>
@@ -16,9 +16,12 @@
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                If you want to make your overseas study dreams come true, IDEaL’s admission consulting is your best bet.
-                We have an unequaled track record of enlisting students with diverse qualifications and career drives into many foreign universities and colleges. We help to secure study admissions and have had students who are constantly happy with our results.
-                What you get from IDEaL’s admissions consulting
+                If you want to make your overseas study dreams come true, IDEaL’s admission consulting is your best bet. <br> <br>
+                We have an unequaled track record of enlisting students with diverse qualifications and career drives into many foreign universities and colleges. We help to secure study admissions and have had students who are constantly happy with our results. <br><br>
+                <strong>
+  What you get from IDEaL’s admissions consulting
+                </strong> <br>
+              
                 Our full range of services includes:
                 <br />
 
@@ -75,11 +78,11 @@
                  
                   <div class="card-text blue--text font-weight-regular">
                  <span class=" display-1 text-center" style="color:rgb(255, 153, 0)">  For working professionals  </span> 
-                    <br>
-                   <div> We assist working professionals across various industries/sectors to get offers that’ll enable them undergo short programs/courses in renown universities and in line with their career agenda.</div> <br>
+                    <br> 
+                   <div> We assist working professionals across various industries/sectors to get offers that’ll enable them undergo short programs/courses in renown universities and in line with their career agenda.</div> <br> 
                  <div class=" display-1" style="color:rgb(255, 153, 0)">  For corporate bodies  </div> 
-                    We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics.
-                    For Overseas Admissions, UPCOMING overseas trainings, conferences and short courses. Contact us
+                    We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics. <br>
+                    For Overseas Admissions, UPCOMING overseas trainings, conferences and short courses. <a href="/cont">Contact Us</a>
                   </div>
                 </v-list>
               </p>

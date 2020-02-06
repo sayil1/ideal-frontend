@@ -5,7 +5,7 @@
       class="jumbotron jumbotron-fluid"
       style="background-color:rgb(35, 159, 216); margin-bottom:0px"
     >
-      <div class="container" style="margin-top:50px">
+      <div class="container" style="margin-top:80px; margin-bottom:-80px">
         <h1 class="display-2">IDEAL IT CENTER</h1>
       </div>
     </div>
@@ -16,9 +16,9 @@
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
-                The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
-                <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
-                <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers.
+                The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project. <br>
+                <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector. <br>
+                <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers. <br>
                 <br />The first IDEaL IT Center project is located in Asaba, the Delta State capital of Nigeria and it is intended that this project will be replicated in various locations across the country.
                 <br />
               </p>
