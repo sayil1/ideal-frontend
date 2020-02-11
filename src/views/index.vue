@@ -2,7 +2,13 @@
   <div class>
     <nava />
     <header>
-      <v-carousel  hide-delimiter-background delimiter-icon="mdi-minus" cycle height="600" show-arrows-on-hover>
+      <v-carousel
+        hide-delimiter-background
+        delimiter-icon="mdi-minus"
+        cycle
+        height="600"
+        show-arrows-on-hover
+      >
         <v-carousel-item class="div1">
           <div style="background: rgba(21, 22, 21, 0.7); height:100%">
             <div class="card-size">
@@ -24,8 +30,9 @@
                     <br />
                   </p>
                   <div class="text-center">
-                     <router-link to="/prof"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
-                   
+                    <router-link to="/prof">
+                      <v-btn rounded color="primary" dark>See More</v-btn>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -51,9 +58,10 @@
                     <strong>Post Graduate Diploma</strong>
                     <br />levels that are recognized globally in business, management and related vocational areas.
                   </p>
-                   <div class="text-center">
-                     <router-link to="/icm"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
-                   
+                  <div class="text-center">
+                    <router-link to="/icm">
+                      <v-btn rounded color="primary" dark>See More</v-btn>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -76,9 +84,10 @@
                     <br />
                     <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize their current methods of instruction or wish to engage in careers such
                   </p>
-                   <div class="text-center">
-                     <router-link to="/train"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
-                   
+                  <div class="text-center">
+                    <router-link to="/train">
+                      <v-btn rounded color="primary" dark>See More</v-btn>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -98,9 +107,10 @@
                     <br />
                     <br />Acquire exceptional support to improve your exam techniques and increase your performance on standardized tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT
                   </p>
-                   <div class="text-center">
-                     <router-link to="/test"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
-                   
+                  <div class="text-center">
+                    <router-link to="/test">
+                      <v-btn rounded color="primary" dark>See More</v-btn>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -123,9 +133,10 @@
                     <br />
                     <br />We have a unique track record of enlisting students with diverse qualifications and career drives into our partner foreign universities and colleges.
                   </p>
-                   <div class="text-center">
-                     <router-link to="/over"> <v-btn rounded color="primary" dark>See More</v-btn></router-link>
-                   
+                  <div class="text-center">
+                    <router-link to="/over">
+                      <v-btn rounded color="primary" dark>See More</v-btn>
+                    </router-link>
                   </div>
                 </div>
               </div>
@@ -182,28 +193,28 @@
                 <div class="modal-body">
                   <v-card flat>
                     <v-card-title>
-                      <span class="headline">User Profile</span>
+                      <span class="headline">kindly fill the form</span>
                     </v-card-title>
                     <v-card-text>
                       <v-container>
                         <v-row>
-                          <v-col cols="12" sm="6" md="12">
-                            <v-text-field label="first name*" v-model="project.fname" required></v-text-field>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field label="first name" v-model="project.fname" required></v-text-field>
                           </v-col>
 
-                          <v-col cols="12" sm="6" md="12">
+                          <v-col cols="12" sm="6" md="6">
                             <v-text-field
-                              label="last name*"
+                              label="last name"
                               v-model="project.lname"
                               persistent-hint
                               required
                             ></v-text-field>
                           </v-col>
                           <v-col cols="12">
-                            <v-text-field label="Email*" v-model="project.email" required></v-text-field>
+                            <v-text-field label="Email" v-model="project.email" required></v-text-field>
                           </v-col>
                           <v-col cols="12">
-                            <v-text-field label="Phone*" v-model="project.phone" required></v-text-field>
+                            <v-text-field label="Phone" v-model="project.phone" required></v-text-field>
                           </v-col>
 
                           <v-col cols="12" sm="12">
@@ -225,7 +236,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary" v-on:click="submit">Save changes</button>
+                  <button type="button" class="btn btn-primary" v-on:click="submit">Submit</button>
                 </div>
               </div>
             </div>
@@ -301,9 +312,9 @@
       </v-parallax>
 
       <template>
-        <h2 style="margin-top:60px; text-align:center; color:navy">
+        <h2 class="font-weight-bold display-2" style="margin-top:60px; text-align:center; ">
           OUR PARTNERS
-          <hr style="width:150px; margin-left:570px" />
+          <hr style="width:150px; text-align:center" />
         </h2>
 
         <hooper
@@ -311,39 +322,72 @@
           :progress="true"
           :autoPlay="true"
           :playSpeed="4000"
-          style="margin-bottom:40px"
+          style="margin-bottom:40px; margin-left:0px"
         >
           <slide>
-            <v-col>
-              <!-- <v-img src="../assets/1.jpeg" aspect-ratio="2">1
-                <div class="fill-height bottom-gradient"></div>
-              </v-img>-->
-              <img class="col-sm-12" src="../assets/1.jpeg" style="width:7em; height:10em;" />
+            <v-col style>
+              <img
+                class="col-sm-12"
+                src="../assets/1.jpeg"
+                style="  margin: 1px auto 1px;
+    display: block;width:7em; height:10em; "
+              />
+              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img class="col-sm-12" src="../assets/2.png" style="width:7em; height:10em;" />
+              <img
+                class="col-sm-12"
+                src="../assets/1.jpeg"
+                style="  margin: 1px auto 1px;
+    display: block;width:7em; height:10em; "
+              />
+              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img class="col-sm-12" src="../assets/3.jpeg" style="width:7em; height:10em;" />
+              <img
+                class="col-sm-12"
+                src="../assets/1.jpeg"
+                style="  margin: 1px auto 1px;
+    display: block;width:7em; height:10em; "
+              />
+              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img class="col-sm-12" src="../assets/5.png" style="width:7em; height:10em;" />
+              <img
+                class="col-sm-12"
+                src="../assets/1.jpeg"
+                style="  margin: 1px auto 1px;
+    display: block;width:7em; height:10em; "
+              />
+              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img class="col-sm-12" src="../assets/5.png" style="width:7em; height:10em;" />
+              <img
+                class="col-sm-12"
+                src="../assets/1.jpeg"
+                style="  margin: 1px auto 1px;
+    display: block;width:7em; height:10em; "
+              />
+              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
             </v-col>
           </slide>
           <slide>
             <v-col>
-              <img class="col-sm-12" src="../assets/5.png" style="width:7em; height:10em;" />
+              <img
+                class="col-sm-12"
+                src="../assets/1.jpeg"
+                style="  margin: 1px auto 1px;
+    display: block;width:7em; height:10em; "
+              />
+              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
             </v-col>
           </slide>
         </hooper>
@@ -436,12 +480,13 @@ export default {
 
 <style lang="css" scoped>
 @media only screen and (max-width: 600px) {
-p{
-  font-size: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  color: blue
-}}
+  p {
+    font-size: 15px;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: blue;
+  }
+}
 .carousel-item {
   height: 85vh;
   min-height: 350px;
@@ -483,7 +528,5 @@ p{
 .card-size {
   font-size: 30px;
 }
-
-  
 </style>
 

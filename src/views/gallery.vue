@@ -2,7 +2,13 @@
   <div>
     <div>
       <nava />
-      .
+    </div>
+
+    <div class="jumbotron jumbotron-fluid" style="background-color:rgb(24, 160, 214">
+      <div class="container"> <br>
+        <h1 class="display-3">gallery</h1>
+       
+      </div>
     </div>
 
     <section class="gallery" style="margin-top:50px">
@@ -89,14 +95,14 @@
       </div>
     </section>
     <div>
-<foota/>
+      <foota />
     </div>
   </div>
 </template>
 
 <script>
 import nava from "../components/testnav";
-import foota from "../components/footer"
+import foota from "../components/footer";
 export default {
   components: {
     nava,

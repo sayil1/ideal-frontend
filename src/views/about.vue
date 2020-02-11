@@ -4,7 +4,7 @@
 
     <!-- who we are -->
 
-    <div  style="padding:50px; padding-top:80px; background-color:rgb(24, 160, 214) ">
+    <div style="padding:50px; padding-top:80px; background-color:rgb(24, 160, 214) ">
       <h1
         class="white--text font-weight-bold"
         style="text-align:center; margin-top:50px"
@@ -20,7 +20,7 @@
           >
             <div class="card-body">
               <p
-                class=" card-text white--text font-weight-regular"
+                class="card-text white--text font-weight-regular"
               >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
               <h2 class="card-subtitle mb-2 mt-4 white--text font-weight-bold">Vision</h2>
               <hr class="my-4" style=" border-top: 1px solid white;" />
@@ -42,7 +42,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-4">
-            <h1 class="display-4 white--text font-weight-regular" style=" margin-top:70px">MISSION</h1>
+            <h1 class=" font-weight-regular mission" style=" margin-top:70px">MISSION</h1>
           </div>
 
           <div class="col-sm col-md-8">
@@ -52,9 +52,10 @@
   border: 2px solid white;"
             >
               <div class="card-body" s>
-                <p class=" card-text white--text font-weight-regular">
+                <p class="card-text white--text font-weight-regular">
                   Provide
-                  <span class="primary--text">quality</span> assured learning services, programs and support through a constant upgrade of knowledge, skills and strategic partnerships that will build self-reliant individuals and developed  <span class="primary--text">communities</span>.
+                  <span class="primary--text">quality</span> assured learning services, programs and support through a constant upgrade of knowledge, skills and strategic partnerships that will build self-reliant individuals and developed
+                  <span class="primary--text">communities</span>.
                 </p>
 
                 <hr class="my-4" style=" border-top: 1px solid white;" />
@@ -80,7 +81,7 @@
           >
             <div class="card-body" style>
               <p
-                class=" card-text blue--text font-weight-regular"
+                class="card-text blue--text font-weight-regular"
               >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.,</p>
             </div>
           </div>
@@ -119,7 +120,17 @@ export default {
   width: 100%;
 }
 
+  .mission {
+    color: coral;
+    font-size: 60px;
+  }
+
+
 @media only screen and (min-width: 600px) {
+  .mission {
+    color: white;
+    font-size: 10px;
+  }
   /* For tablets: */
   .col-s-1 {
     width: 8.33%;
@@ -166,6 +177,10 @@ export default {
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
+  .mission {
+    color: white;
+    font-size: 80px;
+  }
   .col-1 {
     width: 8.33%;
   }

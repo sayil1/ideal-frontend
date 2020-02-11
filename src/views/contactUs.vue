@@ -8,8 +8,7 @@
       <div class="container" style="margin-top:50px">
         <h1 class="display-2">
           <span class="Regular">
-            Dont be a stanger
-            <br />just say HELLO
+            Contact Us
           </span>
         </h1>
       </div>

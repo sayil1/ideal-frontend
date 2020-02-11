@@ -18,6 +18,7 @@ import career from '../views/career'
 import contact from '../views/contactUs';
 import adminLogin from '../views/adminViews/adminLogin'
 import adminIndex from '../views/adminViews/adminIndex'
+import events from '../views/adminViews/events'
 
 Vue.use(VueRouter)
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/events',
+    name: 'events',
+    component: events
   },
   {
     path: '/admin',
