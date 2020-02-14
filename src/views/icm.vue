@@ -3,19 +3,19 @@
     <nava />
     <div
       class="jumbotron jumbotron-fluid"
-      style="background-color:rgb(35, 159, 216); margin-bottom:0px"
+      style="background-color:rgb(0, 204, 102); margin-bottom:0px"
     >
-      <div class="container" style="margin-top:80px; margin-bottom:-80px">
-        <h1 class="display-2">ICM UK APPROVED CENTER</h1>
+      <div class="container" style="margin-top:120px; margin-bottom:-80px">
+        <h1 class="car-head">ICM UK APPROVED CENTER</h1>
       </div>
     </div>
     <div class style>
       <!-- card -->
-      <div class="row" style="background-color:rgb(35, 159, 216);">
+      <div class="row" style="background-color:rgb(0, 204, 102);">
         <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
-              <p class="card-text blue--text font-weight-regular">
+              <p class="card-text green--text font-weight-regular">
                 The Institute of Commercial Management (ICM) is the leading professional body providing qualifications that are recognized globally in business, management and related vocational areas. The programmes are designed to address and respond to the training needs as well as the personal development of learners, whether entering or continuing to work within the wide and varied commercial sector.
                 <br />
                 <br />IDEaL, as an ICM Approved Teaching and Examination Center ensures that the best possible education and support is given to learners in this region.
@@ -39,7 +39,7 @@
 
                 <span>
                   <v-list-item two-line>
-                    <v-list-item-content style="color:rgb(35, 159, 216)">
+                    <v-list-item-content style="color:rgb(0, 204, 102)">
                       <v-list-item-title
                         class="font-weight-bold"
                       >Engineering and Manufacturing Technologies</v-list-item-title>
@@ -47,7 +47,7 @@
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item two-line>
-                    <v-list-item-content style="color:rgb(35, 159, 216)">
+                    <v-list-item-content style="color:rgb(0, 204, 102)">
                       <v-list-item-title
                         class="font-weight-bold"
                       >Information and Communication Technology (ICT)</v-list-item-title>
@@ -55,7 +55,7 @@
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item two-line>
-                    <v-list-item-content style="color:rgb(35, 159, 216)">
+                    <v-list-item-content style="color:rgb(0, 204, 102)">
                       <v-list-item-title
                         class="font-weight-bold"
                       >Information and Communication Technology (ICT)</v-list-item-title>
@@ -64,7 +64,7 @@
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item two-line>
-                    <v-list-item-content style="color:rgb(35, 159, 216)">
+                    <v-list-item-content style="color:rgb(0, 204, 102)">
                       <v-list-item-title class="font-weight-bold">Leisure, Travel and Tourism</v-list-item-title>
                       <v-list-item-title>-Tourism</v-list-item-title>
                     </v-list-item-content>
@@ -110,7 +110,7 @@
                   >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
                 </v-list>-->
                 <v-list-item two-line>
-                  <v-list-item-content style="color:rgb(35, 159, 216)">
+                  <v-list-item-content style="color:rgb(0, 204, 102)">
                     <v-list-item-title
                       class="font-weight-bold"
                     >Business, Administration, Finance and Law</v-list-item-title>
@@ -125,7 +125,7 @@
                   </v-list-item-content>
                 </v-list-item>
                 <v-list-item two-line>
-                  <v-list-item-content style="color:rgb(35, 159, 216)">
+                  <v-list-item-content style="color:rgb(0, 204, 102)">
                     <v-list-item-title
                       class="font-weight-bold"
                     >IDEaL’s approved ICM UK Center offers the unlisted ICM UK qualifications:</v-list-item-title>
@@ -222,5 +222,56 @@ export default {
 template {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media only screen and (max-width: 400px) {
+  .car {
+    font-size: 2px;
+    margin: 0px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 30px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 25px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
+  }
 }
 </style>

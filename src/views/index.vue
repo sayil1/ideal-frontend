@@ -9,7 +9,6 @@
         cycle
         height="620"
         show-arrows-on-hover
-        class="car"
       >
         <v-carousel-item class="div1">
           <div style="background-color: rgba(21, 22, 21, 0.4)">
@@ -17,30 +16,27 @@
               <div class="card-body" style>
                 <div style="margin-top:90px ; ">
                   <div
-                    class="card-text white--text font-weight-regular"
+                    class="car card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
                     <br />
                     <br />
-                    <div 
-                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
-                    padding:10px; text-align:center; border-radius:45px "
-                    >
-                      <span
-                        class="display-1 text-center"
-                        style="text-align:center; color:orange; padding-bottom:80px"
-                      >PROFESSIONAL EDUCATION</span>
+                    <div class="car-text">
+                      <span class="car-head" style>PROFESSIONAL EDUCATION</span>
                       <br />
                       <br />Our professional education programs enable learners acquire content knowledge and learn to apply techniques relevant to jobs and careers across the
                       <strong>Information Technology</strong> and
                       <strong>Business Development</strong> spectrum.
                       <br />On completion, participants are able to develop cutting-edge skills, earn must-have certifications as well as learn best practices for a rewarding long-term career.
+                      <br />
+                      <br />
+                      <div class="text-center">
+                        <router-link to="/prof">
+                          <v-btn rounded color="green" dark>See More</v-btn>
+                        </router-link>
+                      </div>
                     </div>
-                    <div class="text-center">
-                      <router-link to="/prof">
-                        <v-btn rounded color="green" dark>See More</v-btn>
-                      </router-link>
-                    </div>
+
                     <br />
                   </div>
                   <div class="text-center"></div>
@@ -54,30 +50,23 @@
             <div class="card-size">
               <div class="card-body" style>
                 <div style="margin-top:90px ; ">
-                  <div
-                    class="card-text white--text font-weight-regular"
-                    
-                  >
+                  <div class="card-text white--text font-weight-regular">
                     <br />
                     <br />
-                    <div
-                    class="car"
-                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
-                    padding:10px; text-align:center; border-radius:45px "
-                    >
-                      <span
-                        class="display-1 text-center"
-                        style="text-align:center; color:orange; padding-bottom:80px"
-                      >ICM UK Approved Center</span>
+                    <div class="car-text">
+                      <span class="car-head">ICM UK Approved Center</span>
                       <br />
                       <br />The Institute of Commercial Management (ICM) UK is a leading professional body providing qualifications at
                       <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma</strong> levels that are recognized globally in business, management and related vocational
+                      <div class="text-center">
+                        <br />
+                        <br />
+                        <router-link to="/prof">
+                          <v-btn rounded color="green" dark>See More</v-btn>
+                        </router-link>
+                      </div>
                     </div>
-                    <div class="text-center">
-                      <router-link to="/prof">
-                        <v-btn rounded color="green" dark>See More</v-btn>
-                      </router-link>
-                    </div>
+
                     <br />
                   </div>
                   <div class="text-center"></div>
@@ -97,22 +86,19 @@
                   >
                     <br />
                     <br />
-                    <div
-                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
-                    padding:10px; text-align:center; border-radius:45px "
-                    >
-                      <span
-                        class="display-1 text-center"
-                        style="text-align:center; color:orange; padding-bottom:80px"
-                      >TRAIN-THE-TRAINER WORKSHOPS</span>
+                    <div class="car-text">
+                      <span class="car-head">TRAIN-THE-TRAINER WORKSHOPS</span>
                       <br />
-                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize their current methods of instruction or wish to engage in careers
+                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize their current methods of instruction or wish to engage in careers.
+                      <br />
+                      <br />
+                      <div class="text-center">
+                        <router-link to="/prof">
+                          <v-btn rounded color="green" dark>See More</v-btn>
+                        </router-link>
+                      </div>
                     </div>
-                    <div class="text-center">
-                      <router-link to="/prof">
-                        <v-btn rounded color="green" dark>See More</v-btn>
-                      </router-link>
-                    </div>
+
                     <br />
                   </div>
                   <div class="text-center"></div>
@@ -132,22 +118,19 @@
                   >
                     <br />
                     <br />
-                    <div
-                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
-                    padding:10px; text-align:center; border-radius:45px "
-                    >
-                      <span
-                        class="display-1 text-center"
-                        style="text-align:center; color:orange; padding-bottom:80px"
-                      >TEST PREPARATION</span>
+                    <div class="car-text">
+                      <span class="car-head">TEST PREPARATION</span>
                       <br />
                       <br />Acquire exceptional support to improve your exam techniques and increase your performance on standardized tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT.
+                      <br />
+                      <br />
+                      <div class="text-center">
+                        <router-link to="/prof">
+                          <v-btn rounded color="green" dark>See More</v-btn>
+                        </router-link>
+                      </div>
                     </div>
-                    <div class="text-center">
-                      <router-link to="/prof">
-                        <v-btn rounded color="green" dark>See More</v-btn>
-                      </router-link>
-                    </div>
+
                     <br />
                   </div>
                   <div class="text-center"></div>
@@ -167,22 +150,19 @@
                   >
                     <br />
                     <br />
-                    <div
-                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
-                    padding:10px; text-align:center; border-radius:45px "
-                    >
-                      <span
-                        class="display-1 text-center"
-                        style="text-align:center; color:orange; padding-bottom:80px"
-                      >OVERSEAS ADMISSION CONSULTING</span>
+                    <div class="car-text">
+                      <span class="car-head">OVERSEAS ADMISSION CONSULTING</span>
                       <br />
                       <br />We have a unique track record of enlisting students with diverse qualifications and career drives into our partner foreign universities and colleges.
+                      <br />
+                      <br />
+                      <div class="text-center">
+                        <router-link to="/prof">
+                          <v-btn rounded color="green" dark>See More</v-btn>
+                        </router-link>
+                      </div>
                     </div>
-                    <div class="text-center">
-                      <router-link to="/prof">
-                        <v-btn rounded color="green" dark>See More</v-btn>
-                      </router-link>
-                    </div>
+
                     <br />
                   </div>
                   <div class="text-center"></div>
@@ -203,10 +183,10 @@
             </v-img>
           </div>-->
           <div class="col-md-12">
-            <h2
+            <h1
               class="dislay-1 font-weight-light"
               style="color:#f4c542;text-align:center"
-            >Who we are</h2>
+            >Who we are</h1>
 
             <div
               style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); margin:30px;
@@ -214,7 +194,7 @@
             >
               <div
                 class="headline font-weight-light"
-                style="text-align:center; padding:20px; color:white"
+                style="text-align:center; padding:20px; color:white; padding-bottom:20px; padding-top:20px"
               >INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL) was founded by young professionals who believe that youth can contribute significantly to building a better society. Having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps</div>
               <br />
             </div>
@@ -325,52 +305,52 @@
                 <small></small>
                 <br />“COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL” - IDEAL
                 <small>
-                  <br />“Knowledge is power.Information is liberating.education is the premise of progress,in every society,in every family” .Kofi Anan
+                  <br />
+                  <br />“Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family”.
+                  <br />~ Kofi Anan ~
                 </small>
               </h3>
-                <br />
+              <br />
 
-
-                <div class="row" style="text-align:center">
-                  <div class="col-md-2 subtitle-2 font-weight-black">
-                    <v-icon large color="primary darken-2">mdi-book-open-variant</v-icon>
-                    <div class="demo-content">SCHOOL BOOKS</div>
-                  </div>
-
-                  <div class="col-md-2 subtitle-2 font-weight-black">
-                    <v-icon large color="primary darken-2">mdi-tshirt-v</v-icon>
-                    <div class="demo-content">UNIFORMS</div>
-                  </div>
-                  <div class="col-md-2 subtitle-2 font-weight-black">
-                    <v-icon large color="primary darken-2">mdi-cash</v-icon>
-                    <div class="demo-content">FEES</div>
-                  </div>
-                  <div class="col-md-2 subtitle-2 font-weight-black">
-                    <v-icon large color="primary darken-2">mdi-home</v-icon>
-                    <div class="demo-content">SCHOOL RENOVATION</div>
-                  </div>
-                  <div class="col-md-2 subtitle-2 font-weight-black">
-                    <v-icon large color="primary darken-2">mdi-teach</v-icon>
-                    <div class="demo-content">TRAINING</div>
-                  </div>
-                  <div class="col-md-2 subtitle-2 font-weight-black">
-                    <v-icon large color="primary darken-2">mdi-server-network</v-icon>
-                    <div class="demo-content">COMPUTER SERVER</div>
-                  </div>
+              <div class="row" style="text-align:center">
+                <div class="col-md-2 subtitle-2 font-weight-black">
+                  <v-icon large color="primary darken-2">mdi-book-open-variant</v-icon>
+                  <div class="demo-content">SCHOOL BOOKS</div>
                 </div>
-                <div class="row">
-                  <div class="col-md-4" ></div>
-                  <div class="col-md-4"  style="margin-top: 50px;  margin-bottom: 50px; "  >
-                    <button
-                      type="button"
-                      class="btn btn-primary"
-                      data-toggle="modal"
-                      data-target="#exampleModalCenter"
-                    
-                    >Support a project</button>
-                  </div>
-                  <div class="col-md-4"></div>
+
+                <div class="col-md-2 subtitle-2 font-weight-black">
+                  <v-icon large color="primary darken-2">mdi-tshirt-v</v-icon>
+                  <div class="demo-content">UNIFORMS</div>
                 </div>
+                <div class="col-md-2 subtitle-2 font-weight-black">
+                  <v-icon large color="primary darken-2">mdi-cash</v-icon>
+                  <div class="demo-content">FEES</div>
+                </div>
+                <div class="col-md-2 subtitle-2 font-weight-black">
+                  <v-icon large color="primary darken-2">mdi-home</v-icon>
+                  <div class="demo-content">SCHOOL RENOVATION</div>
+                </div>
+                <div class="col-md-2 subtitle-2 font-weight-black">
+                  <v-icon large color="primary darken-2">mdi-teach</v-icon>
+                  <div class="demo-content">TRAINING</div>
+                </div>
+                <div class="col-md-2 subtitle-2 font-weight-black">
+                  <v-icon large color="primary darken-2">mdi-server-network</v-icon>
+                  <div class="demo-content">COMPUTER SERVER</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4" style="margin-top: 50px;  margin-bottom: 50px; ">
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                  >Support a project</button>
+                </div>
+                <div class="col-md-4"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -387,74 +367,87 @@
           :progress="true"
           :autoPlay="true"
           :playSpeed="4000"
-          style="margin-bottom:40px; margin-left:0px"
+          style="margin-bottom:40px; margin-left:-25px "
         >
           <slide>
             <v-col style>
               <img
-                class="col-sm-12"
-                src="../assets/1.jpeg"
-                style="  margin: 1px auto 1px;
-    display: block;width:7em; height:10em; "
+                src="../assets/toefl.png"
+                style=" display: block;
+   width: 150px;
+    height: 100px; text-align:center; display: block;
+  margin-left: auto;
+  margin-right: auto;"
               />
-              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
+              <!-- <div style="text-align:center">TOEFL</div> -->
             </v-col>
           </slide>
           <slide>
             <v-col>
               <img
-                class="col-sm-12"
-                src="../assets/1.jpeg"
-                style="  margin: 1px auto 1px;
-    display: block;width:7em; height:10em; "
+                src="../assets/icm.jpeg"
+                style=" display: block;
+  width: 150px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
               />
-              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
+              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
             <v-col>
               <img
-                class="col-sm-12"
-                src="../assets/1.jpeg"
-                style="  margin: 1px auto 1px;
-    display: block;width:7em; height:10em; "
+                src="../assets/pea.jpeg"
+                style=" display: block;
+  width: 150px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
               />
-              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
+              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
             <v-col>
               <img
-                class="col-sm-12"
-                src="../assets/1.jpeg"
-                style="  margin: 1px auto 1px;
-    display: block;width:7em; height:10em; "
+                src="../assets/cisco.png"
+                style=" display: block;
+  width: 150px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
               />
-              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
+              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
             <v-col>
               <img
-                class="col-sm-12"
-                src="../assets/1.jpeg"
-                style="  margin: 1px auto 1px;
-    display: block;width:7em; height:10em; "
+                src="../assets/nsrp.png"
+                style=" display: block;
+  width: 150px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
               />
-              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
+              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
             <v-col>
               <img
-                class="col-sm-12"
-                src="../assets/1.jpeg"
-                style="  margin: 1px auto 1px;
-    display: block;width:7em; height:10em; "
+                src="../assets/nde.jpeg"
+                style=" display: block;
+  width: 150px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
               />
-              <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div>
+              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
+        
         </hooper>
       </template>
     </section>
@@ -480,7 +473,7 @@ export default {
 
   data: () => ({
     hooperSettings: {
-      itemsToShow: 5,
+      itemsToShow: null,
       centerMode: true,
       infiniteScroll: true,
       progress: true,
@@ -521,6 +514,9 @@ export default {
       }
     ]
   }),
+  created() {
+    this.isMobile();
+  },
   methods: {
     test: function() {
       serv.testers();
@@ -536,6 +532,17 @@ export default {
       };
       alert(newData);
       serv.postRequest("proj/newProj", newData);
+    },
+    isMobile() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // var element = document.getElementById("text");
+      if (isMobile) {
+        // alert("u are using mobile");
+        this.hooperSettings.itemsToShow = 1;
+      } else {
+        // alert("you are on desktop");
+        this.hooperSettings.itemsToShow = 5;
+      }
     }
   }
 };
@@ -544,7 +551,6 @@ export default {
 
 
 <style lang="css" scoped>
-
 .carousel-item {
   height: 85vh;
   min-height: 350px;
@@ -588,25 +594,54 @@ export default {
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-  
-  .car{
-    font-size: 5px;
-    color:red;
-    margin:0px
+  .car {
+    font-size: 2px;
+
+    margin: 0px;
+  }
+  .car-head {
+    font-size: 20px;
+    color: orange;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 480px;
+    padding-top: 20px;
+    text-align: center;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
-    background-color: #F5CF8E; /* Yellow */
+    background-color: #f5cf8e; /* Yellow */
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   body {
-    background-color: #B2D6FF; /* Blue */
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 60px;
+  }
+  .car-head {
+    font-size: 30px;
+    color: orange;
+    text-align: center;
+    padding-bottom: 80px;
+  }
+  .car-text {
+    font-size: 20px;
+    background-color: rgba(21, 22, 21, 0.4);
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
   }
 }
 </style>

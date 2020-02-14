@@ -4,15 +4,15 @@
 
     <!-- who we are -->
 
-    <div style="padding:50px; padding-top:80px; background-color:rgb(24, 160, 214) ">
+    <div style="padding:50px; padding-top:80px; background-color:rgb(0, 204, 102) ">
       <h1
         class="white--text font-weight-bold"
-        style="text-align:center; margin-top:50px"
+        style="text-align:center; margin-top:100px"
       >OUR MAJOR GOAL!!</h1>
       <hr class="my-4" />
 
       <div class="row">
-        <div class="col-sm col-md-8">
+        <div class="col-sm col-md-12 car">
           <div
             class="card card-size"
             style="  background: rgba(76, 175, 80, 0.1); border-radius: 25px;
@@ -20,42 +20,40 @@
           >
             <div class="card-body">
               <p
-                class="card-text white--text font-weight-regular"
+                class="card-text white--text font-weight-regular car-text"
               >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
-              <h2 class="card-subtitle mb-2 mt-4 white--text font-weight-bold">Vision</h2>
+              <h2 class="card-subtitle mb-2 mt-4 white--text font-weight-bold " style="text-align:center">Vision</h2>
               <hr class="my-4" style=" border-top: 1px solid white;" />
               <p
-                class="card-text white--text font-weight-regular"
+                class="card-text white--text font-weight-regular car-text"
               >Develop individuals and communities towards a knowledge-based society.</p>
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4">
-          <v-img src="../assets/info.svg" style="margin-top:70px; width:700px"></v-img>
-        </div>
+        
       </div>
 
       <!-- card -->
     </div>
 
-    <div class="img" style="padding:50px">
+    <div class="img" style="">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4">
-            <h1 class=" font-weight-regular mission" style=" margin-top:70px">MISSION</h1>
+        <div class="row car" >
+          <div class="col-md-12" >
+            <h1 class=" white--text font-weight-bold car-head" style=" text-align:center; c  ">MISSION</h1> 
           </div>
 
-          <div class="col-sm col-md-8">
+          <div class="col-sm col-md-12 ">
             <div
               class="card card-size"
               style=" background: rgba(0, 0, 0, 0.1); border-radius: 25px;
   border: 2px solid white;"
             >
-              <div class="card-body" s>
-                <p class="card-text white--text font-weight-regular">
+              <div class="card-body " >
+                <p class="card-text white--text car-text">
                   Provide
-                  <span class="primary--text">quality</span> assured learning services, programs and support through a constant upgrade of knowledge, skills and strategic partnerships that will build self-reliant individuals and developed
-                  <span class="primary--text">communities</span>.
+                  <span class="warning--text">quality</span> assured learning services, programs and support through a constant upgrade of knowledge, skills and strategic partnerships that will build self-reliant individuals and developed
+                  <span class="warning--text">communities</span>.
                 </p>
 
                 <hr class="my-4" style=" border-top: 1px solid white;" />
@@ -68,27 +66,25 @@
     </div>
 
     <div class style="padding:50px">
-      <h1 class="display-3 blue--text font-weight-regular" style="text-align:center">OUR APPROACH</h1>
+      <h1 class="car-head green--text " >OUR APPROACH</h1>
       <hr class="my-4" />
 
       <!-- card -->
       <div class="row">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-12">
           <div
             class="card card-size"
             style="  background: rgba(76, 175, 80, 0.2); border-radius: 25px;
   border: 2px solid white"
           >
-            <div class="card-body" style>
+            <div class="card-body car-text" style>
               <p
-                class="card-text blue--text font-weight-regular"
+                class="card-text green--text font-weight-regular"
               >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.,</p>
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style="margin-top:70px; width:700px"></v-img>
-        </div>
+       
       </div>
     </div>
     <foota />
@@ -120,107 +116,57 @@ export default {
   width: 100%;
 }
 
-  .mission {
-    color: coral;
-    font-size: 60px;
-  }
+  
 
+@media only screen and (max-width: 400px) {
+  .car {
+    font-size: 2px;
 
-@media only screen and (min-width: 600px) {
-  .mission {
-    color: white;
-    font-size: 10px;
+    margin: 0px;
   }
-  /* For tablets: */
-  .col-s-1 {
-    width: 8.33%;
+  .car-head {
+    font-size: 40px;
+    color: orange;
+    text-align: center;
+    padding-top: 50px;
   }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
-  .card-size {
-    margin: 10px;
-    width: 40rem;
-    font-size: 10px;
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 20px;
+
+    text-align: center;
   }
 }
 
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .mission {
-    color: white;
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 30px;
+  }
+  .car-head {
     font-size: 80px;
+    color: orange;
+    text-align: center;
+    
   }
-  .col-1 {
-    width: 8.33%;
-  }
-  .col-2 {
-    width: 16.66%;
-  }
-  .col-3 {
-    width: 25%;
-  }
-  .col-4 {
-    width: 33.33%;
-  }
-  .col-5 {
-    width: 41.66%;
-  }
-  .col-6 {
-    width: 50%;
-  }
-  .col-7 {
-    width: 58.33%;
-  }
-  .col-8 {
-    width: 66.66%;
-  }
-  .col-9 {
-    width: 75%;
-  }
-  .col-10 {
-    width: 83.33%;
-  }
-  .col-11 {
-    width: 91.66%;
-  }
-  .col-12 {
-    width: 100%;
-  }
-  .card-size {
-    margin-left: 100px;
-    width: 40rem;
+  .car-text {
     font-size: 25px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
   }
 }
 </style>
