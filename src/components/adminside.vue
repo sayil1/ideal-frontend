@@ -72,27 +72,27 @@
       <li class="nav-item">
       <a class="nav-link " href="#" aria-expanded="true"
           aria-controls="collapseThree">
-         <v-icon small color="white">mdi-domain</v-icon>
+         <v-icon small color="white">mdi-party-popper</v-icon>
           <span>Events</span>
         </a>
       </li>
        <li class="nav-item">
       <a class="nav-link " href="#"  aria-expanded="true"
           aria-controls="collapseThree">
-         <v-icon small color="white">mdi-domain</v-icon>
+         <v-icon small color="white">mdi-teach</v-icon>
           <span>Webinars</span>
         </a>
       </li>
        <li class="nav-item">
       <a class="nav-link " href="#"  aria-expanded="true"
           aria-controls="collapseThree">
-           <v-icon small color="white">mdi-domain</v-icon>
+           <v-icon small color="white">mdi-trophy</v-icon>
           <span>Contests</span>
         </a>
       <li class="nav-item">
       <a class="nav-link " href="#"  aria-expanded="true"
           aria-controls="collapseThree">
-           <v-icon small color="white">mdi-domain</v-icon>
+           <v-icon small color="white">mdi-laptop</v-icon>
           <span>Projects</span>
         </a>
       </li>

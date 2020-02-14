@@ -1,143 +1,191 @@
 <template>
   <div class>
     <nava />
+
     <header>
       <v-carousel
         hide-delimiter-background
         delimiter-icon="mdi-minus"
         cycle
-        height="600"
+        height="620"
         show-arrows-on-hover
+        class="car"
       >
         <v-carousel-item class="div1">
-          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+          <div style="background-color: rgba(21, 22, 21, 0.4)">
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:150px">
-                  <p
+                <div style="margin-top:90px ; ">
+                  <div
                     class="card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
-                    <span
-                      class="display-2 text-center"
-                      style="text-align:center; "
-                    >PROFESSIONAL EDUCATION</span>
                     <br />
-                    <br />Our professional education programs enable learners acquire content knowledge and learn to apply techniques relevant to jobs and careers across the
-                    <strong>Information Technology</strong> and
-                    <strong>Business Development</strong> spectrum.
-                    <br />On completion, participants are able to develop cutting-edge skills, earn must-have certifications as well as learn best practices for a rewarding long-term career.
                     <br />
-                  </p>
-                  <div class="text-center">
-                    <router-link to="/prof">
-                      <v-btn rounded color="primary" dark>See More</v-btn>
-                    </router-link>
+                    <div 
+                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
+                    padding:10px; text-align:center; border-radius:45px "
+                    >
+                      <span
+                        class="display-1 text-center"
+                        style="text-align:center; color:orange; padding-bottom:80px"
+                      >PROFESSIONAL EDUCATION</span>
+                      <br />
+                      <br />Our professional education programs enable learners acquire content knowledge and learn to apply techniques relevant to jobs and careers across the
+                      <strong>Information Technology</strong> and
+                      <strong>Business Development</strong> spectrum.
+                      <br />On completion, participants are able to develop cutting-edge skills, earn must-have certifications as well as learn best practices for a rewarding long-term career.
+                    </div>
+                    <div class="text-center">
+                      <router-link to="/prof">
+                        <v-btn rounded color="green" dark>See More</v-btn>
+                      </router-link>
+                    </div>
+                    <br />
                   </div>
+                  <div class="text-center"></div>
                 </div>
               </div>
             </div>
           </div>
         </v-carousel-item>
         <v-carousel-item class="div2">
-          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:150px">
-                  <p
+                <div style="margin-top:90px ; ">
+                  <div
                     class="card-text white--text font-weight-regular"
-                    style="margin-left:40px; margin-right:40px"
+                    
                   >
-                    <span
-                      class="display-2 text-center"
-                      style="text-align:center; "
-                    >ICM UK Approved Center</span>
                     <br />
-                    <br />The Institute of Commercial Management (ICM) UK is a leading professional body providing qualifications at
-                    <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma</strong> and
-                    <strong>Post Graduate Diploma</strong>
-                    <br />levels that are recognized globally in business, management and related vocational areas.
-                  </p>
-                  <div class="text-center">
-                    <router-link to="/icm">
-                      <v-btn rounded color="primary" dark>See More</v-btn>
-                    </router-link>
+                    <br />
+                    <div
+                    class="car"
+                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
+                    padding:10px; text-align:center; border-radius:45px "
+                    >
+                      <span
+                        class="display-1 text-center"
+                        style="text-align:center; color:orange; padding-bottom:80px"
+                      >ICM UK Approved Center</span>
+                      <br />
+                      <br />The Institute of Commercial Management (ICM) UK is a leading professional body providing qualifications at
+                      <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma</strong> levels that are recognized globally in business, management and related vocational
+                    </div>
+                    <div class="text-center">
+                      <router-link to="/prof">
+                        <v-btn rounded color="green" dark>See More</v-btn>
+                      </router-link>
+                    </div>
+                    <br />
                   </div>
+                  <div class="text-center"></div>
                 </div>
               </div>
             </div>
           </div>
         </v-carousel-item>
         <v-carousel-item class="div3">
-          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:150px">
-                  <p
+                <div style="margin-top:90px ; ">
+                  <div
                     class="card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
-                    <span
-                      class="display-2 text-center"
-                      style="text-align:center; "
-                    >TRAIN-THE-TRAINER WORKSHOPS</span>
                     <br />
-                    <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize their current methods of instruction or wish to engage in careers such
-                  </p>
-                  <div class="text-center">
-                    <router-link to="/train">
-                      <v-btn rounded color="primary" dark>See More</v-btn>
-                    </router-link>
+                    <br />
+                    <div
+                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
+                    padding:10px; text-align:center; border-radius:45px "
+                    >
+                      <span
+                        class="display-1 text-center"
+                        style="text-align:center; color:orange; padding-bottom:80px"
+                      >TRAIN-THE-TRAINER WORKSHOPS</span>
+                      <br />
+                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize their current methods of instruction or wish to engage in careers
+                    </div>
+                    <div class="text-center">
+                      <router-link to="/prof">
+                        <v-btn rounded color="green" dark>See More</v-btn>
+                      </router-link>
+                    </div>
+                    <br />
                   </div>
+                  <div class="text-center"></div>
                 </div>
               </div>
             </div>
           </div>
         </v-carousel-item>
         <v-carousel-item class="div4">
-          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:150px">
-                  <p
+                <div style="margin-top:90px ; ">
+                  <div
                     class="card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
-                    <span class="display-2 text-center" style="text-align:center; ">TEST PREPARATION</span>
                     <br />
-                    <br />Acquire exceptional support to improve your exam techniques and increase your performance on standardized tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT
-                  </p>
-                  <div class="text-center">
-                    <router-link to="/test">
-                      <v-btn rounded color="primary" dark>See More</v-btn>
-                    </router-link>
+                    <br />
+                    <div
+                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
+                    padding:10px; text-align:center; border-radius:45px "
+                    >
+                      <span
+                        class="display-1 text-center"
+                        style="text-align:center; color:orange; padding-bottom:80px"
+                      >TEST PREPARATION</span>
+                      <br />
+                      <br />Acquire exceptional support to improve your exam techniques and increase your performance on standardized tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT.
+                    </div>
+                    <div class="text-center">
+                      <router-link to="/prof">
+                        <v-btn rounded color="green" dark>See More</v-btn>
+                      </router-link>
+                    </div>
+                    <br />
                   </div>
+                  <div class="text-center"></div>
                 </div>
               </div>
             </div>
           </div>
         </v-carousel-item>
         <v-carousel-item class="div5">
-          <div style="background: rgba(21, 22, 21, 0.7); height:100%">
+          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:150px">
-                  <p
+                <div style="margin-top:90px ; ">
+                  <div
                     class="card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
-                    <span
-                      class="display-2 text-center"
-                      style="text-align:center; "
-                    >OVERSEAS ADMISSION CONSULTING</span>
                     <br />
-                    <br />We have a unique track record of enlisting students with diverse qualifications and career drives into our partner foreign universities and colleges.
-                  </p>
-                  <div class="text-center">
-                    <router-link to="/over">
-                      <v-btn rounded color="primary" dark>See More</v-btn>
-                    </router-link>
+                    <br />
+                    <div
+                      style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); height:100%; margin:60px;
+                    padding:10px; text-align:center; border-radius:45px "
+                    >
+                      <span
+                        class="display-1 text-center"
+                        style="text-align:center; color:orange; padding-bottom:80px"
+                      >OVERSEAS ADMISSION CONSULTING</span>
+                      <br />
+                      <br />We have a unique track record of enlisting students with diverse qualifications and career drives into our partner foreign universities and colleges.
+                    </div>
+                    <div class="text-center">
+                      <router-link to="/prof">
+                        <v-btn rounded color="green" dark>See More</v-btn>
+                      </router-link>
+                    </div>
+                    <br />
                   </div>
+                  <div class="text-center"></div>
                 </div>
               </div>
             </div>
@@ -149,22 +197,32 @@
     <div>
       <v-container>
         <div class="row" style="margin-top:20px">
-          <div class="col-md-4 sm-12">
+          <!-- <div class="col-md-4 sm-12">
             <v-img src="../assets/first.jpeg">
               <div class="fill-height bottom-gradient"></div>
             </v-img>
-          </div>
-          <div class="col-md-8">
-            <h2 class="dislay-1 font-weight-light" style="color:#f4c542">Who we are</h2>
-            <hr style="width:100px" />
+          </div>-->
+          <div class="col-md-12">
+            <h2
+              class="dislay-1 font-weight-light"
+              style="color:#f4c542;text-align:center"
+            >Who we are</h2>
+
             <div
-              class="headline font-weight-light"
-            >INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL) was founded by young professionals who believe that youth can contribute significantly to building a better society. Having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps,</div>
+              style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); margin:30px;
+                    padding:10px; text-align:center; border-radius:5px "
+            >
+              <div
+                class="headline font-weight-light"
+                style="text-align:center; padding:20px; color:white"
+              >INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL) was founded by young professionals who believe that youth can contribute significantly to building a better society. Having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps</div>
+              <br />
+            </div>
           </div>
         </div>
         <hr />
         <div class="row">
-          <div class="col-md-8">
+          <!-- <div class="col-md-8">
             <h2 class="dislay-1" style="color:#f4c542">Vision</h2>
             <hr style="width:100px" />
             <div class="headline font-weight-light">
@@ -176,7 +234,7 @@
             <v-img src="../assets/second.svg">
               <div class="fill-height bottom-gradient"></div>
             </v-img>
-          </div>
+          </div>-->
           <!-- Button trigger modal -->
 
           <!-- Modal -->
@@ -258,7 +316,7 @@
 
     <section class="service-sec" id="benefits">
       <v-parallax src="../assets/black.jpg" height="700px">
-        <div class="row" style="background-color:black; opacity: 0.8;">
+        <div class="row" style="background-color:black; opacity: 0.8; text-align:center">
           <div class="col-md-12">
             <div class="heading">
               <h3>
@@ -269,7 +327,9 @@
                 <small>
                   <br />“Knowledge is power.Information is liberating.education is the premise of progress,in every society,in every family” .Kofi Anan
                 </small>
+              </h3>
                 <br />
+
 
                 <div class="row" style="text-align:center">
                   <div class="col-md-2 subtitle-2 font-weight-black">
@@ -298,14 +358,19 @@
                     <div class="demo-content">COMPUTER SERVER</div>
                   </div>
                 </div>
-                <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
-                <button
-                  type="button"
-                  class="btn btn-primary"
-                  data-toggle="modal"
-                  data-target="#exampleModalCenter"
-                >Support a project</button>
-              </h3>
+                <div class="row">
+                  <div class="col-md-4" ></div>
+                  <div class="col-md-4"  style="margin-top: 50px;  margin-bottom: 50px; "  >
+                    <button
+                      type="button"
+                      class="btn btn-primary"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenter"
+                    
+                    >Support a project</button>
+                  </div>
+                  <div class="col-md-4"></div>
+                </div>
             </div>
           </div>
         </div>
@@ -479,14 +544,7 @@ export default {
 
 
 <style lang="css" scoped>
-@media only screen and (max-width: 600px) {
-  p {
-    font-size: 15px;
-    margin-left: 0px;
-    margin-right: 0px;
-    color: blue;
-  }
-}
+
 .carousel-item {
   height: 85vh;
   min-height: 350px;
@@ -501,12 +559,12 @@ export default {
   height: 50px;
 }
 .div1 {
-  background-image: url("../assets/ideal2.jpg");
+  background-image: url("../assets/imgbook.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
 .div2 {
-  background-image: url("../assets/ideal1.jpg");
+  background-image: url("../assets/ideal5.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
@@ -527,6 +585,29 @@ export default {
 }
 .card-size {
   font-size: 30px;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  
+  .car{
+    font-size: 5px;
+    color:red;
+    margin:0px
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #B2D6FF; /* Blue */
+  }
 }
 </style>
 

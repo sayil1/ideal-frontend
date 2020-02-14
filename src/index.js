@@ -8,12 +8,12 @@ var $jq = jQuery.noConflict();
 window.$ = $;
 
 // You can use it now
-$jq(function () {
-    $jq(document).scroll(function () {
-        var $nav = $jq(".navbar");
-        $nav.toggleClass('scrolled', $jq(this).scrollTop() > $nav.height());
-      });
-  });
+// $jq(function () {
+//     $jq(document).scroll(function () {
+//         var $nav = $jq(".navbar");
+//         $nav.toggleClass('scrolled', $jq(this).scrollTop() > $nav.height());
+//       });
+//   });
 
  
   $('ul.navbar-nav li.dropdown').hover(function() {

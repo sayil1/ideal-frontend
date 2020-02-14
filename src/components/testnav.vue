@@ -1,110 +1,104 @@
 <template>
-  <div>
-    <!-- for first nav -->
+  <div style="z-index:5; width:100%" class="sticky">
+    <div class="navbar-brand p-3 pl-6" style="background-color:black; width:100%; color:white; font-size:15px">
+      <v-icon size=20 color="orange darken-2" right>mdi-phone</v-icon>(+234) 9030031914
+      <v-icon size=20 color="orange darken-2" right>mdi-mail</v-icon>info@ideal-nig.org
+    </div>
 
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-      <div class="container">
-        <a style="color:white" class="bold" href="/">IDEAL-IT center</a>
-        <!-- <img src="../assets/logo.png" alt="..." class="img-thumbnail"> -->
+    <nav class=" navbar navbar-expand-md  bg-white " style="color:black; z-index:5;">
+      <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->
+      <div class="navbar-toggler-right">
         <button
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
+          data-target="#navbar"
+          aria-controls="navbarTogglerDemo02"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <!-- <li class="nav-item active">
-              <a class="nav-link" href="/">
-                Home
-                <span class="sr-only">(current)</span>
-              </a>
-            </li> -->
+      </div>
+      <div>
+        <img src="../assets/idealng.png" alt="" style="height:40px; ">
+      </div>
+
+      <div class="collapse navbar-collapse flex-column" id="navbar">
+        <ul class="navbar-nav w-100 justify-content-center px-3">
+          <li class="nav-item active">
+            <a class="nav-link" href="/" style="color:black">
+              Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link "
+              href="http://example.com"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="color:black"
+            >About Us</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="/about">who we are</a>
+              <a class="dropdown-item" href="/gal">gallery</a>
+              <!-- <a class="dropdown-item" href="#">Something else here</a> -->
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link "
+              href="http://example.com"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="color:black"
+            >What we do</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="prof">Professional Education</a>
+              <a class="dropdown-item" href="icm">ICM UK Qualification</a>
+              <a class="dropdown-item" href="train">Train the Trainer Workshop</a>
+               <a class="dropdown-item" href="test">Test Preparation</a>
+              <a class="dropdown-item" href="over">Over Seas Admission Consulting</a>
+            </div>
+          </li>
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >About Us</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/about">Who we are</router-link>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/gal">Gallery</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Career</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >What we do</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/prof">Professional Examination</router-link>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/icm">ICM UK Qualification</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/train">Train The Trainer Workshop</a>
-                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/test">Test Preparation</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/over">Overseas Admission Consulting</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >Take an exam</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   <a class="dropdown-item" href="/toefl">TOEFL</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/pearson">PEARSON VUE</a>
-                <div class="dropdown-divider"></div>
-              </div>
-            </li>
-           <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >Project</a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/it-center">IT-Center</router-link>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="/gal">Career Development Hub</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Career</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cont">Contact</a>
-            </li>
-          </ul>
-        </div>
+            <a
+              class="nav-link "
+              href="http://example.com"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="color:black"
+            >Take an exam</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link "
+              href="http://example.com"
+              id="navbarDropdownMenuLink"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              style="color:black"
+            >Dropdown link</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
       </div>
     </nav>
   </div>
@@ -116,12 +110,36 @@ export default {};
 </script>
 <script src="../index.js"></script>
 
+
 <style>
 .see {
   color: red;
 }
+.navbar {
+  padding: 0rem;
+}
+
+.dropdown .dropdown-menu {
+  border-radius: 0;
+}
+
+.sticky {
+  position: fixed ; 
+  
+
+}
+
+/* Medium devices (tablets, 768px and up) 
+The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    border-radius: 0;
+  }
+}
 </style>
 
 <style lang="css">
-@import "../index.css";
+/* @import "../index.css"; */
 </style>

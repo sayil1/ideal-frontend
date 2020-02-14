@@ -3,7 +3,9 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
       <!-- Sidebar -->
+   
       <side />
+     
       <!-- End of Sidebar -->
 
       <!-- Content Wrapper -->
@@ -24,7 +26,7 @@
 
             <div class="row">
               <!-- Area Chart -->
-              <div class="col-xl-8 col-lg-7">
+              <div class="col-xl-12 col-lg-7">
                 <div class="card shadow mb-4">
                   <!-- Card Header - Dropdown -->
                   <div
@@ -34,17 +36,16 @@
                   </div>
 
                   <div class="card-body">
-                    <v-data-table
-                      :headers="headers"
-                      :items="desserts"
-                      sort-by="calories"
-                      class="elevation-1"
-                    >
+                    <v-data-table :headers="headers" :items="desserts" class="elevation-1">
                       <template v-slot:top>
                         <v-toolbar flat color="white">
                           <v-toolbar-title>Events</v-toolbar-title>
                           <v-divider class="mx-4" inset vertical></v-divider>
+                           
+                              <v-btn color="success" dark class="mb-2" v-on:click="initialize()">Refresh</v-btn>
+                           
                           <v-spacer></v-spacer>
+
                           <v-dialog v-model="dialog" max-width="500px">
                             <template v-slot:activator="{ on }">
                               <v-btn color="success" dark class="mb-2" v-on="on">Add Event</v-btn>
@@ -60,13 +61,16 @@
                                   <form enctype="multipart/form-data" @submit.prevent="onSubmit">
                                     <v-layout wrap align-center>
                                       <v-flex xs12 sm6 d-flex>
-                                        <v-text-field label="Title" v-model="events.title" required></v-text-field>
+                                        <v-text-field
+                                          label="Title"
+                                          v-model="events.title"
+                                          value="sayil"
+                                        >{{events.title}}</v-text-field>
                                       </v-flex>
 
                                       <v-flex xs12 sm6 d-flex>
                                         <v-text-field
                                           label="Short Description"
-                                          required
                                           v-model="events.description"
                                         ></v-text-field>
                                       </v-flex>
@@ -77,7 +81,7 @@
                                           class="form-control"
                                           accept="image/*"
                                           name="image"
-                                         @change="onFileChanged"
+                                          @change="onFileChanged"
                                         />
                                         <v-file-input accept="image/*" label="Image"></v-file-input>
                                       </v-flex>
@@ -96,7 +100,6 @@
                                       <v-flex xs12 sm6 d-flex>
                                         <v-text-field
                                           label="Exact venue of events"
-                                          required
                                           v-model="events.venue"
                                         ></v-text-field>
                                       </v-flex>
@@ -108,10 +111,8 @@
                                           :close-on-content-click="false"
                                           :nudge-right="40"
                                           :return-value.sync="startDate"
-                                          lazy
                                           transition="scale-transition"
                                           offset-y
-                                          full-width
                                           min-width="290px"
                                         >
                                           <template v-slot:activator="{ on }">
@@ -145,7 +146,6 @@
                                           :close-on-content-click="false"
                                           :nudge-right="40"
                                           :return-value.sync="endDate"
-                                          lazy
                                           transition="scale-transition"
                                           offset-y
                                           full-width
@@ -182,10 +182,8 @@
                                           :close-on-content-click="false"
                                           :nudge-right="40"
                                           :return-value.sync="time"
-                                          lazy
                                           transition="scale-transition"
                                           offset-y
-                                          full-width
                                           max-width="290px"
                                           min-width="290px"
                                         >
@@ -193,7 +191,7 @@
                                             <v-text-field
                                               v-model="time"
                                               label="Time"
-                                              prepend-icon="mdi-clock-outline"
+                                              prepend-icon="mdi-clock"
                                               readonly
                                               v-on="on"
                                             ></v-text-field>
@@ -201,7 +199,6 @@
                                           <v-time-picker
                                             v-if="menu"
                                             v-model="time"
-                                            full-width
                                             @click:minute="$refs.menu.save(time)"
                                           >
                                             <v-btn
@@ -213,12 +210,15 @@
                                         </v-menu>
                                       </v-flex>
 
-                                      <v-flex xs12 sm3 d-flex>
-                                        <v-btn outline color="purple" v-on:click="save">Submit</v-btn>
+                                      <v-flex xs12 sm3 d-flex v-if="update==false">
+                                        <v-btn color="purple" v-on:click="save">Submit</v-btn>
+                                      </v-flex>
+                                      <v-flex xs12 sm3 d-flex v-if="update==true">
+                                        <v-btn color="purple" v-on:click="editItem()">Update</v-btn>
                                       </v-flex>
                                       <br />
                                       <v-flex xs12 sm3 d-flex>
-                                        <v-btn outline color="purple">Clear</v-btn>
+                                        <v-btn color="purple">Clear</v-btn>
                                       </v-flex>
                                     </v-layout>
                                   </form>
@@ -229,10 +229,18 @@
                           </v-dialog>
                         </v-toolbar>
                       </template>
+                      
+                     <template  v-slot:item.status="{ item }">
+                         <v-icon v-if="item.startDate < new Date().toISOString().substr(0, 10)" color="blue" >mdi-circle-medium </v-icon>
+                          <v-icon v-if="item.startDate >= new Date().toISOString().substr(0, 10)" color="red" >mdi-circle-medium </v-icon>
+                     </template>
+
                       <template v-slot:item.action="{ item }">
-                        <v-icon color="orange" class="mr-2" @click="editItem(item)">fa-edit</v-icon>
+                        <!-- <v-icon color="orange" class="mr-2" @click="updates(item)">fa-edit</v-icon> -->
                         <v-icon color="red" @click="deleteItem(item)">mdi-delete</v-icon>
+                 
                       </template>
+                         
                       <template v-slot:no-data>
                         <v-btn color="primary" @click="initialize">mdi-reset</v-btn>
                       </template>
@@ -324,10 +332,13 @@ export default {
       text: "",
       image: null
     },
+    update: false,
+    newId: "",
+    init:1,
 
     events: {
-      image: null,
-      title: null,
+      image: "",
+      title: "",
       description: "",
       location: "",
       venue: "",
@@ -336,18 +347,19 @@ export default {
       time: ""
     },
     dialog: false,
+    data: "sayil",
     headers: [
       {
         text: "Title",
         align: "left",
         sortable: false,
-        value: "name"
+        value: "title"
       },
-      { text: "Date", value: "calories" },
-      { text: "Time ", value: "fat" },
-      { text: "Location", value: "carbs" },
-
-      { text: "Actions", value: "action", sortable: false }
+      { text: "Location", value: "location" },
+      { text: "Time", value: "time" },
+      { text: "Date", value: "startDate" },
+       { text: "Status", value: "status", align:"center"},
+      { text: "Action", value: "action" }
     ],
     desserts: [],
     editedIndex: -1,
@@ -370,7 +382,10 @@ export default {
   computed: {
     formTitle() {
       return this.editedIndex === -1 ? "New Event" : "Edit Event";
-    }
+    },
+    // initializeApp(){
+
+    // }
   },
 
   watch: {
@@ -381,52 +396,107 @@ export default {
 
   created() {
     this.initialize();
+    let a = new Date().toISOString().substr(0, 10)
+    let b = this.events.startDate
+    if (b==a){
+// eslint-disable-next-line no-console
+          console.log("ends today");
+    }
+    else{
+      // eslint-disable-next-line no-console
+          console.log("not yet");
+    }
+  
   },
 
   methods: {
     initialize() {
-      this.desserts = [
-        {
-          name: "USPF",
-          calories: "26-06-19",
-          fat: "2:30 pm",
-          carbs: "Abuja, Maitama",
-          protein: "4.0"
-        },
-        {
-          name: "Web developers hangout",
-          calories: "26-06-19",
-          fat: "2:30 pm",
-          carbs: "Delta State, Asaba",
-          protein: "4.0"
-        }
-      ];
+      serv
+        .getRequest("eve/allEve")
+        .then(response => {
+          // JSON responses are automatically parsed.
+          this.desserts = response.data.result;
+          // eslint-disable-next-line no-console
+          console.log(this.desserts, "are the events");
+        })
+        .catch(e => {
+          // this.errors.push(e);
+
+          // eslint-disable-next-line no-console
+          console.log(e);
+        });
+    },
+    getEvent(item) {
+      // eslint-disable-next-line no-console
+      this.newId = item._id;
+      serv.getRequest(`eve/get-event/${item._id}`).then(response => {
+        // eslint-disable-next-line no-console
+        // console.log(response.data.result, "is the events");
+        this.events = response.data.result[0];
+        return item._id;
+      });
+    },
+    updates(item) {
+      this.dialog = true;
+      this.update = true;
+      this.getEvent(item);
     },
 
-    editItem(item) {
-      this.editedIndex = this.desserts.indexOf(item);
-      this.editedItem = Object.assign({}, item);
+    editItem() {
+      // this.editedIndex = this.desserts.indexOf(item);
+      // this.editedItem = Object.assign({}, item);
+
       this.dialog = true;
+      const formData = new FormData();
+      // formData.append("image", this.events.image);
+      formData.append("title", this.events.title);
+      formData.append("description", this.events.description);
+      formData.append("location", this.events.location);
+      formData.append("venue", this.events.venue);
+      formData.append("startDate", this.startDate);
+      formData.append("endDate", this.endDate);
+      formData.append("time", this.time);
+
+      // eslint-disable-next-line no-console
+
+      serv.postRequest(`update-event/${this.newId}`, formData);
+
+      // eslint-disable-next-line no-console
+      console.log(this.newId, "items");
+      this.close();
     },
 
     deleteItem(item) {
-      const index = this.desserts.indexOf(item);
-      confirm("Are you sure you want to delete this item?") &&
-        this.desserts.splice(index, 1);
+      serv.getRequest(`eve/del/${item._id}`).then(response => {
+        // eslint-disable-next-line no-console
+        console.log(response.data.result, "is the events");
+        this.initialize();
+      });
     },
 
     close() {
+      (this.events = {
+        image: "",
+        title: "",
+        description: "",
+        location: "",
+        venue: "",
+        startDate: "",
+        endDate: "",
+        time: ""
+      }),
+        (this.update = false);
       this.dialog = false;
       setTimeout(() => {
         this.editedItem = Object.assign({}, this.defaultItem);
         this.editedIndex = -1;
       }, 300);
     },
-   
-   onFileChanged (event) {
-    this.events.image = event.target.files[0]
-  },
-  
+
+    onFileChanged(event) {
+      this.events.image = event.target.files[0];
+    },
+
     save() {
       // if (this.editedIndex > -1) {
       //   Object.assign(this.desserts[this.editedIndex], this.editedItem);
@@ -445,8 +515,25 @@ export default {
 
       // eslint-disable-next-line no-console
       console.log(this.events, this.startDate, this.endDate, this.time);
-      serv.postRequest("eve/newEve", formData);
+      serv.postRequest("eve/newEve", formData).then(
+        serv
+        .getRequest("eve/allEve")
+        .then(response => {
+          // JSON responses are automatically parsed.
+          this.desserts = response.data.result;
+          // eslint-disable-next-line no-console
+          console.log(this.desserts, "are the events");
+        })
+        .catch(e => {
+          // this.errors.push(e);
+
+          // eslint-disable-next-line no-console
+          console.log(e);
+        })
+       
+      )
       this.close();
+     
     }
   }
 };
