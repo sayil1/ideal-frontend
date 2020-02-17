@@ -1,21 +1,26 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div
-      class="jumbotron jumbotron-fluid"
-      style="background-color:rgb(35, 159, 216); margin-bottom:0px"
-    >
-      <div class="container" style="margin-top:80px; margin-bottom:-80px">
-        <h1 class="display-2">TEST PREPARATION</h1>
-      </div>
-    </div>
+   <div class="card-size">
+          <div class="card-body" style>
+            <div style="margin-top:120px ; ">
+              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+                <div class="car-text">
+                  <span class="car-head orange--text" style>TEST PREPARATION</span>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+   
     <div class style>
       <!-- card -->
-      <div class="row" style="background-color:rgb(35, 159, 216);">
+      <div class="row" style="background-color:;">
         <div class="col-sm-12 col-md-6" style="margin-bottom:70px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
-              <p class="card-text blue--text font-weight-regular">
+              <p class="card-text --text font-weight-regular">
                 We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
                 <br />
                 <br />Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
@@ -42,7 +47,7 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-5" style=" margin:2px">
-          <div style="color:white; text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
+          <div style="color:; text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
           <table class="table table-bordered card-size">
             <thead>
               <tr>
@@ -82,12 +87,12 @@
         <div class="col-sm-12 col-md-6">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
-              <p class="card-text blue--text font-weight-regular">
+              <p class="card-text --text font-weight-regular">
                 <strong class="display-1">Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong> <br>
                 <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and topics to expect, ultimately improving your score on the test.
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item2" color="primary">
+                  <v-list-item-group v-model="item2" color="">
                     <v-list-item v-for="(item2, i) in items2" :key="i">
                       <v-list-item-icon>
                         <v-icon v-text="item2.icon"></v-icon>
@@ -98,7 +103,7 @@
                     </v-list-item>
                   </v-list-item-group> <br>
                   <div
-                    class="card-text blue--text font-weight-regular"
+                    class="card-text --text font-weight-regular"
                   >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
                 </v-list>
               </p>
@@ -107,7 +112,7 @@
         </div>
 
         <div class="col-sm col-md-5" style=" margin:2px">
-             <div style="color:rgb(35, 159, 216); text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
+             <div style="color:rgb; text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
           <table class="table table-bordered card-size">
             <thead>
               <tr>

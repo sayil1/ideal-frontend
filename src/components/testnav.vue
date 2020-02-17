@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-md bg-white" style="color:black; z-index:5;">
       <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->
-      <div class="navbar-toggler-right" style="color:green">
+      <div class="navbar-toggler-right style" >
         <button
           class="navbar-toggler"
           type="button"
@@ -35,16 +35,17 @@
         <img src="../assets/idealng.png" alt style="height:40px; " />
       </div>
 
-      <div class="collapse navbar-collapse flex-column" id="navbar">
-        <ul class="navbar-nav w-100 justify-content-center px-3">
+      <div class="collapse navbar-collapse flex-column"  id="navbar">
+        <ul class="navbar-nav w-100 justify-content-center px-3" >
           <li class="nav-item active">
-            <a class="nav-link" href="/" style="color:black">
+            <a  class="nav-link" href="/" style="color:black">
               Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item dropdown">
+          <li  class="nav-item dropdown">
             <a
+            
               class="nav-link"
               href="http://example.com"
               id="navbarDropdownMenuLink"
@@ -53,9 +54,9 @@
               aria-expanded="false"
               style="color:black"
             >About Us</a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="/about">who we are</a>
-              <a class="dropdown-item" href="/gal">gallery</a>
+            <div class="dropdown-menu" aria-labelledby="">
+              <a class="dropdown-item"  href="/about">who we are</a>
+              <a class="dropdown-item" href="/gal">Gallery</a>
               <!-- <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
           </li>
@@ -136,12 +137,17 @@ export default {};
 }
 .nav-link:hover {
   color: orange !important;
-  font-size: 25px;
+  font-size: 21px;
 }
 .nav-link {
   color: black !important;
 }
-
+.dropdown-menu{
+font-size: 0px
+}
+.style {
+  color: brown
+}
 /* Medium devices (tablets, 768px and up) 
 The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {

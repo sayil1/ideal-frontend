@@ -4,7 +4,7 @@
 
     <!-- who we are -->
 
-    <div style="padding:50px; padding-top:80px; background-color:rgb(0, 204, 102) ">
+    <div style="padding:50px; padding-top:80px" class="blue">
       <h1
         class="white--text font-weight-bold"
         style="text-align:center; margin-top:100px"
@@ -66,7 +66,7 @@
     </div>
 
     <div class style="padding:50px">
-      <h1 class="car-head green--text " >OUR APPROACH</h1>
+      <h1 class="car-head blue--text " >OUR APPROACH</h1>
       <hr class="my-4" />
 
       <!-- card -->
@@ -79,7 +79,7 @@
           >
             <div class="card-body car-text" style>
               <p
-                class="card-text green--text font-weight-regular"
+                class="card-text blue--text font-weight-regular"
               >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.,</p>
             </div>
           </div>

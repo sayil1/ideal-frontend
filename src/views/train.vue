@@ -1,21 +1,25 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div
-      class="jumbotron jumbotron-fluid"
-     style="background-color:rgb(0, 204, 102); margin-bottom:0px"
-    >
-      <div class="container" style="margin-top:120px; margin-bottom:-80px">
-        <h1 class="car-head">TRAINING WORKSHOPS</h1>
-      </div>
-    </div>
+    <div class="card-size">
+          <div class="card-body" style>
+            <div style="margin-top:120px ; ">
+              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+                <div class="car-text">
+                  <span class="car-head orange--text" style>TRAIN-THE-TRAINER WORKSHOPS</span>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     <div class style>
       <!-- card -->
-      <div class="row" style="background-color:rgb(0, 204, 102);">
+      <div class="row" style=";">
         <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
-              <p class="card-text green--text font-weight-regular">
+              <p class="card-text --text font-weight-regular">
                 Our Train the Trainer program empowers teachers/trainers to improve and professionalize their current methods of instruction and understand how people learn.
                 <br />
                 <br />Participants will have a comprehensive understanding of the Training and Development industry as well as training packaging. Some areas of focus include:
@@ -24,23 +28,24 @@
                 <br />
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item" color="rgb(0, 204, 102)">
+                  <v-list-item-group v-model="item" color="">
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
                         <v-icon v-text="item.icon"></v-icon>
                       </v-list-item-icon>
-                      <v-list-item-content color="rgb(0, 204, 102)">
+                      <v-list-item-content color="orange">
                         <v-list-item-title v-text="item.text"></v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
                   </v-list-item-group>
                 </v-list>They will also develop on the main areas of Training and Assessment including design, delivery, and assessment.
               </p>
-              <div style="text-align:center; color:rgb(0, 204, 102)" class="display-1">Our Targets</div>
+              <div style="text-align:center; color:orange" class="display-1">Our Targets</div>
 
               <v-list dense>
                 <!-- <v-subheader>REPORTS</v-subheader> -->
-                <v-list-item-group v-model="item" color="rgb(0, 204, 102)">
+                <v-list-item-group v-model="item" color="
+                ">
                   <v-list-item v-for="(item, i) in items2" :key="i">
                     <v-list-item-icon>
                       <v-icon v-text="item.icon"></v-icon>
@@ -68,13 +73,13 @@
         <div class="col-sm-12 col-md-8">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
-              <p class="card-text green--text font-weight-regular">
-                <strong class="display-1">Workshops Structure</strong>
+              <p class="card-text --text font-weight-regular">
+                <strong class="display-1 orange--text">Workshops Structure</strong>
                 <br />
                 <br />The scope of training and support each learner requires will vary according to their existing involvement, knowledge and skills in this area.
                 IDEaL Train-the-trainer workshops have three student cohorts:
                 <v-list-item>
-                  <v-list-item-content class="green--text">
+                  <v-list-item-content class="--text">
                     <v-list-item-title>Beginner Cohort</v-list-item-title>
                     <v-list-item-subtitle>require little or no knowledge/skill in the competence contained in this qualification.</v-list-item-subtitle>
                   </v-list-item-content>
@@ -82,14 +87,14 @@
 
                 <v-list-item two-line>
                   <v-list-item-content>
-                    <v-list-item-title class="green--text">Intermediate Cohort</v-list-item-title>
+                    <v-list-item-title class="--text">Intermediate Cohort</v-list-item-title>
                     <v-list-item-subtitle>should possess limited prior knowledge and skill in the competence contained in this qualification.</v-list-item-subtitle>
                   </v-list-item-content>
                 </v-list-item>
 
                 <v-list-item three-line>
                   <v-list-item-content>
-                    <v-list-item-title class="green--text">Advanced Cohort</v-list-item-title>
+                    <v-list-item-title class="--text">Advanced Cohort</v-list-item-title>
                     <v-list-item-subtitle>Consists of individuals with a broad knowledge and skill in the competence contained in this qualification. Related industry work experience of one year or more.</v-list-item-subtitle>
                   </v-list-item-content>
                 </v-list-item>Please send a message on available options, dates and needs.
