@@ -1,21 +1,27 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div
-      class="jumbotron jumbotron-fluid"
-      style="background-color:rgb(35, 159, 216); margin-bottom:0px"
-    >
-      <div class="container" style="margin-top:80px; margin-bottom:-80px">
-        <h1 class="display-2">IDEAL IT CENTER</h1>
+     <div style="background-color: ">
+        <div class="card-size">
+          <div class="card-body" style>
+            <div style="margin-top:120px ; ">
+              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+                <div class="car-text">
+                  <span class="car-head orange--text" style>IDEAL INFOTECH</span>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     <div class style>
       <!-- card -->
-      <div class="row" style="background-color:rgb(35, 159, 216);">
+      <div class="row" style="background-color:rgb;">
         <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
-              <p class="card-text blue--text font-weight-regular">
+              <p class="card-text --text font-weight-regular">
                 The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project. <br>
                 <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector. <br>
                 <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers. <br>
@@ -32,11 +38,11 @@
     </div>
     <div class="text-center">
       <div class="container">
-        <div class="row pt-4">
+        <div class="row pt-0">
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h1 class="my-0 font-weight-normal blue--text">Creative Design</h1>
+                <h3 class="my-0  blue--text">Creative Design</h3>
               </div>
               <div class="card-body">
                 <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
@@ -53,10 +59,10 @@
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h1 class="my-0 font-weight-normal blue--text">
+                <h3 class="my-0 font-weight-normal blue--text">
                   Computing
-                  <br />Technology
-                </h1>
+                  Technology
+                </h3>
               </div>
               <div class="card-body">
                 <!-- <h1><b>$15 </b><small class="text-muted">/ mo</small></h1> -->
@@ -75,7 +81,7 @@
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h1 class="my-0 font-weight-normal blue--text">Training Delivery Styles</h1>
+                <h3 class="my-0 font-weight-normal blue--text">Training Delivery Styles</h3>
               </div>
               <div class="card-body">
                 <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
@@ -92,7 +98,7 @@
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h1 class="my-0 font-weight-normal blue--text">E-Business</h1>
+                <h3 class="my-0 font-weight-normal blue--text">E-Business</h3>
               </div>
               <div class="card-body">
                 <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
@@ -108,7 +114,7 @@
           <div class="col-md-8">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h1 class="my-0 font-weight-normal blue--text">Hands-on practical:</h1>
+                <h3 class="my-0 font-weight-normal blue--text">Hands-on practical:</h3>
               </div>
               <div class="card-body">
                 <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->

@@ -1,18 +1,18 @@
 <template>
   <div>
     <nava />
-    <div
-      class="jumbotron jumbotron-fluid"
-      style="background-color:rgb(35, 159, 216); margin-bottom:0px"
-    >
-      <div class="container" style="margin-top:50px">
-        <h1 class="display-2">
-          <span class="Regular">
-            Contact Us
-          </span>
-        </h1>
-      </div>
-    </div>
+     <div class="card-size">
+          <div class="card-body" style>
+            <div style="margin-top:120px ; ">
+              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+                <div class="car-text">
+                  <span class="car-head orange--text" style>CONTACT US</span>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
     <div class="row">
       <div class="col-sm col-md-6">
         <v-card flat>
@@ -65,9 +65,9 @@
         </div>
       </div>
 
-      <div class="col-sm" style="background-color:rgb(224, 224, 209)">
+      <div class="col-sm" >
         <div class="container">
-          <h1 class>
+          
             <span
               class="thin m-3"
             >We're here to help answer any question you might have. We look forward to hearing from you.</span>
@@ -88,7 +88,7 @@
                 </div>
               </div>
             </div>
-          </h1>
+          
         </div>
       </div>
     </div>

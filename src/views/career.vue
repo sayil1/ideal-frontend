@@ -1,22 +1,27 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div
-      class="jumbotron jumbotron-fluid"
-      style="background-color:rgb(35, 159, 216); margin-bottom:0px"
-    >
-      <div class="container" style="margin-top:50px">
-        <h1 class="display-2">CAREER DEVELOPMENT CENTER</h1>
-        <div></div>
+    <div style="background-color: ">
+        <div class="card-size">
+          <div class="card-body" style>
+            <div style="margin-top:120px ; ">
+              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+                <div class="car-text">
+                  <span class="car-head orange--text" style>CAREER DEVELOPMENT CENTER</span>
+                  <br />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
     <div class style>
       <!-- card -->
-      <div class="row" style="background-color:rgb(35, 159, 216);">
+      <div class="row" style="background-color:rgb();">
         <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
-              <p class="card-text blue--text font-weight-regular">
+              <p class="card-text --text font-weight-regular">
                 Career development is the lifelong process of managing your training, learning, work, leisure, and work progress in order to move toward a personally determined and evolving preferred future.
                 The IDEAL's Career Development Center supports individuals to make informed decisions regarding their education, training, jobs and future careers by:
                 <br />
@@ -62,7 +67,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4">
+        <div class="col-sm col-md-4" style="padding-top:50px">
           <v-img src="../assets/app.svg" style=" width:700px"></v-img>
         </div>
       </div>
@@ -71,14 +76,17 @@
       <!-- card -->
       <div class="row">
         <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+          <v-img src="../assets/app.svg" style=" width:700px; "></v-img>
         </div>
         <div class="col-sm-12 col-md-8">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
-              <p class="card-text blue--text font-weight-regular">
+              <p class="card-text --text font-weight-regular">
                 
-                <span class="text-uppercase title" >Our Work</span>
+                
+                  <span class="car-head car-text orange--text" style>CAREER DEVELOPMENT CENTER</span>
+                  <br />
+              
                 <br />With our career development practitioners who specialize in this area, our work cuts across various settings: private, voluntary, community and educational institutions.
                 It work involves:
                 <v-list dense>

@@ -447,7 +447,6 @@
               <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
-        
         </hooper>
       </template>
     </section>
