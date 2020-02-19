@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+          <v-img src="../assets/info11.svg" style=" width:700px"></v-img>
         </div>
       </div>
     </div>

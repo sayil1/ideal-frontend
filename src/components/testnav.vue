@@ -55,8 +55,8 @@
           style="color:black; font-size:15px; font-weight: 900;"
             >ABOUT US</a>
             <div class="dropdown-menu" aria-labelledby="">
-              <a class="dropdown-item"  href="/about">who we are</a>
-              <a class="dropdown-item" href="/gal">Gallery</a>
+              <a class="dropdown-item"  href="/about">WHO WE ARE</a>
+              <a class="dropdown-item" href="/gal">GALLERY</a>
               <!-- <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
           </li>
@@ -71,11 +71,11 @@
                 style="color:black; font-size:15px; font-weight: 900;"
             >WHAT WE DO</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="prof">Professional Education</a>
-              <a class="dropdown-item" href="icm">ICM UK Qualification</a>
-              <a class="dropdown-item" href="train">Train the Trainer Workshop</a>
-              <a class="dropdown-item" href="test">Test Preparation</a>
-              <a class="dropdown-item" href="over">Over Seas Admission Consulting</a>
+              <a class="dropdown-item" href="prof">PROFESSIONAL EDUCATION</a>
+              <a class="dropdown-item" href="icm">ICM UK QUALIFICATION</a>
+              <a class="dropdown-item" href="train">TRAIN THE TRAINER WORKSHOP</a>
+              <a class="dropdown-item" href="test">TEST PREPARATION</a>
+              <a class="dropdown-item" href="over">OVER-SEAS ADMISSION CONSULTING</a>
             </div>
           </li>
           <li class="nav-item dropdown">

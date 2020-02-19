@@ -2,19 +2,19 @@
   <div style="background-color:">
     <nava />
     <div style="background-color: ">
-        <div class="card-size">
-          <div class="card-body" style>
-            <div style="margin-top:120px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head orange--text" style>ICM CENTER</span>
-                  <br />
-                </div>
+      <div class="card-size">
+        <div class="card-body" style>
+          <div style="margin-top:120px ; ">
+            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+              <div class="car-text">
+                <span class="car-head orange--text" style>ICM CENTER</span>
+                <br />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
 
     <div class style>
       <!-- card -->
@@ -29,21 +29,8 @@
                 <br />
                 <br />
                 <strong>Subjects</strong>
-                <br />ICM provide qualifications at Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma levels on a quarterly basis, covering key industry sector areas such as:
-                <!-- <v-list dense>
-                  <v-subheader>REPORTS</v-subheader>
-                  <v-list-item-group v-model="item" color="rgb(35, 159, 216)">
-                    <v-list-item v-for="(item, i) in items" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item.icon" v-bind:color="item.color"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                </v-list>-->
-
+                <br />
+ICM provide qualifications at Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma levels on a quarterly basis, covering key industry sector areas such as:
                 <span>
                   <v-list-item two-line>
                     <v-list-item-content style="color:rgb">
@@ -71,7 +58,7 @@
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item two-line>
-                    <v-list-item-content style="">
+                    <v-list-item-content style>
                       <v-list-item-title class="font-weight-bold">Leisure, Travel and Tourism</v-list-item-title>
                       <v-list-item-title>-Tourism</v-list-item-title>
                     </v-list-item-content>
@@ -81,16 +68,16 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4 mt-3">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-4" style="padding-top:150px" v-if="image==true">
+          <v-img src="../assets/icm1.svg" style=" width:700px"></v-img>
         </div>
       </div>
     </div>
     <div class style="margin-top:50px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
-        <div class="col-sm col-md-4 ">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-4" style="padding-top:120px" v-if="image==true">
+          <v-img src="../assets/icm2.svg" style=" width:700px"></v-img>
         </div>
         <div class="col-sm-12 col-md-8">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
@@ -168,6 +155,7 @@ export default {
   data: () => ({
     item: 1,
     item2: 1,
+    image:true,
     items: [
       { text: "Getting Hired", icon: "mdi-charity", color: "red" },
       { text: "Job Retention", icon: "mdi-briefcase", color: "purple" },
@@ -221,7 +209,23 @@ export default {
         color: "yellow"
       }
     ]
-  })
+  }),
+  created() {
+    this.isMobile();
+  },
+  methods: {
+    isMobile() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // var element = document.getElementById("text");
+      if (isMobile) {
+        // alert(this.image);
+        this.image = false;
+      } else {
+        // alert(this.image);
+        this.image = true;
+      }
+    }
+  }
 };
 </script>
 

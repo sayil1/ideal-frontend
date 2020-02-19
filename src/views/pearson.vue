@@ -45,8 +45,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-4" style="padding-top:190px" v-if="image==true" >
+          <v-img src="../assets/pea.png" style=" width:700px"></v-img>
         </div>
       </div>
     </div>
@@ -91,6 +91,7 @@ export default {
   },
   data: () => ({
     item: 1,
+    image: true,
     item2: 1,
     items: [
       { text: "Getting Hired", icon: "mdi-charity" },
@@ -124,8 +125,25 @@ export default {
       },
       { text: "Students and workers applying for visas", icon: "mdi-passport" }
     ]
-  })
+  }),
+   created() {
+    this.isMobile();
+  },
+  methods: {
+    isMobile() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // var element = document.getElementById("text");
+      if (isMobile) {
+        // alert(this.image);
+        this.image = false;
+      } else {
+        // alert(this.image);
+        this.image = true;
+      }
+    }
+  }
 };
+
 </script>
 
 <style lang="css">

@@ -48,8 +48,8 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-4" v-if="image==true">
+          <v-img src="../assets/test.svg" style=" width:700px"></v-img>
         </div>
       </div>
     </div>
@@ -111,6 +111,7 @@ export default {
     foota
   },
   data: () => ({
+    image:true,
     item: 1,
     item2: 1,
     items: [
@@ -146,7 +147,23 @@ export default {
       { text: "France", icon: "mdi-arrow-right" },
       { text: "Grenada", icon: "mdi-arrow-right" }
     ]
-  })
+  }),
+   created() {
+    this.isMobile();
+  },
+  methods: {
+    isMobile() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // var element = document.getElementById("text");
+      if (isMobile) {
+        // alert(this.image);
+        this.image = false;
+      } else {
+        // alert(this.image);
+        this.image = true;
+      }
+    }
+  }
 };
 </script>
 

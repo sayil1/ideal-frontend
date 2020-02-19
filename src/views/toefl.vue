@@ -48,16 +48,16 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-4" v-if="image==true">
+          <v-img src="../assets/toefl.png" style=" width:700px"></v-img>
         </div>
       </div>
     </div>
     <div class style="margin-top:50px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
-        <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-4" v-if="image==true">
+          <v-img src="../assets/toefl.png" style=" width:700px"></v-img>
         </div>
         <div class="col-sm-12 col-md-8">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
@@ -103,6 +103,7 @@ export default {
   },
   data: () => ({
     item: 1,
+    image:true,
     item2: 1,
     items: [
       { text: "More Popular with students", icon: "mdi-numeric-1" },
@@ -133,7 +134,23 @@ export default {
         icon: "mdi-circle-medium"
       }
     ]
-  })
+  }),
+   created() {
+    this.isMobile();
+  },
+  methods: {
+    isMobile() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // var element = document.getElementById("text");
+      if (isMobile) {
+        // alert(this.image);
+        this.image = false;
+      } else {
+        // alert(this.image);
+        this.image = true;
+      }
+    }
+  }
 };
 </script>
 
