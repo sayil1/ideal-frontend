@@ -114,7 +114,7 @@ export default {
 };
 </script>
 
-<style lang="css" scooped>
+<style scoped lang="css">
 /* 12columns.css | Created by Katherine Kato | Released under the MIT license */
 /* GitHub: https://kathykato.github.io/12columns/ */
 @import url("https://fonts.googleapis.com/css?family=Barlow:400,500,700");

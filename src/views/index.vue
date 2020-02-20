@@ -2,6 +2,7 @@
   <div class>
     <nava />
 
+
     <header>
       <v-carousel
         hide-delimiter-background
@@ -10,7 +11,42 @@
         height="620"
         show-arrows-on-hover
       >
-        <v-carousel-item class="div1">
+       <v-carousel-item class="div1">
+          <div style="background-color: rgba(21, 22, 21, 0.4)">
+            <div class="card-size">
+              <div class="card-body" style>
+                <div style="margin-top:90px ; ">
+                  <div
+                    class="car card-text white--text font-weight-regular"
+                    style="margin-left:40px; margin-right:40px"
+                  >
+                    <br />
+                    <br />
+                    <div class="car-text">
+                      <span class="car-head" style>WELCOME TO <br>
+INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
+                      <br />
+                      <br />BUILDING A COMMUNITY FOR SOCIALLY RESPONSIBLE CITIZENS AND LETTING ACTIONS SPEAK IN THE ACHIEVEMENT OF SDG GOAL 4, GOAL 7 AND GOAL 17.
+                     
+                      <br />WE CREATE THE PLATFORM FOR COLLABORATION, REFLEXIVITY, AND IDEA NURTURING AND COMMUNITY PROJECT IMPLEMENTATION!!!BE A PART OF IT TODAY……
+                      <br />
+                      <br />
+                      <div class="text-center">
+                        <router-link to="/">
+                          <v-btn rounded color="green" dark>See More</v-btn>
+                        </router-link>
+                      </div>
+                    </div>
+
+                    <br />
+                  </div>
+                  <div class="text-center"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </v-carousel-item>
+        <v-carousel-item class="div13">
           <div style="background-color: rgba(21, 22, 21, 0.4)">
             <div class="card-size">
               <div class="card-body" style>
@@ -61,7 +97,7 @@
                       <div class="text-center">
                         <br />
                         <br />
-                        <router-link to="/prof">
+                        <router-link to="/icm">
                           <v-btn rounded color="green" dark>See More</v-btn>
                         </router-link>
                       </div>
@@ -93,7 +129,7 @@
                       <br />
                       <br />
                       <div class="text-center">
-                        <router-link to="/prof">
+                        <router-link to="/train">
                           <v-btn rounded color="green" dark>See More</v-btn>
                         </router-link>
                       </div>
@@ -125,7 +161,7 @@
                       <br />
                       <br />
                       <div class="text-center">
-                        <router-link to="/prof">
+                        <router-link to="/test">
                           <v-btn rounded color="green" dark>See More</v-btn>
                         </router-link>
                       </div>
@@ -157,7 +193,7 @@
                       <br />
                       <br />
                       <div class="text-center">
-                        <router-link to="/prof">
+                        <router-link to="/over">
                           <v-btn rounded color="green" dark>See More</v-btn>
                         </router-link>
                       </div>
@@ -183,18 +219,18 @@
             </v-img>
           </div>-->
           <div class="col-md-12">
-            <h1
+            <h3
               class="dislay-1 font-weight-light"
-              style="color:#f4c542;text-align:center"
-            >Who we are</h1>
+              style="color:black;text-align:center"
+            >Who we are <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"></h3>
 
             <div
-              style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); margin:30px;
+              style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); margin:20px;
                     padding:10px; text-align:center; border-radius:5px "
             >
               <div
                 class="headline font-weight-light"
-                style="text-align:center; padding:20px; color:white; padding-bottom:20px; padding-top:20px"
+                style="text-align:center; padding:20px; color:white; padding-bottom; padding-top:10px"
               >INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL) was founded by young professionals who believe that youth can contribute significantly to building a better society. Having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps</div>
               <br />
             </div>
@@ -295,56 +331,62 @@
     </section>-->
 
     <section class="service-sec" id="benefits">
-      <v-parallax src="../assets/black.jpg" height="700px">
+      <v-parallax src="../assets/black.jpg" height="500px">
         <div class="row" style="background-color:black; opacity: 0.8; text-align:center">
           <div class="col-md-12">
             <div class="heading">
-              <h3>
-                <br />
-                <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
-                <small></small>
+              <div>
+                  <h3
+              class="dislay-1 font-weight-light"
+              style="color:white;text-align:center; margin-top:15px"
+            >SUPPORT A PROJECT <br>  <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"></h3>
+               
+                <hr style="width: 100%; color: black; height: 1px;" />
+               
                 <br />“COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL” - IDEAL
                 <small>
-                  <br />
+               
                   <br />“Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family”.
                   <br />~ Kofi Anan ~
                 </small>
-              </h3>
+              </div>
               <br />
 
               <div class="row" style="text-align:center">
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="primary darken-2">mdi-book-open-variant</v-icon>
+                  <v-icon large color="orange darken-2">mdi-book-open-variant</v-icon>
                   <div class="demo-content">SCHOOL BOOKS</div>
                 </div>
 
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="primary darken-2">mdi-tshirt-v</v-icon>
+                  <v-icon large color="orange darken-2">mdi-tshirt-v</v-icon>
                   <div class="demo-content">UNIFORMS</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="primary darken-2">mdi-cash</v-icon>
+                  <v-icon large color="orange darken-2">mdi-cash</v-icon>
                   <div class="demo-content">FEES</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="primary darken-2">mdi-home</v-icon>
+                  <v-icon large color="orange darken-2">mdi-home</v-icon>
                   <div class="demo-content">SCHOOL RENOVATION</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="primary darken-2">mdi-teach</v-icon>
+                  <v-icon large color="orange darken-2">mdi-teach</v-icon>
                   <div class="demo-content">TRAINING</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="primary darken-2">mdi-server-network</v-icon>
+                  <v-icon large color="warning darken-2">mdi-server-network</v-icon>
                   <div class="demo-content">COMPUTER SERVER</div>
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-md-4" style="margin-top: 50px;  margin-bottom: 50px; ">
+                <div class="col-md-4" style="margin-top: 30px;  margin-bottom: 30px; ">
                   <button
+                
                     type="button"
-                    class="btn btn-primary"
+                    class="btn btn-warning darken-2"
+                    color="warning"
                     data-toggle="modal"
                     data-target="#exampleModalCenter"
                   >Support a project</button>
@@ -357,17 +399,17 @@
       </v-parallax>
 
       <template>
-        <h2 class="font-weight-bold display-2" style="margin-top:60px; text-align:center; ">
+        <div class=" display-1" style="margin-top:40px; text-align:center; color:black ">
           OUR PARTNERS
-          <hr style="width:150px; text-align:center" />
-        </h2>
+         <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;">
+        </div>
 
         <hooper
           :settings="hooperSettings"
           :progress="true"
           :autoPlay="true"
           :playSpeed="4000"
-          style="margin-bottom:40px; margin-left:-25px "
+          style="margin-bottom:20px; margin-left:-25px "
         >
           <slide>
             <v-col style>
@@ -549,7 +591,7 @@ export default {
 
 
 
-<style lang="css" scoped>
+<style  scoped lang="css">
 .carousel-item {
   height: 85vh;
   min-height: 350px;
@@ -585,6 +627,11 @@ export default {
 }
 .div5 {
   background-image: url("../assets/ideal6.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+}
+.div13 {
+  background-image: url("../assets/ideal13.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }

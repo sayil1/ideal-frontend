@@ -1,24 +1,26 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div style="background-color: ">
-        <div class="card-size">
-          <div class="card-body" style>
-            <div style="margin-top:120px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head orange--text" style>OVERSEAS ADMISSION CONSULTING</span>
-                  <br />
-                </div>
+    <div style class="div1">
+      <div class="card-size">
+        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.8)">
+          <div style="margin-top:120px ; ">
+            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+              <div class="car-text">
+                <span class="car-head white--text" style>OVERSEAS ADMISSION CONSULTING</span>
+                <hr
+                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
     <div class style>
       <!-- card -->
       <div class="row" style="background-color:;">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
+        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
@@ -48,30 +50,15 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4" v-if="image==true">
-          <v-img src="../assets/test.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-4 mt-3" v-if="image==true">
+          <v-img src="../assets/test.svg" style=" width:700px; margin-top:20px"></v-img>
         </div>
       </div>
     </div>
-    <div class style="margin-top:50px; margin-bottom:50px">
+    <div class style="margin-top:0px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
-        <div class="col-sm col-md-4">
-          <v-list flat dense>
-            <v-subheader>COUNTRIES</v-subheader>
-            <v-list-item-group v-model="item" color="">
-              <v-list-item v-for="(item, i) in items2" :key="i">
-                <v-list-item-icon>
-                  <v-icon v-text="item.icon"></v-icon>
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title v-text="item.text"></v-list-item-title>
-                </v-list-item-content>
-              </v-list-item>
-            </v-list-item-group>
-          </v-list>
-        </div>
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-12">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text blue--text font-weight-regular">
@@ -79,16 +66,28 @@
                   <!-- <v-subheader>REPORTS</v-subheader> -->
 
                   <div class="card-text --text font-weight-regular">
-                    <span
-                      class="display-1 text-center"
-                      style="color:rgb(255, 153, 0)"
-                    >For working professionals</span>
-                    <br />
+                    <h2>
+                      <strong class="black--text">For working professionals</strong>
+                      <hr
+                        style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
+                      />
+                    </h2>
+                
                     <div>We assist working professionals across various industries/sectors to get offers that’ll enable them undergo short programs/courses in renown universities and in line with their career agenda.</div>
                     <br />
-                    <div class="display-1" style="color:rgb(255, 153, 0)">For corporate bodies</div>We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics.
+                  <h2>
+                      <strong class="black--text">For Corporate bodies</strong>
+                      <hr
+                        style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
+                      />
+                    </h2>
+                    
+                    
+                    We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics.
                     <br />For Overseas Admissions, UPCOMING overseas trainings, conferences and short courses.
-                    <a href="/cont">Contact Us</a>
+                    <a
+                      href="/cont"
+                    >Contact Us</a>
                   </div>
                 </v-list>
               </p>
@@ -111,7 +110,7 @@ export default {
     foota
   },
   data: () => ({
-    image:true,
+    image: true,
     item: 1,
     item2: 1,
     items: [
@@ -148,7 +147,7 @@ export default {
       { text: "Grenada", icon: "mdi-arrow-right" }
     ]
   }),
-   created() {
+  created() {
     this.isMobile();
   },
   methods: {
@@ -167,9 +166,64 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 template {
   margin-left: 10px;
   margin-right: 10px;
 }
+.div1 {
+  background-image: url("../assets/overb.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center ;
+}
+@media only screen and (max-width: 400px) {
+  .car {
+    font-size: 2px;
+    margin: 0px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 30px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 25px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
+  }}
 </style>

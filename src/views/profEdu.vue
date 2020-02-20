@@ -4,14 +4,16 @@
 
     <div class style>
       <!-- card -->
-      <div style="background-color: ">
+      <div style class="div1">
         <div class="card-size">
-          <div class="card-body" style>
+          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
             <div style="margin-top:120px ; ">
               <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
                 <div class="car-text">
-                  <span class="car-head orange--text" style>PROFESSIONAL EDUCATION</span>
-                  <br />
+                  <span class="car-head white--text" style>PROFESSIONAL EDUCATION</span>
+                  <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
                 </div>
               </div>
             </div>
@@ -54,7 +56,8 @@
         </div>
       </div>
     </div>
-    <div class style="margin-top:50px; margin-bottom:50px">
+    <hr />
+    <div class style="margin-top:0px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
         <div class="col-sm col-md-4" v-if="image==true">
@@ -151,15 +154,25 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 template {
   margin-left: 10px;
   margin-right: 10px;
 }
 .div1 {
-  background-image: url("../assets/imgbook.jpg");
+  background-image: url("../assets/profb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
+}
+.darken-pseudo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 @media only screen and (max-width: 400px) {

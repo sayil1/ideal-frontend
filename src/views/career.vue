@@ -1,24 +1,27 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div style="background-color: ">
-        <div class="card-size">
-          <div class="card-body" style>
-            <div style="margin-top:120px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head orange--text" style>CAREER DEVELOPMENT CENTER</span>
-                  <br />
-                </div>
+     <div style="background-color: ">
+      <div class="card-size div1">
+        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
+          <div style="margin-top:120px ; ">
+            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+              <div class="car-text">
+                <span class="car-head white--text" style>CAREER DEVELOPMENT</span>
+                 <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  
     <div class style>
       <!-- card -->
       <div class="row" style="background-color:rgb();">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
+        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
@@ -29,38 +32,40 @@
                 <br />
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item>    <v-alert
-                          color="white"
-                          icon="mdi-firework"
-                          dense
-                        >Listening to their initial ideas, education & skills, experiences, conditions and life goals.</v-alert></v-list-item>
-                  <v-list-item two-line>
-                       <v-alert
-                          color="white"
-                          icon="mdi-firework"
-                          dense
-                        >Helping them recognize and think through the choices available to them.</v-alert>
+                  <v-list-item>
+                    <v-alert
+                      color="white"
+                      icon="mdi-firework"
+                      dense
+                    >Listening to their initial ideas, education & skills, experiences, conditions and life goals.</v-alert>
                   </v-list-item>
                   <v-list-item two-line>
-                       <v-alert
-                          color="white"
-                          icon="mdi-firework"
-                          dense
-                        >Outlining possible courses of action</v-alert>
+                    <v-alert
+                      color="white"
+                      icon="mdi-firework"
+                      dense
+                    >Helping them recognize and think through the choices available to them.</v-alert>
                   </v-list-item>
                   <v-list-item two-line>
-                       <v-alert
-                          color="white"
-                          icon="mdi-firework"
-                          dense
-                        >Assisting them with strategies that will enable them achieve their goals; these may involve employment, exercises, training, or a mixture of these</v-alert>
+                    <v-alert
+                      color="white"
+                      icon="mdi-firework"
+                      dense
+                    >Outlining possible courses of action</v-alert>
                   </v-list-item>
                   <v-list-item two-line>
-                     <v-alert
-                          color="white"
-                          icon="mdi-firework"
-                          dense
-                        >Supporting them to overcome possible barriers that inhibits them from progressing, and if the need arises, referring them to relevant agencies that could offer further guidance.</v-alert>
+                    <v-alert
+                      color="white"
+                      icon="mdi-firework"
+                      dense
+                    >Assisting them with strategies that will enable them achieve their goals; these may involve employment, exercises, training, or a mixture of these</v-alert>
+                  </v-list-item>
+                  <v-list-item two-line>
+                    <v-alert
+                      color="white"
+                      icon="mdi-firework"
+                      dense
+                    >Supporting them to overcome possible barriers that inhibits them from progressing, and if the need arises, referring them to relevant agencies that could offer further guidance.</v-alert>
                   </v-list-item>
                 </v-list>
               </p>
@@ -72,7 +77,8 @@
         </div>
       </div>
     </div>
-    <div class style="margin-top:50px; margin-bottom:50px">
+    <hr>
+    <div class style="margin-top:0px; margin-bottom:0px">
       <!-- card -->
       <div class="row">
         <div class="col-sm col-md-4" style="padding-top:150px" v-if="image==true">
@@ -82,11 +88,9 @@
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
-                
-                
-                  <span class="car-head car-text orange--text" style>CAREER DEVELOPMENT CENTER</span>
-                  <br />
-              
+                <span class="car-head car-text orange--text" style>CAREER DEVELOPMENT CENTER</span>
+                <br />
+
                 <br />With our career development practitioners who specialize in this area, our work cuts across various settings: private, voluntary, community and educational institutions.
                 It work involves:
                 <v-list dense>
@@ -159,7 +163,7 @@ export default {
   },
   data: () => ({
     item: 1,
-    image:true,
+    image: true,
     item2: 1,
     items: [
       {
@@ -185,7 +189,7 @@ export default {
       }
     ]
   }),
-   created() {
+  created() {
     this.isMobile();
   },
   methods: {
@@ -204,9 +208,68 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 template {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.div1 {
+  background-image: url("../assets/icmb.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center ;
+}
+@media only screen and (max-width: 400px) {
+  .car {
+    font-size: 2px;
+
+    margin: 0px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 20px;
+
+    text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 30px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+
+    padding-top: 90px;
+  }
+  .car-text {
+    font-size: 25px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
+  }}
 </style>

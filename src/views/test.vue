@@ -1,23 +1,26 @@
 <template>
   <div style="background-color:">
     <nava />
-   <div class="card-size">
-          <div class="card-body" style>
-            <div style="margin-top:120px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head orange--text" style>TEST PREPARATION</span>
-                  <br />
-                </div>
+  <div style="background-color: ">
+      <div class="card-size div1">
+        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
+          <div style="margin-top:120px ; ">
+            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+              <div class="car-text">
+                <span class="car-head white--text" style>TEST PREPARATION</span>
+                 <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
               </div>
             </div>
           </div>
         </div>
-   
+      </div>
+    </div>
     <div class style>
       <!-- card -->
       <div class="row" style="background-color:;">
-        <div class="col-sm-12 col-md-6" style="margin-bottom:70px">
+        <div class="col-sm-12 col-md-6" style="margin-bottom:0px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
@@ -51,28 +54,28 @@
           <table class="table table-bordered card-size">
             <thead>
               <tr>
-                <th scope="col">COURSE LENGTH</th>
-                <th scope="col">2 - 8 Weeks</th>
+                <th style="border-color:black; width:200px" scope="col">COURSE LENGTH</th>
+                <th style="border-color:black; " scope="col">2 - 8 Weeks</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="col">ENTRY LEVEL</th>
-                <th scope="col">Intermediate to Advanced English</th>
+                <th style="border-color:black; " scope="col">ENTRY LEVEL</th>
+                <th style="border-color:black; " scope="col">Intermediate to Advanced English</th>
               </tr>
               <tr>
-                <th scope="col">LESSON LENGTH</th>
-                <th scope="col">2 hours per weekday</th>
+                <th style="border-color:black; " scope="col">LESSON LENGTH</th>
+                <th style="border-color:black;" scope="col">2 hours per weekday</th>
               </tr>
               <tr>
-                <th scope="row">CLASS SIZE</th>
-                <th>
+                <th style="border-color:black; " scope="row">CLASS SIZE</th>
+                <th style="border-color:black;">
                   10 persons:
                   Note that seats fill up quickly, and is on a first-come-first-serve basis. Register now.
                 </th>
               </tr>
-              <th scope="col">TIMETABLE</th>
-              <td scope="col">
+              <th style="border-color:black; " scope="col">TIMETABLE</th>
+              <td style="border-color:black; " scope="col">
                 For weekdays (Monday-Thursday, with morning and afternoon classes only)
                 For weekends (Saturdays and Sundays 4 hours per day)
               </td>
@@ -81,7 +84,8 @@
         </div>
       </div>
     </div>
-    <div class style="margin-top:50px; margin-bottom:50px">
+    <hr>
+    <div class style="margin-top:0px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
         <div class="col-sm-12 col-md-6">
@@ -89,7 +93,12 @@
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
                 <strong class="display-1">Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong> <br>
-                <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and topics to expect, ultimately improving your score on the test.
+                <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and to.div1 {
+  background-image: url("../assets/icmb.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center ;
+}pics to expect, ultimately improving your score on the test.
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
                   <v-list-item-group v-model="item2" color="">
@@ -113,31 +122,31 @@
 
         <div class="col-sm col-md-5" style=" margin:2px">
              <div style="color:rgb; text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
-          <table class="table table-bordered card-size">
-            <thead>
-              <tr>
-                <th scope="col">COURSE LENGTH</th>
-                <th scope="col">6- 12 Weeks</th>
+          <table style="border-color:black;" class="table table-bordered card-size ">
+            <thead >
+              <tr >
+                <th style="border-color:black; width:200px"  scope="col">COURSE LENGTH</th>
+                <th style="border-color:black;" scope="col">6- 12 Weeks</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <th scope="col">ENTRY LEVEL</th>
-                <th scope="col">TOEFL 70, IELTS 6.5</th>
+                <th style="border-color:black;" scope="col">ENTRY LEVEL</th>
+                <th style="border-color:black;" scope="col">TOEFL 70, IELTS 6.5</th>
               </tr>
               <tr>
-                <th scope="col">LESSON LENGTH</th>
-                <th scope="col">2 hours per weekday</th>
+                <th style="border-color:black;" scope="col">LESSON LENGTH</th>
+                <th style="border-color:black;" scope="col">2 hours per weekday</th>
               </tr>
               <tr>
-                <th scope="row">CLASS SIZE</th>
-                <th>
+                <th style="border-color:black;" scope="row">CLASS SIZE</th>
+                <th style="border-color:black;">
                   10 persons:
                   Note that seats fill up quickly, and is on a first-come-first-serve basis. Register now.
                 </th>
               </tr>
-              <th scope="col">TIMETABLE</th>
-              <td scope="col">
+              <th style="border-color:black;" scope="col">TIMETABLE</th>
+              <td style="border-color:black;" scope="col">
                 All courses are Monday-Thursday, with morning and afternoon classes only
                 Weekends Saturdays and Sundays 3 hours per day
               </td>
@@ -203,9 +212,67 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style lang="css" scoped>
 template {
   margin-left: 10px;
   margin-right: 10px;
 }
+table, th, td {
+  border: 1px solid black;
+}
+.div1 {
+  background-image: url("../assets/testb.jpg");
+ 
+  background-size: cover;
+  background-position: center ;
+}
+@media only screen and (max-width: 400px) {
+  .car {
+    font-size: 2px;
+    margin: 0px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 20px;
+    text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 30px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 25px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
+  }}
 </style>

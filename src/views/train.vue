@@ -1,22 +1,24 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div class="card-size">
-          <div class="card-body" style>
-            <div style="margin-top:120px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head orange--text" style>TRAIN-THE-TRAINER WORKSHOPS</span>
-                  <br />
-                </div>
-              </div>
+    <div class="card-size div1">
+      <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
+        <div style="margin-top:120px ; ">
+          <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+            <div class="car-text">
+              <span class="car-head white--text" style>TRAIN-THE-TRAINER WORKSHOPS</span>
+              <hr
+                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
             </div>
           </div>
         </div>
+      </div>
+    </div>
     <div class style>
       <!-- card -->
       <div class="row" style=";">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
+        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
@@ -28,7 +30,7 @@
                 <br />
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item" color="">
+                  <v-list-item-group v-model="item" color>
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
                         <v-icon v-text="item.icon"></v-icon>
@@ -40,7 +42,13 @@
                   </v-list-item-group>
                 </v-list>They will also develop on the main areas of Training and Assessment including design, delivery, and assessment.
               </p>
-              <div style="text-align:center; color:orange" class="display-1">Our Targets</div>
+              <h2 style="text-align:center; color:black" class>
+                <strong>Our Targets</strong>
+
+                  <hr
+                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
+              </h2>
 
               <v-list dense>
                 <!-- <v-subheader>REPORTS</v-subheader> -->
@@ -64,7 +72,7 @@
         </div>
       </div>
     </div>
-    <div class style="margin-top:50px; margin-bottom:50px">
+    <div class style="margin-top:0px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
         <div class="col-sm col-md-4" style="padding-top:120px" v-if="image == true">
@@ -73,8 +81,14 @@
         <div class="col-sm-12 col-md-8">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                <strong class="display-1 orange--text">Workshops Structure</strong>
+              <div class="card-text --text font-weight-regular">
+                <h2>
+                  <strong class="black--text">Workshops Structure</strong>
+                     <hr
+                style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
+              />
+                </h2>
+
                 <br />
                 <br />The scope of training and support each learner requires will vary according to their existing involvement, knowledge and skills in this area.
                 IDEaL Train-the-trainer workshops have three student cohorts:
@@ -99,8 +113,7 @@
                   </v-list-item-content>
                 </v-list-item>Please send a message on available options, dates and needs.
                 <br />
-              </p>
-           
+              </div>
             </div>
           </div>
         </div>
@@ -120,7 +133,7 @@ export default {
     foota
   },
   data: () => ({
-    image:true,
+    image: true,
     item: 1,
     item2: 1,
     items: [
@@ -174,10 +187,15 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 template {
   margin-left: 10px;
   margin-right: 10px;
+}
+.div1 {
+  background-image: url("../assets/trainb.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
 }
 
 @media only screen and (max-width: 400px) {

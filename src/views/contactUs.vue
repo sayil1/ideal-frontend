@@ -1,18 +1,22 @@
 <template>
   <div>
     <nava />
-     <div class="card-size">
-          <div class="card-body" style>
-            <div style="margin-top:120px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head orange--text" style>CONTACT US</span>
-                  <br />
-                </div>
+    <div style="background-color: ">
+      <div class="card-size div1">
+        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
+          <div style="margin-top:120px ; ">
+            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+              <div class="car-text">
+                <span class="car-head white--text" style>CONTACT US</span>
+                 <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-sm col-md-6">
         <v-card flat>
@@ -135,5 +139,13 @@ export default {
 </script>
 
 
-<style scoped>
+<style scoped >
+
+
+.div1 {
+  background-image: url("../assets/contb.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center ;
+}
 </style>

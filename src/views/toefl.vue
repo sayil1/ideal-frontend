@@ -1,24 +1,27 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div style="background-color: ">
-      <div class="card-size">
-        <div class="card-body" style>
+   <div style="background-color: ">
+      <div class="card-size div1">
+        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.9)">
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
-                <span class="car-head orange--text" style>TOEFL</span>
-                <br />
+                <span class="car-head white--text" style>TOEFL</span>
+                 <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  
     <div class style>
       <!-- card -->
       <div class="row" style="background-color:rgb();">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
+        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
@@ -53,7 +56,7 @@
         </div>
       </div>
     </div>
-    <div class style="margin-top:50px; margin-bottom:50px">
+    <div class style="margin-top:50px; margin-bottom:0px">
       <!-- card -->
       <div class="row">
         <div class="col-sm col-md-4" v-if="image==true">
@@ -154,9 +157,68 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style scoped lang="css">
 template {
   margin-left: 10px;
   margin-right: 10px;
 }
+
+.div1 {
+  background-image: url("../assets/toeflb.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center ;
+}
+@media only screen and (max-width: 400px) {
+  .car {
+    font-size: 2px;
+
+    margin: 0px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 20px;
+
+    text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 30px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+
+    padding-top: 90px;
+  }
+  .car-text {
+    font-size: 25px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
+  }}
 </style>

@@ -2,13 +2,15 @@
   <div style="background-color:">
     <nava />
     <div style="background-color: ">
-      <div class="card-size">
-        <div class="card-body" style>
+      <div class="card-size div1">
+        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
-                <span class="car-head orange--text" style>ICM CENTER</span>
-                <br />
+                <span class="car-head white--text" style>ICM CENTER</span>
+                 <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
               </div>
             </div>
           </div>
@@ -19,7 +21,7 @@
     <div class style>
       <!-- card -->
       <div class="row" style="background-color:;">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
+        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
@@ -73,10 +75,11 @@ ICM provide qualifications at Certificate, Diploma, Advanced Diploma, Graduate D
         </div>
       </div>
     </div>
-    <div class style="margin-top:50px; margin-bottom:50px">
+    <hr>
+    <div class style="; margin-bottom:10px">
       <!-- card -->
       <div class="row">
-        <div class="col-sm col-md-4" style="padding-top:120px" v-if="image==true">
+        <div class="col-sm col-md-4" style="padding-top:60px" v-if="image==true">
           <v-img src="../assets/icm2.svg" style=" width:700px"></v-img>
         </div>
         <div class="col-sm-12 col-md-8">
@@ -229,10 +232,17 @@ export default {
 };
 </script>
 
-<style lang="css">
+<style  scoped lang="css">
 template {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.div1 {
+  background-image: url("../assets/icmb.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center ;
 }
 
 @media only screen and (max-width: 400px) {

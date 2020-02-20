@@ -1,18 +1,35 @@
 <template>
   <div style="background-color:">
     <nava />
-   <div class="card-size">
-        <div class="card-body" style>
+   <div style="background-color: ">
+      <div class="card-size div1">
+        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.9)">
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
-                <span class="car-head orange--text" style>PEARSON VUE CENTER</span>
-                <br />
+                <span class="car-head white--text" style>PEARSON VUE CENTER</span>
+                 <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <v-alert style="margin:20px" outlined type="warning" prominent border="left">
+      <p class="card-text --text font-weight-regular">
+        Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
+        For information on a specific exam duration, fee, language, etc., please refer to the website of the particular provider.
+        <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
+        <br />
+     
+         
+            class="card-text --text font-weight-regular"
+          >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.
+      
+      </p>
+    </v-alert>
     <div class style>
       <!-- card -->
       <div class="row" style="background-color:rgb();">
@@ -45,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4" style="padding-top:190px" v-if="image==true" >
+        <div class="col-sm col-md-4" style="padding-top:190px" v-if="image==true">
           <v-img src="../assets/pea.png" style=" width:700px"></v-img>
         </div>
       </div>
@@ -56,7 +73,7 @@
         <!-- <div class="col-sm col-md-4">
           <v-img src="../assets/app.svg" style=" width:700px"></v-img>
         </div>-->
-        <div class="col-sm-12">
+        <!-- <div class="col-sm-12">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
@@ -65,7 +82,6 @@
                 <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
                 <br />
                 <v-list dense>
-              
                   <div
                     class="card-text --text font-weight-regular"
                   >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
@@ -73,7 +89,7 @@
               </p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <foota />
@@ -126,7 +142,7 @@ export default {
       { text: "Students and workers applying for visas", icon: "mdi-passport" }
     ]
   }),
-   created() {
+  created() {
     this.isMobile();
   },
   methods: {
@@ -143,12 +159,71 @@ export default {
     }
   }
 };
-
 </script>
 
 <style lang="css">
 template {
   margin-left: 10px;
   margin-right: 10px;
+}
+
+.div1 {
+  background-image: url("../assets/infob.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 400px) {
+  .car {
+    font-size: 2px;
+
+    margin: 0px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .car-text {
+    font-size: 14px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 20px;
+
+    text-align: center;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #f5cf8e; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  body {
+    background-color: #b2d6ff; /* Blue */
+  }
+  .car {
+    padding: 30px;
+  }
+  .car-head {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+
+    padding-top: 90px;
+  }
+  .car-text {
+    font-size: 25px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
+    height: 100%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 45px;
+  }
 }
 </style>
