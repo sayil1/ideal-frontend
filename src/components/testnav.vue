@@ -64,8 +64,8 @@
               style="color:black; font-size:15px; font-weight: 900;"
             >ABOUT US</a>
             <div class="dropdown-menu" aria-labelledby style="background-color:orange">
-              <a class="dropdown-item" href="/about" style="color:white; background-color:orange">WHO WE ARE</a>
-              <a class="dropdown-item" href="/gal"  style="color:white; background-color:orange">GALLERY</a>
+              <a class="dropdown-item" href="/about" style="color:black; background-color:orange">WHO WE ARE</a>
+              <a class="dropdown-item" href="/gal"  style="color:black; background-color:orange">GALLERY</a>
               <!-- <a class="dropdown-item" href="#">Something else here</a> -->
             </div>
           </li>
@@ -80,11 +80,11 @@
               style="color:black; font-size:15px; font-weight: 900;"
             >WHAT WE DO</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:orange">
-              <a class="dropdown-item" href="prof"  style="color:white; background-color:orange">PROFESSIONAL EDUCATION</a>
-              <a class="dropdown-item" href="icm"  style="color:white; background-color:orange">ICM UK QUALIFICATION</a>
-              <a class="dropdown-item" href="train"  style="color:white; background-color:orange">TRAIN THE TRAINER WORKSHOP</a>
-              <a class="dropdown-item" href="test"  style="color:white; background-color:orange">TEST PREPARATION</a>
-              <a class="dropdown-item" href="over" style="color:white; background-color:orange">OVER-SEAS ADMISSION CONSULTING</a>
+              <a class="dropdown-item" href="prof"  style="color:black; background-color:orange">PROFESSIONAL EDUCATION</a>
+              <a class="dropdown-item" href="icm"  style="color:black; background-color:orange">ICM UK QUALIFICATION</a>
+              <a class="dropdown-item" href="train"  style="color:black; background-color:orange">TRAIN THE TRAINER WORKSHOP</a>
+              <a class="dropdown-item" href="test"  style="color:black; background-color:orange">TEST PREPARATION</a>
+              <a class="dropdown-item" href="over" style="color:black; background-color:orange">OVER-SEAS ADMISSION CONSULTING</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -98,8 +98,8 @@
               style="color:black; font-size:15px; font-weight: 900;"
             >TAKE AN EXAM</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:orange">
-              <a class="dropdown-item" href="toefl"  style="color:white; background-color:orange">TOEFL</a>
-              <a class="dropdown-item" href="pearson"  style="color:white; background-color:orange">PEARSON VUE</a>
+              <a class="dropdown-item" href="toefl"  style="color:black; background-color:orange">TOEFL</a>
+              <a class="dropdown-item" href="pearson"  style="color:black; background-color:orange">PEARSON VUE</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -113,8 +113,8 @@
               style="color:black; font-size:15px; font-weight: 900;"
             >PROJECTS</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" style="background-color:orange">
-              <a class="dropdown-item" href="it-center" style=" color:white; background-color:orange">IDEAL IT CENTER</a>
-              <a class="dropdown-item" href="career" style="color:white; background-color:orange">CAREER DEVELPMENT HUB</a>
+              <a class="dropdown-item" href="it-center" style=" color:black; background-color:orange">IDEAL IT CENTER</a>
+              <a class="dropdown-item" href="career" style="color:black; background-color:orange">CAREER DEVELPMENT HUB</a>
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -128,9 +128,9 @@
               style="color:black; font-size:15px; font-weight: 900;"
             >RESOURCES</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="background-color:orange">
-              <a class="dropdown-item" id="t" href="events"  style=" color:white; background-color:orange">EVENTS</a>
-              <a class="dropdown-item" href="#"  style=" color:white; background-color:orange">CONTESTS</a>
-              <a class="dropdown-item" href="#"  style=" color:white; background-color:orange">WEBINARS</a>
+              <a class="dropdown-item" id="t" href="events"  style=" color:black; background-color:orange">EVENTS</a>
+              <a class="dropdown-item" href="#"  style=" color:black; background-color:orange">CONTESTS</a>
+              <a class="dropdown-item" href="#"  style=" color:black; background-color:orange">WEBINARS</a>
             </div>
           </li>
           <li class="nav-item active">

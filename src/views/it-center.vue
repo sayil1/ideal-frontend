@@ -81,6 +81,22 @@
               </div>
             </div>
           </div>
+           <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <div class="card-header">
+                <h3 class="my-0 font-weight-normal blue--text">E-Business</h3>
+              </div>
+              <div class="card-body">
+                <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
+                <ul class="list-unstyled mt-3 mb-4">
+                  <li>CompTIA Project+</li>
+                  <li>Digital Marketing</li>
+                  <li>Customer Relationship Management (CRM)</li>
+                  <li>Project Management Professional (PMP)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
@@ -98,22 +114,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-header">
-                <h3 class="my-0 font-weight-normal blue--text">E-Business</h3>
-              </div>
-              <div class="card-body">
-                <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>CompTIA Project+</li>
-                  <li>Digital Marketing</li>
-                  <li>Customer Relationship Management (CRM)</li>
-                  <li>Project Management Professional (PMP)</li>
-                </ul>
-              </div>
-            </div>
-          </div>
+         
           <div class="col-md-8">
             <div class="card mb-4 box-shadow">
               <div class="card-header">

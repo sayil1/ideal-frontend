@@ -1,34 +1,22 @@
 <template>
-  <v-footer dark padless style="width:100%">
-    <v-card flat tile class="blue lighten-1 white--text">
-      <v-card-text class="text-center">
-        <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
-          <v-icon size="24px">{{ icon }}</v-icon>
-        </v-btn>
-      </v-card-text>
-
-      <v-card-text class="white--text pt-0">
-        <div
-          class="text-center"
-        >We find the solution together for your career path! In our one stop center and professional hub answers are found...</div>
-      </v-card-text>
-
-      <v-divider></v-divider>
-      <div class="row" style="padding:20px">
-        <div class="col-md-3">
-          <div style=" font-size:20px">ABOUT OUR COMPANY</div>
+  <v-footer dark padless style="width:100%; " class="bg">
+    <v-card flat tile class=" lighten-1 white--text" style=" background: rgba(0, 0, 0, 0.7);">
+      <div class="row" style="padding:20px; height:100%; ">
+        <div class="col-md-4">
+          <div style=" font-size:20px; text-align:center">ABOUT OUR COMPANY</div>
+          <v-divider></v-divider>
 
           <br />We find the solution together for your career path! In our one stop center and professional hub answers are found...
           <br />
           <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
-            <v-icon size="24px">{{ icon }}</v-icon>
+            <v-icon color="orange" size="24px">{{ icon }}</v-icon>
           </v-btn>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-4">
           <div>
-            <div>QUICK LINKS</div>
+            <div style=" font-size:20px; text-align:center">QUICK LINKS</div>
+            <v-divider></v-divider>
 
-           
             <br />
             <ul>
               <li>
@@ -47,7 +35,7 @@
                 <a style="color:white" href="#">TOEFL</a>
               </li>
               <li>
-                <a style="color:white" href="#">TOEFL</a>
+                <a style="color:white" href="#">PEARSON VUE</a>
               </li>
               <li>
                 <a style="color:white" href="#">Career Development Hub</a>
@@ -55,31 +43,28 @@
             </ul>
           </div>
         </div>
-        <div class="col-md-3">
-          <div>OUR EVENTS</div>
 
-       
-          <br />@Admin: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          <br />
-          <br />@Admin: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        </div>
-        <div class="col-md-3">
-          <div>CONTACT US</div>
+        <div class="col-md-4">
+          <div style=" font-size:20px ; text-align:center">CONTACT US</div>
+          <v-divider></v-divider>
 
-         
           <br />Have questions, comments or just want to say hello:
           <br />
           <br />
-          <v-icon ml-3 color="white darken-2">mdi-email</v-icon>info@ideal-nig.org
+          <v-icon ml-3 color="orange darken-2">mdi-email</v-icon>
+          <span>info@ideal-nig.org</span>
+
           <br />
           <br />
-          <v-icon color="white darken-2">mdi-phone</v-icon>+2348030493091
+          <v-icon color="orange darken-2">mdi-phone</v-icon>
+          <span>+2348030493091</span>
           <br />
           <br />
-          <v-icon color="white darken-2">mdi-map-marker</v-icon>37, Jesus Saves Road, Asaba, Delta State.
+          <v-icon color="orange darken-2">mdi-map-marker</v-icon>
+          <span>37, Jesus Saves Road, Asaba, Delta State.</span>
         </div>
       </div>
-    <v-divider></v-divider>
+      <v-divider></v-divider>
       <v-card-text class="white--text" style="text-align:center">
         {{ new Date().getFullYear() }} —
         <strong>IDEal IT</strong>
@@ -103,5 +88,11 @@ a {
   all: unset;
   color: white;
   cursor: pointer;
+}
+.bg {
+  background-image: url("../assets/infob.jpg");
+  /* background: rgba(21, 22, 21, 0.1); */
+  background-size: cover;
+  background-position: center;
 }
 </style>

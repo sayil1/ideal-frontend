@@ -56,8 +56,8 @@
         </div>
       </div>
     </div>
-    <hr />
-    <div class style="margin-top:0px; margin-bottom:50px">
+ 
+    <div class style="margin-top:-35px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
         <div class="col-sm col-md-4" v-if="image==true">

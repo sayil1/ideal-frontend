@@ -9,7 +9,9 @@
           class="black--text font-weight-bold"
           style="text-align:center; margin-top:150px"
         >OUR MAJOR GOAL!!</h1>
-        <hr style="color:blue; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;">
+        <hr
+          style="color:blue; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+        />
       </div>
       <div style="; padding-top:10px" class="col-md-12">
         <div class="row">
@@ -37,76 +39,81 @@
 
         <!-- card -->
       </div>
-      <div></div>
     </div>
 
-    <div class="img" style>
-      <div class="row">
-        <div class="row car col-md-6">
-          <div class="col-md-12">
-            <h4
-              class="white--text font-weight-bold car-head"
-              style=" text-align:center; c  "
-            >MISSION</h4>
-          </div>
-
-          <div class="col-sm col-md-12">
-            <div
-              class="card card-size"
-              style=" background: rgba(0, 0, 0, 0.1); border-radius: 25px;
-  border: 2px solid white;"
-            >
-              <div class="card-body">
-                <p class="card-text white--text car-text">
-                  Provide
-                  <span class="warning--text">quality</span> assured learning services, programs and support through a constant upgrade of knowledge, skills and strategic partnerships that will build self-reliant individuals and developed
-                  <span
-                    class="warning--text"
-                  >communities</span>.
-                </p>
-
-                <hr class="my-4" style=" border-top: 1px solid white;" />
+    <div class>
+      <div class="img">
+        <div style=" background: rgba(0, 0, 0, 0.4);">
+          <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%; margin-left:auto; margin-right:auto">
+            <div class="col-md-4">
+              <div
+                class="card mb-4"
+                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:auto"
+              >
+                <div class="card-header text-center">
+                  <v-icon large color="white darken-2">mdi-bullseye-arrow</v-icon>
+                  <hr>
+                  <h3 class="my-0 orange--text bold">OUR MAJOR GOAL</h3>
+                </div>
+                <div class>
+                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                  <ul
+                    class="white--text text-center"
+                  >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</ul>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6 car">
-          <h4 class="white--text font-weight-bold car-head" style=" text-align:center; margin-top:15px">VISION</h4>
-
-          <div class="col-sm col-md-12">
-            <div
-              class="card card-size"
-              style=" background: rgba(0, 0, 0, 0.1); border-radius: 25px;
-  border: 2px solid white; margin-top:17px"
-            >
-              <div class="card-body" >
-                <p
-                  class="card-text white--text car-text"
-                >Develop individuals and communities towards a knowledge-based society.</p>
-
-                <hr class="my-4" style=" border-top: 1px solid white;" />
+            <div class="col-md-4">
+              <div
+                class="card mb-4 p-0"
+                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:auto"
+              >
+                <div class="card-header text-center">
+                  <v-icon large color="white darken-2">mdi-eye</v-icon>
+                  <hr>
+                  <h3 class="my-0 orange--text bold">VISION</h3>
+                </div>
+                <div class>
+                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                  <ul
+                    class="white--text text-center"
+                  >Develop individuals and communities towards a knowledge-based society..</ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div
+                class="card mb-4"
+                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:auto"
+              >
+                <div class="card-header text-center">
+                  <v-icon large color="white darken-2">mdi-lightbulb-on</v-icon>
+                  <hr>
+                  <h3 class="my-0 orange--text bold">OUR APPROACH</h3>
+                </div>
+                <div class>
+                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                  <ul
+                    class="white--text text-center"
+                  >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <!-- card -->
     </div>
 
-    <div >
-      <h1
-          class="blue--text font-weight-bold"
-          style="text-align:center; margin:50px"
-        >OUR APPROACH</h1>
-    <hr style="color:blue; width:90px; margin-left:auto; margin-right:auto; border: 2px solid black;">
+    <div>
+      <h1 class="blue--text font-weight-bold" style="text-align:center; margin:50px">OUR APPROACH</h1>
+      <hr
+        style="color:blue; width:90px; margin-left:auto; margin-right:auto; border: 2px solid black;"
+      />
       <!-- card -->
       <div class="row">
         <div class="col-sm-12 col-md-12">
-          <div
-            
-            style
-          >
-            <div class=" car-text" style>
+          <div style>
+            <div class="car-text" style>
               <p
                 class="card-text blue--text font-weight-regular"
               >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.,</p>
@@ -137,8 +144,10 @@ export default {
 
 <style lang="css" scoped>
 .img {
-  background-image: url("../assets/new.jpg");
- filter: grayscale(100%);
+  background-image: url("../assets/ideal10.jpg");
+  /* filter: grayscale(100%); */
+  background-size: cover;
+  background-position: center;
 }
 
 [class*="col-"] {

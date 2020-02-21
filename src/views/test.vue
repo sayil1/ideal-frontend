@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color:">
+  <div style="color:black">
     <nava />
   <div style="background-color: ">
       <div class="card-size div1">
@@ -20,14 +20,17 @@
     <div class style>
       <!-- card -->
       <div class="row" style="background-color:;">
-        <div class="col-sm-12 col-md-6" style="margin-bottom:0px">
-          <div class="card card-size" style=" margin-left:20px; margin-right:20px">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
-                <br />
+        <div class="col-md-12" style="padding-left:60px; padding-right:60px">
+           We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
+            
                 <br />Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
                 <br />
+        </div>
+        <div class="col-sm-12 col-md-6" style="margin-bottom:0px">
+          <div class="card card-size" style=" margin-left:20px; margin-right:20px; margin-top:60px">
+            <div class="card-body" style="margin-top:0px">
+              <p class="card-text --text font-weight-regular">
+               
                 <br />
                 <strong>English Test preparation (IELTS, PTE, Cambridge English)</strong>
                 <br />
@@ -92,7 +95,7 @@
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
-                <strong class="display-1">Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong> <br>
+                <strong >Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong> <br>
                 <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and to.div1 {
   background-image: url("../assets/icmb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
