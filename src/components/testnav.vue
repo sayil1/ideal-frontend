@@ -128,7 +128,7 @@
               style="color:black; font-size:15px; font-weight: 900;"
             >RESOURCES</a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink"  style="background-color:orange">
-              <a class="dropdown-item" href="events"  style=" color:white; background-color:orange">EVENTS</a>
+              <a class="dropdown-item" id="t" href="events"  style=" color:white; background-color:orange">EVENTS</a>
               <a class="dropdown-item" href="#"  style=" color:white; background-color:orange">CONTESTS</a>
               <a class="dropdown-item" href="#"  style=" color:white; background-color:orange">WEBINARS</a>
             </div>
@@ -171,15 +171,21 @@ export default {};
   color: orange !important;
   font-size: 21px;
 }
+.dropdown-item:hover {
+  background-color:white !important;
+  color: orange !important;
+  
+}
 .nav-link {
   color: black !important;
 }
-.dropdown-menu {
+.dropdown-menu .dropdown-menu {
   font-size: 0px;
 }
 .style {
   color: brown;
 }
+
 /* Medium devices (tablets, 768px and up) 
 The navbar toggle appears at this breakpoint */
 @media (min-width: 768px) {
