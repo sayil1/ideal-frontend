@@ -20,25 +20,28 @@
             <br />
             <ul>
               <li>
-                <a style="color:white" href="#">Oversees Admission Consulting</a>
+                <a style="color:white" href="/over">Oversees Admission Consulting</a>
               </li>
               <li>
-                <a style="color:white" href="#">Professional Education</a>
+                <a style="color:white" href="/prof">Professional Education</a>
               </li>
               <li>
-                <a style="color:white" href="#">Trainer's Workshop</a>
+                <a style="color:white" href="/train">Trainer's Workshop</a>
               </li>
               <li>
-                <a style="color:white" href="#">ICM UK Qualification</a>
+                <a style="color:white" href="/icm">ICM UK Qualification</a>
               </li>
               <li>
-                <a style="color:white" href="#">TOEFL</a>
+                <a style="color:white" href="/toefl">TOEFL</a>
               </li>
               <li>
-                <a style="color:white" href="#">PEARSON VUE</a>
+                <a style="color:white" href="/pearson">PEARSON VUE</a>
               </li>
               <li>
-                <a style="color:white" href="#">Career Development Hub</a>
+                <a style="color:white" href="/career">Career Development Hub</a>
+              </li>
+                <li>
+                <a style="color:orange" href="/it-center">Registration</a>
               </li>
             </ul>
           </div>

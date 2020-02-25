@@ -42,7 +42,8 @@
         </button>
       </div>
       <div>
-        <img src="../assets/idealng.png" alt style="height:30px; " />
+        <a href="/">   <img src="../assets/idealng.png" alt style="height:30px; " /></a>
+     
       </div>
 
       <div class="collapse navbar-collapse flex-column" id="navbar">

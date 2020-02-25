@@ -25,8 +25,7 @@
         <br />
      
          
-            class="card-text --text font-weight-regular"
-          >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.
+            <p class="card-text  font-weight-regular">If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.
       
       </p>
     </v-alert>

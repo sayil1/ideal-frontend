@@ -15,7 +15,7 @@
       </div>
       <div style="; padding-top:10px" class="col-md-12">
         <div class="row">
-          <div class="col-sm col-md-8 car">
+          <div class="col-sm-12 col-md-12 car">
             <div class="card card-size">
               <div class="card-body">
                 <p
@@ -32,9 +32,9 @@
               </div>
             </div>
           </div>
-          <div>
+          <!-- <div>
             <img style="width:400px; height:auto; " src="../assets/laptop.jpg" />
-          </div>
+          </div> -->
         </div>
 
         <!-- card -->
@@ -48,7 +48,7 @@
             <div class="col-md-4">
               <div
                 class="card mb-4"
-                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:auto"
+                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:"
               >
                 <div class="card-header text-center">
                   <v-icon large color="white darken-2">mdi-bullseye-arrow</v-icon>
@@ -70,7 +70,7 @@
               >
                 <div class="card-header text-center">
                   <v-icon large color="white darken-2">mdi-eye</v-icon>
-                  <hr>
+            <v-divider></v-divider>
                   <h3 class="my-0 orange--text bold">VISION</h3>
                 </div>
                 <div class>
@@ -84,11 +84,11 @@
             <div class="col-md-4">
               <div
                 class="card mb-4"
-                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:auto"
+                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:; margin-right:auto"
               >
                 <div class="card-header text-center">
                   <v-icon large color="white darken-2">mdi-lightbulb-on</v-icon>
-                  <hr>
+               <v-divider></v-divider>
                   <h3 class="my-0 orange--text bold">OUR APPROACH</h3>
                 </div>
                 <div class>

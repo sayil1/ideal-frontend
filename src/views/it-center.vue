@@ -3,14 +3,14 @@
     <nava />
     <div style="background-color: ">
       <div class="card-size div1">
-        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
+        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
                 <span class="car-head white--text" style>IDEAL INFOTECH</span>
-                 <hr
-                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
+                <hr
+                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                />
               </div>
             </div>
           </div>
@@ -25,9 +25,12 @@
           <div class="card card-size" style=" margin-left:20px; margin-right:20px">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
-                The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project. <br>
-                <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector. <br>
-                <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers. <br>
+                The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
+                <br />
+                <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
+                <br />
+                <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers.
+                <br />
                 <br />The first IDEaL IT Center project is located in Asaba, the Delta State capital of Nigeria and it is intended that this project will be replicated in various locations across the country.
                 <br />
               </p>
@@ -43,64 +46,83 @@
       <div class="container">
         <div class="row pt-0">
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-header">
-                <h3 class="my-0  blue--text">Creative Design</h3>
-              </div>
-              <div class="card-body">
-                <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Web Design</li>
-                  <li>Graphics design</li>
-                  <li>AutoCad architecture</li>
-                  <li>Animation and Modeling</li>
-                  <li>Video Editing</li>
-                </ul>
+            <div class="card mb-4 box-shadow div1" style="height:100%">
+              <div style="background-color: rgba(21, 22, 21, 0.8); height:100%">
+                <div class="card-header">
+                  <h3 class="my-0 white--text font-weight-bold">Creative Design</h3>
+                  <v-icon large color="orange darken-2">mdi-palette</v-icon>
+                </div>
+
+                <!-- <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"> -->
+                <div class>
+                  <div class="card-body">
+                    <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                    <ul class="list-unstyled p-0 m-0 white--text" style="font-size:20px">
+                      <li>Web Design</li>
+                      <li>Graphics design</li>
+                      <li>AutoCad architecture</li>
+                      <li>Animation and Modeling</li>
+                      <li>Video Editing</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-header">
-                <h3 class="my-0 font-weight-normal blue--text">
-                  Computing
-                  Technology
-                </h3>
-              </div>
-              <div class="card-body">
-                <!-- <h1><b>$15 </b><small class="text-muted">/ mo</small></h1> -->
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>Cloud computing</li>
-                  <li>Networking</li>
-                  <li>Database Management</li>
-                  <li>Software/Application development</li>
-                  <li>Systems Administration</li>
-                  <li>IT Security</li>
-                  <li>Data Science</li>
-                </ul>
+            <div class="card mb-4 box-shadow div1" style="height:100%">
+              <div style="background-color: rgba(21, 22, 21, 0.8); height:100%">
+                <div class="card-header">
+                  <h4 class="my-0 white--text font-weight-bold">Computing Technology</h4>
+                  <v-icon large color="orange darken-2">mdi-desktop-classic</v-icon>
+                </div>
+
+                <!-- <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"> -->
+                <div class>
+                  <div class="card-body">
+                    <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                    <ul class="list-unstyled m-0 p-0 white--text" style="font-size:20px">
+                      <li>Cloud computing</li>
+                      <li>Networking</li>
+                      <li>Database Management</li>
+                      <li>Software/Application development</li>
+                      <li>Systems Administration</li>
+                       <li>IT Security</li>
+                      <li>Data Science</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
            <div class="col-md-4">
-            <div class="card mb-4 box-shadow">
-              <div class="card-header">
-                <h3 class="my-0 font-weight-normal blue--text">E-Business</h3>
-              </div>
-              <div class="card-body">
-                <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
-                <ul class="list-unstyled mt-3 mb-4">
-                  <li>CompTIA Project+</li>
-                  <li>Digital Marketing</li>
-                  <li>Customer Relationship Management (CRM)</li>
-                  <li>Project Management Professional (PMP)</li>
-                </ul>
+            <div class="card mb-4 box-shadow div1" style="height:100%">
+              <div style="background-color: rgba(21, 22, 21, 0.8); height:100%">
+                <div class="card-header">
+                  <h4 class="my-0 white--text font-weight-bold">E-Business</h4>
+                  <v-icon large color="orange darken-2">mdi-cash-multiple</v-icon>
+                </div>
+
+                <!-- <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"> -->
+                <div class>
+                  <div class="card-body">
+                    <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                    <ul class="list-unstyled   white--text pl-0" style="font-size:19px">
+                      <li>CompTIA Project+</li>
+                      <li>Digital Marketing</li>
+                      <li>Customer Relationship Management (CRM)</li>
+                      <li>Project Management Professional (PMP)</li>
+                     
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-md-4">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h3 class="my-0 font-weight-normal blue--text">Training Delivery Styles</h3>
+                <h3 class="my-0 font-weight-normal orange--text">Training Delivery Styles</h3>
               </div>
               <div class="card-body">
                 <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
@@ -114,19 +136,19 @@
               </div>
             </div>
           </div>
-         
+
           <div class="col-md-8">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h3 class="my-0 font-weight-normal blue--text">Hands-on practical:</h3>
+                <h3 class="my-0 font-weight-normal orange--text">Hands-on practical:</h3>
               </div>
               <div class="card-body">
                 <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
                 At the end of each training program, participants are issued certificates after they must have passed a series of exams that tests their proficiency.
                 <v-row justify="center">
                   <v-dialog v-model="dialog" persistent max-width="600px" style="z-index:20000">
-                    <template v-slot:activator="{ on }" >
-                      <v-btn color="primary" dark v-on="on" style="margin-top:50px">Register</v-btn>
+                    <template v-slot:activator="{ on }">
+                      <v-btn color="orange" dark v-on="on" style="margin-top:50px">Register</v-btn>
                     </template>
                     <v-card>
                       <v-card-title>
@@ -136,14 +158,13 @@
                         <v-container>
                           <v-row>
                             <v-col cols="12" sm="6" md="6">
-                              <v-text-field    label="First name*" required></v-text-field>
+                              <v-text-field label="First name*" required></v-text-field>
                             </v-col>
-                           
+
                             <v-col cols="12" sm="6" md="6">
                               <v-text-field
                                 label="Last name*"
                                 hint="example of persistent helper text"
-                               
                                 required
                               ></v-text-field>
                             </v-col>
@@ -204,7 +225,7 @@ export default {
   data: () => ({
     item: 1,
     item2: 1,
-     dialog: false,
+    dialog: false,
     items: [
       { text: "Getting Hired", icon: "mdi-charity" },
       { text: "Job Retention", icon: "mdi-briefcase" },
@@ -251,7 +272,8 @@ template {
   background-image: url("../assets/infob.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
-  background-position: center ;
+  background-position: center;
+  height: 100%;
 }
 @media only screen and (max-width: 400px) {
   .car {
@@ -304,6 +326,6 @@ template {
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-  }}
-
+  }
+}
 </style>

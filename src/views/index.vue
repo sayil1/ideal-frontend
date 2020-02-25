@@ -24,7 +24,7 @@
                     <br />
                     <div class="car-text">
                       <span class="car-head" style>WELCOME TO <br>
-INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
+                      INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                       <br />
                       <br />BUILDING A COMMUNITY FOR SOCIALLY RESPONSIBLE CITIZENS AND LETTING ACTIONS SPEAK IN THE ACHIEVEMENT OF SDG GOAL 4, GOAL 7 AND GOAL 17.
                      
@@ -33,7 +33,7 @@ INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                       <br />
                       <div class="text-center">
                         <router-link to="/">
-                          <v-btn rounded color="green" dark>See More</v-btn>
+                          <v-btn rounded color="orange" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -68,7 +68,7 @@ INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                       <br />
                       <div class="text-center">
                         <router-link to="/prof">
-                          <v-btn rounded color="green" dark>See More</v-btn>
+                          <v-btn rounded color="orange" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -98,7 +98,7 @@ INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                         <br />
                         <br />
                         <router-link to="/icm">
-                          <v-btn rounded color="green" dark>See More</v-btn>
+                          <v-btn rounded color="orange" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -130,7 +130,7 @@ INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                       <br />
                       <div class="text-center">
                         <router-link to="/train">
-                          <v-btn rounded color="green" dark>See More</v-btn>
+                          <v-btn rounded color="orange" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -162,7 +162,7 @@ INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                       <br />
                       <div class="text-center">
                         <router-link to="/test">
-                          <v-btn rounded color="green" dark>See More</v-btn>
+                          <v-btn rounded color="orange" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -194,7 +194,7 @@ INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                       <br />
                       <div class="text-center">
                         <router-link to="/over">
-                          <v-btn rounded color="green" dark>See More</v-btn>
+                          <v-btn rounded color="orange" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -385,8 +385,8 @@ INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
                   <button
                 
                     type="button"
-                    class="btn btn-warning darken-2"
-                    color="warning"
+                    class="btn orange darken-2"
+                    color="red"
                     data-toggle="modal"
                     data-target="#exampleModalCenter"
                   >Support a project</button>
