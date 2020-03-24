@@ -231,8 +231,8 @@
                       </template>
                       
                      <template  v-slot:item.status="{ item }">
-                         <v-icon v-if="item.startDate < new Date().toISOString().substr(0, 10)" color="blue" >mdi-circle-medium </v-icon>
-                          <v-icon v-if="item.startDate >= new Date().toISOString().substr(0, 10)" color="red" >mdi-circle-medium </v-icon>
+                         <v-icon v-if="item.startDate < new Date().toISOString().substr(0, 10)" color="red" >mdi-circle-medium </v-icon>
+                          <v-icon v-if="item.startDate >= new Date().toISOString().substr(0, 10)" color="blue" >mdi-circle-medium </v-icon>
                      </template>
 
                       <template v-slot:item.action="{ item }">
@@ -397,20 +397,25 @@ export default {
   created() {
     this.initialize();
     let a = new Date().toISOString().substr(0, 10)
-    let b = this.events.startDate
-    if (b==a){
+    // let b = this.events.startDate
+    let b = new Date('2020-03-13').toISOString().substr(0, 10)
+
+    if (b>a){
 // eslint-disable-next-line no-console
           console.log("ends today");
+          // alert('greater than today')
     }
     else{
       // eslint-disable-next-line no-console
           console.log("not yet");
+          // alert('not yet')
     }
   
   },
 
   methods: {
     initialize() {
+    
       serv
         .getRequest("eve/allEve")
         .then(response => {

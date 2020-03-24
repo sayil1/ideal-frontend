@@ -17,15 +17,14 @@
         </div>
       </div>
     </div>
-    <div class style>
+    <div class="body" style>
       <!-- card -->
       <div class="row" style="background-color:;">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
-          <div class="card card-size" style=" margin-left:20px; margin-right:20px">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
+        <div class="col-sm-12 col-md-12" >
+          <div class style=" margin-left:20px; margin-right:20px">
+            <div class style>
+              <p class="--text font-weight-regular">
                 If you want to make your overseas study dreams come true, IDEaL’s admission consulting is your best bet.
-                <br />
                 <br />We have an unequaled track record of enlisting students with diverse qualifications and career drives into many foreign universities and colleges. We help to secure study admissions and have had students who are constantly happy with our results.
                 <br />
                 <br />
@@ -33,9 +32,9 @@
                 <br />Our full range of services includes:
                 <br />
 
-                <v-list dense>
+                <v-list dense class="row">
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item" color="rgb()">
+                  <v-list-item-group v-model="item" class="col-md-9" color="rgb()">
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
                         <v-icon v-text="item.icon"></v-icon>
@@ -45,45 +44,41 @@
                       </v-list-item-content>
                     </v-list-item>
                   </v-list-item-group>
+                  <div class="col-sm col-md-3 mt-4" v-if="image==true">
+                    <v-img src="../assets/test.svg" style=" width:300px; margin-top:-30px"></v-img>
+                  </div>
                 </v-list>
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4 mt-3" v-if="image==true">
-          <v-img src="../assets/test.svg" style=" width:700px; margin-top:20px"></v-img>
-        </div>
       </div>
     </div>
-    <div class style="margin-top:0px; margin-bottom:50px">
+    <div class="body" style="margin-top:-25px">
       <!-- card -->
       <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <div class="card-size" style=" margin-left:20px; margin-right:20px;">
-            <div class="card-body" style>
+        <div >
+          <div class="">
+            <div class="" style>
               <p class="card-text blue--text font-weight-regular">
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
 
                   <div class="card-text --text font-weight-regular">
-                    <h2>
+                    <h3>
                       <strong class="black--text">For working professionals</strong>
                       <hr
                         style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
                       />
-                    </h2>
-                
+                    </h3>
                     <div>We assist working professionals across various industries/sectors to get offers that’ll enable them undergo short programs/courses in renown universities and in line with their career agenda.</div>
                     <br />
-                  <h2>
+                    <h3>
                       <strong class="black--text">For Corporate bodies</strong>
                       <hr
                         style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
                       />
-                    </h2>
-                    
-                    
-                    We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics.
+                    </h3>We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics.
                     <br />For Overseas Admissions, UPCOMING overseas trainings, conferences and short courses.
                     <a
                       href="/cont"
@@ -167,20 +162,17 @@ export default {
 </script>
 
 <style scoped lang="css">
-template {
-  margin-left: 10px;
-  margin-right: 10px;
-}
+
 .div1 {
   background-image: url("../assets/overb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 @media only screen and (max-width: 400px) {
   .car {
     font-size: 2px;
-    margin: 0px;
+   
   }
   .car-head {
     font-size: 40px;
@@ -225,5 +217,6 @@ template {
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-  }}
+  }
+}
 </style>

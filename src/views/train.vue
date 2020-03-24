@@ -1,4 +1,4 @@
-<template>
+<template >
   <div style="background-color:">
     <nava />
     <div class="card-size div1">
@@ -15,110 +15,73 @@
         </div>
       </div>
     </div>
-    <div class style>
+    <div class="body" style>
       <!-- card -->
-      <div class="row" style=";">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
-          <div class="card card-size" style=" margin-left:20px; margin-right:20px">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                Our Train the Trainer program empowers teachers/trainers to improve and professionalize their current methods of instruction and understand how people learn.
+      <div class="row sub-body" style>
+        <div class="col-sm-12 col-md-9" style="margin-bottom:0px">
+          <div class style=" ">
+            <div class style>
+              <p class="--text font-weight-regular">
+                <strong>Train the trainers</strong>
+                refers to actions and methods aimed at empowering
+                <strong>Trainers</strong> with the knowledge, abilities, and attitudes, in an integrated way, needed for the development of their vocation.
                 <br />
-                <br />Participants will have a comprehensive understanding of the Training and Development industry as well as training packaging. Some areas of focus include:
+                <strong>How is IDEaL improving the training of trainers?</strong>
+                <br />At IDEaL, we understand that trainers transform lives. Hence, have taken actions in prioritizing trainers training, support and development.
                 <br />
-
+                <br />We consider that a learner’s education can only ever be as good as their teacher(s) hence it’s important that trainers not only need to know what to teach but how to teach.
                 <br />
-                <v-list dense>
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item" color>
-                    <v-list-item v-for="(item, i) in items" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item.icon"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content color="orange">
-                        <v-list-item-title v-text="item.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                </v-list>They will also develop on the main areas of Training and Assessment including design, delivery, and assessment.
+                <br />Effective training for trainers isn’t as prevalent in our region as it should be due to the fact that trained teachers are in decline. In addition, we have observed that many teachers struggle to teach without necessary teaching and class management techniques; a consequence of this is that many learners struggle to learn. Failure to achieve this will lead to failure to achieving the Goal 4 of the Sustainable Development Goals aimed at having every youth receiving high-quality education by 2030.
               </p>
-              <h2 style="text-align:center; color:black" class>
-                <strong>Our Targets</strong>
-
-                  <hr
-                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-              />
-              </h2>
-
-              <v-list dense>
-                <!-- <v-subheader>REPORTS</v-subheader> -->
-                <v-list-item-group v-model="item" color="
-                ">
-                  <v-list-item v-for="(item, i) in items2" :key="i">
-                    <v-list-item-icon>
-                      <v-icon v-text="item.icon"></v-icon>
-                    </v-list-item-icon>
-                    <v-list-item-content>
-                      <v-list-item-title v-text="item.text"></v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-list-item-group>
-              </v-list>
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4" style="padding-top:150px" v-if="image==true">
-          <v-img src="../assets/train1.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-3" style="padding-top:80px" v-if="image==true">
+          <v-img src="../assets/train1.svg" style=" width:300px"></v-img>
         </div>
       </div>
-    </div>
-    <div class style="margin-top:0px; margin-bottom:50px">
-      <!-- card -->
-      <div class="row">
-        <div class="col-sm col-md-4" style="padding-top:120px" v-if="image == true">
-          <v-img src="../assets/train2.svg" style=" width:700px"></v-img>
-        </div>
-        <div class="col-sm-12 col-md-8">
-          <div class="card-size" style=" margin-left:20px; margin-right:20px;">
-            <div class="card-body" style>
-              <div class="card-text --text font-weight-regular">
-                <h2>
+      <div class="sub-body" style=" ">
+        <!-- card -->
+        <div class="row">
+          <div class="col-sm col-md-3" style="padding-top:80px" v-if="image == true">
+            <v-img src="../assets/train2.svg" style=" width:300px"></v-img>
+          </div>
+          <div class="col-sm-12 col-md-9">
+            <div class="" style=" ">
+              <div class="" style>
+                <div class=" --text font-weight-regular">
+                  <!-- <h2>
                   <strong class="black--text">Workshops Structure</strong>
-                     <hr
-                style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
-              />
-                </h2>
+                  <hr
+                    style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
+                  />
+                  </h2>-->
 
-                <br />
-                <br />The scope of training and support each learner requires will vary according to their existing involvement, knowledge and skills in this area.
-                IDEaL Train-the-trainer workshops have three student cohorts:
-                <v-list-item>
-                  <v-list-item-content class="--text">
-                    <v-list-item-title>Beginner Cohort</v-list-item-title>
-                    <v-list-item-subtitle>require little or no knowledge/skill in the competence contained in this qualification.</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>
-
-                <v-list-item two-line>
-                  <v-list-item-content>
-                    <v-list-item-title class="--text">Intermediate Cohort</v-list-item-title>
-                    <v-list-item-subtitle>should possess limited prior knowledge and skill in the competence contained in this qualification.</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>
-
-                <v-list-item three-line>
-                  <v-list-item-content>
-                    <v-list-item-title class="--text">Advanced Cohort</v-list-item-title>
-                    <v-list-item-subtitle>Consists of individuals with a broad knowledge and skill in the competence contained in this qualification. Related industry work experience of one year or more.</v-list-item-subtitle>
-                  </v-list-item-content>
-                </v-list-item>Please send a message on available options, dates and needs.
-                <br />
+                  <br />
+                  <h3>The benefits your organization will gain from this course:</h3>
+                  <ul>
+                    <li>- Training in your organization will become more effective.</li>
+                    <li>- Your trainers will be equipped with the skills to motivate their audience.</li>
+                    <li>- Training sessions will be more meaningful and results orientated.</li>
+                    <li>- Trainers will learn to create lasting impressions on their trainees. Making sure that the necessary skills to succeed in their roles are delivered effectively.</li>
+                    <li>- Training staff will understand how we learn, will be well-prepared and will focus on outstanding delivery.</li>
+                    <li>- Trainers will gain excellent delivery skills to make a positive impact on others.</li>
+                    <li>- Trainers will gain skills in presentation, training design and classroom management.</li>
+                    <li>- Trainers will be educated on how to integrate technology into the training</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="" style="">
+        <br />The benefits of this hands-on training are incalculable as all topics have gone through systematic procedures to enable participants achieve success. An additional benefit engaging in our train-the-trainers program is the network of professionals that a trainer will meet during the period. It offers them the chance to gather ideas and recommendations from other professionals.
+        <br />Intended for:
+        <br />These train-the-trainer courses are suitable for anyone involved in the development of others. Including: trainers, managers, leaders, consultants, teachers, technical trainers, lecturers and more…
+      </div>
     </div>
+
     <foota />
   </div>
 </template>
@@ -188,9 +151,11 @@ export default {
 </script>
 
 <style scoped lang="css">
-template {
-  margin-left: 10px;
-  margin-right: 10px;
+
+  template {
+  
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+
 }
 .div1 {
   background-image: url("../assets/trainb.jpg");
@@ -199,22 +164,23 @@ template {
 }
 
 @media only screen and (max-width: 400px) {
+  .body{
+    margin: 50px
+  }
   .car {
     font-size: 2px;
-
     margin: 0px;
   }
   .car-head {
     font-size: 40px;
     color: black;
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+   
   }
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
+  
 
     text-align: center;
   }
@@ -229,23 +195,30 @@ template {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #b2d6ff; /* Blue */
+  .body {
+    margin-top: 40px;
+  margin-left: 70px;
+  margin-right: 70px;
+  margin-bottom: 20px;
+
+  }
+  .sub-body{
+    font-size: 15px
   }
   .car {
-    padding: 30px;
+   
   }
   .car-head {
     font-size: 40px;
     color: black;
     text-align: center;
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
   }
   .car-text {
     font-size: 25px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
-    padding: 10px;
+   
     text-align: center;
     border-radius: 45px;
   }

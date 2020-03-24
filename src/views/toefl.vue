@@ -1,30 +1,30 @@
 <template>
   <div style="background-color:">
     <nava />
-   <div style="background-color: ">
+    <div style="background-color: ">
       <div class="card-size div1">
-        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.9)">
+        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
                 <span class="car-head white--text" style>TOEFL</span>
-                 <hr
-                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
+                <hr
+                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  
-    <div class style>
+
+    <div class="body" style>
       <!-- card -->
-      <div class="row" style="background-color:rgb();">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:0px">
-          <div class="card card-size" style=" margin-left:20px; margin-right:20px">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
+      <div class="row" >
+        <div class="col-sm-12 col-md-12" style="margin-bottom:0px">
+          <div class="sub-body" style="">
+            <div class="" style>
+              <p class=" --text ">
                 The
                 <strong>Test of English as a Foreign Language® TOEFL</strong>is a standardized test that measures the ability of non- native speakers to use and understand English at the university level, evaluating how well they combine reading, listening, speaking and writing skills to perform academic tasks.
                 <br />
@@ -51,46 +51,47 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-4" v-if="image==true">
-          <v-img src="../assets/toefl.png" style=" width:700px"></v-img>
-        </div>
+     <!-- <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
+            <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
+          </div> -->
       </div>
-    </div>
-    <div class style="margin-top:50px; margin-bottom:0px">
-      <!-- card -->
-      <div class="row">
-        <div class="col-sm col-md-4" v-if="image==true">
-          <v-img src="../assets/toefl.png" style=" width:700px"></v-img>
-        </div>
-        <div class="col-sm-12 col-md-8">
-          <div class="card-size" style=" margin-left:20px; margin-right:20px;">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                <strong>Who Takes the TOEFL Test?</strong>
-                <br />
-                <br />More than 35 million people from all over the world have taken the TOEFL test to demonstrate their English-language proficiency.
-                <v-list dense>
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item2" color="">
-                    <v-list-item v-for="(item2, i) in items2" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item2.icon"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item2.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                  <div
-                    class="card-text --text font-weight-regular mt-3"
-                  >Important Update Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test.</div>
-                </v-list>
-              </p>
+      <div class style="">
+        <!-- card -->
+        <div class="row sub-body">
+          <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
+            <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
+          </div>
+          <div class="col-sm-12 col-md-10">
+            <div class="card-size" style=" ;">
+              <div class="card-body" style>
+                <p class="card-text --text font-weight-regular">
+                  <strong>Who Takes the TOEFL Test?</strong>
+                  <br />
+                  <br />More than 35 million people from all over the world have taken the TOEFL test to demonstrate their English-language proficiency.
+                  <v-list dense>
+                    <!-- <v-subheader>REPORTS</v-subheader> -->
+                    <v-list-item-group v-model="item2" color>
+                      <v-list-item v-for="(item2, i) in items2" :key="i">
+                        <v-list-item-icon>
+                          <v-icon v-text="item2.icon"></v-icon>
+                        </v-list-item-icon>
+                        <v-list-item-content>
+                          <v-list-item-title v-text="item2.text"></v-list-item-title>
+                        </v-list-item-content>
+                      </v-list-item>
+                    </v-list-item-group>
+                    <div
+                      class="card-text --text font-weight-regular mt-3"
+                    >IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test.</div>
+                  </v-list>
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <foota />
   </div>
 </template>
@@ -106,7 +107,7 @@ export default {
   },
   data: () => ({
     item: 1,
-    image:true,
+    image: true,
     item2: 1,
     items: [
       { text: "More Popular with students", icon: "mdi-numeric-1" },
@@ -138,7 +139,7 @@ export default {
       }
     ]
   }),
-   created() {
+  created() {
     this.isMobile();
   },
   methods: {
@@ -159,17 +160,20 @@ export default {
 
 <style scoped lang="css">
 template {
-  margin-left: 10px;
-  margin-right: 10px;
+  
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .div1 {
   background-image: url("../assets/toeflb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 @media only screen and (max-width: 400px) {
+  
   .car {
     font-size: 2px;
 
@@ -203,6 +207,16 @@ template {
   body {
     background-color: #b2d6ff; /* Blue */
   }
+  .body {
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    color:black
+  }
+  .sub-body {
+    font-size: 15px;
+  }
   .car {
     padding: 30px;
   }
@@ -220,5 +234,6 @@ template {
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-  }}
+  }
+}
 </style>

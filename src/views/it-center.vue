@@ -7,7 +7,7 @@
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
-                <span class="car-head white--text" style>IDEAL INFOTECH</span>
+                <span class="car-head white--text" style>IDEAL IT-CENTER</span>
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />

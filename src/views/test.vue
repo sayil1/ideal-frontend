@@ -96,12 +96,7 @@
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
                 <strong >Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong> <br>
-                <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and to.div1 {
-  background-image: url("../assets/icmb.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
-  background-size: cover;
-  background-position: center ;
-}pics to expect, ultimately improving your score on the test.
+                <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and to expect, ultimately improving your score on the test.
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
                   <v-list-item-group v-model="item2" color="">

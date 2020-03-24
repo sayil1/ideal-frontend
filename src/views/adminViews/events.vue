@@ -16,8 +16,7 @@
             class
             max-width="300"
             style="margin:20px"
-            v-for="(event) in events"
-            v-bind:key="event"
+            
           >
             <v-img class="white--text align-end" height="200px" v-bind:src="event.imagesPath"></v-img>
             <v-card-title>{{event.title}}</v-card-title>

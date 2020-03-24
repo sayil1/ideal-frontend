@@ -19,6 +19,11 @@ import contact from '../views/contactUs';
 import adminLogin from '../views/adminViews/adminLogin'
 import adminIndex from '../views/adminViews/adminIndex'
 import events from '../views/adminViews/events'
+import adminNews from '../views/adminViews/adminNews.vue'
+import books from '../views/books.vue'
+import capacity from '../views/capacity.vue'
+import sport from '../views/sport.vue'
+import digital from '../views/digital.vue'
 
 Vue.use(VueRouter)
 
@@ -32,6 +37,31 @@ const routes = [
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/adminNews',
+    name: 'adminNews',
+    component: adminNews
+  },
+  {
+    path: '/books',
+    name: 'books',
+    component: books
+  },
+  {
+    path: '/digital',
+    name: 'digital',
+    component: digital
+  },
+  {
+    path: '/capacity',
+    name: 'capacity',
+    component: capacity
+  },
+  {
+    path: '/sport',
+    name: 'sport',
+    component: sport
   },
   {
     path: '/events',

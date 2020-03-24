@@ -208,6 +208,7 @@
           </div>
         </v-carousel-item>
       </v-carousel>
+      
     </header>
 
     <div>

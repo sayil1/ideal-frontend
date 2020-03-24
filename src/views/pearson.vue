@@ -1,40 +1,40 @@
 <template>
   <div style="background-color:">
     <nava />
-   <div style="background-color: ">
+    <div style="background-color: ">
       <div class="card-size div1">
-        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.9)">
+        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
                 <span class="car-head white--text" style>PEARSON VUE CENTER</span>
-                 <hr
-                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
+                <hr
+                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                />
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <v-alert style="margin:20px" outlined type="warning" prominent border="left">
+    <v-alert style="margin:10px" type="success" border="right">
       <p class="card-text --text font-weight-regular">
         Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
-        For information on a specific exam duration, fee, language, etc., please refer to the website of the particular provider.
-        <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
-        <br />
-     
-         
-            <p class="card-text  font-weight-regular">If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.
-      
+        For information on a specific exam duration, fee, language, etc., please refer to the
+        <strong>
+          <a style="color:orange;" href="http://home.pearsonvue.com">website</a>
+        </strong> of the particular provider.
+        <!-- <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
+        <br />-->
       </p>
+      <p class="card-text font-weight-regular"></p>
     </v-alert>
-    <div class style>
+    <div class="body" style>
       <!-- card -->
       <div class="row" style="background-color:rgb();">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:70px">
-          <div class="card card-size" style=" margin-left:20px; margin-right:20px">
-            <div class="card-body" style>
+        <div class="col-sm-12 col-md-12" style="margin-bottom:70px">
+          <div class style>
+            <div class style>
               <p class="card-text --text font-weight-regular">
                 <br />
                 <strong>PEARSON VUE CENTER</strong>
@@ -44,9 +44,9 @@
                 <strong>IT CERTIFICATIONS</strong>
                 are recognized worldwide and serve as benchmarks to specific skills set based on standardized testing. They help demonstrate your dedication and technical knowledge on a specific platform.
                 <br />Once earned, IT Certifications can you help achieve the following:
-                <v-list dense>
+                <v-list dense class="row">
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item" color="rgb()">
+                  <v-list-item-group v-model="item" color="rgb()" class="col-md-9">
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
                         <v-icon v-text="item.icon"></v-icon>
@@ -56,40 +56,18 @@
                       </v-list-item-content>
                     </v-list-item>
                   </v-list-item-group>
+                  <div class="col-sm col-md-3" style="padding-top:100px" v-if="image==true">
+                    <v-img src="../assets/pea.png" style=" width:300px"></v-img>
+                  </div>
                 </v-list>
               </p>
             </div>
           </div>
-        </div>
-        <div class="col-sm col-md-4" style="padding-top:190px" v-if="image==true">
-          <v-img src="../assets/pea.png" style=" width:700px"></v-img>
         </div>
       </div>
     </div>
     <div class style="margin-top:; margin-bottom:10px">
       <!-- card -->
-      <div class="row">
-        <!-- <div class="col-sm col-md-4">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
-        </div>-->
-        <!-- <div class="col-sm-12">
-          <div class="card-size" style=" margin-left:20px; margin-right:20px;">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
-                For information on a specific exam duration, fee, language, etc., please refer to the website of the particular provider.
-                <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
-                <br />
-                <v-list dense>
-                  <div
-                    class="card-text --text font-weight-regular"
-                  >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
-                </v-list>
-              </p>
-            </div>
-          </div>
-        </div> -->
-      </div>
     </div>
     <foota />
   </div>
@@ -161,11 +139,6 @@ export default {
 </script>
 
 <style lang="css">
-template {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
 .div1 {
   background-image: url("../assets/infob.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
@@ -173,6 +146,14 @@ template {
   background-position: center;
 }
 @media only screen and (max-width: 400px) {
+  .body {
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px
+  }
   .car {
     font-size: 2px;
 
@@ -206,6 +187,14 @@ template {
   body {
     background-color: #b2d6ff; /* Blue */
   }
+  .body {
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
+    color: black;
+    font-size: 15px
+  }
   .car {
     padding: 30px;
   }
@@ -214,7 +203,7 @@ template {
     color: black;
     text-align: center;
 
-    padding-top: 90px;
+    padding-top: 10px;
   }
   .car-text {
     font-size: 25px;

@@ -4,22 +4,22 @@
 
     <!-- who we are -->
     <div class="row">
-      <div class="col-md-12">
+      <div class="col-md-12 ">
         <h1
-          class="black--text font-weight-bold"
+          class=" b-head"
           style="text-align:center; margin-top:150px"
         >OUR MAJOR GOAL!!</h1>
         <hr
-          style="color:blue; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+          style="color:black; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
         />
       </div>
-      <div style="; padding-top:10px" class="col-md-12">
+      <div style="; padding-top:20px" class="col-md-12 b-text">
         <div class="row">
           <div class="col-sm-12 col-md-12 car">
-            <div class="card card-size">
-              <div class="card-body">
+            <div class=" card-size">
+              <div class="">
                 <p
-                  class="card-text black--text car-text"
+                  class="b-text black--text " style="margin-top:-50px"
                 >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
                 <!-- <h2
                   class="card-subtitle mb-2 mt-4 black--text font-weight-bold"
@@ -45,7 +45,7 @@
       <div class="img">
         <div style=" background: rgba(0, 0, 0, 0.4);">
           <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%; margin-left:auto; margin-right:auto">
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <div
                 class="card mb-4"
                 style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:"
@@ -63,7 +63,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <div
                 class="card mb-4 p-0"
                 style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:auto"
@@ -81,7 +81,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-12">
               <div
                 class="card mb-4"
                 style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:; margin-right:auto"
@@ -105,9 +105,9 @@
     </div>
 
     <div>
-      <h1 class="blue--text font-weight-bold" style="text-align:center; margin:50px">OUR APPROACH</h1>
+      <h1 class="black--text b-head" style="text-align:center; margin-top:30px">OUR APPROACH</h1>
       <hr
-        style="color:blue; width:90px; margin-left:auto; margin-right:auto; border: 2px solid black;"
+        style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
       />
       <!-- card -->
       <div class="row">
@@ -115,8 +115,8 @@
           <div style>
             <div class="car-text" style>
               <p
-                class="card-text blue--text font-weight-regular"
-              >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.,</p>
+                class="card-text   b-text"
+              >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</p>
             </div>
           </div>
         </div>
@@ -150,11 +150,22 @@ export default {
   background-position: center;
 }
 
+template {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+
 [class*="col-"] {
   width: 100%;
 }
 
 @media only screen and (max-width: 400px) {
+  .b-text {
+    margin:30px;
+  }
+
   .car {
     font-size: 2px;
 
@@ -170,7 +181,6 @@ export default {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     padding-top: 20px;
-
     text-align: center;
   }
 }
@@ -184,8 +194,18 @@ export default {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  .b-text {
+    margin-left:10px;
+    margin-right:10px;
+    color: black;
+    font-size: 21px
+  }
+  .b-head{
+    font-size: 30px;
+    
+  }
   body {
-    background-color: #b2d6ff; /* Blue */
+    background-color: #b2d6ff; /* black */
   }
   .car {
     padding: 30px;

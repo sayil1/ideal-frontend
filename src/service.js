@@ -8,7 +8,6 @@ export class Services {
     testers(){
         // eslint-disable-next-line no-console
         alert('i see u bro')
-
     }
     getRequest(url) {
         return axios.get(`${API_URL}/${url}`)
