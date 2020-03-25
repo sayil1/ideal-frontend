@@ -5,8 +5,8 @@
       style="background-color:black; width:100%; color:white; font-size:15px"
     >
       <div class="row">
-        <div class="col-md-1 col-sm-12" style="margin-right:70px">
-          <v-icon size="20" color="green darken-2" right >mdi-phone</v-icon>(+234) 9030031914
+        <div class="col-md-1 col-sm-12" style="margin-right:90px">
+          <v-icon size="20" color="green darken-2" right>mdi-phone</v-icon>(+234) 9030031914
         </div>
         <div class="col-md-1 col-sm-12">
           <v-icon size="20" color="green darken-2" right style="padding-right:5px">mdi-mail</v-icon>info@ideal-nig.org
@@ -16,7 +16,8 @@
         <div class="row" style="float:right;">
           <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-facebook</v-icon>
           <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-twitter</v-icon>
-            <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
+          <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
+            <v-icon size="20" color="orange darken-2" right>mdi-linkedin</v-icon>
         </div>
       </div>
     </div>
@@ -45,7 +46,7 @@
       </div>
 
       <div class="collapse navbar-collapse flex-column" id="navbar">
-        <ul class="navbar-nav w-100 justify-content-center px-3">
+        <ul class="navbar-nav w-100 justify-content-center" style="margin-left:40px">
           <li class="nav-item active">
             <router-link class="nav-link" to="/" style>
               HOME
@@ -55,14 +56,12 @@
           <li class="nav-item dropdown">
             <router-link
               class="nav-link"
-              to="/about"
+              to=""
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
               style="color:black; "
-             
-              
             >ABOUT US</router-link>
             <div class="dropdown-menu" aria-labelledby style="background-color:orange">
               <router-link
@@ -70,19 +69,24 @@
                 class="dropdown-item font-weight-bold"
                 to="/about"
               >WHO WE ARE</router-link>
+              <div class="dropdown-menu"  aria-labelledby >
+                 <ul class="navbar-nav w-100 justify-content-center">
+                   <li>fedf</li>
+                   <li>incsd</li>
+                 </ul>
+              </div>
+
               <router-link
                 class="dropdown-item font-weight-bold"
                 to="/gal"
                 style="color:black; background-color:orange"
               >GALLERY</router-link>
-             
-             
             </div>
           </li>
           <li class="nav-item dropdown">
             <router-link
               class="nav-link"
-              to=""
+              to
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -109,7 +113,7 @@
                 class="dropdown-item font-weight-bold"
                 to="prof"
                 style="color:black; background-color:orange"
-              >EDUCATIONAL ADVOCACY</router-link> -->
+              >EDUCATIONAL ADVOCACY</router-link>-->
               <router-link
                 class="dropdown-item font-weight-bold"
                 to="digital"
@@ -136,7 +140,7 @@
           <li class="nav-item dropdown">
             <router-link
               class="nav-link"
-              to="http://example.com"
+              to
               id="navbarDropdownMenuLink"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -190,12 +194,12 @@
                 to="test"
                 style="color:black; background-color:orange"
               >TEST PREPARATION</router-link>
-               <router-link
+              <router-link
                 class="dropdown-item font-weight-bold"
                 to="career"
                 style="color:black; background-color:orange"
               >CAREER DEVELOPMENT</router-link>
-               <router-link
+              <router-link
                 class="dropdown-item font-weight-bold"
                 to="over"
                 style="color:black; background-color:orange"
@@ -212,7 +216,7 @@
               >TRAINING AND WORKSHOP</router-link>
             </div>
           </li>
-           <li class="nav-item dropdown">
+          <li class="nav-item dropdown">
             <router-link
               class="nav-link"
               to="http://example.com"
@@ -238,7 +242,6 @@
                 to="#"
                 style=" color:black; background-color:orange"
               >DIY KITS</router-link>
-           
             </div>
           </li>
           <li class="nav-item dropdown">
@@ -285,10 +288,9 @@
     </nav>
     <div v-if="news.length>0" style="background-color:orange">
       <marquee behavior="scroll" direction="left" scrollamount="15">
-       
-        <span style="color:white"> News flash:</span>
+        <span style="color:white">News flash:</span>
         <span style="padding:10px" v-for="(n , index) in news" v-bind:key="index">
-          <span  style="padding:3px">{{n.message}}</span>
+          <span style="padding:3px">{{n.message}}</span>
           <!-- {{n.message}}; -->
         </span>
       </marquee>
@@ -318,16 +320,18 @@ export default {
           // JSON responses are automatically parsed.
           // this.news = response.data.result;
 
-           // eslint-disable-next-line no-console
-            console.log(response.data.result.length)
+          // eslint-disable-next-line no-console
+          console.log(response.data.result.length);
 
-          for (let i= 0; i<=response.data.result.length-1; i++){
-             // eslint-disable-next-line no-console
-            console.log(i)
-            if(response.data.result[i].endDate > new Date().toISOString().substr(0, 10)){
-              this.news.push(response.data.result[i])
+          for (let i = 0; i <= response.data.result.length - 1; i++) {
+            // eslint-disable-next-line no-console
+            console.log(i);
+            if (
+              response.data.result[i].endDate >
+              new Date().toISOString().substr(0, 10)
+            ) {
+              this.news.push(response.data.result[i]);
             }
-
           }
           // eslint-disable-next-line no-console
           console.log(this.news, "are the events");

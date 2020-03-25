@@ -4,13 +4,18 @@
     <div style="background-color: ">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
-          <div style="margin-top:120px ; ">
+          <div style="margin-top: ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
                 <span class="car-head white--text" style>TOEFL</span>
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
+                
+                 
+                   <router-link to="it-center" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">Register</v-btn></router-link>
+                 
+               
               </div>
             </div>
           </div>
@@ -20,11 +25,11 @@
 
     <div class="body" style>
       <!-- card -->
-      <div class="row" >
+      <div class="row">
         <div class="col-sm-12 col-md-12" style="margin-bottom:0px">
-          <div class="sub-body" style="">
-            <div class="" style>
-              <p class=" --text ">
+          <div class="sub-body" style>
+            <div class style>
+              <p class="--text">
                 The
                 <strong>Test of English as a Foreign Language® TOEFL</strong>is a standardized test that measures the ability of non- native speakers to use and understand English at the university level, evaluating how well they combine reading, listening, speaking and writing skills to perform academic tasks.
                 <br />
@@ -51,11 +56,11 @@
             </div>
           </div>
         </div>
-     <!-- <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
+        <!-- <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
             <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
-          </div> -->
+        </div>-->
       </div>
-      <div class style="">
+      <div class style>
         <!-- card -->
         <div class="row sub-body">
           <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
@@ -98,7 +103,7 @@
 
 
 <script>
-import nava from "../components/testnav";
+import nava from "../components/nav";
 import foota from "../components/footer";
 export default {
   components: {
@@ -160,7 +165,6 @@ export default {
 
 <style scoped lang="css">
 template {
-  
   margin-left: 40px;
   margin-right: 40px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -173,7 +177,6 @@ template {
   background-position: center;
 }
 @media only screen and (max-width: 400px) {
-  
   .car {
     font-size: 2px;
 
@@ -212,7 +215,7 @@ template {
     margin-left: 70px;
     margin-right: 70px;
     margin-bottom: 20px;
-    color:black
+    color: black;
   }
   .sub-body {
     font-size: 15px;

@@ -3,7 +3,7 @@
     <nava />
     <div class="card-size div1">
       <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-        <div style="margin-top:120px ; ">
+        <div style="margin-top:80px ; ">
           <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
             <div class="car-text">
               <span class="car-head white--text" style>TRAIN-THE-TRAINER WORKSHOPS</span>
@@ -88,7 +88,7 @@
 
 
 <script>
-import nava from "../components/testnav";
+import nava from "../components/nav";
 import foota from "../components/footer";
 export default {
   components: {

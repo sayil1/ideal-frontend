@@ -4,13 +4,15 @@
     <div style="background-color: ">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-          <div style="margin-top:120px ; ">
+          <div style="margin-top:0px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
                 <span class="car-head white--text" style>ICM CENTER</span>
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
+              
+                   <router-link to="it-center" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">Register</v-btn></router-link>
               </div>
             </div>
           </div>
@@ -133,7 +135,7 @@
 
 
 <script>
-import nava from "../components/testnav";
+import nava from "../components/nav";
 import foota from "../components/footer";
 export default {
   components: {

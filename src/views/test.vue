@@ -4,7 +4,7 @@
   <div style="background-color: ">
       <div class="card-size div1">
         <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
-          <div style="margin-top:120px ; ">
+          <div style="margin-top:0px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
                 <span class="car-head white--text" style>TEST PREPARATION</span>
@@ -87,7 +87,7 @@
         </div>
       </div>
     </div>
-    <hr>
+  
     <div class style="margin-top:0px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
@@ -164,7 +164,7 @@
 
 
 <script>
-import nava from "../components/testnav";
+import nava from "../components/nav";
 import foota from "../components/footer";
 export default {
   components: {

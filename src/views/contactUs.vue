@@ -105,7 +105,7 @@
 <script>
 import { Services } from "../service";
 var serv = new Services();
-import nava from "../components/testnav";
+import nava from "../components/nav";
 import foota from "../components/footer";
 
 export default {

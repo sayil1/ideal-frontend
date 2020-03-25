@@ -6,6 +6,7 @@ import foota from '../components/footer.vue'
 import about from '../views/about.vue'
 import gallery from '../views/gallery.vue'
 import tnav from '../components/testnav.vue'
+import nav from "../components/nav.vue"
 import profEd from '../views/profEdu'
 import icm from '../views/icm'
 import train from '../views/train'
@@ -132,6 +133,11 @@ const routes = [
     path: '/tnav',
     name: 'tnav',
     component: tnav
+  },
+  {
+    path: '/nav',
+    name: 'nav',
+    component: nav
   },
   {
     path: '/gal',

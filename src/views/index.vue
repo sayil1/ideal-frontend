@@ -1,7 +1,7 @@
 <template>
   <div class>
-    <nava />
-
+    <!-- <nava /> -->
+    <nav2 />
 
     <header>
       <v-carousel
@@ -11,11 +11,11 @@
         height="620"
         show-arrows-on-hover
       >
-       <v-carousel-item class="div1">
+        <v-carousel-item class="div1">
           <div style="background-color: rgba(21, 22, 21, 0.4)">
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:90px ; ">
+                <div style="margin-top:0px ; ">
                   <div
                     class="car card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
@@ -23,11 +23,12 @@
                     <br />
                     <br />
                     <div class="car-text">
-                      <span class="car-head" style>WELCOME TO <br>
-                      INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)</span>
+                      <span class="car-head" style>
+                        WELCOME TO
+                        <br />INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)
+                      </span>
                       <br />
                       <br />BUILDING A COMMUNITY FOR SOCIALLY RESPONSIBLE CITIZENS AND LETTING ACTIONS SPEAK IN THE ACHIEVEMENT OF SDG GOAL 4, GOAL 7 AND GOAL 17.
-                     
                       <br />WE CREATE THE PLATFORM FOR COLLABORATION, REFLEXIVITY, AND IDEA NURTURING AND COMMUNITY PROJECT IMPLEMENTATION!!!BE A PART OF IT TODAY……
                       <br />
                       <br />
@@ -50,7 +51,7 @@
           <div style="background-color: rgba(21, 22, 21, 0.4)">
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:90px ; ">
+                <div style="margin-top:px ; ">
                   <div
                     class="car card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
@@ -208,7 +209,6 @@
           </div>
         </v-carousel-item>
       </v-carousel>
-      
     </header>
 
     <div>
@@ -220,10 +220,12 @@
             </v-img>
           </div>-->
           <div class="col-md-12">
-            <h3
-              class="dislay-1 font-weight-light"
-              style="color:black;text-align:center"
-            >Who we are <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"></h3>
+            <h3 class="dislay-1 font-weight-light" style="color:black;text-align:center">
+              Who we are
+              <hr
+                style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
+            </h3>
 
             <div
               style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); margin:20px;
@@ -337,16 +339,21 @@
           <div class="col-md-12">
             <div class="heading">
               <div>
-                  <h3
-              class="dislay-1 font-weight-light"
-              style="color:white;text-align:center; margin-top:15px"
-            >SUPPORT A PROJECT <br>  <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"></h3>
-               
+                <h3
+                  class="dislay-1 font-weight-light"
+                  style="color:white;text-align:center; margin-top:15px"
+                >
+                  SUPPORT A PROJECT
+                  <br />
+                  <hr
+                    style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
+                </h3>
+
                 <hr style="width: 100%; color: black; height: 1px;" />
-               
+
                 <br />“COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL” - IDEAL
                 <small>
-               
                   <br />“Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family”.
                   <br />~ Kofi Anan ~
                 </small>
@@ -355,28 +362,28 @@
 
               <div class="row" style="text-align:center">
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="orange darken-2">mdi-book-open-variant</v-icon>
+                  <v-icon large color="success darken-2">mdi-book-open-variant</v-icon>
                   <div class="demo-content">SCHOOL BOOKS</div>
                 </div>
 
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="orange darken-2">mdi-tshirt-v</v-icon>
+                  <v-icon large color="success darken-2">mdi-tshirt-v</v-icon>
                   <div class="demo-content">UNIFORMS</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="orange darken-2">mdi-cash</v-icon>
+                  <v-icon large color="success darken-2">mdi-cash</v-icon>
                   <div class="demo-content">FEES</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="orange darken-2">mdi-home</v-icon>
+                  <v-icon large color="success darken-2">mdi-home</v-icon>
                   <div class="demo-content">SCHOOL RENOVATION</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="orange darken-2">mdi-teach</v-icon>
+                  <v-icon large color="success darken-2">mdi-teach</v-icon>
                   <div class="demo-content">TRAINING</div>
                 </div>
                 <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="warning darken-2">mdi-server-network</v-icon>
+                  <v-icon large color="success darken-2">mdi-server-network</v-icon>
                   <div class="demo-content">COMPUTER SERVER</div>
                 </div>
               </div>
@@ -384,9 +391,8 @@
                 <div class="col-md-4"></div>
                 <div class="col-md-4" style="margin-top: 30px;  margin-bottom: 30px; ">
                   <button
-                
                     type="button"
-                    class="btn orange darken-2"
+                    class="btn orange darken-"
                     color="red"
                     data-toggle="modal"
                     data-target="#exampleModalCenter"
@@ -400,9 +406,11 @@
       </v-parallax>
 
       <template>
-        <div class=" display-1" style="margin-top:40px; text-align:center; color:black ">
+        <div class="display-1" style="margin-top:40px; text-align:center; color:black ">
           OUR PARTNERS
-         <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;">
+          <hr
+            style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+          />
         </div>
 
         <hooper
@@ -503,14 +511,16 @@ var serv = new Services();
 import { Hooper, Slide } from "hooper";
 import "hooper/dist/hooper.css";
 import foota from "../components/footer";
-import nava from "../components/testnav";
+// import nava from "../components/nav";
+import nav2 from "../components/nav";
 
 export default {
   components: {
     Hooper,
     Slide,
     foota,
-    nava
+    // nava,
+    nav2
   },
 
   data: () => ({

@@ -7,10 +7,10 @@
       <div style class="div1">
         <div class="card-size">
           <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div style="margin-top:120px ; ">
+            <div style="margin-top:0px ; ">
               <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
                 <div class="car-text">
-                  <span class="car-head white--text" style>PROFESSIONAL EDUCATION</span>
+                  <span class="car-head white--text" style>IDEAL IT CENTER</span>
                   <hr
                     style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                   />
@@ -21,37 +21,46 @@
         </div>
       </div>
 
-      <div class="row" style="background-color:rgb(255, 255, 255)">
-        <div class="col-sm-12 col-md-8" style="margin-bottom:20px; margin-top:00px">
-          <div class="card card-size" style=" margin-left:20px; margin-right:20px">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                Our training solutions offer job and career relevant courses for individuals, teams and organizations
-                <strong>across the Information and Communication Technology (ICT) and Business Development spectrum.</strong>
-                <br />
-                <br />In partnership with reputable service providers across the globe, these programs are tailored to equip learners with the technical and practical skills for a rewarding long-term career.
-                <br />
-                <br />
-                <strong>Information and Communication Technology (ICT)</strong>
-                <br />The ICT industry is a stirring innovator that helps solve problems in the environment, business, defense, research, health, and education sectors. Trainings in this area cover the entirety of these:
-                <v-list dense>
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item" color="orange">
-                    <v-list-item v-for="(item, i) in items" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item.icon" v-bind:color="item.color"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                </v-list>
-              </p>
+       <div class="row" style="background-color:rgb;">
+          <div class="col-sm-12 col-md-12" style="margin-bottom:10px">
+            <div class style=" margin-left:20px; margin-right:20px">
+              <div class style>
+                <p class="--text font-weight-regular">
+                  The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
+                  <br />
+                  <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
+                  <br />
+                  <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers.
+                  <br />
+                  <br />The first IDEaL IT Center project is located in Asaba, the Delta State capital of Nigeria and it is intended that this project will be replicated in various locations across the country.
+                  <br />
+                </p>
+              </div>
             </div>
           </div>
+          <!-- <div class="col-sm col-md-3" style="margin-top:100px">
+            <v-img src="../assets/info11.svg" style=" width:300px"></v-img>
+          </div> -->
         </div>
-        <div class="col-sm col-md-4" style="margin-top:0px" v-if="image==true">
+
+      <div class="row" style="background-color:rgb(255, 255, 255)">
+        <div style="margin:20px" class="col-md-8">
+          <h3>PROFESSIONAL IT COURSES</h3>
+          <p class="card-text --text ">
+            Our training solutions offer job and career relevant courses for individuals, teams and organizations
+            <strong>across the Information and Communication Technology (ICT) and Business Development spectrum.</strong>
+
+            <br />In partnership with reputable service providers across the globe, these programs are tailored to equip learners with the technical and practical skills for a rewarding long-term career.
+            <br /> <br>
+            <strong>Information and Communication Technology (ICT)</strong>
+            <br />The ICT industry is a stirring innovator that helps solve problems in the environment, business, defense, research, health, and education sectors. Trainings in this area cover the entirety of these:
+          </p>
+          <p class="card-text --text ">
+            <strong>Business Development</strong>
+            <br />Setting your business onto the path of success through constant business training can lead to exciting business opportunities and personal development. Our quality programs are your best starting point.
+          </p>
+        </div>
+        <div class="col-sm col-md-3" style="margin-top:60px" v-if="image==true">
           <v-img src="../assets/app.svg" style=" width:700px"></v-img>
         </div>
       </div>
@@ -59,7 +68,7 @@
  
     <div class style="margin-top:-35px; margin-bottom:50px">
       <!-- card -->
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-sm col-md-4" v-if="image==true">
           <v-img src="../assets/bus.svg" style=" width:700px"></v-img>
         </div>
@@ -70,7 +79,7 @@
                 <strong>Business Development</strong>
                 <br />Setting your business onto the path of success through constant business training can lead to exciting business opportunities and personal development. Our quality programs are your best starting point.
                 <v-list dense>
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
+                 
                   <v-list-item-group v-model="item2" color="orange">
                     <v-list-item v-for="(item2, i) in items2" :key="i">
                       <v-list-item-icon>
@@ -86,7 +95,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
     <foota />
   </div>
@@ -94,7 +103,7 @@
 
 
 <script>
-import nava from "../components/testnav";
+import nava from "../components/nav";
 import foota from "../components/footer";
 export default {
   components: {
