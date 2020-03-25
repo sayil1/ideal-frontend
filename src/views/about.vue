@@ -1,13 +1,29 @@
 <template>
   <div style="width:100%">
     <nava />
+    <!-- <div style class="div1">
+        <div class="card-size">
+          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
+            <div style="margin-top:0px ; ">
+              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+                <div class="car-text">
+                  <span class="car-head white--text" style>Who we are</span>
+                  <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> -->
 
     <!-- who we are -->
     <div class="row">
       <div class="col-md-12 ">
         <h1
           class=" b-head"
-          style="text-align:center; margin-top:150px"
+          style="text-align:center; margin-top:0px"
         >OUR MAJOR GOAL!!</h1>
         <hr
           style="color:black; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"

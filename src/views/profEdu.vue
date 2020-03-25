@@ -22,7 +22,7 @@
       </div>
 
        <div class="row" style="background-color:rgb;">
-          <div class="col-sm-12 col-md-12" style="margin-bottom:10px">
+          <div class="col-sm-12 col-md-12" style="margin-left:30px; margin-right:30px; margin-top:20px">
             <div class style=" margin-left:20px; margin-right:20px">
               <div class style>
                 <p class="--text font-weight-regular">
@@ -42,10 +42,10 @@
             <v-img src="../assets/info11.svg" style=" width:300px"></v-img>
           </div> -->
         </div>
-
+    <strong><h3 style="text-align:center"> <strong>PROFESSIONAL IT COURSES</strong> </h3></strong>
       <div class="row" style="background-color:rgb(255, 255, 255)">
-        <div style="margin:20px" class="col-md-8">
-          <h3>PROFESSIONAL IT COURSES</h3>
+        <div  style="margin-left:50px; margin-right:30px; margin-top:20px" class="col-md-8">
+         
           <p class="card-text --text ">
             Our training solutions offer job and career relevant courses for individuals, teams and organizations
             <strong>across the Information and Communication Technology (ICT) and Business Development spectrum.</strong>
