@@ -12,16 +12,14 @@
         show-arrows-on-hover
       >
         <v-carousel-item class="div1">
-          <div style="background-color: rgba(21, 22, 21, 0.4)">
+          <div>
             <div class="card-size">
               <div class="card-body" style>
-                <div style="margin-top:0px ; ">
+                <div>
                   <div
                     class="car card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
-                    <br />
-                    <br />
                     <div class="car-text">
                       <span class="car-head" style>
                         WELCOME TO
@@ -38,8 +36,6 @@
                         </router-link>
                       </div>
                     </div>
-
-                    <br />
                   </div>
                   <div class="text-center"></div>
                 </div>
@@ -47,7 +43,7 @@
             </div>
           </div>
         </v-carousel-item>
-        <v-carousel-item class="div13">
+        <v-carousel-item class="div1">
           <div style="background-color: rgba(21, 22, 21, 0.4)">
             <div class="card-size">
               <div class="card-body" style>
@@ -213,7 +209,7 @@
 
     <div>
       <v-container>
-        <div class="row" style="margin-top:20px">
+        <div class="row" style=" ">
           <!-- <div class="col-md-4 sm-12">
             <v-img src="../assets/first.jpeg">
               <div class="fill-height bottom-gradient"></div>
@@ -233,7 +229,7 @@
             >
               <div
                 class="headline font-weight-light"
-                style="text-align:center; padding:20px; color:white; padding-bottom; padding-top:10px"
+                style="text-align:center; padding:0px; color:white; padding-bottom; padding-top:0px"
               >INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL) was founded by young professionals who believe that youth can contribute significantly to building a better society. Having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps</div>
               <br />
             </div>
@@ -605,7 +601,7 @@ export default {
 <style  scoped lang="css">
 .carousel-item {
   height: 85vh;
-  min-height: 350px;
+  min-height: 0px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -618,32 +614,27 @@ export default {
 }
 .div1 {
   background-image: url("../assets/imgbook.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
+  
 }
 .div2 {
   background-image: url("../assets/ideal5.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
 .div3 {
   background-image: url("../assets/ideal10.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
 .div4 {
   background-image: url("../assets/ideal15.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
 .div5 {
   background-image: url("../assets/ideal6.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
 .div13 {
   background-image: url("../assets/ideal13.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
 .card-size {
@@ -665,7 +656,7 @@ export default {
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    height: 480px;
+    height: 40px;
     padding-top: 20px;
     text-align: center;
   }
@@ -687,7 +678,7 @@ export default {
     padding: 60px;
   }
   .car-head {
-    font-size: 30px;
+    font-size: 20px;
     color: orange;
     text-align: center;
     padding-bottom: 80px;

@@ -12,7 +12,7 @@
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
               
-                   <router-link to="it-center" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">Register</v-btn></router-link>
+                   <router-link to="cont" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">contact us</v-btn></router-link>
               </div>
             </div>
           </div>
@@ -125,6 +125,7 @@
                 </span>
               </p>
             </div>
+            <router-link to="cont">Contact</router-link> Us for more information
           </div>
         </div>
       </div>

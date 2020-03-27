@@ -6,7 +6,7 @@
       <!-- card -->
       <div style class="div1">
         <div class="card-size">
-          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
+          <div class="y" style="background-color: rgba(21, 22, 21, 0.6)">
             <div style="margin-top:0px ; ">
               <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
                 <div class="car-text">
@@ -21,41 +21,51 @@
         </div>
       </div>
 
-       <div class="row" style="background-color:rgb;">
-          <div class="col-sm-12 col-md-12" style="margin-left:30px; margin-right:30px; margin-top:20px">
-            <div class style=" margin-left:20px; margin-right:20px">
-              <div class style>
-                <p class="--text font-weight-regular">
-                  The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
-                  <br />
-                  <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
-                  <br />
-                  <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers.
-                  <br />
-                  <br />The first IDEaL IT Center project is located in Asaba, the Delta State capital of Nigeria and it is intended that this project will be replicated in various locations across the country.
-                  <br />
-                </p>
-              </div>
+      <div class="row" style="background-color:rgb;">
+        <div
+          class="col-sm-12 col-md-12"
+          style="margin-left:30px; margin-right:30px; margin-top:20px"
+        >
+          <div class style=" margin-left:20px; margin-right:20px">
+            <div class style>
+              <p class="--text font-weight-regular">
+                The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
+                <br />
+                <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
+                <br />
+                <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers.
+                <br />
+                <br />The first IDEaL IT Center project is located in Asaba, the Delta State capital of Nigeria and it is intended that this project will be replicated in various locations across the country.
+                <br />
+              </p>
             </div>
           </div>
-          <!-- <div class="col-sm col-md-3" style="margin-top:100px">
-            <v-img src="../assets/info11.svg" style=" width:300px"></v-img>
-          </div> -->
         </div>
-    <strong><h3 style="text-align:center"> <strong>PROFESSIONAL IT COURSES</strong> </h3></strong>
+        <!-- <div class="col-sm col-md-3" style="margin-top:100px">
+            <v-img src="../assets/info11.svg" style=" width:300px"></v-img>
+        </div>-->
+      </div>
+      <strong>
+        <h3 style="text-align:center">
+          <strong>PROFESSIONAL IT COURSES</strong>
+          <hr
+            style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+          />
+        </h3>
+      </strong>
       <div class="row" style="background-color:rgb(255, 255, 255)">
-        <div  style="margin-left:50px; margin-right:30px; margin-top:20px" class="col-md-8">
-         
-          <p class="card-text --text ">
+        <div style="margin-left:50px; margin-right:30px; margin-top:20px" class="col-md-8">
+          <p class="card-text --text">
             Our training solutions offer job and career relevant courses for individuals, teams and organizations
             <strong>across the Information and Communication Technology (ICT) and Business Development spectrum.</strong>
 
             <br />In partnership with reputable service providers across the globe, these programs are tailored to equip learners with the technical and practical skills for a rewarding long-term career.
-            <br /> <br>
+            <br />
+            <br />
             <strong>Information and Communication Technology (ICT)</strong>
             <br />The ICT industry is a stirring innovator that helps solve problems in the environment, business, defense, research, health, and education sectors. Trainings in this area cover the entirety of these:
           </p>
-          <p class="card-text --text ">
+          <p class="card-text --text">
             <strong>Business Development</strong>
             <br />Setting your business onto the path of success through constant business training can lead to exciting business opportunities and personal development. Our quality programs are your best starting point.
           </p>
@@ -65,37 +75,168 @@
         </div>
       </div>
     </div>
- 
+
     <div class style="margin-top:-35px; margin-bottom:50px">
-      <!-- card -->
-      <!-- <div class="row">
-        <div class="col-sm col-md-4" v-if="image==true">
-          <v-img src="../assets/bus.svg" style=" width:700px"></v-img>
+      <div class="body">
+        <div class style>
+          <!-- card -->
+          <div class="row" style="background-color:rgb;">
+            <div class="col-sm-12 col-md-12" style="margin-bottom:10px">
+              <div class style=" margin-left:20px; margin-right:20px">
+                <div class style>
+                  <p class="--text font-weight-regular">
+                    The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
+                    <br />
+                    <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
+                    <br />
+                    <br />Our wide range of programs are quality-assured and adequately tailored to enable participants acquire modern skills and qualifications, upgrade existing ones, adapt to new technologies and improve sector performances to explore new frontiers.
+                    <br />
+                    <br />The first IDEaL IT Center project is located in Asaba, the Delta State capital of Nigeria and it is intended that this project will be replicated in various locations across the country.
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-sm col-md-3" style="margin-top:100px">
+            <v-img src="../assets/info11.svg" style=" width:300px"></v-img>
+            </div>-->
+          </div>
         </div>
-        <div class="col-sm-12 col-md-8">
-          <div class="card-size" style=" margin-left:20px; margin-right:20px;">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                <strong>Business Development</strong>
-                <br />Setting your business onto the path of success through constant business training can lead to exciting business opportunities and personal development. Our quality programs are your best starting point.
-                <v-list dense>
-                 
-                  <v-list-item-group v-model="item2" color="orange">
-                    <v-list-item v-for="(item2, i) in items2" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item2.icon" v-bind:color="item2.color"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item2.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                </v-list>
-              </p>
+        <div class="text-center">
+          <div class="container">
+            <div class="row pt-0">
+              <div class="col-md-4">
+                <div class="card box-shadow div1" style="height:100%">
+                  <div style="background-color: rgba(21, 22, 21, 0.8); height:100%">
+                    <div class="card-header">
+                      <h3 class="my-0 white--text font-weight-bold">Creative Design</h3>
+                      <v-icon large color="orange darken-2">mdi-palette</v-icon>
+                    </div>
+
+                    <div class="white--text">
+                      Web Design
+                      <br />Graphics Design
+                      <br />AutoCad Architecture
+                      <br />Animation and Modeling
+                      <br />Video Editing
+                    </div>
+                    <div>
+                      <reg />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card box-shadow div1" style="height:100%">
+                  <div style="background-color: rgba(21, 22, 21, 0.8); height:100%">
+                    <div class="card-header">
+                      <h4 class="my-0 white--text font-weight-bold">Computing Technology</h4>
+                      <v-icon large color="orange darken-2">mdi-desktop-classic</v-icon>
+                    </div>
+
+                    <!-- <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"> -->
+                    <div style="padding:10px">
+                      <div class="y">
+
+                        <div class="white--text">
+                          Cloud computing <br>
+                          Networking <br>
+                          Database Management <br>
+                          Software/Application development <br>
+                          Systems Administration <br>
+                          It Security <br>
+                          Data Science <br>
+                        </div>
+                        <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                        <!-- <ul class="list-unstyled white--text">
+                          <li>Cloud computing</li>
+                          <li>Networking</li>
+                          <li>Database Management</li>
+                          <li>Software/Application development</li>
+                          <li>Systems Administration</li>
+                          <li>IT Security</li>
+                          <li>Data Science</li>
+                        </ul> -->
+                      </div>
+                      <div style="margin-top:-39px">
+                        <reg />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box-shadow div1" style="height:100%">
+                  <div style="background-color: rgba(21, 22, 21, 0.8); height:100%">
+                    <div class="card-header">
+                      <h4 class="my-0 white--text">E-Business</h4>
+                      <v-icon large color="orange darken-2">mdi-cash-multiple</v-icon>
+                    </div>
+
+                    <!-- <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"> -->
+                    <div class>
+                      <div class="y">
+                        <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                        <div class="white--text">
+                          compTIA Project <br>
+                          Digital Marketing <br>
+                          Customer Relationship Management (CRM) <br>
+                          Project Management Professional (PMP) <br>
+                        </div>
+                        <!-- <ul class="list-unstyled white--text">
+                          <li>CompTIA Project+</li>
+                          <li>Digital Marketing</li>
+                          <li>Customer Relationship Management (CRM)</li>
+                          <li>Project Management Professional (PMP)</li>
+                        </ul> -->
+                      </div>
+                    </div >
+                    <div style="margin-top:29px">
+                      <reg/>
+                    </div>
+                     
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card mb-4 box-shadow">
+                  <div class="card-header">
+                    <h3 class="my-0 font-weight-normal orange--text">Training Delivery Styles</h3>
+                  </div>
+                  <div class="y">
+                    <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
+                    <ul class="list-unstyled">
+                      <li>Lectures (face-to-face or Online)</li>
+                      <li>Demonstrations</li>
+                      <li>Problem solving</li>
+                      <li>Audio visual aids</li>
+                      <li>Hands-on practical</li>
+                    </ul>
+                  </div>
+                </div>
+                <div>
+                  <!-- <reg /> -->
+                </div>
+              </div>
+
+              <div class="col-md-8">
+                <div class="card mb-4 box-shadow">
+                  <div class="card-header">
+                    <h3 class="my-0 font-weight-normal orange--text">Hands-on practical:</h3>
+                  </div>
+                  <div class="p-3">
+                    <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
+                    At the end of each training program, participants are issued certificates after they must have passed a series of exams that tests their proficiency.
+                   
+                    
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
     <foota />
   </div>
@@ -105,15 +246,18 @@
 <script>
 import nava from "../components/nav";
 import foota from "../components/footer";
+import reg from "../components/registerModal";
 export default {
   components: {
     nava,
-    foota
+    foota,
+    reg
   },
   data: () => ({
     image: true,
     item: 1,
     item2: 1,
+    dialog: false,
     items: [
       {
         text: "System Administration",

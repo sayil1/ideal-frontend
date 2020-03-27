@@ -11,8 +11,10 @@
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
-                
-                   <router-link to="it-center" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">Register</v-btn></router-link>
+
+                <router-link to="cont" class="success--text" style="text-decoration:none;">
+                  <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
+                </router-link>
               </div>
             </div>
           </div>
@@ -65,12 +67,13 @@
               </p>
             </div>
           </div>
+          <div>
+            <router-link to="cont">Contact us</router-link> for more information
+          </div>
         </div>
       </div>
     </div>
-    <div class style="margin-top:; margin-bottom:10px">
-      <!-- card -->
-    </div>
+
     <foota />
   </div>
 </template>
@@ -154,7 +157,7 @@ export default {
     margin-right: 40px;
     margin-bottom: 20px;
     color: black;
-    font-size: 15px
+    font-size: 15px;
   }
   .car {
     font-size: 2px;
@@ -195,7 +198,7 @@ export default {
     margin-right: 70px;
     margin-bottom: 20px;
     color: black;
-    font-size: 15px
+    font-size: 15px;
   }
   .car {
     padding: 30px;

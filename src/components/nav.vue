@@ -245,12 +245,13 @@ ul#navigation li {
   padding: 0;
   float: left;
   position: relative;
+  
 }
 
 ul#navigation li a {
   padding: 10px 20px;
   color: black;
-  text-shadow: 1px 1px 0px #fff;
+  /* text-shadow: 1px 1px 0px #fff; */
   text-decoration: none;
   display: inline-block;
   /* border-right: 1px solid #fff;
@@ -265,7 +266,7 @@ ul#navigation li a {
 }
 
 ul#navigation li a:hover {
-  background: #f8f8f8;
+
   color: ORANGE;
 }
 
@@ -301,8 +302,8 @@ being the ones which make the drop-down to stay hidden */
   position: absolute;
   z-index: 99999;
   width: 100;
-  background: #f8f8f8;
-  box-shadow: 1px 1px 3px #ccc;
+  background: orange;
+  /* box-shadow: 1px 1px 3px #ccc; */
   /* css3 transitions for smooth hover effect */
   -webkit-transition: opacity 0.2s linear, visibility 0.2s linear;
   -moz-transition: opacity 0.2s linear, visibility 0.2s linear;
@@ -335,8 +336,8 @@ ul#navigation ul li {
 ul#navigation ul li a {
   background: none;
   padding: px 15px;
-  color: #616161;
-  text-shadow: 1px 1px 0px #fff;
+  color:black;
+  /* text-shadow: 1px 1px 0px #fff; */
   text-decoration: none;
   display: inline-block;
   border: 0 none;

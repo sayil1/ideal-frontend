@@ -13,7 +13,7 @@
                 />
                 
                  
-                   <router-link to="it-center" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">Register</v-btn></router-link>
+                   <router-link to="cont" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">Contact Us</v-btn></router-link>
                  
                
               </div>
@@ -87,7 +87,7 @@
                     </v-list-item-group>
                     <div
                       class="card-text --text font-weight-regular mt-3"
-                    >IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test.</div>
+                    >IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test. <router-link to="cont">Contact us</router-link> for more information </div> 
                   </v-list>
                 </p>
               </div>
