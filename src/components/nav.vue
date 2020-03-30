@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div
+    <div
       class="navbar-brand p-0 pl-6"
       style="background-color:black; width:100%; color:white; font-size:15px"
     >
@@ -17,59 +17,39 @@
           <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-facebook</v-icon>
           <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-twitter</v-icon>
           <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
-            <v-icon size="20" color="orange darken-2" right>mdi-linkedin</v-icon>
+          <v-icon size="20" color="orange darken-2" right>mdi-linkedin</v-icon>
         </div>
       </div>
     </div>
-    <nav id="nav" >
-      <div >
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navigation"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon">
-            <v-icon color="orange">mdi-menu</v-icon>
-          </span>
-        </button> -->
+    <nav id="nav">
+      <div>
+       
       </div>
 
-      <div class="" >
-        <ul id="navigation" >
+      <div class>
+        <ul id="navigation">
           <li style="margin-right:300px">
             <router-link to="/">
-          <img src="../assets/idealng.png" alt style="height:25px; " />
-        </router-link>
+              <img src="../assets/idealng.png" alt style="height:25px; " />
+            </router-link>
           </li>
           <li>
-            <router-link to="/">HOME</router-link >
+            <router-link to="/">HOME</router-link>
           </li>
           <li>
             <a href="#">ABOUT US &raquo;</a>
             <ul>
               <li>
-                <router-link to="about" >WHO WE ARE</router-link>
+                <router-link to="about">WHO WE ARE</router-link>
               </li>
               <li>
-                 <router-link to="GAL" class="">GALLERY</router-link>
+                <router-link to="GAL" class>GALLERY</router-link>
               </li>
-              <!-- <li><a href="#">Identity & Branding </a>
-                    <ul>
-                        <li><a href="#">Business Cards</a></li>
-                        <li><a href="#">Brochures</a></li>
-                        <li><a href="#">Envelopes</a></li>
-                        <li><a href="#">Flyers</a></li>
-                    </ul>
-                </li>
-              <li><a href="#">Wordpress</a></li>-->
+             
             </ul>
           </li>
           <li>
-            <a href="">WHAT WE DO &raquo;</a>
+            <a href>WHAT WE DO &raquo;</a>
             <ul>
               <li>
                 <router-link to="capacity">CAPACITY DEVELOPMENT</router-link>
@@ -81,10 +61,10 @@
                 <router-link to="digital">DIGITAL INCLUSION</router-link>
               </li>
               <li>
-                <router-link to="train">TRAIN-THE-TRAINERS</router-link >
+                <router-link to="train">TRAIN-THE-TRAINERS</router-link>
               </li>
               <li>
-                <a >EXAM TEST CENTER &raquo;</a>
+                <a>EXAM TEST CENTER &raquo;</a>
                 <ul>
                   <li>
                     <router-link to="toefl">TOEFL</router-link>
@@ -95,23 +75,23 @@
                   <li>
                     <router-link to="icm">ICM UK QUALIFICATION</router-link>
                   </li>
-                  <!-- <li><a href="#">Madagascar 3</a></li> -->
+                
                 </ul>
               </li>
-              <!-- <li><a href="#">Graffity </a></li> -->
+             
             </ul>
           </li>
           <li>
             <a href="#">IDEAL IT CENTER &raquo;</a>
             <ul>
               <li>
-                <router-link to="prof">PROFESSIONAL IT COURSES</router-link >
+                <router-link to="prof">PROFESSIONAL IT COURSES</router-link>
               </li>
               <li>
                 <router-link to="test">TEST PREPARATION</router-link>
               </li>
               <li>
-                <router-link to="career">CAREER DEVELOPMENT</router-link >
+                <router-link to="career">CAREER DEVELOPMENT</router-link>
               </li>
               <li>
                 <router-link to="over">OVER-SEAS ADMISSION CONSULTING</router-link>
@@ -120,7 +100,7 @@
                 <a href>INTERNSHIP</a>
               </li>
               <li>
-                <a >TRAINING AND WORKSHOP</a>
+                <a>TRAINING AND WORKSHOP</a>
               </li>
             </ul>
           </li>
@@ -129,7 +109,7 @@
             <a href="#">SHOP &raquo;</a>
             <ul>
               <li>
-                <a href>BOOKS</a>
+               <router-link to="books">BOOKS</router-link>
               </li>
               <li>
                 <a href>DIY KITS</a>
@@ -140,7 +120,7 @@
             <a href="#" class="last">MEDIA &raquo;</a>
             <ul>
               <li>
-                <router-link to="events">EVENTS</router-link >
+                <router-link to="events">EVENTS</router-link>
               </li>
               <li>
                 <a href>CONTEST</a>
@@ -151,12 +131,12 @@
             </ul>
           </li>
           <li>
-            <router-link to="cont" class="last">CONTACT</router-link >
+            <router-link to="cont" class="last">CONTACT</router-link>
           </li>
         </ul>
       </div>
     </nav>
-     <div v-if="news.length>0" style="background-color:orange">
+    <div v-if="news.length>0" style="background-color:orange">
       <marquee behavior="scroll" direction="left" scrollamount="15">
         <span style="color:white">News flash:</span>
         <span style="padding:10px" v-for="(n , index) in news" v-bind:key="index">
@@ -225,16 +205,13 @@ export default {
   position: relative;
   width: 100%;
   /* margin: 0 auto; */
-  
-  
 }
 
 ul#navigation {
   margin-left: 1px;
   position: relative;
   /* float: left; */
-  height:30px;
- 
+  height: 30px;
 }
 
 ul#navigation li {
@@ -245,7 +222,6 @@ ul#navigation li {
   padding: 0;
   float: left;
   position: relative;
-  
 }
 
 ul#navigation li a {
@@ -266,7 +242,6 @@ ul#navigation li a {
 }
 
 ul#navigation li a:hover {
-
   color: ORANGE;
 }
 
@@ -321,9 +296,9 @@ ul#navigation ul li ul {
   left: 81px; /* strong related to width:180px; from above */
 }
 
-.route{
+.route {
   padding: -20px;
-  color: red
+  color: red;
 }
 
 ul#navigation ul li {
@@ -336,7 +311,7 @@ ul#navigation ul li {
 ul#navigation ul li a {
   background: none;
   padding: px 15px;
-  color:black;
+  color: black;
   /* text-shadow: 1px 1px 0px #fff; */
   text-decoration: none;
   display: inline-block;

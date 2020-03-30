@@ -1,120 +1,94 @@
 <template>
   <div style="width:100%">
     <nava />
-    <!-- <div style class="div1">
-        <div class="card-size">
-          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div style="margin-top:0px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head white--text" style>Who we are</span>
-                  <hr
-                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
-    <!-- who we are -->
     <div class="row">
-      <div class="col-md-12 ">
-        <h1
-          class=" b-head"
-          style="text-align:center; margin-top:0px"
-        >OUR MAJOR GOAL!!</h1>
+      <div class="col-md-12">
+        <h1 class="b-head" style="text-align:center; margin-top:0px">OUR MAJOR GOAL!!</h1>
         <hr
           style="color:black; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
         />
       </div>
-      <div style="; padding-top:20px" class="col-md-12 b-text">
+      <div style="; padding-top:20px" class="col-md-12">
         <div class="row">
-          <div class="col-sm-12 col-md-12 car">
-            <div class=" card-size">
-              <div class="">
-                <p
-                  class="b-text black--text " style="margin-top:-50px"
-                >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
-                <!-- <h2
-                  class="card-subtitle mb-2 mt-4 black--text font-weight-bold"
-                  style="text-align:center"
-                >Vision</h2>
-                <hr class="my-4" style=" border-top: 1px solid white;" />
-                <p
-                  class="card-text black--text  car-text"
-                >Develop individuals and communities towards a knowledge-based society.</p>-->
-              </div>
-            </div>
+          <div class="col-sm-12 col-md-12">
+            <p
+              class="b-text m-text black--text"
+              style="margin-top:-50px ; padding:10px"
+            >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
           </div>
-          <!-- <div>
-            <img style="width:400px; height:auto; " src="../assets/laptop.jpg" />
-          </div> -->
         </div>
-
-        <!-- card -->
       </div>
     </div>
 
     <div class>
       <div class="img">
         <div style=" background: rgba(0, 0, 0, 0.4);">
-          <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%; margin-left:auto; margin-right:auto">
+          <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%; margin:10px">
             <div class="col-md-4 col-sm-12">
-              <div
-                class="card mb-4"
-                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:"
-              >
-                <div class="card-header text-center">
-                  <v-icon large color="white darken-2">mdi-bullseye-arrow</v-icon>
-                  <hr>
-                  <h3 class="my-0 orange--text bold">OUR MAJOR GOAL</h3>
+              <div class="card1" style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; ">
+                <div class="-header text-center p-3">
+                  <v-icon large color="white darken-2 ">mdi-bullseye-arrow</v-icon>
+                  <hr />
+                  <h3 class="orange--text bold">OUR MAJOR GOAL</h3>
                 </div>
                 <div class>
                   <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
-                  <ul
-                    class="white--text text-center"
-                  >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</ul>
+                  <div
+                    class="text-center white--text pl-3 pr-3"
+                  >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</div>
                 </div>
               </div>
             </div>
-            <div class="col-md-4 col-sm-12">
+             <div class="col-md-4 col-sm-12">
+              <div class="card2" style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; ">
+                <div class="-header text-center p-3">
+                  <v-icon large color="white darken-2">mdi-eye</v-icon>
+                  <hr />
+                  <h3 class="orange--text bold">VISION</h3>
+                </div>
+                <div class>
+                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                  <div
+                    class="text-center white--text"
+                  >Develop individuals and communities towards a knowledge-based society.</div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-md-4 col-sm-12">
               <div
-                class="card mb-4 p-0"
+                class="card"
                 style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:auto; margin-right:auto"
               >
-                <div class="card-header text-center">
+                <div class="-header text-center">
                   <v-icon large color="white darken-2">mdi-eye</v-icon>
-            <v-divider></v-divider>
+                  <v-divider></v-divider>
                   <h3 class="my-0 orange--text bold">VISION</h3>
                 </div>
                 <div class>
-                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
-                  <ul
+                
+                  <div
                     class="white--text text-center"
-                  >Develop individuals and communities towards a knowledge-based society..</ul>
+                  >Develop individuals and communities towards a knowledge-based society..</div>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div
-                class="card mb-4"
-                style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; margin-left:; margin-right:auto"
-              >
-                <div class="card-header text-center">
-                  <v-icon large color="white darken-2">mdi-lightbulb-on</v-icon>
-               <v-divider></v-divider>
-                  <h3 class="my-0 orange--text bold">OUR APPROACH</h3>
+            </div> -->
+             <div class="col-md-4 col-sm-12">
+              <div class="card3" style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; ">
+                <div class="-header text-center p-3">
+                  <v-icon large color="white darken-2 ">mdi-lightbulb-on</v-icon>
+                  <hr />
+                  <h3 class="orange--text bold">OUR APPROACH</h3>
                 </div>
                 <div class>
                   <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
-                  <ul
-                    class="white--text text-center"
-                  >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</ul>
+                  <div
+                    class="text-center white--text pl-3 pr-3"
+                  >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</div>
                 </div>
               </div>
             </div>
+           
           </div>
         </div>
       </div>
@@ -125,13 +99,13 @@
       <hr
         style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
       />
-      <!-- card -->
+      <!--  -->
       <div class="row">
         <div class="col-sm-12 col-md-12">
           <div style>
-            <div class="car-text" style>
+            <div class="-text" style>
               <p
-                class="card-text   b-text"
+                class="-text b-text"
               >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</p>
             </div>
           </div>
@@ -159,6 +133,7 @@ export default {
 
 
 <style lang="css" scoped>
+@import url('https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap');
 .img {
   background-image: url("../assets/ideal10.jpg");
   /* filter: grayscale(100%); */
@@ -167,77 +142,72 @@ export default {
 }
 
 template {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-family: 'Alegreya', serif;
 }
-
 
 [class*="col-"] {
   width: 100%;
 }
 
 @media only screen and (max-width: 400px) {
-  .b-text {
-    margin:30px;
+  p{
+     font-family: 'Alegreya', serif;
+     padding-left:30px
   }
-
-  .car {
-    font-size: 2px;
-
-    margin: 0px;
+  .card1 {
+    margin-left: auto;
+    margin-right:auto;
+    
+   
   }
-  .car-head {
-    font-size: 40px;
-    color: orange;
-    text-align: center;
-    padding-top: 50px;
+  .card2 {
+    margin-left: auto;
+    margin-right:auto;
   }
-  .car-text {
-    font-size: 14px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
-    text-align: center;
+  .card3 {
+    margin-left: auto;
+    margin-right:auto;
   }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #f5cf8e; /* Yellow */
+  .card1 {
+    margin-left: auto;
+    margin-right:auto;
+   
+  }
+  .card2 {
+    margin-left: auto;
+    margin-right:auto;
+  }
+  .card3 {
+    margin-left: auto;
+    margin-right:auto;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .b-text {
-    margin-left:10px;
-    margin-right:10px;
-    color: black;
-    font-size: 21px
+   p{
+     font-family: 'Alegreya', serif;
+     margin-left:30px;
+     margin-right: 30px;
+     font-size: 16px
   }
-  .b-head{
-    font-size: 30px;
-    
+  .card1 {
+    margin-left: auto;
+    margin-right:0px;
   }
-  body {
-    background-color: #b2d6ff; /* black */
+  .card2 {
+    margin-left: auto;
+    margin-right:auto;
   }
-  .car {
-    padding: 30px;
-  }
-  .car-head {
-    font-size: 80px;
-    color: orange;
-    text-align: center;
-  }
-  .car-text {
-    font-size: 25px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-    border-radius: 45px;
+  .card3 {
+    margin-left: 0px;
+    margin-right:auto;
   }
 }
 </style>

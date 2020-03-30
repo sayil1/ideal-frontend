@@ -3,12 +3,40 @@
     <div id="app">
       <div class="header">
         <h2>Comics</h2>
-        <div>
+        <!-- <div style="margin-right:px">
           <button
             @click="showCart = !showCart"
             v-show="!verified"
-          >itemsss {{quantity }}  {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
-        </div>
+          >items {{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
+        </div>-->
+        <button
+          style="background-color:orange; margin-top:20px; padding:20px"
+          type="button"
+          class="btn btn-lg btn-primary"
+          
+          @click="showCart = !showCart"
+          v-show="!verified"
+        >
+          <v-icon dark>mdi-cart</v-icon>
+          <span
+            class="badge badge-light"
+            style="padding:10px"
+          >{{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</span>
+        </button>
+         <button
+         v-if="quantity>=1"
+          style="background-color:orange; margin-top:20px; padding:20px"
+          type="button"
+          class="btn btn-lg btn-primary"
+          
+          @click="showCart = !showCart"
+          v-show="!verified"
+        >
+          <v-icon dark></v-icon>
+          <span
+            
+          >View Cart and Checkout</span>
+        </button>
       </div>
       <div class="cart" v-show="showCart">
         <div v-show="items.length > 0">
@@ -19,17 +47,19 @@
                 - {{ item.name }}
                 <v-icon
                   size="20"
-                  color="orange darken-2"
+                  color="red darken-2"
                   right
                   style="padding-right:10px"
                   @click="removeFromCart(item)"
-                >mdi-phone</v-icon>
+                >mdi-delete</v-icon>
                 <!-- <i class="mdi-trash" @click="removeFromCart(item)"></i> -->
               </p>
             </li>
           </ul>
           <div>
-            <button @click="verified = true, showCart = false">Check out</button>
+            <v-btn class="ma-2" tile color="indigo" dark @click="verified = true, showCart = false">Check out</v-btn>
+
+            <!-- <button @click="verified = true, showCart = false">Check out</button> -->
           </div>
         </div>
         <div v-show="items.length === 0">
@@ -39,7 +69,21 @@
       <div class="container">
         <div class="shop" v-show="!verified">
           <h3>New Arrivals</h3>
-          <ul>
+          <div class="row">
+            <div class="card m-3" style="width: 15rem;" v-for="(item,i) in shop" :key="i">
+              <img class="card-img-top" src="../assets/first.jpeg" alt="Card image cap" />
+              <div class="card-body">
+                <h5 class="card-title">{{ item.name }}</h5>
+                <p class="card-text">NGN {{ item.price }}</p>
+                <!-- <a href="#" class="btn btn" @click="addToCart(item)">Add to cart</a> -->
+                <v-btn @click="addToCart(item)" class="mx-2" small dark color="indigo">
+                  <v-icon dark>mdi-plus</v-icon>
+                </v-btn>
+              </div>
+            </div>
+          </div>
+
+          <!-- <ul>
             <li v-for="(item,i) in shop" :key="i">
               <div>
                 <h5>{{ item.name }}</h5>
@@ -47,10 +91,9 @@
                 <button @click="addToCart(item)">Add to cart</button>
               </div>
             </li>
-          </ul>
+          </ul>-->
         </div>
         <div class="checkout" v-show="verified">
-          <h3>Your Cart</h3>
           <h5 v-for="(item,i) in items" :key="i">
             <strong>{{ item.quantity }}</strong>
             - {{ item.name }}
@@ -58,13 +101,13 @@
           </h5>
           <hr />
           <div class="row">
-            <div class="u-pull-right">
+            <div>
               <h5>
                 Total:
                 <span>{{ total }}</span>
               </h5>
-              <button>Looks Good</button>
-              <button @click="verified=false">back</button>
+
+              <v-btn @click="verified=false" class="ma-2" tile color="indigo" dark>Back to books</v-btn>
             </div>
           </div>
         </div>
@@ -79,25 +122,25 @@ export default {
     shop: [
       {
         id: "qw12122324dewe332324212",
-        name: "One-Punch Man, Vol. 5",
+        name: "Things Fall Apart",
         price: 10.02,
         quantity: 0
       },
       {
         id: "qw12122324dew34ds324212",
-        name: "Gantz Omnibus, Vol. 1",
+        name: "American Writers",
         price: 22.98,
         quantity: 0
       },
       {
         id: "qw12122345665fcgfe332324212",
-        name: "Dragon Ball Freeza Arc, Vol. 1",
+        name: "Dragon Ball Freeza Arc,",
         price: 15.98,
         quantity: 0
       },
       {
         id: "qw12122324dewe33298hguytfgyt44",
-        name: "Uzumaki: Spiral into Horror, Vol. 1",
+        name: "Uzumaki: Spiral into Horror,",
         price: 4.84,
         quantity: 0
       },
@@ -114,48 +157,43 @@ export default {
     quantity: 0
   }),
   computed: {
-
     total() {
       var total = 0;
       for (var i = 0; i < this.items.length; i++) {
         total += this.items[i].price * this.items[i].quantity;
       }
       return total;
-    },
-   
+    }
   },
-  watch:{
-
-  },
+  watch: {},
   methods: {
     addToCart(itemToAdd) {
       // let found = false;
 
       // Add the item or increase qty
       let itemInCart = this.items.filter(item => item.id === itemToAdd.id);
-      
+
       let isItemInCart = itemInCart.length > 0;
 
       if (isItemInCart === false) {
-        this.items.push( itemToAdd);
-         itemToAdd.quantity = 1;
-         this.quantity += 1
+        this.items.push(itemToAdd);
+        itemToAdd.quantity = 1;
+        this.quantity += 1;
         //  itemInCart[0].quantity += 1;
         // alert("not found , add pls")
       } else {
         itemToAdd.quantity += 1;
-          this.quantity += 1
+        this.quantity += 1;
         // alert(itemToAdd.id)
       }
 
       // itemToAdd.quantity = 1;
     },
 
-
     removeFromCart(item) {
       // item.quantity -= 1;
-      this.items.splice(item, 1)
-      this.quantity -= item.quantity
+      this.items.splice(item, 1);
+      this.quantity -= item.quantity;
     }
   }
 };

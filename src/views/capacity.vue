@@ -7,10 +7,10 @@
       <div style class="div1">
         <div class="card-size">
           <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div style="margin-top:80px ; ">
+            <div style="margin-top:px ; ">
               <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head white--text" style>CAPACITY BUILDING</span>
+                <div class="car-head">
+                  <span class=" white--text">CAPACITY BUILDING</span>
                   <hr
                     style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                   />
@@ -22,14 +22,16 @@
       </div>
 
       <div class="mobile">
-        <div class="first">
+        <div class="first car-text">
           As a development NGO in education, we focus on capacity development techniques that enable individuals and establishments acquire, develop capacities, and retain the abilities, knowledge, tools, and other resources needed to carry out their jobs competently.
           In the corporate world, refining management practices is a well-accepted principle for success. Hence, our capacity building programs aims at the following key elements
+          <br />
+          <br />
         </div>
 
         <div class="row" style="background-color:rgb(255, 255, 255)">
           <div class="col-sm-12 col-md-8" style>
-            <div class="first">
+            <div class="first car-text">
               <div class style>
                 <p class="card-text --text font-weight-regular" style="margin-top:-40px">
                   <strong>Needs Assessments</strong> in the areas of knowledge, attitudes, and practices related to area of focus at community levels and among various stakeholders; recording of obtainable responses, skills, procedures and infrastructure related to crucial sectors and specific areas of capability needed for an appropriate response; data available on the subject, as well as monitoring and reporting systems; and other inputs necessary to effectively implement strategies to determine existing strengths and identify gaps
@@ -49,7 +51,7 @@
             </div>
             <div class="col-sm-12 col-md-9">
               <div class style=" margin-left:20px; margin-right:20px;">
-                <div class="card-body" style>
+                <div class="card-body car-text" style>
                   <p class="card-text --text font-weight-regular">
                     <strong>Governance and leadership:</strong> The idea of
                     <strong>Governance and leadership</strong> are intertwined. Good
@@ -69,7 +71,7 @@
             </div>
           </div>
         </div>
-        <div class="first" style="margin-top:-35px; margin-bottom:50px">
+        <div class="first car-text" style="margin-top:-35px; margin-bottom:50px">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <strong>Resource Development:</strong> We believe that the strength of relationships between those who are effectively engaged with an organization’s mission and its leaders ultimately determine the organization’s long-term success.
             IDEaL has been aiding organizations build capacity and developing resource development plans essential for them to fulfill their missions. Our methodology focuses on effectively blending best practices with tailor-made strategies suited to our client’s readiness for, and commitment to achieving sustainable, long-term relationships with its community of supporters and stakeholders
@@ -168,7 +170,6 @@ template {
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    text-align: center;
   }
 }
 
@@ -198,7 +199,8 @@ template {
     padding: 30px;
   }
   .car-head {
-    font-size: 30px;
+    font-family: "Lora";
+    font-size: 34px;
     color: black;
     text-align: center;
     padding-top: 90px;
@@ -208,8 +210,8 @@ template {
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
-    text-align: center;
-    border-radius: 45px;
+    font-family: "Alegreya";
+    text-align: left;
   }
 }
 </style>

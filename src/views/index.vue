@@ -12,7 +12,7 @@
         show-arrows-on-hover
       >
         <v-carousel-item class="div1">
-          <div>
+          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
             <div class="card-size">
               <div class="card-body" style>
                 <div>
@@ -20,7 +20,7 @@
                     class="car card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
-                    <div class="car-text">
+                    <div class="car-text" style="margin-top:120px">
                       <span class="car-head" style>
                         WELCOME TO
                         <br />INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)
@@ -44,7 +44,7 @@
           </div>
         </v-carousel-item>
         <v-carousel-item class="div1">
-          <div style="background-color: rgba(21, 22, 21, 0.4)">
+          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
             <div class="card-size">
               <div class="card-body" style>
                 <div style="margin-top:px ; ">
@@ -599,6 +599,7 @@ export default {
 
 
 <style  scoped lang="css">
+@import url('https://fonts.googleapis.com/css?family=Alegreya|Lora:700&display=swap');
 .carousel-item {
   height: 85vh;
   min-height: 0px;
@@ -648,17 +649,19 @@ export default {
     margin: 0px;
   }
   .car-head {
-    font-size: 20px;
+    font-size: 18px;
     color: orange;
     text-align: center;
     padding-top: 50px;
+    font-family: "lora"
   }
   .car-text {
-    font-size: 14px;
+    font-size: 16px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 40px;
     padding-top: 20px;
     text-align: center;
+    font-family: "Alegreya"
   }
 }
 
@@ -678,18 +681,20 @@ export default {
     padding: 60px;
   }
   .car-head {
-    font-size: 20px;
+    font-size: 34px;
     color: orange;
     text-align: center;
     padding-bottom: 80px;
+      font-family: "lora"
   }
   .car-text {
-    font-size: 20px;
-    background-color: rgba(21, 22, 21, 0.4);
+    font-size: 21px;
+    /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
     text-align: center;
     border-radius: 45px;
+    font-family: "Alegreya"
   }
 }
 </style>
