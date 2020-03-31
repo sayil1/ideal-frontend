@@ -7,15 +7,11 @@
       <div style class="div1">
         <div class="card-size">
           <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div style="margin-top:px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-head">
-                  <span class=" white--text">CAPACITY BUILDING</span>
-                  <hr
-                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
-                </div>
-              </div>
+            <div class="car-head">
+              <span class="white--text">CAPACITY BUILDING</span>
+              <hr
+                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
             </div>
           </div>
         </div>
@@ -23,8 +19,9 @@
 
       <div class="mobile">
         <div class="first car-text">
-          As a development NGO in education, we focus on capacity development techniques that enable individuals and establishments acquire, develop capacities, and retain the abilities, knowledge, tools, and other resources needed to carry out their jobs competently.
-          In the corporate world, refining management practices is a well-accepted principle for success. Hence, our capacity building programs aims at the following key elements
+          Capacity development focuses on increasing an organization's strength to measure internal successes and external impact, build and maintain strong foundations for projects, as well as promote strategic relationships.
+          <br />As a development NGO in education, Initiative for Development, Education and Learning (IDEaL) puts effort into capacity development techniques that enable individuals and establishments acquire, develop capacities, and retain the abilities, knowledge, tools, and other resources needed to carry out their jobs competently.
+          <br />Our methodology focuses on effectively blending best practices with tailor-made strategies suited to our client’s readiness for, and commitment to achieving sustainable, long-term relationships with its community of supporters and stakeholders.
           <br />
           <br />
         </div>
@@ -34,7 +31,7 @@
             <div class="first car-text">
               <div class style>
                 <p class="card-text --text font-weight-regular" style="margin-top:-40px">
-                  <strong>Needs Assessments</strong> in the areas of knowledge, attitudes, and practices related to area of focus at community levels and among various stakeholders; recording of obtainable responses, skills, procedures and infrastructure related to crucial sectors and specific areas of capability needed for an appropriate response; data available on the subject, as well as monitoring and reporting systems; and other inputs necessary to effectively implement strategies to determine existing strengths and identify gaps
+                  <strong>Needs Assessments</strong> in the areas of knowledge, attitudes, and practices related to area of focus at community levels and among various stakeholders; recording of obtainable responses, skills, procedures and infrastructure related to crucial sectors and specific areas of capability needed for an appropriate response; data available on the subject, as well as monitoring and reporting systems; and other inputs necessary to effectively implement strategies to determine existing strengths and identify gaps.
                 </p>
               </div>
             </div>
@@ -73,8 +70,21 @@
         </div>
         <div class="first car-text" style="margin-top:-35px; margin-bottom:50px">
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
-            <strong>Resource Development:</strong> We believe that the strength of relationships between those who are effectively engaged with an organization’s mission and its leaders ultimately determine the organization’s long-term success.
-            IDEaL has been aiding organizations build capacity and developing resource development plans essential for them to fulfill their missions. Our methodology focuses on effectively blending best practices with tailor-made strategies suited to our client’s readiness for, and commitment to achieving sustainable, long-term relationships with its community of supporters and stakeholders
+            <strong>Staff capacity.</strong> This includes education and professional development of staff who play a key role in an organization's success. Sustaining a dutiful and well-qualified workforce is a crucial function of management and Initiative for Development, Education and Learning - IDEaL can assist managers to achieve this for their employees through a variety of activities:
+            <span
+              class="lists"
+            >
+              <ul>
+                <li>- Exploring challenges inhibiting employees work performance and team dynamics.</li>
+                <li>- Evaluating the specific and collective strengths and capabilities of members of staff.</li>
+                <li>- Discussions to boost management’s capacity in recognizing and dealing with challenges faced by the workforce;
+                  .
+                </li>
+                <li>- Improvement and application of intervention schemes that will advance staff performance.</li>
+              </ul>
+            </span>
+
+            Our experts are savvy in organizational growth, training and team dynamics and participants have gotten value from our ability to ascertain short- and long-term performance interventions that are concrete and applicable to any work environment.
           </div>
         </div>
       </div>
@@ -163,12 +173,13 @@ template {
     margin: 0px;
   }
   .car-head {
-    font-size: 40px;
+    font-size: 20px;
     color: black;
     text-align: center;
   }
   .car-text {
     font-size: 14px;
+    text-align: left;
     /* background-color: rgba(21, 22, 21, 0.4); */
   }
 }

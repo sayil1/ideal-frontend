@@ -13,7 +13,6 @@
           style="background-color:orange; margin-top:20px; padding:20px"
           type="button"
           class="btn btn-lg btn-primary"
-          
           @click="showCart = !showCart"
           v-show="!verified"
         >
@@ -23,19 +22,16 @@
             style="padding:10px"
           >{{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</span>
         </button>
-         <button
-         v-if="quantity>=1"
-          style="background-color:orange; margin-top:20px; padding:20px"
+        <button
+          v-if="quantity>=1"
+          style="background-color:orange; margin-top:20px; padding:23px; margin-left:30px"
           type="button"
           class="btn btn-lg btn-primary"
-          
           @click="showCart = !showCart"
           v-show="!verified"
         >
           <v-icon dark></v-icon>
-          <span
-            
-          >View Cart and Checkout</span>
+          <span>View Cart and Checkout</span>
         </button>
       </div>
       <div class="cart" v-show="showCart">
@@ -57,7 +53,13 @@
             </li>
           </ul>
           <div>
-            <v-btn class="ma-2" tile color="indigo" dark @click="verified = true, showCart = false">Check out</v-btn>
+            <v-btn
+              class="ma-2"
+              tile
+              color="indigo"
+              dark
+              @click="verified = true, showCart = false"
+            >Check out</v-btn>
 
             <!-- <button @click="verified = true, showCart = false">Check out</button> -->
           </div>
@@ -73,11 +75,12 @@
             <div class="card m-3" style="width: 15rem;" v-for="(item,i) in shop" :key="i">
               <img class="card-img-top" src="../assets/first.jpeg" alt="Card image cap" />
               <div class="card-body">
-                <h5 class="card-title">{{ item.name }}</h5>
+                <strong class="card-title">{{ item.name }}</strong>
                 <p class="card-text">NGN {{ item.price }}</p>
                 <!-- <a href="#" class="btn btn" @click="addToCart(item)">Add to cart</a> -->
-                <v-btn @click="addToCart(item)" class="mx-2" small dark color="indigo">
-                  <v-icon dark>mdi-plus</v-icon>
+            
+                <v-btn @click="addToCart(item)" class="ma-2" tile  color="blue">
+                  <v-icon left>mdi-plus</v-icon>add to cart
                 </v-btn>
               </div>
             </div>

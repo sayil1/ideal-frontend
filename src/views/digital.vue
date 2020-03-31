@@ -4,13 +4,13 @@
 
     <div style>
       <!-- card -->
-      <div style class="div1">
+       <div style class="div1">
         <div class="card-size">
           <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
             <div style="margin-top:px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head white--text" style>DIGITAL INCLUSION</span>
+              <div class="car" style="margin-left:40px; margin-right:40px">
+                <div class="car-head">
+                  <span class=" white--text">DIGITAL INCLUSION</span>
                   <hr
                     style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                   />
@@ -22,12 +22,12 @@
       </div>
 
       <div class="body">
-        <div class="row first" style="background-color:rgb(255, 255, 255)">
-          <div class="col-sm-12 col-md-9" style="margin-top:30px">
+        <div class="row " style="background-color:rgb(255, 255, 255)">
+          <div class="col-sm-12 col-md-9" style="margin-top:0px">
             <div class>
-              <div class style>
+              <div class="car-text" style>
                 <p
-                  class="card-text --text font-weight-regular"
+                  class=""
                 >Digital inclusion aims at a practical approach to addressing the needs of individuals and communities to fully embrace the digital age. As the digital revolution intensifies, internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
               </div>
             </div>
@@ -36,7 +36,7 @@
             <v-img src="../assets/app.svg" style=" width:300px"></v-img>
           </div>
         </div>
-        <div class="first">
+        <div class="first car-text">
           Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) in order to participate in and benefit from today's growing knowledge and information society.
           IDEaL’s Digital inclusion actions cover the gap in these areas:
           <br />We promote digital inclusion in various ways:
@@ -138,18 +138,17 @@ template {
     margin: 0px;
   }
   .car-head {
-   
-    color: black;
-    text-align: center;
+    font-size: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family: "lora";
   }
   .car-text {
-    
+    font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     padding-top: 20px;
-
-    text-align: center;
+    text-align: left
+    
   }
 }
 
@@ -173,20 +172,21 @@ template {
   .car {
     /* padding: 30px; */
   }
-  .car-head {
-    font-size: 40px;
-    color: black;
+ .car-head {
+    font-size: 34px;
     text-align: center;
-
-    padding-top: 90px;
+    font-family: "Lora"
+   
   }
   .car-text {
-    font-size: 25px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
     text-align: center;
     border-radius: 45px;
+    text-align: left;
+    font-family: "Alegreya"
   }
 }
 </style>

@@ -1,15 +1,17 @@
 <template >
   <div style="background-color:">
     <nava />
-    <div class="card-size div1">
-      <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-        <div style="margin-top:80px ; ">
-          <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-            <div class="car-text">
-              <span class="car-head white--text" style>TRAIN-THE-TRAINER WORKSHOPS</span>
-              <hr
-                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-              />
+    <div style class="div1">
+      <div class="card-size">
+        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
+          <div style="margin-top:px ; ">
+            <div style="margin-left:40px; margin-right:40px">
+              <div class="car-head">
+                <span class="white--text">TRAIN-THE-TRAINER WORKSHOP</span>
+                <hr
+                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -21,17 +23,14 @@
         <div class="col-sm-12 col-md-9" style="margin-bottom:0px">
           <div class style=" ">
             <div class style>
-              <p class="--text font-weight-regular">
+              <p class="car-text --text font-weight-regular">
                 <strong>Train the trainers</strong>
                 refers to actions and methods aimed at empowering
                 <strong>Trainers</strong> with the knowledge, abilities, and attitudes, in an integrated way, needed for the development of their vocation.
                 <br />
-                <strong>How is IDEaL improving the training of trainers?</strong>
-                <br />At IDEaL, we understand that trainers transform lives. Hence, have taken actions in prioritizing trainers training, support and development.
+                <strong>Intended for:</strong>
+                <br />These train-the-trainer courses are suitable for anyone involved in the development of others. Including: trainers, managers, leaders, consultants, teachers, technical trainers, lecturers and more
                 <br />
-                <br />We consider that a learner’s education can only ever be as good as their teacher(s) hence it’s important that trainers not only need to know what to teach but how to teach.
-                <br />
-                <br />Effective training for trainers isn’t as prevalent in our region as it should be due to the fact that trained teachers are in decline. In addition, we have observed that many teachers struggle to teach without necessary teaching and class management techniques; a consequence of this is that many learners struggle to learn. Failure to achieve this will lead to failure to achieving the Goal 4 of the Sustainable Development Goals aimed at having every youth receiving high-quality education by 2030.
               </p>
             </div>
           </div>
@@ -47,38 +46,35 @@
             <v-img src="../assets/train2.svg" style=" width:300px"></v-img>
           </div>
           <div class="col-sm-12 col-md-9">
-            <div class="" style=" ">
-              <div class="" style>
-                <div class=" --text font-weight-regular">
-                  <!-- <h2>
-                  <strong class="black--text">Workshops Structure</strong>
-                  <hr
-                    style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
-                  />
-                  </h2>-->
+            <div class style=" ">
+              <div class style>
+                <div class="car-text --text font-weight-regular">
+                  <strong>How IDEaL is improving the training of trainers</strong>
 
+                  <br />At IDEaL, we understand that trainers transform lives. Hence, have taken actions in prioritizing trainers training, support and development.
                   <br />
-                  <h3>The benefits your organization will gain from this course:</h3>
-                  <ul>
-                    <li>- Training in your organization will become more effective.</li>
-                    <li>- Your trainers will be equipped with the skills to motivate their audience.</li>
-                    <li>- Training sessions will be more meaningful and results orientated.</li>
-                    <li>- Trainers will learn to create lasting impressions on their trainees. Making sure that the necessary skills to succeed in their roles are delivered effectively.</li>
-                    <li>- Training staff will understand how we learn, will be well-prepared and will focus on outstanding delivery.</li>
-                    <li>- Trainers will gain excellent delivery skills to make a positive impact on others.</li>
-                    <li>- Trainers will gain skills in presentation, training design and classroom management.</li>
-                    <li>- Trainers will be educated on how to integrate technology into the training</li>
-                  </ul>
+                  <br />We consider that a learner’s education can only ever be as good as their teacher(s) hence it’s important that trainers not only need to know what to teach but how to teach.
+                  <br />
+                  <br />Effective training for trainers isn’t as prevalent in our region as it should be due to the fact that trained teachers are in decline. In addition, we have observed that many teachers struggle to teach without necessary teaching and class management techniques; a consequence of this is that many learners struggle to learn. Failure to achieve this will lead to failure to achieving the Goal 4 of the Sustainable Development Goals aimed at having every youth receiving high-quality education by 2030.
+                  <br />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="" style="">
-        <br />The benefits of this hands-on training are incalculable as all topics have gone through systematic procedures to enable participants achieve success. An additional benefit engaging in our train-the-trainers program is the network of professionals that a trainer will meet during the period. It offers them the chance to gather ideas and recommendations from other professionals.
-        <br />Intended for:
-        <br />These train-the-trainer courses are suitable for anyone involved in the development of others. Including: trainers, managers, leaders, consultants, teachers, technical trainers, lecturers and more…
+      <div class="car-text" style>
+        <br />With our train-the-trainer course, training in your organization will become more effective as you will be able to:
+        <ul>
+          <li>- Organize training sessions that will be more meaningful and result-orientated.</li>
+          <li>- Hold participants’ attention and interest.</li>
+          <li>- Study a variety of impelling factors needed to develop training and focus on outstanding delivery.</li>
+          <li>- Ascertain resourceful training techniques and integrate new technologies into training strategies.</li>
+          <li>- Trainers will gain skills in presentation, training design and classroom management.</li>
+          <li>- Understand the diverse ways individuals learn and ensure that training content supports this diversity.</li>
+        </ul>
+        The benefits of this hands-on training are incalculable as all topics have gone through systematic procedures to enable participants achieve success. An additional benefit engaging in our train-the-trainers program is the network of professionals that a trainer will meet during the period. It offers them the chance to gather ideas and recommendations from other professionals. 
+
       </div>
     </div>
 
@@ -151,11 +147,8 @@ export default {
 </script>
 
 <style scoped lang="css">
-
-  template {
-  
+template {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-
 }
 .div1 {
   background-image: url("../assets/trainb.jpg");
@@ -164,25 +157,22 @@ export default {
 }
 
 @media only screen and (max-width: 400px) {
-  .body{
-    margin: 50px
+  .body {
+    margin: 50px;
   }
   .car {
     font-size: 2px;
     margin: 0px;
   }
   .car-head {
-    font-size: 40px;
+    font-size: 20px;
     color: black;
     text-align: center;
-   
   }
   .car-text {
     font-size: 14px;
+    text-align: left;
     /* background-color: rgba(21, 22, 21, 0.4); */
-  
-
-    text-align: center;
   }
 }
 
@@ -197,30 +187,29 @@ export default {
 @media only screen and (min-width: 961px) {
   .body {
     margin-top: 40px;
-  margin-left: 70px;
-  margin-right: 70px;
-  margin-bottom: 20px;
-
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 20px;
   }
-  .sub-body{
-    font-size: 15px
+  .sub-body {
+    font-size: 15px;
   }
   .car {
-   
   }
   .car-head {
-    font-size: 40px;
+    font-family: "Lora";
+    font-size: 34px;
     color: black;
     text-align: center;
-    /* padding-bottom: 50px; */
+    padding-top: 90px;
   }
   .car-text {
-    font-size: 25px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
-   
-    text-align: center;
-    border-radius: 45px;
+    padding: 10px;
+    font-family: "Alegreya";
+    text-align: left;
   }
 }
 </style>
