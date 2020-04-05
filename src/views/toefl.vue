@@ -4,19 +4,16 @@
     <div style="background-color: ">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
-          <div style="margin-top: ; ">
-            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-              <div class="car-text">
-                <span class="car-head white--text" style>TOEFL</span>
-                <hr
-                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                />
-                
-                 
-                   <router-link to="cont" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">Contact Us</v-btn></router-link>
-                 
-               
-              </div>
+          <div>
+            <div class="car-head">
+              <span class=" white--text" style>TOEFL</span>
+              <hr
+                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
+
+              <router-link to="cont" class="success--text" style="text-decoration:none;">
+                <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
+              </router-link>
             </div>
           </div>
         </div>
@@ -26,10 +23,10 @@
     <div class="body" style>
       <!-- card -->
       <div class="row">
-        <div class="col-sm-12 col-md-12" style="margin-bottom:0px">
+        <div class="col-sm-12 col-md-12" >
           <div class="sub-body" style>
             <div class style>
-              <p class="--text">
+              <p class="car-text --text">
                 The
                 <strong>Test of English as a Foreign Language® TOEFL</strong>is a standardized test that measures the ability of non- native speakers to use and understand English at the university level, evaluating how well they combine reading, listening, speaking and writing skills to perform academic tasks.
                 <br />
@@ -60,16 +57,16 @@
             <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
         </div>-->
       </div>
-      <div class style>
+      <div class style="margin-top:-50px">
         <!-- card -->
-        <div class="row sub-body">
+        <div class="row ">
           <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
             <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
           </div>
           <div class="col-sm-12 col-md-10">
             <div class="card-size" style=" ;">
               <div class="card-body" style>
-                <p class="card-text --text font-weight-regular">
+                <p class="car-text --text font-weight-regular">
                   <strong>Who Takes the TOEFL Test?</strong>
                   <br />
                   <br />More than 35 million people from all over the world have taken the TOEFL test to demonstrate their English-language proficiency.
@@ -85,9 +82,10 @@
                         </v-list-item-content>
                       </v-list-item>
                     </v-list-item-group>
-                    <div
-                      class="card-text --text font-weight-regular mt-3"
-                    >IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test. <router-link to="cont">Contact us</router-link> for more information </div> 
+                    <div class="card-text --text font-weight-regular mt-3">
+                      IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test.
+                      <router-link to="cont">Contact us </router-link>for more information
+                    </div>
                   </v-list>
                 </p>
               </div>
@@ -103,7 +101,7 @@
 
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {
@@ -183,18 +181,17 @@ template {
     margin: 0px;
   }
   .car-head {
-    font-size: 40px;
-    color: black;
-    text-align: center;
-    padding-top: 50px;
+    font-size: 20px;
+    padding-top: 30px;
     padding-bottom: 50px;
+    font-family: "lora";
+    text-align: center;
   }
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
-
-    text-align: center;
+    padding-top: 10px;
+    text-align: left;
   }
 }
 
@@ -224,19 +221,18 @@ template {
     padding: 30px;
   }
   .car-head {
-    font-size: 40px;
-    color: black;
+    font-size: 34px;
     text-align: center;
-
-    padding-top: 90px;
+    font-family: "Lora";
   }
   .car-text {
-    font-size: 25px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border-radius: 45px;
+    font-family: "Alegreya";
   }
 }
 </style>

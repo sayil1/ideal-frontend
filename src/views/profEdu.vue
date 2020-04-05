@@ -5,12 +5,12 @@
     <div class style>
       <!-- card -->
       <div style class="div1">
-        <div class="card-size">
-          <div class="y" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div style="margin-top:0px ; ">
-              <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-                <div class="car-text">
-                  <span class="car-head white--text" style>IDEAL IT CENTER</span>
+      <div class="card-size">
+          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
+            <div style="margin-top:px ; ">
+              <div class="car" style="margin-left:40px; margin-right:40px">
+                <div class="car-head">
+                  <span class=" white--text">IDEAL IT-CENTER </span>
                   <hr
                     style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                   />
@@ -28,7 +28,7 @@
         >
           <div class style=" margin-left:20px; margin-right:20px">
             <div class style>
-              <p class="--text font-weight-regular">
+              <p class="car-text --text font-weight-regular">
                 The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
                 <br />
                 <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
@@ -46,14 +46,14 @@
         </div>-->
       </div>
       <strong>
-        <h3 style="text-align:center">
+        <h3 class="car-head" style="text-align:center">
           <strong>PROFESSIONAL IT COURSES</strong>
           <hr
             style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
           />
         </h3>
       </strong>
-      <div class="row" style="background-color:rgb(255, 255, 255)">
+      <div class="row car-text" style="background-color:rgb(255, 255, 255)">
         <div style="margin-left:50px; margin-right:30px; margin-top:20px" class="col-md-8">
           <p class="card-text --text">
             Our training solutions offer job and career relevant courses for individuals, teams and organizations
@@ -84,7 +84,7 @@
             <div class="col-sm-12 col-md-12" style="margin-bottom:10px">
               <div class style=" margin-left:20px; margin-right:20px">
                 <div class style>
-                  <p class="--text font-weight-regular">
+                  <p class="car-text --text font-weight-regular">
                     The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
                     <br />
                     <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
@@ -137,15 +137,15 @@
                     <!-- <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"> -->
                     <div style="padding:10px">
                       <div class="y">
-
                         <div class="white--text">
-                          Cloud computing <br>
-                          Networking <br>
-                          Database Management <br>
-                          Software/Application development <br>
-                          Systems Administration <br>
-                          It Security <br>
-                          Data Science <br>
+                          Cloud computing
+                          <br />Networking
+                          <br />Database Management
+                          <br />Software/Application development
+                          <br />Systems Administration
+                          <br />It Security
+                          <br />Data Science
+                          <br />
                         </div>
                         <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
                         <!-- <ul class="list-unstyled white--text">
@@ -156,7 +156,7 @@
                           <li>Systems Administration</li>
                           <li>IT Security</li>
                           <li>Data Science</li>
-                        </ul> -->
+                        </ul>-->
                       </div>
                       <div style="margin-top:-39px">
                         <reg />
@@ -178,23 +178,23 @@
                       <div class="y">
                         <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
                         <div class="white--text">
-                          compTIA Project <br>
-                          Digital Marketing <br>
-                          Customer Relationship Management (CRM) <br>
-                          Project Management Professional (PMP) <br>
+                          compTIA Project
+                          <br />Digital Marketing
+                          <br />Customer Relationship Management (CRM)
+                          <br />Project Management Professional (PMP)
+                          <br />
                         </div>
                         <!-- <ul class="list-unstyled white--text">
                           <li>CompTIA Project+</li>
                           <li>Digital Marketing</li>
                           <li>Customer Relationship Management (CRM)</li>
                           <li>Project Management Professional (PMP)</li>
-                        </ul> -->
+                        </ul>-->
                       </div>
-                    </div >
-                    <div style="margin-top:29px">
-                      <reg/>
                     </div>
-                     
+                    <div style="margin-top:29px">
+                      <reg />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -226,10 +226,8 @@
                   </div>
                   <div class="p-3">
                     <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
-                    At the end of each training program, participants are issued certificates after they must have passed a series of exams that tests their proficiency.
-                   
-                    
 
+                    At the end of each training program, participants are issued certificates after they must have passed a series of exams that tests their proficiency.
                   </div>
                 </div>
               </div>
@@ -244,7 +242,7 @@
 
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 import reg from "../components/registerModal";
 export default {
@@ -335,18 +333,18 @@ template {
     margin: 0px;
   }
   .car-head {
-    font-size: 40px;
-    color: black;
-    text-align: center;
-    padding-top: 50px;
+    font-size: 20px;
+    padding-top: 30px;
     padding-bottom: 50px;
+    font-family: "lora";
+    text-align: center;
+    margin-bottom: -20px
   }
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
-
-    text-align: center;
+    padding-top: 10px;
+    text-align: left;
   }
 }
 
@@ -366,19 +364,18 @@ template {
     padding: 30px;
   }
   .car-head {
-    font-size: 40px;
-    color: black;
+    font-size: 34px;
     text-align: center;
-
-    padding-top: 90px;
+    font-family: "Lora";
   }
   .car-text {
-    font-size: 25px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border-radius: 45px;
+    font-family: "Alegreya";
   }
 }
 </style>

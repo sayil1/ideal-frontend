@@ -6,8 +6,8 @@
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
           <div style=" ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-              <div class="car-text">
-                <span class="car-head white--text" style>PEARSON VUE CENTER</span>
+              <div class="car-head">
+                <span class="white--text" style>PEARSON VUE CENTER</span>
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
@@ -22,7 +22,7 @@
       </div>
     </div>
     <v-alert style="margin:10px" type="success" border="right">
-      <p class="card-text --text font-weight-regular">
+      <p class="car-text --text font-weight-regular">
         Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
         For information on a specific exam duration, fee, language, etc., please refer to the
         <strong>
@@ -39,7 +39,7 @@
         <div class="col-sm-12 col-md-12" style="margin-bottom:70px">
           <div class style>
             <div class style>
-              <p class="card-text --text font-weight-regular">
+              <p class="car-text --text font-weight-regular">
                 <br />
                 <strong>PEARSON VUE CENTER</strong>
                 <br />Our Authorized Pearson VUE Test center runs IT certification examinations for leading vendors like Microsoft, Cisco, Nursing and Midwifery Council (NMC), PMI, Linux, Juniper, Oracle, CompTIA, CIW, HP, PeopleCert etc.
@@ -65,10 +65,10 @@
                   </div>
                 </v-list>
               </p>
+              <div class="car-text">
+                <router-link to="cont">Contact us </router-link>for more information
+              </div>
             </div>
-          </div>
-          <div>
-            <router-link to="cont">Contact us</router-link> for more information
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
 
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {
@@ -165,18 +165,17 @@ export default {
     margin: 0px;
   }
   .car-head {
-    font-size: 40px;
-    color: black;
-    text-align: center;
-    padding-top: 50px;
+    font-size: 20px;
+    padding-top: 30px;
     padding-bottom: 50px;
+    font-family: "lora";
+    text-align: center;
   }
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
-
-    text-align: center;
+    padding-top: 10px;
+    text-align: left;
   }
 }
 
@@ -204,19 +203,18 @@ export default {
     padding: 30px;
   }
   .car-head {
-    font-size: 40px;
-    color: black;
+    font-size: 34px;
     text-align: center;
-
-    padding-top: 10px;
+    font-family: "Lora";
   }
   .car-text {
-    font-size: 25px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     border-radius: 45px;
+    font-family: "Alegreya";
   }
 }
 </style>

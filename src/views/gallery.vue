@@ -4,12 +4,7 @@
       <nava />
     </div>
 
-    <div class="jumbotron jumbotron-fluid" style="background-color:rgb(24, 160, 214">
-      <div class="container"> <br>
-        <h1 class="display-3">gallery</h1>
-       
-      </div>
-    </div>
+   
 
     <section class="gallery" style="margin-top:50px">
       <div class="container">
@@ -78,7 +73,7 @@
               </span>
             </figure>
           </div>
-          <div class="column-xs-12">
+          <div class="column-xs-12 column-md-6">
             <figure class="img-container">
               <img src="../assets/ideal2.jpg" />
               <figcaption class="img-content">
@@ -101,7 +96,7 @@
 </template>
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {

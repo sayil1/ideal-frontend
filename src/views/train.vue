@@ -84,7 +84,7 @@
 
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {

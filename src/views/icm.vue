@@ -5,14 +5,16 @@
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
           <div style="margin-top:0px ; ">
-            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-              <div class="car-text">
-                <span class="car-head white--text" style>ICM CENTER</span>
+            <div class="" style="margin-left:40px; margin-right:40px">
+              <div class="car-head">
+                <span class=" white--text" style>ICM CENTER</span>
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
-              
-                   <router-link to="cont" class="success--text" style="text-decoration:none;"><v-btn class="ma-2" outlined color="success">contact us</v-btn></router-link>
+
+                <router-link to="cont" class="success--text" style="text-decoration:none;">
+                  <v-btn class="ma-2" outlined color="success">contact us</v-btn>
+                </router-link>
               </div>
             </div>
           </div>
@@ -24,14 +26,13 @@
       <!-- card -->
       <div class="row" style="background-color:;">
         <div class="col-sm-12 col-md-12">
-          <div class style="">
+          <div class style>
             <div class style>
-              <p class="--text font-weight-regular">
+              <p class="car-text --text font-weight-regular">
                 The Institute of Commercial Management (ICM) is the leading professional body providing qualifications that are recognized globally in business, management and related vocational areas. The programmes are designed to address and respond to the training needs as well as the personal development of learners, whether entering or continuing to work within the wide and varied commercial sector.
-             
                 <br />IDEaL, as an ICM Approved Teaching and Examination Center ensures that the best possible education and support is given to learners in this region.
                 <br />
-                <br>
+                <br />
                 <strong>Subjects</strong>
                 <br />ICM provide qualifications at Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma levels on a quarterly basis, covering key industry sector areas such as:
                 <span
@@ -70,7 +71,7 @@
                       </v-list-item-content>
                     </v-list-item>
                   </span>
-                  <div class="col-sm col-md-4" style="" v-if="image==true">
+                  <div class="col-sm col-md-4" style v-if="image==true">
                     <v-img src="../assets/pea.png" style=" width:300px"></v-img>
                   </div>
                 </span>
@@ -88,9 +89,9 @@
           <v-img src="../assets/icm2.svg" style=" width:300px"></v-img>
         </div>
         <div class="col-sm-12 col-md-9">
-          <div class="card-size" >
+          <div class="card-size">
             <div class="card-body" style>
-              <p class="card-text blue--text ">
+              <p class="car-text blue--text">
                 <span class="row">
                   <v-list-item two-line class="col-md-6">
                     <v-list-item-content style="color">
@@ -125,7 +126,7 @@
                 </span>
               </p>
             </div>
-            <router-link to="cont">Contact</router-link> Us for more information
+            <router-link to="cont">Contact</router-link>Us for more information
           </div>
         </div>
       </div>
@@ -136,7 +137,7 @@
 
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {
@@ -221,8 +222,6 @@ export default {
 </script>
 
 <style  scoped lang="css">
-
-
 .div1 {
   background-image: url("../assets/icmb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
@@ -233,20 +232,19 @@ export default {
 @media only screen and (max-width: 400px) {
   .car {
     font-size: 2px;
-   
   }
   .car-head {
-  
-    color: black;
+    font-size: 20px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: "lora";
     text-align: center;
-   
   }
   .car-text {
-    
+    font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-   
-   
-    text-align: center;
+    padding-top: 10px;
+    text-align: left;
   }
 }
 
@@ -268,22 +266,22 @@ export default {
     margin-right: 70px;
     margin-bottom: 20px;
     color: black;
-    font-size: 15px
+    font-size: 15px;
   }
-  
+
   .car-head {
-  
-    color: black;
+    font-size: 34px;
     text-align: center;
-   
+    font-family: "Lora";
   }
   .car-text {
-   
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
-   
-    text-align: center;
+    padding: 10px;
+    text-align: left;
     border-radius: 45px;
+    font-family: "Alegreya";
   }
 }
 </style>

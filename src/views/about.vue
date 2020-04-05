@@ -4,16 +4,16 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h1 class="b-head" style="text-align:center; margin-top:0px">OUR MAJOR GOAL!!</h1>
+        <h1 class="car-head" style="text-align:center;">OUR MAJOR GOAL!!</h1>
         <hr
-          style="color:black; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+          style="color:black; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;" class="hr"
         />
       </div>
       <div style="; padding-top:20px" class="col-md-12">
         <div class="row">
           <div class="col-sm-12 col-md-12">
             <p
-              class="b-text m-text black--text"
+              class="car-text m-text black--text"
               style="margin-top:-50px ; padding:10px"
             >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
           </div>
@@ -26,7 +26,7 @@
         <div style=" background: rgba(0, 0, 0, 0.4);">
           <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%; margin:10px">
             <div class="col-md-4 col-sm-12">
-              <div class="card1" style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; ">
+              <div class="card1" style="background: rgba(0, 0, 0, 0.6);; width:75%; ">
                 <div class="-header text-center p-3">
                   <v-icon large color="white darken-2 ">mdi-bullseye-arrow</v-icon>
                   <hr />
@@ -41,7 +41,7 @@
               </div>
             </div>
              <div class="col-md-4 col-sm-12">
-              <div class="card2" style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; ">
+              <div class="card2" style="background: rgba(0, 0, 0, 0.6);; width:75%; ">
                 <div class="-header text-center p-3">
                   <v-icon large color="white darken-2">mdi-eye</v-icon>
                   <hr />
@@ -74,7 +74,7 @@
               </div>
             </div> -->
              <div class="col-md-4 col-sm-12">
-              <div class="card3" style="background: rgba(0, 0, 0, 0.6);height:100%; width:75%; ">
+              <div class="card3" style="background: rgba(0, 0, 0, 0.6);; width:75%; ">
                 <div class="-header text-center p-3">
                   <v-icon large color="white darken-2 ">mdi-lightbulb-on</v-icon>
                   <hr />
@@ -117,7 +117,7 @@
 </template>
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {
@@ -170,6 +170,14 @@ template {
     margin-left: auto;
     margin-right:auto;
   }
+  .car-head{
+    margin-top: 20px;
+    margin-bottom: -50px
+  }
+  .hr{
+    padding-top: -60px;
+     font-size: 20px;
+  }
 }
 
 /* Tablet Styles */
@@ -177,16 +185,20 @@ template {
   .card1 {
     margin-left: auto;
     margin-right:auto;
+    height: 50px;
    
   }
   .card2 {
     margin-left: auto;
     margin-right:auto;
+     height: 50px;
   }
   .card3 {
     margin-left: auto;
     margin-right:auto;
+      height: 50px;
   }
+  
 }
 
 /* Desktop Styles */
@@ -200,14 +212,20 @@ template {
   .card1 {
     margin-left: auto;
     margin-right:0px;
+    height: 100%;
   }
   .card2 {
     margin-left: auto;
     margin-right:auto;
+    height: 100%;
   }
   .card3 {
     margin-left: 0px;
     margin-right:auto;
+    height: 100%;
+  }
+  .car-head{
+    margin-top: 60px
   }
 }
 </style>

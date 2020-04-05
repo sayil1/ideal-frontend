@@ -1,30 +1,27 @@
 <template>
   <div style="background-color:">
     <nava />
-     <div style="background-color: ">
-      <div class="card-size div1">
-        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
-          <div style="margin-top:0px ; ">
-            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-              <div class="car-text">
-                <span class="car-head white--text" style>CAREER DEVELOPMENT</span>
-                 <hr
+     <div style class="div1">
+        <div >
+          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
+              <div class="car" style="margin-left:40px; margin-right:40px">
+                <div class="car-head">
+                  <span class="white--text">CAREER DEVELOPMENT</span>
+                  <hr
                     style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                   />
+                </div>
               </div>
-            </div>
           </div>
-        </div>
       </div>
     </div>
-  
     <div class="body" style>
       <!-- card -->
       <div class="row" style="background-color:rgb();">
         <div class="col-sm-12 col-md-9" style="margin-bottom:0px">
           <div class="" >
             <div class="" style>
-              <p class="card-text ">
+              <p class="car-text ">
                 Career development is the lifelong process of managing your training, learning, work, leisure, and work progress in order to move toward a personally determined and evolving preferred future.
                 The IDEAL's Career Development Center supports individuals to make informed decisions regarding their education, training, jobs and future careers by:
                 <br /> <br>
@@ -40,21 +37,30 @@
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-3" style="padding-top:40px" v-if="image==true">
+        <div class="col-sm col-md-3"  style="margin-top:100px" v-if="image==true">
           <v-img src="../assets/career1.svg" style=" width:300px"></v-img>
         </div>
       </div>
        <div class style>
+                
       <!-- card -->
-      <div class="row">
-        <div class="col-sm col-md-3" style="padding-top:100px" v-if="image==true">
+      <div class="row" style="margin-top:-20px">
+        
+        <div class="col-sm col-md-3" style="margin-top:200px" v-if="image==true">
           <v-img src="../assets/career2.svg" style=" width:300px; "></v-img>
         </div>
         <div class="col-sm-12 col-md-9">
-          <div class="card-size" style=" margin-left:20px; margin-right:20px;">
-            <div class="card-body" style>
-              <p class="card-text --text font-weight-regular">
-                <span class=" car-text orange--text" style>CAREER DEVELOPMENT CENTER</span>
+          <div class="car-size" style=" margin-left:20px; margin-right:20px;">
+            <div class="" style>
+              <p class="car-text --text font-weight-regular">
+               <strong>
+                   <h5 class="" style="text-align:center">
+              <strong>CAREER DEVELOPMENT CENTER</strong>
+         
+        </h5>
+      </strong>
+
+          
                 
 
                 <br />With our career development practitioners who specialize in this area, our work cuts across various settings: private, voluntary, community and educational institutions.
@@ -88,7 +94,7 @@
 
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {
@@ -157,19 +163,17 @@ export default {
 
     margin: 0px;
   }
-  .car-head {
-    font-size: 40px;
-    color: black;
-    text-align: center;
+   .car-head {
+    font-size: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family: "lora";
   }
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     padding-top: 20px;
-
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -188,19 +192,20 @@ export default {
   .car {
     padding: 30px;
   }
-  .car-head {
-    font-size: 40px;
-    color: black;
+   .car-head {
+    font-size: 34px;
     text-align: center;
-
-    padding-top: 90px;
+    font-family: "Lora";
   }
   .car-text {
-    font-size: 25px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-  }}
+    text-align: left;
+    font-family: "Alegreya";
+  }
+  }
 </style>

@@ -56,7 +56,7 @@
 
 
 <script>
-import nava from "../components/nav";
+import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {
@@ -139,14 +139,14 @@ template {
   }
   .car-head {
     font-size: 20px;
-    padding-top: 50px;
+    padding-top: 30px;
     padding-bottom: 50px;
     font-family: "lora";
   }
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: left
     
   }

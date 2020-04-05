@@ -8,11 +8,11 @@
         hide-delimiter-background
         delimiter-icon="mdi-minus"
         cycle
-        height="620"
+        height="580"
         show-arrows-on-hover
       >
         <v-carousel-item class="div1">
-          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
+          <div style="; height:100%" class="cov">
             <div class="card-size">
               <div class="card-body" style>
                 <div>
@@ -20,19 +20,19 @@
                     class="car card-text white--text font-weight-regular"
                     style="margin-left:40px; margin-right:40px"
                   >
-                    <div class="car-text" style="margin-top:120px">
+                    <div class="car-text" style="margin-top:40px">
                       <span class="car-head" style>
                         WELCOME TO
                         <br />INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)
                       </span>
                       <br />
-                      <br />BUILDING A COMMUNITY FOR SOCIALLY RESPONSIBLE CITIZENS AND LETTING ACTIONS SPEAK IN THE ACHIEVEMENT OF SDG GOAL 4, GOAL 7 AND GOAL 17.
-                      <br />WE CREATE THE PLATFORM FOR COLLABORATION, REFLEXIVITY, AND IDEA NURTURING AND COMMUNITY PROJECT IMPLEMENTATION!!!BE A PART OF IT TODAY……
+                      <br />Building a community for socially responsible citizens and letting actions speak in the achievement of SDG GOAL 4, GOAL 7 AND GOAL 17.
+                      <br />we create the platform for colaborations, reflexity, and idea nuturing and community project implementation!!!BE A PART OF IT TODAY……
                       <br />
                       <br />
                       <div class="text-center">
                         <router-link to="/">
-                          <v-btn rounded color="orange" dark>See More</v-btn>
+                          <v-btn rounded color="success" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -44,7 +44,7 @@
           </div>
         </v-carousel-item>
         <v-carousel-item class="div1">
-          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
+          <div style=" height:100%" class="cov">
             <div class="card-size">
               <div class="card-body" style>
                 <div style="margin-top:px ; ">
@@ -65,7 +65,7 @@
                       <br />
                       <div class="text-center">
                         <router-link to="/prof">
-                          <v-btn rounded color="orange" dark>See More</v-btn>
+                          <v-btn rounded color="success" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -79,23 +79,23 @@
           </div>
         </v-carousel-item>
         <v-carousel-item class="div2">
-          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
+          <div style=" height:100%" class="cov">
             <div class="card-size">
               <div class="card-body" style>
                 <div style="margin-top:90px ; ">
                   <div class="card-text white--text font-weight-regular">
                     <br />
                     <br />
-                    <div class="car-text">
+                    <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">ICM UK Approved Center</span>
                       <br />
-                      <br />The Institute of Commercial Management (ICM) UK is a leading professional body providing qualifications at
-                      <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma</strong> levels that are recognized globally in business, management and related vocational
+                      <br />The Institute of Commercial Management (ICM) UK is a leading professional body <br> providing qualifications at
+                      <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma</strong> levels <br> that are recognized globally in business, management and related vocational
                       <div class="text-center">
                         <br />
                         <br />
                         <router-link to="/icm">
-                          <v-btn rounded color="orange" dark>See More</v-btn>
+                          <v-btn rounded color="success" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -109,7 +109,7 @@
           </div>
         </v-carousel-item>
         <v-carousel-item class="div3">
-          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
+          <div style=" height:100%" class="cov">
             <div class="card-size">
               <div class="card-body" style>
                 <div style="margin-top:90px ; ">
@@ -119,15 +119,15 @@
                   >
                     <br />
                     <br />
-                    <div class="car-text">
+                    <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">TRAIN-THE-TRAINER WORKSHOPS</span>
-                      <br />
-                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize their current methods of instruction or wish to engage in careers.
+                      <br /> <br>
+                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize <br> their current methods of instruction or wish to engage in careers.
                       <br />
                       <br />
                       <div class="text-center">
                         <router-link to="/train">
-                          <v-btn rounded color="orange" dark>See More</v-btn>
+                          <v-btn rounded color="success" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -141,9 +141,9 @@
           </div>
         </v-carousel-item>
         <v-carousel-item class="div4">
-          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
-            <div class="card-size">
-              <div class="card-body" style>
+          <div style="; height:100%" class="cov">
+            <div class="card-size "  >
+              <div class="card-body">
                 <div style="margin-top:90px ; ">
                   <div
                     class="card-text white--text font-weight-regular"
@@ -151,15 +151,15 @@
                   >
                     <br />
                     <br />
-                    <div class="car-text">
+                    <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">TEST PREPARATION</span>
                       <br />
-                      <br />Acquire exceptional support to improve your exam techniques and increase your performance on standardized tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT.
+                      <br />Acquire exceptional support to improve your exam techniques <br> and increase your performance on standardized <br> tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT.
                       <br />
                       <br />
                       <div class="text-center">
                         <router-link to="/test">
-                          <v-btn rounded color="orange" dark>See More</v-btn>
+                          <v-btn rounded color="success" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -173,7 +173,7 @@
           </div>
         </v-carousel-item>
         <v-carousel-item class="div5">
-          <div style="background-color: rgba(21, 22, 21, 0.4); height:100%">
+          <div style="height:100%" class="cov">
             <div class="card-size">
               <div class="card-body" style>
                 <div style="margin-top:90px ; ">
@@ -183,15 +183,16 @@
                   >
                     <br />
                     <br />
-                    <div class="car-text">
+                    <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">OVERSEAS ADMISSION CONSULTING</span>
                       <br />
-                      <br />We have a unique track record of enlisting students with diverse qualifications and career drives into our partner foreign universities and colleges.
+                      <br />We have a unique track record of enlisting students with diverse <br>
+                      qualifications and career drives into our partner foreign universities and colleges.
                       <br />
                       <br />
                       <div class="text-center">
                         <router-link to="/over">
-                          <v-btn rounded color="orange" dark>See More</v-btn>
+                          <v-btn rounded color="success" dark>See More</v-btn>
                         </router-link>
                       </div>
                     </div>
@@ -508,7 +509,7 @@ import { Hooper, Slide } from "hooper";
 import "hooper/dist/hooper.css";
 import foota from "../components/footer";
 // import nava from "../components/nav";
-import nav2 from "../components/nav";
+import nav2 from "../components/newNav";
 
 export default {
   components: {
@@ -609,6 +610,9 @@ export default {
   -o-background-size: cover;
   background-size: cover;
 }
+.cov{
+  background-color: rgba(21, 22, 21, 0.6)
+}
 .vl {
   border-left: 2px solid green;
   height: 50px;
@@ -661,8 +665,11 @@ export default {
     height: 40px;
     padding-top: 20px;
     text-align: center;
-    font-family: "Alegreya"
+    font-family: "roboto"
   }
+  .cov{
+  background-color: rgba(21, 22, 21, 0.9)
+}
 }
 
 /* Tablet Styles */

@@ -24,6 +24,7 @@ import adminNews from '../views/adminViews/adminNews.vue'
 import books from '../views/books.vue'
 import capacity from '../views/capacity.vue'
 import sport from '../views/sport.vue'
+import testt from '../components/newNav.vue'
 import digital from '../views/digital.vue'
 
 Vue.use(VueRouter)
@@ -34,10 +35,16 @@ const routes = [
     name: 'index',
     component: () => import(/* webpackChunkName: "about" */ '../views/index.vue')
   },
+  
   {
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/test',
+    name: 'test',
+    component: testt
   },
   {
     path: '/adminNews',

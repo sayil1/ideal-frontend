@@ -1,6 +1,8 @@
 <template>
   <div>
+      <nava/>
     <div id="app">
+    
       <div class="header">
         <h2>Comics</h2>
         <!-- <div style="margin-right:px">
@@ -120,7 +122,11 @@
 </template>
 
 <script>
+import nava from '../components/newNav'
 export default {
+  components:{
+             nava
+  }, 
   data: () => ({
     shop: [
       {
