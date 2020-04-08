@@ -42,8 +42,8 @@ const routes = [
     component: hello
   },
   {
-    path: '/test',
-    name: 'test',
+    path: '/testt',
+    name: 'testt',
     component: testt
   },
   {

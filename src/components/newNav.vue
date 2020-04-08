@@ -1,193 +1,199 @@
-<template>
-  <div>
-    <div
-      class="navbar-brand pl-6"
-      style="background-color:black; width:100%; color:white; font-size:15px"
-    >
-      <div class="row">
-        <div class="col-md-1 col-sm-4" style="margin-right:90px">
-          <v-icon size="20" color="green darken-2" right>mdi-phone</v-icon>(+234) 9030031914
-        </div>
-        <div class="col-md-1 col-sm-4">
-          <v-icon size="20" color="green darken-2" right style="padding-right:5px">mdi-mail</v-icon>info@ideal-nig.org
-        </div>
-        <div class="col-md-6"></div>
-
-        <div class="row icons">
-          <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-facebook</v-icon>
-          <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-twitter</v-icon>
-          <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
-          <v-icon size="20" color="orange darken-2" right>mdi-linkedin</v-icon>
-        </div>
-      </div>
-    </div>
-    <div style="margin-bottom:-2px" class="navbar navbar-expand-md navbar- bg-" role="navigation" >
-      <div>
-        <router-link to="/">
-          <img src="../assets/idealng.png" alt style="height:30px; " />
-        </router-link>
-      </div>
-
-      <button
-        style=""
-        class="navbar-toggler btn-primary bg-success"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarCollapse"
-        aria-controls="navbarCollapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+<template  >
+  <div >
+    <div style="position:fixed; z-index:10">
+      <div
+        class="navbar-brand pl-6 navas"
+        style="background-color:black; color:white; font-size:15px; z-index:10; "
       >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <div class="row " style="">
+          <div class="col-md-1 col-sm-4">
+            <v-icon size="20" color="green darken-2" right>mdi-phone</v-icon>(+234) 9030031914
+          </div>
+          <div class="col-md-1 col-sm-4 infos" >
+            <v-icon size="20" color="green darken-2" right style="padding-right:5px">mdi-mail</v-icon>info@ideal-nig.org
+          </div>
+          <div class="col-md-6"></div>
 
-      <div style class="nava collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active"></li>
-          <li class="nav-item active">
-            <router-link class="nav-link" to="/" style>
-              HOME
-              <span class="sr-only">(current)</span>
-            </router-link>
-          </li>
+          <div class="row icons">
+            <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-facebook</v-icon>
+            <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-twitter</v-icon>
+            <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
+            <v-icon size="20" color="orange darken-2" right>mdi-linkedin</v-icon>
+          </div>
+        </div>
+      </div>
+      <div
+        style="; "
+        class="navbar navbar-expand-md navbar- bg-white navas"
+        role="navigation"
+      >
+        <div>
+          <router-link to="/">
+            <img src="../assets/idealng.png" alt style="height:30px; " />
+          </router-link>
+        </div>
 
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="dropdown1"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >ABOUT US</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-              <li class="dropdown-item">
-                <router-link to="about" class="route">
-                  <a>WHO WE ARE</a>
-                </router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link to="GAL" class="route">GALLERY</router-link>
-              </li>
-              <ul></ul>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="dropdown1"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >WHAT WE DO</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-              <li class="dropdown-item">
-                <router-link class="route" to="capacity">CAPACITY DEVELOPMENT</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="sport">SPORT DEVELOPMENT</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="digital">DIGITAL INCLUSION</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="train">TRAIN-THE-TRAINERS</router-link>
-              </li>
-              <li class="dropdown-item dropdown">
-                <a
-                  class="dropdown-toggle"
-                  id="dropdown1-1"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >EXAM TEST CENTER</a>
-                <ul class="dropdown-menu sub" aria-labelledby="dropdown1-1">
-                  <li>
-                    <router-link class="route" to="toefl">TOEFL</router-link>
-                  </li>
-                  <li>
-                    <router-link class="route" to="pearson">PEARSON VUE</router-link>
-                  </li>
-                  <li>
-                    <router-link class="route" to="icm">ICM UK QUALIFICATION</router-link>
-                  </li>
-                </ul>
-              </li>
-              <ul></ul>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="dropdown1"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >IDEAL IT CENTER</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-              <li class="dropdown-item">
-                <router-link class="route" to="prof">PROFESSIONAL IT COURSES</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="test">TEST PREPARATION</router-link>
-              </li>
-              <li class="dropdown-item">
+        <button
+          style="margin-right:20px"
+          class="navbar-toggler btn-primary bg-success"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div style class="nava collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active"></li>
+            <li class="nav-item active">
+              <router-link class="nav-link" to="/" style>
+                HOME
+                <span class="sr-only">(current)</span>
+              </router-link>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="dropdown1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >ABOUT US</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                <li class="dropdown-item">
+                  <router-link to="about" class="route">
+                    <a>WHO WE ARE</a>
+                  </router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link to="GAL" class="route">GALLERY</router-link>
+                </li>
+                <ul></ul>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="dropdown1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >WHAT WE DO</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                <li class="dropdown-item">
+                  <router-link class="route" to="capacity">CAPACITY DEVELOPMENT</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="route" to="sport">SPORT DEVELOPMENT</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="route" to="digital">DIGITAL INCLUSION</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="route" to="train">TRAIN-THE-TRAINERS</router-link>
+                </li>
+                <li class="dropdown-item dropdown">
+                  <a
+                    class="dropdown-toggle"
+                    id="dropdown1-1"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >EXAM TEST CENTER</a>
+                  <ul class="dropdown-menu sub" aria-labelledby="dropdown1-1">
+                    <li>
+                      <router-link class="route" to="toefl">TOEFL</router-link>
+                    </li>
+                    <li>
+                      <router-link class="route" to="pearson">PEARSON VUE</router-link>
+                    </li>
+                    <li>
+                      <router-link class="route" to="icm">ICM UK QUALIFICATION</router-link>
+                    </li>
+                  </ul>
+                </li>
+                <ul></ul>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="dropdown1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >IDEAL IT CENTER</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                <li class="dropdown-item">
+                  <router-link class="route" to="prof">PROFESSIONAL IT COURSES</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="route" to="test">TEST PREPARATION</router-link>
+                </li>
+                <!-- <li class="dropdown-item">
                 <router-link class="route" to="career">CAREER DEVELOPMENT</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="over">OVER-SEAS ADMISSION CONSULTING</router-link>
-              </li>
+                </li>-->
+                <li class="dropdown-item">
+                  <router-link class="route" to="over">INTERNSHIP</router-link>
+                </li>
 
-              <ul></ul>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="dropdown1"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >SHOPS</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-              <li class="dropdown-item">
-                <router-link class="route" to="books">BOOKS</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="test">DIY KITS</router-link>
-              </li>
+                <ul></ul>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="dropdown1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >SHOPS</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                <li class="dropdown-item">
+                  <router-link class="route" to="books">BOOKS</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="route" to="test">DIY KITS</router-link>
+                </li>
 
-              <ul></ul>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              id="dropdown1"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >MEDIA</a>
-            <ul class="dropdown-menu" aria-labelledby="dropdown1">
-              <li class="dropdown-item">
-                <router-link class="route" to="books">EVENTS</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="test">CONTESTS</router-link>
-              </li>
-              <li class="dropdown-item">
-                <router-link class="route" to="test">WEBINARS</router-link>
-              </li>
+                <ul></ul>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="dropdown1"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >MEDIA</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                <li class="dropdown-item">
+                  <router-link class="route" to="books">EVENTS</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="route" to="test">CONTESTS</router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link class="route" to="test">WEBINARS</router-link>
+                </li>
 
-              <ul></ul>
-            </ul>
-          </li>
-          <li class="nav-item active">
-            <router-link class="nav-link" to="/" style>
-              CONTACT
-              <span class="sr-only">(current)</span>
-            </router-link>
-          </li>
-        </ul>
+                <ul></ul>
+              </ul>
+            </li>
+            <li class="nav-item active">
+              <router-link class="nav-link" to="cont" style>
+                CONTACT
+                <span class="sr-only">(current)</span>
+              </router-link>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
@@ -198,6 +204,9 @@ export default {};
 </script>
 
 <style lang="css" scoped>
+header {
+  margin-top: 100px;
+}
 .navbar-nav li:hover > ul.dropdown-menu {
   display: block;
 }
@@ -210,7 +219,7 @@ export default {};
   margin-top: -6px;
 }
 .nav-link {
-  color:green;
+  color: green;
   /* font-weight: bold; */
   font-size: 15px;
 }
@@ -246,7 +255,6 @@ export default {};
   color: inherit;
   text-decoration: none;
   background-color: inherit;
-  
 }
 
 .navbar .dropdown-item:focus,
@@ -255,6 +263,12 @@ export default {};
   text-decoration: none;
   background-color: #f8f9fa;
 }
+.nav2 {
+  margin-top: 200px;
+}
+.navas {
+    width: 100%
+  }
 @media only screen and (max-width: 400px) {
   .nava {
     margin-left: 1%;
@@ -279,6 +293,15 @@ export default {};
   }
   .nava {
     margin-left: 30%;
+  }
+  .navas {
+    width: 150%
+  }
+  .infos{
+    margin-left:80px
+  }
+  .nav2 {
+    /* padding-top: 80px */
   }
 }
 </style>

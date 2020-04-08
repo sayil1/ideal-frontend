@@ -601,6 +601,9 @@ export default {
 
 <style  scoped lang="css">
 @import url('https://fonts.googleapis.com/css?family=Alegreya|Lora:700&display=swap');
+header{
+   padding-top: 110px
+}
 .carousel-item {
   height: 85vh;
   min-height: 0px;

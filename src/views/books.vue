@@ -1,9 +1,9 @@
 <template>
   <div>
       <nava/>
-    <div id="app">
+    <div id="app" style="padding-top:90px">
     
-      <div class="header">
+      <div class="header" >
         <h2>Comics</h2>
         <!-- <div style="margin-right:px">
           <button
@@ -201,6 +201,8 @@ export default {
 
     removeFromCart(item) {
       // item.quantity -= 1;
+      //  let itemInCart = this.items.filter(item => item.id === itemToAdd.id);
+
       this.items.splice(item, 1);
       this.quantity -= item.quantity;
     }

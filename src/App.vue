@@ -17,6 +17,7 @@
 }
 template {
   font-family: 'Alegreya';
+  padding-top: 90px
 }
 
 </style>

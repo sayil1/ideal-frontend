@@ -2,7 +2,7 @@
   <div style="background-color:">
     <nava />
 
-    <div class style>
+    <div class="cont">
       <!-- card -->
       <div style class="div1">
         <div class="card-size">
@@ -180,6 +180,9 @@ export default {
     padding-top: 20px;
     text-align: left;
   }
+  .cont{
+    padding-top: 200px
+  }
 }
 
 /* Tablet Styles */
@@ -198,7 +201,7 @@ export default {
   }
 
   .first {
-    padding-top: 30px;
+    padding-top: 20px;
   }
   .car {
     padding: 30px;
@@ -217,6 +220,9 @@ export default {
     border-radius: 45px;
     text-align: left;
     font-family: "Alegreya";
+  }
+  .cont{
+    padding-top: 100px
   }
 }
 </style>

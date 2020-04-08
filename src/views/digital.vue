@@ -2,7 +2,7 @@
   <div style="background-color:">
     <nava />
 
-    <div style>
+    <div class="cont">
       <!-- card -->
        <div style class="div1">
         <div class="card-size">
@@ -128,13 +128,12 @@ template {
   margin: 50px;
 }
 
+
 @media only screen and (max-width: 400px) {
   .first {
     /* padding: 30px; */
   }
   .car {
-  
-
     margin: 0px;
   }
   .car-head {
@@ -148,8 +147,10 @@ template {
     /* background-color: rgba(21, 22, 21, 0.4); */
     padding-top: 10px;
     text-align: left
-    
   }
+  .cont{
+  padding-top: 200px
+}
 }
 
 /* Tablet Styles */
@@ -187,6 +188,9 @@ template {
     border-radius: 45px;
     text-align: left;
     font-family: "Alegreya"
+  }
+  .cont{
+    padding-top: 100px
   }
 }
 </style>

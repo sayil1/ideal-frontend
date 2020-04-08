@@ -1,7 +1,7 @@
 <template >
   <div style="background-color:">
     <nava />
-    <div style class="div1">
+    <div style class="div1 cont">
       <div class="card-size">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
           <div style="margin-top:px ; ">
@@ -174,6 +174,9 @@ template {
     text-align: left;
     /* background-color: rgba(21, 22, 21, 0.4); */
   }
+  .cont{
+    padding-top: 200px
+  }
 }
 
 /* Tablet Styles */
@@ -210,6 +213,9 @@ template {
     padding: 10px;
     font-family: "Alegreya";
     text-align: left;
+  }
+  .cont{
+    padding-top: 80px
   }
 }
 </style>

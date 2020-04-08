@@ -1,16 +1,18 @@
 <template>
   <div style="color:black">
     <nava />
-  <div style="background-color: ">
+    <div style="background-color: " class="cont">
       <div class="card-size div1">
-        <div class="card-body "  style="background-color: rgba(21, 22, 21, 0.6)">
-          <div style="margin-top:0px ; ">
-            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-              <div class="car-text">
-                <span class="car-head white--text" style>TEST PREPARATION</span>
-                 <hr
+        <div class="card-size">
+          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
+            <div style="margin-top:px ; ">
+              <div class="car" style="margin-left:40px; margin-right:40px">
+                <div class="car-head">
+                  <span class="white--text">TEST PREPARATION</span>
+                  <hr
                     style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                   />
+                </div>
               </div>
             </div>
           </div>
@@ -21,16 +23,14 @@
       <!-- card -->
       <div class="row" style="background-color:;">
         <div class="col-md-12" style="padding-left:60px; padding-right:60px">
-           We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
-            
-                <br />Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
-                <br />
+          We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
+          <br />Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
+          <br />
         </div>
         <div class="col-sm-12 col-md-6" style="margin-bottom:0px">
-          <div class="card card-size" style=" margin-left:20px; margin-right:20px; margin-top:60px">
+          <div class="card-size" style=" margin-left:20px; margin-right:20px; margin-top:60px">
             <div class="card-body" style="margin-top:0px">
               <p class="card-text --text font-weight-regular">
-               
                 <br />
                 <strong>English Test preparation (IELTS, PTE, Cambridge English)</strong>
                 <br />
@@ -53,8 +53,11 @@
           </div>
         </div>
         <div class="col-sm-12 col-md-5" style=" margin:2px">
-          <div style="color:; text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
-          <table class="table table-bordered card-size">
+          <div
+            style="color:; text-align:center; margin-bottom:20px"
+            class="display-1"
+          >IMPORTANT FACTS</div>
+          <table class="table table-bordered card-size padding:10px">
             <thead>
               <tr>
                 <th style="border-color:black; width:200px" scope="col">COURSE LENGTH</th>
@@ -87,7 +90,7 @@
         </div>
       </div>
     </div>
-  
+
     <div class style="margin-top:0px; margin-bottom:50px">
       <!-- card -->
       <div class="row">
@@ -95,11 +98,12 @@
           <div class="card-size" style=" margin-left:20px; margin-right:20px;">
             <div class="card-body" style>
               <p class="card-text --text font-weight-regular">
-                <strong >Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong> <br>
+                <strong>Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong>
+                <br />
                 <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and to expect, ultimately improving your score on the test.
                 <v-list dense>
                   <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item2" color="">
+                  <v-list-item-group v-model="item2" color>
                     <v-list-item v-for="(item2, i) in items2" :key="i">
                       <v-list-item-icon>
                         <v-icon v-text="item2.icon"></v-icon>
@@ -108,7 +112,8 @@
                         <v-list-item-title v-text="item2.text"></v-list-item-title>
                       </v-list-item-content>
                     </v-list-item>
-                  </v-list-item-group> <br>
+                  </v-list-item-group>
+                  <br />
                   <div
                     class="card-text --text font-weight-regular"
                   >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
@@ -119,11 +124,14 @@
         </div>
 
         <div class="col-sm col-md-5" style=" margin:2px">
-             <div style="color:rgb; text-align:center; margin-bottom:20px" class="display-1">IMPORTANT FACTS</div>
-          <table style="border-color:black;" class="table table-bordered card-size ">
-            <thead >
-              <tr >
-                <th style="border-color:black; width:200px"  scope="col">COURSE LENGTH</th>
+          <div
+            style="color:rgb; text-align:center; margin-bottom:20px"
+            class="display-1"
+          >IMPORTANT FACTS</div>
+          <table style="border-color:black;" class="table table-bordered card-size">
+            <thead>
+              <tr>
+                <th style="border-color:black; width:200px" scope="col">COURSE LENGTH</th>
                 <th style="border-color:black;" scope="col">6- 12 Weeks</th>
               </tr>
             </thead>
@@ -149,11 +157,8 @@
                 Weekends Saturdays and Sundays 3 hours per day
               </td>
             </tbody>
-           
           </table>
-           <div>
-           Students also have Acess to Study guides, Practice tests, Structured study sessions, Preparation lessons, Online and paper-based simulation tests
-            </div>
+          <div>Students also have Acess to Study guides, Practice tests, Structured study sessions, Preparation lessons, Online and paper-based simulation tests</div>
         </div>
       </div>
     </div>
@@ -215,14 +220,16 @@ template {
   margin-left: 10px;
   margin-right: 10px;
 }
-table, th, td {
+table,
+th,
+td {
   border: 1px solid black;
 }
 .div1 {
   background-image: url("../assets/testb.jpg");
- 
+
   background-size: cover;
-  background-position: center ;
+  background-position: center;
 }
 @media only screen and (max-width: 400px) {
   .car {
@@ -230,17 +237,19 @@ table, th, td {
     margin: 0px;
   }
   .car-head {
-    font-size: 40px;
-    color: black;
-    text-align: center;
+    font-size: 20px;
     padding-top: 50px;
     padding-bottom: 50px;
+    font-family: "lora";
   }
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     padding-top: 20px;
-    text-align: center;
+    text-align: left;
+  }
+  .cont{
+    padding-top: 200px
   }
 }
 
@@ -259,18 +268,23 @@ table, th, td {
   .car {
     padding: 30px;
   }
-  .car-head {
-    font-size: 40px;
-    color: black;
+ .car-head {
+    font-size: 34px;
     text-align: center;
-    padding-bottom: 50px;
+    font-family: "Lora";
   }
   .car-text {
-    font-size: 25px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-  }}
+    text-align: left;
+    font-family: "Alegreya";
+  }
+  .cont{
+    padding-top: 100px
+  }
+}
 </style>

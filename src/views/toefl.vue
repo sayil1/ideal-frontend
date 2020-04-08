@@ -1,12 +1,12 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div style="background-color: ">
+    <div style="background-color: " class="cont">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
           <div>
             <div class="car-head">
-              <span class=" white--text" style>TOEFL</span>
+              <span class="white--text" style>TOEFL</span>
               <hr
                 style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
               />
@@ -23,7 +23,7 @@
     <div class="body" style>
       <!-- card -->
       <div class="row">
-        <div class="col-sm-12 col-md-12" >
+        <div class="col-sm-12 col-md-12">
           <div class="sub-body" style>
             <div class style>
               <p class="car-text --text">
@@ -59,7 +59,7 @@
       </div>
       <div class style="margin-top:-50px">
         <!-- card -->
-        <div class="row ">
+        <div class="row">
           <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
             <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
           </div>
@@ -84,7 +84,7 @@
                     </v-list-item-group>
                     <div class="card-text --text font-weight-regular mt-3">
                       IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test.
-                      <router-link to="cont">Contact us </router-link>for more information
+                      <router-link to="cont">Contact us</router-link>for more information
                     </div>
                   </v-list>
                 </p>
@@ -193,6 +193,9 @@ template {
     padding-top: 10px;
     text-align: left;
   }
+  .cont{
+    padding-top: 200px
+  }
 }
 
 /* Tablet Styles */
@@ -233,6 +236,9 @@ template {
     text-align: left;
     border-radius: 45px;
     font-family: "Alegreya";
+  }
+  .cont{
+    padding-top: 100px
   }
 }
 </style>
