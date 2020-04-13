@@ -1,9 +1,8 @@
 <template>
   <div>
-      <nava/>
+    <nava />
     <div id="app" style="padding-top:90px">
-    
-      <div class="header" >
+      <div class="header">
         <h2>Comics</h2>
         <!-- <div style="margin-right:px">
           <button
@@ -80,8 +79,8 @@
                 <strong class="card-title">{{ item.name }}</strong>
                 <p class="card-text">NGN {{ item.price }}</p>
                 <!-- <a href="#" class="btn btn" @click="addToCart(item)">Add to cart</a> -->
-            
-                <v-btn @click="addToCart(item)" class="ma-2" tile  color="blue">
+
+                <v-btn @click="addToCart(item)" class="ma-2" tile color="blue">
                   <v-icon left>mdi-plus</v-icon>add to cart
                 </v-btn>
               </div>
@@ -113,6 +112,18 @@
               </h5>
 
               <v-btn @click="verified=false" class="ma-2" tile color="indigo" dark>Back to books</v-btn>
+              <paystack
+                :amount="amount"
+                :email="email"
+                :paystackkey="paystackkey"
+                :reference="reference"
+                :callback="callback"
+                :close="close"
+                :embed="false"
+              >
+                <i class="fas fa-money-bill-alt"></i>
+                Make Payment
+              </paystack>
             </div>
           </div>
         </div>
@@ -120,13 +131,15 @@
     </div>
   </div>
 </template>
-
+<script src='https://js.paystack.co/v1/inline.js'></script> 
 <script>
-import nava from '../components/newNav'
+import nava from "../components/newNav";
+import paystack from "vue-paystack";
 export default {
-  components:{
-             nava
-  }, 
+  components: {
+    nava,
+    paystack
+  },
   data: () => ({
     shop: [
       {
@@ -163,7 +176,10 @@ export default {
     items: [],
     showCart: false,
     verified: false,
-    quantity: 0
+    quantity: 0,
+    paystackkey: "pk_test_bb8f1b8270ac690cfac54817ebb179829ee9a694", //paystack public key
+    email: "foobar@example.com", // Customer email
+    amount: 100 // in kobo
   }),
   computed: {
     total() {
@@ -171,11 +187,29 @@ export default {
       for (var i = 0; i < this.items.length; i++) {
         total += this.items[i].price * this.items[i].quantity;
       }
+      this.amount = Math.ceil(total);
       return total;
+    },
+    reference() {
+      let text = "";
+      let possible =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+      for (let i = 0; i < 10; i++)
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+      return text;
     }
   },
   watch: {},
   methods: {
+    callback: function(response) {
+      console.log(response);
+    },
+    close: function() {
+      console.log("Payment closed");
+    },
+
     addToCart(itemToAdd) {
       // let found = false;
 
@@ -202,8 +236,10 @@ export default {
     removeFromCart(item) {
       // item.quantity -= 1;
       //  let itemInCart = this.items.filter(item => item.id === itemToAdd.id);
+      let dis = this.items.findIndex(x => x.id === item.id);
+      alert(dis);
 
-      this.items.splice(item, 1);
+      this.items.splice(dis, 1);
       this.quantity -= item.quantity;
     }
   }

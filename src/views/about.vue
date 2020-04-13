@@ -1,7 +1,7 @@
 <template>
   <div style="width:100%">
     <nava />
-    <div style="padding-top:100px">
+    <div class="cont">
       <div class="row">
         <div class="col-md-12">
           <h1 class="car-head" style="text-align:center;">OUR MAJOR GOAL!!</h1>
