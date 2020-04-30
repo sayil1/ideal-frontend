@@ -4,18 +4,15 @@
     <div style="background-color: " class="cont">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
-          <div style=" ; ">
-            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-              <div class="car-head">
-                <span class="white--text" style>PEARSON VUE CENTER</span>
-                <hr
-                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                />
-
-                <router-link to="cont" class="success--text" style="text-decoration:none;">
-                  <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
-                </router-link>
-              </div>
+          <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+            <div class="car-head">
+              <span class="white--text" style>PEARSON VUE CENTER</span>
+              <hr
+                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
+              <router-link to="cont" class="success--text" style="text-decoration:none;">
+                <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
+              </router-link>
             </div>
           </div>
         </div>
@@ -66,7 +63,7 @@
                 </v-list>
               </p>
               <div class="car-text">
-                <router-link to="cont">Contact us </router-link>for more information
+                <router-link to="cont">Contact us</router-link>for more information
               </div>
             </div>
           </div>
@@ -177,8 +174,8 @@ export default {
     padding-top: 10px;
     text-align: left;
   }
-  .cont{
-    padding-top: 200px
+  .cont {
+    padding-top: 200px;
   }
 }
 
@@ -219,8 +216,8 @@ export default {
     border-radius: 45px;
     font-family: "Alegreya";
   }
-   .cont{
-    padding-top: 100px
+  .cont {
+    padding-top: 100px;
   }
 }
 </style>

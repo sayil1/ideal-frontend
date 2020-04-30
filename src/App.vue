@@ -15,11 +15,6 @@
   -moz-osx-font-smoothing: grayscale;
   color:black;
 }
-template {
-  font-family: 'Alegreya';
-  padding-top: 90px
-}
-
 </style>
 
 <script>

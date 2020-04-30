@@ -7,11 +7,15 @@
       <div style class="div1">
         <div class="card-size">
           <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div class="car-head">
-              <span class="white--text">CAPACITY BUILDING</span>
-              <hr
-                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-              />
+            <div style="margin-top:px ; ">
+              <div class="car" style="margin-left:40px; margin-right:40px">
+                <div class="car-head">
+                  <span class="white--text">CAPACITY DEVELOPMENT</span>
+                  <hr
+                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -197,8 +201,9 @@ template {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .mobile {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top:60px
   }
 
   body {
@@ -213,11 +218,9 @@ template {
     padding: 30px;
   }
   .car-head {
-    font-family: "Lora";
-    font-size: 34px;
-    color: black;
+   font-size: 34px;
     text-align: center;
-    padding-top: 90px;
+    font-family: "Lora";
   }
   .car-text {
     font-size: 21px;

@@ -40,6 +40,12 @@
           <span>News</span>
         </router-link>
       </li>
+       <li class="nav-item">
+        <router-link class="nav-link" to="/adminBooks" aria-expanded="true" aria-controls="collapseThree">
+          <v-icon small color="white">mdi-book</v-icon>
+          <span>Books</span>
+        </router-link>
+      </li>
       <li class="nav-item">
         <router-link class="nav-link" to="#" aria-expanded="true" aria-controls="collapseThree">
           <v-icon small color="white">mdi-teach</v-icon>
@@ -69,7 +75,7 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <router-link class="nav-link" to="index.html">
+        <router-link class="nav-link" to="/">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Logout</span>
         </router-link>

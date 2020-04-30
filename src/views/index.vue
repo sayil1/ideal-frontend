@@ -4,12 +4,21 @@
     <nav2 />
 
     <header>
+      <div style="background-color:orange; width:100%; padding-top:7px" class="news">
+        <marquee behavior="scroll" direction="left" scrollamount="10">
+          <span style="padding:10px" v-for="(n , index) in news" v-bind:key="index">
+            <span style="padding:3px; color:black">{{n.caption | capitalize}}:</span>
+            <span style="padding:3px ; color:white">{{n.message}}</span>
+          </span>
+        </marquee>
+      </div>
       <v-carousel
         hide-delimiter-background
         delimiter-icon="mdi-minus"
         cycle
         height="580"
         show-arrows-on-hover
+        class="caro"
       >
         <v-carousel-item class="div1">
           <div style="; height:100%" class="cov">
@@ -89,8 +98,10 @@
                     <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">ICM UK Approved Center</span>
                       <br />
-                      <br />The Institute of Commercial Management (ICM) UK is a leading professional body <br> providing qualifications at
-                      <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma</strong> levels <br> that are recognized globally in business, management and related vocational
+                      <br />The Institute of Commercial Management (ICM) UK is a leading professional body
+                      <br />providing qualifications at
+                      <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma</strong> levels
+                      <br />that are recognized globally in business, management and related vocational
                       <div class="text-center">
                         <br />
                         <br />
@@ -121,8 +132,10 @@
                     <br />
                     <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">TRAIN-THE-TRAINER WORKSHOPS</span>
-                      <br /> <br>
-                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize <br> their current methods of instruction or wish to engage in careers.
+                      <br />
+                      <br />
+                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize
+                      <br />their current methods of instruction or wish to engage in careers.
                       <br />
                       <br />
                       <div class="text-center">
@@ -142,7 +155,7 @@
         </v-carousel-item>
         <v-carousel-item class="div4">
           <div style="; height:100%" class="cov">
-            <div class="card-size "  >
+            <div class="card-size">
               <div class="card-body">
                 <div style="margin-top:90px ; ">
                   <div
@@ -154,7 +167,9 @@
                     <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">TEST PREPARATION</span>
                       <br />
-                      <br />Acquire exceptional support to improve your exam techniques <br> and increase your performance on standardized <br> tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT.
+                      <br />Acquire exceptional support to improve your exam techniques
+                      <br />and increase your performance on standardized
+                      <br />tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT.
                       <br />
                       <br />
                       <div class="text-center">
@@ -186,8 +201,8 @@
                     <div class="car-text" style="margin-top:-60px">
                       <span class="car-head">OVERSEAS ADMISSION CONSULTING</span>
                       <br />
-                      <br />We have a unique track record of enlisting students with diverse <br>
-                      qualifications and career drives into our partner foreign universities and colleges.
+                      <br />We have a unique track record of enlisting students with diverse
+                      <br />qualifications and career drives into our partner foreign universities and colleges.
                       <br />
                       <br />
                       <div class="text-center">
@@ -216,6 +231,7 @@
               <div class="fill-height bottom-gradient"></div>
             </v-img>
           </div>-->
+
           <div class="col-md-12">
             <h3 class="dislay-1 font-weight-light" style="color:black;text-align:center">
               Who we are
@@ -530,7 +546,7 @@ export default {
       playspeed: 1000
     },
     image: { backgroundImage: "url('../../images/banner.jpg')" },
-
+    news: [],
     msg: "heyyy",
     dialog: false,
     items: [
@@ -565,8 +581,39 @@ export default {
   }),
   created() {
     this.isMobile();
+    this.initialize();
   },
   methods: {
+    initialize() {
+      serv
+        .getRequest("news/getNews")
+        .then(response => {
+          // JSON responses are automatically parsed.
+          // this.news = response.data.result;
+
+          // eslint-disable-next-line no-console
+          console.log(response.data.result.length);
+
+          for (let i = 0; i <= response.data.result.length - 1; i++) {
+            // eslint-disable-next-line no-console
+            console.log(i);
+            if (
+              response.data.result[i].endDate >
+              new Date().toISOString().substr(0, 10)
+            ) {
+              this.news.push(response.data.result[i]);
+            }
+          }
+          // eslint-disable-next-line no-console
+          console.log(this.news, "are the events");
+        })
+        .catch(e => {
+          // this.errors.push(e);
+
+          // eslint-disable-next-line no-console
+          console.log(e);
+        });
+    },
     test: function() {
       serv.testers();
       alert("see me");
@@ -600,9 +647,9 @@ export default {
 
 
 <style  scoped lang="css">
-@import url('https://fonts.googleapis.com/css?family=Alegreya|Lora:700&display=swap');
-header{
-   padding-top: 110px
+@import url("https://fonts.googleapis.com/css?family=Alegreya|Lora:700&display=swap");
+header {
+  padding-top: 110px;
 }
 .carousel-item {
   height: 85vh;
@@ -613,8 +660,8 @@ header{
   -o-background-size: cover;
   background-size: cover;
 }
-.cov{
-  background-color: rgba(21, 22, 21, 0.6)
+.cov {
+  background-color: rgba(21, 22, 21, 0.6);
 }
 .vl {
   border-left: 2px solid green;
@@ -623,7 +670,6 @@ header{
 .div1 {
   background-image: url("../assets/imgbook.jpg");
   background-size: cover;
-  
 }
 .div2 {
   background-image: url("../assets/ideal5.jpg");
@@ -660,7 +706,7 @@ header{
     color: orange;
     text-align: center;
     padding-top: 50px;
-    font-family: "lora"
+    font-family: "lora";
   }
   .car-text {
     font-size: 16px;
@@ -668,11 +714,18 @@ header{
     height: 40px;
     padding-top: 20px;
     text-align: center;
-    font-family: "roboto"
+    font-family: "roboto";
   }
-  .cov{
-  background-color: rgba(21, 22, 21, 0.9)
-}
+  .cov {
+    background-color: rgba(21, 22, 21, 0.9);
+    padding-top: 0px;
+  }
+  .caro {
+    margin-top: px;
+  }
+  .news{
+     margin-top: 100px;
+  }
 }
 
 /* Tablet Styles */
@@ -695,7 +748,7 @@ header{
     color: orange;
     text-align: center;
     padding-bottom: 80px;
-      font-family: "lora"
+    font-family: "lora";
   }
   .car-text {
     font-size: 21px;
@@ -704,7 +757,7 @@ header{
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-    font-family: "Alegreya"
+    font-family: "Alegreya";
   }
 }
 </style>

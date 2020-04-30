@@ -22,6 +22,7 @@ import adminIndex from '../views/adminViews/adminIndex'
 import events from '../views/adminViews/events'
 import adminNews from '../views/adminViews/adminNews.vue'
 import books from '../views/books.vue'
+import Adbooks from '../views/adminViews/books.vue'
 import capacity from '../views/capacity.vue'
 import sport from '../views/sport.vue'
 import testt from '../components/newNav.vue'
@@ -55,6 +56,11 @@ const routes = [
     path: '/books',
     name: 'books',
     component: books
+  },
+  {
+    path: '/AdminBooks',
+    name: 'Adbooks',
+    component: Adbooks
   },
   {
     path: '/digital',

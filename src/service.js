@@ -1,5 +1,6 @@
 import axios from 'axios';
-const API_URL = 'http://localhost:5000';
+// const API_URL = 'http://localhost:5000';
+const API_URL = `https://ideal-back.herokuapp.com/`
 // eslint-disable-next-line no-unused-vars
 export class Services {
     constructor(){

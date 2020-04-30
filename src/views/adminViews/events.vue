@@ -9,9 +9,26 @@
       </div>
     </div>
 
-    <div class="cards" style="margin-top:70px ; ">
+    
+
+    <div  class="cards" style="margin-top:70px ; ">
+      <div style="padding:50px"> 
+      <v-alert
+      v-if="event.lenght<1"
+      outlined
+      type="warning"
+      prominent
+      border=""
+    >
+    <span style="text-align:center;
+    ">
+  NO EVENTS AT THE MOMENT! CHECK BACK LATTER
+    </span>
+     
+    </v-alert>
+    </div>
       <v-container fluid>
-        <v-row dense>
+        <v-row dense v-for="(event, i) in event" :key="i" >
           <v-card
             class
             max-width="300"
@@ -50,7 +67,7 @@
 <script>
 import { Services } from "../../service";
 var serv = new Services();
-import nava from "../../components/testnav";
+import nava from "../../components/newNav";
 import foota from "../../components/footer";
 
 export default {
@@ -59,7 +76,7 @@ export default {
     foota
   },
   data: () => ({
-    events: {},
+    event: {},
     errors: []
   }),
   created() {
@@ -67,9 +84,9 @@ export default {
       .getRequest("eve/allEve")
       .then(response => {
         // JSON responses are automatically parsed.
-        this.events = response.data.result;
+        this.event = response.data.result;
         // eslint-disable-next-line no-console
-        console.log(this.events, "are the events");
+        console.log(this.event, "are the eventttt");
       })
       .catch(e => {
         this.errors.push(e);

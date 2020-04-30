@@ -452,8 +452,8 @@ export default {
       // this.editedItem = Object.assign({}, item);
 
       this.dialog = true;
-      const formData = new FormData();
-      // formData.append("image", this.events.image);
+     const formData = new FormData();
+      formData.append("image", this.events.image);
       formData.append("title", this.events.title);
       formData.append("description", this.events.description);
       formData.append("location", this.events.location);

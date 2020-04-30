@@ -3,64 +3,85 @@
     <nava />
     <div id="app" style="padding-top:90px">
       <div class="header">
-        <h2>Comics</h2>
         <!-- <div style="margin-right:px">
           <button
             @click="showCart = !showCart"
             v-show="!verified"
           >items {{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
         </div>-->
-        <button
-          style="background-color:orange; margin-top:20px; padding:20px"
-          type="button"
-          class="btn btn-lg btn-primary"
-          @click="showCart = !showCart"
-          v-show="!verified"
-        >
-          <v-icon dark>mdi-cart</v-icon>
-          <span
-            class="badge badge-light"
-            style="padding:10px"
-          >{{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</span>
-        </button>
-        <button
-          v-if="quantity>=1"
-          style="background-color:orange; margin-top:20px; padding:23px; margin-left:30px"
-          type="button"
-          class="btn btn-lg btn-primary"
-          @click="showCart = !showCart"
-          v-show="!verified"
-        >
-          <v-icon dark></v-icon>
-          <span>View Cart and Checkout</span>
-        </button>
+        <div style=" position:fixed" class="but">
+          <v-btn class="ma-2" tile outlined color="success">
+            <v-icon left>mdi-cart</v-icon>
+            <span
+              class="badge badge-light"
+              style="padding:10px; color:orange; font-size:px"
+            >{{quantity }}</span>
+            <span>{{ (quantity > 1 || quantity === 0 ? " items" : " item") }}</span>
+          </v-btn>
+
+          <v-btn
+            v-if="quantity>=1"
+            @click="showCart = !showCart"
+            v-show="!verified"
+            class="ma-2"
+            outlined
+            color="success"
+          >
+            <v-icon dark></v-icon>
+            <span style="color:orange">Checkout</span>
+          </v-btn>
+
+          <!-- 
+          <button
+            v-if="quantity>=1"
+            type="button"
+            class="btn btn-white"
+            @click="showCart = !showCart"
+            v-show="!verified"
+          >
+            <v-icon dark></v-icon>
+            <span>View Cart and Checkout</span>
+          </button>-->
+        </div>
       </div>
       <div class="cart" v-show="showCart">
         <div v-show="items.length > 0">
           <ul>
             <li v-for="(item, i) in items" :key="i" transition="fade">
-              <p>
+              <p style="font-family:Alegraya">
                 <strong>{{ item.quantity }}</strong>
-                - {{ item.name }}
+                - {{ item.title }}
                 <v-icon
                   size="20"
-                  color="red darken-2"
+                  color="red "
                   right
-                  style="padding-right:10px"
+                  style="padding-right:auto;"
                   @click="removeFromCart(item)"
                 >mdi-delete</v-icon>
                 <!-- <i class="mdi-trash" @click="removeFromCart(item)"></i> -->
               </p>
             </li>
+            <br />
           </ul>
           <div>
             <v-btn
               class="ma-2"
               tile
-              color="indigo"
-              dark
-              @click="verified = true, showCart = false"
+              color="green"
+              depressed
+              small
+              outlined
+              @click="verified = true, showCart = false, hopper=false"
             >Check out</v-btn>
+            <v-btn
+              class="ma-2"
+              tile
+              color="red"
+              depressed
+              small
+              outlined
+              @click="clearCart()"
+            >Clear Cart</v-btn>
 
             <!-- <button @click="verified = true, showCart = false">Check out</button> -->
           </div>
@@ -69,61 +90,96 @@
           <p>Your cart is empty!</p>
         </div>
       </div>
-      <div class="container">
-        <div class="shop" v-show="!verified">
-          <h3>New Arrivals</h3>
-          <div class="row">
-            <div class="card m-3" style="width: 15rem;" v-for="(item,i) in shop" :key="i">
-              <img class="card-img-top" src="../assets/first.jpeg" alt="Card image cap" />
-              <div class="card-body">
-                <strong class="card-title">{{ item.name }}</strong>
-                <p class="card-text">NGN {{ item.price }}</p>
-                <!-- <a href="#" class="btn btn" @click="addToCart(item)">Add to cart</a> -->
 
-                <v-btn @click="addToCart(item)" class="ma-2" tile color="blue">
-                  <v-icon left>mdi-plus</v-icon>add to cart
-                </v-btn>
+      <div class="container">
+        <div class="heads" v-show="!verified">Books for the week</div>
+        <hooper
+          :settings="hooperSettings"
+          :progress="true"
+          :autoPlay="true"
+          :playSpeed="4000"
+          style="margin-bottom:10px; margin-left:-25px; height:300px "
+          class="row"
+          v-show="!verified"
+        >
+          <slide v-for="(item,i) in shop" :key="i">
+            <div>
+              <div class="card m-3" style="width: 12rem;">
+                <v-img class="white--text align-end" height="150px" v-bind:src="item.imagesPath"></v-img>
+                <div class="card-body">
+                  <strong class="card-title">{{ item.title }}</strong>
+                  <p class="card-text">NGN {{ item.price }}</p>
+                  <v-btn
+                    outlined
+                    @click="addToCart(item)"
+                    class="ma-2"
+                    tile
+                    color="blue"
+                  >add to cart</v-btn>
+                </div>
               </div>
             </div>
-          </div>
+          </slide>
+        </hooper>
+        <!-- <div class="shop" v-show="!verified">
+          <v-alert outlined color="purple">
+            <div class="title">Top Books for the week</div>
+            <div class="row book-card">
+              <div class="card m-3" style="width: 12rem;" v-for="(item,i) in shop" :key="i">
+                <v-img class="white--text align-end" height="150px" v-bind:src="item.imagesPath"></v-img>
+                <div class="card-body">
+                  <strong class="card-title">{{ item.title }}</strong>
 
-          <!-- <ul>
-            <li v-for="(item,i) in shop" :key="i">
-              <div>
-                <h5>{{ item.name }}</h5>
-                <p>${{ item.price }}</p>
-                <button @click="addToCart(item)">Add to cart</button>
+                  <p class="card-text">NGN {{ item.price }}</p>
+                
+
+                  <v-btn @click="addToCart(item)" class="ma-2" tile color="blue">
+                    <v-icon left>mdi-plus</v-icon>add to cart
+                  </v-btn>
+                </div>
               </div>
-            </li>
-          </ul>-->
-        </div>
-        <div class="checkout" v-show="verified">
+            </div>
+          </v-alert>
+          <h3>New Arrivals</h3>
+
+         
+        </div>-->
+        <div class="checkout" v-show="verified" style="font-family:Alegreya">
           <h5 v-for="(item,i) in items" :key="i">
             <strong>{{ item.quantity }}</strong>
-            - {{ item.name }}
-            <span>${{ item.price * item.quantity }}</span>
+            - {{ item.title }}
+            <span>NGN {{ item.price * item.quantity }}</span>
           </h5>
           <hr />
           <div class="row">
             <div>
               <h5>
                 Total:
-                <span>{{ total }}</span>
+                <span style="color:green">NGN {{ total }}</span>
               </h5>
 
-              <v-btn @click="verified=false" class="ma-2" tile color="indigo" dark>Back to books</v-btn>
-              <paystack
-                :amount="amount"
-                :email="email"
-                :paystackkey="paystackkey"
-                :reference="reference"
-                :callback="callback"
-                :close="close"
-                :embed="false"
-              >
-                <i class="fas fa-money-bill-alt"></i>
-                Make Payment
-              </paystack>
+              <div class="row">
+                <v-btn
+                  @click="verified=false"
+                  class="ma-2"
+                  outlined
+                  tile
+                  small
+                  color="orange"
+                  dark
+                >Back to books</v-btn>
+                <paystack
+                  :amount="amount"
+                  :email="email"
+                  :paystackkey="paystackkey"
+                  :reference="reference"
+                  :callback="callback"
+                  :close="close"
+                  :embed="false"
+                >
+                  <v-btn outlined small tile color="green" dark>Make Payment</v-btn>
+                </paystack>
+              </div>
             </div>
           </div>
         </div>
@@ -133,53 +189,39 @@
 </template>
 <script src='https://js.paystack.co/v1/inline.js'></script> 
 <script>
+import { Services } from "../service";
+var serv = new Services();
+
+import { Hooper, Slide } from "hooper";
+import "hooper/dist/hooper.css";
+
 import nava from "../components/newNav";
 import paystack from "vue-paystack";
 export default {
   components: {
     nava,
-    paystack
+    paystack,
+    Hooper,
+    Slide
   },
   data: () => ({
-    shop: [
-      {
-        id: "qw12122324dewe332324212",
-        name: "Things Fall Apart",
-        price: 10.02,
-        quantity: 0
-      },
-      {
-        id: "qw12122324dew34ds324212",
-        name: "American Writers",
-        price: 22.98,
-        quantity: 0
-      },
-      {
-        id: "qw12122345665fcgfe332324212",
-        name: "Dragon Ball Freeza Arc,",
-        price: 15.98,
-        quantity: 0
-      },
-      {
-        id: "qw12122324dewe33298hguytfgyt44",
-        name: "Uzumaki: Spiral into Horror,",
-        price: 4.84,
-        quantity: 0
-      },
-      {
-        id: "qw121gcjghcvjgc332324212",
-        name: "Superman: Red Son (New Edition)",
-        price: 10.93,
-        quantity: 0
-      }
-    ],
+    hooperSettings: {
+      itemsToShow: null,
+      centerMode: true,
+      infiniteScroll: true,
+      progress: true,
+      autoreplay: true,
+      playspeed: 1000
+    },
+    hopper: true,
+    shop: [],
     items: [],
     showCart: false,
     verified: false,
     quantity: 0,
     paystackkey: "pk_test_bb8f1b8270ac690cfac54817ebb179829ee9a694", //paystack public key
     email: "foobar@example.com", // Customer email
-    amount: 100 // in kobo
+    amount: 600 // in kobo
   }),
   computed: {
     total() {
@@ -187,7 +229,7 @@ export default {
       for (var i = 0; i < this.items.length; i++) {
         total += this.items[i].price * this.items[i].quantity;
       }
-      this.amount = Math.ceil(total);
+      this.amount = Math.ceil(total) * 100;
       return total;
     },
     reference() {
@@ -202,6 +244,24 @@ export default {
     }
   },
   watch: {},
+  created() {
+    this.isMobile();
+    serv
+      .getRequest("books/allBooks")
+      .then(response => {
+        // JSON responses are automatically parsed.
+        this.shop = response.data.result;
+        // eslint-disable-next-line no-console
+        console.log(this.desserts, "are the books");
+      })
+      .catch(e => {
+        // this.errors.push(e);
+
+        // eslint-disable-next-line no-console
+        console.log(e);
+      });
+    // alert("see ya");
+  },
   methods: {
     callback: function(response) {
       console.log(response);
@@ -209,15 +269,24 @@ export default {
     close: function() {
       console.log("Payment closed");
     },
+    isMobile() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // var element = document.getElementById("text");
+      if (isMobile) {
+        // alert("u are using mobile");
+        this.hooperSettings.itemsToShow = 1.5;
+      } else {
+        // alert("you are on desktop");
+        this.hooperSettings.itemsToShow = 5;
+      }
+    },
 
     addToCart(itemToAdd) {
       // let found = false;
 
       // Add the item or increase qty
-      let itemInCart = this.items.filter(item => item.id === itemToAdd.id);
-
+      let itemInCart = this.items.filter(item => item._id === itemToAdd._id);
       let isItemInCart = itemInCart.length > 0;
-
       if (isItemInCart === false) {
         this.items.push(itemToAdd);
         itemToAdd.quantity = 1;
@@ -229,7 +298,6 @@ export default {
         this.quantity += 1;
         // alert(itemToAdd.id)
       }
-
       // itemToAdd.quantity = 1;
     },
 
@@ -241,12 +309,16 @@ export default {
 
       this.items.splice(dis, 1);
       this.quantity -= item.quantity;
+    },
+    clearCart() {
+      this.items = [];
+      this.quantity = 0;
     }
   }
 };
 </script>
 
-<style>
+<style scoped lang="css">
 .header {
   height: 80px;
 }
@@ -257,14 +329,14 @@ export default {
   font-weight: bolder;
   margin: 10px 20px;
 }
-.header button {
+/* .header button {
   border: 0;
   background: #ffdbe0;
   transition: all 0.1s ease-out;
 }
 .header button:hover {
   background: #ffd1d7;
-}
+} */
 .header div {
   float: right;
   display: inline;
@@ -366,20 +438,48 @@ li {
   float: right;
 }
 
-@media screen and (max-width: 630px) {
-  .checkout {
-    padding: 30px 40px;
+@media only screen and (max-width: 400px) {
+  .book-card {
+    padding-left: 60px;
+    padding-top: 800px;
+    /* padding-right: auto */
   }
-  .checkout h5 {
-    font-size: 1.2em;
+  .but {
+    padding-top: 120px;
+  }
+  .title {
+    padding-top: 10px;
+    padding-bottom: -150px;
+  }
+  .container {
+    padding-top: 120px;
   }
 }
-@media screen and (max-width: 550px) {
-  .shop h3,
-  .checkout h3 {
-    font-size: 3.3em;
-    top: -70px;
-    left: 0px;
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  hooper {
+    margin-top: 00px;
+    padding-left: 60px;
+    margin-top: 100px;
+    /* padding-right: auto */
+  }
+  .but {
+    padding-top: 30px;
+    padding-left: 500px;
+  }
+  .heads {
+    padding-bottom: 00px;
+    color: green;
+    font-family: "Alegreya";
+    font-size: 35px;
+  }
+  .container {
+    padding-top: 100px;
   }
 }
 </style>

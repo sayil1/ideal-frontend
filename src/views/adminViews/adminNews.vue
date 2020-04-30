@@ -175,7 +175,7 @@
               </div>
               <!--  snack bar below -->
               <div class="text-center">
-                <v-snackbar v-model="snackbar" :multi-line="multiLine">
+                <v-snackbar v-model="snackbar">
                   {{ text }}
                   <v-btn color="red" text @click="snackbar = false">Close</v-btn>
                 </v-snackbar>
@@ -251,23 +251,26 @@ export default {
       };
       (this.dialog = false),
         (this.alerts = true),
-        serv.postRequest("news/addNews", newNews).then(response => {
+        await serv.postRequest("news/addNews", newNews).then(response => {
           (this.text = response.data), (this.alerts = false);
           this.snackbar = true;
           // eslint-disable-next-line no-console
           console.log(response);
-          this.initialize();
         });
-
+      this.initialize();
       // eslint-disable-next-line no-console
       console.log(newNews);
     },
-    delNews(item) {
-      serv.getRequest(`news/delNews/${item._id}`).then(response => {
+    async delNews(item) {
+      await serv.getRequest(`news/delNews/${item._id}`).then(response => {
+        this.text = response.data.msg;
+        this.snackbar = true;
         // eslint-disable-next-line no-console
         console.log(response.data.result, "is the events");
         // this.initialize();
       });
+
+      this.initialize();
     }
   },
   watch: {
