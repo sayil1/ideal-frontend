@@ -159,7 +159,7 @@
                   <router-link class="route" to="books">
                     <li class="dropdown-item">BOOKS</li>
                   </router-link>
-                  <router-link class="route" to="test">
+                  <router-link class="route" to="diy">
                     <li class="dropdown-item">DIY KITS</li>
                   </router-link>
 
@@ -178,10 +178,10 @@
                   <router-link class="route" to="events">
                     <li class="dropdown-item">EVENTS</li>
                   </router-link>
-                  <router-link class="route" to="test">
+                  <router-link class="route" to="contest">
                     <li class="dropdown-item">CONTESTS</li>
                   </router-link>
-                  <router-link class="route" to="test">
+                  <router-link class="route" to="web">
                     <li class="dropdown-item">WEBINARS</li>
                   </router-link>
 

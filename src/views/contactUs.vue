@@ -1,7 +1,7 @@
 <template>
   <div>
     <nava />
-    <div >
+    <div>
       <div style class="div1 cont">
         <div class="card-size">
           <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
@@ -63,6 +63,14 @@
             </v-card-text>
           </v-card>
         </div>
+        <v-dialog v-model="contact.alert" hide-overlay persistent width="300">
+          <v-card color="primary" dark>
+            <v-card-text>
+              saving.. please wait
+              <v-progress-linear indeterminate color="white" class="mb-0"></v-progress-linear>
+            </v-card-text>
+          </v-card>
+        </v-dialog>
         <div class="col-sm col-md-6">
           <div style="margin-top:10px">
             <iframe
@@ -74,6 +82,13 @@
               allowfullscreen
             ></iframe>
           </div>
+        </div>
+
+        <div class="text-center">
+          <v-snackbar v-model="contact.snackbar">
+            {{ contact.text }}
+            <v-btn color="red" text @click="snackbar = false">Close</v-btn>
+          </v-snackbar>
         </div>
 
         <div class="col-sm">
@@ -125,7 +140,8 @@ export default {
       lname: "",
       email: "",
       phone: "",
-      message: ""
+      message: "",
+      
     }
   }),
   methods: {
@@ -137,8 +153,12 @@ export default {
         phone: this.contact.phone,
         message: this.contact.message
       };
-      alert(newData);
-      serv.postRequest("cont/newCont", newData);
+      // alert(newData);
+      this.alert = true;
+      serv.postRequest("cont/newCont", newData).then(response => {
+        (this.contact.text = response.data), (this.contact.alerts = false);
+        this.contact.snackbar = true;
+      });
     }
   }
 };

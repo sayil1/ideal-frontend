@@ -46,24 +46,30 @@
           <span>Books</span>
         </router-link>
       </li>
+       <li class="nav-item">
+        <router-link class="nav-link" to="/Addiy" aria-expanded="true" aria-controls="collapseThree">
+          <v-icon small color="white">mdi-circle</v-icon>
+          <span>DIY Kits</span>
+        </router-link>
+      </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="#" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-teach</v-icon>
+        <router-link class="nav-link" to="/Adweb" aria-expanded="true" aria-controls="collapseThree">
+          <v-icon small color="white">mdi-web</v-icon>
           <span>Webinars</span>
         </router-link>
       </li>
       <li class="nav-item">
-        <router-link class="nav-link" to="#" aria-expanded="true" aria-controls="collapseThree">
+        <router-link class="nav-link" to="/Adcontest" aria-expanded="true" aria-controls="collapseThree">
           <v-icon small color="white">mdi-trophy</v-icon>
           <span>Contests</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <router-link class="nav-link" to="#" aria-expanded="true" aria-controls="collapseThree">
           <v-icon small color="white">mdi-laptop</v-icon>
           <span>Projects</span>
         </router-link>
-      </li>
+      </li> -->
 
       <!-- Divider -->
       <hr class="sidebar-divider" />

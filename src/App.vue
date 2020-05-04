@@ -14,6 +14,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color:black;
+  padding:0px;
+  margin:0px;
+  overflow-x: hidden;
 }
 </style>
 

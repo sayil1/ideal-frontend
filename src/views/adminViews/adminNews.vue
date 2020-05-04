@@ -144,10 +144,10 @@
               <v-row justify="center">
                 <v-expansion-panels popout>
                   <v-expansion-panel v-for="(item,i) in news" :key="i">
-                    <v-expansion-panel-header>{{item.caption}}</v-expansion-panel-header>
+                    <v-expansion-panel-header style="color:green">{{item.caption}}</v-expansion-panel-header>
                     <v-expansion-panel-content>
                       {{item.message}}
-                      <v-spacer></v-spacer>
+                      <v-spacer></v-spacer> <br>
                       <v-btn small color="red" @click="delNews(item)">Delete</v-btn>
                     </v-expansion-panel-content>
                   </v-expansion-panel>
@@ -232,7 +232,7 @@ export default {
           // JSON responses are automatically parsed.
           this.news = response.data.result;
           // eslint-disable-next-line no-console
-          this.news, "are the events";
+          this.news, "are the news";
         })
         .catch(e => {
           // this.errors.push(e);

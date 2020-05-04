@@ -1,9 +1,9 @@
 <template>
-  <div class>
+  <div style="width:100%">
     <!-- <nava /> -->
     <nav2 />
 
-    <header>
+    <header style="width:100%">
       <div style="background-color:orange; width:100%; padding-top:7px" class="news">
         <marquee behavior="scroll" direction="left" scrollamount="10">
           <span style="padding:10px" v-for="(n , index) in news" v-bind:key="index">
@@ -19,6 +19,7 @@
         height="580"
         show-arrows-on-hover
         class="caro"
+       
       >
         <v-carousel-item class="div1">
           <div style="; height:100%" class="cov">
@@ -266,7 +267,7 @@
             <v-img src="../assets/second.svg">
               <div class="fill-height bottom-gradient"></div>
             </v-img>
-          </div>-->
+          </div> -->
           <!-- Button trigger modal -->
 
           <!-- Modal -->
@@ -425,7 +426,6 @@
             style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
           />
         </div>
-
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -443,7 +443,6 @@
   margin-left: auto;
   margin-right: auto;"
               />
-              <!-- <div style="text-align:center">TOEFL</div> -->
             </v-col>
           </slide>
           <slide>
@@ -451,12 +450,11 @@
               <img
                 src="../assets/icm.jpeg"
                 style=" display: block;
-  width: 150px;
+   width: 150px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
               />
-              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
@@ -464,12 +462,11 @@
               <img
                 src="../assets/pea.jpeg"
                 style=" display: block;
-  width: 150px;
+    width: 150px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
               />
-              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
@@ -477,12 +474,11 @@
               <img
                 src="../assets/cisco.png"
                 style=" display: block;
-  width: 150px;
+    width: 150px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
               />
-              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
@@ -490,12 +486,11 @@
               <img
                 src="../assets/nsrp.png"
                 style=" display: block;
-  width: 150px;
+   width: 150px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
               />
-              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
           <slide>
@@ -508,7 +503,6 @@
   margin-left: auto;
   margin-right: auto;"
               />
-              <!-- <div style="text-align:center">kjbsdckjsdbckjsdckjhbdsc</div> -->
             </v-col>
           </slide>
         </hooper>
@@ -723,8 +717,8 @@ header {
   .caro {
     margin-top: px;
   }
-  .news{
-     margin-top: 100px;
+  .news {
+    margin-top: 100px;
   }
 }
 

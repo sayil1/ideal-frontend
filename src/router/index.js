@@ -27,6 +27,12 @@ import capacity from '../views/capacity.vue'
 import sport from '../views/sport.vue'
 import testt from '../components/newNav.vue'
 import digital from '../views/digital.vue'
+import Addiy from '../views/adminViews/diy.vue'
+import Adweb from '../views/adminViews/webinar.vue'
+import Adcontest from '../views/adminViews/contest.vue'
+import diy from '../views/diy.vue'
+import web from '../views/webinar.vue'
+import contest from '../views/contest.vue'
 
 Vue.use(VueRouter)
 
@@ -48,9 +54,39 @@ const routes = [
     component: testt
   },
   {
+    path: '/contest',
+    name: 'contest',
+    component: contest
+  },
+  {
+    path: '/web',
+    name: 'web',
+    component: web
+  },
+  {
+    path: '/diy',
+    name: 'diy',
+    component: diy
+  },
+  {
     path: '/adminNews',
     name: 'adminNews',
     component: adminNews
+  },
+  {
+    path: '/Addiy',
+    name: 'Addiy',
+    component: Addiy
+  },
+  {
+    path: '/Adweb',
+    name: 'web',
+    component: Adweb
+  },
+  {
+    path: '/Adcontest',
+    name: 'contest',
+    component: Adcontest
   },
   {
     path: '/books',

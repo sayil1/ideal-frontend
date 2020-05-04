@@ -3,9 +3,9 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
       <!-- Sidebar -->
-
+   
       <side />
-
+     
       <!-- End of Sidebar -->
 
       <!-- Content Wrapper -->
@@ -32,23 +32,23 @@
                   <div
                     class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
                   >
-                    <h6 class="m-0 font-weight-bold text-primary">Events Overview</h6>
+                    <h6 class="m-0 font-weight-bold text-primary">contests Overview</h6>
                   </div>
 
                   <div class="card-body">
                     <v-data-table :headers="headers" :items="desserts" class="elevation-1">
                       <template v-slot:top>
                         <v-toolbar flat color="white">
-                          <v-toolbar-title>Events</v-toolbar-title>
+                          <v-toolbar-title>contests</v-toolbar-title>
                           <v-divider class="mx-4" inset vertical></v-divider>
-
-                          <v-btn color="success" dark class="mb-2" v-on:click="initialize()">Refresh</v-btn>
-
+                           
+                              <v-btn color="success" dark class="mb-2" v-on:click="initialize()">Refresh</v-btn>
+                           
                           <v-spacer></v-spacer>
 
                           <v-dialog v-model="dialog" max-width="500px">
                             <template v-slot:activator="{ on }">
-                              <v-btn color="success" dark class="mb-2" v-on="on">Add Event</v-btn>
+                              <v-btn color="success" dark class="mb-2" v-on="on">Add Contest</v-btn>
                             </template>
                             <!-- this holds the forms -->
 
@@ -63,15 +63,15 @@
                                       <v-flex xs12 sm6 d-flex>
                                         <v-text-field
                                           label="Title"
-                                          v-model="events.title"
+                                          v-model="contests.title"
                                           value="sayil"
-                                        >{{events.title}}</v-text-field>
+                                        >{{contests.title}}</v-text-field>
                                       </v-flex>
 
                                       <v-flex xs12 sm6 d-flex>
                                         <v-text-field
                                           label="Short Description"
-                                          v-model="events.description"
+                                          v-model="contests.description"
                                         ></v-text-field>
                                       </v-flex>
 
@@ -91,7 +91,7 @@
                                           :items="Locations"
                                           label="Location(state)"
                                           multiple
-                                          v-model="events.location"
+                                          v-model="contests.location"
                                           chips
                                           hint="Select Your Location(State)"
                                           persistent-hint
@@ -99,8 +99,8 @@
                                       </v-flex>
                                       <v-flex xs12 sm6 d-flex>
                                         <v-text-field
-                                          label="Exact venue of events"
-                                          v-model="events.venue"
+                                          label="Exact venue of contests"
+                                          v-model="contests.venue"
                                         ></v-text-field>
                                       </v-flex>
 
@@ -110,14 +110,14 @@
                                           v-model="menu2"
                                           :close-on-content-click="false"
                                           :nudge-right="40"
-                                          :return-value.sync="events.startDate"
+                                          :return-value.sync="startDate"
                                           transition="scale-transition"
                                           offset-y
                                           min-width="290px"
                                         >
                                           <template v-slot:activator="{ on }">
                                             <v-text-field
-                                              v-model="events.startDate"
+                                              v-model="startDate"
                                               label="Start Date"
                                               prepend-icon="mdi-calendar"
                                               readonly
@@ -145,7 +145,7 @@
                                           v-model="menu1"
                                           :close-on-content-click="false"
                                           :nudge-right="40"
-                                          :return-value.sync="events.endDate"
+                                          :return-value.sync="endDate"
                                           transition="scale-transition"
                                           offset-y
                                           full-width
@@ -153,7 +153,7 @@
                                         >
                                           <template v-slot:activator="{ on }">
                                             <v-text-field
-                                              v-model="events.endDate"
+                                              v-model="endDate"
                                               label="End Date"
                                               prepend-icon="mdi-calendar"
                                               readonly
@@ -181,7 +181,7 @@
                                           v-model="menu"
                                           :close-on-content-click="false"
                                           :nudge-right="40"
-                                          :return-value.sync="events.time"
+                                          :return-value.sync="time"
                                           transition="scale-transition"
                                           offset-y
                                           max-width="290px"
@@ -189,7 +189,7 @@
                                         >
                                           <template v-slot:activator="{ on }">
                                             <v-text-field
-                                              v-model="events.time"
+                                              v-model="time"
                                               label="Time"
                                               prepend-icon="mdi-clock"
                                               readonly
@@ -229,45 +229,24 @@
                           </v-dialog>
                         </v-toolbar>
                       </template>
-
-                      <template v-slot:item.status="{ item }">
-                        <v-icon
-                          v-if="item.startDate < new Date().toISOString().substr(0, 10)"
-                          color="red"
-                        >mdi-circle-medium</v-icon>
-                        <v-icon
-                          v-if="item.startDate >= new Date().toISOString().substr(0, 10)"
-                          color="blue"
-                        >mdi-circle-medium</v-icon>
-                      </template>
+                      
+                     <template  v-slot:item.status="{ item }">
+                         <v-icon v-if="item.startDate < new Date().toISOString().substr(0, 10)" color="red" >mdi-circle-medium </v-icon>
+                          <v-icon v-if="item.startDate >= new Date().toISOString().substr(0, 10)" color="blue" >mdi-circle-medium </v-icon>
+                     </template>
 
                       <template v-slot:item.action="{ item }">
                         <!-- <v-icon color="orange" class="mr-2" @click="updates(item)">fa-edit</v-icon> -->
                         <v-icon color="red" @click="deleteItem(item)">mdi-delete</v-icon>
+                 
                       </template>
-
+                         
                       <template v-slot:no-data>
                         <v-btn color="primary" @click="initialize">mdi-reset</v-btn>
                       </template>
                     </v-data-table>
                   </div>
                 </div>
-              </div>
-
-              <v-dialog v-model="alerts" hide-overlay persistent width="300">
-                <v-card color="primary" dark>
-                  <v-card-text>
-                    saving.. please wait
-                    <v-progress-linear indeterminate color="white" class="mb-0"></v-progress-linear>
-                  </v-card-text>
-                </v-card>
-              </v-dialog>
-
-              <div class="text-center">
-                <v-snackbar v-model="snackbar">
-                  {{ text }}
-                  <v-btn color="red" text @click="snackbar = false">Close</v-btn>
-                </v-snackbar>
               </div>
 
               <!-- Pie Chart -->
@@ -355,13 +334,9 @@ export default {
     },
     update: false,
     newId: "",
-    init: 1,
-    image: "",
-    text:"",
-    snackbar:false,
-    alerts:false,
+    init:1,
 
-    events: {
+    contests: {
       image: "",
       title: "",
       description: "",
@@ -383,7 +358,7 @@ export default {
       { text: "Location", value: "location" },
       { text: "Time", value: "time" },
       { text: "Date", value: "startDate" },
-      { text: "Status", value: "status", align: "center" },
+       { text: "Status", value: "status", align:"center"},
       { text: "Action", value: "action" }
     ],
     desserts: [],
@@ -407,7 +382,7 @@ export default {
   computed: {
     formTitle() {
       return this.editedIndex === -1 ? "New Event" : "Edit Event";
-    }
+    },
     // initializeApp(){
 
     // }
@@ -421,30 +396,33 @@ export default {
 
   created() {
     this.initialize();
-    let a = new Date().toISOString().substr(0, 10);
-    // let b = this.events.startDate
-    let b = new Date("2020-03-13").toISOString().substr(0, 10);
+    let a = new Date().toISOString().substr(0, 10)
+    // let b = this.contests.startDate
+    let b = new Date('2020-03-13').toISOString().substr(0, 10)
 
-    if (b > a) {
-      // eslint-disable-next-line no-console
-      console.log("ends today");
-      // alert('greater than today')
-    } else {
-      // eslint-disable-next-line no-console
-      console.log("not yet");
-      // alert('not yet')
+    if (b>a){
+// eslint-disable-next-line no-console
+          console.log("ends today");
+          // alert('greater than today')
     }
+    else{
+      // eslint-disable-next-line no-console
+          console.log("not yet");
+          // alert('not yet')
+    }
+  
   },
 
   methods: {
     initialize() {
+    
       serv
-        .getRequest("eve/allEve")
+        .getRequest("contest/allEve")
         .then(response => {
           // JSON responses are automatically parsed.
           this.desserts = response.data.result;
           // eslint-disable-next-line no-console
-          console.log(this.desserts, "are the events");
+          console.log(this.desserts, "are the contests");
         })
         .catch(e => {
           // this.errors.push(e);
@@ -456,10 +434,10 @@ export default {
     getEvent(item) {
       // eslint-disable-next-line no-console
       this.newId = item._id;
-      serv.getRequest(`eve/get-event/${item._id}`).then(response => {
+      serv.getRequest(`contest/get-event/${item._id}`).then(response => {
         // eslint-disable-next-line no-console
-        // console.log(response.data.result, "is the events");
-        this.events = response.data.result[0];
+        // console.log(response.data.result, "is the contests");
+        this.contests = response.data.result[0];
         return item._id;
       });
     },
@@ -474,19 +452,19 @@ export default {
       // this.editedItem = Object.assign({}, item);
 
       this.dialog = true;
-      const formData = new FormData();
-      formData.append("image", this.events.image);
-      formData.append("title", this.events.title);
-      formData.append("description", this.events.description);
-      formData.append("location", this.events.location);
-      formData.append("venue", this.events.venue);
+     const formData = new FormData();
+      formData.append("image", this.contests.image);
+      formData.append("title", this.contests.title);
+      formData.append("description", this.contests.description);
+      formData.append("location", this.contests.location);
+      formData.append("venue", this.contests.venue);
       formData.append("startDate", this.startDate);
       formData.append("endDate", this.endDate);
       formData.append("time", this.time);
 
       // eslint-disable-next-line no-console
 
-      serv.postRequest(`update-event/${this.newId}`, formData);
+      serv.postRequest(`update-contests/${this.newId}`, formData);
 
       // eslint-disable-next-line no-console
       console.log(this.newId, "items");
@@ -494,15 +472,15 @@ export default {
     },
 
     deleteItem(item) {
-      serv.getRequest(`eve/del/${item._id}`).then(response => {
+      serv.getRequest(`contest/del/${item._id}`).then(response => {
         // eslint-disable-next-line no-console
-        console.log(response.data.result, "is the events");
+        console.log(response.data.result, "is the contests");
         this.initialize();
       });
     },
 
     close() {
-      (this.events = {
+      (this.contests = {
         image: "",
         title: "",
         description: "",
@@ -521,7 +499,7 @@ export default {
     },
 
     onFileChanged(event) {
-      this.image = event.target.files[0];
+      this.contests.image = event.target.files[0];
     },
 
     save() {
@@ -531,26 +509,36 @@ export default {
       //   this.desserts.push(this.editedItem);
       // }
       const formData = new FormData();
-      formData.append("image", this.image);
-      formData.append("title", this.events.title);
-      formData.append("description", this.events.description);
-      formData.append("location", this.events.location);
-      formData.append("venue", this.events.venue);
+      formData.append("image", this.contests.image);
+      formData.append("title", this.contests.title);
+      formData.append("description", this.contests.description);
+      formData.append("location", this.contests.location);
+      formData.append("venue", this.contests.venue);
       formData.append("startDate", this.startDate);
       formData.append("endDate", this.endDate);
       formData.append("time", this.time);
 
       // eslint-disable-next-line no-console
-      console.log(this.events, this.startDate, this.endDate, this.time);
-      this.alerts = true
-      serv.postRequest("eve/newEve", formData).then(response => {
-          (this.text = response.data), (this.alerts = false);
-          this.snackbar = true;
+      console.log(this.contests, this.startDate, this.endDate, this.time);
+      serv.postRequest("contest/newCont", formData).then(
+        serv
+        .getRequest("contest/allCont")
+        .then(response => {
+          // JSON responses are automatically parsed.
+          this.desserts = response.data.result;
           // eslint-disable-next-line no-console
-          console.log(response);
-        });
-      this.initialize()
+          console.log(this.desserts, "are the contests");
+        })
+        .catch(e => {
+          // this.errors.push(e);
+
+          // eslint-disable-next-line no-console
+          console.log(e);
+        })
+       
+      )
       this.close();
+     
     }
   }
 };
