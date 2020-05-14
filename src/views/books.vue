@@ -98,14 +98,14 @@
           :progress="true"
           :autoPlay="true"
           :playSpeed="4000"
-          style="margin-bottom:10px; margin-left:-25px; height:300px "
+          style="margin-bottom:10px; margin-left:-25px; height:500px ; width:100% "
           class="row"
           v-show="!verified"
         >
           <slide v-for="(item,i) in shop" :key="i">
             <div>
               <div class="card m-3" style="width: 12rem;">
-                <v-img class="white--text align-end" height="150px" v-bind:src="item.imagesPath"></v-img>
+                <v-img class="white--text align-end" height="300px" v-bind:src="item.imagesPath"></v-img>
                 <div class="card-body">
                   <strong class="card-title">{{ item.title }}</strong>
                   <p class="card-text">NGN {{ item.price }}</p>

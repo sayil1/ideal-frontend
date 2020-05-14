@@ -1,5 +1,5 @@
 <template>
-  <div style="background-color:">
+  <div>
     <nava />
     <div style="background-color: ">
       <div class="card-size">
@@ -15,24 +15,25 @@
         </v-alert>events
       </div>
 
-      <div class="row" dense >
-        <div class="col-md-3" v-for="(event, i) in event" :key="i">
-          <v-card  max-width="300" style="margin:5px">
-            <v-img class="white--text align-end" height="200px" v-bind:src="event.imagesPath"></v-img>
-            <v-card-title>{{event.title}}</v-card-title>
-            <v-card-subtitle class="pb-0">{{event.location}}</v-card-subtitle>
-            <v-card-text class="text--primary">
-              <div>Start: {{event.startDate}}</div>
-              <div>Time: {{event.time}}</div>
-              <div>End: {{event.endDate}}</div>
-            </v-card-text>
-            <v-card-actions>
-              <v-btn color="orange" text>Share</v-btn>
-              <!-- <v-btn color="orange" text>Explore</v-btn> -->
-            </v-card-actions>
-          </v-card>
+      <div class="row" dense>
+        <div class="col-md-3 links" v-for="(event, i) in event" :key="i">
+          <router-link :to="'event?eid='+ event._id" class="links">
+            <v-card max-width="300" style="margin:5px'; text-decoration: none">
+              <v-img class="white--text align-end" height="200px" v-bind:src="event.imagesPath"></v-img>
+              <v-card-title>{{event.title}}</v-card-title>
+              <v-card-subtitle class="pb-0">{{event.location}}</v-card-subtitle>
+              <v-card-text class="text--primary">
+                <div class="links">Start: {{event.startDate}}</div>
+                <div class="links">Time: {{event.time}}</div>
+                <div>End: {{event.endDate}}</div>
+              </v-card-text>
+              <v-card-actions>
+                <v-btn color="orange" text>see more</v-btn>
+                <!-- <v-btn color="orange" text>Explore</v-btn> -->
+              </v-card-actions>
+            </v-card>
+          </router-link>
         </div>
-        
       </div>
     </div>
 
@@ -42,10 +43,10 @@
 
 
 <script>
-import { Services } from "../../service";
+import { Services } from "../service";
 var serv = new Services();
-import nava from "../../components/newNav";
-import foota from "../../components/footer";
+import nava from "../components/newNav";
+import foota from "../components/footer";
 
 export default {
   components: {
@@ -82,6 +83,14 @@ export default {
 </script>
 
 <style lang="css">
+.links {
+  text-decoration: none !important;
+  color: blue;
+}
+.links:hover {
+  text-decoration: none !important;
+  color: aqua;
+}
 template {
   margin-left: 10px;
   margin-right: 10px;

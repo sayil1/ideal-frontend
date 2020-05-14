@@ -19,7 +19,8 @@ import career from '../views/career'
 import contact from '../views/contactUs';
 import adminLogin from '../views/adminViews/adminLogin'
 import adminIndex from '../views/adminViews/adminIndex'
-import events from '../views/adminViews/events'
+import events from '../views/events'
+import event from '../views/event'
 import adminNews from '../views/adminViews/adminNews.vue'
 import books from '../views/books.vue'
 import Adbooks from '../views/adminViews/books.vue'
@@ -80,12 +81,12 @@ const routes = [
   },
   {
     path: '/Adweb',
-    name: 'web',
+    name: 'Adweb',
     component: Adweb
   },
   {
     path: '/Adcontest',
-    name: 'contest',
+    name: 'Adcontest',
     component: Adcontest
   },
   {
@@ -117,6 +118,11 @@ const routes = [
     path: '/events',
     name: 'events',
     component: events
+  },
+  {
+    path: '/event',
+    name: 'event',
+    component: event
   },
   {
     path: '/admin',
