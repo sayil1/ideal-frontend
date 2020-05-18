@@ -102,7 +102,7 @@
           class="row"
           v-show="!verified"
         >
-          <slide v-for="(item,i) in shop" :key="i">
+          <slide v-for="(item,i) in weeksTop" :key="i">
             <div>
               <div class="card m-3" style="width: 12rem;">
                 <v-img class="white--text align-end" height="300px" v-bind:src="item.imagesPath"></v-img>
@@ -121,6 +121,27 @@
             </div>
           </slide>
         </hooper>
+        <div>
+        <h3>Shop From The Best Collections! </h3>
+          <div class="row">
+            <div v-for="(item,i) in shop" :key="i">
+              <div class="card m-3" style="width: 12rem;">
+                <v-img class="white--text align-end" height="300px" v-bind:src="item.imagesPath"></v-img>
+                <div class="card-body">
+                  <strong class="card-title">{{ item.title }}</strong>
+                  <p class="card-text">NGN {{ item.price }}</p>
+                  <v-btn
+                    outlined
+                    @click="addToCart(item)"
+                    class="ma-2"
+                    tile
+                    color="blue"
+                  >add to cart</v-btn>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- <div class="shop" v-show="!verified">
           <v-alert outlined color="purple">
             <div class="title">Top Books for the week</div>
@@ -215,6 +236,7 @@ export default {
     },
     hopper: true,
     shop: [],
+    weeksTop: [],
     items: [],
     showCart: false,
     verified: false,
@@ -251,8 +273,19 @@ export default {
       .then(response => {
         // JSON responses are automatically parsed.
         this.shop = response.data.result;
-        // eslint-disable-next-line no-console
-        console.log(this.desserts, "are the books");
+
+        for (let i = 0; i <= this.shop.length-1; i++) {
+            // eslint-disable-next-line no-console
+            // console.log(this.shop[i], 'shops');
+          let today = new  Date().toISOString().substr(0, 10);
+          if (this.shop[i].topTrend > today) {
+            this.weeksTop.push(this.shop[i]);
+           
+
+          } // eslint-disable-next-line no-console
+           console.log(this.weeksTop, 'weeks trop');
+        } 
+           
       })
       .catch(e => {
         // this.errors.push(e);

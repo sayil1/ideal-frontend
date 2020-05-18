@@ -4,7 +4,7 @@
     <nav2 />
 
     <header style="width:100%">
-      <div style="background-color:orange; width:100%; padding-top:7px" class="news">
+      <div style="background-color:orange; width:100%; padding-top:7px" class="news" v-if="showNews=true">
         <marquee behavior="scroll" direction="left" scrollamount="10">
           <span style="padding:10px" v-for="(n , index) in news" v-bind:key="index">
             <span style="padding:3px; color:black">{{n.caption | capitalize}}:</span>
@@ -543,6 +543,7 @@ export default {
     news: [],
     msg: "heyyy",
     dialog: false,
+    showNews:true,
     items: [
       "fees",
       " school renovations",
@@ -576,6 +577,7 @@ export default {
   created() {
     this.isMobile();
     this.initialize();
+    this.showNewss()
   },
   methods: {
     initialize() {
@@ -607,6 +609,13 @@ export default {
           // eslint-disable-next-line no-console
           console.log(e);
         });
+    },
+    showNewss(){
+       setInterval(function(){
+         this.showNews =! this.showNews
+          // eslint-disable-next-line no-console
+          console.log(this.showNews, );
+       },1000)
     },
     test: function() {
       serv.testers();
