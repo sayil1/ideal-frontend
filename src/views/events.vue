@@ -28,7 +28,8 @@
                 <div>End: {{event.endDate}}</div>
               </v-card-text>
               <v-card-actions>
-                <v-btn color="orange" text>see more</v-btn>
+                 <router-link :to="'event?eid='+ event._id" class="links">  <v-btn color="orange" text>see more</v-btn></router-link>
+              
                 <!-- <v-btn color="orange" text>Explore</v-btn> -->
               </v-card-actions>
             </v-card>
