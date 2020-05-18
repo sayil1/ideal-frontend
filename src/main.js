@@ -9,9 +9,10 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+import VueMeta from 'vue-meta'
 
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue, VueMeta)
 
 Vue.config.productionTip = false
 

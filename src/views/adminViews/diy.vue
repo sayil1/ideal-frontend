@@ -73,7 +73,7 @@
                                         <v-text-field label="price(NGN)" v-model="diy.price"></v-text-field>
                                       </v-flex>
 
-                                      <v-flex xs12 sm6 d-flex>
+                                      <!-- <v-flex xs12 sm6 d-flex>
                                         <v-select
                                           :items="category"
                                           label="Category"
@@ -82,7 +82,7 @@
                                           chips
                                           persistent-hint
                                         ></v-select>
-                                      </v-flex>
+                                      </v-flex> -->
 
                                       <v-flex xs12 sm6 d-flex>
                                         <v-text-field label="Quantity" v-model="diy.quantity"></v-text-field>
@@ -409,7 +409,7 @@ export default {
       formData.append("title", this.diy.title);
       formData.append("description", this.diy.description);
       formData.append("price", this.diy.price);
-      formData.append("category", this.diy.category);
+      // formData.append("category", this.diy.category);
       formData.append("quantity", this.diy.quantity);
 
       // eslint-disable-next-line no-console

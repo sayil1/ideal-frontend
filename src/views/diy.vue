@@ -92,6 +92,26 @@
       </div>
 
       <div class="container">
+        <h3>DIY KITS</h3>
+        <div class="row" dense>
+          <div class="col-md-3 links" v-for="(item, i) in shop" :key="i">
+            <v-card max-width="300" style="margin:5px'; text-decoration: none">
+              <v-img class="white--text align-end" height="200px" v-bind:src="item.imagesPath"></v-img>
+              <v-card-title>{{item.title}}</v-card-title>
+              <v-card-subtitle class="pb-0">Price NGN{{item.price}}</v-card-subtitle>
+              <v-card-text class="text--primary">
+                <v-btn @click="addToCart(item)" class="ma-2" tile color>
+                  <v-icon left>mdi-plus</v-icon>add to cart
+                </v-btn>
+              </v-card-text>
+              <v-card-actions>
+                <!-- <v-btn color="orange" text>Explore</v-btn> -->
+              </v-card-actions>
+            </v-card>
+          </div>
+        </div>
+
+        <!-- 
         <div class="heads" v-show="!verified">Kits for the week</div>
         <hooper
           :settings="hooperSettings"
@@ -120,7 +140,7 @@
               </div>
             </div>
           </slide>
-        </hooper>
+        </hooper>-->
         <!-- <div class="shop" v-show="!verified">
           <v-alert outlined color="purple">
             <div class="title">Top Books for the week</div>
@@ -198,6 +218,18 @@ import "hooper/dist/hooper.css";
 import nava from "../components/newNav";
 import paystack from "vue-paystack";
 export default {
+  metaInfo: {
+    title: " IDEAL IT center, Asaba",
+    titleTemplate: "%s | DIY KITS",
+
+    meta: [
+      { charset: "utf-8" },
+      { name: "description", content: "gator" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
+      {name:"image", content:"https://res.cloudinary.com/sayil/image/upload/v1580693177/owbotdekq5046uqa4x1z.png"}
+
+    ]
+  },
   components: {
     nava,
     paystack,
