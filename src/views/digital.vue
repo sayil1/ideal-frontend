@@ -28,7 +28,7 @@
               <div class="car-text" style>
                 <p
                   class=""
-                >Digital inclusion aims at a practical approach to addressing the needs of individuals and communities to fully embrace the digital age. As the digital revolution intensifies, internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
+                >We provide a practical approach to addressing the needs of individuals and communities to embrace the digital age fully. As the digital revolution intensifies, the internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
               </div>
             </div>
           </div>
@@ -37,14 +37,13 @@
           </div>
         </div>
         <div class="first car-text">
-          Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) in order to participate in and benefit from today's growing knowledge and information society.
-          IDEaL’s Digital inclusion actions cover the gap in these areas:
+         We work to ensure Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) to participate in and benefit from today's growing knowledge and information society. IDEaL’s Digital inclusion actions cover the gap in these areas:
           <br />We promote digital inclusion in various ways:
           <ul>
-            <li>- Providing free access to digital technologies including hardware and software. GCFLearnFree</li>
-            <li>- Improving digital literacy skills through practical training programs and workshops.</li>
-            <li>- Creating a more digitally savvy consumer and workforce.</li>
-            <li>- Providing Accessibility services which are designed to meet users’ needs, including those dependent on assistive technology to access digital services.</li>
+            <li>Providing free access to digital technologies including hardware and software. GCFLearnFree</li>
+            <li>Improving digital literacy skills through practical training programs and workshops.</li>
+            <li>Creating a more digitally savvy consumer and workforce.</li>
+            <li>Providing Accessibility services designed to meet users’ needs, including those dependent on assistive technology to access digital services..</li>
           </ul>
         </div>
       </div>

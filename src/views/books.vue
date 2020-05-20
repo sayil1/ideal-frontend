@@ -9,14 +9,14 @@
             v-show="!verified"
           >items {{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
         </div>-->
-        <div style=" position:fixed" class="but">
-          <v-btn class="ma-2" tile outlined color="success">
-            <v-icon left>mdi-cart</v-icon>
+        <div style=" position:fixed; z-index:200" class="but">
+          <v-btn class="ma-2" tile color="success">
+            <v-icon left style="color:orange">mdi-cart</v-icon>
             <span
-              class="badge badge-light"
-              style="padding:10px; color:orange; font-size:px"
+              class="badge badge"
+              style="padding:10px; color:white; font-size:20px"
             >{{quantity }}</span>
-            <span>{{ (quantity > 1 || quantity === 0 ? " items" : " item") }}</span>
+            <span style="color:white">{{ (quantity > 1 || quantity === 0 ? " items" : " item") }}</span>
           </v-btn>
 
           <v-btn
@@ -24,11 +24,10 @@
             @click="showCart = !showCart"
             v-show="!verified"
             class="ma-2"
-            outlined
             color="success"
           >
-            <v-icon dark></v-icon>
-            <span style="color:orange">Checkout</span>
+            <v-icon dark>mdi-money</v-icon>
+            <span style="color:white">Checkout</span>
           </v-btn>
 
           <!-- 
@@ -44,8 +43,8 @@
           </button>-->
         </div>
       </div>
-      <div class="cart" v-show="showCart">
-        <div v-show="items.length > 0">
+      <div class="cart" v-show="showCart" >
+        <div v-show="items.length > 0" style="position:fixed">
           <ul>
             <li v-for="(item, i) in items" :key="i" transition="fade">
               <p style="font-family:Alegraya">
@@ -98,45 +97,51 @@
           :progress="true"
           :autoPlay="true"
           :playSpeed="4000"
-          style="margin-bottom:10px; margin-left:-25px; height:500px ; width:100% "
+          style="margin-bottom:10px; margin-left:-40px; height:500px ; width:100% "
           class="row"
           v-show="!verified"
         >
-          <slide v-for="(item,i) in weeksTop" :key="i">
-            <div>
-              <div class="card m-3" style="width: 12rem;">
-                <v-img class="white--text align-end" height="300px" v-bind:src="item.imagesPath"></v-img>
+          <slide v-for="(item,i) in weeksTop" :key="i" >
+            <div style="">
+              <div class="card m-3" style="width: 12rem;margin-left: auto; margin-right: auto;">
+                <v-img class="white--text align-center" height="300px" v-bind:src="item.imagesPath"></v-img>
                 <div class="card-body">
                   <strong class="card-title">{{ item.title }}</strong>
                   <p class="card-text">NGN {{ item.price }}</p>
-                  <v-btn
+                  <a
+                    style="text-align:center"
                     outlined
                     @click="addToCart(item)"
-                    class="ma-2"
+                    class="ma-2 orange--text"
                     tile
                     color="blue"
-                  >add to cart</v-btn>
+                  >Add to cart</a>
                 </div>
               </div>
             </div>
           </slide>
         </hooper>
-        <div>
-        <h3>Shop From The Best Collections! </h3>
+        <div  v-show="!verified">
+          <h3>Shop From The Best Collections!</h3>
           <div class="row">
             <div v-for="(item,i) in shop" :key="i">
               <div class="card m-3" style="width: 12rem;">
                 <v-img class="white--text align-end" height="300px" v-bind:src="item.imagesPath"></v-img>
                 <div class="card-body">
-                  <strong class="card-title">{{ item.title }}</strong>
-                  <p class="card-text">NGN {{ item.price }}</p>
-                  <v-btn
+                  <strong class="card-title">
+                    <small>{{ item.title }}</small>
+                  </strong>
+                  <br />
+                  <small class="card-text">NGN {{ item.price }}</small>
+                  <br />
+                  <a
+                    style="text-align:center"
                     outlined
                     @click="addToCart(item)"
-                    class="ma-2"
+                    class="ma-2 orange--text"
                     tile
                     color="blue"
-                  >add to cart</v-btn>
+                  >Add to cart</a>
                 </div>
               </div>
             </div>
@@ -274,18 +279,15 @@ export default {
         // JSON responses are automatically parsed.
         this.shop = response.data.result;
 
-        for (let i = 0; i <= this.shop.length-1; i++) {
-            // eslint-disable-next-line no-console
-            // console.log(this.shop[i], 'shops');
-          let today = new  Date().toISOString().substr(0, 10);
+        for (let i = 0; i <= this.shop.length - 1; i++) {
+          // eslint-disable-next-line no-console
+          // console.log(this.shop[i], 'shops');
+          let today = new Date().toISOString().substr(0, 10);
           if (this.shop[i].topTrend > today) {
             this.weeksTop.push(this.shop[i]);
-           
-
           } // eslint-disable-next-line no-console
-           console.log(this.weeksTop, 'weeks trop');
-        } 
-           
+          console.log(this.weeksTop, "weeks trop");
+        }
       })
       .catch(e => {
         // this.errors.push(e);

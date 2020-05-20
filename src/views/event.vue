@@ -1,17 +1,16 @@
 <template>
   <div>
     <nava />
-    <div style="padding-top:200px">
-      <v-alert outlined prominent style="margin-top:10px">
-        <span  style="text-align:center;
-    ">
+    <div style="padding-top:200px;">
+      <!-- <span  style="text-align:center;">
           <div class="row">
             <div>
               <v-img
+                style="margin-left:30px"
                 class="white--text align-end"
-                height="400px"
-                width="400px"
-                v-bind:src="event[0].imagesPath"
+                height="300px"
+               
+              
               ></v-img>
             </div>
             <div style="padding:30px; text-align:left">
@@ -27,8 +26,34 @@
               <br />
             </div>
           </div>
-        </span>
-      </v-alert>
+      </span>-->
+      <div style="padding-left:0px" class="row">
+        <v-card class="col-md-4" max-width="400" style="margin-left:150px; margin-bottom:100px">
+          <v-img class="white--text align-end" height="200px" v-bind:src="event[0].imagesPath">
+            <v-card-title>Top 10 Australian beaches</v-card-title>
+          </v-img>
+          <hr />
+          <v-card-subtitle class="pb-0">Share This Event</v-card-subtitle>
+
+          <v-card-actions>
+           <p> <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon> <v-icon size="20" color="orange darken-2" right>mdi-facebook</v-icon> <v-icon size="20" color="orange darken-2" right>mdi-twitter</v-icon></p>
+          </v-card-actions>
+        </v-card>
+        <div style="margin-left:20px" class="col-md-6">
+         <div class="col-md-8">
+      <div class="card-body">
+        <h4 class="card-title" style="color:orange"> {{event[0].title}}</h4>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p>  {{event[0].location}}
+          <br> Starting - {{event[0].startDate}}
+          <br> Ending - {{event[0].endDate}}
+        </p>
+        <a class="card-text"><small class="red--text">Register for event here</small></a>
+      
+      </div>
+    </div>
+        </div>
+      </div>
     </div>
 
     <foota />
@@ -85,6 +110,6 @@ export default {
 
 <style lang="css" scoped>
 .links {
-  color:black;
+  color: black;
 }
 </style>

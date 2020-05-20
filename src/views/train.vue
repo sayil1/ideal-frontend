@@ -25,11 +25,11 @@
             <div class style>
               <p class="car-text --text font-weight-regular">
                 <strong>Train the trainers</strong>
-                refers to actions and methods aimed at empowering
-                <strong>Trainers</strong> with the knowledge, abilities, and attitudes, in an integrated way, needed for the development of their vocation.
+                we are empowering
+                <strong>Trainers</strong> with the knowledge, abilities, and attitudes, in an integrated way needed for the development of their vocation.
                 <br />
                 <strong>Intended for:</strong>
-                <br />These train-the-trainer courses are suitable for anyone involved in the development of others. Including: trainers, managers, leaders, consultants, teachers, technical trainers, lecturers and more
+                <br />These train-the-trainer courses are suitable for anyone involved in the development of others. Including trainers, managers, leaders, consultants, teachers, technical trainers, lecturers and more
                 <br />
               </p>
             </div>
@@ -51,11 +51,11 @@
                 <div class="car-text --text font-weight-regular">
                   <strong>How IDEaL is improving the training of trainers</strong>
 
-                  <br />At IDEaL, we understand that trainers transform lives. Hence, have taken actions in prioritizing trainers training, support and development.
+                  <br />At IDEaL, we understand that trainers transform lives. Hence, we have taken actions in prioritizing trainers' training, offering bespoke and tailor-made support and development Programmes for organizations.
                   <br />
-                  <br />We consider that a learner’s education can only ever be as good as their teacher(s) hence it’s important that trainers not only need to know what to teach but how to teach.
+                  <br />We consider that a learner’s education can only ever be as good as their instructor(s); hence it’s vital that trainers not only need to know what to teach but how to teach.
                   <br />
-                  <br />Effective training for trainers isn’t as prevalent in our region as it should be due to the fact that trained teachers are in decline. In addition, we have observed that many teachers struggle to teach without necessary teaching and class management techniques; a consequence of this is that many learners struggle to learn. Failure to achieve this will lead to failure to achieving the Goal 4 of the Sustainable Development Goals aimed at having every youth receiving high-quality education by 2030.
+
                   <br />
                 </div>
               </div>
@@ -64,17 +64,19 @@
         </div>
       </div>
       <div class="car-text" style>
-        <br />With our train-the-trainer course, training in your organization will become more effective as you will be able to:
+        <strong>Teachers training programme;</strong>
+        <br />Qualified teachers on the decline, the need for this programme is to provide necessary teaching and class management techniques. We are contributing to the success of
+        achieving the Sustainable Development Goal 4 of inclusive and equitable education and promoting lifelong learning opportunities for people in communities. <br> <br>
         <ul>
-          <li>- Organize training sessions that will be more meaningful and result-orientated.</li>
-          <li>- Hold participants’ attention and interest.</li>
-          <li>- Study a variety of impelling factors needed to develop training and focus on outstanding delivery.</li>
-          <li>- Ascertain resourceful training techniques and integrate new technologies into training strategies.</li>
-          <li>- Trainers will gain skills in presentation, training design and classroom management.</li>
-          <li>- Understand the diverse ways individuals learn and ensure that training content supports this diversity.</li>
-        </ul>
-        The benefits of this hands-on training are incalculable as all topics have gone through systematic procedures to enable participants achieve success. An additional benefit engaging in our train-the-trainers program is the network of professionals that a trainer will meet during the period. It offers them the chance to gather ideas and recommendations from other professionals. 
-
+          <li>Organize training sessions that will be more meaningful and result-orientated.</li>
+          <li>Stimulate the participants’ attention and interest.</li>
+          <li>Study a variety of compelling factors needed to develop training and focus on outstanding delivery.</li>
+          <li>Ascertain resourceful training techniques and integrate new technologies into training strategies..</li>
+          <li>Trainers will gain skills in presentation, training design and classroom management.</li>
+          <li>Understand the diverse ways individuals learn and ensure that training content supports this diversity..</li>
+        </ul> <br> <br>
+        
+       The benefits of this hands-on training are incalculable as all topics have gone through systematic procedures to enable participants to achieve success. An additional benefit engaging in our train-the-trainers program is the network of professionals that a trainer will meet during the period. It offers them the chance to gather ideas and recommendations from other professionals.
       </div>
     </div>
 
@@ -174,8 +176,8 @@ template {
     text-align: left;
     /* background-color: rgba(21, 22, 21, 0.4); */
   }
-  .cont{
-    padding-top: 200px
+  .cont {
+    padding-top: 200px;
   }
 }
 
@@ -214,8 +216,8 @@ template {
     font-family: "Alegreya";
     text-align: left;
   }
-  .cont{
-    padding-top: 80px
+  .cont {
+    padding-top: 80px;
   }
 }
 </style>

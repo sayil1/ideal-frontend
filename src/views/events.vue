@@ -23,8 +23,8 @@
               <v-card-title>{{event.title}}</v-card-title>
               <v-card-subtitle class="pb-0">{{event.location}}</v-card-subtitle>
               <v-card-text class="text--primary">
-                <div class="links">Start: {{event.startDate}}</div>
-                <div class="links">Time: {{event.time}}</div>
+                <div >Start: {{event.startDate}}</div>
+                <div >Time: {{event.time}}</div>
                 <div>End: {{event.endDate}}</div>
               </v-card-text>
               <v-card-actions>

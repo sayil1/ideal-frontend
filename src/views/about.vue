@@ -16,7 +16,7 @@
               <p
                 class="car-text m-text black--text"
                 style="margin-top:-50px ; padding:10px"
-              >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</p>
+              >Primarily we are working to improve the living standards of people by providing information, support and services that meet today's educational need  and solve the human capacity challenges using  ICT a strategic lever for building a knowledge-based society.</p>
             </div>
           </div>
         </div>
@@ -39,8 +39,8 @@
                   <div class>
                     <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
                     <div
-                      class="text-center white--text pl-3 pr-3"
-                    >Our major goal is to improve the living standards of people by providing information, support and services that meets today's education and human capacity challenges as well as make ICT a strategic lever for building a knowledge-based society.</div>
+                      class="text-center white--text pl-3 pr-3  m-text"
+                    >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless..</div>
                   </div>
                 </div>
               </div>

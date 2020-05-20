@@ -13,7 +13,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
-        <router-link class="nav-link" to="adminIndex">
+        <router-link class="nav-link" to="/">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>IDEAL IT</span>
         </router-link>
