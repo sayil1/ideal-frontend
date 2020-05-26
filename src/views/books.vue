@@ -91,7 +91,7 @@
       </div>
 
       <div class="container">
-        <div   v-if="weeksTop.lenght > 1" class="heads" v-show="!verified">Books for the week</div>
+        <div v-if="weeksTop.lenght > 1" class="heads" v-show="!verified">Books for the week</div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -109,14 +109,14 @@
                 <div class="card-body">
                   <strong class="card-title">{{ item.title }}</strong>
                   <p class="card-text">NGN {{ item.price }}</p>
-                  <a
+                  <!-- <a
                     style="text-align:center"
                     outlined
                     @click="addToCart(item)"
                     class="ma-2 orange--text"
                     tile
                     color="blue"
-                  >Add to cart</a>
+                  >Add to cart</a> -->
                 </div>
               </div>
             </div>
@@ -135,21 +135,21 @@
                   <br />
                   <small class="card-text">NGN {{ item.price }}</small>
                   <br />
-                  <a
+                  <!-- <a
                     style="text-align:center"
                     outlined
                     @click="addToCart(item)"
                     class="ma-2 orange--text"
                     tile
                     color="blue"
-                  >Add to cartss</a>
+                  >Add to cartss</a> -->
                   <button
                     type="button"
-                    class="btn btn-primary"
+                    class="btn btn-outline-info"
                     data-toggle="modal"
                     data-target="#exampleModal"
                     @click="openModal(item)"
-                  >Launch demo modal</button>
+                  >more..</button>
 
                   <!-- Modal -->
                   <div
@@ -163,7 +163,7 @@
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <h5 class="modal-title" id="exampleModalLabel">{{ e.title }}</h5>
                           <button
                             type="button"
                             class="close"
@@ -175,12 +175,38 @@
                         </div>
                         <div class="modal-body">
                           <strong class="card-title">
-                            <small>{{ e.name.title }}</small>
+                            <!-- <small>{{ e.title }}</small> -->
+
+                            <div class="row">
+                              <div class="card col-md-6" style="width: 18rem;">
+                                <v-img
+                                  class="white--text align-end"
+                                  height="300px"
+                                  v-bind:src="e.imagesPath"
+                                ></v-img>
+                              </div>
+                              <div class="card-body col-md-6">
+                                  <p
+                                    class="card-text"
+                                  >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                       <p>NGN{{e.price}}</p>
+                                  
+                                    <a
+                    style="text-align:center"
+                    outlined
+                    @click="addToCart(e)"
+                    class="ma-2 orange--text"
+                    tile
+                    color="blue"
+                    data-dismiss="modal"
+                  >Add to cart</a>
+                                </div>
+                            </div>
                           </strong>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
+                        
                         </div>
                       </div>
                     </div>
@@ -282,9 +308,7 @@ export default {
       autoreplay: true,
       playspeed: 1000
     },
-    e: {
-      name: ""
-    },
+    e: [],
 
     hopper: true,
     shop: [],
@@ -348,7 +372,7 @@ export default {
     openModal(item) {
       // eslint-disable-next-line no-console
       console.log(item);
-      this.e.name = item
+      this.e = item;
     },
     callback: function(response) {
       console.log(response);
