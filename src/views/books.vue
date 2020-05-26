@@ -43,7 +43,7 @@
           </button>-->
         </div>
       </div>
-      <div class="cart" v-show="showCart" >
+      <div class="cart" v-show="showCart">
         <div v-show="items.length > 0" style="position:fixed">
           <ul>
             <li v-for="(item, i) in items" :key="i" transition="fade">
@@ -85,13 +85,13 @@
             <!-- <button @click="verified = true, showCart = false">Check out</button> -->
           </div>
         </div>
-        <div v-show="items.length === 0">
+        <div style="z-index:1" v-show="items.length === 0">
           <p>Your cart is empty!</p>
         </div>
       </div>
 
       <div class="container">
-        <div class="heads" v-show="!verified">Books for the week</div>
+        <div   v-if="weeksTop.lenght > 1" class="heads" v-show="!verified">Books for the week</div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -100,9 +100,10 @@
           style="margin-bottom:10px; margin-left:-40px; height:500px ; width:100% "
           class="row"
           v-show="!verified"
+          v-if="weeksTop.lenght > 1"
         >
-          <slide v-for="(item,i) in weeksTop" :key="i" >
-            <div style="">
+          <slide v-for="(item,i) in weeksTop" :key="i">
+            <div style>
               <div class="card m-3" style="width: 12rem;margin-left: auto; margin-right: auto;">
                 <v-img class="white--text align-center" height="300px" v-bind:src="item.imagesPath"></v-img>
                 <div class="card-body">
@@ -121,7 +122,7 @@
             </div>
           </slide>
         </hooper>
-        <div  v-show="!verified">
+        <div v-show="!verified">
           <h3>Shop From The Best Collections!</h3>
           <div class="row">
             <div v-for="(item,i) in shop" :key="i">
@@ -141,7 +142,49 @@
                     class="ma-2 orange--text"
                     tile
                     color="blue"
-                  >Add to cart</a>
+                  >Add to cartss</a>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-toggle="modal"
+                    data-target="#exampleModal"
+                    @click="openModal(item)"
+                  >Launch demo modal</button>
+
+                  <!-- Modal -->
+                  <div
+                    class="modal fade"
+                    id="exampleModal"
+                    tabindex="-1"
+                    role="dialog"
+                    aria-labelledby="exampleModalLabel"
+                    aria-hidden="true"
+                  >
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                          <button
+                            type="button"
+                            class="close"
+                            data-dismiss="modal"
+                            aria-label="Close"
+                          >
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <strong class="card-title">
+                            <small>{{ e.name.title }}</small>
+                          </strong>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -239,6 +282,10 @@ export default {
       autoreplay: true,
       playspeed: 1000
     },
+    e: {
+      name: ""
+    },
+
     hopper: true,
     shop: [],
     weeksTop: [],
@@ -298,6 +345,11 @@ export default {
     // alert("see ya");
   },
   methods: {
+    openModal(item) {
+      // eslint-disable-next-line no-console
+      console.log(item);
+      this.e.name = item
+    },
     callback: function(response) {
       console.log(response);
     },
@@ -397,7 +449,7 @@ li {
 }
 
 .cart > div {
-  z-index: 100;
+  z-index: 200;
   background: #fff;
   padding: 20px 30px;
   position: absolute;

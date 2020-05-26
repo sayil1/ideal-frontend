@@ -50,8 +50,9 @@
                         <v-btn @click="login()" rounded block large color="success" dark>Login</v-btn>
                       </div>
                       <hr />
-                      <a>
+                      <a>     <router-link to="/" aria-expanded="true" aria-controls="collapseThree">
                         <v-btn rounded block large class outlined color="orange">Home</v-btn>
+                        </router-link>
                       </a>
 
                       <!-- <a href="index.html" class="btn btn-facebook btn-user btn-block">
