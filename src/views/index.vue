@@ -3,429 +3,451 @@
     <!-- <nava /> -->
     <nav2 />
 
-    <header style="width:100%">
-      <div style="background-color:orange; width:100%; padding-top:7px" class="news" v-if="showNews=true">
-        <marquee behavior="scroll" direction="left" scrollamount="10">
-          <span style="padding:10px" v-for="(n , index) in news" v-bind:key="index">
-            <span style="padding:3px; color:black">{{n.caption | capitalize}}:</span>
-            <span style="padding:3px ; color:white">{{n.message}}</span>
-          </span>
-        </marquee>
+    <header style="width:100%; ">
+   
+      <div>
+        <div style="padding:5px; " class="arch">
+          <div class="carouselHolder">
+            <v-carousel
+              hide-delimiter-background
+              delimiter-icon="mdi-minus"
+              cycle
+              style="max-height:450px"
+              show-arrows-on-hover
+              class="caro"
+            >
+              <v-carousel-item class="div1">
+                <div style="; height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div>
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        >
+                       
+                        </div>
+                        <div class="text-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item class="div1">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div style="margin-top:px ; ">
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        >
+                          <br />
+                          <br />
+                         
+                          <br />
+                        </div>
+                        <div class="text-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item class="div2">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div style="margin-top:90px ; ">
+                        <div class="card-text white--text font-weight-regular">
+                          <br />
+                          <br />
+                         
+                          <br />
+                        </div>
+                        <div class="text-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item class="div3">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div style="margin-top:90px ; ">
+                        <div
+                          class="card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        >
+                          <br />
+                          <br />
+                        
+
+                          <br />
+                        </div>
+                        <div class="text-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item class="div4">
+                <div style="; height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body">
+                      <div style="margin-top:90px ; ">
+                        <div
+                          class="card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        >
+                          <br />
+                          <br />
+                        
+
+                          <br />
+                        </div>
+                        <div class="text-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+              <v-carousel-item class="div5">
+                <div style="height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div style="margin-top:90px ; ">
+                        <div
+                          class="card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        >
+                          <br />
+                          <br />
+                      
+                          <br />
+                        </div>
+                        <div class="text-center"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+            </v-carousel>
+            <div class="board">
+              <div class="row">
+                <div class="col-md-3" style="text-align:center">
+                  <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
+                </div>
+                <div class="col-md-3" style="text-align:center">
+                  <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
+                </div>
+                <div class="col-md-3" style="text-align:center">
+                  <v-icon size="20" color="white" right>mdi-instagram</v-icon>
+                </div>
+                <div class="col-md-3" style="text-align:center">
+                  <v-icon size="20" color="white" right>mdi-linkedin</v-icon>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <v-carousel
-        hide-delimiter-background
-        delimiter-icon="mdi-minus"
-        cycle
-        height="580"
-        show-arrows-on-hover
-        class="caro"
-       
-      >
-        <v-carousel-item class="div1">
-          <div style="; height:100%" class="cov">
-            <div class="card-size">
-              <div class="card-body" style>
-                <div>
-                  <div
-                    class="car card-text white--text font-weight-regular"
-                    style="margin-left:40px; margin-right:40px"
-                  >
-                    <div class="car-text" style="margin-top:40px">
-                      <span class="car-head" style>
-                        WELCOME TO
-                        <br />INITIATIVE FOR DEVELOPMENT, EDUCATION AND LEARNING (IDEAL)
-                      </span>
-                      <br />
-                      <br />Building a community for socially responsible citizens and letting actions speak in the achievement of SDG GOAL 4, GOAL 7 AND GOAL 17.
-                      <br />we create the platform for colaborations, reflexity, and idea nuturing and community project implementation!!!BE A PART OF IT TODAY……
-                      <br />
-                      <br />
-                      <div class="text-center">
-                        <router-link to="/">
-                          <v-btn rounded color="success" dark>See More</v-btn>
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="text-center"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </v-carousel-item>
-        <v-carousel-item class="div1">
-          <div style=" height:100%" class="cov">
-            <div class="card-size">
-              <div class="card-body" style>
-                <div style="margin-top:px ; ">
-                  <div
-                    class="car card-text white--text font-weight-regular"
-                    style="margin-left:40px; margin-right:40px"
-                  >
-                    <br />
-                    <br />
-                    <div class="car-text">
-                      <span class="car-head" style>PROFESSIONAL EDUCATION</span>
-                      <br />
-                      <br />Our professional education programs enable learners acquire content knowledge and learn to apply techniques relevant to jobs and careers across the
-                      <strong>Information Technology</strong> and
-                      <strong>Business Development</strong> spectrum.
-                      <br />On completion, participants are able to develop cutting-edge skills, earn must-have certifications as well as learn best practices for a rewarding long-term career.
-                      <br />
-                      <br />
-                      <div class="text-center">
-                        <router-link to="/prof">
-                          <v-btn rounded color="success" dark>See More</v-btn>
-                        </router-link>
-                      </div>
-                    </div>
-
-                    <br />
-                  </div>
-                  <div class="text-center"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </v-carousel-item>
-        <v-carousel-item class="div2">
-          <div style=" height:100%" class="cov">
-            <div class="card-size">
-              <div class="card-body" style>
-                <div style="margin-top:90px ; ">
-                  <div class="card-text white--text font-weight-regular">
-                    <br />
-                    <br />
-                    <div class="car-text" style="margin-top:-60px">
-                      <span class="car-head">ICM UK Approved Center</span>
-                      <br />
-                      <br />The Institute of Commercial Management (ICM) UK is a leading professional body
-                      <br />providing qualifications at
-                      <strong>Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma</strong> levels
-                      <br />that are recognized globally in business, management and related vocational
-                      <div class="text-center">
-                        <br />
-                        <br />
-                        <router-link to="/icm">
-                          <v-btn rounded color="success" dark>See More</v-btn>
-                        </router-link>
-                      </div>
-                    </div>
-
-                    <br />
-                  </div>
-                  <div class="text-center"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </v-carousel-item>
-        <v-carousel-item class="div3">
-          <div style=" height:100%" class="cov">
-            <div class="card-size">
-              <div class="card-body" style>
-                <div style="margin-top:90px ; ">
-                  <div
-                    class="card-text white--text font-weight-regular"
-                    style="margin-left:40px; margin-right:40px"
-                  >
-                    <br />
-                    <br />
-                    <div class="car-text" style="margin-top:-60px">
-                      <span class="car-head">TRAIN-THE-TRAINER WORKSHOPS</span>
-                      <br />
-                      <br />
-                      <br />Our Train-the-trainer workshops are designed for trainers who need training to improve and professionalize
-                      <br />their current methods of instruction or wish to engage in careers.
-                      <br />
-                      <br />
-                      <div class="text-center">
-                        <router-link to="/train">
-                          <v-btn rounded color="success" dark>See More</v-btn>
-                        </router-link>
-                      </div>
-                    </div>
-
-                    <br />
-                  </div>
-                  <div class="text-center"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </v-carousel-item>
-        <v-carousel-item class="div4">
-          <div style="; height:100%" class="cov">
-            <div class="card-size">
-              <div class="card-body">
-                <div style="margin-top:90px ; ">
-                  <div
-                    class="card-text white--text font-weight-regular"
-                    style="margin-left:40px; margin-right:40px"
-                  >
-                    <br />
-                    <br />
-                    <div class="car-text" style="margin-top:-60px">
-                      <span class="car-head">TEST PREPARATION</span>
-                      <br />
-                      <br />Acquire exceptional support to improve your exam techniques
-                      <br />and increase your performance on standardized
-                      <br />tests like IELTS, PTE, Cambridge English, SAT, ACT, GRE and GMAT.
-                      <br />
-                      <br />
-                      <div class="text-center">
-                        <router-link to="/test">
-                          <v-btn rounded color="success" dark>See More</v-btn>
-                        </router-link>
-                      </div>
-                    </div>
-
-                    <br />
-                  </div>
-                  <div class="text-center"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </v-carousel-item>
-        <v-carousel-item class="div5">
-          <div style="height:100%" class="cov">
-            <div class="card-size">
-              <div class="card-body" style>
-                <div style="margin-top:90px ; ">
-                  <div
-                    class="card-text white--text font-weight-regular"
-                    style="margin-left:40px; margin-right:40px"
-                  >
-                    <br />
-                    <br />
-                    <div class="car-text" style="margin-top:-60px">
-                      <span class="car-head">OVERSEAS ADMISSION CONSULTING</span>
-                      <br />
-                      <br />We have a unique track record of enlisting students with diverse
-                      <br />qualifications and career drives into our partner foreign universities and colleges.
-                      <br />
-                      <br />
-                      <div class="text-center">
-                        <router-link to="/over">
-                          <v-btn rounded color="success" dark>See More</v-btn>
-                        </router-link>
-                      </div>
-                    </div>
-
-                    <br />
-                  </div>
-                  <div class="text-center"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </v-carousel-item>
-      </v-carousel>
     </header>
 
-    <div>
-      <v-container>
-        <div class="row" style=" ">
-          <!-- <div class="col-md-4 sm-12">
-            <v-img src="../assets/first.jpeg">
-              <div class="fill-height bottom-gradient"></div>
-            </v-img>
-          </div>-->
-
-          <div class="col-md-12">
-            <h3 class="dislay-1 font-weight-light" style="color:black;text-align:center">
-              Who we are
-              <hr
-                style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-              />
-            </h3>
-
-            <div
-              style="font-size:20px; background-color: rgba(21, 22, 21, 0.4); margin:20px;
-                    padding:10px; text-align:center; border-radius:5px "
-            >
+    <div class="goals">
+      <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
+        <div class="col-md-4 col-sm-12">
+          <div class="card1" style="background: #1B6761; width:75%; ">
+            <v-icon large color="white darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
+            <div class="-header text-center p-3">
+              <h3 class="white--text bold">OUR MAJOR GOAL</h3>
+              <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid white;" />
+            </div>
+            <div class>
+              <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
               <div
-                class="headline font-weight-light"
-                style="text-align:center; padding:0px; color:white; padding-bottom; padding-top:0px"
-              >INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL) was founded by young professionals who believe that youth can contribute significantly to building a better society. Having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps</div>
-              <br />
+                class="text-center white--text"
+                style="padding:10px"
+              >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless..</div>
             </div>
           </div>
         </div>
-        <hr />
-        <div class="row">
-          <!-- <div class="col-md-8">
-            <h2 class="dislay-1" style="color:#f4c542">Vision</h2>
-            <hr style="width:100px" />
-            <div class="headline font-weight-light">
-              INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING provides information, support and services in areas that can lead to individuals achieving success and leading productive lives.
-              By using ICT as a springboard, our mission and vision is geared towards improving the chances of people making more informed choices and creating new frontiers for them to improve their lives.
+        <div class="col-md-4 col-sm-12">
+          <div class="card2" style="background: #092E2B ; width:75%; ">
+            <v-icon large color="orange darken-2" style="margin:16px">mdi-eye</v-icon>
+            <div class="-header t p-3">
+              <h3 class="white--text bold">VISION</h3>
+              <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid #FF8A00;" />
             </div>
-          </div>
-          <div class="col-md-4 sm-12">
-            <v-img src="../assets/second.svg">
-              <div class="fill-height bottom-gradient"></div>
-            </v-img>
-          </div> -->
-          <!-- Button trigger modal -->
-
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModalCenter"
-            tabindex="-1"
-            role="dialog"
-            aria-labelledby="exampleModalCenterTitle"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-body">
-                  <v-card flat>
-                    <v-card-title>
-                      <span class="headline">kindly fill the form</span>
-                    </v-card-title>
-                    <v-card-text>
-                      <v-container>
-                        <v-row>
-                          <v-col cols="12" sm="6" md="6">
-                            <v-text-field label="first name" v-model="project.fname" required></v-text-field>
-                          </v-col>
-
-                          <v-col cols="12" sm="6" md="6">
-                            <v-text-field
-                              label="last name"
-                              v-model="project.lname"
-                              persistent-hint
-                              required
-                            ></v-text-field>
-                          </v-col>
-                          <v-col cols="12">
-                            <v-text-field label="Email" v-model="project.email" required></v-text-field>
-                          </v-col>
-                          <v-col cols="12">
-                            <v-text-field label="Phone" v-model="project.phone" required></v-text-field>
-                          </v-col>
-
-                          <v-col cols="12" sm="12">
-                            <v-select
-                              :items="items"
-                              label="Interests"
-                              multiple
-                              v-model="project.interests"
-                              chips
-                              hint="Interests"
-                              persistent-hint
-                            ></v-select>
-                          </v-col>
-                        </v-row>
-                      </v-container>
-                      <small>*indicates required field</small>
-                    </v-card-text>
-                  </v-card>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary" v-on:click="submit">Submit</button>
-                </div>
-              </div>
+            <div class>
+              <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+              <div
+                class="text-center white--text"
+              >Develop individuals and communities towards a knowledge-based society.</div>
             </div>
           </div>
         </div>
-      </v-container>
+
+        <div class="col-md-4 col-sm-12">
+          <div class="card3" style="background: #092E2B; width:75%; ">
+            <v-icon large style="margin:16px; color:#FF8A00;">mdi-lightbulb-on</v-icon>
+            <div class="-header p-3">
+              <h3 class="white--text bold">OUR APPROACH</h3>
+              <hr style="color:#FF8A00; width:90px; margin-left:9px; border: 2px solid #FF8A00;" />
+            </div>
+            <div class>
+              <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+              <div
+                class="text-center white--text"
+                style="padding:10px"
+              >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Page Content -->
-    <!-- <section class="py-5">
-      <div class="container">
-        <h1 class="font-weight-light">Half Page Image Slider</h1>
-        <p class="lead">
-          The background images for the slider are set directly in the HTML using inline CSS. The images in this snippet are from
-          <a href="https://unsplash.com">Unsplash</a>!
-        </p>
-      </div>
-    </section>-->
+    <div>
+      <div
+        class="modal fade"
+        id="exampleModalCenter"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <v-card flat>
+                <v-card-title>
+                  <span class="headline">kindly fill the form</span>
+                </v-card-title>
+                <v-card-text>
+                  <v-container>
+                    <v-row>
+                      <v-col cols="12" sm="6" md="6">
+                        <v-text-field label="first name" v-model="project.fname" required></v-text-field>
+                      </v-col>
 
-    <section class="service-sec" id="benefits">
-      <v-parallax src="../assets/black.jpg" height="500px">
-        <div class="row" style="background-color:black; opacity: 0.8; text-align:center">
-          <div class="col-md-12">
-            <div class="heading">
-              <div>
-                <h3
-                  class="dislay-1 font-weight-light"
-                  style="color:white;text-align:center; margin-top:15px"
-                >
-                  SUPPORT A PROJECT
-                  <br />
-                  <hr
-                    style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
-                </h3>
+                      <v-col cols="12" sm="6" md="6">
+                        <v-text-field
+                          label="last name"
+                          v-model="project.lname"
+                          persistent-hint
+                          required
+                        ></v-text-field>
+                      </v-col>
+                      <v-col cols="12">
+                        <v-text-field label="Email" v-model="project.email" required></v-text-field>
+                      </v-col>
+                      <v-col cols="12">
+                        <v-text-field label="Phone" v-model="project.phone" required></v-text-field>
+                      </v-col>
 
-                <hr style="width: 100%; color: black; height: 1px;" />
-
-                <br />“COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL” - IDEAL
-                <small>
-                  <br />“Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family”.
-                  <br />~ Kofi Anan ~
-                </small>
-              </div>
-              <br />
-
-              <div class="row" style="text-align:center">
-                <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="success darken-2">mdi-book-open-variant</v-icon>
-                  <div class="demo-content">SCHOOL BOOKS</div>
-                </div>
-
-                <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="success darken-2">mdi-tshirt-v</v-icon>
-                  <div class="demo-content">UNIFORMS</div>
-                </div>
-                <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="success darken-2">mdi-cash</v-icon>
-                  <div class="demo-content">FEES</div>
-                </div>
-                <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="success darken-2">mdi-home</v-icon>
-                  <div class="demo-content">SCHOOL RENOVATION</div>
-                </div>
-                <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="success darken-2">mdi-teach</v-icon>
-                  <div class="demo-content">TRAINING</div>
-                </div>
-                <div class="col-md-2 subtitle-2 font-weight-black">
-                  <v-icon large color="success darken-2">mdi-server-network</v-icon>
-                  <div class="demo-content">COMPUTER SERVER</div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-md-4"></div>
-                <div class="col-md-4" style="margin-top: 30px;  margin-bottom: 30px; ">
-                  <button
-                    type="button"
-                    class="btn orange darken-"
-                    color="red"
-                    data-toggle="modal"
-                    data-target="#exampleModalCenter"
-                  >Support a project</button>
-                </div>
-                <div class="col-md-4"></div>
-              </div>
+                      <v-col cols="12" sm="12">
+                        <v-select
+                          :items="items"
+                          label="Interests"
+                          multiple
+                          v-model="project.interests"
+                          chips
+                          hint="Interests"
+                          persistent-hint
+                        ></v-select>
+                      </v-col>
+                    </v-row>
+                  </v-container>
+                  <small>*indicates required field</small>
+                </v-card-text>
+              </v-card>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" v-on:click="submit">Submit</button>
             </div>
           </div>
         </div>
-      </v-parallax>
+      </div>
+    </div>
 
-      <template>
-        <div class="display-1" style="margin-top:40px; text-align:center; color:black ">
-          OUR PARTNERS
-          <hr
-            style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-          />
+    <div class style="background-color:#092E2B; text-align:center">
+      <div class="col-md-12">
+        <div>
+          <div
+            style="
+font-family: SF UI Display;
+font-style: normal;
+color:white;
+font-size: 24px;
+line-height: 140.84%;
+margin:40px;
+text-align: center;
+letter-spacing: 0.02em;  "
+          >
+            <br />“Collectively we could ensure that children go to school
+            <br />and also remain in school” - IDEAL
+            <!-- <small>
+                  <br />“Knowledge is power. Information is liberating. Education is the premise of progress, in every society, in every family”.
+                  <br />~ Kofi Anan ~
+            </small>-->
+          </div>
+          <br />
+
+          <div class="row" style="text-align:center">
+            <div class="col-md-2 subtitle-2 font-weight-black">
+              <v-icon large color="#1B6761">mdi-school</v-icon>
+              <!-- <i class="material-icons outlined" style=" font-size: 50px; outline" >school</i> -->
+              <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Books</div>
+            </div>
+
+            <div class="col-md-2 subtitle-2 font-weight-black">
+              <v-icon large color="#1B6761">mdi-tshirt-v-outline</v-icon>
+              <div class="demo-content" style="color:#FF8A00;margin-top:10px">Uniforms</div>
+            </div>
+            <div class="col-md-2 subtitle-2 font-weight-black">
+              <v-icon large color="#1B6761">mdi-cash</v-icon>
+              <div class="demo-content" style="color:#FF8A00; margin-top:10px">Fees</div>
+            </div>
+            <div class="col-md-2 subtitle-2 font-weight-black">
+              <v-icon large color="#1B6761">mdi-home-city-outline</v-icon>
+              <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Renovations</div>
+            </div>
+            <div class="col-md-2 subtitle-2 font-weight-black">
+              <v-icon large color="#1B6761">mdi-teach</v-icon>
+              <div class="demo-content" style="color:#FF8A00; margin-top:10px">Training</div>
+            </div>
+            <div class="col-md-2 subtitle-2 font-weight-black">
+              <v-icon large color="#1B6761">mdi-server-network</v-icon>
+              <div class="demo-content" style="color:#FF8A00; margin-top:10px">Computer Server</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-4" style="margin-top:70px; margin-bottom:70px">
+              <button
+                type="button"
+                class="btn success white--text"
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
+              >Support a project</button>
+            </div>
+            <div class="col-md-4"></div>
+          </div>
         </div>
+      </div>
+    </div>
+    <div style="width:100%">
+      <div
+        class="display-1"
+        style="margin-top:40px; text-align:center; color: #092E2B; font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 48px;"
+      >Quick Offers</div>
+      <div
+        style="height: 26px; margin-top:10px; text-align:center; color:#1B6761;font-family: BigNoodleTitling;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;"
+      >Quick link to the most searched offer</div>
+
+      <div class="small">
+        <div class="row">
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">Internship</a>
+              <a href="#" class="card-link" style="margin-left:150px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#092E2B;">
+              <a href="#" class="card-link white--text">Test Preparation</a>
+              <a href="#" class="card-link" style="margin-left:110px">
+                <v-icon large color="#FF8A00">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">Professional IT Courses</a>
+              <a href="#" class="card-link" style="margin-left:60px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">Book Shops</a>
+              <a href="#" class="card-link" style="margin-left:140px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">DIY Kits</a>
+              <a href="#" class="card-link" style="margin-left:160px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">Events</a>
+              <a href="#" class="card-link" style="margin-left:160px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">Apply For Contests</a>
+              <a href="#" class="card-link" style="margin-left:100px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">Webinars</a>
+              <a href="#" class="card-link" style="margin-left:150px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" style="width: 18rem; margin:10px">
+            <div class="card-body" style="background-color:#1B6761;">
+              <a href="#" class="card-link white--text">Surport a Project</a>
+              <a href="#" class="card-link" style="margin-left:100px">
+                <v-icon large color="white">mdi-arrow-right</v-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="service-sec" id="benefits">
+      <template>
+        <div
+          class="display-1"
+          style="margin-top:80px; margin-bottom:40px; text-align:center; color:black;
+        font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 48px; "
+        >Our Partners</div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -508,6 +530,99 @@
         </hooper>
       </template>
     </section>
+    <div class="form" style="margin-bottom:50px">
+      <div
+        style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+padding:50px"
+      >
+        GET UPDATES
+        <hr style="color:orange; width:700px; margin-left:9px; border: 2px solid #FF8A00;" />
+      </div>
+
+      <form action style="width:50%; margin-left:100px;" class="row">
+        <div class="col-md-12">
+          <label
+            for="exampleFormControlInput1"
+            style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;"
+          >
+            EMAIL ADDRESS
+            <span style="color:red">*</span>
+          </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            style="background-color:#CAD9D8"
+          />
+        </div>
+        <div class="col-md-7">
+          <label
+            for="exampleFormControlInput1"
+            style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;"
+          >
+            COUNTRY
+            <span style="color:red">*</span>
+          </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            style="background-color:#CAD9D8"
+          />
+          <br />
+          <span
+            style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;"
+          >Subscribe to Email Updates</span>
+        </div>
+        <div class="col-md-5">
+          <label
+            for="exampleFormControlInput1"
+            style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 13px;"
+          >
+            ZIP CODE
+            <span style="color:red">*</span>
+          </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            style="background-color:#CAD9D8"
+          />
+        </div>
+        <div style="padding-left:15px; padding-top:30px">
+          <span
+            style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 500;
+font-size: 13px;
+line-height: 16px;
+letter-spacing: 0.015em;"
+          >By submitting this form, you agree to the iDeal-IT Privacy Policy</span>
+          <br />
+          <button
+            type="button"
+            class="btn white--text"
+            style="background-color:#092E2B"
+            v-on:click="submit"
+          >SUBSCRIBE</button>
+        </div>
+      </form>
+    </div>
     <foota></foota>
   </div>
 </template>
@@ -543,7 +658,7 @@ export default {
     news: [],
     msg: "heyyy",
     dialog: false,
-    showNews:true,
+    showNews: true,
     items: [
       "fees",
       " school renovations",
@@ -577,7 +692,7 @@ export default {
   created() {
     this.isMobile();
     this.initialize();
-    this.showNewss()
+    this.showNewss();
   },
   methods: {
     initialize() {
@@ -610,12 +725,12 @@ export default {
           console.log(e);
         });
     },
-    showNewss(){
-       setInterval(function(){
-         this.showNews =! this.showNews
-          // eslint-disable-next-line no-console
-          console.log(this.showNews, );
-       },1000)
+    showNewss() {
+      setInterval(function() {
+        this.showNews = !this.showNews;
+        // eslint-disable-next-line no-console
+        console.log(this.showNews);
+      }, 1000);
     },
     test: function() {
       serv.testers();
@@ -652,7 +767,28 @@ export default {
 <style  scoped lang="css">
 @import url("https://fonts.googleapis.com/css?family=Alegreya|Lora:700&display=swap");
 header {
-  padding-top: 110px;
+  padding-top: 0px;
+}
+.carouselHolder {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.arch {
+  /* background-image: url("../assets/arch.jpg"); */
+  background-color: aquamarine
+}
+
+.board {
+  height: 50px;
+  left: 156px;
+  top: 727px;
+
+  /* dark green */
+
+  background: #1b6761;
+  border-radius: 0px;
 }
 .carousel-item {
   height: 85vh;
@@ -664,7 +800,7 @@ header {
   background-size: cover;
 }
 .cov {
-  background-color: rgba(21, 22, 21, 0.6);
+  background-color: rgba(21, 22, 21, 0.1);
 }
 .vl {
   border-left: 2px solid green;
@@ -701,7 +837,6 @@ header {
 @media only screen and (max-width: 400px) {
   .car {
     font-size: 2px;
-
     margin: 0px;
   }
   .car-head {
@@ -761,6 +896,46 @@ header {
     text-align: center;
     border-radius: 45px;
     font-family: "Alegreya";
+  }
+  p {
+    font-family: "Alegreya", serif;
+
+    font-size: 16px;
+  }
+  .card1 {
+    margin-left: auto;
+    margin-right: -60px;
+    height: 100%;
+  }
+  .card2 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .card3 {
+    margin-left: -60px;
+    margin-right: auto;
+    height: 100%;
+  }
+  .car-head {
+    margin-top: 60px;
+  }
+  .goals {
+    background: rgba(27, 103, 97, 0.2);
+    margin-left: 0px;
+  }
+  .smallCards {
+    width: 100px;
+    height: 60px;
+    background-color: #1b6761;
+    margin: 5px;
+    padding: 0px;
+  }
+  .small {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 15%;
+    margin-right: auto;
   }
 }
 </style>

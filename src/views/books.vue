@@ -10,7 +10,7 @@
           >items {{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
         </div>-->
         <div style=" position:fixed; z-index:200" class="but">
-          <v-btn class="ma-2" tile color="success">
+          <v-btn class="ma-2" tile color="success"   v-if="quantity>=1">
             <v-icon left style="color:orange">mdi-cart</v-icon>
             <span
               class="badge badge"
@@ -91,7 +91,7 @@
       </div>
 
       <div class="container">
-        <div v-if="weeksTop.lenght > 1" class="heads" v-show="!verified">Books for the week</div>
+        <div v-if="weeksTop.lenght >= 1" class="heads" v-show="!verified">Books for the week</div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -116,25 +116,57 @@
                     class="ma-2 orange--text"
                     tile
                     color="blue"
-                  >Add to cart</a> -->
+                  >Add to cart</a>-->
                 </div>
               </div>
             </div>
           </slide>
         </hooper>
         <div v-show="!verified">
-          <h3>Shop From The Best Collections!</h3>
+          <div class="row">
+            <div 
+              style="width: 361px;
+height: 29px;
+left: 98px;
+top: 1174px;
+color: #092E2B;
+font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 29px;
+display: flex;
+padding-bottom:40px;
+align-items: center;
+text-align: center"
+            >Trending Now <div style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 17px;
+margin-left:20px;
+color: #FF8A00;">See More</div> </div>
+             
+          
+          </div>
+
           <div class="row">
             <div v-for="(item,i) in shop" :key="i">
-              <div class="card m-3" style="width: 12rem;">
-                <v-img class="white--text align-end" height="300px" v-bind:src="item.imagesPath"></v-img>
+              <div class="card m-3" style="width: 15.5rem;">
+                <v-img style=" max-width:100%; height: 15vw;
+    object-fit: contain; " class="white--text align-end"  v-bind:src="item.imagesPath"></v-img>
                 <div class="card-body">
-                  <strong class="card-title">
-                    <small>{{ item.title }}</small>
-                  </strong>
-                  <br />
-                  <small class="card-text">NGN {{ item.price }}</small>
-                  <br />
+                  <div style>
+                    <div
+                      class="card-title"
+                      style="left: 9.96%;font-size:15px;color: #092E2B;"
+                    > <strong>{{ item.title }}</strong> </div>
+                    <div style="left: 9.95%;font-size:10px;right: 31.22%;color: #639B97;">
+                     By Austin MAikano
+                      <hr style="margin:5px; border: 1px solid ;"  />Comics
+                    </div>
+                  </div>
+
                   <!-- <a
                     style="text-align:center"
                     outlined
@@ -142,14 +174,14 @@
                     class="ma-2 orange--text"
                     tile
                     color="blue"
-                  >Add to cartss</a> -->
-                  <button
+                  >Add to cartss</a>-->
+                  <!-- <button
                     type="button"
                     class="btn btn-outline-info"
                     data-toggle="modal"
                     data-target="#exampleModal"
                     @click="openModal(item)"
-                  >more..</button>
+                  >more..</button> -->
 
                   <!-- Modal -->
                   <div
@@ -186,32 +218,50 @@
                                 ></v-img>
                               </div>
                               <div class="card-body col-md-6">
-                                  <p
-                                    class="card-text"
-                                  >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                       <p>NGN{{e.price}}</p>
-                                  
-                                    <a
-                    style="text-align:center"
-                    outlined
-                    @click="addToCart(e)"
-                    class="ma-2 orange--text"
-                    tile
-                    color="blue"
-                    data-dismiss="modal"
-                  >Add to cart</a>
-                                </div>
+                                <p
+                                  class="card-text"
+                                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <p>NGN{{e.price}}</p>
+
+                                <a
+                                  style="text-align:center"
+                                  outlined
+                                  @click="addToCart(e)"
+                                  class="ma-2 orange--text"
+                                  tile
+                                  color="blue"
+                                  data-dismiss="modal"
+                                >Add to cart</a>
+                              </div>
                             </div>
                           </strong>
                         </div>
                         <div class="modal-footer">
                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div style="width:100%"  data-toggle="modal"
+                    data-target="#exampleModal"  @click="openModal(item)">
+                  <div
+                    class="row"
+                    style="font-size:15px; width:100%;  background: #CAD9D8; margin:0px"
+                  >
+                    <div class="col-3">
+                      <v-icon size="20" color="#1B6761" right style="padding-right:10px"  data-toggle="modal"
+                    data-target="#exampleModal"  @click="openModal(item)">mdi-cart</v-icon>
+                    </div>
+                    <div class="col-4">
+                      <v-icon size="20" color="#1B6761" right style="padding-right:10px">mdi-star</v-icon>
+                    </div>
+                    <div class="col-5" style="text-align:left; color: #1B6761;">
+                      <strong>NGN{{ item.price }}</strong>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="card-text" style="background: #CAD9D8; padding:5px">NGN {{ item.price }}</div> -->
               </div>
             </div>
           </div>

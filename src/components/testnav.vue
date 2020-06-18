@@ -1,6 +1,6 @@
 <template>
   <div style="z-index:5; width:100%" class="sticky">
-    <div
+    <!-- <div
       class="navbar-brand p-0 pl-6"
       style="background-color:black; width:100%; color:white; font-size:15px"
     >
@@ -20,7 +20,7 @@
             <v-icon size="20" color="orange darken-2" right>mdi-linkedin</v-icon>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <nav class="navbar navbar-expand-md bg-white" style="color:yellow; z-index:5;">
       <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->

@@ -1,82 +1,79 @@
-<template >
+<template>
   <div style="background-color:">
     <nava />
-    <div style class="div1 cont">
-      <div class="card-size">
-        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-          <div style="margin-top:px ; ">
-            <div style="margin-left:40px; margin-right:40px">
-              <div class="car-head">
-                <span class="white--text">TRAIN-THE-TRAINER WORKSHOP</span>
-                <hr
-                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                />
-              </div>
+
+    <div class>
+      <div
+        class="card-body"
+        style="background: linear-gradient(69.97deg, #092E2B 8.35%, rgba(9, 46, 43, 0.08) 88.57%); height:400px;   position: relative;"
+      >
+        <div style="margin-top:50px ; ">
+          <span
+            class
+            style="  margin: 0;
+  position: absolute;
+  top: 40%;
+  font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+padding-left:150px;
+color:white"
+          >
+          Train-The-trainer <br> Workshop
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="body" style="background: #F6F6F6">
+      <div class="row" style="background-color:rgb(255, 255, 255)">
+        <div class="col-sm-12 col-md-12">
+          <div class="first" style>
+            <div class>
+              <p
+                class="car-text first"
+                style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+              >Our Train-the-trainer designed workshops meet trainers' needs, improve and professionalize in their career path. <br> The Institute of Commercial Management (ICM) UK- is a leading professional body It is providing qualifications at Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma levels that is recognized globally in business, management and related vocations..</p>
             </div>
           </div>
         </div>
       </div>
+
+      <img src="../assets/black.jpg" alt style="width: 100%;
+height: 400px; padding-top:80px" />
     </div>
-    <div class="body" style>
-      <!-- card -->
-      <div class="row sub-body" style>
-        <div class="col-sm-12 col-md-9" style="margin-bottom:0px">
-          <div class style=" ">
-            <div class style>
-              <p class="car-text --text font-weight-regular">
-                <strong>Train the trainers</strong>
-                we are empowering
-                <strong>Trainers</strong> with the knowledge, abilities, and attitudes, in an integrated way needed for the development of their vocation.
-                <br />
-                <strong>Intended for:</strong>
-                <br />These train-the-trainer courses are suitable for anyone involved in the development of others. Including trainers, managers, leaders, consultants, teachers, technical trainers, lecturers and more
-                <br />
+
+    <div class="body" style="background: #F6F6F6">
+      <div class="row" style="background-color:rgb(255, 255, 255)">
+        <div class="col-sm-12 col-md-12">
+          <div class="first" style>
+            <div class>
+              <p
+                class="car-text first"
+                style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+              >
+              <strong>Train-the-trainers</strong>  <br> We are empowering Trainers with the knowledge, abilities, and attitudes, in an integrated way needed for the development of their vocation. <br> <br>
+              <strong> How IDEaL is improving the training of trainers</strong> <br>
+               At IDEaL, we understand that trainers transform lives. Hence, we have taken actions in prioritizing trainers' training, offering bespoke and tailor-made support and development Programmes for organizations. <br> We consider that a learner’s education can only ever be as good as their instructor(s); hence it’s vital that trainers not only need to know what to teach but how to teach. 
               </p>
             </div>
           </div>
         </div>
-        <div class="col-sm col-md-3" style="padding-top:80px" v-if="image==true">
-          <v-img src="../assets/train1.svg" style=" width:300px"></v-img>
-        </div>
-      </div>
-      <div class="sub-body" style=" ">
-        <!-- card -->
-        <div class="row">
-          <div class="col-sm col-md-3" style="padding-top:80px" v-if="image == true">
-            <v-img src="../assets/train2.svg" style=" width:300px"></v-img>
-          </div>
-          <div class="col-sm-12 col-md-9">
-            <div class style=" ">
-              <div class style>
-                <div class="car-text --text font-weight-regular">
-                  <strong>How IDEaL is improving the training of trainers</strong>
-
-                  <br />At IDEaL, we understand that trainers transform lives. Hence, we have taken actions in prioritizing trainers' training, offering bespoke and tailor-made support and development Programmes for organizations.
-                  <br />
-                  <br />We consider that a learner’s education can only ever be as good as their instructor(s); hence it’s vital that trainers not only need to know what to teach but how to teach.
-                  <br />
-
-                  <br />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="car-text" style>
-        <strong>Teachers training programme;</strong>
-        <br />Qualified teachers on the decline, the need for this programme is to provide necessary teaching and class management techniques. We are contributing to the success of
-        achieving the Sustainable Development Goal 4 of inclusive and equitable education and promoting lifelong learning opportunities for people in communities. <br> <br>
-        <ul>
-          <li>Organize training sessions that will be more meaningful and result-orientated.</li>
-          <li>Stimulate the participants’ attention and interest.</li>
-          <li>Study a variety of compelling factors needed to develop training and focus on outstanding delivery.</li>
-          <li>Ascertain resourceful training techniques and integrate new technologies into training strategies..</li>
-          <li>Trainers will gain skills in presentation, training design and classroom management.</li>
-          <li>Understand the diverse ways individuals learn and ensure that training content supports this diversity..</li>
-        </ul> <br> <br>
-        
-       The benefits of this hands-on training are incalculable as all topics have gone through systematic procedures to enable participants to achieve success. An additional benefit engaging in our train-the-trainers program is the network of professionals that a trainer will meet during the period. It offers them the chance to gather ideas and recommendations from other professionals.
       </div>
     </div>
 
@@ -97,38 +94,23 @@ export default {
     image: true,
     item: 1,
     item2: 1,
-    items: [
-      { text: "Design Learning programs", icon: "mdi-chair-school" },
-      { text: "Creating Learning Objectives", icon: "mdi-check-all" },
-      { text: "Class Arrangements", icon: "mdi-google-classroom" },
-      { text: "Training software and tools", icon: "mdi-tools" },
-      { text: "Integration of education technology", icon: "mdi-set-center" },
-      { text: "Presentations skills", icon: "mdi-presentation-play" }
-    ],
+
     items2: [
+      { text: "System Administration", icon: "mdi-handshake", color: "yellow" },
+      { text: "Project Management", icon: "mdi-wan", color: "green" },
       {
-        text: "Training Advisor",
-        icon: "mdi-teach"
+        text: "Customer Service Training",
+        icon: "mdi-face-agent",
+        color: "red"
       },
       {
-        text: "Workplace Trainer",
-        icon: "mdi-account-clock"
-      },
-      {
-        text: "Vocational Education Teacher",
-        icon: "mdi-presentation-play"
-      },
-      {
-        text: "Setting up your own Training Organization",
-        icon: "mdi-account-settings"
-      },
-      { text: "Training and Development", icon: "mdi-passport" },
-      {
-        text: "Any career that requires a Professional Trainer skill-set",
-        icon: "mdi-passport"
+        text: "Soft skills Training for Employees",
+        icon: "mdi-laptop",
+        color: "brown"
       }
     ]
   }),
+
   created() {
     this.isMobile();
   },
@@ -150,31 +132,47 @@ export default {
 
 <style scoped lang="css">
 template {
+  margin-left: 40px;
+  margin-right: 40px;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .div1 {
-  background-image: url("../assets/trainb.jpg");
+  background-image: url("../assets/profb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
+.darken-pseudo:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.body {
+  margin: 50px;
+}
 
 @media only screen and (max-width: 400px) {
-  .body {
-    margin: 50px;
+  .first {
+    /* padding: 30px; */
   }
   .car {
-    font-size: 2px;
     margin: 0px;
   }
   .car-head {
     font-size: 20px;
-    color: black;
-    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-family: "lora";
   }
   .car-text {
     font-size: 14px;
-    text-align: left;
     /* background-color: rgba(21, 22, 21, 0.4); */
+    padding-top: 10px;
+    text-align: left;
   }
   .cont {
     padding-top: 200px;
@@ -191,33 +189,39 @@ template {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .body {
-    margin-top: 40px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
   }
-  .sub-body {
-    font-size: 15px;
-  }
+
+  /* .first {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  } */
   .car {
+    padding: 30px;
   }
   .car-head {
-    font-family: "Lora";
     font-size: 34px;
-    color: black;
     text-align: center;
-    padding-top: 90px;
+    font-family: "Lora";
   }
   .car-text {
     font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     height: 100%;
     padding: 10px;
-    font-family: "Alegreya";
+    text-align: center;
+    border-radius: 45px;
     text-align: left;
+    font-family: "Alegreya";
   }
-  .cont {
-    padding-top: 80px;
+  .conts {
+    background-image: url("../assets/black.jpg");
+  }
+  img{
+     padding-top:80px
   }
 }
 </style>

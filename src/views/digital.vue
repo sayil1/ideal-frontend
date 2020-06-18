@@ -2,49 +2,86 @@
   <div style="background-color:">
     <nava />
 
-    <div class="cont">
-      <!-- card -->
-       <div style class="div1">
-        <div class="card-size">
-          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div style="margin-top:px ; ">
-              <div class="car" style="margin-left:40px; margin-right:40px">
-                <div class="car-head">
-                  <span class=" white--text">DIGITAL INCLUSION</span>
-                  <hr
-                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
-                </div>
-              </div>
+    <div class>
+      <div
+        class="card-body"
+        style="background: linear-gradient(69.97deg, #092E2B 8.35%, rgba(9, 46, 43, 0.08) 88.57%); height:400px;   position: relative;"
+      >
+        <div style="margin-top:50px ; ">
+          <span
+            class
+            style="  margin: 0;
+  position: absolute;
+  top: 40%;
+  font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+padding-left:150px;
+color:white"
+          >
+            Digital
+            <br />Inclusion
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="body" style="background: #F6F6F6">
+      <div class="row" style="background-color:rgb(255, 255, 255)">
+        <div class="col-sm-12 col-md-12">
+          <div class="first" style>
+            <div class>
+              <p
+                class="car-text first"
+                style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+              >We provide a practical approach to addressing the needs of individuals and communities to embrace the digital age fully. As the digital revolution intensifies, the internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="body">
-        <div class="row " style="background-color:rgb(255, 255, 255)">
-          <div class="col-sm-12 col-md-9" style="margin-top:0px">
+      <img src="../assets/black.jpg" alt style="width: 100%;
+height: 400px; padding-top:80px" />
+    </div>
+
+    <div class="body" style="background: #F6F6F6">
+      <div class="row" style="background-color:rgb(255, 255, 255)">
+        <div class="col-sm-12 col-md-12">
+          <div class="first" style>
             <div class>
-              <div class="car-text" style>
-                <p
-                  class=""
-                >We provide a practical approach to addressing the needs of individuals and communities to embrace the digital age fully. As the digital revolution intensifies, the internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
-              </div>
+              <p
+                class="car-text first"
+                style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+              >
+                We work to ensure Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) to participate in and benefit from today's growing knowledge and information society. IDEaL’s Digital inclusion actions cover the gap in these areas:
+                <br />
+                <br />We promote digital inclusion in various ways:
+                <br />
+                <br />• Providing free access to digital technologies including hardware and software. GCFLearnFree
+                <br />
+                <br />• Improving digital literacy skills through practical training programs and workshops.
+                <br />
+                <br />• Creating a more digitally savvy consumer and workforce.
+                <br />
+                <br />• Providing Accessibility services designed to meet users’ needs, including those dependent on assistive technology to access digital services.
+              </p>
             </div>
           </div>
-          <div class="col-sm col-md-3" v-if="image==true">
-            <v-img src="../assets/app.svg" style=" width:300px"></v-img>
-          </div>
-        </div>
-        <div class="first car-text">
-         We work to ensure Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) to participate in and benefit from today's growing knowledge and information society. IDEaL’s Digital inclusion actions cover the gap in these areas:
-          <br />We promote digital inclusion in various ways:
-          <ul>
-            <li>Providing free access to digital technologies including hardware and software. GCFLearnFree</li>
-            <li>Improving digital literacy skills through practical training programs and workshops.</li>
-            <li>Creating a more digitally savvy consumer and workforce.</li>
-            <li>Providing Accessibility services designed to meet users’ needs, including those dependent on assistive technology to access digital services..</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -127,7 +164,6 @@ template {
   margin: 50px;
 }
 
-
 @media only screen and (max-width: 400px) {
   .first {
     /* padding: 30px; */
@@ -145,11 +181,11 @@ template {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
     padding-top: 10px;
-    text-align: left
+    text-align: left;
   }
-  .cont{
-  padding-top: 200px
-}
+  .cont {
+    padding-top: 200px;
+  }
 }
 
 /* Tablet Styles */
@@ -161,22 +197,24 @@ template {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  body {
-    background-color: #b2d6ff; /* Blue */
+  .body {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
   }
-  .first {
-   
-    padding-left: 30px;
-    padding-right: 30px;
-  }
+
+  /* .first {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  } */
   .car {
-    /* padding: 30px; */
+    padding: 30px;
   }
- .car-head {
+  .car-head {
     font-size: 34px;
     text-align: center;
-    font-family: "Lora"
-   
+    font-family: "Lora";
   }
   .car-text {
     font-size: 21px;
@@ -186,10 +224,13 @@ template {
     text-align: center;
     border-radius: 45px;
     text-align: left;
-    font-family: "Alegreya"
+    font-family: "Alegreya";
   }
-  .cont{
-    padding-top: 100px
+  .conts {
+    background-image: url("../assets/black.jpg");
+  }
+  img{
+     padding-top:80px
   }
 }
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <div style="position:fixed;">
+    <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar" style="  box-shadow: 5px 10px 18px #888888;">
       <!-- Sidebar - Brand -->
       <router-link class="sidebar-brand d-flex align-items-center justify-content-center" to="admin.html">
         <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
+       jbknj
         </div>
       </router-link>
 
@@ -15,7 +15,7 @@
       <li class="nav-item active">
         <router-link class="nav-link" to="/">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>IDEAL IT</span>
+          <h3 style="color:orange">IDEAL IT</h3>
         </router-link>
       </li>
 
@@ -30,37 +30,37 @@
 
       <li class="nav-item">
         <router-link class="nav-link" to="/adminIndex" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-party-popper</v-icon>
+          <v-icon small color="red">mdi-party-popper</v-icon>
           <span>Events</span>
         </router-link>
       </li>
       <li class="nav-item">
         <router-link class="nav-link" to="/adminNews" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-party-popper</v-icon>
+          <v-icon small color="green">mdi-party-popper</v-icon>
           <span>News</span>
         </router-link>
       </li>
        <li class="nav-item">
         <router-link class="nav-link" to="/adminBooks" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-book</v-icon>
+          <v-icon small color="purple">mdi-book</v-icon>
           <span>Books</span>
         </router-link>
       </li>
        <li class="nav-item">
         <router-link class="nav-link" to="/Addiy" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-circle</v-icon>
+          <v-icon small color="yellow">mdi-circle</v-icon>
           <span>DIY Kits</span>
         </router-link>
       </li>
       <li class="nav-item">
         <router-link class="nav-link" to="/Adweb" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-web</v-icon>
+          <v-icon small color="magenta">mdi-web</v-icon>
           <span>Webinars</span>
         </router-link>
       </li>
       <li class="nav-item">
         <router-link class="nav-link" to="/Adcontest" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-trophy</v-icon>
+          <v-icon small color="orange">mdi-trophy</v-icon>
           <span>Contests</span>
         </router-link>
       </li>
@@ -75,7 +75,7 @@
       <hr class="sidebar-divider" />
 
       <!-- Heading -->
-      <div class="sidebar-heading">Addons</div>
+      <div class="sidebar-heading">-----</div>
 
       <!-- Nav Item - Pages Collapse Menu -->
 
@@ -91,9 +91,7 @@
       <hr class="sidebar-divider d-none d-md-block" />
 
       <!-- Sidebar Toggler (Sidebar) -->
-      <div class="text-center d-none d-md-inline">
-        <button class="rounded-circle border-0" id="sidebarToggle"></button>
-      </div>
+    
     </ul>
   </div>
 </template>

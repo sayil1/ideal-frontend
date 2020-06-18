@@ -1,34 +1,9 @@
 <template  >
   <div>
     <div>
-      <div style="position:fixed; z-index:10; ">
-        <div
-          class="navbar-brand pl-6 navas"
-          style="background-color:black; color:white; font-size:15px; z-index:10; "
-        >
-          <div class="row" style>
-            <div class="col-md-1 col-sm-4">
-              <v-icon size="20" color="green darken-2" right>mdi-phone</v-icon>(+234) 9030031914
-            </div>
-            <div class="col-md-1 col-sm-4 infos">
-              <v-icon size="20" color="green darken-2" right style="padding-right:5px">mdi-mail</v-icon>info@ideal-nig.org
-            </div>
-            <div class="col-md-6"></div>
-
-            <div class="row icons">
-              <v-icon
-                size="20"
-                color="orange darken-2"
-                right
-                style="padding-right:10px"
-              >mdi-facebook</v-icon>
-              <v-icon size="20" color="orange darken-2" right style="padding-right:10px">mdi-twitter</v-icon>
-              <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
-              <v-icon size="20" color="orange darken-2" right>mdi-linkedin</v-icon>
-            </div>
-          </div>
-        </div>
-        <div style="; " class="navbar navbar-expand-md navbar- bg-white navas" role="navigation">
+      <div style="position:fixed; width:100%; z-index:10; background-color: " >
+       
+        <div style="width:100%; " class="navbar navbar-expand-md navbar- bg-white navas" role="navigation">
           <div>
             <router-link to="/">
               <img src="../assets/idealng.png" alt style="height:30px; " />
@@ -57,8 +32,14 @@
                   <span class="sr-only">(current)</span>
                 </li>
               </router-link>
+               <li class="nav-item active">
+                <router-link class="nav-link" to="about" style>
+                ABOUT US
+                  <span class="sr-only">(current)</span>
+                </router-link>
+              </li>
 
-              <li class="nav-item dropdown">
+              <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   id="dropdown1"
@@ -77,7 +58,7 @@
                   </router-link>
                   <ul></ul>
                 </ul>
-              </li>
+              </li> -->
               <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
@@ -197,14 +178,7 @@
             </ul>
           </div>
         </div>
-        <!-- <div v-if="news.length>0" style="background-color:orange; width:100%; padding-top:7px">
-        <marquee behavior="scroll" direction="left" scrollamount="10">
-          <span style="padding:10px" v-for="(n , index) in news" v-bind:key="index">
-            <span style="padding:3px; color:black">{{n.caption | capitalize}}:</span>
-            <span style="padding:3px ; color:white">{{n.message}}</span>
-          </span>
-        </marquee>
-        </div>-->
+     
       </div>
     </div>
   </div>
@@ -266,7 +240,7 @@ export default {
 
 <style lang="css" scoped>
 header {
-  margin-top: 100px;
+  margin-top: 0px;
 }
 .navbar-nav li:hover > ul.dropdown-menu {
   display: block;

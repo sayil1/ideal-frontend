@@ -13,6 +13,7 @@ import VueMeta from 'vue-meta'
 
 
 Vue.use(BootstrapVue, VueMeta)
+Vue.use(require("moment"));
 
 Vue.config.productionTip = false
 

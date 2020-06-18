@@ -1,84 +1,25 @@
 <template>
-  <v-footer dark padless style="width:100%; " class="bg">
-    <v-card flat tile class=" lighten-1 white--text" style=" background: rgba(0, 0, 0, 0.7);">
-      <div class="row" style="padding:20px; height:100%; ">
-        <div class="col-md-4">
-          <div style=" font-size:20px; text-align:center">ABOUT OUR COMPANY</div>
-          <v-divider></v-divider>
-
-          <br />We find the solution together for your career path! In our one stop center and professional hub answers are found...
-          <br />
-          <v-btn v-for="icon in icons" :key="icon" class="mx-4 white--text" icon>
-            <v-icon color="orange" size="24px">{{ icon }}</v-icon>
-          </v-btn>
-        </div>
-        <div class="col-md-4">
+        <div style="width:100%; " class="navbar navbar-expand-md navas bg" role="navigation">
           <div>
-            <div style=" font-size:20px; text-align:center">QUICK LINKS</div>
-            <v-divider></v-divider>
+            <router-link to="/">
+              <img src="../assets/idealng.png" alt style="height:30px; " />
+            </router-link>
+          </div>
 
-            <br />
-            <ul>
-              <li>
-                <a style="color:white" href="/over">Oversees Admission Consulting</a>
-              </li>
-              <li>
-                <a style="color:white" href="/prof">Professional Education</a>
-              </li>
-              <li>
-                <a style="color:white" href="/train">Trainer's Workshop</a>
-              </li>
-              <li>
-                <a style="color:white" href="/icm">ICM UK Qualification</a>
-              </li>
-              <li>
-                <a style="color:white" href="/toefl">TOEFL</a>
-              </li>
-              <li>
-                <a style="color:white" href="/pearson">PEARSON VUE</a>
-              </li>
-              <li>
-                <a style="color:white" href="/career">Career Development Hub</a>
-              </li>
-                <li>
-                <a style="color:orange" href="/it-center">Registration</a>
-              </li>
-            </ul>
+          <div style="text-align:left" class="nava collapse navbar-collapse white--text" >
+       iDeal-IT {{today}}
           </div>
         </div>
-
-        <div class="col-md-4">
-          <div style=" font-size:20px ; text-align:center">CONTACT US</div>
-          <v-divider></v-divider>
-
-          <br />Have questions, comments or just want to say hello:
-          <br />
-          <br />
-          <v-icon ml-3 color="orange darken-2">mdi-email</v-icon>
-          <span>info@ideal-nig.org</span>
-
-          <br />
-          <br />
-          <v-icon color="orange darken-2">mdi-phone</v-icon>
-          <span>+2348030493091</span>
-          <br />
-          <br />
-          <v-icon color="orange darken-2">mdi-map-marker</v-icon>
-          <span>37, Jesus Saves Road, Asaba, Delta State.</span>
-        </div>
-      </div>
-      <v-divider></v-divider>
-      <v-card-text class="white--text" style="text-align:center">
-        {{ new Date().getFullYear() }} —
-        <strong>IDEal IT</strong>
-      </v-card-text>r
-    </v-card>
-  </v-footer>
 </template>
 <script>
+import * as moment from "moment/moment";
 export default {
+  
   data: () => ({
-    icons: ["mdi-facebook", " mdi-twitter", " mdi-google-plus", " mdi-linkedin"]
+    icons: ["mdi-facebook", " mdi-twitter", " mdi-google-plus", " mdi-linkedin"],
+    
+      today: moment().format("YYYY")
+ 
   })
 };
 </script>
@@ -93,9 +34,92 @@ a {
   cursor: pointer;
 }
 .bg {
-  background-image: url("../assets/infob.jpg");
+ background: #1B6761;
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
-  background-position: center;
+
+}
+ .navbar .dropdown-toggle:not(.nav-link)::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.5em;
+    vertical-align: 0;
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    border-left: 0.3em solid;
+  }
+  .nava {
+    margin-left: 30%;
+  }
+  .navas {
+    width: 150%;
+  }
+  .infos {
+    margin-left: 80px;
+  }
+  .navbar-nav li:hover > ul.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu > .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+}
+.nav-link {
+  color: green;
+  /* font-weight: bold; */
+  font-size: 15px;
+}
+.nav-link:hover {
+  color: orange !important;
+}
+.sub {
+  color: black;
+  background-color: orange;
+}
+.dropdown-item {
+  margin-left: -10px;
+  margin-right: auto;
+  border-top: 2px solid white;
+  color: black;
+  background-color: orange;
+}
+.dropdown-item .route {
+  color: black;
+}
+li .dropdown-item :hover {
+  background-color: white !important;
+  color: orange !important;
+  text-decoration: none;
+}
+li :hover {
+  background-color: white !important;
+  color: orange !important;
+  text-decoration: none;
+}
+.navbar .dropdown-toggle,
+.navbar .dropdown-menu a {
+  cursor: pointer;
+}
+
+.navbar .dropdown-item.active,
+.navbar .dropdown-item:active {
+  color: inherit;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+.navbar .dropdown-item:focus,
+.navbar .dropdown-item:hover {
+  color: #16181b;
+  text-decoration: none;
+  background-color: #f8f9fa;
+}
+.nav2 {
+  margin-top: 200px;
 }
 </style>
