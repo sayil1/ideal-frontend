@@ -2,7 +2,7 @@
   <div style>
     <nava />
     <div class="aboutTop">
-      <img src="../assets/arch.jpg" alt style="height:100%;
+      <img src="../assets/aboutIDE.jpg" alt style="height:100%;
       width:100%" />
     </div>
     <div>

@@ -1,7 +1,59 @@
 <template>
   <div>
     <nava />
-    <div id="app" style="padding-top:90px">
+
+    <div class>
+      <div class="conts">
+        <div
+          style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 300;
+font-size: 36px;
+line-height: 43px;
+letter-spacing: 0.02em;
+height: 337.23px;
+color: #FFFFFF;
+padding:120px;
+text-align:left "
+        >
+          <span style>
+           Shop a set of 10 books & <br> Get 50% off on your next <br> book purchase. Hurry up!
+          </span>
+        </div>
+
+        <div style="width: 100%;
+height: 78px;
+left: 0px;
+margin:0px;
+
+background: #CAD9D8;">
+          <div style="padding-top:20px">
+            <div class style="margin:auto; width:500px">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span
+                    class="input-group-text"
+                    id="inputGroupPrepend3"
+                    style="background-color:white"
+                  >
+                    <v-icon style="color: #639B97;">mdi-magnify</v-icon>
+                  </span>
+                </div>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="  Search a DIY Kit.."
+                  aria-describedby="inputGroupPrepend3"
+                  required
+                />
+                <div class="invalid-feedback" style="color: #639B97;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="app" style>
       <div class="header">
         <!-- <div style="margin-right:px">
           <button
@@ -10,7 +62,7 @@
           >items {{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
         </div>-->
         <div style=" position:fixed; z-index:200" class="but">
-          <v-btn class="ma-2" tile color="success"   v-if="quantity>=1">
+          <v-btn class="ma-2" tile color="success" v-if="quantity>=1">
             <v-icon left style="color:orange">mdi-cart</v-icon>
             <span
               class="badge badge"
@@ -124,7 +176,7 @@
         </hooper>
         <div v-show="!verified">
           <div class="row">
-            <div 
+            <div
               style="width: 361px;
 height: 29px;
 left: 98px;
@@ -133,37 +185,43 @@ color: #092E2B;
 font-family: SF UI Display;
 font-style: normal;
 font-weight: 800;
-font-size: 40px;
+font-size: 30px;
 line-height: 29px;
 display: flex;
 padding-bottom:40px;
 align-items: center;
 text-align: center"
-            >Trending Now <div style="font-family: SF UI Display;
+            >
+              Trending Now
+              <div
+                style="font-family: SF UI Display;
 font-style: normal;
 font-weight: 600;
 font-size: 17px;
 line-height: 17px;
 margin-left:20px;
-color: #FF8A00;">See More</div> </div>
-             
-          
+color: #FF8A00;"
+              >See More</div>
+            </div>
           </div>
 
           <div class="row">
             <div v-for="(item,i) in shop" :key="i">
               <div class="card m-3" style="width: 15.5rem;">
-                <v-img style=" max-width:100%; height: 15vw;
-    object-fit: contain; " class="white--text align-end"  v-bind:src="item.imagesPath"></v-img>
+                <v-img
+                  style=" max-width:100%; height: 15vw;
+    object-fit: contain; "
+                  class="white--text align-end"
+                  v-bind:src="item.imagesPath"
+                ></v-img>
                 <div class="card-body">
                   <div style>
-                    <div
-                      class="card-title"
-                      style="left: 9.96%;font-size:15px;color: #092E2B;"
-                    > <strong>{{ item.title }}</strong> </div>
+                    <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
+                      <strong>{{ item.title }}</strong>
+                    </div>
                     <div style="left: 9.95%;font-size:10px;right: 31.22%;color: #639B97;">
-                     By Austin MAikano
-                      <hr style="margin:5px; border: 1px solid ;"  />Comics
+                      By Austin MAikano
+                      <hr style="margin:5px; border: 1px solid ;" />Comics
                     </div>
                   </div>
 
@@ -181,7 +239,7 @@ color: #FF8A00;">See More</div> </div>
                     data-toggle="modal"
                     data-target="#exampleModal"
                     @click="openModal(item)"
-                  >more..</button> -->
+                  >more..</button>-->
 
                   <!-- Modal -->
                   <div
@@ -243,15 +301,26 @@ color: #FF8A00;">See More</div> </div>
                     </div>
                   </div>
                 </div>
-                <div style="width:100%"  data-toggle="modal"
-                    data-target="#exampleModal"  @click="openModal(item)">
+                <div
+                  style="width:100%"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  @click="openModal(item)"
+                >
                   <div
                     class="row"
                     style="font-size:15px; width:100%;  background: #CAD9D8; margin:0px"
                   >
                     <div class="col-3">
-                      <v-icon size="20" color="#1B6761" right style="padding-right:10px"  data-toggle="modal"
-                    data-target="#exampleModal"  @click="openModal(item)">mdi-cart</v-icon>
+                      <v-icon
+                        size="20"
+                        color="#1B6761"
+                        right
+                        style="padding-right:10px"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        @click="openModal(item)"
+                      >mdi-cart</v-icon>
                     </div>
                     <div class="col-4">
                       <v-icon size="20" color="#1B6761" right style="padding-right:10px">mdi-star</v-icon>
@@ -641,6 +710,9 @@ li {
   }
   .container {
     padding-top: 100px;
+  }
+  .conts {
+    background-image: url("../assets/bookIDE.jpg");
   }
 }
 </style>
