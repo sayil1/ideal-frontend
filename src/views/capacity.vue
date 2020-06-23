@@ -4,21 +4,22 @@
 
 
       <div class>
-      <div class="conts">
+        <div class="conts" style="padding-top:40px">
+ <div class="conts">
         <div
           class="card-body"
-          style="background: linear-gradient(69.97deg, #092E2B 8.35%, rgba(9, 46, 43, 0.08) 88.57%); height:400px;   position: relative;"
+          style="; height:500px;   position: relative;"
         >
           <div style="margin-top:50px ; ">
             <span
               class
               style="  margin: 0;
   position: absolute;
-  top: 40%;
+  top: 25%;
   font-family: SF UI Display;
 font-style: normal;
 font-weight: bold;
-font-size: 40px;
+font-size: 70px;
 padding-left:150px;
 color:white"
             >
@@ -27,6 +28,8 @@ color:white"
           </div>
         </div>
       </div>
+        </div>
+     
     </div>
      <div class="body" style="background: #F6F6F6">
       <div class="row" style="background-color:rgb(255, 255, 255)">
@@ -51,7 +54,7 @@ letter-spacing: 0.02em;"
         </div>
       </div>
     </div>
-     <div class="row car-text first" style="padding:50px; padding-left:90px">
+     <div class="row car-text first body-text" style="" >
       <div class="col-md-4">
         <img
           src="../assets/black.jpg"
@@ -90,7 +93,7 @@ letter-spacing: 0.02em;"
       
     </div>
   <hr style="border: 0.5px solid #639B97;" />
-     <div class="row car-text first" style="padding:50px; padding-left:90px">
+     <div class="row car-text first body-text" style="">
       <div class="col-md-4">
         <img
           src="../assets/black.jpg"
@@ -127,7 +130,7 @@ letter-spacing: 0.02em;"
       </div>
     </div>
     <hr style="border: 0.5px solid #639B97;" />
-     <div class="row car-text first" style="padding:50px; padding-left:90px">
+     <div class="row car-text first body-text" style="">
       <div class="col-md-4">
         <img
           src="../assets/black.jpg"
@@ -240,8 +243,8 @@ template {
 
 @media only screen and (max-width: 400px) {
   .first {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   .car {
     font-size: 2px;
@@ -260,6 +263,12 @@ template {
   .cont {
     padding-top: 200px;
   }
+   .body-text{
+    padding:40px;
+     padding-left:auto
+   
+  }
+  
 }
 
 /* Tablet Styles */
@@ -299,6 +308,12 @@ template {
   }
   .cont {
     padding-top: 100px;
+  }
+  .conts {
+    background-image: url("../assets/capacityIDE1.png");
+  }
+  .body-text{
+    padding:50px; padding-left:90px
   }
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div style>
+  <div>
     <nava />
-    <div class="aboutTop">
-      <img src="../assets/aboutIDE.jpg" alt style="height:100%;
+    <div class="aboutTop" style="padding-top:65px" >
+      <img src="../assets/aboutIDE.png" alt style="height:auto;
       width:100%" />
     </div>
     <div>
@@ -272,29 +272,46 @@ template {
 }
 
 @media only screen and (max-width: 400px) {
+
   p {
     font-family: "Alegreya", serif;
-    padding-left: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 16px;
   }
   .card1 {
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
   }
   .card2 {
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
   }
   .card3 {
     margin-left: auto;
     margin-right: auto;
+    height: 100%;
   }
-  .car-head {
-    margin-top: 20px;
-    margin-bottom: -50px;
+  .goals {
+    background: white;
+    margin-left: 0px;
   }
-  .hr {
-    padding-top: -60px;
-    font-size: 20px;
+  .card1 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .card2 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .card3 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
   }
 }
 
@@ -320,7 +337,7 @@ template {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .aboutTop {
-    height: 500px;
+    height: 537px;
   }
   p {
     font-family: "Alegreya", serif;
@@ -342,8 +359,6 @@ template {
     margin-left: 0px;
     margin-right: auto;
     height: 100%;
-  }
-  .car-head {
   }
   .goals {
     background: white;

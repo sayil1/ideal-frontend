@@ -4,21 +4,21 @@
 
     <!-- card -->
     <div class>
-      <div class="conts">
+      <div class="conts" style="padding-top:40px">
         <div
           class="card-body"
-          style="background: linear-gradient(69.97deg, #092E2B 8.35%, rgba(9, 46, 43, 0.08) 88.57%); height:400px;   position: relative;"
+          style=" height:500px;   position: relative;"
         >
           <div style="margin-top:50px ; ">
             <span
               class
               style="  margin: 0;
   position: absolute;
-  top: 40%;
+  top: 25%;
   font-family: SF UI Display;
 font-style: normal;
 font-weight: bold;
-font-size: 40px;
+font-size: 60px;
 padding-left:150px;
 color:white"
             >
@@ -51,26 +51,26 @@ letter-spacing: 0.02em;"
                 <br />
                 <br />
                 <strong>Building true sportsmanship-</strong>
-                we encourage children and youth through sporting activities to learn to act with fairness and empathy, acquire life skills such as teamwork, leadership, problem solving and interpersonal skill. Building self-esteem, improving academic performance, and a sense of hope for the youth.
+                we encourage children and youth through sporting activities to learn to act with fairness and empathy, acquire life skills such as teamwork, leadership, problem solving and interpersonal skill. Building self-esteem, improving academic performance, and a sense of hope for the youth. <br>
+                We are recording lesser cases of drop-outs and higher aspiration to further studies.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="row car-text first" style="padding:50px; padding-left:90px">
-      <div class="col-md-4">
+    <div class="row body-text car-text first" style="">
+      <div class="col-md-3" style="margin:auto" >
         <img
-          src="../assets/black.jpg"
+        class="responsiveIM"
+          src="../assets/sport2IDE.png"
           alt
-          style="width: 301px;
-height: 228px;
-color: #092E2B;
-left: 470px;transform: matrix(-1, 0, 0, 1, 0, 0);
-"
+         width="301px" height="380.81px"
+
+
         />
       </div>
-      <div class="col-md-8">
+      <div class="col-md-9">
         <div
           style="font-family: SF UI Display;
 font-style: normal;
@@ -105,8 +105,7 @@ letter-spacing: 0.02em;"
     <hr style="border: 0.5px solid #639B97;" />
     <div class="body" style="padding-top:20px">
       <div style>
-        <img src="../assets/black.jpg" alt style="width: 100%;
-height: 400px;" />
+        <img class="responsiveIM" src="../assets/sportIDE.png" alt style="" />
       </div>
 
       <div
@@ -254,6 +253,10 @@ export default {
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
 }
+.responsiveIM {
+  width: 100%;
+  height: auto;
+}
 
 @media only screen and (max-width: 400px) {
   .body {
@@ -279,6 +282,11 @@ export default {
     text-align: left;
   }
   .cont {
+  }
+  .body-text{
+    padding:40px;
+     padding-left:auto
+   
   }
 }
 
@@ -319,7 +327,10 @@ export default {
     font-family: "Alegreya";
   }
   .conts {
-    background-image: url("../assets/black.jpg");
+    background-image: url("../assets/sport3IDE.png");
+  }
+  .body-text{
+    padding:50px; padding-left:90px
   }
 }
 </style>

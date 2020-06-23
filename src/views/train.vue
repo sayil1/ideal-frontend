@@ -3,52 +3,31 @@
     <nava />
 
     <div class>
-      <div
-        class="card-body"
-        style="background: linear-gradient(69.97deg, #092E2B 8.35%, rgba(9, 46, 43, 0.08) 88.57%); height:400px;   position: relative;"
+      <div class="conts" style="padding-top:40px">
+          <div
+        class="card-body "
+        style=" height:500px;   position: relative;"
       >
         <div style="margin-top:50px ; ">
           <span
             class
             style="  margin: 0;
   position: absolute;
-  top: 40%;
+  top: 25%;
   font-family: SF UI Display;
 font-style: normal;
 font-weight: bold;
-font-size: 40px;
+font-size: 60px;
 padding-left:150px;
 color:white"
           >
-          Train-The-trainer <br> Workshop
+            Train-The-trainer
+            <br />Workshop
           </span>
         </div>
       </div>
-    </div>
-
-    <div class="body" style="background: #F6F6F6">
-      <div class="row" style="background-color:rgb(255, 255, 255)">
-        <div class="col-sm-12 col-md-12">
-          <div class="first" style>
-            <div class>
-              <p
-                class="car-text first"
-                style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-              >Our Train-the-trainer designed workshops meet trainers' needs, improve and professionalize in their career path. <br> The Institute of Commercial Management (ICM) UK- is a leading professional body It is providing qualifications at Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma levels that is recognized globally in business, management and related vocations..</p>
-            </div>
-          </div>
-        </div>
       </div>
-
-      <img src="../assets/black.jpg" alt style="width: 100%;
-height: 400px; padding-top:80px" />
+    
     </div>
 
     <div class="body" style="background: #F6F6F6">
@@ -67,9 +46,41 @@ line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
               >
-              <strong>Train-the-trainers</strong>  <br> We are empowering Trainers with the knowledge, abilities, and attitudes, in an integrated way needed for the development of their vocation. <br> <br>
-              <strong> How IDEaL is improving the training of trainers</strong> <br>
-               At IDEaL, we understand that trainers transform lives. Hence, we have taken actions in prioritizing trainers' training, offering bespoke and tailor-made support and development Programmes for organizations. <br> We consider that a learner’s education can only ever be as good as their instructor(s); hence it’s vital that trainers not only need to know what to teach but how to teach. 
+                Our Train-the-trainer designed workshops meet trainers' needs, improve and professionalize in their career path.
+                The Institute of Commercial Management (ICM) UK- is a leading professional body It is providing qualifications at Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma levels that is recognized globally in business, management and related vocations..
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img src="../assets/train2IDE.png" alt style="width: 100%;
+ " />
+    </div>
+
+    <div class="body" style="">
+      <div class="row" style="background-color:rgb(255, 255, 255)">
+        <div class="col-sm-12 col-md-12">
+          <div class="first" style>
+            <div class>
+              <p
+                class="car-text first"
+                style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+              >
+                <strong>Train-the-trainers</strong>
+                <br />We are empowering Trainers with the knowledge, abilities, and attitudes, in an integrated way needed for the development of their vocation.
+                <br />
+                <br />
+                <strong>How IDEaL is improving the training of trainers</strong>
+                <br />At IDEaL, we understand that trainers transform lives. Hence, we have taken actions in prioritizing trainers' training, offering bespoke and tailor-made support and development Programmes for organizations.
+                <br />We consider that a learner’s education can only ever be as good as their instructor(s); hence it’s vital that trainers not only need to know what to teach but how to teach.
               </p>
             </div>
           </div>
@@ -131,30 +142,10 @@ export default {
 </script>
 
 <style scoped lang="css">
-template {
-  margin-left: 40px;
-  margin-right: 40px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+.responsiveIM {
+  width: 100%;
+  height: auto;
 }
-.div1 {
-  background-image: url("../assets/profb.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
-  background-size: cover;
-}
-.darken-pseudo:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.body {
-  margin: 50px;
-}
-
 @media only screen and (max-width: 400px) {
   .first {
     /* padding: 30px; */
@@ -200,7 +191,7 @@ template {
     padding-right: 40px;
   } */
   .car {
-    padding: 30px;
+    padding: 10px;
   }
   .car-head {
     font-size: 34px;
@@ -218,10 +209,11 @@ template {
     font-family: "Alegreya";
   }
   .conts {
-    background-image: url("../assets/black.jpg");
+    background-image: url("../assets/trainIDE2.png");
+
   }
-  img{
-     padding-top:80px
+  img {
+    padding-top: 80px;
   }
 }
 </style>

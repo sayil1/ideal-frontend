@@ -4,7 +4,6 @@
     <nav2 />
 
     <header style="width:100%; ">
-   
       <div>
         <div style="padding:5px; " class="arch">
           <div class="carouselHolder">
@@ -24,9 +23,7 @@
                         <div
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
-                        >
-                       
-                        </div>
+                        ></div>
                         <div class="text-center"></div>
                       </div>
                     </div>
@@ -44,7 +41,7 @@
                         >
                           <br />
                           <br />
-                         
+
                           <br />
                         </div>
                         <div class="text-center"></div>
@@ -61,7 +58,7 @@
                         <div class="card-text white--text font-weight-regular">
                           <br />
                           <br />
-                         
+
                           <br />
                         </div>
                         <div class="text-center"></div>
@@ -81,7 +78,6 @@
                         >
                           <br />
                           <br />
-                        
 
                           <br />
                         </div>
@@ -102,7 +98,6 @@
                         >
                           <br />
                           <br />
-                        
 
                           <br />
                         </div>
@@ -123,7 +118,7 @@
                         >
                           <br />
                           <br />
-                      
+
                           <br />
                         </div>
                         <div class="text-center"></div>
@@ -295,29 +290,29 @@ letter-spacing: 0.02em;  "
           <br />
 
           <div class="row" style="text-align:center">
-            <div class="col-md-2 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-school</v-icon>
               <!-- <i class="material-icons outlined" style=" font-size: 50px; outline" >school</i> -->
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Books</div>
             </div>
 
-            <div class="col-md-2 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-tshirt-v-outline</v-icon>
               <div class="demo-content" style="color:#FF8A00;margin-top:10px">Uniforms</div>
             </div>
-            <div class="col-md-2 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-cash</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">Fees</div>
             </div>
-            <div class="col-md-2 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-home-city-outline</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Renovations</div>
             </div>
-            <div class="col-md-2 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-teach</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">Training</div>
             </div>
-            <div class="col-md-2 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-server-network</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">Computer Server</div>
             </div>
@@ -530,19 +525,13 @@ font-size: 48px; "
         </hooper>
       </template>
     </section>
-    <div class="form" style="margin-bottom:50px">
-      <div
-        style="font-family: SF UI Display;
-font-style: normal;
-font-weight: bold;
-font-size: 36px;
-padding:50px"
-      >
+    <div class style="margin-bottom:5px">
+      <div class="form" style>
         GET UPDATES
         <hr style="color:orange; width:700px; margin-left:9px; border: 2px solid #FF8A00;" />
       </div>
 
-      <form action style="width:50%; margin-left:100px;" class="row">
+      <form action style class="row form-inputs">
         <div class="col-md-12">
           <label
             for="exampleFormControlInput1"
@@ -579,14 +568,8 @@ font-size: 13px;"
             style="background-color:#CAD9D8"
           />
           <br />
-          <span
-            style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 500;
-font-size: 13px;"
-          >Subscribe to Email Updates</span>
         </div>
-        <div class="col-md-5">
+        <div class="col-md-5 col-sm-12">
           <label
             for="exampleFormControlInput1"
             style="font-family: SF UI Display;
@@ -604,15 +587,8 @@ font-size: 13px;"
             style="background-color:#CAD9D8"
           />
         </div>
-        <div style="padding-left:15px; padding-top:30px">
-          <span
-            style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 16px;
-letter-spacing: 0.015em;"
-          >By submitting this form, you agree to the iDeal-IT Privacy Policy</span>
+
+        <!-- <div style="padding-left:15px; padding-top:30px">
           <br />
           <button
             type="button"
@@ -620,9 +596,24 @@ letter-spacing: 0.015em;"
             style="background-color:#092E2B"
             v-on:click="submit"
           >SUBSCRIBE</button>
-        </div>
+        </div>-->
       </form>
+
+      <div style="" class="subscribe">
+        <div>
+          By submitting this form, you agree to the iDeal-IT Privacy Policy
+          <br />
+          <br /> <br>
+        </div>
+
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">Subscribe to Email Updates</label>
+        </div>
+        <button type="submit" style="background: #092E2B; padding:10px" class="btn white--text">SUBSCRIBE</button>
+      </div>
     </div>
+
     <foota></foota>
   </div>
 </template>
@@ -777,7 +768,7 @@ header {
 }
 .arch {
   /* background-image: url("../assets/arch.jpg"); */
-  background-color: aquamarine
+  /* background-color: ; */
 }
 
 .board {
@@ -807,7 +798,7 @@ header {
   height: 50px;
 }
 .div1 {
-  background-image: url("../assets/imgbook.jpg");
+  background-image: url("../assets/slide1IDE.jpg");
   background-size: cover;
 }
 .div2 {
@@ -835,34 +826,81 @@ header {
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+  body {
+    background-color: #1a68c2; /* Blue */
+  }
   .car {
-    font-size: 2px;
-    margin: 0px;
+    padding: 60px;
   }
   .car-head {
-    font-size: 18px;
+    font-size: 34px;
     color: orange;
     text-align: center;
-    padding-top: 50px;
+    padding-bottom: 80px;
     font-family: "lora";
   }
   .car-text {
-    font-size: 16px;
+    font-size: 21px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    height: 40px;
-    padding-top: 20px;
+    height: 100%;
+    padding: 10px;
     text-align: center;
-    font-family: "roboto";
+    border-radius: 45px;
+    font-family: "Alegreya";
   }
-  .cov {
-    background-color: rgba(21, 22, 21, 0.9);
-    padding-top: 0px;
+  p {
+    font-family: "Alegreya", serif;
+
+    font-size: 16px;
   }
-  .caro {
-    margin-top: px;
+  .card1 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
   }
-  .news {
-    margin-top: 100px;
+  .card2 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .card3 {
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+  .car-head {
+    margin-top: 60px;
+  }
+  .goals {
+    background: rgba(27, 103, 97, 0.2);
+    margin-left: 5px;
+  }
+  .smallCards {
+    width: 70px;
+    height: 20px;
+    background-color: #1b6761;
+    margin: 5px;
+    padding: 0px;
+  }
+  .small {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    margin-left: 15%;
+    margin-right: auto;
+  }
+  .form {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    padding: 2px;
+  }
+  .form-inputs {
+    width: 80%;
+    margin-left: 40px;
+  }
+  .subscribe{
+    padding-left:60px; margin-bottom:90px
   }
 }
 
@@ -876,7 +914,7 @@ header {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   body {
-    background-color: #b2d6ff; /* Blue */
+    background-color: #194d8a; /* Blue */
   }
   .car {
     padding: 60px;
@@ -936,6 +974,20 @@ header {
     margin-bottom: 90px;
     margin-left: 15%;
     margin-right: auto;
+  }
+  .form {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    padding-left: 50px;
+  }
+  .form-inputs {
+    width: 50%;
+    margin-left: 100px;
+  }
+  .subscribe{
+    padding-left:110px; margin-bottom:90px
   }
 }
 </style>

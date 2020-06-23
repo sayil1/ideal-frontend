@@ -3,26 +3,25 @@
     <nava />
 
     <div class>
-      <div
-        class="card-body"
-        style="background: linear-gradient(69.97deg, #092E2B 8.35%, rgba(9, 46, 43, 0.08) 88.57%); height:400px;   position: relative;"
-      >
-        <div style="margin-top:50px ; ">
-          <span
-            class
-            style="  margin: 0;
+      <div class="conts" style="padding-top:40px">
+        <div class="card-body" style=" height:500px;   position: relative;">
+          <div style="margin-top:50px ; ">
+            <span
+              class
+              style="  margin: 0;
   position: absolute;
-  top: 40%;
+  top: 25%;
   font-family: SF UI Display;
 font-style: normal;
 font-weight: bold;
-font-size: 40px;
+font-size: 60px;
 padding-left:150px;
 color:white"
-          >
-            Digital
-            <br />Inclusion
-          </span>
+            >
+              Digital
+              <br />Inclusion
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -69,16 +68,16 @@ text-align: justify;
 letter-spacing: 0.02em;"
               >
                 We work to ensure Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) to participate in and benefit from today's growing knowledge and information society. IDEaL’s Digital inclusion actions cover the gap in these areas:
-                <br />
                 <br />We promote digital inclusion in various ways:
                 <br />
-                <br />• Providing free access to digital technologies including hardware and software. GCFLearnFree
+
+                <br />•Providing free access to digital technologies including hardware and software. GCFLearnFree.
                 <br />
-                <br />• Improving digital literacy skills through practical training programs and workshops.
+                <br />•Improving digital literacy skills through practical training programs and workshops.
                 <br />
-                <br />• Creating a more digitally savvy consumer and workforce.
+                <br />•Creating a more digitally savvy consumer and workforce.
                 <br />
-                <br />• Providing Accessibility services designed to meet users’ needs, including those dependent on assistive technology to access digital services.
+                <br />•Providing Accessibility services designed to meet users’ needs, including those dependent on assistive technology to access digital services.
               </p>
             </div>
           </div>
@@ -227,10 +226,11 @@ template {
     font-family: "Alegreya";
   }
   .conts {
-    background-image: url("../assets/black.jpg");
+    background-image: url("../assets/digitIDE1.png");
+    height: auto;
   }
-  img{
-     padding-top:80px
+  img {
+    padding-top: 80px;
   }
 }
 </style>
