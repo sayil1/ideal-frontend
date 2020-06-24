@@ -2,12 +2,11 @@
   <div>
     <nava />
     <div class="aboutTop" style="padding-top:65px" >
-      <img src="../assets/aboutIDE.png" alt style="height:auto;
-      width:100%" />
+      <img class="aboutIMG" src="../assets/aboutIDE3.jpg" alt style="" />
     </div>
     <div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h1
             class
             style="font-family: SF UI Display;
@@ -21,7 +20,7 @@ padding:50px"
             <br />iDeal-IT
           </h1>
         </div>
-        <div style="; padding-top:20px" class="col-md-8 col-sm-12">
+        <div style="; padding-top:20px" class="col-md-9 col-sm-12">
           <div class="row">
             <div class="col-sm-12 col-md-12">
               <p
@@ -58,7 +57,7 @@ letter-spacing: 0.02em;"
                   <div
                     class="text-left"
                     style="padding:10px; color:#1B6761"
-                  >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless..</div>
+                  >Primarily we are working to improve the living standards of people by providing information, support and services that meet today's educational need  and solve the human capacity challenges using  ICT a strategic lever for building a knowledge-based society..</div>
                 </div>
               </div>
             </div>
@@ -89,7 +88,7 @@ letter-spacing: 0.02em;"
                   <div
                     class="text-left white--text"
                     style="padding:20px"
-                  >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</div>
+                  >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</div>
                 </div>
               </div>
             </div>
@@ -313,6 +312,10 @@ template {
     margin-right: auto;
     height: 100%;
   }
+   .aboutIMG{
+    height:auto;
+      width:100%
+  }
 }
 
 /* Tablet Styles */
@@ -378,6 +381,13 @@ template {
     margin-left: -60px;
     margin-right: auto;
     height: 100%;
+  }
+  .aboutIMG{
+        height:120%;
+      width:100%;
+      position: cover;
+      margin-top:-100px;
+    
   }
 }
 </style>

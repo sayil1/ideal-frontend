@@ -2,39 +2,21 @@
   <div style="background-color:">
     <nava />
 
-
-      <div class>
-        <div class="conts" style="padding-top:40px">
- <div class="conts">
-        <div
-          class="card-body"
-          style="; height:500px;   position: relative;"
-        >
-          <div style="margin-top:50px ; ">
-            <span
-              class
-              style="  margin: 0;
-  position: absolute;
-  top: 25%;
-  font-family: SF UI Display;
-font-style: normal;
-font-weight: bold;
-font-size: 70px;
-padding-left:150px;
-color:white"
-            >
-             Capacity <br> Development
-            </span>
-          </div>
+    <div class="hold-header">
+      <div class="conts">
+        <div class="header">
+          <span class="header-text" style=" ">
+            Capacity
+            <br />Development
+          </span>
         </div>
       </div>
-        </div>
-     
     </div>
-     <div class="body" style="background: #F6F6F6">
+
+    <div class="body" style="background: #F6F6F6">
       <div class="row" style="background-color:rgb(255, 255, 255)">
         <div class="col-sm-12 col-md-12">
-          <div class="first" style>
+          <div class style>
             <div class>
               <p
                 class="car-text first"
@@ -47,14 +29,15 @@ line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
               >
-              We focus on increasing organizations' strength by measuring internal successes, constraints and external impacts. We help teams to build and maintain strong foundations for projects, as well as promote strategic relationships. We put effort into capacity development techniques that enable individuals and establishments to acquire, develop capacities, and retain their abilitiesKnowledgege, tools, and other resources needed to carry out their jobs competently. Our methodology focuses on expertly blending best training practices with tailor-made strategies suited for clients' readiness and commitment to achieving sustainability and long-term success.
+                We focus on increasing organizations' strength by measuring internal successes, constraints and external impacts. We help teams to build and maintain strong foundations for projects, as well as promote strategic relationships. We put effort into capacity development techniques that enable individuals and establishments to acquire, develop capacities, and retain their abilitiesKnowledgege, tools, and other resources needed to carry out their jobs competently.
+                <br />Our methodology focuses on expertly blending best training practices with tailor-made strategies suited for clients' readiness and commitment to achieving sustainability and long-term success.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
-     <div class="row car-text first body-text" style="" >
+    <div class="row car-text first body-text" style>
       <div class="col-md-4">
         <img
           src="../assets/black.jpg"
@@ -85,15 +68,11 @@ font-size: 18px;
 line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
-        >
-         We help corporate bodies, government parastatals and communities effectively implement strategies to identify existing strengths and determine the gaps. We are skilled in carrying out researches, data collection services, executing programmes, monitoring, evaluation and reporting services that assist in building capacities. 
-        </div>
-      
+        >We help corporate bodies, government parastatals and communities effectively implement strategies to identify existing strengths and determine the gaps. We are skilled in carrying out researches, data collection services, executing programmes, monitoring, evaluation and reporting services that assist in building capacities.</div>
       </div>
-      
     </div>
-  <hr style="border: 0.5px solid #639B97;" />
-     <div class="row car-text first body-text" style="">
+    <hr style="border: 0.5px solid #639B97;" />
+    <div class="row car-text first body-text" style>
       <div class="col-md-4">
         <img
           src="../assets/black.jpg"
@@ -113,7 +92,10 @@ font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 108.34%;"
-        > Good governance <br> and leadership training</div>
+        >
+          Good governance
+          <br />and leadership training
+        </div>
         <br />
         <div
           style="font-family: SF UI Display;
@@ -125,12 +107,20 @@ line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
         >
-         We offer training and consultancy services in good governance and leadership. They are both inextricably intertwined in building our society. On completion of courses in this category, participants should be able to: <br> <br> • analyze and learn how to use new tools for best practices <br> <br> • Understand emerging trends and practices. <br> <br> • Share, simulate and learn with experts viewpoint about the challenges <br> <br> • Become an agent of change 
+          We offer training and consultancy services in good governance and leadership. They are both inextricably intertwined in building our society. On completion of courses in this category, participants should be able to:
+          <br />
+          <br />• analyze and learn how to use new tools for best practices
+          <br />
+          <br />• Understand emerging trends and practices.
+          <br />
+          <br />• Share, simulate and learn with experts viewpoint about the challenges
+          <br />
+          <br />• Become an agent of change
         </div>
       </div>
     </div>
     <hr style="border: 0.5px solid #639B97;" />
-     <div class="row car-text first body-text" style="">
+    <div class="row car-text first body-text" style>
       <div class="col-md-4">
         <img
           src="../assets/black.jpg"
@@ -162,11 +152,29 @@ line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
         >
-      Our educational and professional development programmes for all staff play a crucial role in an organization's success. Sustaining a dutiful and well-qualified workforce is an essential function of management. We can assist organizations’ in achieving this for their employees through a variety of activities: <br> <br> • Implement bespoke training by exploring challenges inhibiting employees' work performance and team dynamics. <br><br> • We evaluate the specific and or collective strengths and capabilities of members of staff. <br><br> • We create platforms that to boost management's capacity in recognizing and dealing with challenges faced their workforce <br><br> • We develop applications and programmes for welfare schemes that will advance staff performance.
+          Our educational and professional development programmes for all staff play a crucial role in an organization's success. Sustaining a dutiful and well-qualified workforce is an essential function of management. We can assist organizations’ in achieving this for their employees through a variety of activities:
+          <br />
+          <br />• Implement bespoke training by exploring challenges inhibiting employees' work performance and team dynamics.
+          <br />
+          <br />• We evaluate the specific and or collective strengths and capabilities of members of staff.
+          <br />
+          <br />•We create platforms that to boost management's capacity in recognizing and dealing with challenges faced their workforce.
+          <br />
+          <br />•We develop applications and programmes for welfare schemes that will advance staff performance.
+          <br />
+          <br />
         </div>
-      
       </div>
-      
+      <div
+        style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+      >Our experts are savvy in organizational growth, training and team dynamics and participants have gotten value from our ability to ascertain short- and long-term performance interventions that are concrete and applicable to any work environment.</div>
     </div>
     <foota />
   </div>
@@ -222,53 +230,33 @@ export default {
 </script>
 
 <style scoped lang="css">
-template {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.div1 {
-  background-image: url("../assets/profb.jpg");
-  /* background: rgba(21, 22, 21, 0.1); */
-  background-size: cover;
-}
-.darken-pseudo:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
 @media only screen and (max-width: 400px) {
   .first {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-top: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
-  .car {
-    font-size: 2px;
-    margin: 0px;
+
+  .conts {
+    background-image: url("../assets/capacityIDE1.png");
+    background-size: contain;
+    background-position: center center;
   }
-  .car-head {
+  .header {
+    height: 250px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
     font-size: 20px;
-    color: black;
-    text-align: center;
+    padding-left: 30px;
+    color: white;
   }
-  .car-text {
-    font-size: 14px;
-    text-align: left;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-  }
-  .cont {
-    padding-top: 200px;
-  }
-   .body-text{
-    padding:40px;
-     padding-left:auto
-   
-  }
-  
 }
 
 /* Tablet Styles */
@@ -280,29 +268,15 @@ template {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  
-
-  body {
-    background-color: #b2d6ff; /* Blue */
-  }
   .first {
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
   }
   .car {
-    padding: 30px;
   }
-  .car-head {
-    font-size: 34px;
-    text-align: center;
-    font-family: "Lora";
-  }
+
   .car-text {
-    font-size: 21px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    height: 100%;
-    padding: 10px;
     font-family: "Alegreya";
     text-align: left;
   }
@@ -312,8 +286,27 @@ template {
   .conts {
     background-image: url("../assets/capacityIDE1.png");
   }
-  .body-text{
-    padding:50px; padding-left:90px
+  .body-text {
+    padding: 50px;
+    padding-left: 90px;
+  }
+  .header {
+    height: 500px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    padding-left: 150px;
+    color: white;
+  }
+  .hold-header {
+    padding-top: 70px;
   }
 }
 </style>

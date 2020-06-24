@@ -684,6 +684,11 @@ li {
   .container {
     padding-top: 120px;
   }
+  .conts {
+    background-image: url("../assets/bookIDE.jpg");
+    background-size: contain;
+    background-position: center center;
+  }
 }
 
 /* Tablet Styles */

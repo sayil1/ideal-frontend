@@ -3,21 +3,10 @@
     <nava />
 
     <div class>
-      <div class="conts" style="padding-top:40px">
-        <div class="card-body" style=" height:500px;   position: relative;">
-          <div style="margin-top:50px ; ">
-            <span
-              class
-              style="  margin: 0;
-  position: absolute;
-  top: 25%;
-  font-family: SF UI Display;
-font-style: normal;
-font-weight: bold;
-font-size: 60px;
-padding-left:150px;
-color:white"
-            >
+      <div class="hold-header">
+        <div class="conts" style="padding-top:40px">
+          <div class="header">
+            <span class="header-text">
               Digital
               <br />Inclusion
             </span>
@@ -164,26 +153,31 @@ template {
 }
 
 @media only screen and (max-width: 400px) {
-  .first {
-    /* padding: 30px; */
+.first {
+    padding-top: 0px;
+    padding-left: 1px;
+    padding-right: 1px;
   }
-  .car {
-    margin: 0px;
+
+  .conts {
+    background-image: url("../assets/digitIDE1.png");
+    background-size: contain;
+    background-position: center center;
   }
-  .car-head {
+  .header {
+    height: 250px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
     font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 50px;
-    font-family: "lora";
-  }
-  .car-text {
-    font-size: 14px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 10px;
-    text-align: left;
-  }
-  .cont {
-    padding-top: 200px;
+    padding-left: 30px;
+    color: white;
   }
 }
 
@@ -196,41 +190,45 @@ template {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .body {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-  }
-
-  /* .first {
+  .first {
     padding-top: 20px;
     padding-left: 40px;
     padding-right: 40px;
-  } */
+  }
   .car {
-    padding: 30px;
   }
-  .car-head {
-    font-size: 34px;
-    text-align: center;
-    font-family: "Lora";
-  }
+
   .car-text {
-    font-size: 21px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-    border-radius: 45px;
-    text-align: left;
     font-family: "Alegreya";
+    text-align: left;
+  }
+  .cont {
+    padding-top: 100px;
   }
   .conts {
     background-image: url("../assets/digitIDE1.png");
-    height: auto;
   }
-  img {
-    padding-top: 80px;
+  .body-text {
+    padding: 50px;
+    padding-left: 90px;
+  }
+  .header {
+    height: 500px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    padding-left: 150px;
+    color: white;
+  }
+  .hold-header {
+    padding-top: 70px;
   }
 }
 </style>

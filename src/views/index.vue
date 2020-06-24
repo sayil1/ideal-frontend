@@ -13,7 +13,6 @@
               cycle
               style="max-height:450px"
               show-arrows-on-hover
-              class="caro"
             >
               <v-carousel-item class="div1">
                 <div style="; height:100%" class="cov">
@@ -30,7 +29,7 @@
                   </div>
                 </div>
               </v-carousel-item>
-              <v-carousel-item class="div1">
+              <v-carousel-item class="div2">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -50,7 +49,7 @@
                   </div>
                 </div>
               </v-carousel-item>
-              <v-carousel-item class="div2">
+              <v-carousel-item class="div3">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -67,7 +66,7 @@
                   </div>
                 </div>
               </v-carousel-item>
-              <v-carousel-item class="div3">
+              <v-carousel-item class="div4">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -87,26 +86,7 @@
                   </div>
                 </div>
               </v-carousel-item>
-              <v-carousel-item class="div4">
-                <div style="; height:100%" class="cov">
-                  <div class="card-size">
-                    <div class="card-body">
-                      <div style="margin-top:90px ; ">
-                        <div
-                          class="card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
-                        >
-                          <br />
-                          <br />
-
-                          <br />
-                        </div>
-                        <div class="text-center"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </v-carousel-item>
+              
               <v-carousel-item class="div5">
                 <div style="height:100%" class="cov">
                   <div class="card-size">
@@ -129,17 +109,17 @@
               </v-carousel-item>
             </v-carousel>
             <div class="board">
-              <div class="row">
-                <div class="col-md-3" style="text-align:center">
+               <div class="row">
+                <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
                 </div>
-                <div class="col-md-3" style="text-align:center">
+                <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
                 </div>
-                <div class="col-md-3" style="text-align:center">
+                <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right>mdi-instagram</v-icon>
                 </div>
-                <div class="col-md-3" style="text-align:center">
+                <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right>mdi-linkedin</v-icon>
                 </div>
               </div>
@@ -154,14 +134,14 @@
         <div class="col-md-4 col-sm-12">
           <div class="card1" style="background: #1B6761; width:75%; ">
             <v-icon large color="white darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
-            <div class="-header text-center p-3">
+            <div class="-header text-left p-3">
               <h3 class="white--text bold">OUR MAJOR GOAL</h3>
               <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid white;" />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
               <div
-                class="text-center white--text"
+                class="text-left white--text p-3"
                 style="padding:10px"
               >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless..</div>
             </div>
@@ -177,7 +157,7 @@
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
               <div
-                class="text-center white--text"
+                class="text-left white--text p-3"
               >Develop individuals and communities towards a knowledge-based society.</div>
             </div>
           </div>
@@ -193,7 +173,7 @@
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
               <div
-                class="text-center white--text"
+                class="text-left white--text p-3"
                 style="padding:10px"
               >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</div>
             </div>
@@ -290,29 +270,29 @@ letter-spacing: 0.02em;  "
           <br />
 
           <div class="row" style="text-align:center">
-            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-school</v-icon>
               <!-- <i class="material-icons outlined" style=" font-size: 50px; outline" >school</i> -->
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Books</div>
             </div>
 
-            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-tshirt-v-outline</v-icon>
               <div class="demo-content" style="color:#FF8A00;margin-top:10px">Uniforms</div>
             </div>
-            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-cash</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">Fees</div>
             </div>
-            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-home-city-outline</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Renovations</div>
             </div>
-            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-teach</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">Training</div>
             </div>
-            <div class="col-md-2 col-sm-6 subtitle-2 font-weight-black">
+            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-server-network</v-icon>
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">Computer Server</div>
             </div>
@@ -599,18 +579,23 @@ font-size: 13px;"
         </div>-->
       </form>
 
-      <div style="" class="subscribe">
+      <div style class="subscribe">
         <div>
           By submitting this form, you agree to the iDeal-IT Privacy Policy
           <br />
-          <br /> <br>
+          <br />
+          <br />
         </div>
 
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
           <label class="form-check-label" for="exampleCheck1">Subscribe to Email Updates</label>
         </div>
-        <button type="submit" style="background: #092E2B; padding:10px" class="btn white--text">SUBSCRIBE</button>
+        <button
+          type="submit"
+          style="background: #092E2B; padding:10px"
+          class="btn white--text"
+        >SUBSCRIBE</button>
       </div>
     </div>
 
@@ -760,15 +745,11 @@ export default {
 header {
   padding-top: 0px;
 }
-.carouselHolder {
-  margin-top: 150px;
-  margin-bottom: 100px;
-  margin-left: 150px;
-  margin-right: 150px;
-}
+
 .arch {
-  /* background-image: url("../assets/arch.jpg"); */
-  /* background-color: ; */
+  background-image: url("../assets/body.jpg"); 
+  position:cover;
+  
 }
 
 .board {
@@ -795,32 +776,39 @@ header {
 }
 .vl {
   border-left: 2px solid green;
-  height: 50px;
+  background-position: center center;
 }
 .div1 {
   background-image: url("../assets/slide1IDE.jpg");
   background-size: cover;
+  background-position: center center;
 }
+
 .div2 {
-  background-image: url("../assets/ideal5.jpg");
+  background-image: url("../assets/slide2.jpg");
   background-size: cover;
+  background-position: center center;
 }
 .div3 {
-  background-image: url("../assets/ideal10.jpg");
+  background-image: url("../assets/slide3.jpg");
   background-size: cover;
+  background-position: center center;
 }
 .div4 {
-  background-image: url("../assets/ideal15.jpg");
+  background-image: url("../assets/slide5.jpg");
   background-size: cover;
+  background-position: center center;
 }
 .div5 {
-  background-image: url("../assets/ideal6.jpg");
+  background-image: url("../assets/slide7.jpg");
   background-size: cover;
+  background-position: center center;
 }
-.div13 {
+/* .div13 {
   background-image: url("../assets/ideal13.jpg");
   background-size: cover;
-}
+  background-position: center center;
+} */
 .card-size {
   font-size: 30px;
 }
@@ -837,6 +825,7 @@ header {
     color: orange;
     text-align: center;
     padding-bottom: 80px;
+
     font-family: "lora";
   }
   .car-text {
@@ -882,6 +871,7 @@ header {
     margin: 5px;
     padding: 0px;
   }
+
   .small {
     margin-top: 90px;
     margin-bottom: 90px;
@@ -899,8 +889,15 @@ header {
     width: 80%;
     margin-left: 40px;
   }
-  .subscribe{
-    padding-left:60px; margin-bottom:90px
+  .subscribe {
+    padding-left: 60px;
+    margin-bottom: 90px;
+  }
+  .carouselHolder {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -986,8 +983,15 @@ header {
     width: 50%;
     margin-left: 100px;
   }
-  .subscribe{
-    padding-left:110px; margin-bottom:90px
+  .subscribe {
+    padding-left: 110px;
+    margin-bottom: 90px;
+  }
+  .carouselHolder {
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 </style>
