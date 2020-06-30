@@ -1,11 +1,11 @@
 <template>
   <div>
     <nava />
-    <div class="aboutTop" style="padding-top:65px" >
-      <img class="aboutIMG" src="../assets/aboutIDE3.jpg" alt style="" />
+    <div class="aboutTop" style="padding-top:85px;" >
+      <img class="aboutIMG" src="../assets/aboutIDE3.jpg" alt style=" " />
     </div>
     <div>
-      <div class="row">
+      <div class="row" style="">
         <div class="col-md-3">
           <h1
             class
@@ -340,7 +340,7 @@ template {
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
   .aboutTop {
-    height: 537px;
+    height: auto;
   }
   p {
     font-family: "Alegreya", serif;

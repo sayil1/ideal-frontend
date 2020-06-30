@@ -12,26 +12,60 @@
         <v-alert v-if="event.lenght<1" outlined type="warning" prominent border>
           <span style="text-align:center;
     ">NO EVENTS AT THE MOMENT! CHECK BACK LATTER</span>
-        </v-alert>events
+        </v-alert>
+        
+        <div style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 34px;
+line-height: 29px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #092E2B;">
+  Featured Events
+        </div>
+      
       </div>
 
       <div class="row" dense>
         <div class="col-md-3 links" v-for="(event, i) in event" :key="i">
           <router-link :to="'event?eid='+ event._id" class="links">
-            <v-card max-width="300" style="margin:5px'; text-decoration: none">
+            <v-card max-width="300" style="margin:5px'; text-decoration: none; background-color:#CAD9D8;" >
               <v-img class="white--text align-end" height="200px" v-bind:src="event.imagesPath"></v-img>
-              <v-card-title>{{event.title}}</v-card-title>
-              <v-card-subtitle class="pb-0">{{event.location}}</v-card-subtitle>
+              <v-card-title style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 17px;
+letter-spacing: 0.02em;
+margin-bottom:10px;
+
+color: #1B6761;" >{{event.title}}</v-card-title>
+              <v-card-subtitle class="pb-0" style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+color: #1B6761;"> <v-icon  color="#1B6761" small style="margin:3px">mdi-map-marker</v-icon>{{event.location}}</v-card-subtitle>
               <v-card-text class="text--primary">
-                <div >Start: {{event.startDate}}</div>
-                <div >Time: {{event.time}}</div>
-                <div>End: {{event.endDate}}</div>
+                <div  style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.02em;
+color: #1B6761;">  <v-icon small color="#1B6761" style="margin:3px" >mdi-calendar-range</v-icon>{{event.startDate |moment("dddd, MMMM Do YYYY")}}</div>
+                <!-- <div >Time: {{event.time}}</div>
+                <div>End: {{event.endDate}}</div> -->
               </v-card-text>
-              <v-card-actions>
-                 <router-link :to="'event?eid='+ event._id" class="links">  <v-btn color="orange" text>see more</v-btn></router-link>
-              
-                <!-- <v-btn color="orange" text>Explore</v-btn> -->
+              <div style="background-color:#CAD9D8;">
+ <v-card-actions>
+                 <router-link :to="'event?eid='+ event._id" class="links">   <v-btn class="ma-2" outlined color="#1B6761">get ticket</v-btn></router-link>
               </v-card-actions>
+              </div>
+             
             </v-card>
           </router-link>
         </div>

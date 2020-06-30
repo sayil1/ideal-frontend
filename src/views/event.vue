@@ -1,7 +1,7 @@
 <template>
   <div>
     <nava />
-    <div style="padding-top:200px;">
+    <div style="padding-top:150px;">
       <!-- <span  style="text-align:center;">
           <div class="row">
             <div>
@@ -28,30 +28,132 @@
           </div>
       </span>-->
       <div style="padding-left:0px" class="row">
-        <v-card class="col-md-4" max-width="400" style="margin-left:150px; margin-bottom:100px">
-          <v-img class="white--text align-end" height="200px" v-bind:src="event[0].imagesPath">
-            <v-card-title>Top 10 Australian beaches</v-card-title>
-          </v-img>
+        <v-card class="col-md-4" max-width="450" style="margin-left:100px; margin-bottom:100px">
+          <v-img class="white--text align-end" height="250px" v-bind:src="event[0].imagesPath"></v-img>
           <hr />
-          <v-card-subtitle class="pb-0">Share This Event</v-card-subtitle>
+          <v-card-subtitle class="pb-0" style="color: #1B676;">
+            <strong
+              style="font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 108.34%;
+letter-spacing: 0.02em;
+color: #1B6761;"
+            >Share This Event</strong>
+          </v-card-subtitle>
 
           <v-card-actions>
-           <p> <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon> <v-icon size="20" color="orange darken-2" right>mdi-facebook</v-icon> <v-icon size="20" color="orange darken-2" right>mdi-twitter</v-icon></p>
+            <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
+
+            <a
+              class="resp-sharing-button__link"
+              href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com"
+              target="_blank"
+              rel="noopener"
+              aria-label
+            >
+              <v-icon size="20" color="orange darken-2" right>mdi-twitter</v-icon>
+            </a>
           </v-card-actions>
         </v-card>
         <div style="margin-left:20px" class="col-md-6">
-         <div class="col-md-8">
-      <div class="card-body">
-        <h4 class="card-title" style="color:orange"> {{event[0].title}}</h4>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p>  {{event[0].location}}
-          <br> Starting - {{event[0].startDate}}
-          <br> Ending - {{event[0].endDate}}
-        </p>
-        <a class="card-text"><small class="red--text">Register for event here</small></a>
-      
-      </div>
-    </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h4
+                class="card-title"
+                style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 108.34%;
+letter-spacing: 0.02em;
+color: #1B6761;
+"
+              >{{event[0].title}}</h4>
+              <p
+                class="card-text"
+                style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 129.84%;
+letter-spacing: 0.02em;
+color: #1B6761;"
+              >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+              <p
+                style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 129.84%;
+letter-spacing: 0.02em;
+;"
+              >
+                <v-icon color="#1B6761" small style="margin:3px">mdi-map-marker</v-icon>
+                {{event[0].location}}
+                <br />
+                <span style="color: #1B6761;">Starting -</span>
+                {{event[0].startDate |moment("dddd, MMMM Do YYYY")}}
+                <br />
+                <span style="color: #1B6761;">Ending -</span>
+                {{event[0].endDate |moment("dddd, MMMM Do YYYY")}}
+              </p>
+              <v-row justify="center">
+                <v-dialog v-model="dialog" persistent max-width="600px">
+                  <template v-slot:activator="{ on, attrs }">
+                    <v-btn
+                      class="ma-2"
+                      v-bind="attrs"
+                      v-on="on"
+                      outlined
+                      color="orange"
+                    >Register For Event</v-btn>
+                  </template>
+                  <v-card>
+                    <v-card-title>
+                      <span
+                        class="headline"
+                        style="font-family: SF UI Display;
+font-style: normal;
+font-weight: bold;
+font-size: 36px;
+line-height: 108.34%;
+letter-spacing: 0.02em;
+color: #1B6761;
+"
+                      >{{event[0].title}}</span>
+                    </v-card-title>
+                    <v-card-text>
+                      <v-container>
+                        <v-row>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field label="First name" required></v-text-field>
+                          </v-col>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field
+                              label="Last name"
+                              hint="example of helper text only on focus"
+                            ></v-text-field>
+                          </v-col>
+
+                          <v-col cols="12">
+                            <v-text-field label="Email*" required></v-text-field>
+                          </v-col>
+                        </v-row>
+                      </v-container>
+                      <small style="color:red">*Ticket ID will be sent to your mail</small>
+                    </v-card-text>
+                    <v-card-actions>
+                      <v-spacer></v-spacer>
+                      <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
+                      <v-btn color="blue darken-1" text @click="dialog = false">Register</v-btn>
+                    </v-card-actions>
+                  </v-card>
+                </v-dialog>
+              </v-row>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -74,7 +176,8 @@ export default {
   data: () => ({
     event: {},
     errors: [],
-    eventId: ""
+    eventId: "",
+    dialog: false
   }),
   created() {
     this.initialize();

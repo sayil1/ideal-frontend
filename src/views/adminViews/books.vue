@@ -89,14 +89,24 @@
                                       </v-flex>
 
                                       <v-flex xs12 sm6 d-flex>
-                                        <input
+                                        <!-- <input
                                           type="file"
                                           class="form-control"
                                           accept="image/*"
                                           name="image"
                                           @change="onFileChanged"
-                                        />
-                                        <v-file-input accept="image/*" label="Image"></v-file-input>
+                                        /> -->
+
+                                        <div style="margin:5px" class="upload-btn-wrapper">
+                                          <button class="btn">Choose Image</button>
+                                          <input
+                                            type="file"
+                                            name="myfile"
+                                            class="custom-file-input"
+                                           @change="onFileChanged"
+                                          />
+                                        </div>
+                                        <!-- <v-file-input accept="image/*" label="Image"  @change="onFileChanged"></v-file-input> -->
                                       </v-flex>
 
                                       <v-flex xs12 sm3 d-flex v-if="update==false">
@@ -411,6 +421,7 @@ export default {
       formData.append("price", this.books.price);
       formData.append("category", this.books.category);
       formData.append("quantity", this.books.quantity);
+      formData.append("description", this.books.description);
 
       // eslint-disable-next-line no-console
       console.log(this.books, this.startDate, this.endDate, this.time);
@@ -427,12 +438,35 @@ export default {
 };
 </script>
 <style lang="css" scoped>
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid rgb(23, 132, 13);
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
 @media (min-width: 1281px) {
-  
-  .wrap{
-    margin-left:240px
+  .wrap {
+    margin-left: 240px;
   }
-  
 }
 
 /* 
@@ -441,9 +475,6 @@ export default {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
-  
 }
 
 /* 
@@ -452,9 +483,6 @@ export default {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  
-  
 }
 
 /* 
@@ -463,9 +491,6 @@ export default {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  
-  
 }
 
 /* 
@@ -474,9 +499,6 @@ export default {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
-  
-  
 }
 
 /* 
@@ -485,10 +507,8 @@ export default {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
-  .wrap{
-    margin-left:100px
+  .wrap {
+    margin-left: 100px;
   }
-  
 }
 </style>
