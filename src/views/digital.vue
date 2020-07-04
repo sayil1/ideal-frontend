@@ -15,10 +15,10 @@
       </div>
     </div>
 
-    <div class="body" style="background: #F6F6F6">
+    <div class="" style="background: #F6F6F6">
       <div class="row" style="background-color:rgb(255, 255, 255)">
         <div class="col-sm-12 col-md-12">
-          <div class="first" style>
+          <div class="" style>
             <div class>
               <p
                 class="car-text first"
@@ -35,15 +35,18 @@ letter-spacing: 0.02em;"
           </div>
         </div>
       </div>
+<!-- 
+       <img src="../assets/slide5.jpg" alt style="width: 70% he;
+ " /> -->
 
-      <img src="../assets/black.jpg" alt style="width: 100%;
-height: 400px; padding-top:80px" />
+      <!-- <img src="../assets/black.jpg" alt style="width: 100%;
+height: 400px; padding-top:80px" /> -->
     </div>
 
-    <div class="body" style="background: #F6F6F6">
+    <div class="" style="background: #F6F6F6">
       <div class="row" style="background-color:rgb(255, 255, 255)">
         <div class="col-sm-12 col-md-12">
-          <div class="first" style>
+          <div class="" style>
             <div class>
               <p
                 class="car-text first"

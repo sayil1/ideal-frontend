@@ -31,8 +31,144 @@
       <p class="card-text font-weight-regular"></p>
     </v-alert>
     <div class="body" style>
+
+
+
+
+<!-- div -->
+
+  <!-- card -->
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <div
+            class=""
+            style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; "
+          >
+            <div class style>
+              <p class>
+             
+              <strong>PEARSON VUE CENTER</strong> Our Authorized Pearson VUE Test center runs IT certification examinations for leading vendors like Microsoft, Cisco, Nursing and Midwifery Council (NMC), PMI, Linux, Juniper, Oracle, CompTIA, CIW, HP, PeopleCert etc.
+                <br />
+                <br />
+                <strong>IT CERTIFICATIONS</strong>  are recognized worldwide and serve as benchmarks to specific skills set based on standardized testing. They help demonstrate your dedication and technical knowledge on a specific platform.
+                <br />Once earned, IT Certifications can you help achieve the following:
+
+              </p>
+              <ul>
+                <li v-for="(items, i) in items" :key="i">{{items.text}}</li>
+              </ul>
+            </div>
+              <div
+              style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+            >
+              <div>
+                <p>
+               
+                  <!-- <strong>Social pressures</strong>
+        <br />Societal, families and peers can deter individuals from actively participating in sports.
+        <br />
+        <br />• societal beliefs and traditions within a community
+        <br />• the parental expectation of their children and also Little or no family support in sporting activities
+        <br />• The conflicting interest in recreational activities.
+        <br />• Few opportunities for females seeking opportunities to participate in sports
+        <br />
+                  <br />-->
+                </p>
+               
+
+                <div
+                  class
+                  style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+                >
+                 
+                  <router-link to="cont">Contact us</router-link> for more information
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-sm col-md-4"
+          style="margin-top:0px; padding:20px; background-color:rgb(240, 245, 245)"
+          v-if="image==true"
+        >
+          <form>
+            <div
+              style="text-align:center; font-family: SF UI Display;
+       color: #092E2B;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 108.34%;
+padding:20px"
+            >Register for this class.</div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Sunamer name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Middle name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Date" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email Address" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Contact Address" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Country Of Birth/Citizenship" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Exam Date" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Exam Center" />
+            </div>
+            <div class="col">
+              <v-file-input label="International Passport Number" outlined dense></v-file-input>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Exam Center" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="International Passport Number" />
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block" style>Submit</button>
+          </form>
+        </div>
+      </div>
+
+<!-- div -->
+
+      
       <!-- card -->
-      <div class="row" style="background-color:rgb();">
+      <!-- <div class="row" style="background-color:rgb();">
         <div class="col-sm-12 col-md-12" style="margin-bottom:70px">
           <div class style>
             <div class style>
@@ -46,7 +182,7 @@
                 are recognized worldwide and serve as benchmarks to specific skills set based on standardized testing. They help demonstrate your dedication and technical knowledge on a specific platform.
                 <br />Once earned, IT Certifications can you help achieve the following:
                 <v-list dense class="row">
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
+                
                   <v-list-item-group v-model="item" color="rgb()" class="col-md-9">
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
@@ -68,9 +204,11 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
-
+<div>
+  <cards/>
+</div>
     <foota />
   </div>
 </template>
@@ -79,10 +217,12 @@
 <script>
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import cards from "../components/cards"
 export default {
   components: {
     nava,
-    foota
+    foota,
+    cards
   },
   data: () => ({
     item: 1,

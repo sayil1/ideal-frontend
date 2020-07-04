@@ -67,7 +67,7 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >WHAT WE DO</a>
-                <ul class="dropdown-menu" aria-labelledby="dropdown1">
+                <ul class="dropdown-menu" aria-labelledby="">
                   <router-link class="route" to="capacity">
                     <li class="dropdown-item">CAPACITY DEVELOPMENT</li>
                   </router-link>
@@ -80,7 +80,7 @@
                   <router-link class="route" to="train">
                     <li class="dropdown-item">TRAIN-THE-TRAINERS</li>
                   </router-link>
-                  <li class="dropdown-item dropdown">
+                  <!-- <li class="dropdown-item dropdown">
                     <a
                       class="dropdown-toggle"
                       id="dropdown1-1"
@@ -99,7 +99,7 @@
                         <li>ICM UK QUALIFICATION</li>
                       </router-link>
                     </ul>
-                  </li>
+                  </li> -->
                   <ul></ul>
                 </ul>
               </li>
@@ -124,6 +124,26 @@
                   <router-link class="route" to="over">
                     <li class="dropdown-item">INTERNSHIP</li>
                   </router-link>
+                   <li class="dropdown-item dropdown">
+                    <a
+                      class="dropdown-toggle"
+                      id="dropdown1-1"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >EXAM TEST CENTER</a>
+                    <ul class="dropdown-menu sub" aria-labelledby="dropdown1-1">
+                      <router-link class="route" to="toefl">
+                        <li>TOEFL</li>
+                      </router-link>
+                      <router-link class="route" to="pearson">
+                        <li>PEARSON VUE</li>
+                      </router-link>
+                      <router-link class="route" to="icm">
+                        <li>ICM UK QUALIFICATION</li>
+                      </router-link>
+                    </ul>
+                  </li>
 
                   <ul></ul>
                 </ul>
@@ -175,6 +195,7 @@
                   <span class="sr-only">(current)</span>
                 </router-link>
               </li>
+            
             </ul>
           </div>
         </div>
@@ -247,11 +268,13 @@ header {
 }
 .dropdown-submenu {
   position: relative;
+  padding:10px
 }
 .dropdown-submenu > .dropdown-menu {
   top: 0;
-  left: 100%;
+  /* left: 100%; */
   margin-top: -6px;
+  padding:5px
 }
 .nav-link {
   color: green;
@@ -266,8 +289,7 @@ header {
   background-color: orange;
 }
 .dropdown-item {
-  margin-left: -10px;
-  margin-right: auto;
+ margin:0px;
   border-top: 2px solid white;
   color: black;
   background-color: orange;
@@ -295,6 +317,13 @@ li :hover {
   color: inherit;
   text-decoration: none;
   background-color: inherit;
+}
+
+ul.dropdown-menu.show{
+  padding:1px
+}
+ul.dropdown-menu{
+  padding:4px
 }
 
 .navbar .dropdown-item:focus,
@@ -339,7 +368,7 @@ li :hover {
     border-left: 0.3em solid;
   }
   .nava {
-    margin-left: 30%;
+    margin-left: 20%;
   }
   .navas {
     width: 150%;

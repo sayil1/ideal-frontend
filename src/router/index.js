@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Meta from 'vue-meta'
+import VueMeta from 'vue-meta';
 
 // import Home from '../views/Home.vue'
 import hello from '../components/HelloWorld.vue'
@@ -38,7 +38,7 @@ import web from '../views/webinar.vue'
 import contest from '../views/contest.vue'
 
 Vue.use(VueRouter)
-Vue.use(Meta)
+Vue.use(VueMeta);
 
 const routes = [
   {

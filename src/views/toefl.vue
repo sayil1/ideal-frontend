@@ -22,10 +22,20 @@
     <div class="body" style>
       <!-- card -->
       <div class="row">
-        <div class="col-sm-12 col-md-12">
-          <div class="sub-body" style>
+        <div class="col-sm-12 col-md-8">
+          <div
+            class=""
+            style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; "
+          >
             <div class style>
-              <p class="car-text --text">
+              <p class>
                 The
                 <strong>Test of English as a Foreign Language® TOEFL</strong>is a standardized test that measures the ability of non- native speakers to use and understand English at the university level, evaluating how well they combine reading, listening, speaking and writing skills to perform academic tasks.
                 <br />
@@ -33,10 +43,9 @@
                 <strong>Authorized TOEFL iBT® Test center</strong> , we administer the test all year round, particularly on weekends. Due to the high demand for the test, seats fill up quickly, so students are encouraged to register ahead of time in order to get their preferred test dates.
                 <br />
                 <br />
-                <strong v-subheader>Why Take the TOEFL Test?</strong>
+                <strong v-subheader style=";">Why Take the TOEFL Test?</strong>
                 <br />
-                <v-list dense>
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
+                <!-- <v-list dense>
                   <v-list-item-group v-model="item" color="rgb(35)">
                     <v-list-item v-for="(item, i) in items" :key="i">
                       <v-list-item-icon>
@@ -47,51 +56,131 @@
                       </v-list-item-content>
                     </v-list-item>
                   </v-list-item-group>
-                </v-list>
+                </v-list>-->
               </p>
+              <ul>
+                <li v-for="(items, i) in items" :key="i">{{items.text}}</li>
+              </ul>
             </div>
-          </div>
-        </div>
-        <!-- <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
-            <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
-        </div>-->
-      </div>
-      <div class style="margin-top:-50px">
-        <!-- card -->
-        <div class="row">
-          <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
-            <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
-          </div>
-          <div class="col-sm-12 col-md-10">
-            <div class="card-size" style=" ;">
-              <div class="card-body" style>
-                <p class="car-text --text font-weight-regular">
-                  <strong>Who Takes the TOEFL Test?</strong>
-                  <br />
+              <div
+              style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+            >
+              <div>
+                <p>
+                  <strong style>Who Takes the TOEFL Test?</strong>
+
                   <br />More than 35 million people from all over the world have taken the TOEFL test to demonstrate their English-language proficiency.
-                  <v-list dense>
-                    <!-- <v-subheader>REPORTS</v-subheader> -->
-                    <v-list-item-group v-model="item2" color>
-                      <v-list-item v-for="(item2, i) in items2" :key="i">
-                        <v-list-item-icon>
-                          <v-icon v-text="item2.icon"></v-icon>
-                        </v-list-item-icon>
-                        <v-list-item-content>
-                          <v-list-item-title v-text="item2.text"></v-list-item-title>
-                        </v-list-item-content>
-                      </v-list-item>
-                    </v-list-item-group>
-                    <div class="card-text --text font-weight-regular mt-3">
-                      IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test.
-                      <router-link to="cont">Contact us</router-link>for more information
-                    </div>
-                  </v-list>
+                  <br />
+                  <br />
+                  <!-- <strong>Social pressures</strong>
+        <br />Societal, families and peers can deter individuals from actively participating in sports.
+        <br />
+        <br />• societal beliefs and traditions within a community
+        <br />• the parental expectation of their children and also Little or no family support in sporting activities
+        <br />• The conflicting interest in recreational activities.
+        <br />• Few opportunities for females seeking opportunities to participate in sports
+        <br />
+                  <br />-->
                 </p>
+                <ul>
+                  <li v-for="(item2, i) in items2" :key="i">{{item2.text}}</li>
+                </ul>
+
+                <div
+                  class
+                  style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+                >
+                  IMPORTANT UPDATE: Every test taker is expected to present a valid international passport to be allowed to take the TOEFL iBT® test.
+                  <router-link to="cont">Contact us</router-link>for more information
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <div
+          class="col-sm col-md-4"
+          style="margin-top:0px; padding:20px; background-color:rgb(240, 245, 245)"
+          v-if="image==true"
+        >
+          <form>
+            <div
+              style="text-align:center; font-family: SF UI Display;
+       color: #092E2B;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 108.34%;
+padding:20px"
+            >Register for this class.</div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Sunamer name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Middle name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Date" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email Address" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Contact Address" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Country Of Birth/Citizenship" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Exam Date" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Exam Center" />
+            </div>
+            <div class="col">
+              <v-file-input label="International Passport Number" outlined dense></v-file-input>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Exam Center" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="International Passport Number" />
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block" style>Submit</button>
+          </form>
+        </div>
       </div>
+      <div class style="margin-top:50px">
+        <!-- card -->
+        <div class="row">
+          <!-- <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
+            <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
+          </div>-->
+          <div class="col-sm-12 col-md-10">
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin:auto">
+      <cards />
     </div>
 
     <foota />
@@ -102,10 +191,12 @@
 <script>
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import cards from "../components/cards";
 export default {
   components: {
     nava,
-    foota
+    foota,
+    cards
   },
   data: () => ({
     item: 1,

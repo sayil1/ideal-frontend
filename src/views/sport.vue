@@ -60,16 +60,9 @@ letter-spacing: 0.02em;"
       </div>
     </div>
     <div class="row body-text car-text first" style="">
-      <div class="col-md-3" style="margin:auto" >
-        <img
-        class="responsiveIM"
-          src="../assets/sport2IDE.png"
-          alt
-         width="301px" height="380.81px"
-
-
-        />
-      </div>
+     <div>
+       
+     </div>
       <div class="col-md-9">
         <div
           style="font-family: SF UI Display;

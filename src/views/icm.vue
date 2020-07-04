@@ -1,7 +1,7 @@
 <template>
   <div style="background-color:">
     <nava />
-   <div style="background-color: " class="cont">
+    <div style="background-color: " class="cont">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
           <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
@@ -20,12 +20,24 @@
     </div>
 
     <div class="body" style>
+      <!-- div -->
+
       <!-- card -->
-      <div class="row" style="background-color:;">
-        <div class="col-sm-12 col-md-12">
-          <div class style>
+      <div class="row">
+        <div class="col-sm-12 col-md-8">
+          <div
+            class
+            style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; "
+          >
             <div class style>
-              <p class="car-text --text font-weight-regular">
+              <p class>
                 The Institute of Commercial Management (ICM) is the leading professional body providing qualifications that are recognized globally in business, management and related vocational areas. The programmes are designed to address and respond to the training needs as well as the personal development of learners, whether entering or continuing to work within the wide and varied commercial sector.
                 <br />IDEaL, as an ICM Approved Teaching and Examination Center ensures that the best possible education and support is given to learners in this region.
                 <br />
@@ -34,82 +46,81 @@
                 <br />ICM provide qualifications at Certificate, Diploma, Advanced Diploma, Graduate Diploma and Post Graduate Diploma levels on a quarterly basis, covering key industry sector areas such as:
                 <span
                   class="row"
+                  style
                 >
                   <span class="col-md-8">
-                    <v-list-item two-line>
-                      <v-list-item-content style="color:rgb">
+                   
                         <v-list-item-title
                           class="font-weight-bold"
+                          style=" color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
                         >Engineering and Manufacturing Technologies</v-list-item-title>
-                        <v-list-item-title>- Health and Safety</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item two-line>
-                      <v-list-item-content style="color:">
+                       - Health and Safety
+                   
+                   
+                  
                         <v-list-item-title
                           class="font-weight-bold"
+                          style=" color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
                         >Information and Communication Technology (ICT)</v-list-item-title>
                         <v-list-item-title>-Computing</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item two-line>
-                      <v-list-item-content style="color:">
+                             <v-list-item-title>-Hospitality</v-list-item-title>
+                        <v-list-item-title>-Sales Management</v-list-item-title>
+                  
+                   
                         <v-list-item-title
                           class="font-weight-bold"
-                        >Information and Communication Technology (ICT)</v-list-item-title>
-                        <v-list-item-title>-Hospitality</v-list-item-title>
-                        <v-list-item-title>-Sales Management</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                    <v-list-item two-line>
-                      <v-list-item-content style>
-                        <v-list-item-title class="font-weight-bold">Leisure, Travel and Tourism</v-list-item-title>
+                          style=" color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+                        >Leisure, Travel and Tourism</v-list-item-title>
                         <v-list-item-title>-Tourism</v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </span>
-                  <div class="col-sm col-md-4" style v-if="image==true">
-                    <v-img src="../assets/pea.png" style=" width:300px"></v-img>
-                  </div>
-                </span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class style="margin-left:20px; margin-right:20px;margin-top:-70px">
-      <!-- card -->
-      <div class="row">
-        <div class="col-sm col-md-3" style v-if="image==true">
-          <v-img src="../assets/icm2.svg" style=" width:300px"></v-img>
-        </div>
-        <div class="col-sm-12 col-md-9">
-          <div class="card-size">
-            <div class="card-body" style>
-              <p class="car-text blue--text">
-                <span class="row">
-                  <v-list-item two-line class="col-md-6">
-                    <v-list-item-content style="color">
-                      <v-list-item-title
-                        class="font-weight-bold"
-                      >Business, Administration, Finance and Law</v-list-item-title>
-                      <v-list-item-title>-Accounting & Finance</v-list-item-title>
-                      <v-list-item-title>-Sales Management</v-list-item-title>
-                      <v-list-item-title>-Commercial Management</v-list-item-title>
-                      <v-list-item-title>-Human Resource Development</v-list-item-title>
-                      <v-list-item-title>-International Trade</v-list-item-title>
-                      <v-list-item-title>-Maritime Management</v-list-item-title>
-                      <v-list-item-title>-Marketing</v-list-item-title>
-                      <v-list-item-title>-Project Management</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
-                  <v-list-item two-line class="col-md-6">
-                    <v-list-item-content style="color:">
-                      <v-list-item-title
-                        class="font-weight-bold"
-                      >IDEaL’s approved ICM UK Center offers the unlisted ICM UK qualifications:</v-list-item-title>
+                     
+                   
+                        <span
+                          class="font-weight-bold"  style=" color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+                        >Business, Administration, Finance and Law</span>
+                        <v-list-item-title>-Accounting & Finance</v-list-item-title>
+                        <v-list-item-title>-Sales Management</v-list-item-title>
+                        <v-list-item-title>-Commercial Management</v-list-item-title>
+                        <v-list-item-title>-Human Resource Development</v-list-item-title>
+                        <v-list-item-title>-International Trade</v-list-item-title>
+                        <v-list-item-title>-Maritime Management</v-list-item-title>
+                        <v-list-item-title>-Marketing</v-list-item-title>
+                        <v-list-item-title>-Project Management</v-list-item-title>
+                     
+                    
+                 
+                      <span
+                        class="font-weight-bold"  style=" color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+                      >IDEaL’s approved ICM UK Center offers the unlisted ICM UK qualifications:</span>
                       <v-list-item-title>-Maritime Management</v-list-item-title>
                       <v-list-item-title>-Commercial Management</v-list-item-title>
                       <v-list-item-title>-International Business Studies</v-list-item-title>
@@ -118,17 +129,98 @@
                       <v-list-item-title>-Managing Health and Safety</v-list-item-title>
                       <v-list-item-title>-Office management</v-list-item-title>
                       <v-list-item-title>-Professional Computing & Information Processing</v-list-item-title>
-                    </v-list-item-content>
-                  </v-list-item>
+                   
+            
+                  </span>
                 </span>
               </p>
+              <!-- <ul>
+                <li v-for="(items, i) in items" :key="i">{{items.text}}</li>
+              </ul>-->
             </div>
-            <router-link to="cont">Contact</router-link>Us for more information
+            <div
+              style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+            ></div>
+          </div>
+        </div>
+        <div
+          class="col-sm col-md-4"
+          style="margin-top:0px; padding:20px; background-color:rgb(240, 245, 245)"
+          v-if="image==true"
+        >
+          <form>
+            <div
+              style="text-align:center; font-family: SF UI Display;
+       color: #092E2B;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 108.34%;
+padding:20px"
+            >Register for this class.</div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Sunamer name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Middle name" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Date" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Email Address" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Contact Address" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Country Of Birth/Citizenship" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Exam Date" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Exam Center" />
+            </div>
+            <div class="col">
+              <v-file-input label="International Passport Number" outlined dense></v-file-input>
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder=" Exam Center" />
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="International Passport Number" />
+            </div>
+            <button type="button" class="btn btn-primary btn-lg btn-block" style>Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- div -->
+      <!-- card -->
+      <div class="row" style="background-color:;">
+        <div class="col-sm-12 col-md-12">
+          <div class style>
+            <div class style></div>
           </div>
         </div>
       </div>
     </div>
+
+    <cards/>
+
     <foota />
+   
   </div>
 </template>
 
@@ -136,10 +228,12 @@
 <script>
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import cards from "../components/cards"
 export default {
   components: {
     nava,
-    foota
+    foota,
+    cards
   },
   data: () => ({
     item: 1,

@@ -159,18 +159,9 @@ display: flex;
 padding-bottom:40px;
 align-items: center;
 text-align: center">Books for the week</div>
-        <hooper
-          :settings="hooperSettings"
-          :progress="true"
-          :autoPlay="true"
-          :playSpeed="4000"
-          style="margin-bottom:10px; margin-left:-40px; height:500px ; width:100% "
-          class="row"
-          v-show="!verified"
-          v-if="weeksTop.length > 0"
-        >
-          <slide v-for="(item,i) in weeksTop" :key="i">
-              <div class="card m-3" style="width: 15.5rem;">
+       
+         
+              <div class="card m-3" style="width: 15.5rem;" v-for="(item,i) in weeksTop" :key="i">
                 <v-img
                   style=" max-width:100%; height: 15vw; object-fit: contain; "
                   class="white--text align-end"
@@ -186,8 +177,6 @@ text-align: center">Books for the week</div>
                       <hr style="margin:5px; border: 1px solid ;" />Comics
                     </div>
                   </div>
-
-                  <!-- Modal -->
                   <div
                     class="modal fade"
                     id="exampleModal"
@@ -276,8 +265,7 @@ text-align: center">Books for the week</div>
                   </div>
                 </div>
               </div>
-          </slide>
-        </hooper>
+       
         <div v-show="!verified">
           <div class="row">
             <div
@@ -310,7 +298,7 @@ color: #FF8A00;"
           </div>
 
           <div class="row">
-            <div v-for="(item,i) in shop" :key="i">
+            <div v-for="(item,i) in computedObj" :key="i">
               <div class="card m-3" style="width: 15.5rem;">
                 <v-img
                   style=" max-width:100%; height: 15vw; object-fit: contain; "
@@ -330,7 +318,7 @@ color: #FF8A00;"
 
                   <!-- Modal -->
                   <div
-                    class="modal fade"
+                    class="modal "
                     id="exampleModal"
                     tabindex="-1"
                     role="dialog"
@@ -488,7 +476,8 @@ export default {
       infiniteScroll: true,
       progress: true,
       autoreplay: true,
-      playspeed: 1000
+      playspeed: 1000,
+      limit:4
     },
     e: [],
 
@@ -521,7 +510,12 @@ export default {
         text += possible.charAt(Math.floor(Math.random() * possible.length));
 
       return text;
-    }
+    },
+    computed:{
+  computedObj(){
+    return this.limit ? this.shop.slice(0,this.limit) : this.shop
+  }
+}
   },
   watch: {},
   created() {

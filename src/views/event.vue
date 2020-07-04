@@ -27,11 +27,15 @@
             </div>
           </div>
       </span>-->
-      <div style="padding-left:0px" class="row">
-        <v-card class="col-md-4" max-width="450" style="margin-left:100px; margin-bottom:100px">
-          <v-img class="white--text align-end" height="250px" v-bind:src="event[0].imagesPath"></v-img>
+      <div style="padding-left:0px; " class="row">
+        <v-card
+          class="col-md-4"
+          max-width="450"
+          style="margin-left:100px; margin-bottom:100px; background-color:#CAD9D8"
+        >
+          <v-img class="white--text align-end" height="250px" v-bind:src="event.imagesPath"></v-img>
           <hr />
-          <v-card-subtitle class="pb-0" style="color: #1B676;">
+          <v-card-subtitle class="pb-0" style="color: #1B676; ">
             <strong
               style="font-style: normal;
 font-weight: bold;
@@ -43,7 +47,15 @@ color: #1B6761;"
           </v-card-subtitle>
 
           <v-card-actions>
-            <v-icon size="20" color="orange darken-2" right>mdi-instagram</v-icon>
+            <v-icon
+              size="20"
+              color="orange darken-2"
+              right
+              v-clipboard:copy="message"
+              v-clipboard:success="onCopy"
+              v-clipboard:error="onError"
+              @click="snackbar = true; onCopy()"
+            >mdi-content-copy</v-icon>
 
             <a
               class="resp-sharing-button__link"
@@ -69,7 +81,7 @@ line-height: 108.34%;
 letter-spacing: 0.02em;
 color: #1B6761;
 "
-              >{{event[0].title}}</h4>
+              >{{event.title}}</h4>
               <p
                 class="card-text"
                 style="font-family: SF UI Display;
@@ -91,13 +103,13 @@ letter-spacing: 0.02em;
 ;"
               >
                 <v-icon color="#1B6761" small style="margin:3px">mdi-map-marker</v-icon>
-                {{event[0].location}}
+                {{event.location}}
                 <br />
                 <span style="color: #1B6761;">Starting -</span>
-                {{event[0].startDate |moment("dddd, MMMM Do YYYY")}}
+                {{event.startDate |moment("dddd, MMMM Do YYYY")}}
                 <br />
                 <span style="color: #1B6761;">Ending -</span>
-                {{event[0].endDate |moment("dddd, MMMM Do YYYY")}}
+                {{event.endDate |moment("dddd, MMMM Do YYYY")}}
               </p>
               <v-row justify="center">
                 <v-dialog v-model="dialog" persistent max-width="600px">
@@ -122,7 +134,7 @@ line-height: 108.34%;
 letter-spacing: 0.02em;
 color: #1B6761;
 "
-                      >{{event[0].title}}</span>
+                      >{{event.title}}</span>
                     </v-card-title>
                     <v-card-text>
                       <v-container>
@@ -142,7 +154,7 @@ color: #1B6761;
                           </v-col>
                         </v-row>
                       </v-container>
-                      <small style="color:red">*Ticket ID will be sent to your mail</small>
+                      <small style="color:black">*Ticket ID will be sent to your mail</small>
                     </v-card-text>
                     <v-card-actions>
                       <v-spacer></v-spacer>
@@ -151,6 +163,25 @@ color: #1B6761;
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
+                <v-snackbar
+                  v-model="snackbar"
+                  :bottom="y === 'bottom'"
+                  :color="color"
+                  :left="x === 'left'"
+                  :multi-line="mode === 'multi-line'"
+                  :right="x === 'right'"
+                  :timeout="timeout"
+                  :top="y === 'top'"
+                  :vertical="mode === 'vertical'"
+                >
+                  <div
+                    style="background-color:black; padding:5px; font-style:bold "
+                  >Link to event copied</div>
+
+                  <template v-slot:action="{ attrs }">
+                    <v-btn color="pink" text v-bind="attrs" @click="snackbar = false">Close</v-btn>
+                  </template>
+                </v-snackbar>
               </v-row>
             </div>
           </div>
@@ -169,23 +200,74 @@ import nava from "../components/newNav";
 import foota from "../components/footer";
 
 export default {
+  // metaInfo: {
+    
+  //   title: "",
+  //   titleTemplate: '%s | vue-meta Example App'
+  // },
   components: {
     nava,
     foota
   },
+ 
+
   data: () => ({
     event: {},
     errors: [],
     eventId: "",
-    dialog: false
+    dialog: false,
+    message: " ",
+    snackbar: false,
+    color: "",
+    mode: "",
+    timeout: 6000,
+    x: null,
+    y: "top",
+    n:"]lp"
   }),
+    metaInfo () {
+    return {
+      title: `IDeal-IT | ${this.event.title}`,
+      image:this.event.imagesPath,
+       meta: [
+      { charset: 'utf-8' },
+      {
+        property: "twitter:title",
+        content: `IDeal-IT | ${this.event.title}`,
+        // following template options are identical
+        // template: '%s - My page',
+       
+        vmid: 'twitter:title'
+      },
+       {
+        property: "twitter:title",
+        content: `IDeal-IT | ${this.event.title}`,
+        // following template options are identical
+        // template: '%s - My page',
+       
+        vmid: 'twitter:title'
+      },]
+    }
+  },
   created() {
     this.initialize();
   },
+  
   methods: {
     show() {
       // eslint-disable-next-line no-console
-      console.log(this.events, "are the events");
+      console.log(this.events, "show");
+    },
+    onCopy: function() {
+      // alert('You just copied: ' + e.text)
+
+      // eslint-disable-next-line no-console
+      console.log(serv.getUrl());
+      let url = serv.getUrl();
+      this.message = `${url}/event?eid=${this.$route.query.eid}`;
+    },
+    onError: function() {
+      // alert('Failed to copy texts' + e)
     },
     initialize() {
       this.eventId = this.$route.query.eid;
@@ -196,9 +278,10 @@ export default {
         .getRequest(`eve/get-event/${this.eventId}`)
         .then(response => {
           // JSON responses are automatically parsed.
-          this.event = response.data.result;
+          this.event = response.data.result[0];
+          
           // eslint-disable-next-line no-console
-          console.log(response.data.result, "are the events");
+          console.log(response.data.result[0], " the events");
         })
         .catch(e => {
           // this.errors.push(e);
