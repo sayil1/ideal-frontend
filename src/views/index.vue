@@ -329,85 +329,104 @@ font-size: 14px;"
 
       <div class="small">
         <div class="row">
+          
           <div class="card" style="width: 18rem; margin:10px">
+              <router-link style="text-decoration:none"  class="route" to="cont">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Internship</a>
               <a href="#" class="card-link" style="margin-left:150px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+              </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="test">
             <div class="card-body" style="background-color:#092E2B;">
               <a href="#" class="card-link white--text">Test Preparation</a>
               <a href="#" class="card-link" style="margin-left:110px">
                 <v-icon large color="#FF8A00">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="prof">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Professional IT Courses</a>
               <a href="#" class="card-link" style="margin-left:60px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="books">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Book Shops</a>
               <a href="#" class="card-link" style="margin-left:140px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="diy">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">DIY Kits</a>
               <a href="#" class="card-link" style="margin-left:160px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="events">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Events</a>
               <a href="#" class="card-link" style="margin-left:160px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="contest">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Apply For Contests</a>
               <a href="#" class="card-link" style="margin-left:100px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="web">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Webinars</a>
               <a href="#" class="card-link" style="margin-left:150px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
 
           <div class="card" style="width: 18rem; margin:10px">
+             <router-link style="text-decoration:none"  class="route" to="/">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Surport a Project</a>
               <a href="#" class="card-link" style="margin-left:100px">
                 <v-icon large color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
+             </router-link>
           </div>
         </div>
       </div>

@@ -338,7 +338,7 @@ export default {
     text-align: left;
   }
   .cont {
-    padding-top: 200px;
+    padding-top: 80px;
   }
 }
 
@@ -378,7 +378,7 @@ export default {
     font-family: "Alegreya";
   }
   .cont {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 }
 </style>

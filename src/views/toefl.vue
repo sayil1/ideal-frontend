@@ -271,8 +271,8 @@ template {
     margin: 0px;
   }
   .car-head {
-    font-size: 20px;
-    padding-top: 30px;
+    font-size: 10px;
+    padding-top: 10px;
     padding-bottom: 50px;
     font-family: "lora";
     text-align: center;
@@ -284,7 +284,7 @@ template {
     text-align: left;
   }
   .cont {
-    padding-top: 200px;
+    padding-top: 80px;
   }
 }
 
@@ -328,7 +328,7 @@ template {
     font-family: "Alegreya";
   }
   .cont {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 }
 </style>

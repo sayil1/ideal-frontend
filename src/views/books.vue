@@ -145,131 +145,11 @@ background: #CAD9D8;">
       </div>
 
       <div class="container">
-        <div v-if="weeksTop.length > 0" class="heads" v-show="!verified"  style="width: 361px;
-height: 29px;
-left: 98px;
-top: 1174px;
-color: #092E2B;
-font-family: SF UI Display;
-font-style: normal;
-font-weight: 800;
-font-size: 30px;
-line-height: 29px;
-display: flex;
-padding-bottom:40px;
-align-items: center;
-text-align: center">Books for the week</div>
-       
-         
-              <div class="card m-3" style="width: 15.5rem;" v-for="(item,i) in weeksTop" :key="i">
-                <v-img
-                  style=" max-width:100%; height: 15vw; object-fit: contain; "
-                  class="white--text align-end"
-                  v-bind:src="item.imagesPath"
-                ></v-img>
-                <div class="card-body">
-                  <div style>
-                    <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
-                      <strong>{{ item.title }}</strong>
-                    </div>
-                    <div style="left: 9.95%;font-size:10px;right: 31.22%;color: #639B97;">
-                      By Austin MAikano
-                      <hr style="margin:5px; border: 1px solid ;" />Comics
-                    </div>
-                  </div>
-                  <div
-                    class="modal fade"
-                    id="exampleModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel" style="color: #639B97">
-                            <strong>{{ e.title }}</strong>
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                            style="color:red"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <strong class="card-title">
-                            <div class="row">
-                              <div class="col-md-6" style="width: 18rem;">
-                                <v-img
-                                  class="white--text align-end"
-                                  height="300px"
-                                  v-bind:src="e.imagesPath"
-                                ></v-img>
-                              </div>
-                              <div class="card-body col-md-6">
-                                <p
-                                  class="card-text"
-                                  style="font-size:15px;right: 31.22%;color: #639B97;"
-                                >{{e.description}}</p>
-                                <p style="color: #1B6761;">NGN{{e.price}}</p>
-                                <v-btn
-                                  class="ma-2"
-                                  @click="addToCart(e)"
-                                  data-dismiss="modal"
-                                  outlined
-                                  color="orange"
-                                >Add to cart</v-btn>
-                              </div>
-                            </div>
-                          </strong>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  style="width:100%"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                  @click="openModal(item)"
-                >
-                  <div
-                    class="row"
-                    style="font-size:15px; width:100%;  background: #CAD9D8; margin:0px"
-                  >
-                    <div class="col-3">
-                      <v-icon
-                        size="20"
-                        color="#1B6761"
-                        right
-                        style="padding-right:10px"
-                        data-toggle="modal"
-                        data-target="#exampleModal"
-                        @click="openModal(item)"
-                      >mdi-cart</v-icon>
-                    </div>
-                    <div class="col-4">
-                      <v-icon size="20" color="#1B6761" right style="padding-right:10px">mdi-star</v-icon>
-                    </div>
-                    <div class="col-5" style="text-align:left; color: #1B6761;">
-                      <strong>NGN{{ item.price }}</strong>
-                    </div>
-                  </div>
-                </div>
-              </div>
-       
-        <div v-show="!verified">
-          <div class="row">
-            <div
-              style="width: 361px;
+        <div
+          v-if="weeksTop.length > 0"
+          class="heads"
+          v-show="!verified"
+          style="width: 361px;
 height: 29px;
 left: 98px;
 top: 1174px;
@@ -283,9 +163,130 @@ display: flex;
 padding-bottom:40px;
 align-items: center;
 text-align: center"
+        >Books for the week</div>
+
+        <div class="card" style="width: 15.5rem; margin-bottom:80px" v-for="(item,i) in weeksTop" :key="i">
+          <v-img
+            style=" max-width:100%; height: 15vw; object-fit: contain; "
+            class="white--text align-end"
+            v-bind:src="item.imagesPath"
+          ></v-img>
+          <div class="card-body">
+            <div style>
+              <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
+                <strong>{{ item.title }}</strong>
+              </div>
+              <div style="left: 9.95%;font-size:10px;right: 31.22%;color: #639B97;">
+                By Austin MAikano
+                <hr style="margin:5px; border: 1px solid ;" />Comics
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: #639B97">
+                      <strong>{{ e.title }}</strong>
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      style="color:red"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <strong class="card-title">
+                      <div class="row">
+                        <div class="col-md-6" style="width: 18rem;">
+                          <v-img
+                            class="white--text align-end"
+                            height="300px"
+                            v-bind:src="e.imagesPath"
+                          ></v-img>
+                        </div>
+                        <div class="card-body col-md-6">
+                          <p
+                            class="card-text"
+                            style="font-size:15px;right: 31.22%;color: #639B97;"
+                          >{{e.description}}</p>
+                          <p style="color: #1B6761;">NGN{{e.price}}</p>
+                          <v-btn
+                            class="ma-2"
+                            @click="addToCart(e)"
+                            data-dismiss="modal"
+                            outlined
+                            color="orange"
+                          >Add to cart</v-btn>
+                        </div>
+                      </div>
+                    </strong>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="width:100%"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            @click="openModal(item)"
+          >
+            <div class="row" style="font-size:15px; width:100%;  background: #CAD9D8; margin:0px">
+              <div class="col-3">
+                <v-icon
+                  size="20"
+                  color="#1B6761"
+                  right
+                  style="padding-right:10px"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  @click="openModal(item)"
+                >mdi-cart</v-icon>
+              </div>
+              <div class="col-4">
+                <v-icon size="20" color="#1B6761" right style="padding-right:10px">mdi-star</v-icon>
+              </div>
+              <div class="col-5" style="text-align:left; color: #1B6761;">
+                <strong>NGN{{ item.price }}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-show="!verified">
+          <div class="row">
+            <div
+              style="width: 361px;
+height: 29px;
+left: 98px;
+color: #092E2B;
+font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 29px;
+display: flex;
+padding-bottom:40px;
+align-items: center;
+text-align: center
+margin-top:20px"
             >
               Trending Now
-              <div
+              <button
                 style="font-family: SF UI Display;
 font-style: normal;
 font-weight: 600;
@@ -293,12 +294,13 @@ font-size: 17px;
 line-height: 17px;
 margin-left:20px;
 color: #FF8A00;"
-              >See More</div>
+ @click="showLessCountries = !showLessCountries"
+              > {{showLessCountries===true? "Show All Books" : "Show Less"}}</button>
             </div>
           </div>
 
           <div class="row">
-            <div v-for="(item,i) in computedObj" :key="i">
+            <div v-for="(item,i) in  shopsToDisplay" :key="i">
               <div class="card m-3" style="width: 15.5rem;">
                 <v-img
                   style=" max-width:100%; height: 15vw; object-fit: contain; "
@@ -318,7 +320,7 @@ color: #FF8A00;"
 
                   <!-- Modal -->
                   <div
-                    class="modal "
+                    class="modal"
                     id="exampleModal"
                     tabindex="-1"
                     role="dialog"
@@ -476,11 +478,10 @@ export default {
       infiniteScroll: true,
       progress: true,
       autoreplay: true,
-      playspeed: 1000,
-      limit:4
+      playspeed: 1000
     },
     e: [],
-
+     showLessCountries: true,
     hopper: true,
     shop: [],
     weeksTop: [],
@@ -511,11 +512,15 @@ export default {
 
       return text;
     },
-    computed:{
-  computedObj(){
-    return this.limit ? this.shop.slice(0,this.limit) : this.shop
-  }
-}
+
+     shopsToDisplay: function() {
+      if (this.showLessCountries) {
+        return this.shop.slice(0, 4);
+      } else {
+        return this.shop;
+      }
+    }
+   
   },
   watch: {},
   created() {
@@ -524,14 +529,14 @@ export default {
       .getRequest("books/allBooks")
       .then(response => {
         // JSON responses are automatically parsed.
-        this.shop = response.data.result;
+        this.shop = response.data.result
 
-        for (let i = 0; i <= this.shop.length - 1; i++) {
+        for (let i = 0; i <= response.data.result.length - 1; i++) {
           // eslint-disable-next-line no-console
           // console.log(this.shop[i], 'shops');
           let today = new Date().toISOString().substr(0, 10);
-          if (this.shop[i].topTrend > today) {
-            this.weeksTop.push(this.shop[i]);
+          if (response.data.result[i].topTrend > today) {
+            this.weeksTop.push(response.data.result[i]);
           } // eslint-disable-next-line no-console
           console.log(this.weeksTop, "weeks trop");
         }
