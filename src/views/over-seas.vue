@@ -1,29 +1,41 @@
 <template>
   <div style="background-color:">
     <nava />
-    <div style class="div1">
-      <div class="card-size">
-        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.8)">
-          <div style="margin-top:0px ; ">
-            <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
-              <div class="car-text">
-                <span class="car-head white--text" style>OVERSEAS ADMISSION CONSULTING</span>
-                <hr
-                  style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                />
-              </div>
+
+    <div style="background-color: " class="cont">
+      <div class="card-size div1">
+        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
+          <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+            <div class="car-head">
+              <span class="white--text" style>OVERSEAS ADMISSION CONSULTING</span>
+              <hr
+                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
+              <router-link to="cont" class="success--text" style="text-decoration:none;">
+                <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
+              </router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="body" style>
-      <!-- card -->
-      <div class="row" style="background-color:;">
-        <div class="col-sm-12 col-md-12" >
-          <div class style=" margin-left:20px; margin-right:20px">
+
+    <div style="padding:40px">
+      <div class="row">
+        <div class="col-sm-12 col-md-12">
+          <div
+            class
+            style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; "
+          >
             <div class style>
-              <p class="--text font-weight-regular">
+              <p class>
                 If you want to make your overseas study dreams come true, IDEaL’s admission consulting is your best bet.
                 <br />We have an unequaled track record of enlisting students with diverse qualifications and career drives into many foreign universities and colleges. We help to secure study admissions and have had students who are constantly happy with our results.
                 <br />
@@ -31,66 +43,111 @@
                 <strong>What you get from IDEaL’s admissions consulting</strong>
                 <br />Our full range of services includes:
                 <br />
-
-                <v-list dense class="row">
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
-                  <v-list-item-group v-model="item" class="col-md-9" color="rgb()">
-                    <v-list-item v-for="(item, i) in items" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item.icon"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                  <div class="col-sm col-md-3 mt-4" v-if="image==true">
-                    <v-img src="../assets/test.svg" style=" width:300px; margin-top:-30px"></v-img>
-                  </div>
-                </v-list>
               </p>
+
+              <ul>
+                <li v-for="(items, i) in items" :key="i">{{items.text}}</li>
+              </ul>
+            </div>
+            <div
+              style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+            >
+              <div>
+                <p>
+                  <!-- <strong>Social pressures</strong>
+        <br />Societal, families and peers can deter individuals from actively participating in sports.
+        <br />
+        <br />• societal beliefs and traditions within a community
+        <br />• the parental expectation of their children and also Little or no family support in sporting activities
+        <br />• The conflicting interest in recreational activities.
+        <br />• Few opportunities for females seeking opportunities to participate in sports
+        <br />
+                  <br />-->
+                </p>
+
+                <div
+                  class
+                  style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+                >
+                  <router-link to="cont">Contact us</router-link>for more information
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="body" style="margin-top:-25px">
-      <!-- card -->
-      <div class="row">
-        <div >
-          <div class="">
-            <div class="" style>
-              <p class="card-text blue--text font-weight-regular">
-                <v-list dense>
-                  <!-- <v-subheader>REPORTS</v-subheader> -->
 
-                  <div class="card-text --text font-weight-regular">
-                    <h3>
-                      <strong class="black--text">For working professionals</strong>
-                      <hr
-                        style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
-                      />
-                    </h3>
-                    <div>We assist working professionals across various industries/sectors to get offers that’ll enable them undergo short programs/courses in renown universities and in line with their career agenda.</div>
-                    <br />
-                    <h3>
-                      <strong class="black--text">For Corporate bodies</strong>
-                      <hr
-                        style="color:orange; width:200px;  margin-right:auto; border: 2px solid orange;"
-                      />
-                    </h3>We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics.
-                    <br />For Overseas Admissions, UPCOMING overseas trainings, conferences and short courses.
-                    <a
-                      href="/cont"
-                    >Contact Us</a>
-                  </div>
-                </v-list>
-              </p>
-            </div>
-          </div>
+      <!-- <div class="col-md-4">
+      <v-img src="../assets/ideal14.jpg" aspect-ratio="4.4"  height="325"
+               contain></v-img>
+      </div>-->
+
+      <div class="col-md-12">
+        <div
+          style="font-family: SF UI Display;
+          color: #092E2B;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 108.34%;"
+        >For working professionals</div>
+        <br />
+        <div
+          style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+        >We assist working professionals across various industries/sectors to get offers that’ll enable them undergo short programs/courses in renown universities and in line with their career agenda.</div>
+      </div>
+
+      <div class="col-md-12">
+        <div
+          style="font-family: SF UI Display;
+          color: #092E2B;
+font-style: normal;
+font-weight: bold;
+font-size: 30px;
+line-height: 108.34%;"
+        >For Corporate bodies</div>
+        <br />
+        <div
+          style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;"
+        >
+          We facilitate manpower training in UK, Gambia, Ghana, Malaysia, Vietnam and India for corporate bodies. This is done by recommending institutions abroad with customized and flexible programs that suit their business needs. Our crop of advisors will provide immigration services and other travel logistics.
+          <br />For Overseas Admissions, UPCOMING overseas trainings, conferences and short courses.
         </div>
       </div>
+
+      <div class="body" style>
+        <!-- card -->
+      </div>
     </div>
+
     <foota />
   </div>
 </template>
@@ -162,7 +219,6 @@ export default {
 </script>
 
 <style scoped lang="css">
-
 .div1 {
   background-image: url("../assets/overb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
@@ -172,7 +228,6 @@ export default {
 @media only screen and (max-width: 400px) {
   .car {
     font-size: 2px;
-   
   }
   .car-head {
     font-size: 40px;

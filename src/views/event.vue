@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color:black">
     <nava />
     <div style="padding-top:150px;">
       <!-- <span  style="text-align:center;">
@@ -58,6 +58,7 @@ color: #1B6761;"
             >mdi-content-copy</v-icon>
 
             <a
+              style="text-decoration:none"
               class="resp-sharing-button__link"
               href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com"
               target="_blank"
@@ -79,7 +80,7 @@ font-weight: bold;
 font-size: 36px;
 line-height: 108.34%;
 letter-spacing: 0.02em;
-color: #1B6761;
+color: orange;
 "
               >{{event.title}}</h4>
               <p
@@ -90,7 +91,7 @@ font-weight: 500;
 font-size: 15px;
 line-height: 129.84%;
 letter-spacing: 0.02em;
-color: #1B6761;"
+color: orange;"
               >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
               <p
@@ -100,6 +101,7 @@ font-weight: 500;
 font-size: 15px;
 line-height: 129.84%;
 letter-spacing: 0.02em;
+color:orange
 ;"
               >
                 <v-icon color="#1B6761" small style="margin:3px">mdi-map-marker</v-icon>
@@ -119,7 +121,7 @@ letter-spacing: 0.02em;
                       v-bind="attrs"
                       v-on="on"
                       outlined
-                      color="orange"
+                      color="white"
                     >Register For Event</v-btn>
                   </template>
                   <v-card>

@@ -3,30 +3,62 @@
     <nava />
     <div style="background-color: " class="cont">
       <div class="card-size div1">
-        <div class="card-size">
-          <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-            <div style="margin-top:px ; ">
-              <div class="car" style="margin-left:40px; margin-right:40px">
-                <div class="car-head">
-                  <span class="white--text">TEST PREPARATION</span>
-                  <hr
-                    style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
-                  />
-                </div>
-              </div>
+        <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
+          <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+            <div class="car-head">
+              <span class="white--text" style>OVERSEAS ADMISSION CONSULTING</span>
+              <hr
+                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+              />
+              <router-link to="cont" class="success--text" style="text-decoration:none;">
+                <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
+              </router-link>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class style>
-      <!-- card -->
-      <div class="row" style="background-color:;">
-        <div class="col-md-12" style="padding-left:60px; padding-right:60px">
+
+
+
+<!-- money -->
+   <div
+            class
+            style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; "
+          >
+           <div class="col-md-12" style="padding-left:60px; padding-right:60px">
           We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
           <br />Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
           <br />
         </div>
+   </div>
+
+<!-- money -->
+
+
+
+
+
+
+
+    <div class style>
+      <!-- card -->
+      <div class="row" style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; ">
+      
         <div class="col-sm-12 col-md-6" style="margin-bottom:0px">
           <div class="card-size" style=" margin-left:20px; margin-right:20px; margin-top:60px">
             <div class="card-body" style="margin-top:0px">
@@ -57,7 +89,14 @@
             style="color:; text-align:center; margin-bottom:20px"
             class="display-1"
           >IMPORTANT FACTS</div>
-          <table class="table table-bordered card-size padding:10px">
+          <table class="table table-bordered card-size padding:10px" style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; ">
             <thead>
               <tr>
                 <th style="border-color:black; width:200px" scope="col">COURSE LENGTH</th>
@@ -91,7 +130,14 @@
       </div>
     </div>
 
-    <div class style="margin-top:0px; margin-bottom:50px">
+    <div class style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; ">
       <!-- card -->
       <div class="row">
         <div class="col-sm-12 col-md-6">
@@ -114,7 +160,14 @@
                     </v-list-item>
                   </v-list-item-group>
                   <br />
-                  <div
+                  <div style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; "
                     class="card-text --text font-weight-regular"
                   >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
                 </v-list>
@@ -128,7 +181,14 @@
             style="color:rgb; text-align:center; margin-bottom:20px"
             class="display-1"
           >IMPORTANT FACTS</div>
-          <table style="border-color:black;" class="table table-bordered card-size">
+          <table style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; " class="table table-bordered card-size">
             <thead>
               <tr>
                 <th style="border-color:black; width:200px" scope="col">COURSE LENGTH</th>
@@ -249,7 +309,7 @@ td {
     text-align: left;
   }
   .cont{
-    padding-top: 200px
+    padding-top: 100px
   }
 }
 
@@ -284,7 +344,7 @@ td {
     font-family: "Alegreya";
   }
   .cont{
-    padding-top: 100px
+    padding-top: 60px
   }
 }
 </style>

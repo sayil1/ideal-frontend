@@ -22,8 +22,14 @@
                         <div
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
-                        ></div>
-                        <div class="text-center"></div>
+                        > 
+                        
+                      
+                        
+                          </div>
+                        <div class="text-center orange--text">
+                            <h1 class="animate__animated animate__backInLeft">An animated element</h1>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -110,14 +116,15 @@
             </v-carousel>
             <div class="board">
                <div class="row">
-                <div class="col-md-3 col-3" style="text-align:center">
-                  <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
+                <div class="col-md-3 col-3" style="text-align:center ; text-decoration:none">
+                  <a href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr" style="text-decoration:none">   <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon></a>
+                
                 </div>
                 <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
                 </div>
                 <div class="col-md-3 col-3" style="text-align:center">
-                  <v-icon size="20" color="white" right>mdi-instagram</v-icon>
+                  <a style="text-decoration:none" href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"> <v-icon size="20" color="white" right>mdi-instagram</v-icon></a>
                 </div>
                 <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right>mdi-linkedin</v-icon>
@@ -313,7 +320,8 @@ letter-spacing: 0.02em;  "
       </div>
     </div>
     <div style="width:100%">
-      <div
+     
+ <div
         class="display-1"
         style="margin-top:40px; text-align:center; color: #092E2B; font-family: SF UI Display;
 font-style: normal;
@@ -326,104 +334,105 @@ font-style: normal;
 font-weight: normal;
 font-size: 14px;"
       >Quick link to the most searched offer</div>
-
       <div class="small">
-        <div class="row">
+
+        
+        <div class="row" style="margin-left:auto; margin-right:0">
           
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
               <router-link style="text-decoration:none"  class="route" to="cont">
             <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Internship</a>
-              <a href="#" class="card-link" style="margin-left:150px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a  class="card-link white--text">Internship</a>
+              <a class="card-link" style="float:right; ">
+                <v-icon  color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
               </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="test">
             <div class="card-body" style="background-color:#092E2B;">
               <a href="#" class="card-link white--text">Test Preparation</a>
-              <a href="#" class="card-link" style="margin-left:110px">
-                <v-icon large color="#FF8A00">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="prof">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Professional IT Courses</a>
-              <a href="#" class="card-link" style="margin-left:60px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="books">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Book Shops</a>
-              <a href="#" class="card-link" style="margin-left:140px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon  color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="diy">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">DIY Kits</a>
-              <a href="#" class="card-link" style="margin-left:160px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="events">
             <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Events</a>
-              <a href="#" class="card-link" style="margin-left:160px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link white--text">Eventssss</a>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="contest">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Apply For Contests</a>
-              <a href="#" class="card-link" style="margin-left:100px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="web">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Webinars</a>
-              <a href="#" class="card-link" style="margin-left:150px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
           </div>
 
-          <div class="card" style="width: 18rem; margin:10px">
+          <div class=" col-md-4" style="width: 18rem;">
              <router-link style="text-decoration:none"  class="route" to="/">
             <div class="card-body" style="background-color:#1B6761;">
               <a href="#" class="card-link white--text">Surport a Project</a>
-              <a href="#" class="card-link" style="margin-left:100px">
-                <v-icon large color="white">mdi-arrow-right</v-icon>
+              <a href="#" class="card-link" style="float:right; ">
+                <v-icon color="white">mdi-arrow-right</v-icon>
               </a>
             </div>
              </router-link>
@@ -454,7 +463,7 @@ font-size: 48px; "
               <img
                 src="../assets/toefl.png"
                 style=" display: block;
-   width: 150px;
+   width: 100px;
     height: 100px; text-align:center; display: block;
   margin-left: auto;
   margin-right: auto;"
@@ -466,7 +475,7 @@ font-size: 48px; "
               <img
                 src="../assets/icm.jpeg"
                 style=" display: block;
-   width: 150px;
+   width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
@@ -478,7 +487,7 @@ font-size: 48px; "
               <img
                 src="../assets/pea.jpeg"
                 style=" display: block;
-    width: 150px;
+    width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
@@ -490,7 +499,7 @@ font-size: 48px; "
               <img
                 src="../assets/cisco.png"
                 style=" display: block;
-    width: 150px;
+    width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
@@ -502,7 +511,7 @@ font-size: 48px; "
               <img
                 src="../assets/nsrp.png"
                 style=" display: block;
-   width: 150px;
+   width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
@@ -894,8 +903,8 @@ header {
   .small {
     margin-top: 90px;
     margin-bottom: 90px;
-    margin-left: 15%;
-    margin-right: auto;
+    margin-left: 50px;
+    margin-right: 10px;
   }
   .form {
     font-family: SF UI Display;
@@ -986,10 +995,12 @@ header {
     padding: 0px;
   }
   .small {
-    margin-top: 90px;
+    margin-top: 60px;
     margin-bottom: 90px;
-    margin-left: 15%;
+    margin-left: auto;
     margin-right: auto;
+   padding-left: 40px;
+   padding-right: 40px
   }
   .form {
     font-family: SF UI Display;

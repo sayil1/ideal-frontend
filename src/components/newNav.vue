@@ -80,6 +80,9 @@
                   <router-link class="route" to="train">
                     <li class="dropdown-item">TRAIN-THE-TRAINERS</li>
                   </router-link>
+                    <router-link class="route" to="over">
+                    <li class="dropdown-item">INTERNSHIP</li>
+                  </router-link>
                   <!-- <li class="dropdown-item dropdown">
                     <a
                       class="dropdown-toggle"
@@ -121,9 +124,7 @@
                   <!-- <li class="dropdown-item">
                 <router-link class="route" to="career">CAREER DEVELOPMENT</router-link>
                   </li>-->
-                  <router-link class="route" to="over">
-                    <li class="dropdown-item">INTERNSHIP</li>
-                  </router-link>
+                
                    <li class="dropdown-item dropdown">
                     <a
                       class="dropdown-toggle"
@@ -368,13 +369,13 @@ ul.dropdown-menu{
     border-left: 0.3em solid;
   }
   .nava {
-    margin-left: 20%;
+    margin-left: 31%;
   }
   .navas {
     width: 150%;
   }
   .infos {
-    margin-left: 80px;
+    margin-left: 100px;
   }
   .nav2 {
     /* padding-top: 80px */
