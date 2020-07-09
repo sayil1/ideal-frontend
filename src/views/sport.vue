@@ -97,6 +97,7 @@ letter-spacing: 0.02em;"
     </div>
     <hr style="border: 0.5px solid #639B97;" />
     <div class="body" style="padding-top:20px">
+      
       <div style>
         <img class="responsiveIM" src="../assets/sportIDE.jpg" alt style="" />
       </div>

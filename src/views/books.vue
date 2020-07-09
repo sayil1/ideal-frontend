@@ -4,99 +4,81 @@
 
     <div class>
       <div class="conts">
-        <div
-          style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 300;
-font-size: 36px;
-line-height: 43px;
-letter-spacing: 0.02em;
-height: 337.23px;
-color: #FFFFFF;
-padding:120px;
-text-align:left "
-        >
+        <div style class="cont-text">
           <span style>
             Shop a set of 10 books &
             <br />Get 50% off on your next
             <br />book purchase. Hurry up!
           </span>
         </div>
+      </div>
 
-        <div style="width: 100%;
-height: 78px;
+      <!-- <vue-position-sticky :offsetTop="10" sticky-class="myClass" />
+ 
+<vue-position-sticky :offsetBottom="0" @change="handleStickyChange" />
+      -->
+      <vue-position-sticky :offsetTop="54" style="z-index:-2000">
+        <div
+          style="width: 100%;
 left: 0px;
 margin:0px;
-
-background: #CAD9D8;">
-          <div style="padding-top:20px">
-            <div class style="margin:auto; width:500px">
-              <div class="input-group">
-                <div class="input-group-prepend">
+padding:20px;
+background: #CAD9D8;"
+          class="row"
+        >
+          <div style class="col-md-9">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text"
+                  id="inputGroupPrepend3"
+                  style="background-color:white"
+                >
+                  <v-icon style="color: #639B97;">mdi-magnify</v-icon>
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="  Search a Book.."
+                aria-describedby="inputGroupPrepend3"
+                required
+              />
+              <div class="invalid-feedback" style="color: #639B97;"></div>
+            </div>
+          </div>
+          <div style="col-md-3">
+            <div class="">
+              <div style="  z-index:200" class="">
+                <v-btn class="ma-2" tile color="success" >
+                  <v-icon left style="color:orange">mdi-cart</v-icon>
                   <span
-                    class="input-group-text"
-                    id="inputGroupPrepend3"
-                    style="background-color:white"
-                  >
-                    <v-icon style="color: #639B97;">mdi-magnify</v-icon>
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="  Search a DIY Kit.."
-                  aria-describedby="inputGroupPrepend3"
-                  required
-                />
-                <div class="invalid-feedback" style="color: #639B97;"></div>
+                    class="badge badge"
+                    style="padding:0px; color:white; font-size:20px"
+                  >{{quantity }}</span>
+                  <span
+                    style="color:white"
+                  >{{ (quantity > 1 || quantity === 0 ? " items" : " item") }}</span>
+                </v-btn>
+
+                <v-btn
+                  v-if="quantity>=1"
+                  @click="showCart = !showCart"
+                  v-show="!verified"
+                  class="ma-2"
+                  color="success"
+                >
+                  <v-icon dark>mdi-money</v-icon>
+                  <span style="color:white">Checkout</span>
+                </v-btn>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </vue-position-sticky>
     </div>
+    <div></div>
     <div id="app" style>
-      <div class="header">
-        <!-- <div style="margin-right:px">
-          <button
-            @click="showCart = !showCart"
-            v-show="!verified"
-          >items {{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
-        </div>-->
-        <div style=" position:fixed; z-index:200" class="but">
-          <v-btn class="ma-2" tile color="success" v-if="quantity>=1">
-            <v-icon left style="color:orange">mdi-cart</v-icon>
-            <span
-              class="badge badge"
-              style="padding:10px; color:white; font-size:20px"
-            >{{quantity }}</span>
-            <span style="color:white">{{ (quantity > 1 || quantity === 0 ? " items" : " item") }}</span>
-          </v-btn>
-
-          <v-btn
-            v-if="quantity>=1"
-            @click="showCart = !showCart"
-            v-show="!verified"
-            class="ma-2"
-            color="success"
-          >
-            <v-icon dark>mdi-money</v-icon>
-            <span style="color:white">Checkout</span>
-          </v-btn>
-
-          <!-- 
-          <button
-            v-if="quantity>=1"
-            type="button"
-            class="btn btn-white"
-            @click="showCart = !showCart"
-            v-show="!verified"
-          >
-            <v-icon dark></v-icon>
-            <span>View Cart and Checkout</span>
-          </button>-->
-        </div>
-      </div>
       <div class="cart" v-show="showCart">
         <div v-show="items.length > 0" style="position:fixed">
           <ul>
@@ -165,10 +147,15 @@ align-items: center;
 text-align: center"
         >Books for the week</div>
 
-        <div class="card" style="width: 15.5rem; margin-bottom:80px" v-for="(item,i) in weeksTop" :key="i">
+        <div
+          class="card"
+          style="width: 15.5rem; margin-bottom:80px"
+          v-for="(item,i) in weeksTop"
+          :key="i"
+        >
           <v-img
-            style=" max-width:100%; height: 15vw; object-fit: contain; "
-            class="white--text align-end"
+            style="  "
+            class="white--text align-end vImage"
             v-bind:src="item.imagesPath"
           ></v-img>
           <div class="card-body">
@@ -294,8 +281,8 @@ font-size: 17px;
 line-height: 17px;
 margin-left:20px;
 color: #FF8A00;"
- @click="showLessCountries = !showLessCountries"
-              > {{showLessCountries===true? "Show All Books" : "Show Less"}}</button>
+                @click="showLessCountries = !showLessCountries"
+              >{{showLessCountries===true? "Show All Books" : "Show Less"}}</button>
             </div>
           </div>
 
@@ -303,8 +290,8 @@ color: #FF8A00;"
             <div v-for="(item,i) in  shopsToDisplay" :key="i">
               <div class="card m-3" style="width: 15.5rem;">
                 <v-img
-                  style=" max-width:100%; height: 15vw; object-fit: contain; "
-                  class="white--text align-end"
+                  style="  "
+                  class="white--text align-end vImage"
                   v-bind:src="item.imagesPath"
                 ></v-img>
                 <div class="card-body">
@@ -481,7 +468,7 @@ export default {
       playspeed: 1000
     },
     e: [],
-     showLessCountries: true,
+    showLessCountries: true,
     hopper: true,
     shop: [],
     weeksTop: [],
@@ -513,14 +500,13 @@ export default {
       return text;
     },
 
-     shopsToDisplay: function() {
+    shopsToDisplay: function() {
       if (this.showLessCountries) {
         return this.shop.slice(0, 4);
       } else {
         return this.shop;
       }
     }
-   
   },
   watch: {},
   created() {
@@ -529,7 +515,7 @@ export default {
       .getRequest("books/allBooks")
       .then(response => {
         // JSON responses are automatically parsed.
-        this.shop = response.data.result
+        this.shop = response.data.result;
 
         for (let i = 0; i <= response.data.result.length - 1; i++) {
           // eslint-disable-next-line no-console
@@ -611,6 +597,14 @@ export default {
 </script>
 
 <style scoped lang="css">
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
 .header {
   height: 80px;
 }
@@ -748,8 +742,25 @@ li {
   }
   .conts {
     background-image: url("../assets/bookIDE.jpg");
-    background-size: contain;
-    background-position: center center;
+    /* background-size: contain; */
+    background-position: center;
+    height: 100%;
+    padding-top: 70px;
+  }
+
+  .cont-text {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    padding: 30px;
+    text-align: left;
+  }
+  .vImage{
+ height: 65vw;
   }
 }
 
@@ -780,6 +791,21 @@ li {
   }
   .conts {
     background-image: url("../assets/bookIDE.jpg");
+  }
+  .cont-text {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+    height: 337.23px;
+    color: #ffffff;
+    padding: 120px;
+    text-align: left;
+  }
+  .vImage{
+    max-width:100%; height: 15vw; object-fit: contain;
   }
 }
 </style>

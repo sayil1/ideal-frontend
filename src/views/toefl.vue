@@ -125,7 +125,7 @@ font-weight: bold;
 font-size: 30px;
 line-height: 108.34%;
 padding:20px"
-            >Register for this class.</div>
+            >Register for this exam.</div>
             <div class="col">
               <input type="text" class="form-control" placeholder="Sunamer name" />
             </div>

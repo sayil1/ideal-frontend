@@ -23,7 +23,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
 
-          <div style class="nava collapse navbar-collapse" id="navbarCollapse">
+          <div  class="nava collapse navbar-collapse" id="navbarCollapse" style="order:4">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active"></li>
               <router-link class="nav-link" to="/" style>
@@ -180,10 +180,10 @@
                   <router-link class="route" to="events">
                     <li class="dropdown-item">EVENTS</li>
                   </router-link>
-                  <router-link class="route" to="contest">
+                  <router-link class="route" to="contests">
                     <li class="dropdown-item">CONTESTS</li>
                   </router-link>
-                  <router-link class="route" to="web">
+                  <router-link class="route" to="webs">
                     <li class="dropdown-item">WEBINARS</li>
                   </router-link>
 

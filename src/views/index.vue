@@ -116,19 +116,20 @@
             </v-carousel>
             <div class="board">
                <div class="row">
-                <div class="col-md-3 col-3" style="text-align:center ; text-decoration:none">
+                <div class="col-md-4 col-3" style="text-align:center ; text-decoration:none">
                   <a href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr" style="text-decoration:none">   <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon></a>
                 
                 </div>
-                <div class="col-md-3 col-3" style="text-align:center">
-                  <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
+                <div class="col-md-4 col-3" style="text-align:center">
+                  <a href="https://twitter.com/IdealcenterN" style="text-decoration:none"> <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon></a>
+                
                 </div>
-                <div class="col-md-3 col-3" style="text-align:center">
+                <div class="col-md-4 col-3" style="text-align:center">
                   <a style="text-decoration:none" href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"> <v-icon size="20" color="white" right>mdi-instagram</v-icon></a>
                 </div>
-                <div class="col-md-3 col-3" style="text-align:center">
+                <!-- <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right>mdi-linkedin</v-icon>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>

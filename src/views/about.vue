@@ -1,6 +1,9 @@
 <template>
   <div>
     <nava />
+
+ 
+
     <div class="aboutTop" style="padding-top:85px;" >
       <img class="aboutIMG" src="../assets/aboutIDE3.jpg" alt style=" " />
     </div>
@@ -111,12 +114,12 @@ letter-spacing: 0.02em;"
           
               <div class="col-md-4">
                 <a
-                  href="https://mdbootstrap.com/img/Photos/Horizontal/Nature/12-col/img%20(117).jpg"
+                  href="../assets/ideal13.jpg"
                   data-size="1600x1067"
                 >
                   <img
                     alt="picture"
-                    src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(117).jpg"
+                    src="../assets/ideal13.jpg"
                     class="img-fluid"
                   />
                 </a>

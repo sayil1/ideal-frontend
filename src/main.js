@@ -11,7 +11,8 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import VueMeta from 'vue-meta'
 import VueClipboard from 'vue-clipboard2'
-
+import Sticky from 'vue-sticky-directive'
+import vuePositionSticky from 'vue-position-sticky'
 
 Vue.use(BootstrapVue)
 Vue.use(VueMeta, {
@@ -20,6 +21,8 @@ Vue.use(VueMeta, {
 
 Vue.use(require("vue-moment"));
 Vue.use(VueClipboard)
+Vue.use(Sticky)
+Vue.use(vuePositionSticky)
 
 Vue.config.productionTip = false
 

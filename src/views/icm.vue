@@ -24,7 +24,7 @@
 
       <!-- card -->
       <div class="row">
-        <div class="col-sm-12 col-md-8">
+        <div class="col-sm-12 col-md-12">
           <div
             class
             style="font-family: SF UI Display;
@@ -150,60 +150,7 @@ letter-spacing: 0.02em;"
             ></div>
           </div>
         </div>
-        <div
-          class="col-sm col-md-4"
-          style="margin-top:0px; padding:20px; background-color:rgb(240, 245, 245)"
-          v-if="image==true"
-        >
-          <form>
-            <div
-              style="text-align:center; font-family: SF UI Display;
-       color: #092E2B;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 108.34%;
-padding:20px"
-            >Register for this class.</div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Sunamer name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Middle name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Date" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Email Address" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Contact Address" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Country Of Birth/Citizenship" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Exam Date" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder=" Exam Center" />
-            </div>
-            <div class="col">
-              <v-file-input label="International Passport Number" outlined dense></v-file-input>
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder=" Exam Center" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="International Passport Number" />
-            </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block" style>Submit</button>
-          </form>
-        </div>
+      
       </div>
 
       <!-- div -->

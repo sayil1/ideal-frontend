@@ -4,99 +4,81 @@
 
     <div class>
       <div class="conts">
-        <div
-          style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 300;
-font-size: 36px;
-line-height: 43px;
-letter-spacing: 0.02em;
-height: 337.23px;
-color: #FFFFFF;
-padding:120px;
-text-align:right "
-        >
+        <div style class="cont-text">
           <span style>
-            Shop a set of DIY Kits &
+            Shop a set of 10 books &
             <br />Get 50% off on your next
             <br />book purchase. Hurry up!
           </span>
         </div>
+      </div>
 
-        <div style="width: 100%;
-height: 78px;
+      <!-- <vue-position-sticky :offsetTop="10" sticky-class="myClass" />
+ 
+<vue-position-sticky :offsetBottom="0" @change="handleStickyChange" />
+      -->
+      <vue-position-sticky :offsetTop="54" style="z-index:-2000">
+        <div
+          style="width: 100%;
 left: 0px;
 margin:0px;
-
-background: #CAD9D8;">
-          <div style="padding-top:20px">
-            <div class style="margin:auto; width:500px">
-              <div class="input-group">
-                <div class="input-group-prepend">
+padding:20px;
+background: #CAD9D8;"
+          class="row"
+        >
+          <div style class="col-md-9">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span
+                  class="input-group-text"
+                  id="inputGroupPrepend3"
+                  style="background-color:white"
+                >
+                  <v-icon style="color: #639B97;">mdi-magnify</v-icon>
+                </span>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="  Search a Kit.."
+                aria-describedby="inputGroupPrepend3"
+                required
+              />
+              <div class="invalid-feedback" style="color: #639B97;"></div>
+            </div>
+          </div>
+          <div style="col-md-3">
+            <div class="">
+              <div style="  z-index:200" class="">
+                <v-btn class="ma-2" tile color="success" >
+                  <v-icon left style="color:orange">mdi-cart</v-icon>
                   <span
-                    class="input-group-text"
-                    id="inputGroupPrepend3"
-                    style="background-color:white"
-                  >
-                    <v-icon style="color: #639B97;">mdi-magnify</v-icon>
-                  </span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="  Search a DIY Kit.."
-                  aria-describedby="inputGroupPrepend3"
-                  required
-                />
-                <div class="invalid-feedback" style="color: #639B97;"></div>
+                    class="badge badge"
+                    style="padding:0px; color:white; font-size:20px"
+                  >{{quantity }}</span>
+                  <span
+                    style="color:white"
+                  >{{ (quantity > 1 || quantity === 0 ? " items" : " item") }}</span>
+                </v-btn>
+
+                <v-btn
+                  v-if="quantity>=1"
+                  @click="showCart = !showCart"
+                  v-show="!verified"
+                  class="ma-2"
+                  color="success"
+                >
+                  <v-icon dark>mdi-money</v-icon>
+                  <span style="color:white">Checkout</span>
+                </v-btn>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </vue-position-sticky>
     </div>
+    <div></div>
     <div id="app" style>
-      <div class="header">
-        <!-- <div style="margin-right:px">
-          <button
-            @click="showCart = !showCart"
-            v-show="!verified"
-          >items {{quantity }} {{ (items.length > 1 || items.length === 0 ? " items" : " item") }}</button>
-        </div>-->
-        <div style=" position:fixed; z-index:200" class="but">
-          <v-btn class="ma-2" tile color="success" v-if="quantity>=1">
-            <v-icon left style="color:orange">mdi-cart</v-icon>
-            <span
-              class="badge badge"
-              style="padding:10px; color:white; font-size:20px"
-            >{{quantity }}</span>
-            <span style="color:white">{{ (quantity > 1 || quantity === 0 ? " items" : " item") }}</span>
-          </v-btn>
-
-          <v-btn
-            v-if="quantity>=1"
-            @click="showCart = !showCart"
-            v-show="!verified"
-            class="ma-2"
-            color="success"
-          >
-            <v-icon dark>mdi-money</v-icon>
-            <span style="color:white">Checkout</span>
-          </v-btn>
-
-          <!-- 
-          <button
-            v-if="quantity>=1"
-            type="button"
-            class="btn btn-white"
-            @click="showCart = !showCart"
-            v-show="!verified"
-          >
-            <v-icon dark></v-icon>
-            <span>View Cart and Checkout</span>
-          </button>-->
-        </div>
-      </div>
       <div class="cart" v-show="showCart">
         <div v-show="items.length > 0" style="position:fixed">
           <ul>
@@ -145,41 +127,11 @@ background: #CAD9D8;">
       </div>
 
       <div class="container">
-        <div v-if="weeksTop.lenght >= 1" class="heads" v-show="!verified">Books for the week</div>
-        <hooper
-          :settings="hooperSettings"
-          :progress="true"
-          :autoPlay="true"
-          :playSpeed="4000"
-          style="margin-bottom:10px; margin-left:-40px; height:500px ; width:100% "
-          class="row"
+        <div
+          v-if="weeksTop.length > 0"
+          class="heads"
           v-show="!verified"
-          v-if="weeksTop.lenght > 1"
-        >
-          <slide v-for="(item,i) in weeksTop" :key="i">
-            <div style>
-              <div class="card m-3" style="width: 12rem;margin-left: auto; margin-right: auto;">
-                <v-img class="white--text align-center" height="300px" v-bind:src="item.imagesPath"></v-img>
-                <div class="card-body">
-                  <strong class="card-title">{{ item.title }}</strong>
-                  <p class="card-text">NGN {{ item.price }}</p>
-                  <!-- <a
-                    style="text-align:center"
-                    outlined
-                    @click="addToCart(item)"
-                    class="ma-2 orange--text"
-                    tile
-                    color="blue"
-                  >Add to cart</a>-->
-                </div>
-              </div>
-            </div>
-          </slide>
-        </hooper>
-        <div v-show="!verified">
-          <div class="row">
-            <div
-              style="width: 361px;
+          style="width: 361px;
 height: 29px;
 left: 98px;
 top: 1174px;
@@ -193,9 +145,135 @@ display: flex;
 padding-bottom:40px;
 align-items: center;
 text-align: center"
+        >Books for the week</div>
+
+        <div
+          class="card"
+          style="width: 15.5rem; margin-bottom:80px"
+          v-for="(item,i) in weeksTop"
+          :key="i"
+        >
+          <v-img
+            style="  "
+            class="white--text align-end vImage"
+            v-bind:src="item.imagesPath"
+          ></v-img>
+          <div class="card-body">
+            <div style>
+              <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
+                <strong>{{ item.title }}</strong>
+              </div>
+              <div style="left: 9.95%;font-size:10px;right: 31.22%;color: #639B97;">
+                By Austin MAikano
+                <hr style="margin:5px; border: 1px solid ;" />Comics
+              </div>
+            </div>
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel" style="color: #639B97">
+                      <strong>{{ e.title }}</strong>
+                    </h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      style="color:red"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <strong class="card-title">
+                      <div class="row">
+                        <div class="col-md-6" style="width: 18rem;">
+                          <v-img
+                            class="white--text align-end"
+                            height="300px"
+                            v-bind:src="e.imagesPath"
+                          ></v-img>
+                        </div>
+                        <div class="card-body col-md-6">
+                          <p
+                            class="card-text"
+                            style="font-size:15px;right: 31.22%;color: #639B97;"
+                          >{{e.description}}</p>
+                          <p style="color: #1B6761;">NGN{{e.price}}</p>
+                          <v-btn
+                            class="ma-2"
+                            @click="addToCart(e)"
+                            data-dismiss="modal"
+                            outlined
+                            color="orange"
+                          >Add to cart</v-btn>
+                        </div>
+                      </div>
+                    </strong>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            style="width:100%"
+            data-toggle="modal"
+            data-target="#exampleModal"
+            @click="openModal(item)"
+          >
+            <div class="row" style="font-size:15px; width:100%;  background: #CAD9D8; margin:0px">
+              <div class="col-3">
+                <v-icon
+                  size="20"
+                  color="#1B6761"
+                  right
+                  style="padding-right:10px"
+                  data-toggle="modal"
+                  data-target="#exampleModal"
+                  @click="openModal(item)"
+                >mdi-cart</v-icon>
+              </div>
+              <div class="col-4">
+                <v-icon size="20" color="#1B6761" right style="padding-right:10px">mdi-star</v-icon>
+              </div>
+              <div class="col-5" style="text-align:left; color: #1B6761;">
+                <strong>NGN{{ item.price }}</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div v-show="!verified">
+          <div class="row">
+            <div
+              style="width: 361px;
+height: 29px;
+left: 98px;
+color: #092E2B;
+font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 30px;
+line-height: 29px;
+display: flex;
+padding-bottom:40px;
+align-items: center;
+text-align: center
+margin-top:20px"
             >
               Trending Now
-              <div
+              <button
                 style="font-family: SF UI Display;
 font-style: normal;
 font-weight: 600;
@@ -203,58 +281,33 @@ font-size: 17px;
 line-height: 17px;
 margin-left:20px;
 color: #FF8A00;"
-              >See More</div>
+                @click="showLessCountries = !showLessCountries"
+              >{{showLessCountries===true? "Show All Kits" : "Show Less"}}</button>
             </div>
           </div>
 
           <div class="row">
-            <div v-for="(item,i) in shop" :key="i">
-              <div class="card m-3" style="width: 20.5rem;">
+            <div v-for="(item,i) in  shopsToDisplay" :key="i">
+              <div class="card m-3" style="width: 15.5rem;">
                 <v-img
-                  style=" max-width:100%; height: 15vw;
-    object-fit: contain; "
-                  class="white--text align-end"
+                  style="  "
+                  class="white--text align-end vImage"
                   v-bind:src="item.imagesPath"
                 ></v-img>
                 <div class="card-body">
                   <div style>
-                    <!-- <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
+                    <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
                       <strong>{{ item.title }}</strong>
-                    </div>-->
-                    <div style="left: 9.95%;font-size:15px;right: 31.22%;color: #639B97;">
-                      <strong>{{item.title}}</strong>
-                      <hr style="margin:10px; border: 1px solid ;" />
-                      <div
-                        style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 300;
-font-size: 6px;
-line-height: 7px;
-letter-spacing: 0.02em;
-color: #1B6761;"
-                      >The DIY Speakers Kit. Comes with a custom designed amplifier (the Uber Amp 9000) and all components needed to make a set of speakers out of any material. The Lumiphone. A custom designed circuit board and related components needed to make a tiny musical device. The Soldering Kit. An all inclusive set of tools for metallic adhesion--a soldering iron, solder wire, soldering tip cleaner, side cutters, wire strippers, desolder braid, helping hands, and protective safety glasses. The Thirsty Plant Kit. Includes a solar panel, plant marker, flashing LED, and items necessary to make a solar powered plant thirst detector.</div>
+                    </div>
+                    <div style="left: 9.95%;font-size:10px;right: 31.22%;color: #639B97;">
+                      By Austin MAikano
+                      <hr style="margin:5px; border: 1px solid ;" />Comics
                     </div>
                   </div>
 
-                  <!-- <a
-                    style="text-align:center"
-                    outlined
-                    @click="addToCart(item)"
-                    class="ma-2 orange--text"
-                    tile
-                    color="blue"
-                  >Add to cartss</a>-->
-                  <!-- <button
-                    type="button"
-                    class="btn btn-outline-info"
-                    data-toggle="modal"
-                    data-target="#exampleModal"
-                    @click="openModal(item)"
-                  >more..</button>-->
-
                   <!-- Modal -->
                   <div
-                    class="modal fade"
+                    class="modal"
                     id="exampleModal"
                     tabindex="-1"
                     role="dialog"
@@ -264,22 +317,23 @@ color: #1B6761;"
                     <div class="modal-dialog" role="document">
                       <div class="modal-content">
                         <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel">{{ e.title }}</h5>
+                          <h5 class="modal-title" id="exampleModalLabel" style="color: #639B97">
+                            <strong>{{ e.title }}</strong>
+                          </h5>
                           <button
                             type="button"
                             class="close"
                             data-dismiss="modal"
                             aria-label="Close"
+                            style="color:red"
                           >
                             <span aria-hidden="true">&times;</span>
                           </button>
                         </div>
                         <div class="modal-body">
                           <strong class="card-title">
-                            <!-- <small>{{ e.title }}</small> -->
-
                             <div class="row">
-                              <div class="card col-md-6" style="width: 18rem;">
+                              <div class="col-md-6" style="width: 18rem;">
                                 <v-img
                                   class="white--text align-end"
                                   height="300px"
@@ -289,18 +343,16 @@ color: #1B6761;"
                               <div class="card-body col-md-6">
                                 <p
                                   class="card-text"
-                                >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                <p>NGN{{e.price}}</p>
-
-                                <a
-                                  style="text-align:center"
-                                  outlined
+                                  style="font-size:15px;right: 31.22%;color: #639B97;"
+                                >{{e.description}}</p>
+                                <p style="color: #1B6761;">NGN{{e.price}}</p>
+                                <v-btn
+                                  class="ma-2"
                                   @click="addToCart(e)"
-                                  class="ma-2 orange--text"
-                                  tile
-                                  color="blue"
                                   data-dismiss="modal"
-                                >Add to cart</a>
+                                  outlined
+                                  color="orange"
+                                >Add to cart</v-btn>
                               </div>
                             </div>
                           </strong>
@@ -341,34 +393,11 @@ color: #1B6761;"
                     </div>
                   </div>
                 </div>
-                <!-- <div class="card-text" style="background: #CAD9D8; padding:5px">NGN {{ item.price }}</div> -->
               </div>
             </div>
           </div>
         </div>
-        <!-- <div class="shop" v-show="!verified">
-          <v-alert outlined color="purple">
-            <div class="title">Top Books for the week</div>
-            <div class="row book-card">
-              <div class="card m-3" style="width: 12rem;" v-for="(item,i) in shop" :key="i">
-                <v-img class="white--text align-end" height="150px" v-bind:src="item.imagesPath"></v-img>
-                <div class="card-body">
-                  <strong class="card-title">{{ item.title }}</strong>
 
-                  <p class="card-text">NGN {{ item.price }}</p>
-                
-
-                  <v-btn @click="addToCart(item)" class="ma-2" tile color="blue">
-                    <v-icon left>mdi-plus</v-icon>add to cart
-                  </v-btn>
-                </div>
-              </div>
-            </div>
-          </v-alert>
-          <h3>New Arrivals</h3>
-
-         
-        </div>-->
         <div class="checkout" v-show="verified" style="font-family:Alegreya">
           <h5 v-for="(item,i) in items" :key="i">
             <strong>{{ item.quantity }}</strong>
@@ -439,7 +468,7 @@ export default {
       playspeed: 1000
     },
     e: [],
-
+    showLessCountries: true,
     hopper: true,
     shop: [],
     weeksTop: [],
@@ -469,6 +498,14 @@ export default {
         text += possible.charAt(Math.floor(Math.random() * possible.length));
 
       return text;
+    },
+
+    shopsToDisplay: function() {
+      if (this.showLessCountries) {
+        return this.shop.slice(0, 4);
+      } else {
+        return this.shop;
+      }
     }
   },
   watch: {},
@@ -480,12 +517,12 @@ export default {
         // JSON responses are automatically parsed.
         this.shop = response.data.result;
 
-        for (let i = 0; i <= this.shop.length - 1; i++) {
+        for (let i = 0; i <= response.data.result.length - 1; i++) {
           // eslint-disable-next-line no-console
           // console.log(this.shop[i], 'shops');
           let today = new Date().toISOString().substr(0, 10);
-          if (this.shop[i].topTrend > today) {
-            this.weeksTop.push(this.shop[i]);
+          if (response.data.result[i].topTrend > today) {
+            this.weeksTop.push(response.data.result[i]);
           } // eslint-disable-next-line no-console
           console.log(this.weeksTop, "weeks trop");
         }
@@ -560,6 +597,14 @@ export default {
 </script>
 
 <style scoped lang="css">
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: yellow;
+  padding: 50px;
+  font-size: 20px;
+}
 .header {
   height: 80px;
 }
@@ -695,6 +740,27 @@ li {
   .container {
     padding-top: 120px;
   }
+  .conts {
+    background-image: url("../assets/diyIDE.jpg");
+    /* background-size: contain; */
+    background-position: center;
+    height: 100%;
+    padding-top: 70px;
+  }
+
+  .cont-text {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    padding: 30px;
+    text-align: left;
+  }
+  .vImage{
+ height: 65vw;
+  }
 }
 
 /* Tablet Styles */
@@ -724,6 +790,21 @@ li {
   }
   .conts {
     background-image: url("../assets/diyIDE.jpg");
+  }
+  .cont-text {
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 43px;
+    letter-spacing: 0.02em;
+    height: 337.23px;
+    color: #ffffff;
+    padding: 120px;
+    text-align: right;
+  }
+  .vImage{
+    max-width:100%; height: 15vw; object-fit: contain;
   }
 }
 </style>

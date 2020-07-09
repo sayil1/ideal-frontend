@@ -35,7 +35,9 @@ import Adweb from '../views/adminViews/webinar.vue'
 import Adcontest from '../views/adminViews/contest.vue'
 import diy from '../views/diy.vue'
 import web from '../views/webinar.vue'
+import Web from '../views/Webinar.vue'
 import contest from '../views/contest.vue'
+import Contest from '../views/Contest.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueMeta);
@@ -58,14 +60,24 @@ const routes = [
     component: testt
   },
   {
-    path: '/contest',
-    name: 'contest',
+    path: '/contests',
+    name: 'contests',
     component: contest
+  },
+  {
+    path: '/contest',
+    name: 'Contest',
+    component: Contest
+  },
+  {
+    path: '/webs',
+    name: 'webs',
+    component: web
   },
   {
     path: '/web',
     name: 'web',
-    component: web
+    component: Web
   },
   {
     path: '/diy',

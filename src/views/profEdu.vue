@@ -26,9 +26,16 @@
           class="col-sm-12 col-md-12"
           style="margin-left:30px; margin-right:30px; margin-top:20px"
         >
-          <div class style=" margin-left:20px; margin-right:20px">
+          <div class style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; ">
             <div class style>
-              <p class="car-text --text font-weight-regular">
+              <p class="">
                 The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
                 <br />
                 <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
@@ -46,14 +53,24 @@
         </div>-->
       </div>
       <strong>
-        <h3 class="car-head" style="text-align:center">
+        <div style="margin-top:40px; text-align:center; color: #092E2B; font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 38px;">
           <strong>PROFESSIONAL IT COURSES</strong>
           <hr
             style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
           />
-        </h3>
+        </div>
       </strong>
-      <div class="row car-text" style="background-color:rgb(255, 255, 255)">
+      <div class="row car-text" style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; ">
         <div style="margin-left:50px; margin-right:30px; margin-top:20px" class="col-md-8">
           <p class="card-text --text">
             Our training solutions offer job and career relevant courses for individuals, teams and organizations
@@ -82,9 +99,16 @@
           <!-- card -->
           <div class="row" style="background-color:rgb;">
             <div class="col-sm-12 col-md-12" style="margin-bottom:10px">
-              <div class style=" margin-left:20px; margin-right:20px">
+              <div class style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; ">
                 <div class style>
-                  <p class="car-text --text font-weight-regular">
+                  <p class="">
                     The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
                     <br />
                     <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
@@ -175,7 +199,7 @@
 
                     <!-- <hr style="color:orange; width:90px; margin-left:auto; margin-right:auto; border: 2px solid orange;"> -->
                     <div class>
-                      <div class="y">
+                      <div class="">
                         <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
                         <div class="white--text">
                           compTIA Project
@@ -184,12 +208,7 @@
                           <br />Project Management Professional (PMP)
                           <br />
                         </div>
-                        <!-- <ul class="list-unstyled white--text">
-                          <li>CompTIA Project+</li>
-                          <li>Digital Marketing</li>
-                          <li>Customer Relationship Management (CRM)</li>
-                          <li>Project Management Professional (PMP)</li>
-                        </ul>-->
+                       
                       </div>
                     </div>
                     <div style="margin-top:29px">
@@ -201,9 +220,19 @@
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
                   <div class="card-header">
-                    <h3 class="my-0 font-weight-normal orange--text">Training Delivery Styles</h3>
+                    <h3 style="margin-top:0px; text-align:center; color: #092E2B; font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 38px;">Training Delivery Styles</h3>
                   </div>
-                  <div class="y">
+                  <div class="y"  style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: center;
+letter-spacing: 0.02em; ">
                     <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
                     <ul class="list-unstyled">
                       <li>Lectures (face-to-face or Online)</li>
@@ -222,9 +251,19 @@
               <div class="col-md-8">
                 <div class="card mb-4 box-shadow">
                   <div class="card-header">
-                    <h3 class="my-0 font-weight-normal orange--text">Hands-on practical:</h3>
+                    <h3 style="margin-top:0px; text-align:center; color: #092E2B; font-family: SF UI Display;
+font-style: normal;
+font-weight: 800;
+font-size: 38px;" >Hands-on practical:</h3>
                   </div>
-                  <div class="p-3">
+                  <div class="p-3"  style="font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em; ">
                     <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
 
                     At the end of each training program, participants are issued certificates after they must have passed a series of exams that tests their proficiency.
@@ -381,7 +420,7 @@ template {
     font-family: "Alegreya";
   }
    .cont{
-    padding-top: 100px
+    padding-top: 60px
   }
 }
 </style>

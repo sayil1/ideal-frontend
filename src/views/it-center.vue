@@ -7,7 +7,7 @@
           <div style="margin-top:120px ; ">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
-                <span class="car-head white--text" style>IDEAL IT-CENTER</span>
+                <span class="car-head white--text" style>IDEAL ITx-CENTER</span>
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
@@ -25,8 +25,8 @@
           <div class="col-sm-12 col-md-9" style="margin-bottom:10px">
             <div class style=" margin-left:20px; margin-right:20px">
               <div class style>
-                <p class="--text font-weight-regular">
-                  The need for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
+                <p class="" >
+                  The  for the teaming population of young people to access information, training and support coupled with the glaring fact that most of them cannot afford the training or equipment needed to participate in the rewards of the information revolution necessitated the IDEaL IT Center Project.
                   <br />
                   <br />IDEaL IT Center addresses this disparity by serving as a one-stop hub for Information Technology education programs while offering methods of improving efficiency and services needed to achieve greater productivity among partakers of the ICT sector.
                   <br />
