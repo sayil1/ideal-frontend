@@ -111,100 +111,112 @@ letter-spacing: 0.02em;"
         <div
           class="col-sm col-md-4"
           style="margin-top:0px; padding:20px; background-color:rgb(240, 245, 245)"
-          v-if="image==true"
+          
         >
-          <form>
-            <div
-              style="text-align:center; font-family: SF UI Display;
+          <div
+            style="text-align:center; font-family: SF UI Display;
        color: #092E2B;
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 108.34%;
 padding:20px"
-            >Register for this exam.</div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Sunamer name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Middle name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Date" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Email Address" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Contact Address" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Country Of Birth/Citizenship" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Exam Date" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder=" Exam Center" />
-            </div>
-            <div class="col">
-              <v-file-input label="International Passport Number" outlined dense></v-file-input>
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder=" Exam Center" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="International Passport Number" />
-            </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block" style>Submit</button>
-          </form>
+          >Register for this exam.</div>
+          <div class="col">
+            <input
+              type="text"
+              v-model="pearson.sname"
+              class="form-control"
+              placeholder="Sunamer name"
+            />
+          </div>
+          <div class="col">
+            <input type="text" v-model="pearson.fname" class="form-control" placeholder="First name" />
+          </div>
+          <div class="col">
+            <input type="text" v-model="pearson.mname" class="form-control" placeholder="Middle name" />
+          </div>
+          <!-- <div class="col">
+            <input type="text" v-model="pearson.date" class="form-control" placeholder="Date" />
+          </div>-->
+          <div class="col">
+            <input
+              type="text"
+              v-model="pearson.email"
+              class="form-control"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              v-model="pearson.contAdress"
+              class="form-control"
+              placeholder="Contact Address"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              v-model="pearson.country"
+              class="form-control"
+              placeholder="Country Of Birth/Citizenship"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              v-model="pearson.examCenter"
+              class="form-control"
+              placeholder=" Exam Center"
+            />
+          </div>
+          <div class="col">
+            <v-menu
+              ref="menu"
+              v-model="menu"
+              :close-on-content-click="false"
+              :return-value.sync="pearson.examDate"
+              transition="scale-transition"
+              offset-y
+              min-width="290px"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-text-field
+                  v-model="pearson.examDate"
+                  label="Examination Date"
+                  readonly
+                  v-bind="attrs"
+                  v-on="on"
+                ></v-text-field>
+              </template>
+              <v-date-picker v-model="date" no-title scrollable>
+                <v-spacer></v-spacer>
+                <v-btn text color="primary" @click="menu = false">Cancel</v-btn>
+                <v-btn text color="primary" @click="$refs.menu.save(date)">OK</v-btn>
+              </v-date-picker>
+            </v-menu>
+            <!-- <input
+              type="text"
+              v-model="pearson.examDate"
+              class="form-control"
+              placeholder="Exam Date"
+            />-->
+          </div>
+          <div class="col upload-btn-wrapper">
+            <button class="btnn">Upload international Passport (Data)</button>
+            <input type="file" name="myfile" class="custom-file-input" @change="onFileChanged" />
+          </div>
+          <div>
+            <button
+              type="button"
+              @click="save"
+              class="btn btn btn-primary btn-lg btn-block"
+            >{{this.processing ? "Register": "Registered"}}</button>
+          </div>
         </div>
       </div>
 
-<!-- div -->
-
-      
-      <!-- card -->
-      <!-- <div class="row" style="background-color:rgb();">
-        <div class="col-sm-12 col-md-12" style="margin-bottom:70px">
-          <div class style>
-            <div class style>
-              <p class="car-text --text font-weight-regular">
-                <br />
-                <strong>PEARSON VUE CENTER</strong>
-                <br />Our Authorized Pearson VUE Test center runs IT certification examinations for leading vendors like Microsoft, Cisco, Nursing and Midwifery Council (NMC), PMI, Linux, Juniper, Oracle, CompTIA, CIW, HP, PeopleCert etc.
-                <br />
-                <br />
-                <strong>IT CERTIFICATIONS</strong>
-                are recognized worldwide and serve as benchmarks to specific skills set based on standardized testing. They help demonstrate your dedication and technical knowledge on a specific platform.
-                <br />Once earned, IT Certifications can you help achieve the following:
-                <v-list dense class="row">
-                
-                  <v-list-item-group v-model="item" color="rgb()" class="col-md-9">
-                    <v-list-item v-for="(item, i) in items" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item.icon"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                  <div class="col-sm col-md-3" style="padding-top:100px" v-if="image==true">
-                    <v-img src="../assets/pea.png" style=" width:300px"></v-img>
-                  </div>
-                </v-list>
-              </p>
-              <div class="car-text">
-                <router-link to="cont">Contact us</router-link>for more information
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
     </div>
 <div>
   <cards/>
@@ -217,7 +229,9 @@ padding:20px"
 <script>
 import nava from "../components/newNav";
 import foota from "../components/footer";
-import cards from "../components/cards"
+import cards from "../components/cards";
+import { Services } from "../service";
+var serv = new Services();
 export default {
   components: {
     nava,
@@ -228,6 +242,9 @@ export default {
     item: 1,
     image: true,
     item2: 1,
+      menu: false,
+    modal: false,
+    date: new Date().toISOString().substr(0, 10),
     items: [
       { text: "Getting Hired", icon: "mdi-charity" },
       { text: "Job Retention", icon: "mdi-briefcase" },
@@ -241,6 +258,18 @@ export default {
         icon: "mdi-bullseye-arrow"
       }
     ],
+     pearson: {
+      sname: "",
+      fname: "",
+      mname: "",
+      email: "",
+      date: "",
+      contAdress: "",
+      country: "",
+      examDate: "",
+      examCenter: "",
+      image: ""
+    },
     items2: [
       {
         text: "Students planning to study at a higher education institution",
@@ -275,6 +304,34 @@ export default {
         // alert(this.image);
         this.image = true;
       }
+    },
+     onFileChanged(event) {
+      this.pearson.image = event.target.files[0];
+    },
+
+    save() {
+      // this.alerts = true;
+
+      this.pearson.date = new Date();
+      const formData = new FormData();
+      formData.append("image", this.pearson.image);
+      formData.append("sname", this.pearson.sname);
+      formData.append("fname", this.pearson.fname);
+      formData.append("mname", this.pearson.mname);
+      formData.append("email", this.pearson.email);
+      formData.append("date", this.pearson.date);
+      formData.append("contAdress", this.pearson.contAdress);
+      formData.append("country", this.pearson.country);
+      formData.append("examDate", this.pearson.examDate);
+      formData.append("examCenter", this.pearson.examCenter);
+
+      // eslint-disable-next-line no-console
+      console.log(this.pearson);
+      serv.postRequest("pearson/newpearson", formData).then(response => {
+        // eslint-disable-next-line no-console
+        console.log(response);
+        this.processing = false;
+      });
     }
   }
 };
@@ -286,6 +343,29 @@ export default {
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
   background-position: center;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btnn {
+  border: 2px solid rgb(35, 194, 189);
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
 }
 @media only screen and (max-width: 400px) {
   .body {

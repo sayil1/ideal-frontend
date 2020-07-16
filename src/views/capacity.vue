@@ -131,6 +131,7 @@ letter-spacing: 0.02em;"
           </div>
         </div>
         <div
+        class="first"
           style="font-family: SF UI Display;
             color: #1B6761;
 font-style: normal;
@@ -200,8 +201,8 @@ export default {
 @media only screen and (max-width: 400px) {
   .first {
     padding-top: 0px;
-    padding-left: 1px;
-    padding-right: 1px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .conts {
@@ -231,6 +232,12 @@ export default {
   body {
     background-color: #f5cf8e; /* Yellow */
   }
+   .first {
+    padding-top: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+ 
 }
 
 /* Desktop Styles */

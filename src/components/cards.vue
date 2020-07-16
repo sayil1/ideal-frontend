@@ -16,12 +16,12 @@
             <v-img
               class="white--text align-end"
               height="200px"
-              src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+              src="../assets/girlLib.jpg"
             >
               
             </v-img>
 
-            <v-card-title style="text-decoration:none"  class="pb-3  links bold orange--text">PEARSON VUE</v-card-title>
+            <v-card-title style="text-decoration:none; font-weight:bold"  class="pb-3  links bold green--text">PEARSON VUE</v-card-title>
 
             <v-card-text class="text--primary links">
              
@@ -48,14 +48,14 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      src="../assets/redYell.jpg"
     >
    
     </v-img>
 
-    <v-card-title class="pb-3 bold orange--text">ICM UK QUALIFICATION</v-card-title>
+    <v-card-title style="text-decoration:none; font-weight:bold" class="pb-3 bold green--text">ICM UK QUALIFICATION</v-card-title>
 
-    <v-card-text class="text--primary">
+    <v-card-text class="text--green">
     
 
       <div>Improve your chances of getting a scholarship by joining our list of past SAT students who’ve scored an average of 1300.</div>
@@ -77,17 +77,17 @@
     <v-img
       class="white--text align-end"
       height="200px"
-      src="../assets/profb.jpg"
+      src="../assets/lapWork.jpg"
     >
      
     </v-img>
 
-    <v-card-title class="pb-3 bold orange--text">TOEFL</v-card-title>
+    <v-card-title style="text-decoration:none; font-weight:bold" class="pb-3 bold green--text">TOEFL</v-card-title>
 
     <v-card-text class="text--primary">
     
 
-      <div>Get 105 & above. Achieve your highest TOEFL score. Learn from proven, and committed, TOEFL tutors.</div>
+      <div>Get 105 & above. Achieve your highest TOEFL score. <br> Learn from proven, and committed, TOEFL tutors.</div>
     </v-card-text>
 
   

@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-sm-12 col-md-8">
           <div
-            class=""
+            class
             style="font-family: SF UI Display;
             color: #1B6761;
 font-style: normal;
@@ -45,24 +45,12 @@ letter-spacing: 0.02em; "
                 <br />
                 <strong v-subheader style=";">Why Take the TOEFL Test?</strong>
                 <br />
-                <!-- <v-list dense>
-                  <v-list-item-group v-model="item" color="rgb(35)">
-                    <v-list-item v-for="(item, i) in items" :key="i">
-                      <v-list-item-icon>
-                        <v-icon v-text="item.icon"></v-icon>
-                      </v-list-item-icon>
-                      <v-list-item-content>
-                        <v-list-item-title v-text="item.text"></v-list-item-title>
-                      </v-list-item-content>
-                    </v-list-item>
-                  </v-list-item-group>
-                </v-list>-->
               </p>
               <ul>
                 <li v-for="(items, i) in items" :key="i">{{items.text}}</li>
               </ul>
             </div>
-              <div
+            <div
               style="font-family: SF UI Display;
             color: #1B6761;
 font-style: normal;
@@ -114,56 +102,109 @@ letter-spacing: 0.02em;"
         <div
           class="col-sm col-md-4"
           style="margin-top:0px; padding:20px; background-color:rgb(240, 245, 245)"
-          v-if="image==true"
+          
         >
-          <form>
-            <div
-              style="text-align:center; font-family: SF UI Display;
+          <div
+            style="text-align:center; font-family: SF UI Display;
        color: #092E2B;
 font-style: normal;
 font-weight: bold;
 font-size: 30px;
 line-height: 108.34%;
 padding:20px"
-            >Register for this exam.</div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Sunamer name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="First name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Middle name" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Date" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Email Address" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Contact Address" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Country Of Birth/Citizenship" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="Exam Date" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder=" Exam Center" />
-            </div>
-            <div class="col">
-              <v-file-input label="International Passport Number" outlined dense></v-file-input>
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder=" Exam Center" />
-            </div>
-            <div class="col">
-              <input type="text" class="form-control" placeholder="International Passport Number" />
-            </div>
-            <button type="button" class="btn btn-primary btn-lg btn-block" style>Submit</button>
-          </form>
+          >Register for this exam.</div>
+          <div class="col">
+            <input
+              type="text"
+              v-model="toefl.sname"
+              class="form-control"
+              placeholder="Sunamer name"
+            />
+          </div>
+          <div class="col-sm-12">
+            <input type="text" v-model="toefl.fname" class="form-control" placeholder="First name" />
+          </div>
+          <div class="col-sm-12">
+            <input type="text" v-model="toefl.mname" class="form-control" placeholder="Middle name" />
+          </div>
+          <!-- <div class="col">
+            <input type="text" v-model="toefl.date" class="form-control" placeholder="Date" />
+          </div>-->
+          <div class="col-sm-12">
+            <input
+              type="text"
+              v-model="toefl.email"
+              class="form-control"
+              placeholder="Email Address"
+            />
+          </div>
+          <div class="col-sm-12">
+            <input
+              type="text"
+              v-model="toefl.contAdress"
+              class="form-control"
+              placeholder="Contact Address"
+            />
+          </div>
+          <div class="col-sm-12">
+            <input
+              type="text"
+              v-model="toefl.country"
+              class="form-control"
+              placeholder="Country Of Birth/Citizenship"
+            />
+          </div>
+          <div class="col-sm-12">
+            <input
+              type="text"
+              v-model="toefl.examCenter"
+              class="form-control"
+              placeholder=" Exam Center"
+            />
+          </div>
+          <div class="col-sm-12">
+            <v-menu
+              ref="menu"
+              v-model="menu"
+              :close-on-content-click="false"
+              :return-value.sync="toefl.examDate"
+              transition="scale-transition"
+              offset-y
+              min-width="290px"
+            >
+              <template v-slot:activator="{ on, attrs }">
+                <v-text-field
+                  v-model="toefl.examDate"
+                  label="Examination Date"
+                  readonly
+                  v-bind="attrs"
+                  v-on="on"
+                ></v-text-field>
+              </template>
+              <v-date-picker v-model="date" no-title scrollable>
+                <v-spacer></v-spacer>
+                <v-btn text color="primary" @click="menu = false">Cancel</v-btn>
+                <v-btn text color="primary" @click="$refs.menu.save(date)">OK</v-btn>
+              </v-date-picker>
+            </v-menu>
+            <!-- <input
+              type="text"
+              v-model="toefl.examDate"
+              class="form-control"
+              placeholder="Exam Date"
+            />-->
+          </div>
+          <div class="col upload-btn-wrapper">
+            <button class="btnn">Upload international Passport (Data)</button>
+            <input type="file" name="myfile" class="custom-file-input" @change="onFileChanged" />
+          </div>
+          <div>
+            <button
+              type="button"
+              @click="save"
+              class="btn btn btn-primary btn-lg btn-block"
+            >{{this.processing ? "Register": "Registered"}}</button>
+          </div>
         </div>
       </div>
       <div class style="margin-top:50px">
@@ -172,9 +213,7 @@ padding:20px"
           <!-- <div class="col-sm col-md-2" style="margin-top:50px" v-if="image==true">
             <v-img src="../assets/toefl.png" style=" width:300px"></v-img>
           </div>-->
-          <div class="col-sm-12 col-md-10">
-          
-          </div>
+          <div class="col-sm-12 col-md-10"></div>
         </div>
       </div>
     </div>
@@ -192,6 +231,8 @@ padding:20px"
 import nava from "../components/newNav";
 import foota from "../components/footer";
 import cards from "../components/cards";
+import { Services } from "../service";
+var serv = new Services();
 export default {
   components: {
     nava,
@@ -199,6 +240,10 @@ export default {
     cards
   },
   data: () => ({
+    menu: false,
+    modal: false,
+    date: new Date().toISOString().substr(0, 10),
+    processing: true,
     item: 1,
     image: true,
     item2: 1,
@@ -230,7 +275,19 @@ export default {
         text: "Students and workers applying for visas",
         icon: "mdi-circle-medium"
       }
-    ]
+    ],
+    toefl: {
+      sname: "",
+      fname: "",
+      mname: "",
+      email: "",
+      date: "",
+      contAdress: "",
+      country: "",
+      examDate: "",
+      examCenter: "",
+      image: ""
+    }
   }),
   created() {
     this.isMobile();
@@ -246,12 +303,64 @@ export default {
         // alert(this.image);
         this.image = true;
       }
+    },
+
+    onFileChanged(event) {
+      this.toefl.image = event.target.files[0];
+    },
+
+    save() {
+      // this.alerts = true;
+
+      this.toefl.date = new Date();
+      const formData = new FormData();
+      formData.append("image", this.toefl.image);
+      formData.append("sname", this.toefl.sname);
+      formData.append("fname", this.toefl.fname);
+      formData.append("mname", this.toefl.mname);
+      formData.append("email", this.toefl.email);
+      formData.append("date", this.toefl.date);
+      formData.append("contAdress", this.toefl.contAdress);
+      formData.append("country", this.toefl.country);
+      formData.append("examDate", this.toefl.examDate);
+      formData.append("examCenter", this.toefl.examCenter);
+
+      // eslint-disable-next-line no-console
+      console.log(this.toefl);
+      serv.postRequest("toefl/newToefl", formData).then(response => {
+        // eslint-disable-next-line no-console
+        console.log(response);
+        this.processing = false;
+      });
     }
   }
 };
 </script>
 
 <style scoped lang="css">
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btnn {
+  border: 2px solid rgb(35, 194, 189);
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
 template {
   margin-left: 40px;
   margin-right: 40px;
@@ -267,7 +376,6 @@ template {
 @media only screen and (max-width: 400px) {
   .car {
     font-size: 2px;
-
     margin: 0px;
   }
   .car-head {

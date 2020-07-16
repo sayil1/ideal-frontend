@@ -2,32 +2,15 @@
   <div style="background-color:">
     <nava />
 
-    <div class>
-      <div class="conts" style="padding-top:40px">
-          <div
-        class="card-body "
-        style=" height:500px;   position: relative;"
-      >
-        <div style="margin-top:50px ; ">
-          <span
-            class
-            style="  margin: 0;
-  position: absolute;
-  top: 25%;
-  font-family: SF UI Display;
-font-style: normal;
-font-weight: bold;
-font-size: 60px;
-padding-left:150px;
-color:white"
-          >
-            Train-The-trainer
-            <br />Workshop
+     <div class="hold-header">
+      <div class="conts">
+        <div class="header">
+          <span class="header-text" style=" ">
+          Train The
+            <br />Trainers
           </span>
         </div>
       </div>
-      </div>
-    
     </div>
 
     <div class="body" style="background: #F6F6F6">
@@ -165,8 +148,25 @@ export default {
     padding-top: 10px;
     text-align: left;
   }
-  .cont {
-    padding-top: 200px;
+ .conts {
+    background-image: url("../assets/trainIDE2.png");
+    background-size: contain;
+    background-position: center center;
+  }
+    .header {
+    height: 250px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    color: white;
   }
 }
 
@@ -174,6 +174,21 @@ export default {
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
     background-color: #f5cf8e; /* Yellow */
+  }
+    .header {
+    height: 250px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    color: white;
   }
 }
 
@@ -214,6 +229,24 @@ export default {
   }
   img {
     padding-top: 80px;
+  }
+  .header {
+    height: 500px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    padding-left: 150px;
+    color: white;
+  }
+  .hold-header {
+    padding-top: 60px;
   }
 }
 </style>

@@ -15,20 +15,30 @@
               show-arrows-on-hover
             >
               <v-carousel-item class="div1">
-                <div style="; height:100%" class="cov">
+                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
                         <div
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
-                        > 
-                        
-                      
-                        
-                          </div>
-                        <div class="text-center orange--text">
-                            <h1 class="animate__animated animate__backInLeft">An animated element</h1>
+                        ></div>
+                        <div style=" " class="text-center">
+                          <h1
+                            class="animate__animated animate__backInLeft"
+                            style="font-family: SF UI Display;
+font-style: normal;
+color:white;
+font-size: 34px;
+line-height: 140.84%;
+margin:40px;
+text-align: center;
+letter-spacing: 0.02em; color:white"
+                          >
+                            Welcome to
+                            initiative for development,
+                            <span style="color:orange">education</span> and learning
+                          </h1>
                         </div>
                       </div>
                     </div>
@@ -36,78 +46,125 @@
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div2">
-                <div style=" height:100%" class="cov">
+                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div style="margin-top:px ; ">
                         <div
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
-                        >
-                          <br />
-                          <br />
-
-                          <br />
+                        ></div>
+                        <div class="text-center">
+                           <h1
+                            class="animate__animated animate__backInLeft"
+                            style="font-family: SF UI Display;
+font-style: normal;
+color:white;
+font-size: 34px;
+line-height: 140.84%;
+margin:40px;
+text-align: center;
+letter-spacing: 0.02em; color:white"
+                          >
+                            Welcome to
+                            initiative for development,
+                            <span style="color:orange">education</span> and learning
+                          </h1>
                         </div>
-                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div3">
-                <div style=" height:100%" class="cov">
+                 <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
-                      <div style="margin-top:90px ; ">
-                        <div class="card-text white--text font-weight-regular">
-                          <br />
-                          <br />
-
-                          <br />
+                      <div style="margin-top:px ; ">
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        ></div>
+                        <div class="text-center">
+                           <h1
+                            class="animate__animated animate__backInLeft"
+                            style="font-family: SF UI Display;
+font-style: normal;
+color:white;
+font-size: 34px;
+line-height: 140.84%;
+margin:40px;
+text-align: center;
+letter-spacing: 0.02em; color:white"
+                          >
+                            Welcome to
+                            initiative for development,
+                            <span style="color:orange">education</span> and learning
+                          </h1>
                         </div>
-                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div4">
-                <div style=" height:100%" class="cov">
+                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
-                      <div style="margin-top:90px ; ">
+                      <div style="margin-top:px ; ">
                         <div
-                          class="card-text white--text font-weight-regular"
+                          class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
-                        >
-                          <br />
-                          <br />
-
-                          <br />
+                        ></div>
+                        <div class="text-center">
+                           <h1
+                            class="animate__animated animate__backInLeft"
+                            style="font-family: SF UI Display;
+font-style: normal;
+color:white;
+font-size: 34px;
+line-height: 140.84%;
+margin:40px;
+text-align: center;
+letter-spacing: 0.02em; color:white"
+                          >
+                            Welcome to
+                            initiative for development,
+                            <span style="color:orange">education</span> and learning
+                          </h1>
                         </div>
-                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
-              
+
               <v-carousel-item class="div5">
-                <div style="height:100%" class="cov">
+               <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
-                      <div style="margin-top:90px ; ">
+                      <div style="margin-top:px ; ">
                         <div
-                          class="card-text white--text font-weight-regular"
+                          class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
-                        >
-                          <br />
-                          <br />
-
-                          <br />
+                        ></div>
+                        <div class="text-center">
+                           <h1
+                            class="animate__animated animate__backInLeft"
+                            style="font-family: SF UI Display;
+font-style: normal;
+color:white;
+font-size: 34px;
+line-height: 140.84%;
+margin:40px;
+text-align: center;
+letter-spacing: 0.02em; color:white"
+                          >
+                            Welcome to
+                            initiative for development,
+                            <span style="color:orange">education</span> and learning
+                          </h1>
                         </div>
-                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -115,21 +172,31 @@
               </v-carousel-item>
             </v-carousel>
             <div class="board">
-               <div class="row">
+              <div class="row">
                 <div class="col-md-4 col-3" style="text-align:center ; text-decoration:none">
-                  <a href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr" style="text-decoration:none">   <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon></a>
-                
+                  <a
+                    href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
+                    style="text-decoration:none"
+                  >
+                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
+                  </a>
                 </div>
                 <div class="col-md-4 col-3" style="text-align:center">
-                  <a href="https://twitter.com/IdealcenterN" style="text-decoration:none"> <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon></a>
-                
+                  <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
+                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
+                  </a>
                 </div>
                 <div class="col-md-4 col-3" style="text-align:center">
-                  <a style="text-decoration:none" href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"> <v-icon size="20" color="white" right>mdi-instagram</v-icon></a>
+                  <a
+                    style="text-decoration:none"
+                    href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
+                  >
+                    <v-icon size="20" color="white" right>mdi-instagram</v-icon>
+                  </a>
                 </div>
                 <!-- <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right>mdi-linkedin</v-icon>
-                </div> -->
+                </div>-->
               </div>
             </div>
           </div>
@@ -210,12 +277,12 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" sm="6" md="6">
-                        <v-text-field label="first name" v-model="project.fname" required></v-text-field>
+                        <v-text-field label="First name" v-model="project.fname" required></v-text-field>
                       </v-col>
 
                       <v-col cols="12" sm="6" md="6">
                         <v-text-field
-                          label="last name"
+                          label="Last name"
                           v-model="project.lname"
                           persistent-hint
                           required
@@ -321,8 +388,7 @@ letter-spacing: 0.02em;  "
       </div>
     </div>
     <div style="width:100%">
-     
- <div
+      <div
         class="display-1"
         style="margin-top:40px; text-align:center; color: #092E2B; font-family: SF UI Display;
 font-style: normal;
@@ -336,107 +402,104 @@ font-weight: normal;
 font-size: 14px;"
       >Quick link to the most searched offer</div>
       <div class="small">
-
-        
         <div class="row" style="margin-left:auto; margin-right:0">
-          
-          <div class=" col-md-4" style="width: 18rem;">
-              <router-link style="text-decoration:none"  class="route" to="cont">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a  class="card-link white--text">Internship</a>
-              <a class="card-link" style="float:right; ">
-                <v-icon  color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-              </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="cont">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a class="card-link white--text">Internship</a>
+                <a class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="test">
-            <div class="card-body" style="background-color:#092E2B;">
-              <a href="#" class="card-link white--text">Test Preparation</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="test">
+              <div class="card-body" style="background-color:#092E2B;">
+                <a href="#" class="card-link white--text">Test Preparation</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="prof">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Professional IT Courses</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="prof">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a href="#" class="card-link white--text">Professional IT Courses</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="books">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Book Shops</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon  color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="books">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a href="#" class="card-link white--text">Book Shops</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="diy">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">DIY Kits</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="diy">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a href="#" class="card-link white--text">DIY Kits</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="events">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Eventssss</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="events">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a href="#" class="card-link white--text">Eventssss</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="contest">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Apply For Contests</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="contest">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a href="#" class="card-link white--text">Apply For Contests</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="web">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Webinars</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="web">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a href="#" class="card-link white--text">Webinars</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
 
-          <div class=" col-md-4" style="width: 18rem;">
-             <router-link style="text-decoration:none"  class="route" to="/">
-            <div class="card-body" style="background-color:#1B6761;">
-              <a href="#" class="card-link white--text">Surport a Project</a>
-              <a href="#" class="card-link" style="float:right; ">
-                <v-icon color="white">mdi-arrow-right</v-icon>
-              </a>
-            </div>
-             </router-link>
+          <div class="col-md-4" style="width: 18rem;">
+            <router-link style="text-decoration:none" class="route" to="/">
+              <div class="card-body" style="background-color:#1B6761;">
+                <a href="#" class="card-link white--text">Surport a Project</a>
+                <a href="#" class="card-link" style="float:right; ">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
           </div>
         </div>
       </div>
@@ -776,9 +839,8 @@ header {
 }
 
 .arch {
-  background-image: url("../assets/body.jpg"); 
-  position:cover;
-  
+  background-image: url("../assets/body.jpg");
+  position: cover;
 }
 
 .board {
@@ -1000,8 +1062,8 @@ header {
     margin-bottom: 90px;
     margin-left: auto;
     margin-right: auto;
-   padding-left: 40px;
-   padding-right: 40px
+    padding-left: 40px;
+    padding-right: 40px;
   }
   .form {
     font-family: SF UI Display;

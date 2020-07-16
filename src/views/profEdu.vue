@@ -87,8 +87,8 @@ letter-spacing: 0.02em; ">
             <br />Setting your business onto the path of success through constant business training can lead to exciting business opportunities and personal development. Our quality programs are your best starting point.
           </p>
         </div>
-        <div class="col-sm col-md-3" style="margin-top:60px" v-if="image==true">
-          <v-img src="../assets/app.svg" style=" width:700px"></v-img>
+        <div class="col-sm col-md-3" style="margin-top:60px; margin-bottom:60px" v-if="image==true">
+          <v-img src="../assets/profIT.jpg" style=" width:700px"></v-img>
         </div>
       </div>
     </div>
@@ -386,7 +386,7 @@ template {
     text-align: left;
   }
   .cont{
-    padding-top: 200px
+    padding-top: 70px
   }
 }
 

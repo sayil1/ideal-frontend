@@ -4,10 +4,10 @@
     <div style="background-color: ">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.6)">
-          <div style="margin-top:120px ; ">
+          <div style="">
             <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
               <div class="car-text">
-                <span class="car-head white--text" style>IDEAL ITx-CENTER</span>
+                <span class="car-head white--text" style>IDEAL IT-CENTER</span>
                 <hr
                   style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                 />
@@ -168,7 +168,7 @@
                       </template>
                       <v-card>
                         <v-card-title>
-                          <span class="headline">Course Registration Form</span>
+                          <span class="headline" style="text-align:center">Course Registration Form</span>
                         </v-card-title>
                         <v-card-text>
                           <v-container>
@@ -309,7 +309,7 @@ template {
   .car-text {
     font-size: 14px;
     /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
+    padding-top: 0px;
 
     text-align: center;
   }
