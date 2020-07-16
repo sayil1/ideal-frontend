@@ -12,20 +12,21 @@
           <v-container>
             <v-row>
               <v-col cols="12" sm="6" md="6">
-                <v-text-field label="First name*" required v-model="lname"></v-text-field>
+                <v-text-field label="First name*" required v-model="fname"></v-text-field>
               </v-col>
 
               <v-col cols="12" sm="6" md="6">
-                <v-text-field label="Last name*"  required></v-text-field>
+                <v-text-field label="Last name*" v-model="lname"  required></v-text-field>
               </v-col>
               <v-col cols="12">
-                <v-text-field label="Email*" required></v-text-field>
+                <v-text-field label="Email*" v-model="email" required></v-text-field>
               </v-col>
               <v-col cols="12">
-                <v-text-field label="Phone*" required></v-text-field>
+                <v-text-field label="Phone*" v-model="phone" required></v-text-field>
               </v-col>
               <v-col cols="12" sm="6">
                 <v-select
+                 v-model="session"
                   :items="['Morning', 'Evening',]"
                   label="Select Prefered Session*"
                   required
@@ -33,6 +34,7 @@
               </v-col>
               <v-col cols="12" sm="6">
                 <v-autocomplete
+                v-model="course"
                   :items="['TOEFL', 'Graphics', 'Java', 'Web Development', 'C#', 'Desktop Publishing', 'CCNA', 'Autcad']"
                   label="Select Prefered Course"
                   multiple
@@ -40,7 +42,8 @@
               </v-col>
             </v-row>
           </v-container>
-          <small>*indicates required field</small>
+          <small>*indicates required field</small> <br>
+          <h4 v-if="saving" >saving...</h4>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -53,15 +56,36 @@
 </template>
 
 <script>
+import { Services } from "../service";
+var serv = new Services();
 export default {
     data: () => ( {
           dialog: false,
-          lname:""
+          saving:false,
+          fname:"",
+          lname:"",
+          email:"",
+          phone:"",
+          session:"",
+          course:""
 
     }),
     methods:{
         reg(){
-          alert(this.lname)
+        this.saving = true
+         let  data = {
+           fname :this.fname,
+           lname : this.lname,
+           email : this.email,
+           phone :this.phone,
+           course :this.course
+          }
+           // eslint-disable-next-line no-console
+      console.log(data);
+         serv.postRequest("proj/newProj", data).then(function(){
+          
+           this.saving = false
+         });
         }
     }
 };

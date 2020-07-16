@@ -204,7 +204,8 @@ padding:20px"
             />-->
           </div>
           <div class="col upload-btn-wrapper">
-            <button class="btnn">Upload international Passport (Data)</button>
+            <button class="btnn">Upload international Passport (Data)</button> <br>
+              <div v-if="saving" style="text-align:center">saving...</div>
             <input type="file" name="myfile" class="custom-file-input" @change="onFileChanged" />
           </div>
           <div>
@@ -242,7 +243,9 @@ export default {
     item: 1,
     image: true,
     item2: 1,
-      menu: false,
+    processing: true,
+    saving:false,
+    menu: false,
     modal: false,
     date: new Date().toISOString().substr(0, 10),
     items: [
@@ -311,7 +314,7 @@ export default {
 
     save() {
       // this.alerts = true;
-
+       this.saving = true
       this.pearson.date = new Date();
       const formData = new FormData();
       formData.append("image", this.pearson.image);
@@ -331,6 +334,7 @@ export default {
         // eslint-disable-next-line no-console
         console.log(response);
         this.processing = false;
+        this.saving = false;
       });
     }
   }
