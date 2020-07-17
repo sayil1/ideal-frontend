@@ -23,7 +23,7 @@ display: flex;
 align-items: center;
 text-align: center;
 color: #092E2B;">
-  Featured Contestsss
+  Featured Contests
         </div>
       
       </div>
