@@ -484,7 +484,7 @@ export default {
 
       // eslint-disable-next-line no-console
 
-      serv.postRequest(`update-event/${this.newId}`, formData);
+      serv.postRequest(`eve/update-event/${this.newId}`, formData);
 
       // eslint-disable-next-line no-console
       console.log(this.newId, "items");

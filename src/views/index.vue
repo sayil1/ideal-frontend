@@ -812,8 +812,10 @@ export default {
         phone: this.project.phone,
         Interests: this.project.interests
       };
-      alert(newData);
-      serv.postRequest("proj/newProj", newData);
+      // alert(newData);
+      serv.postRequest("proj/newProj", newData).then(
+        
+      );
     },
     isMobile() {
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);

@@ -55,9 +55,10 @@
                       value
                     ></v-textarea>
                   </v-col>
-                  <v-btn class="ma-2" v-on:click="submit" tile outlined color="primary">
-                    <v-icon left>mdi-phone</v-icon>send
+                  <v-btn class="ma-2" @click="submit()" tile outlined color="primary">
+                    <v-icon left>mdi-send</v-icon>send
                   </v-btn>
+              <div v-if="send" class="lds-facebook"><div></div><div></div><div></div></div>
                 </v-row>
               </v-container>
             </v-card-text>
@@ -96,6 +97,7 @@
             <span
               class="thin m-3"
             >We're here to help answer any question you might have. We look forward to hearing from you.</span>
+           
             <div class>
               <div class="row title" style="text-align:center; margin-top:50px">
                 <div class="col-sm">
@@ -111,6 +113,7 @@
                   <v-icon large color="yellow darken-2 center">mdi-email</v-icon>
                   <br />info@ideal-nig.org
                 </div>
+                
               </div>
             </div>
           </div>
@@ -135,13 +138,13 @@ export default {
     foota
   },
   data: () => ({
+    send:false,
     contact: {
       fname: "",
       lname: "",
       email: "",
       phone: "",
-      message: "",
-      
+      message: ""
     }
   }),
   methods: {
@@ -154,10 +157,15 @@ export default {
         message: this.contact.message
       };
       // alert(newData);
-      this.alert = true;
+      this.alertify = true;
+      this.send = true;
+
       serv.postRequest("cont/newCont", newData).then(response => {
-        (this.contact.text = response.data), (this.contact.alerts = false);
-        this.contact.snackbar = true;
+        this.$alertify.success(response.data);
+      
+        this.send = false;
+      // eslint-disable-next-line no-console
+      console.log(response)
       });
     }
   }
@@ -172,6 +180,44 @@ export default {
   background-size: cover;
   background-position: center;
 }
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: rgb(4, 165, 251);
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+
 @media only screen and (min-width: 961px) {
   body {
     background-color: #b2d6ff; /* Blue */

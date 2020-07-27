@@ -142,17 +142,20 @@ color: #1B6761;
                       <v-container>
                         <v-row>
                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field label="First name" required></v-text-field>
+                            <v-text-field v-model="participants.fname" label="First name" required></v-text-field>
                           </v-col>
                           <v-col cols="12" sm="6" md="6">
                             <v-text-field
                               label="Last name"
-                              hint="example of helper text only on focus"
+                              v-model="participants.lname"
                             ></v-text-field>
                           </v-col>
 
-                          <v-col cols="12">
-                            <v-text-field label="Email*" required></v-text-field>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field v-model="participants.email" label="Email*" required></v-text-field>
+                          </v-col>
+                            <v-col cols="12" sm="6" md="6">
+                            <v-text-field v-model="participants.phone" label="Phone" required></v-text-field>
                           </v-col>
                         </v-row>
                       </v-container>
@@ -161,7 +164,7 @@ color: #1B6761;
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-                      <v-btn color="blue darken-1" text @click="dialog = false">Register</v-btn>
+                      <v-btn color="blue darken-1" text @click="saveContest(), dialog = false">Register</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
@@ -225,7 +228,12 @@ export default {
     timeout: 6000,
     x: null,
     y: "top",
-    n:"]lp"
+     participants:{
+      fname:"",
+      lname:"",
+      phone:"",
+      email:""
+    }
   }),
     metaInfo () {
     return {
@@ -291,6 +299,21 @@ export default {
           // eslint-disable-next-line no-console
           console.log(e);
         });
+    },
+        saveContest(){
+       let newData = {
+        fname: this.participants.fname,
+        lname: this.participants.lname,
+        email: this.participants.email,
+        phone: this.participants.phone,
+      
+      };
+       // eslint-disable-next-line no-console
+      console.log("working ooo",  this.contestId, newData)
+
+       serv.putRequest(`contest/update-contest/${this.contestId}`, newData ).then(response=>{
+             this.$alertify.success(response.data);
+       })
     }
   }
 };

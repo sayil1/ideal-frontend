@@ -92,7 +92,7 @@ font-size: 15px;
 line-height: 129.84%;
 letter-spacing: 0.02em;
 color: orange;"
-              >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              > {{event.description}}</p>
 
               <p
                 style="font-family: SF UI Display;
@@ -106,6 +106,9 @@ color:orange
               >
                 <v-icon color="#1B6761" small style="margin:3px">mdi-map-marker</v-icon>
                 {{event.location}}
+                <br />
+                 <v-icon color="#1B6761" small style="margin:3px"></v-icon>
+                {{event.venue}}
                 <br />
                 <span style="color: #1B6761;">Starting -</span>
                 {{event.startDate |moment("dddd, MMMM Do YYYY")}}
@@ -142,26 +145,30 @@ color: #1B6761;
                       <v-container>
                         <v-row>
                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field label="First name" required></v-text-field>
+                            <v-text-field v-model="participants.fname" label="First Name" required></v-text-field>
                           </v-col>
                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field
-                              label="Last name"
-                              hint="example of helper text only on focus"
+                            <v-text-field v-model="participants.lname"
+                              label="Last Name"
+                            ></v-text-field>
+                          </v-col>
+                           <v-col cols="12" sm="6" md="6">
+                            <v-text-field v-model="participants.phone"
+                              label="Phone Number"
                             ></v-text-field>
                           </v-col>
 
-                          <v-col cols="12">
-                            <v-text-field label="Email*" required></v-text-field>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field v-model="participants.email" label="Email*" required></v-text-field>
                           </v-col>
                         </v-row>
                       </v-container>
-                      <small style="color:black">*Ticket ID will be sent to your mail</small>
+                      <small style="color:blueviolet">*Ticket ID will be sent to your mail</small>
                     </v-card-text>
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-                      <v-btn color="blue darken-1" text @click="dialog = false">Register</v-btn>
+                      <v-btn color="blue darken-1" text @click="saveEvent(), dialog = false">Register</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
@@ -225,7 +232,14 @@ export default {
     timeout: 6000,
     x: null,
     y: "top",
-    n:"]lp"
+    participants:{
+      fname:"",
+      lname:"",
+      phone:"",
+      email:""
+    }
+
+
   }),
     metaInfo () {
     return {
@@ -291,6 +305,21 @@ export default {
           // eslint-disable-next-line no-console
           console.log(e);
         });
+    },
+    saveEvent(){
+       let newData = {
+        fname: this.participants.fname,
+        lname: this.participants.lname,
+        email: this.participants.email,
+        phone: this.participants.phone,
+      
+      };
+       // eslint-disable-next-line no-console
+      console.log("working ooo",  this.eventId)
+
+       serv.putRequest(`eve/update-event/${this.eventId}`, newData ).then(response=>{
+             this.$alertify.success(response.data);
+       })
     }
   }
 };

@@ -249,6 +249,23 @@
                 </div>
               </div>
 
+
+              <v-dialog v-model="alerts" hide-overlay persistent width="300">
+                <v-card color="primary" dark>
+                  <v-card-text>
+                    saving.. please wait
+                    <v-progress-linear indeterminate color="white" class="mb-0"></v-progress-linear>
+                  </v-card-text>
+                </v-card>
+              </v-dialog>
+
+              <div class="text-center">
+                <v-snackbar v-model="snackbar">
+                  {{ text }}
+                  <v-btn color="red" text @click="snackbar = false">Close</v-btn>
+                </v-snackbar>
+              </div>
+
               <!-- Pie Chart -->
               <div class="col-xl-4 col-lg-5"></div>
             </div>
@@ -335,6 +352,8 @@ export default {
     update: false,
     newId: "",
     init:1,
+    snackbar:false,
+    alerts:false,
 
     contests: {
       image: "",
@@ -417,7 +436,7 @@ export default {
     initialize() {
     
       serv
-        .getRequest("contest/allEve")
+        .getRequest("contest/allCont")
         .then(response => {
           // JSON responses are automatically parsed.
           this.desserts = response.data.result;
@@ -435,8 +454,7 @@ export default {
       // eslint-disable-next-line no-console
       this.newId = item._id;
       serv.getRequest(`contest/get-event/${item._id}`).then(response => {
-        // eslint-disable-next-line no-console
-        // console.log(response.data.result, "is the contests");
+
         this.contests = response.data.result[0];
         return item._id;
       });
@@ -520,11 +538,15 @@ export default {
 
       // eslint-disable-next-line no-console
       console.log(this.contests, this.startDate, this.endDate, this.time);
+        this.alerts = true
       serv.postRequest("contest/newCont", formData).then(
+        
         serv
         .getRequest("contest/allCont")
         .then(response => {
           // JSON responses are automatically parsed.
+            (this.text = response.data), (this.alerts = false);
+          this.snackbar = true;
           this.desserts = response.data.result;
           // eslint-disable-next-line no-console
           console.log(this.desserts, "are the contests");

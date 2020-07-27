@@ -13,6 +13,7 @@ import VueMeta from 'vue-meta'
 import VueClipboard from 'vue-clipboard2'
 import Sticky from 'vue-sticky-directive'
 import vuePositionSticky from 'vue-position-sticky'
+import VueAlertify from 'vue-alertify';
 
 Vue.use(BootstrapVue)
 Vue.use(VueMeta, {
@@ -23,6 +24,7 @@ Vue.use(require("vue-moment"));
 Vue.use(VueClipboard)
 Vue.use(Sticky)
 Vue.use(vuePositionSticky)
+Vue.use(VueAlertify);
 
 Vue.config.productionTip = false
 

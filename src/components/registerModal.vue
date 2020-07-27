@@ -78,11 +78,12 @@ export default {
            lname : this.lname,
            email : this.email,
            phone :this.phone,
-           course :this.course
+           course :this.course,
+           session: this.session
           }
            // eslint-disable-next-line no-console
       console.log(data);
-         serv.postRequest("proj/newProj", data).then(function(){
+         serv.postRequest("registerCourse/addcourse", data).then(function(){
           
            this.saving = false
          });

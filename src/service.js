@@ -1,7 +1,12 @@
 import axios from 'axios';
-// const API_URL = 'http://localhost:5000';
+// import VueAlertify from 'vue-alertify';
+// var   $alertify = new VueAlertify();
 
-const API_URL = `https://ideal-back.herokuapp.com`
+
+
+const API_URL = 'http://localhost:5000';
+
+// const API_URL = `https://ideal-back.herokuapp.com`
 const frontURL = `https://ideal-it.herokuapp.com`
 // eslint-disable-next-line no-unused-vars
 
@@ -17,7 +22,16 @@ export class Services {
         return axios.get(`${API_URL}/${url}`)
     }
     postRequest(url, data) {
-        return axios.post(`${API_URL}/${url}`, data)
+        
+        return axios.post(`${API_URL}/${url}`, data).then(
+         
+        )
+    }
+    putRequest(url, data) {
+        
+        return axios.put(`${API_URL}/${url}`, data).then(
+         
+        )
     }
     getUrl(){
         return frontURL

@@ -20,7 +20,7 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+              <v-icon class="navbar-toggler-icon"  color="white">mdi-chevron-down</v-icon>
           </button>
 
           <div  class="nava collapse navbar-collapse" id="navbarCollapse" style="order:4">
