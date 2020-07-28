@@ -6,7 +6,7 @@
         <div style="width:100%; " class="navbar navbar-expand-md navbar- bg-white navas" role="navigation">
           <div>
             <router-link to="/">
-              <img src="../assets/idealng.png" alt style="height:30px; " />
+              <img src="../assets/idealng.png" alt style="height:31px; " />
             </router-link>
           </div>
 
@@ -133,7 +133,7 @@
                       aria-haspopup="true"
                       aria-expanded="false"
                     >EXAM TEST CENTER</a>
-                    <ul class="dropdown-menu sub" aria-labelledby="dropdown1-1">
+                    <ul class="dropdown-menu sub" style="padding:10px; color:white" aria-labelledby="dropdown1-1">
                       <router-link class="route" to="toefl">
                         <li>TOEFL</li>
                       </router-link>
@@ -275,38 +275,42 @@ header {
   top: 0;
   /* left: 100%; */
   margin-top: -6px;
-  padding:5px
+  padding:10px
 }
 .nav-link {
-  color: green;
+  color: black;
   /* font-weight: bold; */
   font-size: 15px;
+  text-decoration: none;
 }
 .nav-link:hover {
   color: orange !important;
 }
-.sub {
-  color: black;
-  background-color: orange;
+ .sub {
+  padding: 10px;
+  color: white;
+  background-color: #1b6761;
 }
 .dropdown-item {
  margin:0px;
-  border-top: 2px solid white;
-  color: black;
-  background-color: orange;
+  /* border-top: 2px solid white; */
+  color: rgb(245, 235, 235);
+  background-color: #1b6761;
 }
 .dropdown-item .route {
   color: black;
 }
 li .dropdown-item :hover {
-  background-color: white !important;
-  color: orange !important;
+  /* background-color: rgb(158, 6, 6) !important;
+  color: orange !important; */
   text-decoration: none;
 }
-li :hover {
-  background-color: white !important;
-  color: orange !important;
+
+li a .dropdown-item {
+  font-weight: bold;
+  /* color: black !important; */
   text-decoration: none;
+  padding: 10px;
 }
 .navbar .dropdown-toggle,
 .navbar .dropdown-menu a {
@@ -321,20 +325,25 @@ li :hover {
 }
 
 ul.dropdown-menu.show{
-  padding:1px
+  padding:0px
 }
 ul.dropdown-menu{
-  padding:4px
+  padding:0px;
+  text-decoration: none;
 }
 
 .navbar .dropdown-item:focus,
 .navbar .dropdown-item:hover {
   color: #16181b;
   text-decoration: none;
-  background-color: #f8f9fa;
+  background-color:  #00959c;
+  text-decoration: none;
 }
 .nav2 {
   margin-top: 200px;
+}
+.route{
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 400px) {

@@ -147,6 +147,12 @@ color: #1B6761;
                           <v-col cols="12" sm="6" md="6">
                             <v-text-field
                               label="Last name"
+                              
+                            ></v-text-field>
+                          </v-col>
+                           <v-col cols="12" sm="6" md="6">
+                            <v-text-field
+                              label="Phone"
                               hint="example of helper text only on focus"
                             ></v-text-field>
                           </v-col>

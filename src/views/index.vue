@@ -5,17 +5,19 @@
 
     <header style="width:100%; ">
       <div>
-        <div style="padding:5px; " class="arch">
+        <div style=" " class="arch">
           <div class="carouselHolder">
             <v-carousel
+            hide-delimiters
               hide-delimiter-background
               delimiter-icon="mdi-minus"
               cycle
-              style="max-height:450px"
+              style="height:500px"
               show-arrows-on-hover
+              interval="10000"
             >
               <v-carousel-item class="div1">
-                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style="background: rgba(19, 96, 100, 0.4); height:1550px" >
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
@@ -37,7 +39,9 @@ letter-spacing: 0.02em; color:white"
                           >
                             Welcome to
                             initiative for development,
-                            <span style="color:orange">education</span> and learning
+                            <span
+                              style="color:orange"
+                            >education</span> and learning
                           </h1>
                         </div>
                       </div>
@@ -55,7 +59,7 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                           <h1
+                          <h1
                             class="animate__animated animate__backInLeft"
                             style="font-family: SF UI Display;
 font-style: normal;
@@ -68,7 +72,9 @@ letter-spacing: 0.02em; color:white"
                           >
                             Welcome to
                             initiative for development,
-                            <span style="color:orange">education</span> and learning
+                            <span
+                              style="color:orange"
+                            >education</span> and learning
                           </h1>
                         </div>
                       </div>
@@ -77,7 +83,7 @@ letter-spacing: 0.02em; color:white"
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div3">
-                 <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div style="margin-top:px ; ">
@@ -86,7 +92,7 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                           <h1
+                          <h1
                             class="animate__animated animate__backInLeft"
                             style="font-family: SF UI Display;
 font-style: normal;
@@ -99,7 +105,9 @@ letter-spacing: 0.02em; color:white"
                           >
                             Welcome to
                             initiative for development,
-                            <span style="color:orange">education</span> and learning
+                            <span
+                              style="color:orange"
+                            >education</span> and learning
                           </h1>
                         </div>
                       </div>
@@ -117,7 +125,7 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                           <h1
+                          <h1
                             class="animate__animated animate__backInLeft"
                             style="font-family: SF UI Display;
 font-style: normal;
@@ -130,7 +138,9 @@ letter-spacing: 0.02em; color:white"
                           >
                             Welcome to
                             initiative for development,
-                            <span style="color:orange">education</span> and learning
+                            <span
+                              style="color:orange"
+                            >education</span> and learning
                           </h1>
                         </div>
                       </div>
@@ -140,7 +150,7 @@ letter-spacing: 0.02em; color:white"
               </v-carousel-item>
 
               <v-carousel-item class="div5">
-               <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div style="margin-top:px ; ">
@@ -149,7 +159,7 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                           <h1
+                          <h1
                             class="animate__animated animate__backInLeft"
                             style="font-family: SF UI Display;
 font-style: normal;
@@ -162,7 +172,9 @@ letter-spacing: 0.02em; color:white"
                           >
                             Welcome to
                             initiative for development,
-                            <span style="color:orange">education</span> and learning
+                            <span
+                              style="color:orange"
+                            >education</span> and learning
                           </h1>
                         </div>
                       </div>
@@ -178,12 +190,12 @@ letter-spacing: 0.02em; color:white"
                     href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
                     style="text-decoration:none"
                   >
-                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
+                    <v-icon size="30" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
                   </a>
                 </div>
                 <div class="col-md-4 col-3" style="text-align:center">
                   <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
-                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
+                    <v-icon size="30" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
                   </a>
                 </div>
                 <div class="col-md-4 col-3" style="text-align:center">
@@ -191,7 +203,7 @@ letter-spacing: 0.02em; color:white"
                     style="text-decoration:none"
                     href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
                   >
-                    <v-icon size="20" color="white" right>mdi-instagram</v-icon>
+                    <v-icon size="30" color="white" right>mdi-instagram</v-icon>
                   </a>
                 </div>
                 <!-- <div class="col-md-3 col-3" style="text-align:center">
@@ -710,7 +722,7 @@ export default {
     Slide,
     foota,
     // nava,
-    nav2
+    nav2,
   },
 
   data: () => ({
@@ -720,7 +732,7 @@ export default {
       infiniteScroll: true,
       progress: true,
       autoreplay: true,
-      playspeed: 1000
+      playspeed: 1000,
     },
     image: { backgroundImage: "url('../../images/banner.jpg')" },
     news: [],
@@ -733,29 +745,29 @@ export default {
       "uniforms",
       "trainings",
       "computer server",
-      "school books"
+      "school books",
     ],
     project: {
       fname: "",
       lname: "",
       email: "",
       phone: "",
-      interests: ""
+      interests: "",
     },
     itemss: [
       {
-        src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg"
+        src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
       },
       {
-        src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg"
+        src: "https://cdn.vuetifyjs.com/images/carousel/sky.jpg",
       },
       {
-        src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg"
+        src: "https://cdn.vuetifyjs.com/images/carousel/bird.jpg",
       },
       {
-        src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg"
-      }
-    ]
+        src: "https://cdn.vuetifyjs.com/images/carousel/planet.jpg",
+      },
+    ],
   }),
   created() {
     this.isMobile();
@@ -766,7 +778,7 @@ export default {
     initialize() {
       serv
         .getRequest("news/getNews")
-        .then(response => {
+        .then((response) => {
           // JSON responses are automatically parsed.
           // this.news = response.data.result;
 
@@ -786,7 +798,7 @@ export default {
           // eslint-disable-next-line no-console
           console.log(this.news, "are the events");
         })
-        .catch(e => {
+        .catch((e) => {
           // this.errors.push(e);
 
           // eslint-disable-next-line no-console
@@ -794,28 +806,26 @@ export default {
         });
     },
     showNewss() {
-      setInterval(function() {
+      setInterval(function () {
         this.showNews = !this.showNews;
         // eslint-disable-next-line no-console
         console.log(this.showNews);
       }, 1000);
     },
-    test: function() {
+    test: function () {
       serv.testers();
       alert("see me");
     },
-    submit: function() {
+    submit: function () {
       let newData = {
         fname: this.project.fname,
         lname: this.project.lname,
         email: this.project.email,
         phone: this.project.phone,
-        Interests: this.project.interests
+        Interests: this.project.interests,
       };
       // alert(newData);
-      serv.postRequest("proj/newProj", newData).then(
-        
-      );
+      serv.postRequest("proj/newProj", newData).then();
     },
     isMobile() {
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -827,8 +837,8 @@ export default {
         // alert("you are on desktop");
         this.hooperSettings.itemsToShow = 5;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -841,8 +851,9 @@ header {
 }
 
 .arch {
-  background-image: url("../assets/body.jpg");
-  position: cover;
+  /* background-image: url("../assets/body.jpg");
+  position: cover; */
+  padding-top: 60px;
 }
 
 .board {
@@ -856,7 +867,8 @@ header {
   border-radius: 0px;
 }
 .carousel-item {
-  height: 85vh;
+  margin-top: 50px;
+  height: 100%;
   min-height: 0px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -865,7 +877,7 @@ header {
   background-size: cover;
 }
 .cov {
-  background-color: rgba(21, 22, 21, 0.1);
+  /* background-color: rgba(21, 22, 21, 0.1); */
 }
 .vl {
   border-left: 2px solid green;
@@ -987,10 +999,10 @@ header {
     margin-bottom: 90px;
   }
   .carouselHolder {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-top: 15px;
+    margin-bottom: 20px; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
   }
 }
 
@@ -1083,10 +1095,12 @@ header {
     margin-bottom: 90px;
   }
   .carouselHolder {
-    margin-top: 150px;
-    margin-bottom: 100px;
+    margin-top: 350px;
+    /* margin-bottom: 100px;
     margin-left: 150px;
-    margin-right: 150px;
+    margin-right: 150px; */
+    padding: 0px;
+    margin: 0px;
   }
 }
 </style>

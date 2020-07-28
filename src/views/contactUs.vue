@@ -58,20 +58,21 @@
                   <v-btn class="ma-2" @click="submit()" tile outlined color="primary">
                     <v-icon left>mdi-send</v-icon>send
                   </v-btn>
-              <div v-if="send" class="lds-facebook"><div></div><div></div><div></div></div>
+              <!-- <div v-if="send" class="lds-facebook"><div></div><div></div><div></div></div> -->
+              <loader v-if="send"  />
                 </v-row>
               </v-container>
             </v-card-text>
           </v-card>
         </div>
-        <v-dialog v-model="contact.alert" hide-overlay persistent width="300">
+        <!-- <v-dialog v-model="contact.alert" hide-overlay persistent width="300">
           <v-card color="primary" dark>
             <v-card-text>
               saving.. please wait
               <v-progress-linear indeterminate color="white" class="mb-0"></v-progress-linear>
             </v-card-text>
           </v-card>
-        </v-dialog>
+        </v-dialog> -->
         <div class="col-sm col-md-6">
           <div style="margin-top:10px">
             <iframe
@@ -131,11 +132,13 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import loader from "../components/loader"
 
 export default {
   components: {
     nava,
-    foota
+    foota,
+    loader
   },
   data: () => ({
     send:false,
@@ -180,32 +183,7 @@ export default {
   background-size: cover;
   background-position: center;
 }
-.lds-facebook {
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-facebook div {
-  display: inline-block;
-  position: absolute;
-  left: 8px;
-  width: 16px;
-  background: rgb(4, 165, 251);
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
-}
-.lds-facebook div:nth-child(1) {
-  left: 8px;
-  animation-delay: -0.24s;
-}
-.lds-facebook div:nth-child(2) {
-  left: 32px;
-  animation-delay: -0.12s;
-}
-.lds-facebook div:nth-child(3) {
-  left: 56px;
-  animation-delay: 0;
-}
+
 @keyframes lds-facebook {
   0% {
     top: 8px;

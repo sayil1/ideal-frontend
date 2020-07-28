@@ -2,31 +2,7 @@
   <div style="background-color:black">
     <nava />
     <div style="padding-top:150px;">
-      <!-- <span  style="text-align:center;">
-          <div class="row">
-            <div>
-              <v-img
-                style="margin-left:30px"
-                class="white--text align-end"
-                height="300px"
-               
-              
-              ></v-img>
-            </div>
-            <div style="padding:30px; text-align:left">
-              <h3>Title: {{event[0].title}}</h3>
-              <h3>
-                Location: {{event[0].location}}
-              </h3>
-              <h3>
-                Starting:{{event[0].startDate}}
-              </h3>
-              <h3>Ending:{{event[0].endDate}}</h3>
-                <v-btn class="ma-2" outlined color="orange">Share event</v-btn>
-              <br />
-            </div>
-          </div>
-      </span>-->
+ 
       <div style="padding-left:0px; " class="row">
         <v-card
           class="col-md-4"
@@ -165,10 +141,11 @@ color: #1B6761;
                       </v-container>
                       <small style="color:blueviolet">*Ticket ID will be sent to your mail</small>
                     </v-card-text>
+                    <loader v-if="loading" class="loader"/>
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-                      <v-btn color="blue darken-1" text @click="saveEvent(), dialog = false">Register</v-btn>
+                      <v-btn color="blue darken-1" text @click="saveEvent()">Register</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
@@ -207,6 +184,7 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import loader from "../components/loader"
 
 export default {
   // metaInfo: {
@@ -216,11 +194,13 @@ export default {
   // },
   components: {
     nava,
-    foota
+    foota,
+    loader
   },
  
 
   data: () => ({
+    loading:false,
     event: {},
     errors: [],
     eventId: "",
@@ -245,24 +225,15 @@ export default {
     return {
       title: `IDeal-IT | ${this.event.title}`,
       image:this.event.imagesPath,
-       meta: [
-      { charset: 'utf-8' },
-      {
-        property: "twitter:title",
-        content: `IDeal-IT | ${this.event.title}`,
-        // following template options are identical
-        // template: '%s - My page',
-       
-        vmid: 'twitter:title'
-      },
-       {
-        property: "twitter:title",
-        content: `IDeal-IT | ${this.event.title}`,
-        // following template options are identical
-        // template: '%s - My page',
-       
-        vmid: 'twitter:title'
-      },]
+    meta: [
+                { name: 'description', content: `${this.event.description}`},
+                { property: 'og:title', content: this.userData.name + ' - IDEal IT'},
+                { property: 'og:site_name', content:  `${this.event.description}`},
+                { property: 'og:description', content: 'Connect and follow ' +  `${this.event.description}` + 'IDEsl IT' },
+                {property: 'og:type', content: 'profile'},
+                // {property: 'og:url', content: 'https://epiloge.com/@' + this.userData.username},
+                // {property: 'og:image', content: this.aws_url + '/users/' + this.userData.profileurl + '-main.jpg' }    
+            ]
     }
   },
   created() {
@@ -293,6 +264,7 @@ export default {
       serv
         .getRequest(`eve/get-event/${this.eventId}`)
         .then(response => {
+        
           // JSON responses are automatically parsed.
           this.event = response.data.result[0];
           
@@ -316,9 +288,11 @@ export default {
       };
        // eslint-disable-next-line no-console
       console.log("working ooo",  this.eventId)
-
+        this.loading = true
        serv.putRequest(`eve/update-event/${this.eventId}`, newData ).then(response=>{
+         this.loading = false
              this.$alertify.success(response.data);
+
        })
     }
   }
@@ -328,5 +302,8 @@ export default {
 <style lang="css" scoped>
 .links {
   color: black;
+} .loader{
+  margin-right: auto;
+  margin-left: 50px;
 }
 </style>
