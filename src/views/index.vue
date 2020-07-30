@@ -333,7 +333,7 @@ letter-spacing: 0.02em; color:white"
       </div>
     </div>
 
-    <div class style="background-color:#092E2B; text-align:center">
+    <div class="greenBg" style=" text-align:center">
       <div class="col-md-12">
         <div>
           <div
@@ -473,7 +473,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <router-link style="text-decoration:none" class="route" to="events">
               <div class="card-body" style="background-color:#1B6761;">
-                <a href="#" class="card-link white--text">Eventssss</a>
+                <a href="#" class="card-link white--text">Events</a>
                 <a href="#" class="card-link" style="float:right; ">
                   <v-icon color="white">mdi-arrow-right</v-icon>
                 </a>
@@ -916,6 +916,9 @@ header {
 } */
 .card-size {
   font-size: 30px;
+}
+.greenBg{
+  background-image: url("../assets/greenbg.jpg");
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
