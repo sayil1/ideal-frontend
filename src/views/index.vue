@@ -17,7 +17,7 @@
               interval="10000"
             >
               <v-carousel-item class="div1">
-                <div style="background: rgba(19, 96, 100, 0.4); height:1550px" >
+                <div style="background: rgba(0, 0, 0, 0.7); height:1550px; width:50%" >
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
@@ -34,7 +34,7 @@ color:white;
 font-size: 34px;
 line-height: 140.84%;
 margin:40px;
-text-align: center;
+text-align: left;
 letter-spacing: 0.02em; color:white"
                           >
                             Welcome to
@@ -219,6 +219,7 @@ letter-spacing: 0.02em; color:white"
     <div class="goals">
       <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
         <div class="col-md-4 col-sm-12">
+         <div class="item" data-aos="fade-right">
           <div class="card1" style="background: #1B6761; width:75%; ">
             <v-icon large color="white darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
             <div class="-header text-left p-3">
@@ -233,6 +234,8 @@ letter-spacing: 0.02em; color:white"
               >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless..</div>
             </div>
           </div>
+         </div>
+
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="card2" style="background: #092E2B ; width:75%; ">
@@ -336,7 +339,10 @@ letter-spacing: 0.02em; color:white"
     <div class="greenBg" style=" text-align:center">
       <div class="col-md-12">
         <div>
+
           <div
+          class="item"
+          data-aos="slide-up"
             style="
 font-family: SF UI Display;
 font-style: normal;
@@ -354,8 +360,10 @@ letter-spacing: 0.02em;  "
                   <br />~ Kofi Anan ~
             </small>-->
           </div>
-          <br />
 
+          <br />
+ 
+        <div class="item" data-aos="fade-up">
           <div class="row" style="text-align:center">
             <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
               <v-icon large color="#1B6761">mdi-school</v-icon>
@@ -384,6 +392,8 @@ letter-spacing: 0.02em;  "
               <div class="demo-content" style="color:#FF8A00; margin-top:10px">Computer Server</div>
             </div>
           </div>
+        </div>
+
           <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4" style="margin-top:70px; margin-bottom:70px">
@@ -400,8 +410,9 @@ letter-spacing: 0.02em;  "
       </div>
     </div>
     <div style="width:100%">
+      <div class="item" data-aos="slide-up">
       <div
-        class="display-1"
+        class="display-1 animate__animated animate__bounce"
         style="margin-top:40px; text-align:center; color: #092E2B; font-family: SF UI Display;
 font-style: normal;
 font-weight: 800;
@@ -412,7 +423,7 @@ font-size: 48px;"
 font-style: normal;
 font-weight: normal;
 font-size: 14px;"
-      >Quick link to the most searched offer</div>
+      >Quick link to the most searched offer</div></div>
       <div class="small">
         <div class="row" style="margin-left:auto; margin-right:0">
           <div class="col-md-4" style="width: 18rem;">
@@ -519,6 +530,7 @@ font-size: 14px;"
 
     <section class="service-sec" id="benefits">
       <template>
+        <div class="item" data-aos="fade-up">
         <div
           class="display-1"
           style="margin-top:80px; margin-bottom:40px; text-align:center; color:black;
@@ -526,7 +538,7 @@ font-size: 14px;"
 font-style: normal;
 font-weight: 800;
 font-size: 48px; "
-        >Our Partners</div>
+        >Our Partners</div> </div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -611,10 +623,15 @@ font-size: 48px; "
     </section>
     <div class style="margin-bottom:5px">
       <div class="form" style>
-        GET UPDATES
-        <hr style="color:orange; width:700px; margin-left:9px; border: 2px solid #FF8A00;" />
+       <div class="item" data-aos="fade-right">
+   GET UPDATES
+        </div>
+    <div class="item" data-aos="fade-left">
+     <hr style="color:orange; width:700px; margin-left:9px; border: 2px solid #FF8A00;" />
+     </div>
+      
       </div>
-
+<div class="item" data-aos="fade-up">
       <form action style class="row form-inputs">
         <div class="col-md-12">
           <label
@@ -682,6 +699,7 @@ font-size: 13px;"
           >SUBSCRIBE</button>
         </div>-->
       </form>
+</div>
 
       <div style class="subscribe">
         <div>
@@ -918,7 +936,11 @@ header {
   font-size: 30px;
 }
 .greenBg{
-  background-image: url("../assets/greenbg.jpg");
+  background-image: url("../assets/greenbgg.jpg");
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {

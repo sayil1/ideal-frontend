@@ -23,6 +23,7 @@
 <script>
 export default {
     name: 'App',
+   
 //  metaInfo: {
 //   meta: [{
 //     vmid: 'description',
