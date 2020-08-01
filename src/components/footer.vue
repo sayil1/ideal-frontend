@@ -1,6 +1,6 @@
 <template>
         <div style="width:100%; " class="navbar navbar-expand-md navas bg" role="navigation">
-          <div>
+          <div style="margin:0px">
             <router-link to="/">
               <img src="../assets/idealng.png" alt style="height:30px; " />
             </router-link>

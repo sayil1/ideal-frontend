@@ -8,7 +8,7 @@
         <div style=" padding:5px" class="arch">
           <div class="carouselHolder">
             <div >
-              <h1
+              <!-- <h1
              
               
                 style="font-family: Recoleta Regular;
@@ -29,7 +29,7 @@ letter-spacing: 0.02em;"
                 <br />for development, <br>
                 <span style="">education</span>
                 <br />and learning
-              </h1>
+              </h1> -->
             </div>
             <v-carousel
              :show-arrows="false"
@@ -42,7 +42,7 @@ letter-spacing: 0.02em;"
               interval="3000"
             >
               <v-carousel-item class="div1">
-                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
@@ -78,7 +78,7 @@ letter-spacing: 0.02em; color:white"
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div2">
-                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div style="margin-top:px ; ">
@@ -111,7 +111,7 @@ letter-spacing: 0.02em; color:white"
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div3">
-                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div style="margin-top:px ; ">
@@ -144,7 +144,7 @@ letter-spacing: 0.02em; color:white"
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div4">
-                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div style="margin-top:px ; ">
@@ -178,7 +178,7 @@ letter-spacing: 0.02em; color:white"
               </v-carousel-item>
 
               <v-carousel-item class="div5">
-                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
+                <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div style="margin-top:px ; ">
@@ -942,30 +942,48 @@ header {
   background-position: center center;
 }
 .div1 {
-  background-image: url("../assets/slide1IDE.jpg");
+  background-image: url("../assets/car1.jpg");
   background-size: cover;
   background-position: center center;
+  
+}
+.div1:hover{
+ filter: grayscale(100%);
+  background-position: center center;
+ 
 }
 
 .div2 {
-  background-image: url("../assets/slide2.jpg");
+  background-image: url("../assets/car2.jpeg");
   background-size: cover;
   background-position: center center;
+}
+.div2:hover{
+ filter: grayscale(100%);
 }
 .div3 {
-  background-image: url("../assets/slide3.jpg");
+  background-image: url("../assets/car3.jpg");
   background-size: cover;
   background-position: center center;
 }
+.div3:hover{
+ filter: grayscale(100%);
+}
 .div4 {
-  background-image: url("../assets/slide5.jpg");
+  background-image: url("../assets/car4.jpg");
   background-size: cover;
   background-position: center center;
+}
+.div4:hover{
+ filter: grayscale(100%);
 }
 .div5 {
   background-image: url("../assets/slide7.jpg");
   background-size: cover;
   background-position: center center;
+}
+.div5:hover{
+ filter: grayscale(100%);
 }
 /* .div13 {
   background-image: url("../assets/ideal13.jpg");
