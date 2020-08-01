@@ -1,12 +1,12 @@
 <template  >
   <div>
     <div>
-      <div style="position:fixed; width:100%; z-index:10; background-color: " >
+      <div style="position:fixed; width:100%; z-index:10; background-color: red" >
        
-        <div style="width:100%; " class="navbar navbar-expand-md navbar- bg-white navas" role="navigation">
+        <div style="width:100%; background-color:#1b6761; color:white" class="navbar navbar-expand-md navbar-  navas" role="navigation">
           <div>
             <router-link to="/">
-              <img src="../assets/idealng.png" alt style="height:31px; " />
+              <img src="../assets/logo.png" alt style="height:70px; " />
             </router-link>
           </div>
 
@@ -278,7 +278,7 @@ header {
   padding:10px
 }
 .nav-link {
-  color: black;
+  color: white;
   /* font-weight: bold; */
   font-size: 15px;
   text-decoration: none;

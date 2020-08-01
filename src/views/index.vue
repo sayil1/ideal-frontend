@@ -935,8 +935,7 @@ header {
   background-image: url("../assets/carousel-2.png");
   background-size: cover;
   /* background-position: bottom; */
-   background-position: bottom 50px left ;
-}
+     background-position: -30px -50px}
 .div1 {
   background-image: url("../assets/car1.jpg");
   background-size: cover;
@@ -1024,6 +1023,7 @@ background-color:#2b5350;
 }
 .card-faintN:hover{
   background-color: rgba(11, 92, 93, 0.9); 
+  transform: scale(1.05);
 }
 .card-faint{
   background: #1B6761; width:75%;
@@ -1032,14 +1032,16 @@ background-color:#2b5350;
       background-color: rgba(37, 129, 131, 0.9) ;
          background-position: right bottom; /*Positioning*/
    background-repeat: no-repeat;
+transform: scale(1.05);
 }
 .formHolder{
   padding-top:40px;
   padding-bottom: 40px;
   background-image: url("../assets/lowersectionbg.jpg");
-   background-position: bottom 5px right 7px;
+   background-position: bottom -70px right 7px;
       background-attachment: fixed;
-   background-size:cover;
+   background-size: 100% 150%;
+   background-repeat: no-repeat;
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -1076,6 +1078,7 @@ background-color:#2b5350;
     margin-right: auto;
     height: 100%;
   }
+  
   .card2 {
     margin-left: auto;
     margin-right: auto;

@@ -1,8 +1,8 @@
-<template>
+<template >
         <div style="width:100%; " class="navbar navbar-expand-md navas bg" role="navigation">
           <div style="margin:0px">
             <router-link to="/">
-              <img src="../assets/idealng.png" alt style="height:30px; " />
+              <img src="../assets/logo.png" alt style="height:70px; " />
             </router-link>
           </div>
 
@@ -26,12 +26,13 @@ export default {
 <style lang="css" scoped>
 
 .bg {
+  padding:0px;
  background-image: url("../assets/footerbackground.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   /* background-size: cover; */
   height:70px;
     position: cover;
-   background-attachment: fixed;
+   /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
