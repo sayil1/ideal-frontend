@@ -727,7 +727,8 @@ font-size: 13px;"
 
       <div style class="subscribe">
         <div>
-          By submitting this form, you agree to the iDeal-IT Privacy Policy
+          <strong> By submitting this form, you agree to the iDeal-IT Privacy Policy</strong>
+         
           <br />
           <br />
           <br />
@@ -735,7 +736,7 @@ font-size: 13px;"
 
         <div class="form-check">
           <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">Subscribe to Email Updates</label>
+          <label class="form-check-label" for="exampleCheck1" > <strong> Subscribe to Email Updates </strong> </label>
         </div>
         <button
           type="submit"
@@ -931,9 +932,10 @@ header {
   background-position: center center;
 }
 .div0 {
-  background-image: url("../assets/carousel.png");
+  background-image: url("../assets/carousel-2.png");
   background-size: cover;
-  background-position: center center;
+  /* background-position: bottom; */
+   background-position: bottom 50px left ;
 }
 .div1 {
   background-image: url("../assets/car1.jpg");
@@ -1027,12 +1029,17 @@ background-color:#2b5350;
   background: #1B6761; width:75%;
 }
 .card-faint:hover{
-      background-color: rgba(37, 129, 131, 0.9); 
+      background-color: rgba(37, 129, 131, 0.9) ;
+         background-position: right bottom; /*Positioning*/
+   background-repeat: no-repeat;
 }
 .formHolder{
+  padding-top:40px;
+  padding-bottom: 40px;
   background-image: url("../assets/lowersectionbg.jpg");
-  padding-top: 50px;
-  padding-bottom: 100px;
+   background-position: bottom 5px right 7px;
+      background-attachment: fixed;
+   background-size:cover;
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {

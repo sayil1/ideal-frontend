@@ -29,7 +29,12 @@ export default {
  background-image: url("../assets/footerbackground.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   /* background-size: cover; */
-  height:70px
+  height:70px;
+    position: cover;
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
 }
  .navbar .dropdown-toggle:not(.nav-link)::after {
