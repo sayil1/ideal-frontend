@@ -5,19 +5,44 @@
 
     <header style="width:100%; ">
       <div>
-        <div style=" " class="arch">
+        <div style=" padding:5px" class="arch">
           <div class="carouselHolder">
+            <div >
+              <h1
+             
+              
+                style="font-family: Recoleta Regular;
+font-style: normal;
+color:white;
+font-size: 49px;
+line-height: 150.84%;
+margin:-50px;
+z-index:11111;
+ position: absolute;
+text-align: left;
+padding-top:120px;
+letter-spacing: 0.02em;"
+              >
+      
+               
+                Initiative
+                <br />for development, <br>
+                <span style="">education</span>
+                <br />and learning
+              </h1>
+            </div>
             <v-carousel
-            hide-delimiters
+             :show-arrows="false"
+              hide-delimiters
               hide-delimiter-background
               delimiter-icon="mdi-minus"
               cycle
-              style="height:500px"
+              style="max-height:400px"
               show-arrows-on-hover
-              interval="10000"
+              interval="3000"
             >
               <v-carousel-item class="div1">
-                <div style="background: rgba(0, 0, 0, 0.7); height:1550px; width:50%" >
+                <div style="background: rgba(19, 96, 100, 0.4); height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
@@ -26,23 +51,26 @@
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div style=" " class="text-center">
-                          <h1
+                          <!-- <h1
                             class="animate__animated animate__backInLeft"
-                            style="font-family: SF UI Display;
+                            style="font-family: Canela Web,serif;
 font-style: normal;
 color:white;
-font-size: 34px;
-line-height: 140.84%;
-margin:40px;
+font-size: 39px;
+line-height: 150.84%;
+margin:-40px;
+z-index:11111;
+ position: absolute;
 text-align: left;
 letter-spacing: 0.02em; color:white"
                           >
+                            position: absolute;
                             Welcome to
-                            initiative for development,
-                            <span
-                              style="color:orange"
-                            >education</span> and learning
-                          </h1>
+                            initiative
+                            <br />for development,
+                            <span style="color:orange">education</span>
+                            <br />and learning
+                          </h1> -->
                         </div>
                       </div>
                     </div>
@@ -59,9 +87,9 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <h1
+                          <!-- <h1
                             class="animate__animated animate__backInLeft"
-                            style="font-family: SF UI Display;
+                            style="font-family: Sans-Serif;
 font-style: normal;
 color:white;
 font-size: 34px;
@@ -75,7 +103,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1>
+                          </h1> -->
                         </div>
                       </div>
                     </div>
@@ -92,9 +120,9 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <h1
+                          <!-- <h1
                             class="animate__animated animate__backInLeft"
-                            style="font-family: SF UI Display;
+                            style="font-family: Sans-Serif;
 font-style: normal;
 color:white;
 font-size: 34px;
@@ -108,7 +136,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1>
+                          </h1> -->
                         </div>
                       </div>
                     </div>
@@ -125,9 +153,9 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <h1
+                          <!-- <h1
                             class="animate__animated animate__backInLeft"
-                            style="font-family: SF UI Display;
+                            style="font-family: Sans-Serif;
 font-style: normal;
 color:white;
 font-size: 34px;
@@ -141,7 +169,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1>
+                          </h1> -->
                         </div>
                       </div>
                     </div>
@@ -159,9 +187,9 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <h1
+                          <!-- <h1
                             class="animate__animated animate__backInLeft"
-                            style="font-family: SF UI Display;
+                            style="font-family: Sans-Serif;
 font-style: normal;
 color:white;
 font-size: 34px;
@@ -175,7 +203,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1>
+                          </h1> -->
                         </div>
                       </div>
                     </div>
@@ -184,18 +212,19 @@ letter-spacing: 0.02em; color:white"
               </v-carousel-item>
             </v-carousel>
             <div class="board">
+              <div class="item" data-aos="fade-up" data-aos-duration="2000">
               <div class="row">
                 <div class="col-md-4 col-3" style="text-align:center ; text-decoration:none">
                   <a
                     href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
                     style="text-decoration:none"
                   >
-                    <v-icon size="30" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
+                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
                   </a>
                 </div>
                 <div class="col-md-4 col-3" style="text-align:center">
                   <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
-                    <v-icon size="30" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
+                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
                   </a>
                 </div>
                 <div class="col-md-4 col-3" style="text-align:center">
@@ -203,12 +232,13 @@ letter-spacing: 0.02em; color:white"
                     style="text-decoration:none"
                     href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
                   >
-                    <v-icon size="30" color="white" right>mdi-instagram</v-icon>
+                    <v-icon size="20" color="white" right>mdi-instagram</v-icon>
                   </a>
                 </div>
                 <!-- <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right>mdi-linkedin</v-icon>
                 </div>-->
+              </div>
               </div>
             </div>
           </div>
@@ -219,12 +249,14 @@ letter-spacing: 0.02em; color:white"
     <div class="goals">
       <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
         <div class="col-md-4 col-sm-12">
-         <div class="item" data-aos="fade-right">
           <div class="card1" style="background: #1B6761; width:75%; ">
             <v-icon large color="white darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
             <div class="-header text-left p-3">
-              <h3 class="white--text bold">OUR MAJOR GOAL</h3>
-              <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid white;" />
+              <div   data-aos="zoom-in">
+                  <h3 class="white--text bold">OUR MAJOR GOAL</h3>
+              </div>
+             
+              <hr style="color:orange; width:45px; margin-left:0px; border: 1px solid white;" />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
@@ -234,15 +266,13 @@ letter-spacing: 0.02em; color:white"
               >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless..</div>
             </div>
           </div>
-         </div>
-
         </div>
         <div class="col-md-4 col-sm-12">
           <div class="card2" style="background: #092E2B ; width:75%; ">
             <v-icon large color="orange darken-2" style="margin:16px">mdi-eye</v-icon>
             <div class="-header t p-3">
               <h3 class="white--text bold">VISION</h3>
-              <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid #FF8A00;" />
+              <hr style="color:orange; width:45px; margin-left:0px; border: 1px solid #FF8A00;" />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
@@ -258,7 +288,7 @@ letter-spacing: 0.02em; color:white"
             <v-icon large style="margin:16px; color:#FF8A00;">mdi-lightbulb-on</v-icon>
             <div class="-header p-3">
               <h3 class="white--text bold">OUR APPROACH</h3>
-              <hr style="color:#FF8A00; width:90px; margin-left:9px; border: 2px solid #FF8A00;" />
+              <hr style="color:#FF8A00; width:45px; margin-left:0px; border: 1px solid #FF8A00;" />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
@@ -339,12 +369,11 @@ letter-spacing: 0.02em; color:white"
     <div class="greenBg" style=" text-align:center">
       <div class="col-md-12">
         <div>
-
           <div
-          class="item"
-          data-aos="slide-up"
+            class="item"
+            data-aos="slide-up"
             style="
-font-family: SF UI Display;
+font-family: Sans-Serif;
 font-style: normal;
 color:white;
 font-size: 24px;
@@ -362,44 +391,45 @@ letter-spacing: 0.02em;  "
           </div>
 
           <br />
- 
-        <div class="item" data-aos="fade-up">
-          <div class="row" style="text-align:center">
-            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
-              <v-icon large color="#1B6761">mdi-school</v-icon>
-              <!-- <i class="material-icons outlined" style=" font-size: 50px; outline" >school</i> -->
-              <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Books</div>
-            </div>
 
-            <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
-              <v-icon large color="#1B6761">mdi-tshirt-v-outline</v-icon>
-              <div class="demo-content" style="color:#FF8A00;margin-top:10px">Uniforms</div>
-            </div>
-            <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
-              <v-icon large color="#1B6761">mdi-cash</v-icon>
-              <div class="demo-content" style="color:#FF8A00; margin-top:10px">Fees</div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
-              <v-icon large color="#1B6761">mdi-home-city-outline</v-icon>
-              <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Renovations</div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
-              <v-icon large color="#1B6761">mdi-teach</v-icon>
-              <div class="demo-content" style="color:#FF8A00; margin-top:10px">Training</div>
-            </div>
-            <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
-              <v-icon large color="#1B6761">mdi-server-network</v-icon>
-              <div class="demo-content" style="color:#FF8A00; margin-top:10px">Computer Server</div>
+          <div class="item" data-aos="fade-up">
+            <div class="row" style="text-align:center">
+              <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
+                <v-icon large color="#1B6761">mdi-school</v-icon>
+                <!-- <i class="material-icons outlined" style=" font-size: 50px; outline" >school</i> -->
+                <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Books</div>
+              </div>
+
+              <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
+                <v-icon large color="#1B6761">mdi-tshirt-v-outline</v-icon>
+                <div class="demo-content" style="color:#FF8A00;margin-top:10px">Uniforms</div>
+              </div>
+              <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
+                <v-icon large color="#1B6761">mdi-cash</v-icon>
+                <div class="demo-content" style="color:#FF8A00; margin-top:10px">Fees</div>
+              </div>
+              <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
+                <v-icon large color="#1B6761">mdi-home-city-outline</v-icon>
+                <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Renovations</div>
+              </div>
+              <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
+                <v-icon large color="#1B6761">mdi-teach</v-icon>
+                <div class="demo-content" style="color:#FF8A00; margin-top:10px">Training</div>
+              </div>
+              <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
+                <v-icon large color="#1B6761">mdi-server-network</v-icon>
+                <div class="demo-content" style="color:#FF8A00; margin-top:10px">Computer Server</div>
+              </div>
             </div>
           </div>
-        </div>
 
           <div class="row">
             <div class="col-md-4"></div>
             <div class="col-md-4" style="margin-top:70px; margin-bottom:70px">
               <button
+                style="background-color:orange"
                 type="button"
-                class="btn success white--text"
+                class="btn --text"
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
               >Support a project</button>
@@ -411,85 +441,98 @@ letter-spacing: 0.02em;  "
     </div>
     <div style="width:100%">
       <div class="item" data-aos="slide-up">
-      <div
-        class="display-1 animate__animated animate__bounce"
-        style="margin-top:40px; text-align:center; color: #092E2B; font-family: SF UI Display;
+        <div
+          class="display-1 animate__animated animate__bounce"
+          style="margin-top:40px; text-align:center; color: #092E2B; font-family: Sans-Serif;
 font-style: normal;
 font-weight: 800;
 font-size: 48px;"
-      >Quick Offers</div>
-      <div
-        style="height: 26px; margin-top:10px; text-align:center; color:#1B6761;font-family: BigNoodleTitling;
+        >Quick Offers</div>
+        <div
+          style="height: 26px; margin-top:10px; text-align:center; color:#1B6761;font-family: Sans-Serif;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;"
-      >Quick link to the most searched offer</div></div>
+        >Quick link to the most searched offer</div>
+      </div>
       <div class="small">
         <div class="row" style="margin-left:auto; margin-right:0">
           <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="cont">
-              <div class="card-body" style="background-color:#1B6761;">
-                <a class="card-link white--text">Internship</a>
-                <a class="card-link" style="float:right; ">
-                  <v-icon color="white">mdi-arrow-right</v-icon>
-                </a>
-              </div>
-            </router-link>
+            <div class="item" data-aos="fade-up">
+              <router-link style="text-decoration:none" class="route" to="cont">
+                <div class="card-body" style="background-color:#1B6761;">
+                  <a class="card-link white--text">Internship</a>
+                  <a class="card-link" style="float:right; ">
+                    <v-icon color="white">mdi-arrow-right</v-icon>
+                  </a>
+                </div>
+              </router-link>
+            </div>
           </div>
 
           <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="test">
-              <div class="card-body" style="background-color:#092E2B;">
-                <a href="#" class="card-link white--text">Test Preparation</a>
-                <a href="#" class="card-link" style="float:right; ">
-                  <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
-                </a>
-              </div>
-            </router-link>
+            <div class="item" data-aos="fade-up">
+              <router-link style="text-decoration:none" class="route" to="test">
+                <div class="card-body" style="background-color:#092E2B;">
+                  <a href="#" class="card-link white--text">Test Preparation</a>
+                  <a href="#" class="card-link" style="float:right; ">
+                    <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
+                  </a>
+                </div>
+              </router-link>
+            </div>
           </div>
 
           <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="prof">
-              <div class="card-body" style="background-color:#1B6761;">
-                <a href="#" class="card-link white--text">Professional IT Courses</a>
-                <a href="#" class="card-link" style="float:right; ">
-                  <v-icon color="white">mdi-arrow-right</v-icon>
-                </a>
-              </div>
-            </router-link>
+            <div class="item" data-aos="fade-up">
+              <router-link style="text-decoration:none" class="route" to="prof">
+                <div class="card-body" style="background-color:#1B6761;">
+                  <a href="#" class="card-link white--text">Professional IT Courses</a>
+                  <a href="#" class="card-link" style="float:right; ">
+                    <v-icon color="white">mdi-arrow-right</v-icon>
+                  </a>
+                </div>
+              </router-link>
+            </div>
           </div>
 
           <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="books">
-              <div class="card-body" style="background-color:#1B6761;">
-                <a href="#" class="card-link white--text">Book Shops</a>
-                <a href="#" class="card-link" style="float:right; ">
-                  <v-icon color="white">mdi-arrow-right</v-icon>
-                </a>
-              </div>
-            </router-link>
+            <div class="item" data-aos="fade-up">
+              <router-link style="text-decoration:none" class="route" to="books">
+                <div class="card-body" style="background-color:#1B6761;">
+                  <a href="#" class="card-link white--text">Book Shops</a>
+                  <a href="#" class="card-link" style="float:right; ">
+                    <v-icon color="white">mdi-arrow-right</v-icon>
+                  </a>
+                </div>
+              </router-link>
+            </div>
           </div>
 
           <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="diy">
-              <div class="card-body" style="background-color:#1B6761;">
-                <a href="#" class="card-link white--text">DIY Kits</a>
-                <a href="#" class="card-link" style="float:right; ">
-                  <v-icon color="white">mdi-arrow-right</v-icon>
-                </a>
-              </div>
-            </router-link>
+            <div class="item" data-aos="fade-up">
+              <router-link style="text-decoration:none" class="route" to="diy">
+                <div class="card-body" style="background-color:#1B6761;">
+                  <a href="#" class="card-link white--text">DIY Kits</a>
+                  <a href="#" class="card-link" style="float:right; ">
+                    <v-icon color="white">mdi-arrow-right</v-icon>
+                  </a>
+                </div>
+              </router-link>
+            </div>
           </div>
 
           <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="events">
-              <div class="card-body" style="background-color:#1B6761;">
-                <a href="#" class="card-link white--text">Events</a>
-                <a href="#" class="card-link" style="float:right; ">
-                  <v-icon color="white">mdi-arrow-right</v-icon>
-                </a>
-              </div>
-            </router-link>
+            <div class="item" data-aos="fade-up">
+              <router-link style="text-decoration:none" class="route" to="events">
+                <div class="card-body" style="background-color:#1B6761;">
+                  <a href="#" class="card-link white--text">Events</a>
+                  <a href="#" class="card-link" style="float:right; ">
+                    <v-icon color="white">mdi-arrow-right</v-icon>
+                  </a>
+                </div>
+              </router-link>
+            </div>
           </div>
 
           <div class="col-md-4" style="width: 18rem;">
@@ -531,14 +574,15 @@ font-size: 14px;"
     <section class="service-sec" id="benefits">
       <template>
         <div class="item" data-aos="fade-up">
-        <div
-          class="display-1"
-          style="margin-top:80px; margin-bottom:40px; text-align:center; color:black;
-        font-family: SF UI Display;
+          <div
+            class="display-1"
+            style="margin-top:80px; margin-bottom:40px; text-align:center; color:black;
+      font-family: Sans-Serif;
 font-style: normal;
 font-weight: 800;
 font-size: 48px; "
-        >Our Partners</div> </div>
+          >Our Partners</div>
+        </div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -623,73 +667,68 @@ font-size: 48px; "
     </section>
     <div class style="margin-bottom:5px">
       <div class="form" style>
-       <div class="item" data-aos="fade-right">
-   GET UPDATES
-        </div>
-    <div class="item" data-aos="fade-left">
-     <hr style="color:orange; width:700px; margin-left:9px; border: 2px solid #FF8A00;" />
-     </div>
-      
+        GET UPDATES
+        <hr style="color:orange; width:700px; margin-left:9px; border: 1px solid #FF8A00;" />
       </div>
-<div class="item" data-aos="fade-up">
-      <form action style class="row form-inputs">
-        <div class="col-md-12">
-          <label
-            for="exampleFormControlInput1"
-            style="font-family: SF UI Display;
+      <div>
+        <form action style class="row form-inputs">
+          <div class="col-md-12">
+            <label
+              for="exampleFormControlInput1"
+              style="font-family: Sans-Serif;
 font-style: normal;
 font-weight: bold;
 font-size: 13px;"
-          >
-            EMAIL ADDRESS
-            <span style="color:red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            style="background-color:#CAD9D8"
-          />
-        </div>
-        <div class="col-md-7">
-          <label
-            for="exampleFormControlInput1"
-            style="font-family: SF UI Display;
+            >
+              EMAIL ADDRESS
+              <span style="color:red">*</span>
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              style="background-color:#CAD9D8"
+            />
+          </div>
+          <div class="col-md-7">
+            <label
+              for="exampleFormControlInput1"
+              style="font-family: Sans-Serif;
 font-style: normal;
 font-weight: bold;
 font-size: 13px;"
-          >
-            COUNTRY
-            <span style="color:red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            style="background-color:#CAD9D8"
-          />
-          <br />
-        </div>
-        <div class="col-md-5 col-sm-12">
-          <label
-            for="exampleFormControlInput1"
-            style="font-family: SF UI Display;
+            >
+              COUNTRY
+              <span style="color:red">*</span>
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              style="background-color:#CAD9D8"
+            />
+            <br />
+          </div>
+          <div class="col-md-5 col-sm-12">
+            <label
+              for="exampleFormControlInput1"
+              style="font-family: Sans-Serif;
 font-style: normal;
 font-weight: bold;
 font-size: 13px;"
-          >
-            ZIP CODE
-            <span style="color:red">*</span>
-          </label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            style="background-color:#CAD9D8"
-          />
-        </div>
+            >
+              ZIP CODE
+              <span style="color:red">*</span>
+            </label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              style="background-color:#CAD9D8"
+            />
+          </div>
 
-        <!-- <div style="padding-left:15px; padding-top:30px">
+          <!-- <div style="padding-left:15px; padding-top:30px">
           <br />
           <button
             type="button"
@@ -697,9 +736,9 @@ font-size: 13px;"
             style="background-color:#092E2B"
             v-on:click="submit"
           >SUBSCRIBE</button>
-        </div>-->
-      </form>
-</div>
+          </div>-->
+        </form>
+      </div>
 
       <div style class="subscribe">
         <div>
@@ -869,9 +908,9 @@ header {
 }
 
 .arch {
-  /* background-image: url("../assets/body.jpg");
-  position: cover; */
-  padding-top: 60px;
+  background-image: url("../assets/body.jpg");
+  position: cover;
+  /* padding-top: 60px; */
 }
 
 .board {
@@ -885,8 +924,9 @@ header {
   border-radius: 0px;
 }
 .carousel-item {
-  margin-top: 50px;
-  height: 100%;
+  /* margin-top: 50px;
+  height: 100%; */
+  height: 85vh;
   min-height: 0px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
@@ -935,9 +975,9 @@ header {
 .card-size {
   font-size: 30px;
 }
-.greenBg{
+.greenBg {
   background-image: url("../assets/greenbgg.jpg");
-   background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -956,7 +996,7 @@ header {
     text-align: center;
     padding-bottom: 80px;
 
-    font-family: "lora";
+    font-family: Sans-Serif;
   }
   .car-text {
     font-size: 21px;
@@ -965,10 +1005,10 @@ header {
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-    font-family: "Alegreya";
+    font-family: Sans-Serif;
   }
   p {
-    font-family: "Alegreya", serif;
+    font-family: Sans-Serif;
 
     font-size: 16px;
   }
@@ -1009,7 +1049,7 @@ header {
     margin-right: 10px;
   }
   .form {
-    font-family: SF UI Display;
+    font-family: Sans-Serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -1024,10 +1064,10 @@ header {
     margin-bottom: 90px;
   }
   .carouselHolder {
-    /* margin-top: 15px;
-    margin-bottom: 20px; */
-    /* margin-left: 10px;
-    margin-right: 10px; */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -1051,7 +1091,7 @@ header {
     color: orange;
     text-align: center;
     padding-bottom: 80px;
-    font-family: "lora";
+    font-family: Sans-Serif;
   }
   .car-text {
     font-size: 21px;
@@ -1060,10 +1100,10 @@ header {
     padding: 10px;
     text-align: center;
     border-radius: 45px;
-    font-family: "Alegreya";
+    font-family: Sans-Serif;
   }
   p {
-    font-family: "Alegreya", serif;
+    font-family: Sans-Serif;
 
     font-size: 16px;
   }
@@ -1105,7 +1145,7 @@ header {
     padding-right: 40px;
   }
   .form {
-    font-family: SF UI Display;
+    font-family: Sans-Serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -1120,12 +1160,12 @@ header {
     margin-bottom: 90px;
   }
   .carouselHolder {
-    margin-top: 350px;
-    /* margin-bottom: 100px;
-    margin-left: 150px;
-    margin-right: 150px; */
-    padding: 0px;
-    margin: 0px;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    margin-left: 220px;
+    margin-right: 220px;
+    /* padding: 0px;
+    margin: 0px; */
   }
 }
 </style>
