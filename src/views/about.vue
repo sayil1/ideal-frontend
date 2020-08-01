@@ -97,7 +97,7 @@ letter-spacing: 0.02em;"
         </div>
       </div>
 
-      <div style="margin:0px">
+      <div style="margin:20px">
         <h1
           class="b-head"
           style="text-align:center; margin-top:30px; background-color: #1B6761;color:white"
@@ -108,7 +108,7 @@ letter-spacing: 0.02em;"
         <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
         <div class="images-wrapper row imgHolder">
           <div
-            class="image"
+            class="image col-md-3"
             v-for="(image, imageIndex) in items"
             :key="imageIndex"
             @click="index = imageIndex"

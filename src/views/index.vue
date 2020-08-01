@@ -7,30 +7,7 @@
       <div>
         <div style=" padding:5px" class="arch">
           <div class="carouselHolder">
-            <div>
-              <!-- <h1
-             
-              
-                style="font-family: Recoleta Regular;
-font-style: normal;
-color:white;
-font-size: 49px;
-line-height: 150.84%;
-margin:-50px;
-z-index:11111;
- position: absolute;
-text-align: left;
-padding-top:120px;
-letter-spacing: 0.02em;"
-              >
-      
-               
-                Initiative
-                <br />for development, <br>
-                <span style="">education</span>
-                <br />and learning
-              </h1>-->
-            </div>
+            <div></div>
             <v-carousel
               :show-arrows="false"
               hide-delimiters
@@ -50,34 +27,13 @@ letter-spacing: 0.02em;"
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
-                        <div style=" " class="text-center">
-                          <!-- <h1
-                            class="animate__animated animate__backInLeft"
-                            style="font-family: Canela Web,serif;
-font-style: normal;
-color:white;
-font-size: 39px;
-line-height: 150.84%;
-margin:-40px;
-z-index:11111;
- position: absolute;
-text-align: left;
-letter-spacing: 0.02em; color:white"
-                          >
-                            position: absolute;
-                            Welcome to
-                            initiative
-                            <br />for development,
-                            <span style="color:orange">education</span>
-                            <br />and learning
-                          </h1>-->
-                        </div>
+                        <div style=" " class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
-                <v-carousel-item class="div1">
+              <v-carousel-item class="div1">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -87,27 +43,23 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div style=" " class="text-center">
-                          <!-- <h1
-                            class="animate__animated animate__backInLeft"
-                            style="font-family: Canela Web,serif;
-font-style: normal;
-color:white;
-font-size: 39px;
-line-height: 150.84%;
-margin:-40px;
-z-index:11111;
- position: absolute;
-text-align: left;
-letter-spacing: 0.02em; color:white"
-                          >
-                            position: absolute;
-                            Welcome to
-                            initiative
-                            <br />for development,
-                            <span style="color:orange">education</span>
-                            <br />and learning
-                          </h1>-->
+                        
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+                <v-carousel-item class="div0">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div>
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        ></div>
+                        <div style=" " class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -123,24 +75,23 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <!-- <h1
-                            class="animate__animated animate__backInLeft"
-                            style="font-family: Sans-Serif;
-font-style: normal;
-color:white;
-font-size: 34px;
-line-height: 140.84%;
-margin:40px;
-text-align: center;
-letter-spacing: 0.02em; color:white"
-                          >
-                            Welcome to
-                            initiative for development,
-                            <span
-                              style="color:orange"
-                            >education</span> and learning
-                          </h1>-->
+                    
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+                <v-carousel-item class="div0">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div>
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        ></div>
+                        <div style=" " class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -156,24 +107,23 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <!-- <h1
-                            class="animate__animated animate__backInLeft"
-                            style="font-family: Sans-Serif;
-font-style: normal;
-color:white;
-font-size: 34px;
-line-height: 140.84%;
-margin:40px;
-text-align: center;
-letter-spacing: 0.02em; color:white"
-                          >
-                            Welcome to
-                            initiative for development,
-                            <span
-                              style="color:orange"
-                            >education</span> and learning
-                          </h1>-->
+                       
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+                <v-carousel-item class="div0">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div>
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        ></div>
+                        <div style=" " class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -189,24 +139,23 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <!-- <h1
-                            class="animate__animated animate__backInLeft"
-                            style="font-family: Sans-Serif;
-font-style: normal;
-color:white;
-font-size: 34px;
-line-height: 140.84%;
-margin:40px;
-text-align: center;
-letter-spacing: 0.02em; color:white"
-                          >
-                            Welcome to
-                            initiative for development,
-                            <span
-                              style="color:orange"
-                            >education</span> and learning
-                          </h1>-->
+                
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+                <v-carousel-item class="div0">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div>
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        ></div>
+                        <div style=" " class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -223,24 +172,23 @@ letter-spacing: 0.02em; color:white"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
                         <div class="text-center">
-                          <!-- <h1
-                            class="animate__animated animate__backInLeft"
-                            style="font-family: Sans-Serif;
-font-style: normal;
-color:white;
-font-size: 34px;
-line-height: 140.84%;
-margin:40px;
-text-align: center;
-letter-spacing: 0.02em; color:white"
-                          >
-                            Welcome to
-                            initiative for development,
-                            <span
-                              style="color:orange"
-                            >education</span> and learning
-                          </h1>-->
+                        
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+                <v-carousel-item class="div0">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div>
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        ></div>
+                        <div style=" " class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -248,19 +196,19 @@ letter-spacing: 0.02em; color:white"
               </v-carousel-item>
             </v-carousel>
             <div class="board">
-              <div class="item" data-aos="fade-up" data-aos-duration="2000">
+              <div class="item" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="row">
                   <div class="col-md-4 col-3" style="text-align:center ; text-decoration:none">
                     <a
                       href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
                       style="text-decoration:none"
                     >
-                      <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
+                      <v-icon size="20" class="icon"  right style="padding-right:10px">mdi-facebook</v-icon>
                     </a>
                   </div>
                   <div class="col-md-4 col-3" style="text-align:center">
                     <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
-                      <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
+                      <v-icon size="20" class="icon" colo right style="padding-right:10px">mdi-twitter</v-icon>
                     </a>
                   </div>
                   <div class="col-md-4 col-3" style="text-align:center">
@@ -268,7 +216,7 @@ letter-spacing: 0.02em; color:white"
                       style="text-decoration:none"
                       href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
                     >
-                      <v-icon size="20" color="white" right>mdi-instagram</v-icon>
+                      <v-icon size="20" class="icon"  right>mdi-instagram</v-icon>
                     </a>
                   </div>
                   <!-- <div class="col-md-3 col-3" style="text-align:center">
@@ -285,7 +233,7 @@ letter-spacing: 0.02em; color:white"
     <div class="goals">
       <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
         <div class="col-md-4 col-sm-12">
-          <div class="card1" style="background: #1B6761; width:75%; ">
+          <div class="card1 card-faint" style=" ">
             <v-icon large color="white darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
             <div class="-header text-left p-3">
               <div data-aos="zoom-in">
@@ -304,7 +252,7 @@ letter-spacing: 0.02em; color:white"
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <div class="card2" style="background: #092E2B ; width:75%; ">
+          <div class="card2 card-faintN" style=" width:75%; ">
             <v-icon large color="orange darken-2" style="margin:16px">mdi-eye</v-icon>
             <div class="-header t p-3">
               <h3 class="white--text bold">VISION</h3>
@@ -320,7 +268,7 @@ letter-spacing: 0.02em; color:white"
         </div>
 
         <div class="col-md-4 col-sm-12">
-          <div class="card3" style="background: #092E2B; width:75%; ">
+          <div class="card3 card-faintN" style=" width:75%; ">
             <v-icon large style="margin:16px; color:#FF8A00;">mdi-lightbulb-on</v-icon>
             <div class="-header p-3">
               <h3 class="white--text bold">OUR APPROACH</h3>
@@ -463,9 +411,9 @@ letter-spacing: 0.02em;  "
             <div class="col-md-4"></div>
             <div class="col-md-4" style="margin-top:70px; margin-bottom:70px">
               <button
-                style="background-color:orange"
+             
                 type="button"
-                class="btn --text"
+                class="btn "
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
               >Support a project</button>
@@ -496,7 +444,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="cont">
-                <div class="card-body" style="background-color:#1B6761;">
+                <div class="card-body card-bullet" >
                   <a class="card-link white--text">Internship</a>
                   <a class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -509,7 +457,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="test">
-                <div class="card-body" style="background-color:#092E2B;">
+                <div class="card-body card-bulletMain" style="">
                   <a href="#" class="card-link white--text">Test Preparation</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
@@ -522,7 +470,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="prof">
-                <div class="card-body" style="background-color:#1B6761;">
+                <div class="card-body card-bullet" >
                   <a href="#" class="card-link white--text">Professional IT Courses</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -535,7 +483,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="books">
-                <div class="card-body" style="background-color:#1B6761;">
+                <div class="card-body card-bullet" >
                   <a href="#" class="card-link white--text">Book Shops</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -548,7 +496,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="diy">
-                <div class="card-body" style="background-color:#1B6761;">
+                <div class="card-body  card-bullet" >
                   <a href="#" class="card-link white--text">DIY Kits</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -561,7 +509,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="events">
-                <div class="card-body" style="background-color:#1B6761;">
+                <div class="card-body card-bullet" >
                   <a href="#" class="card-link white--text">Events</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -573,7 +521,7 @@ font-size: 14px;"
 
           <div class="col-md-4" style="width: 18rem;">
             <router-link style="text-decoration:none" class="route" to="contest">
-              <div class="card-body" style="background-color:#1B6761;">
+              <div class="card-body card-bullet" >
                 <a href="#" class="card-link white--text">Apply For Contests</a>
                 <a href="#" class="card-link" style="float:right; ">
                   <v-icon color="white">mdi-arrow-right</v-icon>
@@ -584,7 +532,7 @@ font-size: 14px;"
 
           <div class="col-md-4" style="width: 18rem;">
             <router-link style="text-decoration:none" class="route" to="web">
-              <div class="card-body" style="background-color:#1B6761;">
+              <div class="card-body card-bullet" >
                 <a href="#" class="card-link white--text">Webinars</a>
                 <a href="#" class="card-link" style="float:right; ">
                   <v-icon color="white">mdi-arrow-right</v-icon>
@@ -595,7 +543,7 @@ font-size: 14px;"
 
           <div class="col-md-4" style="width: 18rem;">
             <router-link style="text-decoration:none" class="route" to="/">
-              <div class="card-body" style="background-color:#1B6761;">
+              <div class="card-body card-bullet" >
                 <a href="#" class="card-link white--text">Surport a Project</a>
                 <a href="#" class="card-link" style="float:right; ">
                   <v-icon color="white">mdi-arrow-right</v-icon>
@@ -701,7 +649,8 @@ font-size: 48px; "
         </hooper>
       </template>
     </section>
-    <div class style="margin-bottom:5px">
+
+    <div class="formHolder">
       <div class="form" style>
         GET UPDATES
         <hr style="color:orange; width:700px; margin-left:9px; border: 1px solid #FF8A00;" />
@@ -790,8 +739,8 @@ font-size: 13px;"
         </div>
         <button
           type="submit"
-          style="background: #092E2B; padding:10px"
-          class="btn white--text"
+         
+          class="btn"
         >SUBSCRIBE</button>
       </div>
     </div>
@@ -944,8 +893,12 @@ header {
 }
 
 .arch {
-  background-image: url("../assets/body.jpg");
+  background-image: url("../assets/carousel.jpg");
   position: cover;
+   background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   /* padding-top: 60px; */
 }
 
@@ -1039,6 +992,48 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
+.card-bulletMain{
+  background-color:#092E2B;
+}
+.card-bulletMain:hover{
+background-color:#2b5350;
+}
+
+.card-bullet{
+   background-color:#156b64;
+}
+.card-bullet:hover{
+  background-color:#092E2B;
+}
+.icon{
+  color:white
+}
+.icon:hover{
+  color: orange;
+}
+.btn{
+  background-color: orange;
+}
+.btn:hover{
+  background-color: rgb(226, 215, 130);
+}
+.card-faintN{
+  background-color:  #092E2B;
+}
+.card-faintN:hover{
+  background-color: rgba(11, 92, 93, 0.9); 
+}
+.card-faint{
+  background: #1B6761; width:75%;
+}
+.card-faint:hover{
+      background-color: rgba(37, 129, 131, 0.9); 
+}
+.formHolder{
+  background-image: url("../assets/lowersectionbg.jpg");
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
   body {
@@ -1118,7 +1113,7 @@ header {
   }
   .subscribe {
     padding-left: 60px;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
   }
   .carouselHolder {
     margin-top: 15px;
@@ -1169,6 +1164,9 @@ header {
     margin-right: -60px;
     height: 100%;
   }
+.card1:hover{
+  /* height:102% */
+}
   .card2 {
     margin-left: auto;
     margin-right: auto;
@@ -1214,7 +1212,7 @@ header {
   }
   .subscribe {
     padding-left: 110px;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
   }
   .carouselHolder {
     margin-top: 140px;
