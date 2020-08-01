@@ -17,6 +17,11 @@ import VueAlertify from 'vue-alertify';
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 
+import CoolLightBox from 'vue-cool-lightbox'
+import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
+
+Vue.use(CoolLightBox)
+
 
 Vue.use(BootstrapVue)
 Vue.use(VueMeta, {

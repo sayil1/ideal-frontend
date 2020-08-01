@@ -7,7 +7,7 @@
       <div>
         <div style=" padding:5px" class="arch">
           <div class="carouselHolder">
-            <div >
+            <div>
               <!-- <h1
              
               
@@ -29,10 +29,10 @@ letter-spacing: 0.02em;"
                 <br />for development, <br>
                 <span style="">education</span>
                 <br />and learning
-              </h1> -->
+              </h1>-->
             </div>
             <v-carousel
-             :show-arrows="false"
+              :show-arrows="false"
               hide-delimiters
               hide-delimiter-background
               delimiter-icon="mdi-minus"
@@ -41,7 +41,7 @@ letter-spacing: 0.02em;"
               show-arrows-on-hover
               interval="3000"
             >
-              <v-carousel-item class="div1">
+              <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -70,7 +70,43 @@ letter-spacing: 0.02em; color:white"
                             <br />for development,
                             <span style="color:orange">education</span>
                             <br />and learning
-                          </h1> -->
+                          </h1>-->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </v-carousel-item>
+                <v-carousel-item class="div1">
+                <div style=" height:100%" class="cov">
+                  <div class="card-size">
+                    <div class="card-body" style>
+                      <div>
+                        <div
+                          class="car card-text white--text font-weight-regular"
+                          style="margin-left:40px; margin-right:40px"
+                        ></div>
+                        <div style=" " class="text-center">
+                          <!-- <h1
+                            class="animate__animated animate__backInLeft"
+                            style="font-family: Canela Web,serif;
+font-style: normal;
+color:white;
+font-size: 39px;
+line-height: 150.84%;
+margin:-40px;
+z-index:11111;
+ position: absolute;
+text-align: left;
+letter-spacing: 0.02em; color:white"
+                          >
+                            position: absolute;
+                            Welcome to
+                            initiative
+                            <br />for development,
+                            <span style="color:orange">education</span>
+                            <br />and learning
+                          </h1>-->
                         </div>
                       </div>
                     </div>
@@ -103,7 +139,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1> -->
+                          </h1>-->
                         </div>
                       </div>
                     </div>
@@ -136,7 +172,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1> -->
+                          </h1>-->
                         </div>
                       </div>
                     </div>
@@ -169,7 +205,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1> -->
+                          </h1>-->
                         </div>
                       </div>
                     </div>
@@ -203,7 +239,7 @@ letter-spacing: 0.02em; color:white"
                             <span
                               style="color:orange"
                             >education</span> and learning
-                          </h1> -->
+                          </h1>-->
                         </div>
                       </div>
                     </div>
@@ -213,32 +249,32 @@ letter-spacing: 0.02em; color:white"
             </v-carousel>
             <div class="board">
               <div class="item" data-aos="fade-up" data-aos-duration="2000">
-              <div class="row">
-                <div class="col-md-4 col-3" style="text-align:center ; text-decoration:none">
-                  <a
-                    href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
-                    style="text-decoration:none"
-                  >
-                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
-                  </a>
-                </div>
-                <div class="col-md-4 col-3" style="text-align:center">
-                  <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
-                    <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
-                  </a>
-                </div>
-                <div class="col-md-4 col-3" style="text-align:center">
-                  <a
-                    style="text-decoration:none"
-                    href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
-                  >
-                    <v-icon size="20" color="white" right>mdi-instagram</v-icon>
-                  </a>
-                </div>
-                <!-- <div class="col-md-3 col-3" style="text-align:center">
+                <div class="row">
+                  <div class="col-md-4 col-3" style="text-align:center ; text-decoration:none">
+                    <a
+                      href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
+                      style="text-decoration:none"
+                    >
+                      <v-icon size="20" color="white" right style="padding-right:10px">mdi-facebook</v-icon>
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-3" style="text-align:center">
+                    <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
+                      <v-icon size="20" color="white" right style="padding-right:10px">mdi-twitter</v-icon>
+                    </a>
+                  </div>
+                  <div class="col-md-4 col-3" style="text-align:center">
+                    <a
+                      style="text-decoration:none"
+                      href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
+                    >
+                      <v-icon size="20" color="white" right>mdi-instagram</v-icon>
+                    </a>
+                  </div>
+                  <!-- <div class="col-md-3 col-3" style="text-align:center">
                   <v-icon size="20" color="white" right>mdi-linkedin</v-icon>
-                </div>-->
-              </div>
+                  </div>-->
+                </div>
               </div>
             </div>
           </div>
@@ -252,10 +288,10 @@ letter-spacing: 0.02em; color:white"
           <div class="card1" style="background: #1B6761; width:75%; ">
             <v-icon large color="white darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
             <div class="-header text-left p-3">
-              <div   data-aos="zoom-in">
-                  <h3 class="white--text bold">OUR MAJOR GOAL</h3>
+              <div data-aos="zoom-in">
+                <h3 class="white--text bold">OUR MAJOR GOAL</h3>
               </div>
-             
+
               <hr style="color:orange; width:45px; margin-left:0px; border: 1px solid white;" />
             </div>
             <div class>
@@ -941,16 +977,19 @@ header {
   border-left: 2px solid green;
   background-position: center center;
 }
+.div0 {
+  background-image: url("../assets/carousel.png");
+  background-size: cover;
+  background-position: center center;
+}
 .div1 {
   background-image: url("../assets/car1.jpg");
   background-size: cover;
   background-position: center center;
-  
 }
-.div1:hover{
- filter: grayscale(100%);
+.div1:hover {
+  filter: grayscale(100%);
   background-position: center center;
- 
 }
 
 .div2 {
@@ -958,32 +997,32 @@ header {
   background-size: cover;
   background-position: center center;
 }
-.div2:hover{
- filter: grayscale(100%);
+.div2:hover {
+  filter: grayscale(100%);
 }
 .div3 {
   background-image: url("../assets/car3.jpg");
   background-size: cover;
   background-position: center center;
 }
-.div3:hover{
- filter: grayscale(100%);
+.div3:hover {
+  filter: grayscale(100%);
 }
 .div4 {
   background-image: url("../assets/car4.jpg");
   background-size: cover;
   background-position: center center;
 }
-.div4:hover{
- filter: grayscale(100%);
+.div4:hover {
+  filter: grayscale(100%);
 }
 .div5 {
   background-image: url("../assets/slide7.jpg");
   background-size: cover;
   background-position: center center;
 }
-.div5:hover{
- filter: grayscale(100%);
+.div5:hover {
+  filter: grayscale(100%);
 }
 /* .div13 {
   background-image: url("../assets/ideal13.jpg");

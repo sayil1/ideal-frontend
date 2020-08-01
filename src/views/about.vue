@@ -2,13 +2,11 @@
   <div>
     <nava />
 
- 
-
-    <div class="aboutTop" style="padding-top:85px;" >
+    <div class="aboutTop" style="padding-top:85px;">
       <img class="aboutIMG" src="../assets/aboutIDE3.jpg" alt style=" " />
     </div>
     <div>
-      <div class="row" style="">
+      <div class="row" style>
         <div class="col-md-3">
           <h1
             class
@@ -60,7 +58,7 @@ letter-spacing: 0.02em;"
                   <div
                     class="text-left"
                     style="padding:10px; color:#1B6761"
-                  >Primarily we are working to improve the living standards of people by providing information, support and services that meet today's educational need  and solve the human capacity challenges using  ICT a strategic lever for building a knowledge-based society..</div>
+                  >Primarily we are working to improve the living standards of people by providing information, support and services that meet today's educational need and solve the human capacity challenges using ICT a strategic lever for building a knowledge-based society..</div>
                 </div>
               </div>
             </div>
@@ -99,7 +97,7 @@ letter-spacing: 0.02em;"
         </div>
       </div>
 
-      <div style="margin:30px">
+      <div style="margin:0px">
         <h1
           class="b-head"
           style="text-align:center; margin-top:30px; background-color: #1B6761;color:white"
@@ -107,11 +105,18 @@ letter-spacing: 0.02em;"
 
         <!--  -->
 
-        <div class="row">
-         
-           
+        <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
+        <div class="images-wrapper row imgHolder">
+          <div
+            class="image"
+            v-for="(image, imageIndex) in items"
+            :key="imageIndex"
+            @click="index = imageIndex"
+            :style="{ backgroundImage: 'url(' + image + ')' }"
+          ></div>
+        </div>
 
-          
+        <!-- <div class="row">
               <div class="col-md-4">
                 <a
                   href="../assets/ideal13.jpg"
@@ -232,24 +237,40 @@ letter-spacing: 0.02em;"
           </div>
        
       </div>
-    
-
+        -->
+      </div>
+    </div>
     <foota />
   </div>
 </template>
 
 <script>
+import CoolLightBox from "vue-cool-lightbox";
 import nava from "../components/newNav";
 import foota from "../components/footer";
 export default {
   components: {
+    CoolLightBox,
     nava,
-    foota
+    foota,
   },
-  data: () => ({
-    msg: "heyyy",
-    dialog: false
-  })
+  data: function () {
+    return {
+      items: [
+        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
+          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
+          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
+          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
+          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
+      ],
+      index: null,
+    };
+  },
 };
 </script>
 
@@ -262,7 +283,26 @@ export default {
   /* background-size: cover;
   background-position: center; */
 }
+.image {
+  width: 20%;
+  height: 200px;
+  background-size: cover;
+  cursor: pointer;
+  margin: 0px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+  object-fit: contain;
+}
 
+.image:hover{
+   filter: grayscale(100%);
+     /* width: 210px;
+  height: 210px; */
+}
+.imgHolder{
+margin-left: 0px;
+margin-right: 0px;
+}
 template {
   margin-left: 30px;
   margin-right: 30px;
@@ -274,7 +314,6 @@ template {
 }
 
 @media only screen and (max-width: 400px) {
-
   p {
     font-family: "Alegreya", serif;
     margin-left: 30px;
@@ -315,9 +354,9 @@ template {
     margin-right: auto;
     height: 100%;
   }
-   .aboutIMG{
-    height:auto;
-      width:100%
+  .aboutIMG {
+    height: auto;
+    width: 100%;
   }
 }
 
@@ -385,12 +424,11 @@ template {
     margin-right: auto;
     height: 100%;
   }
-  .aboutIMG{
-        height:120%;
-      width:100%;
-      position: cover;
-      margin-top:-100px;
-    
+  .aboutIMG {
+    height: 120%;
+    width: 100%;
+    position: cover;
+    margin-top: -100px;
   }
 }
 </style>
