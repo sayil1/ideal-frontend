@@ -6,7 +6,7 @@
             </router-link>
           </div>
 
-          <div style="text-align:left" class="nava collapse navbar-collapse white--text" >
+          <div style="text-align:right" class="nava collapse navbar-collapse white--text" >
        iDeal-IT {{today}}
           </div>
         </div>
@@ -50,7 +50,7 @@ a {
     border-left: 0.3em solid;
   }
   .nava {
-    margin-left: 30%;
+    margin-left: 80%;
   }
   .navas {
     width: 150%;
