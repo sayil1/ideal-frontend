@@ -233,14 +233,14 @@
     <div class="goals">
       <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
         <div class="col-md-4 col-sm-12">
-          <div class="card1 card-faint" style=" ">
-            <v-icon large color="white darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
+          <div class="card1 card-faintN" style=" width:75%">
+            <v-icon large color="orange darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
             <div class="-header text-left p-3">
               <div data-aos="zoom-in">
                 <h3 class="white--text bold">OUR MAJOR GOAL</h3>
               </div>
 
-              <hr style="color:orange; width:45px; margin-left:0px; border: 1px solid white;" />
+              <hr style="color:orange; width:45px; margin-left:0px; border: 1px solid orange;" />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
@@ -935,7 +935,7 @@ header {
   background-image: url("../assets/carousel-2.png");
   background-size: cover;
   /* background-position: bottom; */
-     background-position: -30px -50px}
+     background-position: center -30px}
 .div1 {
   background-image: url("../assets/car1.jpg");
   background-size: cover;
@@ -1024,6 +1024,7 @@ background-color:#2b5350;
 .card-faintN:hover{
   background-color: rgba(11, 92, 93, 0.9); 
   transform: scale(1.05);
+  -webkit-transition: transform 0.5s ease-in-out;
 }
 .card-faint{
   background: #1B6761; width:75%;
