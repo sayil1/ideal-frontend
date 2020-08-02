@@ -42,15 +42,13 @@
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
-                        <div style=" " class="text-center">
-                        
-                        </div>
+                        <div style=" " class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
-                <v-carousel-item class="div0">
+              <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -74,15 +72,13 @@
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
-                        <div class="text-center">
-                    
-                        </div>
+                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
-                <v-carousel-item class="div0">
+              <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -106,15 +102,13 @@
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
-                        <div class="text-center">
-                       
-                        </div>
+                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
-                <v-carousel-item class="div0">
+              <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -138,15 +132,13 @@
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
-                        <div class="text-center">
-                
-                        </div>
+                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
-                <v-carousel-item class="div0">
+              <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -171,15 +163,13 @@
                           class="car card-text white--text font-weight-regular"
                           style="margin-left:40px; margin-right:40px"
                         ></div>
-                        <div class="text-center">
-                        
-                        </div>
+                        <div class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
-                <v-carousel-item class="div0">
+              <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
@@ -203,12 +193,18 @@
                       href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
                       style="text-decoration:none"
                     >
-                      <v-icon size="20" class="icon"  right style="padding-right:10px">mdi-facebook</v-icon>
+                      <v-icon size="20" class="icon" right style="padding-right:10px">mdi-facebook</v-icon>
                     </a>
                   </div>
                   <div class="col-md-4 col-3" style="text-align:center">
                     <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
-                      <v-icon size="20" class="icon" colo right style="padding-right:10px">mdi-twitter</v-icon>
+                      <v-icon
+                        size="20"
+                        class="icon"
+                        colo
+                        right
+                        style="padding-right:10px"
+                      >mdi-twitter</v-icon>
                     </a>
                   </div>
                   <div class="col-md-4 col-3" style="text-align:center">
@@ -216,7 +212,7 @@
                       style="text-decoration:none"
                       href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
                     >
-                      <v-icon size="20" class="icon"  right>mdi-instagram</v-icon>
+                      <v-icon size="20" class="icon" right>mdi-instagram</v-icon>
                     </a>
                   </div>
                   <!-- <div class="col-md-3 col-3" style="text-align:center">
@@ -411,9 +407,8 @@ letter-spacing: 0.02em;  "
             <div class="col-md-4"></div>
             <div class="col-md-4" style="margin-top:70px; margin-bottom:70px">
               <button
-             
                 type="button"
-                class="btn "
+                class="btn"
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
               >Support a project</button>
@@ -444,7 +439,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="cont">
-                <div class="card-body card-bullet" >
+                <div class="card-body card-bullet">
                   <a class="card-link white--text">Internship</a>
                   <a class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -457,7 +452,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="test">
-                <div class="card-body card-bulletMain" style="">
+                <div class="card-body card-bulletMain" style>
                   <a href="#" class="card-link white--text">Test Preparation</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
@@ -470,7 +465,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="prof">
-                <div class="card-body card-bullet" >
+                <div class="card-body card-bullet">
                   <a href="#" class="card-link white--text">Professional IT Courses</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -483,7 +478,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="books">
-                <div class="card-body card-bullet" >
+                <div class="card-body card-bullet">
                   <a href="#" class="card-link white--text">Book Shops</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -496,7 +491,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="diy">
-                <div class="card-body  card-bullet" >
+                <div class="card-body card-bullet">
                   <a href="#" class="card-link white--text">DIY Kits</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -509,7 +504,7 @@ font-size: 14px;"
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="events">
-                <div class="card-body card-bullet" >
+                <div class="card-body card-bullet">
                   <a href="#" class="card-link white--text">Events</a>
                   <a href="#" class="card-link" style="float:right; ">
                     <v-icon color="white">mdi-arrow-right</v-icon>
@@ -521,7 +516,7 @@ font-size: 14px;"
 
           <div class="col-md-4" style="width: 18rem;">
             <router-link style="text-decoration:none" class="route" to="contest">
-              <div class="card-body card-bullet" >
+              <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Apply For Contests</a>
                 <a href="#" class="card-link" style="float:right; ">
                   <v-icon color="white">mdi-arrow-right</v-icon>
@@ -532,7 +527,7 @@ font-size: 14px;"
 
           <div class="col-md-4" style="width: 18rem;">
             <router-link style="text-decoration:none" class="route" to="web">
-              <div class="card-body card-bullet" >
+              <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Webinars</a>
                 <a href="#" class="card-link" style="float:right; ">
                   <v-icon color="white">mdi-arrow-right</v-icon>
@@ -543,7 +538,7 @@ font-size: 14px;"
 
           <div class="col-md-4" style="width: 18rem;">
             <router-link style="text-decoration:none" class="route" to="/">
-              <div class="card-body card-bullet" >
+              <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Surport a Project</a>
                 <a href="#" class="card-link" style="float:right; ">
                   <v-icon color="white">mdi-arrow-right</v-icon>
@@ -651,9 +646,9 @@ font-size: 48px; "
     </section>
 
     <div class="formHolder">
-      <div class="form" style>
-        GET UPDATES
-        <hr style="color:orange; width:700px; margin-left:9px; border: 1px solid #FF8A00;" />
+      <div class="form" style="padding-left:9%">
+        <h1>GET UPDATES</h1>
+        <hr style="color:orange; width:700px; border: 1px solid #FF8A00;" />
       </div>
       <div>
         <form action style class="row form-inputs">
@@ -705,6 +700,8 @@ font-size: 13px;"
               ZIP CODE
               <span style="color:red">*</span>
             </label>
+            <br />
+
             <input
               type="email"
               class="form-control"
@@ -712,38 +709,21 @@ font-size: 13px;"
               style="background-color:#CAD9D8"
             />
           </div>
-
-          <!-- <div style="padding-left:15px; padding-top:30px">
-          <br />
-          <button
-            type="button"
-            class="btn white--text"
-            style="background-color:#092E2B"
-            v-on:click="submit"
-          >SUBSCRIBE</button>
-          </div>-->
+          <div style="margin:0px; padding-left:10px" class="subscribe">
+            <strong>By submitting this form, you agree to the iDeal-IT Privacy Policy</strong>
+            <br />
+            <div class>
+              <input type="checkbox" class id="exampleCheck1" />
+              <label>
+                <strong>Subscribe to Email Updates</strong>
+              </label>
+            </div>
+            <button type="submit" class="btn">SUBSCRIBE</button>
+          </div>
+         
         </form>
       </div>
-
-      <div style class="subscribe">
-        <div>
-          <strong> By submitting this form, you agree to the iDeal-IT Privacy Policy</strong>
-         
-          <br />
-          <br />
-          <br />
-        </div>
-
-        <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1" > <strong> Subscribe to Email Updates </strong> </label>
-        </div>
-        <button
-          type="submit"
-         
-          class="btn"
-        >SUBSCRIBE</button>
-      </div>
+      <br />
     </div>
 
     <foota></foota>
@@ -896,7 +876,7 @@ header {
 .arch {
   background-image: url("../assets/carousel.jpg");
   position: cover;
-   background-attachment: fixed;
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -935,7 +915,8 @@ header {
   background-image: url("../assets/carousel-2.png");
   background-size: cover;
   /* background-position: bottom; */
-     background-position: center -30px}
+  background-position: center -30px;
+}
 .div1 {
   background-image: url("../assets/car1.jpg");
   background-size: cover;
@@ -993,56 +974,57 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.card-bulletMain{
-  background-color:#092E2B;
+.card-bulletMain {
+  background-color: #092e2b;
 }
-.card-bulletMain:hover{
-background-color:#2b5350;
+.card-bulletMain:hover {
+  background-color: #2b5350;
 }
 
-.card-bullet{
-   background-color:#156b64;
+.card-bullet {
+  background-color: #156b64;
 }
-.card-bullet:hover{
-  background-color:#092E2B;
+.card-bullet:hover {
+  background-color: #092e2b;
 }
-.icon{
-  color:white
+.icon {
+  color: white;
 }
-.icon:hover{
+.icon:hover {
   color: orange;
 }
-.btn{
+.btn {
   background-color: orange;
 }
-.btn:hover{
+.btn:hover {
   background-color: rgb(226, 215, 130);
 }
-.card-faintN{
-  background-color:  #092E2B;
+.card-faintN {
+  background-color: #092e2b;
 }
-.card-faintN:hover{
-  background-color: rgba(11, 92, 93, 0.9); 
+.card-faintN:hover {
+  background-color: rgba(11, 92, 93, 0.9);
   transform: scale(1.05);
   -webkit-transition: transform 0.5s ease-in-out;
 }
-.card-faint{
-  background: #1B6761; width:75%;
+.card-faint {
+  background: #1b6761;
+  width: 75%;
 }
-.card-faint:hover{
-      background-color: rgba(37, 129, 131, 0.9) ;
-         background-position: right bottom; /*Positioning*/
-   background-repeat: no-repeat;
-transform: scale(1.05);
+.card-faint:hover {
+  background-color: rgba(37, 129, 131, 0.9);
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat;
+  transform: scale(1.05);
 }
-.formHolder{
-  padding-top:40px;
+.formHolder {
+  padding-top: 40px;
   padding-bottom: 40px;
   background-image: url("../assets/lowersectionbg.jpg");
-   background-position: bottom -70px right 7px;
-      background-attachment: fixed;
-   background-size: 100% 150%;
-   background-repeat: no-repeat;
+  background-position: bottom -70px right 7px;
+  background-attachment: fixed;
+  background-size: 100% 150%;
+  background-repeat: no-repeat;
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
@@ -1079,7 +1061,7 @@ transform: scale(1.05);
     margin-right: auto;
     height: 100%;
   }
-  
+
   .card2 {
     margin-left: auto;
     margin-right: auto;
@@ -1175,9 +1157,9 @@ transform: scale(1.05);
     margin-right: -60px;
     height: 100%;
   }
-.card1:hover{
-  /* height:102% */
-}
+  .card1:hover {
+    /* height:102% */
+  }
   .card2 {
     margin-left: auto;
     margin-right: auto;
