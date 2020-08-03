@@ -20,10 +20,12 @@ padding:150px"
       </div>
     </div>
     <div>
-      <div
-        class="big-text"
-        style=" "
-      >WE are young professionals with the quest to building a platform, an avenue for youth to rediscover themselves</div>
+      <div class="big-text" style=" ">
+        WE are young professionals
+        <br />with the quest to building a platform,
+        <br />an avenue for youth to
+      rediscover   <br /> themselves
+      </div>
 
       <div class="row" style>
         <div class="col-md-3">
@@ -40,107 +42,34 @@ padding:50px"
             <br />iDeal-IT
           </h1>-->
         </div>
-     
-          <div class="small-text">
-              <p
-             
-                style="font-family: sans-serif;
-            color: black;
+
+        <div class="small-text">
+          <p
+            style="font-family: sans-serif;
+            color: #639B97;
 font-style: normal;
 font-weight: 100;
 font-size: 22px;
 line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
-              >
-                Young professionals founded INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL). We believe that youth can contribute significantly to building a better society—having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps. We are taking Practical action!!!
-                <br />
-                <br />"COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL" - IDEAL.
-              </p>
-          </div>
-
-
-            </div>
-       
-       
-      <!-- <div>
-        <div class="goals">
-          <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
-            <div class="col-md-4 col-sm-12">
-              <div class="card1" style="background: ; width:75%; ">
-                <v-icon large style="margin:16px; color:#1B6761">mdi-bullseye-arrow</v-icon>
-                <div class="-header text-left p-3">
-                  <h3 class="bold" style="color:#1B6761">OUR MAJOR GOAL</h3>
-                  <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid #1B6761;" />
-                </div>
-                <div class>
-                 
-                  <div
-                    class="text-left"
-                    style="padding:10px; color:#1B6761"
-                  >Primarily we are working to improve the living standards of people by providing information, support and services that meet today's educational need and solve the human capacity challenges using ICT a strategic lever for building a knowledge-based society..</div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-12">
-              <div class="card2" style="background: #FF8A00; ; width:75%; ">
-                <v-icon large color="white " style="margin:16px">mdi-eye</v-icon>
-                <div class="-header t p-3">
-                  <h3 class="white--text bold">VISION</h3>
-                  <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid white;" />
-                </div>
-                <div class>
-               
-                  <div
-                    class="text-center white--text"
-                  >Develop individuals and communities towards a knowledge-based society.</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-12">
-              <div class="card3" style="background: #FF8A00; width:75%; ">
-                <v-icon large style="margin:16px; color:white;">mdi-lightbulb-on</v-icon>
-                <div class="-header p-3">
-                  <h3 class="white--text bold">OUR APPROACH</h3>
-                </div>
-                <div class>
-                 
-                  <div
-                    class="text-left white--text"
-                    style="padding:20px"
-                  >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          >
+            Young professionals founded INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL). We believe that youth can contribute significantly to building a better society—having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps. We are taking Practical action!!!
+            <br />
+            <br />"COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL" - IDEAL.
+          </p>
         </div>
-      </div> -->
+      </div>
 
-      <div style="">
-        <h1
-          class=""
-          style="text-align:center; margin-top:30px; background-color: #1B6761;color:white"
-        >OUR GALLERY</h1>
+      <div style="background-color:rgb(217, 217, 217)">
+        <h1 class="big-text" style>OUR GALLERY</h1>
 
         <!--  -->
-<div style="text-align: center; padding:20px">
-    <button
 
-           class="btn btn-primary"
-                style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 600;
-font-size: 17px;
-line-height: 17px;
+        <div style="text-align: center; "></div>
 
-color: #FF8A00;"
-                @click="showLessImages = !showLessImages"
-              >{{showLessImages ===true? "Show All Images" : "Show Less"}}   </button> 
-</div>
-       
         <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
-        <div class="images-wrapper row ">
+        <div class="images-wrapper row">
           <div
             class="image col-md-3"
             v-for="(image, imageIndex) in itemsToDisplay"
@@ -149,8 +78,23 @@ color: #FF8A00;"
             :style="{ backgroundImage: 'url(' + image + ')' }"
           ></div>
         </div>
+        <div v-if="expand" style="text-align:center">
+          collapse
+          <br />
+          <button @click="showLessImages = !showLessImages, expand=false" class="m-btn" style>
+            <v-icon size="20">mdi-arrow-up</v-icon>
+          </button>
+        </div>
+        <div v-else style="text-align:center">
+          expand
+          <br />
+          <button @click="showLessImages = !showLessImages, expand=true" class="m-btn" style>
+            <v-icon size="20">mdi-arrow-down</v-icon>
+          </button>
+        </div>
+      </div>
 
-        <!-- <div class="row">
+      <!-- <div class="row">
               <div class="col-md-4">
                 <a
                   href="../assets/ideal13.jpg"
@@ -271,15 +215,122 @@ color: #FF8A00;"
           </div>
        
       </div>
-        -->
+      -->
 
+      <div style="padding:20px;" class="greenBg">
+        <div class="big-text" style="color:white">Our Qualifications</div>
+        <hooper
+          :settings="hooperSettings"
+          :progress="true"
+          :autoPlay="true"
+          :playSpeed="4000"
+          style="margin-bottom:20px; margin-left:-25px "
+        >
+          <slide>
+            <v-col style>
+              <img
+                src="../assets/toefl.png"
+                style=" display: block; width: 100px; height: 100px; text-align:center; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+              />
+            </v-col>
+          </slide>
+          <slide>
+            <v-col>
+              <img
+                src="../assets/icm.png"
+                style=" display: block;
+   width: 100px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+              />
+            </v-col>
+          </slide>
+          <slide>
+            <v-col>
+              <img
+                src="../assets/pearson.png"
+                style=" display: block;
+    width: 100px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+              />
+            </v-col>
+          </slide>
+          <slide>
+            <v-col>
+              <img
+                src="../assets/cisco.png"
+                style=" display: block;
+    width: 100px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+              />
+            </v-col>
+          </slide>
+
+          <slide>
+            <v-col>
+              <img
+                src="../assets/national.png"
+                style=" display: block;
+  width: 100px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+              />
+            </v-col>
+          </slide>
+        </hooper>
+      </div>
+      <div style="padding:100px">
+        <div class="big-text">Proud Member of</div>
+
+        <div class="row">
+       
+            <img
+              src="../assets/national.png"
+              style=" display: block;
+  width: 100px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+            />
+         
+     
+             <img
+                src="../assets/cisco.png"
+                style=" display: block;
+    width: 100px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+              />
+
+              <img
+                src="../assets/icm.png"
+                style=" display: block;
+   width: 100px;
+    height: 100px; display: block;
+  margin-left: auto;
+  margin-right: auto;"
+              />
+         
+        </div>
       </div>
     </div>
+
     <foota />
   </div>
 </template>
 
 <script>
+import { Hooper, Slide } from "hooper";
+import "hooper/dist/hooper.css";
 import CoolLightBox from "vue-cool-lightbox";
 import nava from "../components/newNav";
 import foota from "../components/footer";
@@ -287,6 +338,8 @@ export default {
   components: {
     CoolLightBox,
     nava,
+    Hooper,
+    Slide,
     foota,
   },
   data: function () {
@@ -294,7 +347,7 @@ export default {
       items: [
         "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1595445197/hkhphgwxf0dwgaijdvqp.png",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
         "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
@@ -302,22 +355,48 @@ export default {
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
         "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
+        "https://res.cloudinary.com/sayil/image/upload/v1595445197/hkhphgwxf0dwgaijdvqp.png",
       ],
+      hooperSettings: {
+        itemsToShow: null,
+        centerMode: true,
+        infiniteScroll: true,
+        progress: true,
+        autoreplay: true,
+        playspeed: 1000,
+      },
       index: null,
-       showLessImages: false,
-    
-    }
+      showLessImages: true,
+      expand: false,
+    };
   },
-  computed:{
-     itemsToDisplay: function() {
+  created() {
+    this.isMobile();
+    // this.initialize();
+    // this.showNewss();
+  },
+  computed: {
+    itemsToDisplay: function () {
       if (this.showLessImages) {
-        return this.items.slice(0, 4);
+        return this.items.slice(0, 8);
       } else {
         return this.items;
       }
-    }
-  }
-  
+    },
+  },
+  methods: {
+    isMobile() {
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      // var element = document.getElementById("text");
+      if (isMobile) {
+        // alert("u are using mobile");
+        this.hooperSettings.itemsToShow = 1;
+      } else {
+        // alert("you are on desktop");
+        this.hooperSettings.itemsToShow = 5;
+      }
+    },
+  },
 };
 </script>
 
@@ -325,19 +404,32 @@ export default {
 <style lang="css" scoped>
 @import url("https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-.img {
-  /* background-image: url("../assets/ideal10.jpg"); */
-  /* filter: grayscale(100%); */
-  /* background-size: cover;
-  background-position: center; */
+.greenBg {
+  background-image: url("../assets/greenbgg.jpg");
 }
 .cov {
   /* padding-top: 10%; */
   background-image: url("../assets/aboutnew2.jpg");
+  filter: grayscale(100%);
   height: 400px;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: contain;
   background-position: center 30%;
+}
+.m-btn {
+  background-color: rgba(64, 64, 64, 0.3);
+  padding: 5px;
+  height: 60px;
+  border-radius: 25px;
+  border: 1px solid white;
+}
+.m-btn:hover {
+  background-color: rgb(255, 253, 253);
+  padding: 5px;
+  color: white;
+  height: 60px;
+  border-radius: 25px;
+  border: 1px solid #1b6761;
 }
 .image {
   width: 0;
@@ -384,8 +476,8 @@ template {
   font-size: 50px;
   font-family: "Open Sans", sans-serif;
 }
-.small-text{
-   padding-left: 130px;
+.small-text {
+  padding-left: 130px;
   padding-right: 130px;
   padding-bottom: 70px;
 }

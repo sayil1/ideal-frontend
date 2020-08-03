@@ -832,7 +832,7 @@ export default {
       setInterval(function () {
         this.showNews = !this.showNews;
         // eslint-disable-next-line no-console
-        console.log(this.showNews);
+        // console.log(this.showNews);
       }, 1000);
     },
     test: function () {
@@ -915,7 +915,7 @@ header {
   background-image: url("../assets/carousel-2.png");
   background-size: cover;
   /* background-position: bottom; */
-  background-position: center -40px;
+  background-position: center -50px;
 }
 .div1 {
   background-image: url("../assets/car1.jpg");
