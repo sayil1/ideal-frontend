@@ -124,12 +124,26 @@ letter-spacing: 0.02em;"
         >OUR GALLERY</h1>
 
         <!--  -->
+<div style="text-align: center; padding:20px">
+    <button
 
+           class="btn btn-primary"
+                style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 600;
+font-size: 17px;
+line-height: 17px;
+
+color: #FF8A00;"
+                @click="showLessImages = !showLessImages"
+              >{{showLessImages ===true? "Show All Images" : "Show Less"}}   </button> 
+</div>
+       
         <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
         <div class="images-wrapper row ">
           <div
             class="image col-md-3"
-            v-for="(image, imageIndex) in items"
+            v-for="(image, imageIndex) in itemsToDisplay"
             :key="imageIndex"
             @click="index = imageIndex"
             :style="{ backgroundImage: 'url(' + image + ')' }"
@@ -258,6 +272,7 @@ letter-spacing: 0.02em;"
        
       </div>
         -->
+
       </div>
     </div>
     <foota />
@@ -289,8 +304,20 @@ export default {
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
       ],
       index: null,
-    };
+       showLessImages: false,
+    
+    }
   },
+  computed:{
+     itemsToDisplay: function() {
+      if (this.showLessImages) {
+        return this.items.slice(0, 4);
+      } else {
+        return this.items;
+      }
+    }
+  }
+  
 };
 </script>
 
@@ -314,7 +341,7 @@ export default {
 }
 .image {
   width: 0;
-  height: 250px;
+  height: 200px;
   background-size: cover;
   cursor: pointer;
   margin: 0px;
