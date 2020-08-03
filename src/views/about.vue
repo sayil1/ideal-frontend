@@ -2,13 +2,32 @@
   <div>
     <nava />
 
-    <div class="aboutTop" style="padding-top:85px;">
-      <img class="aboutIMG" src="../assets/aboutIDE3.jpg" alt style=" " />
+    <div class="aboutTop" style="padding-top:80px;">
+      <!-- <img class="aboutIMG" src="../assets/aboutnew2.jpg" alt style="padding-top:50px; height:400px " /> -->
+      <div class="cov">
+        <!-- <h1
+            class
+            style="font-family: SF UI Display;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+color: white;
+padding:150px"
+          >
+            About
+            <br />iDeal-IT
+        </h1>-->
+      </div>
     </div>
     <div>
+      <div
+        class="big-text"
+        style=" "
+      >WE are young professionals with the quest to building a platform, an avenue for youth to rediscover themselves</div>
+
       <div class="row" style>
         <div class="col-md-3">
-          <h1
+          <!-- <h1
             class
             style="font-family: SF UI Display;
 font-style: normal;
@@ -19,18 +38,17 @@ padding:50px"
           >
             About
             <br />iDeal-IT
-          </h1>
+          </h1>-->
         </div>
-        <div style="; padding-top:20px" class="col-md-9 col-sm-12">
-          <div class="row">
-            <div class="col-sm-12 col-md-12">
+     
+          <div class="small-text">
               <p
-                class="car-text m-text"
-                style="font-family: SF UI Display;
-            color: #1B6761;
+             
+                style="font-family: sans-serif;
+            color: black;
 font-style: normal;
-font-weight: 500;
-font-size: 18px;
+font-weight: 100;
+font-size: 22px;
 line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
@@ -39,11 +57,13 @@ letter-spacing: 0.02em;"
                 <br />
                 <br />"COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL" - IDEAL.
               </p>
-            </div>
           </div>
-        </div>
-      </div>
-      <div>
+
+
+            </div>
+       
+       
+      <!-- <div>
         <div class="goals">
           <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
             <div class="col-md-4 col-sm-12">
@@ -54,7 +74,7 @@ letter-spacing: 0.02em;"
                   <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid #1B6761;" />
                 </div>
                 <div class>
-                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                 
                   <div
                     class="text-left"
                     style="padding:10px; color:#1B6761"
@@ -70,7 +90,7 @@ letter-spacing: 0.02em;"
                   <hr style="color:orange; width:90px; margin-left:9px; border: 2px solid white;" />
                 </div>
                 <div class>
-                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+               
                   <div
                     class="text-center white--text"
                   >Develop individuals and communities towards a knowledge-based society.</div>
@@ -85,7 +105,7 @@ letter-spacing: 0.02em;"
                   <h3 class="white--text bold">OUR APPROACH</h3>
                 </div>
                 <div class>
-                  <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
+                 
                   <div
                     class="text-left white--text"
                     style="padding:20px"
@@ -95,18 +115,18 @@ letter-spacing: 0.02em;"
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
 
-      <div style="margin:20px">
+      <div style="">
         <h1
-          class="b-head"
+          class=""
           style="text-align:center; margin-top:30px; background-color: #1B6761;color:white"
         >OUR GALLERY</h1>
 
         <!--  -->
 
         <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
-        <div class="images-wrapper row imgHolder">
+        <div class="images-wrapper row ">
           <div
             class="image col-md-3"
             v-for="(image, imageIndex) in items"
@@ -259,13 +279,13 @@ export default {
       items: [
         "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-          "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
       ],
       index: null,
@@ -277,15 +297,24 @@ export default {
 
 <style lang="css" scoped>
 @import url("https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 .img {
   /* background-image: url("../assets/ideal10.jpg"); */
   /* filter: grayscale(100%); */
   /* background-size: cover;
   background-position: center; */
 }
+.cov {
+  /* padding-top: 10%; */
+  background-image: url("../assets/aboutnew2.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-size: contain;
+  background-position: center 30%;
+}
 .image {
-  width: 20%;
-  height: 200px;
+  width: 0;
+  height: 250px;
   background-size: cover;
   cursor: pointer;
   margin: 0px;
@@ -294,14 +323,14 @@ export default {
   object-fit: contain;
 }
 
-.image:hover{
-   filter: grayscale(100%);
-     /* width: 210px;
+.image:hover {
+  filter: grayscale(100%);
+  /* width: 210px;
   height: 210px; */
 }
-.imgHolder{
-margin-left: 0px;
-margin-right: 0px;
+.imgHolder {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 template {
   margin-left: 30px;
@@ -313,6 +342,26 @@ template {
   width: 100%;
 }
 
+.big-text {
+  padding-top: 35px;
+  padding-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: 60px;
+  line-height: 70px;
+  color: #1b6761;
+  letter-spacing: -0.5px;
+  text-align: center;
+  /* margin-bottom: 57px; */
+  font-weight: 100;
+  font-size: 50px;
+  font-family: "Open Sans", sans-serif;
+}
+.small-text{
+   padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 70px;
+}
 @media only screen and (max-width: 400px) {
   p {
     font-family: "Alegreya", serif;
@@ -424,11 +473,11 @@ template {
     margin-right: auto;
     height: 100%;
   }
-  .aboutIMG {
+  /* .aboutIMG {
     height: 120%;
     width: 100%;
     position: cover;
     margin-top: -100px;
-  }
+  } */
 }
 </style>

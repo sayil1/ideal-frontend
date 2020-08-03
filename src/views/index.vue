@@ -584,7 +584,7 @@ font-size: 48px; "
           <slide>
             <v-col>
               <img
-                src="../assets/icm.jpeg"
+                src="../assets/icm.png"
                 style=" display: block;
    width: 100px;
     height: 100px; display: block;
@@ -596,7 +596,7 @@ font-size: 48px; "
           <slide>
             <v-col>
               <img
-                src="../assets/pea.jpeg"
+                src="../assets/pearson.png"
                 style=" display: block;
     width: 100px;
     height: 100px; display: block;
@@ -617,7 +617,7 @@ font-size: 48px; "
               />
             </v-col>
           </slide>
-          <slide>
+          <!-- <slide>
             <v-col>
               <img
                 src="../assets/nsrp.png"
@@ -628,13 +628,13 @@ font-size: 48px; "
   margin-right: auto;"
               />
             </v-col>
-          </slide>
+          </slide> -->
           <slide>
             <v-col>
               <img
-                src="../assets/nde.jpeg"
+                src="../assets/national.png"
                 style=" display: block;
-  width: 150px;
+  width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
@@ -915,7 +915,7 @@ header {
   background-image: url("../assets/carousel-2.png");
   background-size: cover;
   /* background-position: bottom; */
-  background-position: center -30px;
+  background-position: center -40px;
 }
 .div1 {
   background-image: url("../assets/car1.jpg");
