@@ -2,7 +2,7 @@
   <div>
     <nava />
 
-    <div class="aboutTop" style="padding-top:80px;">
+    <div class="aboutTop" style="margin:0px">
       <!-- <img class="aboutIMG" src="../assets/aboutnew2.jpg" alt style="padding-top:50px; height:400px " /> -->
       <div class="cov">
         <!-- <h1
@@ -62,7 +62,7 @@ letter-spacing: 0.02em;"
       </div>
 
       <div style="background-color:rgb(217, 217, 217)">
-        <h1 class="big-text" style>OUR GALLERY</h1>
+        <h1 class="big-text" style>Gallery</h1>
 
         <!--  -->
 
@@ -70,13 +70,28 @@ letter-spacing: 0.02em;"
 
         <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
         <div class="images-wrapper row">
-          <div
-            class="image col-md-3"
+          <div   v-for="(image, imageIndex) in itemsToDisplay"
+            :key="imageIndex"
+            @click="index = imageIndex">
+              <v-img
+              
+                  :src="image"
+                  :lazy-src="image"
+                 
+                  class="grey lighten-2 image"
+                ></v-img>
+           <!-- <img :src="image" class="image" alt=""> -->
+          </div>
+          
+          <!-- <div
+          style="width:20px"
+            class="image col-xs-12"
             v-for="(image, imageIndex) in itemsToDisplay"
             :key="imageIndex"
             @click="index = imageIndex"
             :style="{ backgroundImage: 'url(' + image + ')' }"
-          ></div>
+          >
+        </div> -->
         </div>
         <div v-if="expand" style="text-align:center">
           collapse
@@ -404,6 +419,9 @@ export default {
 <style lang="css" scoped>
 @import url("https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+.aboutTop{
+  padding-top: 80px;
+}
 .greenBg {
   background-image: url("../assets/greenbgg.jpg");
 }
@@ -432,24 +450,25 @@ export default {
   border: 1px solid #1b6761;
 }
 .image {
-  width: 0;
-  height: 200px;
-  background-size: cover;
+     float: left;
+    width: 300px;
+  height: 300px;
+   
   cursor: pointer;
-  margin: 0px;
-  border-radius: 3px;
-  border: 1px solid lightgray;
+  margin:5px;
   object-fit: contain;
 }
 
 .image:hover {
   filter: grayscale(100%);
+   border-radius: 3px;
+  border: 1px solid rgb(11, 135, 141);
   /* width: 210px;
   height: 210px; */
 }
 .imgHolder {
-  margin-left: 0px;
-  margin-right: 0px;
+  margin-left: 50px;
+  margin-right: 20px;
 }
 template {
   margin-left: 30px;
@@ -466,7 +485,7 @@ template {
   padding-bottom: 50px;
   padding-left: 150px;
   padding-right: 150px;
-  font-size: 60px;
+  font-size: 10px;
   line-height: 70px;
   color: #1b6761;
   letter-spacing: -0.5px;
@@ -481,51 +500,44 @@ template {
   padding-right: 130px;
   padding-bottom: 70px;
 }
+.images-wrapper{
+  padding-left:30px;
+  padding-right:30px
+}
 @media only screen and (max-width: 400px) {
-  p {
-    font-family: "Alegreya", serif;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 16px;
-  }
-  .card1 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .card2 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .card3 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .goals {
-    background: white;
-    margin-left: 0px;
-  }
-  .card1 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .card2 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .card3 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .aboutIMG {
-    height: auto;
-    width: 100%;
-  }
+  .cov {
+  padding-top:300px;
+  background-image: url("../assets/aboutnew2.jpg");
+  filter: grayscale(100%);
+  /* height: 100px; */
+  /* background-attachment: fixed; */
+  background-size: contain;
+  background-position: center 30%;
+}
+.aboutTop{
+  padding-top: 0px;
+}
+.big-text {
+  margin-top: -210px;
+  padding-bottom: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 1px;
+  line-height: 30px;
+  color: #1b6761;
+  letter-spacing: -0.5px;
+  text-align: center;
+  /* margin-bottom: 57px; */
+  font-weight: 100;
+  font-size: 30px;
+  /* font-family: "Open Sans", sans-serif; */
+}
+.small-text {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 300px;
+   font-size: 5px;
+}
 }
 
 /* Tablet Styles */
