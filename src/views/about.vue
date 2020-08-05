@@ -63,6 +63,7 @@ padding:50px"
         <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
         <div class="images-wrapper row">
           <div
+          style=""
             v-for="(image, imageIndex) in itemsToDisplay"
             :key="imageIndex"
             @click="index = imageIndex"
@@ -346,13 +347,13 @@ export default {
     return {
       items: [
         "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-        "https://res.cloudinary.com/sayil/image/upload/v1595445197/hkhphgwxf0dwgaijdvqp.png",
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-        "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
+        "https://res.cloudinary.com/sayil/image/upload/v1596633046/ideal-gallery/slide3.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596633826/ideal-gallery/slide7.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596633804/ideal-gallery/slide5.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596633714/ideal-gallery/profIT.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596632964/ideal-gallery/redYell.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596632927/ideal-gallery/girlLib.jpg",
+        "https://res.cloudinary.com/sayil/image/upload/v1596634756/ideal-gallery/train2IDE.png",
         "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
         "https://res.cloudinary.com/sayil/image/upload/v1595445197/hkhphgwxf0dwgaijdvqp.png",
@@ -446,6 +447,7 @@ export default {
   cursor: pointer;
   margin: 5px;
   object-fit: contain;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .image:hover {
