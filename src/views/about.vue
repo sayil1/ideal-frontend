@@ -4,7 +4,7 @@
 
     <div class="aboutTop" style="margin:0px">
       <!-- <img class="aboutIMG" src="../assets/aboutnew2.jpg" alt style="padding-top:50px; height:400px " /> -->
-      <div class="cov">
+      <div class="cov" style="margin:0px">
         <!-- <h1
             class
             style="font-family: SF UI Display;
@@ -24,7 +24,8 @@ padding:150px"
         WE are young professionals
         <br />with the quest to building a platform,
         <br />an avenue for youth to
-      rediscover   <br /> themselves
+        rediscover
+        <br />themselves
       </div>
 
       <div class="row" style>
@@ -44,16 +45,7 @@ padding:50px"
         </div>
 
         <div class="small-text">
-          <p
-            style="font-family: sans-serif;
-            color: #639B97;
-font-style: normal;
-font-weight: 100;
-font-size: 22px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-          >
+          <p style>
             Young professionals founded INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL). We believe that youth can contribute significantly to building a better society—having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps. We are taking Practical action!!!
             <br />
             <br />"COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL" - IDEAL.
@@ -61,7 +53,7 @@ letter-spacing: 0.02em;"
         </div>
       </div>
 
-      <div style="background-color:rgb(217, 217, 217)">
+      <div style="background-color:rgb(217, 217, 217);">
         <h1 class="big-text" style>Gallery</h1>
 
         <!--  -->
@@ -70,19 +62,15 @@ letter-spacing: 0.02em;"
 
         <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
         <div class="images-wrapper row">
-          <div   v-for="(image, imageIndex) in itemsToDisplay"
+          <div
+            v-for="(image, imageIndex) in itemsToDisplay"
             :key="imageIndex"
-            @click="index = imageIndex">
-              <v-img
-              
-                  :src="image"
-                  :lazy-src="image"
-                 
-                  class="grey lighten-2 image"
-                ></v-img>
-           <!-- <img :src="image" class="image" alt=""> -->
+            @click="index = imageIndex"
+          >
+            <v-img :src="image" :lazy-src="image" class="grey lighten-2 image"></v-img>
+            <!-- <img :src="image" class="image" alt=""> -->
           </div>
-          
+
           <!-- <div
           style="width:20px"
             class="image col-xs-12"
@@ -91,9 +79,9 @@ letter-spacing: 0.02em;"
             @click="index = imageIndex"
             :style="{ backgroundImage: 'url(' + image + ')' }"
           >
-        </div> -->
+          </div>-->
         </div>
-        <div v-if="expand" style="text-align:center">
+        <div v-if="expand" style="text-align:center; margin-bottom:300px">
           collapse
           <br />
           <button @click="showLessImages = !showLessImages, expand=false" class="m-btn" style>
@@ -232,7 +220,7 @@ letter-spacing: 0.02em;"
       </div>
       -->
 
-      <div style="padding:20px;" class="greenBg">
+      <div style class="greenBg">
         <div class="big-text" style="color:white">Our Qualifications</div>
         <hooper
           :settings="hooperSettings"
@@ -302,39 +290,36 @@ letter-spacing: 0.02em;"
           </slide>
         </hooper>
       </div>
-      <div style="padding:100px">
+      <div class="member">
         <div class="big-text">Proud Member of</div>
 
         <div class="row">
-       
-            <img
-              src="../assets/national.png"
-              style=" display: block;
+          <img
+            src="../assets/national.png"
+            style=" display: block;
   width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
-            />
-         
-     
-             <img
-                src="../assets/cisco.png"
-                style=" display: block;
+          />
+
+          <img
+            src="../assets/cisco.png"
+            style=" display: block;
     width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
-              />
+          />
 
-              <img
-                src="../assets/icm.png"
-                style=" display: block;
+          <img
+            src="../assets/icm.png"
+            style=" display: block;
    width: 100px;
     height: 100px; display: block;
   margin-left: auto;
   margin-right: auto;"
-              />
-         
+          />
         </div>
       </div>
     </div>
@@ -419,11 +404,15 @@ export default {
 <style lang="css" scoped>
 @import url("https://fonts.googleapis.com/css?family=Alegreya:400,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
-.aboutTop{
+.aboutTop {
   padding-top: 80px;
 }
 .greenBg {
   background-image: url("../assets/greenbgg.jpg");
+  height: 400px;
+}
+.member {
+  height: 400px;
 }
 .cov {
   /* padding-top: 10%; */
@@ -432,7 +421,7 @@ export default {
   height: 400px;
   /* background-attachment: fixed; */
   background-size: contain;
-  background-position: center 30%;
+  /* background-position: 20%; */
 }
 .m-btn {
   background-color: rgba(64, 64, 64, 0.3);
@@ -450,18 +439,18 @@ export default {
   border: 1px solid #1b6761;
 }
 .image {
-     float: left;
-    width: 300px;
+  float: left;
+  width: 300px;
   height: 300px;
-   
+
   cursor: pointer;
-  margin:5px;
+  margin: 5px;
   object-fit: contain;
 }
 
 .image:hover {
   filter: grayscale(100%);
-   border-radius: 3px;
+  border-radius: 3px;
   border: 1px solid rgb(11, 135, 141);
   /* width: 210px;
   height: 210px; */
@@ -485,59 +474,80 @@ template {
   padding-bottom: 50px;
   padding-left: 150px;
   padding-right: 150px;
-  font-size: 10px;
-  line-height: 70px;
   color: #1b6761;
-  letter-spacing: -0.5px;
   text-align: center;
   /* margin-bottom: 57px; */
-  font-weight: 100;
   font-size: 50px;
   font-family: "Open Sans", sans-serif;
 }
 .small-text {
   padding-left: 130px;
   padding-right: 130px;
-  padding-bottom: 70px;
+  font-size: 23px;
+  padding-bottom: 20px;
+  color: #458882;
 }
-.images-wrapper{
-  padding-left:30px;
-  padding-right:30px
-}
-@media only screen and (max-width: 400px) {
-  .cov {
-  padding-top:300px;
-  background-image: url("../assets/aboutnew2.jpg");
-  filter: grayscale(100%);
-  /* height: 100px; */
-  /* background-attachment: fixed; */
-  background-size: contain;
-  background-position: center 30%;
-}
-.aboutTop{
-  padding-top: 0px;
-}
-.big-text {
-  margin-top: -210px;
-  padding-bottom: 50px;
-  padding-left: 10px;
-  padding-right: 10px;
-  font-size: 1px;
-  line-height: 30px;
-  color: #1b6761;
-  letter-spacing: -0.5px;
-  text-align: center;
-  /* margin-bottom: 57px; */
-  font-weight: 100;
-  font-size: 30px;
-  /* font-family: "Open Sans", sans-serif; */
-}
-.small-text {
+.images-wrapper {
   padding-left: 30px;
   padding-right: 30px;
-  padding-bottom: 300px;
-   font-size: 5px;
 }
+@media only screen and (max-width: 400px) {
+  .images-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 0px;
+  }
+  .image {
+    float: left;
+    width: 150px;
+    height: 150px;
+
+    cursor: pointer;
+    margin: 5px;
+    object-fit: contain;
+  }
+  .cov {
+    padding-top: 300px;
+    background-image: url("../assets/aboutnew2.jpg");
+    filter: grayscale(100%);
+    /* height: 100px; */
+    /* background-attachment: fixed; */
+    background-size: contain;
+    background-position: center 30%;
+  }
+  .aboutTop {
+    padding-top: 0px;
+  }
+  .big-text {
+    margin-top: -210px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1px;
+    line-height: 30px;
+    color: #1b6761;
+    letter-spacing: -0.5px;
+    text-align: center;
+    /* margin-bottom: 57px; */
+    font-weight: 100;
+    font-size: 30px;
+    /* font-family: "Open Sans", sans-serif; */
+  }
+  .small-text {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 300px;
+    font-size: 15px;
+  }
+  .greenBg {
+    background-image: url("../assets/greenbgg.jpg");
+    padding-top: 200px;
+    height: 300px;
+  }
+  .member {
+    height: 300px;
+    padding-top: 200px;
+  }
 }
 
 /* Tablet Styles */
@@ -561,49 +571,6 @@ template {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .aboutTop {
-    height: auto;
-  }
-  p {
-    font-family: "Alegreya", serif;
-    margin-left: 30px;
-    margin-right: 30px;
-    font-size: 16px;
-  }
-  .card1 {
-    margin-left: auto;
-    margin-right: 0px;
-    height: 100%;
-  }
-  .card2 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .card3 {
-    margin-left: 0px;
-    margin-right: auto;
-    height: 100%;
-  }
-  .goals {
-    background: white;
-    margin-left: 0px;
-  }
-  .card1 {
-    margin-left: auto;
-    margin-right: -60px;
-    height: 100%;
-  }
-  .card2 {
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
-  .card3 {
-    margin-left: -60px;
-    margin-right: auto;
-    height: 100%;
-  }
   /* .aboutIMG {
     height: 120%;
     width: 100%;

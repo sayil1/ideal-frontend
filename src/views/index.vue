@@ -187,23 +187,23 @@
             </v-carousel>
             <div class="board">
               <div class="item" data-aos="zoom-in" data-aos-duration="2000">
-                <div class="row">
-                  <div class="col-md-4 col-3" style="text-align:center ; text-decoration:none">
+                <div class="row iconHolder">
+                  <div class="col-md-4 col-sm-4 col-3" style="text-align:center ; text-decoration:none">
                     <a
                       href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
                       style="text-decoration:none"
                     >
-                      <v-icon size="20" class="icon" right style="padding-right:10px">mdi-facebook</v-icon>
+                      <v-icon size="20" class="icon" right >mdi-facebook</v-icon>
                     </a>
                   </div>
-                  <div class="col-md-4 col-3" style="text-align:center">
+                  <div class="col-md-4 col-sm-4 col-3" style="text-align:center">
                     <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
                       <v-icon
                         size="20"
                         class="icon"
                         colo
                         right
-                        style="padding-right:10px"
+                     
                       >mdi-twitter</v-icon>
                     </a>
                   </div>
@@ -900,7 +900,7 @@ header {
   min-height: 0px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
-  -moz-background-size: cover;
+  -moz-background-size: cover;padding-top: 200px;
   -o-background-size: cover;
   background-size: cover;
 }
@@ -1028,6 +1028,17 @@ header {
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
+
+  .iconHolder{
+    padding-left:18%;
+  }
+  .div0 {
+  background-image: url("../assets/carousel-2.png");
+  background-size: 170% 110%;
+  
+  /* background-position: bottom; */
+  background-position: center -50px;
+}
   body {
     background-color: #1a68c2; /* Blue */
   }
