@@ -188,23 +188,20 @@
             <div class="board">
               <div class="item" data-aos="zoom-in" data-aos-duration="2000">
                 <div class="row iconHolder">
-                  <div class="col-md-4 col-sm-4 col-3" style="text-align:center ; text-decoration:none">
+                  <div
+                    class="col-md-4 col-sm-4 col-3"
+                    style="text-align:center ; text-decoration:none"
+                  >
                     <a
                       href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
                       style="text-decoration:none"
                     >
-                      <v-icon size="20" class="icon" right >mdi-facebook</v-icon>
+                      <v-icon size="20" class="icon" right>mdi-facebook</v-icon>
                     </a>
                   </div>
                   <div class="col-md-4 col-sm-4 col-3" style="text-align:center">
                     <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
-                      <v-icon
-                        size="20"
-                        class="icon"
-                        colo
-                        right
-                     
-                      >mdi-twitter</v-icon>
+                      <v-icon size="20" class="icon" colo right>mdi-twitter</v-icon>
                     </a>
                   </div>
                   <div class="col-md-4 col-3" style="text-align:center">
@@ -334,7 +331,9 @@
                     </v-row>
                   </v-container>
                   <small>*indicates required field</small>
+                  <loader style="position:fixed; " v-if="send" />
                 </v-card-text>
+                <br />
               </v-card>
             </div>
             <div class="modal-footer">
@@ -628,7 +627,7 @@ font-size: 48px; "
   margin-right: auto;"
               />
             </v-col>
-          </slide> -->
+          </slide>-->
           <slide>
             <v-col>
               <img
@@ -651,7 +650,7 @@ font-size: 48px; "
         <hr style="color:orange; width:700px; border: 1px solid #FF8A00;" />
       </div>
       <div>
-        <form action style class="row form-inputs">
+        <div  class="row form-inputs">
           <div class="col-md-12">
             <label
               for="exampleFormControlInput1"
@@ -665,6 +664,7 @@ font-size: 13px;"
             </label>
             <input
               type="email"
+              v-model="emailUpdates.email"
               class="form-control"
               id="exampleFormControlInput1"
               style="background-color:#CAD9D8"
@@ -682,7 +682,7 @@ font-size: 13px;"
               <span style="color:red">*</span>
             </label>
             <input
-              type="email"
+              v-model="emailUpdates.country"
               class="form-control"
               id="exampleFormControlInput1"
               style="background-color:#CAD9D8"
@@ -703,7 +703,8 @@ font-size: 13px;"
             <br />
 
             <input
-              type="email"
+             v-model="emailUpdates.zipCode"
+             
               class="form-control"
               id="exampleFormControlInput1"
               style="background-color:#CAD9D8"
@@ -718,10 +719,12 @@ font-size: 13px;"
                 <strong>Subscribe to Email Updates</strong>
               </label>
             </div>
-            <button type="submit" class="btn">SUBSCRIBE</button>
+         <button  @click="subscribe()" class="btn">SUBSCRIBE</button>
+         <loader v-if="send" />
           </div>
          
-        </form>
+        </div>
+            
       </div>
       <br />
     </div>
@@ -738,6 +741,7 @@ import "hooper/dist/hooper.css";
 import foota from "../components/footer";
 // import nava from "../components/nav";
 import nav2 from "../components/newNav";
+import loader from "../components/loader";
 
 export default {
   components: {
@@ -746,6 +750,7 @@ export default {
     foota,
     // nava,
     nav2,
+    loader,
   },
 
   data: () => ({
@@ -762,6 +767,7 @@ export default {
     msg: "heyyy",
     dialog: false,
     showNews: true,
+    send: false,
     items: [
       "fees",
       " school renovations",
@@ -770,6 +776,11 @@ export default {
       "computer server",
       "school books",
     ],
+    emailUpdates:{
+       email:"",
+       country:"",
+       zipCode:""
+    },
     project: {
       fname: "",
       lname: "",
@@ -777,6 +788,7 @@ export default {
       phone: "",
       interests: "",
     },
+    
     itemss: [
       {
         src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
@@ -840,6 +852,7 @@ export default {
       alert("see me");
     },
     submit: function () {
+      this.send = true;
       let newData = {
         fname: this.project.fname,
         lname: this.project.lname,
@@ -847,8 +860,27 @@ export default {
         phone: this.project.phone,
         Interests: this.project.interests,
       };
-      // alert(newData);
-      serv.postRequest("proj/newProj", newData).then();
+
+      serv.postRequest("proj/newProj", newData).then((response) => {
+        this.$alertify.success(response.data);
+
+        this.send = false;
+      });
+    },
+    subscribe: function () {
+      this.send = true;
+      let newData = {
+        email: this.emailUpdates.email,
+        country: this.emailUpdates.country,
+        zipCode: this.emailUpdates.zipCode,
+      
+      };
+
+      serv.postRequest("emailUpdates/subscribe", newData).then((response) => {
+        this.$alertify.success(response.data);
+
+        this.send = false;
+      });
     },
     isMobile() {
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -900,7 +932,8 @@ header {
   min-height: 0px;
   background: no-repeat center center scroll;
   -webkit-background-size: cover;
-  -moz-background-size: cover;padding-top: 200px;
+  -moz-background-size: cover;
+  padding-top: 200px;
   -o-background-size: cover;
   background-size: cover;
 }
@@ -1028,17 +1061,16 @@ header {
 }
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
-
-  .iconHolder{
-    padding-left:18%;
+  .iconHolder {
+    padding-left: 18%;
   }
   .div0 {
-  background-image: url("../assets/carousel-2.png");
-  background-size: 170% 110%;
-  
-  /* background-position: bottom; */
-  background-position: center -50px;
-}
+    background-image: url("../assets/carousel-2.png");
+    background-size: 170% 110%;
+
+    /* background-position: bottom; */
+    background-position: center -50px;
+  }
   body {
     background-color: #1a68c2; /* Blue */
   }

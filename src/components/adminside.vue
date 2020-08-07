@@ -64,6 +64,12 @@
           <span>Contests</span>
         </router-link>
       </li>
+        <li class="nav-item">
+        <router-link class="nav-link" to="/email-updates" aria-expanded="true" aria-controls="collapseThree">
+          <v-icon small color="rgb(0, 102, 102)">mdi-mail</v-icon>
+          <span>Email Updates</span>
+        </router-link>
+      </li>
       <!-- <li class="nav-item">
         <router-link class="nav-link" to="#" aria-expanded="true" aria-controls="collapseThree">
           <v-icon small color="white">mdi-laptop</v-icon>

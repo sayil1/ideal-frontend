@@ -12,29 +12,18 @@
       </div>
     </div>
     <div class="first">
-      <div class style="background: #F6F6F6">
-        <div class="row" style="background-color:rgb(255, 255, 255)">
-          <div class="col-sm-12 col-md-12">
+     
             <div class style>
-              <div class>
+            
                 <p
-                  class
-                  style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
+                  class="first-text"
+                  style=""
                 >
                   We focus on increasing organizations' strength by measuring internal successes, constraints and external impacts. We help teams to build and maintain strong foundations for projects, as well as promote strategic relationships. We put effort into capacity development techniques that enable individuals and establishments to acquire, develop capacities, and retain their abilitiesKnowledgege, tools, and other resources needed to carry out their jobs competently.
                   <br />Our methodology focuses on expertly blending best training practices with tailor-made strategies suited for clients' readiness and commitment to achieving sustainability and long-term success.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+     
+          
       </div>
       <div class="row" style>
         <div class="col-md-12">
@@ -198,14 +187,36 @@ export default {
 </script>
 
 <style scoped lang="css">
+.first-text{
+  font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;
+}
 @media only screen and (max-width: 400px) {
   .first {
     padding-top: 0px;
     padding-left: 20px;
     padding-right: 20px;
   }
+  
+  .first-text{
+    font-family: SF UI Display;
+            color: #1B6761;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 29px;
+text-align: justify;
+letter-spacing: 0.02em;
+  }
 
   .conts {
+    padding-top: 45px;
     background-image: url("../assets/capacityIDE1.png");
     background-size: contain;
     background-position: center center;

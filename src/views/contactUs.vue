@@ -51,11 +51,11 @@
                       v-model="contact.message"
                       filled
                       name="input-7-4"
-                      label="Filled textarea"
+                      label="Message"
                       value
                     ></v-textarea>
                   </v-col>
-                  <v-btn class="ma-2" @click="submit()" tile outlined color="primary">
+                  <v-btn class="ma-2" @click="submit()" tile outlined color="#1B6761">
                     <v-icon left>mdi-send</v-icon>send
                   </v-btn>
               <!-- <div v-if="send" class="lds-facebook"><div></div><div></div><div></div></div> -->
@@ -100,18 +100,18 @@
             >We're here to help answer any question you might have. We look forward to hearing from you.</span>
            
             <div class>
-              <div class="row title" style="text-align:center; margin-top:50px">
+              <div class="row" style="text-align:center; margin-top:50px">
                 <div class="col-sm">
-                  <v-icon large color="red darken-2 center">mdi-map-marker</v-icon>
+                  <v-icon large color="#1B6761">mdi-map-marker</v-icon>
                   <br />37, Jesus Saves Road (after Presidential Lodge) off Summit road.
                   Asaba, Delta State Nigeria.
                 </div>
                 <div class="col-sm">
-                  <v-icon large color="green darken-2 center">mdi-phone</v-icon>
+                  <v-icon large color="#1B6761">mdi-phone</v-icon>
                   <br />+2348030493091
                 </div>
                 <div class="col-sm">
-                  <v-icon large color="yellow darken-2 center">mdi-email</v-icon>
+                  <v-icon large color="#1B6761">mdi-email</v-icon>
                   <br />info@ideal-nig.org
                 </div>
                 
