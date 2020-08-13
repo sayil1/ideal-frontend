@@ -39,7 +39,7 @@
 <vue-position-sticky :offsetBottom="0" @change="handleStickyChange" />
       -->
       <vue-position-sticky :offsetTop="84" style="z-index:-2000">
-        <div class="row" style="background-color:bl">
+        <div class="row" style="background-color:black">
           <div style class="col-md-10">
             <div class="form-group">
               <input

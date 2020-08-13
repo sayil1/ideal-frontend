@@ -10,7 +10,7 @@
 
     <div class="row links" style="padding-top:40px;padding-bottom:90px;  height:100%;">
       <div class="col-md-4 col-sm-12">
-         <router-link style="text-decoration:none"  class="route" to="pearson">
+         <router-link style="text-decoration:none"  class="route" to="prof">
         <div class="card1" style="background: ; width:75%; ">
           <v-card class="mx-auto" max-width="400">
             <v-img
@@ -69,7 +69,7 @@
 
       <div class="col-md-4 col-sm-12">
         <div class="card3" style="width:75%; ">
-            <router-link  style="text-decoration:none" class="route" to="toefl">
+            <router-link  style="text-decoration:none" class="route" to="test">
             <v-card
     class="mx-auto"
     max-width="400"
@@ -82,7 +82,7 @@
      
     </v-img>
 
-    <v-card-title style="text-decoration:none; font-weight:bold" class="pb-3 bold green--text">TOEFL</v-card-title>
+    <v-card-title style="text-decoration:none; font-weight:bold" class="pb-3 bold green--text">TEST PREPARATION</v-card-title>
 
     <v-card-text class="text--primary">
     
