@@ -39,7 +39,7 @@
 <vue-position-sticky :offsetBottom="0" @change="handleStickyChange" />
       -->
       <vue-position-sticky :offsetTop="84" style="z-index:-2000">
-        <div class="row" style="background-color:black">
+        <div class="row" style="background-color:bl">
           <div style class="col-md-10">
             <div class="form-group">
               <input
@@ -54,9 +54,13 @@
 
           <div style="  z-index:200" class>
             <div class="row">
-              <div class="wrapper" style="padding:23px 0px 23px 0px; color:white">
-                <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
-                <span class="badge badge-light">{{quantity}}</span>
+              <div style="padding:23px 0px 23px 0px; color:white">
+                <!-- <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
+
+                <span class="badge badge-light">{{quantity}}</span>-->
+                <v-badge bordered :content="quantity" :value="quantity" style="color:blue" color="red" overlap>
+                  <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
+                </v-badge>
               </div>
               <span style="color:white; padding:23px 0px 23px 10px">cart</span>
             </div>
@@ -136,7 +140,7 @@
           <!-- <div
             class="col-6"
             style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)"
-          >view all</div> -->
+          >view all</div>-->
         </div>
 
         <v-sheet class="mx-auto" max-width="970" color:red style="background-color:black">
@@ -149,7 +153,8 @@
           >
             <v-icon slot="prependIcon" large color="primary">mdi-home</v-icon>
             <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
-              <div class="m-3" style="width: 11.5rem; background-color:rgb(230, 230, 230)">
+              <div class="m-3" style="width: 11.5rem; ">
+                <div style="background-color:rgb(230, 230, 230)">
                 <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
                 <div class="row" style="font-size:15px; width:100%;  margin:0px">
                   <div class="col-1">
@@ -186,76 +191,23 @@
                       </div>
                     </div>
                   </div>
-
-                  <!-- Modal -->
-                  <div
-                    class="modal"
-                    id="exampleModal"
-                    tabindex="-1"
-                    role="dialog"
-                    aria-labelledby="exampleModalLabel"
-                    aria-hidden="true"
-                  >
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title" id="exampleModalLabel" style="color: #639B97">
-                            <strong>{{ e.title }}</strong>
-                          </h5>
-                          <button
-                            type="button"
-                            class="close"
-                            data-dismiss="modal"
-                            aria-label="Close"
-                            style="color:red"
-                          >
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                          <strong class="card-title">
-                            <div class="row">
-                              <div class="col-md-6" style="width: 18rem;">
-                                <v-img
-                                  class="white--text align-end"
-                                  height="300px"
-                                  v-bind:src="e.imagesPath"
-                                ></v-img>
-                              </div>
-                              <div class="card-body col-md-6">
-                                <p
-                                  class="card-text"
-                                  style="font-size:15px;right: 31.22%;color: #639B97;"
-                                >{{e.description}}</p>
-                                <p style="color: #1B6761;">NGN{{e.price}}</p>
-                                <v-btn
-                                  class="ma-2"
-                                  @click="addToCart(e)"
-                                  data-dismiss="modal"
-                                  outlined
-                                  color="orange"
-                                >Add to cart</v-btn>
-                              </div>
-                            </div>
-                          </strong>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <div
-                  style="width:100%"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                  @click="openModal(item)"
-                >modal</div>
+                
+                </div>
+                <v-btn
+            block
+            class
+            @click="addToCart(item)"
+            data-dismiss="modal"
+            color="success"
+          >Add to cart</v-btn>
               </div>
+              
+
+
             </v-slide-item>
           </v-slide-group>
-        </v-sheet>lkjbhkl
+        </v-sheet>
         <br />
         <div v-show="!verified">
           <div class="row">
@@ -372,11 +324,18 @@ text-align:right"
       <div class="col-6" style="color:white; padding-left:235px; text-align:left">New Arrival</div>
       <!-- <div class="col-6" style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)">view all</div> -->
       <div
-          class="col-6" style="padding-right:235px;text-align:right; color:rgb(0, 255, 0)"
-                @click="showLessBooks = !showLessBooks"
-              >{{showLessBooks===true? "Show All Books" : "Show Less"}}</div>
+        class="col-6"
+        style="padding-right:235px;text-align:right; color:rgb(0, 255, 0)"
+        @click="showLessBooks = !showLessBooks"
+      >{{showLessBooks===true? "Show All Books" : "Show Less"}}</div>
     </div>
-    <v-sheet v-show="showLessBooks" class="mx-auto" max-width="970" color:red style="background-color:black">
+    <v-sheet
+      v-show="showLessBooks"
+      class="mx-auto"
+      max-width="970"
+      color:red
+      style="background-color:black"
+    >
       <v-slide-group
         multiple
         show-arrows
@@ -440,8 +399,8 @@ text-align:right"
     <!-- this will show all the books -->
 
     <div class="row" v-show="showLessBooks==false" style="margin-left:8%">
-      <div v-for="(item,i) in  shopsToDisplay" :key="i" >
-        <div class="m-3 " style="width: 11.5rem; ">
+      <div v-for="(item,i) in  shopsToDisplay" :key="i">
+        <div class="m-3" style="width: 11.5rem; ">
           <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
           <div style="background-color:white">
             <div class="row" style="font-size:15px; width:100%;  margin:0px">
@@ -631,7 +590,7 @@ export default {
         itemToAdd.quantity = 1;
         this.quantity += 1;
         //  itemInCart[0].quantity += 1;
-        alert("not found , add pls");
+        // alert("not found , add pls");
       } else {
         itemToAdd.quantity += 1;
         this.quantity += 1;

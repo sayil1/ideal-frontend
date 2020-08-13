@@ -116,7 +116,8 @@
                 >IDEAL IT CENTER</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown1">
                   <router-link class="route" to="prof">
-                    <li class="dropdown-item">PROFESSIONAL IT COURSES</li>
+                    <li class="dropdown-item">IT CERTIFICATIONS
+                    </li>
                   </router-link>
                   <router-link class="route" to="test">
                     <li class="dropdown-item">TEST PREPARATION</li>

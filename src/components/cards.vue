@@ -21,7 +21,7 @@
               
             </v-img>
 
-            <v-card-title style="text-decoration:none; font-weight:bold"  class="pb-3  links bold green--text">PEARSON VUE</v-card-title>
+            <v-card-title style="text-decoration:none; font-weight:bold"  class="pb-3  links bold green--text">IT CERTIFICATION</v-card-title>
 
             <v-card-text class="text--primary links">
              

@@ -2,7 +2,7 @@
   <div>
     <v-dialog v-model="dialog" persistent max-width="600px" style="z-index:20000">
       <template v-slot:activator="{ on }">
-        <v-btn color="orange" dark v-on="on" style="margin-top:50px">Register</v-btn>
+        <v-btn color="" outlined dark v-on="on">Register</v-btn>
       </template>
       <v-card>
         <v-card-title>
@@ -35,7 +35,7 @@
               <v-col cols="12" sm="6">
                 <v-autocomplete
                 v-model="course"
-                  :items="['TOEFL', 'Graphics', 'Java', 'Web Development', 'C#', 'Desktop Publishing', 'CCNA', 'Autcad']"
+                  :items="['TOEFL', 'Graphics', 'Java', 'Web Development', 'C#', 'Desktop Publishing', 'CCNA', 'Autcard']"
                   label="Select Prefered Course"
                   multiple
                 ></v-autocomplete>
