@@ -68,7 +68,7 @@ background: #CAD9D8;"
                   class="ma-2"
                   color="success"
                 >
-                  <v-icon dark>mdi-money</v-icon>
+                  <v-icon dark>mdi-home</v-icon>
                   <span style="color:white">Checkout</span>
                 </v-btn>
               </div>
@@ -214,7 +214,7 @@ text-align: center"
                             data-dismiss="modal"
                             outlined
                             color="orange"
-                          >Add to cart</v-btn>
+                          >Adds to cart</v-btn>
                         </div>
                       </div>
                     </strong>
@@ -570,13 +570,14 @@ export default {
         itemToAdd.quantity = 1;
         this.quantity += 1;
         //  itemInCart[0].quantity += 1;
-        // alert("not found , add pls")
+        alert("not found , add pls")
       } else {
         itemToAdd.quantity += 1;
         this.quantity += 1;
-        // alert(itemToAdd.id)
+        alert(itemToAdd.id)
       }
       // itemToAdd.quantity = 1;
+         alert(itemToAdd._id)
     },
 
     removeFromCart(item) {

@@ -7,7 +7,7 @@
       <div>
         <div style=" padding:5px" class="arch">
           <div class="carouselHolder">
-            <div></div>
+       
             <v-carousel
               :show-arrows="false"
               hide-delimiters
@@ -21,15 +21,7 @@
               <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
                   <div class="card-size">
-                    <div class="card-body" style>
-                      <div>
-                        <div
-                          class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
-                        ></div>
-                        <div style=" " class="text-center"></div>
-                      </div>
-                    </div>
+                    
                   </div>
                 </div>
               </v-carousel-item>
