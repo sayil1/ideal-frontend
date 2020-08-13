@@ -58,7 +58,14 @@
                 <!-- <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
 
                 <span class="badge badge-light">{{quantity}}</span>-->
-                <v-badge bordered :content="quantity" :value="quantity" style="color:blue" color="red" overlap>
+                <v-badge
+                  bordered
+                  :content="quantity"
+                  :value="quantity"
+                  style="color:blue"
+                  color="red"
+                  overlap
+                >
                   <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
                 </v-badge>
               </div>
@@ -87,21 +94,25 @@
     <div id="app" style>
       <vue-position-sticky :offsetTop="150" style="z-index:-2000">
         <div class="cart" v-show="showCart">
-          <div v-show="items.length > 0" style="position:">
+          <div v-show="items.length > 0" style="position: ; background-color:#1b6761">
             <ul>
               <li v-for="(item, i) in items" :key="i" transition="fade">
-                <p style="font-family:Alegraya">
-                  <strong>{{ item.quantity }}</strong>
-                  - {{ item.title }}
+                <div style="font-family:Alegraya; color:white; margin:0px" class="row">
+                  <div class="col-8">
+                    <strong>{{ item.quantity }}X</strong>
+                    - {{ item.title }}
+                  </div>
+
                   <v-icon
+                    style="margin:0px"
+                    class="col-4"
                     size="20"
-                    color="red "
+                    color="white"
                     right
-                    style="padding-right:auto;"
                     @click="removeFromCart(item)"
                   >mdi-delete</v-icon>
                   <!-- <i class="mdi-trash" @click="removeFromCart(item)"></i> -->
-                </p>
+                </div>
               </li>
               <br />
             </ul>
@@ -109,16 +120,18 @@
               <v-btn
                 class="ma-2"
                 tile
-                color="green"
+                color="white"
                 depressed
                 small
                 outlined
+                data-toggle="modal"
+                data-target="#exampleModalCenter"
                 @click="verified = true, showCart = false, hopper=false"
               >Check out</v-btn>
               <v-btn
                 class="ma-2"
                 tile
-                color="red"
+                color="white"
                 depressed
                 small
                 outlined
@@ -155,56 +168,56 @@
             <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
               <div class="m-3" style="width: 11.5rem; ">
                 <div style="background-color:rgb(230, 230, 230)">
-                <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
-                <div class="row" style="font-size:15px; width:100%;  margin:0px">
-                  <div class="col-1">
-                    <v-icon
-                      size="20"
-                      color="orange"
-                      style="padding-right:10px"
-                      data-toggle="modal"
-                      data-target="#exampleModal"
-                      @click="openModal(item)"
-                    >mdi-star</v-icon>
+                  <v-img
+                    style="  "
+                    class="white--text align-end vImage"
+                    v-bind:src="item.imagesPath"
+                  ></v-img>
+                  <div class="row" style="font-size:15px; width:100%;  margin:0px">
+                    <div class="col-1">
+                      <v-icon
+                        size="20"
+                        color="orange"
+                        style="padding-right:10px"
+                        data-toggle="modal"
+                        data-target="#exampleModal"
+                        @click="openModal(item)"
+                      >mdi-star</v-icon>
+                    </div>
+                    <div class="col-4">
+                      <!-- <v-icon size="20" color="#1B6761" left style="padding-right:10px">mdi-star</v-icon> -->
+                      4.5/5
+                    </div>
+                    <div class="col-6" style="text-align:right; color: #1B6761;">
+                      <!-- <strong>NGN{{ item.price }}</strong> -->
+                      <v-icon size="25" left style="padding-right:">mdi-bookmark-outline</v-icon>
+                    </div>
                   </div>
-                  <div class="col-4">
-                    <!-- <v-icon size="20" color="#1B6761" left style="padding-right:10px">mdi-star</v-icon> -->
-                    4.5/5
-                  </div>
-                  <div class="col-6" style="text-align:right; color: #1B6761;">
-                    <!-- <strong>NGN{{ item.price }}</strong> -->
-                    <v-icon size="25" left style="padding-right:">mdi-bookmark-outline</v-icon>
-                  </div>
-                </div>
-                <div>
-                  <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                    <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
-                      <strong>{{ item.title }}</strong>
-                      <br />
+                  <div>
+                    <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
+                      <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
+                        <strong>{{ item.title }}</strong>
+                        <br />
 
-                      <div style="margin-top:-10px" class="row">
-                        <div class="col-8" style="font-size:10px;">By Austin MAikano</div>
-                        <strong
-                          class="col-4"
-                          style="font-size:13px; color:red; text-align:right"
-                        >N{{ item.price }}</strong>
+                        <div style="margin-top:-10px" class="row">
+                          <div class="col-8" style="font-size:10px;">By Austin MAikano</div>
+                          <strong
+                            class="col-4"
+                            style="font-size:13px; color:red; text-align:right"
+                          >N{{ item.price }}</strong>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                
-                </div>
                 <v-btn
-            block
-            class
-            @click="addToCart(item)"
-            data-dismiss="modal"
-            color="success"
-          >Add to cart</v-btn>
+                  block
+                  class
+                  @click="addToCart(item)"
+                  data-dismiss="modal"
+                  color="success"
+                >Add to cart</v-btn>
               </div>
-              
-
-
             </v-slide-item>
           </v-slide-group>
         </v-sheet>
@@ -242,7 +255,79 @@ text-align:right"
           </div>
         </div>
 
-        <div class="checkout" v-show="verified" style="font-family:Alegreya">
+        <!-- <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+        >Launch demo modal</button>-->
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModalCenter"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="exampleModalCenterTitle"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+             
+                <div class="checkout" v-show="verified" style="font-family:Alegreya">
+                  <h5 v-for="(item,i) in items" :key="i">
+                    <strong>{{ item.quantity }}</strong>
+                    - {{ item.title }}
+                    <span>NGN {{ item.price * item.quantity }}</span>
+                  </h5>
+                  <hr />
+                  <div class="row">
+                    <div>
+                      <h5>
+                        Total:
+                        <span style="color:red">NGN {{ total }}</span>
+                      </h5>
+
+                      <div class="row">
+                        <v-btn
+                          @click="verified=false"
+                          class="ma-2"
+                          outlined
+                          tile
+                          small
+                          color="#1b6761"
+                          dark
+                        >Back to books</v-btn>
+                        <paystack
+                          :amount="amount"
+                          :email="email"
+                          :paystackkey="paystackkey"
+                          :reference="reference"
+                          :callback="callback"
+                          :close="close"
+                          :embed="false"
+                        >
+                          <v-btn  small tile color="red" dark>Make Payment</v-btn>
+                        </paystack>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+             
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="checkout" v-show="verified" style="font-family:Alegreya">
           <h5 v-for="(item,i) in items" :key="i">
             <strong>{{ item.quantity }}</strong>
             - {{ item.title }}
@@ -280,7 +365,7 @@ text-align:right"
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
       </div>
     </div>
     <!-- this holds the category cards -->
@@ -604,7 +689,7 @@ export default {
       // item.quantity -= 1;
       //  let itemInCart = this.items.filter(item => item.id === itemToAdd.id);
       let dis = this.items.findIndex((x) => x.id === item.id);
-      alert(dis);
+      // alert(dis);
 
       this.items.splice(dis, 1);
       this.quantity -= item.quantity;
@@ -761,13 +846,13 @@ li {
 
 .checkout {
   background: #fff;
-  box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.3);
-  margin-top: 90px;
+ color:#1b6761;
+  
   padding: 50px 60px;
 }
 .checkout h3 {
-  position: absolute;
-  top: -85px;
+  
+  margin: 0%;
   left: -30px;
   color: rgba(255, 255, 255, 0.3);
   font-family: sans-serif;
