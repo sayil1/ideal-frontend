@@ -25,6 +25,7 @@ text-align: center;
 color: #092E2B;">
   Featured Contests
         </div>
+        <loader v-if="loading" />
       
       </div>
 
@@ -82,17 +83,21 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import loader from "../components/loader"
 
 export default {
   components: {
     nava,
-    foota
+    foota,
+    loader
   },
   data: () => ({
     contest: {},
-    errors: []
+    errors: [],
+    loading:false
   }),
   created() {
+    this.loading = true
     serv
       .getRequest("contest/allCont")
       .then(response => {
@@ -100,6 +105,7 @@ export default {
         this.contest = response.data.result;
         // eslint-disable-next-line no-console
         console.log(this.desserts, "are the events");
+        this.loading = false
       })
       .catch(e => {
         // this.errors.push(e);

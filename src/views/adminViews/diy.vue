@@ -366,9 +366,11 @@ export default {
     },
 
     deleteItem(item) {
+        this.alerts = true;
       serv.getRequest(`diy/del/${item._id}`).then(response => {
         // eslint-disable-next-line no-console
         console.log(response.data.result, "is the diy");
+          this.alerts = false;
         this.initialize();
       });
     },

@@ -36,7 +36,7 @@ color: #1B6761;"
             <a
               style="text-decoration:none"
               class="resp-sharing-button__link"
-              href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com"
+              href="https://twitter.com/intent/tweet/?text=.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com"
               target="_blank"
               rel="noopener"
               aria-label
@@ -217,8 +217,8 @@ export default {
       lname:"",
       phone:"",
       email:""
-    }
-
+    },
+   shareLink:""
 
   }),
     metaInfo () {
@@ -267,6 +267,7 @@ export default {
         
           // JSON responses are automatically parsed.
           this.event = response.data.result[0];
+          this.shareLink = `https://twitter.com/intent/tweet/?text=${response.data.result[0].title}.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com`
           
           // eslint-disable-next-line no-console
           console.log(response.data.result[0], " the events");

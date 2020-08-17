@@ -3,9 +3,9 @@
     <!-- Page Wrapper -->
     <div id="wrapper">
       <!-- Sidebar -->
-   
+
       <side />
-     
+
       <!-- End of Sidebar -->
 
       <!-- Content Wrapper -->
@@ -41,9 +41,9 @@
                         <v-toolbar flat color="white">
                           <v-toolbar-title>contests</v-toolbar-title>
                           <v-divider class="mx-4" inset vertical></v-divider>
-                           
-                              <v-btn color="success" dark class="mb-2" v-on:click="initialize()">Refresh</v-btn>
-                           
+
+                          <v-btn color="success" dark class="mb-2" v-on:click="initialize()">Refresh</v-btn>
+
                           <v-spacer></v-spacer>
 
                           <v-dialog v-model="dialog" max-width="500px">
@@ -229,18 +229,23 @@
                           </v-dialog>
                         </v-toolbar>
                       </template>
-                      
-                     <template  v-slot:item.status="{ item }">
-                         <v-icon v-if="item.startDate < new Date().toISOString().substr(0, 10)" color="red" >mdi-circle-medium </v-icon>
-                          <v-icon v-if="item.startDate >= new Date().toISOString().substr(0, 10)" color="blue" >mdi-circle-medium </v-icon>
-                     </template>
+
+                      <template v-slot:item.status="{ item }">
+                        <v-icon
+                          v-if="item.startDate < new Date().toISOString().substr(0, 10)"
+                          color="red"
+                        >mdi-circle-medium</v-icon>
+                        <v-icon
+                          v-if="item.startDate >= new Date().toISOString().substr(0, 10)"
+                          color="blue"
+                        >mdi-circle-medium</v-icon>
+                      </template>
 
                       <template v-slot:item.action="{ item }">
                         <!-- <v-icon color="orange" class="mr-2" @click="updates(item)">fa-edit</v-icon> -->
                         <v-icon color="red" @click="deleteItem(item)">mdi-delete</v-icon>
-                 
                       </template>
-                         
+
                       <template v-slot:no-data>
                         <v-btn color="primary" @click="initialize">mdi-reset</v-btn>
                       </template>
@@ -248,7 +253,6 @@
                   </div>
                 </div>
               </div>
-
 
               <v-dialog v-model="alerts" hide-overlay persistent width="300">
                 <v-card color="primary" dark>
@@ -442,6 +446,7 @@ export default {
           this.desserts = response.data.result;
           // eslint-disable-next-line no-console
           console.log(this.desserts, "are the contests");
+          this.alerts = false
         })
         .catch(e => {
           // this.errors.push(e);
@@ -540,23 +545,9 @@ export default {
       console.log(this.contests, this.startDate, this.endDate, this.time);
         this.alerts = true
       serv.postRequest("contest/newCont", formData).then(
-        
-        serv
-        .getRequest("contest/allCont")
-        .then(response => {
-          // JSON responses are automatically parsed.
-            (this.text = response.data), (this.alerts = false);
-          this.snackbar = true;
-          this.desserts = response.data.result;
-          // eslint-disable-next-line no-console
-          console.log(this.desserts, "are the contests");
-        })
-        .catch(e => {
-          // this.errors.push(e);
-
-          // eslint-disable-next-line no-console
-          console.log(e);
-        })
+  
+        this.initialize()
+      
        
       )
       this.close();
@@ -568,11 +559,9 @@ export default {
 
 <style lang="css" scoped>
 @media (min-width: 1281px) {
-  
-  .wrap{
-    margin-left:240px
+  .wrap {
+    margin-left: 240px;
   }
-  
 }
 
 /* 
@@ -581,9 +570,6 @@ export default {
 */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  
-  
-  
 }
 
 /* 
@@ -592,9 +578,6 @@ export default {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  
-  
-  
 }
 
 /* 
@@ -603,9 +586,6 @@ export default {
 */
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  
-  
 }
 
 /* 
@@ -614,9 +594,6 @@ export default {
 */
 
 @media (min-width: 481px) and (max-width: 767px) {
-  
-  
-  
 }
 
 /* 
@@ -625,10 +602,8 @@ export default {
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
-  
-  .wrap{
-    margin-left:100px
+  .wrap {
+    margin-left: 100px;
   }
-  
 }
 </style>

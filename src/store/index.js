@@ -11,7 +11,9 @@ export default new Vuex.Store({
     events: '',
     books: '',
     web:'',
-    kits:''
+    kits:'',
+    subscribers:'',
+    contests:''
 
   },
 
@@ -46,7 +48,7 @@ export default new Vuex.Store({
       serv.getRequest("web/allWeb").then(response => {
         // JSON responses are automatically parsed.
         let web = response.data.result.length;
-        commit("SET_Webs", web)
+        commit("SET_Web", web)
         // eslint-disable-next-line no-console
         console.log(response.data.result, "are the response");
       });
@@ -63,7 +65,32 @@ export default new Vuex.Store({
         console.log(response.data.result, "are the response");
       });
 
+    },
+    getSubscribers({ commit }) {
+      // eslint-disable-next-line no-console
+      console.log("this should work")
+      serv.getRequest("emailUpdates/getSubscribers").then(response => {
+        // JSON responses are automatically parsed.
+        let subscribers = response.data.result.length;
+        commit("SET_subscribers", subscribers)
+        // eslint-disable-next-line no-console
+        console.log(response.data.result, "are the subs");
+      });
+
+    },
+    getContest({ commit }) {
+      // eslint-disable-next-line no-console
+      console.log("this should work")
+      serv.getRequest("contest/allCont").then(response => {
+        // JSON responses are automatically parsed.
+        let contests = response.data.result.length;
+        commit("SET_contests", contests)
+        // eslint-disable-next-line no-console
+        console.log(response.data.result, "are the subs");
+      });
+
     }
+    
   },
   mutations: {
     SET_Events(state, data) {
@@ -77,6 +104,12 @@ export default new Vuex.Store({
     },
     SET_Kits(state, data) {
       state.kits = data
+    },
+    SET_subscribers(state, data) {
+      state.subscribers = data
+    },
+    SET_contests(state, data) {
+      state.contests = data
     }
   },
   modules: {

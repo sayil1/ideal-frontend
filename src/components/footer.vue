@@ -1,6 +1,7 @@
 <template >
-        <div style="width:100%; " class="navbar navbar-expand-md navas bg" role="navigation">
-          <div style="margin:0px">
+
+        <div style="width:100%; " id="page-container" class="navbar navbar-expand-md navas bg" role="navigation">
+          <div style="margin:0px" id="footer">
             <router-link to="/">
               <img src="../assets/logo.png" alt style="height:70px; " />
             </router-link>
@@ -24,6 +25,7 @@ export default {
 };
 </script>
 <style lang="css" scoped>
+
 
 .bg {
   padding:0px;

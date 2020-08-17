@@ -25,7 +25,7 @@ text-align: center;
 color: #092E2B;">
   Featured Events
         </div>
-      
+      <loader style="text-align:center" v-if="loading" />
       </div>
 
       <div class="row" dense>
@@ -82,17 +82,21 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import loader from "../components/loader"
 
 export default {
   components: {
     nava,
-    foota
+    foota,
+    loader
   },
   data: () => ({
     event: {},
-    errors: []
+    errors: [],
+    loading: false
   }),
   created() {
+ this.loading = true
     serv
       .getRequest("eve/allEve")
       .then(response => {
@@ -100,6 +104,7 @@ export default {
         this.event = response.data.result;
         // eslint-disable-next-line no-console
         console.log(this.desserts, "are the events");
+        this.loading = false
       })
       .catch(e => {
         // this.errors.push(e);

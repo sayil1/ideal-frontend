@@ -95,7 +95,7 @@
                                           accept="image/*"
                                           name="image"
                                           @change="onFileChanged"
-                                        /> -->
+                                        />-->
 
                                         <div style="margin:5px" class="upload-btn-wrapper">
                                           <button class="btn">Choose Image</button>
@@ -103,7 +103,7 @@
                                             type="file"
                                             name="myfile"
                                             class="custom-file-input"
-                                           @change="onFileChanged"
+                                            @change="onFileChanged"
                                           />
                                         </div>
                                         <!-- <v-file-input accept="image/*" label="Image"  @change="onFileChanged"></v-file-input> -->
@@ -234,7 +234,7 @@ import menus from "../../components/adminMenu";
 export default {
   components: {
     side,
-    menus
+    menus,
   },
   data: () => ({
     snackbar: false,
@@ -250,7 +250,7 @@ export default {
       description: "",
       category: "",
       quantity: "",
-      price: ""
+      price: "",
     },
     dialog: false,
 
@@ -259,13 +259,13 @@ export default {
         text: "Title",
         align: "left",
         sortable: false,
-        value: "title"
+        value: "title",
       },
       { text: "Price", value: "price" },
       { text: "Quantity", value: "quantity" },
       { text: "Categories", value: "category" },
       { text: "Status", value: "status", align: "center" },
-      { text: "Action", value: "action" }
+      { text: "Action", value: "action" },
     ],
     desserts: [],
     editedIndex: -1,
@@ -274,21 +274,21 @@ export default {
       calories: 0,
       fat: 0,
       carbs: 0,
-      protein: 0
+      protein: 0,
     },
     defaultItem: {
       name: "",
       calories: 0,
       fat: 0,
       carbs: 0,
-      protein: 0
-    }
+      protein: 0,
+    },
   }),
 
   computed: {
     formTitle() {
       return this.editedIndex === -1 ? "New Event" : "Edit Event";
-    }
+    },
     // initializeApp(){
 
     // }
@@ -297,7 +297,7 @@ export default {
   watch: {
     dialog(val) {
       val || this.close();
-    }
+    },
   },
 
   created() {
@@ -322,13 +322,13 @@ export default {
       this.alerts = false;
       serv
         .getRequest("books/allBooks")
-        .then(response => {
+        .then((response) => {
           // JSON responses are automatically parsed.
           this.desserts = response.data.result;
           // eslint-disable-next-line no-console
           console.log(this.desserts, "are the books");
         })
-        .catch(e => {
+        .catch((e) => {
           // this.errors.push(e);
 
           // eslint-disable-next-line no-console
@@ -338,7 +338,7 @@ export default {
     getBooks(item) {
       // eslint-disable-next-line no-console
       this.newId = item._id;
-      serv.getRequest(`eve/get-event/${item._id}`).then(response => {
+      serv.getRequest(`eve/get-event/${item._id}`).then((response) => {
         // eslint-disable-next-line no-console
         // console.log(response.data.result, "is the books");
         this.books = response.data.result[0];
@@ -352,9 +352,7 @@ export default {
     },
 
     editItem() {
-      // this.editedIndex = this.desserts.indexOf(item);
-      // this.editedItem = Object.assign({}, item);
-
+  
       this.dialog = true;
       const formData = new FormData();
       // formData.append("image", this.books.image);
@@ -376,9 +374,11 @@ export default {
     },
 
     deleteItem(item) {
-      serv.getRequest(`eve/del/${item._id}`).then(response => {
+       this.alerts = true;
+      serv.getRequest(`books/del/${item._id}`).then((response) => {
         // eslint-disable-next-line no-console
-        console.log(response.data.result, "is the books");
+        console.log(response.data.msg, item._id, "is the books deleted");
+        this.alerts = false
         this.initialize();
       });
     },
@@ -392,7 +392,7 @@ export default {
         venue: "",
         startDate: "",
         endDate: "",
-        time: ""
+        time: "",
       }),
         (this.update = false);
       this.dialog = false;
@@ -407,11 +407,6 @@ export default {
     },
 
     async save() {
-      // if (this.editedIndex > -1) {
-      //   Object.assign(this.desserts[this.editedIndex], this.editedItem);
-      // } else {
-      //   this.desserts.push(this.editedItem);
-      // }
       this.alerts = true;
       this.dialog = false;
       const formData = new FormData();
@@ -421,11 +416,11 @@ export default {
       formData.append("price", this.books.price);
       formData.append("category", this.books.category);
       formData.append("quantity", this.books.quantity);
-      formData.append("description", this.books.description);
+      // formData.append("description", this.books.description);
 
       // eslint-disable-next-line no-console
       console.log(this.books, this.startDate, this.endDate, this.time);
-      await serv.postRequest("books/newBook", formData).then(response => {
+      await serv.postRequest("books/newBook", formData).then((response) => {
         (this.text = response.data), (this.alerts = false);
         this.snackbar = true;
         // eslint-disable-next-line no-console
@@ -433,12 +428,11 @@ export default {
         this.initialize();
       });
       this.close();
-    }
-  }
+    },
+  },
 };
 </script>
 <style lang="css" scoped>
-
 .upload-btn-wrapper {
   position: relative;
   overflow: hidden;
@@ -455,7 +449,7 @@ export default {
   font-weight: bold;
 }
 
-.upload-btn-wrapper input[type=file] {
+.upload-btn-wrapper input[type="file"] {
   font-size: 100px;
   position: absolute;
   left: 0;

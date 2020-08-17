@@ -492,9 +492,11 @@ export default {
     },
 
     deleteItem(item) {
+        this.alerts = true
       serv.getRequest(`eve/del/${item._id}`).then(response => {
         // eslint-disable-next-line no-console
-        console.log(response.data.result, "is the events");
+        console.log(response.data.result, "delete events");
+          this.alerts = false
         this.initialize();
       });
     },

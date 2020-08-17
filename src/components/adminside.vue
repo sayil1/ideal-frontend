@@ -1,12 +1,8 @@
 <template>
   <div style="position:fixed;">
-    <ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar" style="  box-shadow: 5px 10px 18px #888888;">
+    <ul class="navbar-nav sidebar "  id="accordionSidebar" style="background-color:#1b6761; color:white; box-shadow: 5px 10px 18px #888888;">
       <!-- Sidebar - Brand -->
-      <router-link class="sidebar-brand d-flex align-items-center justify-content-center" to="admin.html">
-        <div class="sidebar-brand-icon rotate-n-15">
-       jbknj
-        </div>
-      </router-link>
+    
 
       <!-- Divider -->
       <hr class="sidebar-divider my-0" />
@@ -14,8 +10,7 @@
       <!-- Nav Item - Dashboard -->
       <li class="nav-item active">
         <router-link class="nav-link" to="/">
-          <i class="fas fa-fw fa-tachometer-alt"></i>
-          <h3 style="color:orange">IDEAL IT</h3>
+          <img src="../assets/logo.png" alt style="height:70px; " />
         </router-link>
       </li>
 
@@ -23,72 +18,58 @@
       <hr class="sidebar-divider" />
 
       <!-- Heading -->
-      <div class="sidebar-heading">Menu</div>
+      <!-- <div class="sidebar-heading">Menu</div> -->
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item"></li>
 
-      <li class="nav-item">
+      <li class="nav-ite" style="padding:10px">
         <router-link class="nav-link" to="/adminIndex" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="red">mdi-party-popper</v-icon>
-          <span>Events</span>
+          <v-icon  color="white" medium >mdi-glass-wine</v-icon>
+          <span style="color:white; padding:10px">Events</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-ite" style="padding:10px">
         <router-link class="nav-link" to="/adminNews" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="green">mdi-party-popper</v-icon>
-          <span>News</span>
+          <v-icon color="white" mediaum >mdi-newspaper</v-icon>
+          <span style="color:white; padding:10px">News</span>
         </router-link>
-      </li>
-       <li class="nav-item">
+      </li> -->
+       <li style="padding:10px">
         <router-link class="nav-link" to="/adminBooks" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="purple">mdi-book</v-icon>
-          <span>Books</span>
+          <v-icon medium color="white">mdi-book-open</v-icon>
+          <span style="">Books</span>
         </router-link>
       </li>
-       <li class="nav-item">
+       <li style="padding:10px">
         <router-link class="nav-link" to="/Addiy" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="yellow">mdi-circle</v-icon>
+          <v-icon medium color="white">mdi-content-cut</v-icon>
           <span>DIY Kits</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <li style="padding:10px">
         <router-link class="nav-link" to="/Adweb" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="magenta">mdi-web</v-icon>
+          <v-icon medium color="white">mdi-account-group</v-icon>
           <span>Webinars</span>
         </router-link>
       </li>
-      <li class="nav-item">
+      <li style="padding:10px">
         <router-link class="nav-link" to="/Adcontest" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="orange">mdi-trophy</v-icon>
+          <v-icon medium color="white">mdi-trophy</v-icon>
           <span>Contests</span>
         </router-link>
       </li>
-        <li class="nav-item">
+        <li style="padding:10px">
         <router-link class="nav-link" to="/email-updates" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="rgb(0, 102, 102)">mdi-mail</v-icon>
+          <v-icon medium color="white">mdi-mail</v-icon>
           <span>Email Updates</span>
         </router-link>
       </li>
-      <!-- <li class="nav-item">
-        <router-link class="nav-link" to="#" aria-expanded="true" aria-controls="collapseThree">
-          <v-icon small color="white">mdi-laptop</v-icon>
-          <span>Projects</span>
-        </router-link>
-      </li> -->
-
-      <!-- Divider -->
-      <hr class="sidebar-divider" />
-
-      <!-- Heading -->
-      <div class="sidebar-heading">-----</div>
-
-      <!-- Nav Item - Pages Collapse Menu -->
-
-      <!-- Nav Item - Charts -->
-      <li class="nav-item">
+   
+ <hr style="color:white" class="sidebar-divider d-none d-md-block" />
+      <li class="">
         <router-link class="nav-link" to="/">
-          <i class="fas fa-fw fa-chart-area"></i>
+           <v-icon medium color="white">mdi-logout</v-icon>
           <span>Logout</span>
         </router-link>
       </li>
@@ -101,3 +82,10 @@
     </ul>
   </div>
 </template>
+
+<style lang="css">
+li span{
+  color:white;
+  padding:10px
+}
+</style>
