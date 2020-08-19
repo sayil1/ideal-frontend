@@ -1,7 +1,7 @@
 <template  >
   <div>
     <div>
-      <div style="position:fixed; width:100%; z-index:10; background-color: red" >
+      <div style="position:fixed; width:100%; z-index:1000; background-color: red" >
        
         <div style="width:100%; background-color:#1b6761; color:white" class="navbar navbar-expand-md navbar-  navas" role="navigation">
           <div>

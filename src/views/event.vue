@@ -2,7 +2,6 @@
   <div style="background-color:black">
     <nava />
     <div style="padding-top:150px;">
- 
       <div style="padding-left:0px; " class="row">
         <v-card
           class="col-md-4"
@@ -68,7 +67,7 @@ font-size: 15px;
 line-height: 129.84%;
 letter-spacing: 0.02em;
 color: orange;"
-              > {{event.description}}</p>
+              >{{event.description}}</p>
 
               <p
                 style="font-family: SF UI Display;
@@ -83,7 +82,7 @@ color:orange
                 <v-icon color="#1B6761" small style="margin:3px">mdi-map-marker</v-icon>
                 {{event.location}}
                 <br />
-                 <v-icon color="#1B6761" small style="margin:3px"></v-icon>
+                <v-icon color="#1B6761" small style="margin:3px"></v-icon>
                 {{event.venue}}
                 <br />
                 <span style="color: #1B6761;">Starting -</span>
@@ -124,14 +123,10 @@ color: #1B6761;
                             <v-text-field v-model="participants.fname" label="First Name" required></v-text-field>
                           </v-col>
                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field v-model="participants.lname"
-                              label="Last Name"
-                            ></v-text-field>
+                            <v-text-field v-model="participants.lname" label="Last Name"></v-text-field>
                           </v-col>
-                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field v-model="participants.phone"
-                              label="Phone Number"
-                            ></v-text-field>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field v-model="participants.phone" label="Phone Number"></v-text-field>
                           </v-col>
 
                           <v-col cols="12" sm="6" md="6">
@@ -141,7 +136,7 @@ color: #1B6761;
                       </v-container>
                       <small style="color:blueviolet">*Ticket ID will be sent to your mail</small>
                     </v-card-text>
-                    <loader v-if="loading" class="loader"/>
+                    <loader v-if="loading" class="loader" />
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
@@ -184,23 +179,23 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
-import loader from "../components/loader"
+import loader from "../components/loader";
 
 export default {
   // metaInfo: {
-    
-  //   title: "",
+
+  //   title: "sayil",
   //   titleTemplate: '%s | vue-meta Example App'
   // },
+  
   components: {
     nava,
     foota,
-    loader
+    loader,
   },
- 
 
   data: () => ({
-    loading:false,
+    loading: false,
     event: {},
     errors: [],
     eventId: "",
@@ -212,40 +207,45 @@ export default {
     timeout: 6000,
     x: null,
     y: "top",
-    participants:{
-      fname:"",
-      lname:"",
-      phone:"",
-      email:""
+    participants: {
+      fname: "",
+      lname: "",
+      phone: "",
+      email: "",
     },
-   shareLink:""
-
+    shareLink: "",
   }),
-    metaInfo () {
+  metaInfo() {
     return {
       title: `IDeal-IT | ${this.event.title}`,
-      image:this.event.imagesPath,
-    meta: [
-                { name: 'description', content: `${this.event.description}`},
-                { property: 'og:title', content: this.userData.name + ' - IDEal IT'},
-                { property: 'og:site_name', content:  `${this.event.description}`},
-                { property: 'og:description', content: 'Connect and follow ' +  `${this.event.description}` + 'IDEsl IT' },
-                {property: 'og:type', content: 'profile'},
-                // {property: 'og:url', content: 'https://epiloge.com/@' + this.userData.username},
-                // {property: 'og:image', content: this.aws_url + '/users/' + this.userData.profileurl + '-main.jpg' }    
-            ]
-    }
+
+      meta: [
+        {
+          name: "description",
+          content:
+            "Epiloge is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work.",
+        },
+        {
+          property: "og:title",
+          content: "Epiloge - Build your network in your field of interest",
+        },
+        { property: "og:site_name", content: "Epiloge" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
   },
+
   created() {
     this.initialize();
   },
-  
+
   methods: {
     show() {
       // eslint-disable-next-line no-console
       console.log(this.events, "show");
     },
-    onCopy: function() {
+    onCopy: function () {
       // alert('You just copied: ' + e.text)
 
       // eslint-disable-next-line no-console
@@ -253,7 +253,7 @@ export default {
       let url = serv.getUrl();
       this.message = `${url}/event?eid=${this.$route.query.eid}`;
     },
-    onError: function() {
+    onError: function () {
       // alert('Failed to copy texts' + e)
     },
     initialize() {
@@ -263,47 +263,47 @@ export default {
 
       serv
         .getRequest(`eve/get-event/${this.eventId}`)
-        .then(response => {
-        
+        .then((response) => {
           // JSON responses are automatically parsed.
           this.event = response.data.result[0];
-          this.shareLink = `https://twitter.com/intent/tweet/?text=${response.data.result[0].title}.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com`
-          
+          this.shareLink = `https://twitter.com/intent/tweet/?text=${response.data.result[0].title}.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com`;
+
           // eslint-disable-next-line no-console
           console.log(response.data.result[0], " the events");
         })
-        .catch(e => {
+        .catch((e) => {
           // this.errors.push(e);
 
           // eslint-disable-next-line no-console
           console.log(e);
         });
     },
-    saveEvent(){
-       let newData = {
+    saveEvent() {
+      let newData = {
         fname: this.participants.fname,
         lname: this.participants.lname,
         email: this.participants.email,
         phone: this.participants.phone,
-      
       };
-       // eslint-disable-next-line no-console
-      console.log("working ooo",  this.eventId)
-        this.loading = true
-       serv.putRequest(`eve/update-event/${this.eventId}`, newData ).then(response=>{
-         this.loading = false
-             this.$alertify.success(response.data);
-
-       })
-    }
-  }
+      // eslint-disable-next-line no-console
+      console.log("working ooo", this.eventId);
+      this.loading = true;
+      serv
+        .putRequest(`eve/update-event/${this.eventId}`, newData)
+        .then((response) => {
+          this.loading = false;
+          this.$alertify.success(response.data);
+        });
+    },
+  },
 };
 </script>
 
 <style lang="css" scoped>
 .links {
   color: black;
-} .loader{
+}
+.loader {
   margin-right: auto;
   margin-left: 50px;
 }

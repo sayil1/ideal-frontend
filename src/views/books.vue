@@ -47,14 +47,14 @@
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
-                style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden; margin:15px; margin-left:40px; width:500px; height:30px"
+                style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden; margin:25px; margin-left:60px; width:300px; height:30px"
               />
             </div>
           </div>
 
           <div style="  z-index:200" class>
             <div class="row">
-              <div style="padding:23px 0px 23px 0px; color:white">
+              <div style="padding:35px 0px 23px 0px; color:white">
                 <!-- <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
 
                 <span class="badge badge-light">{{quantity}}</span>-->
@@ -69,14 +69,14 @@
                   <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
                 </v-badge>
               </div>
-              <span style="color:white; padding:23px 0px 23px 10px">cart</span>
+              <span style="color:white; padding:35px 0px 23px 10px">cart</span>
             </div>
           </div>
         </div>
       </vue-position-sticky>
     </div>
     <div
-      style="padding:45px; color:rgb(0, 255, 0); background-color:rgb(64, 64, 64); text-align:center; letter-spacing: 0.4em;"
+      style="padding:65px; color:rgb(0, 255, 0); background-color:rgb(64, 64, 64); text-align:center; letter-spacing: 0.4em;"
     >
       WHERE ALL STORIES BEGIN
       <!-- <v-btn
@@ -149,14 +149,17 @@
 
       <div class="container">
         <div class="row">
-          <div class="col-6" style="color:white; padding-left:150px; text-align:left">New Arrival</div>
+          <div
+            class="col-6"
+            style="color:white; padding-left:90px; text-align:left;  font-size: 25px"
+          >New Arrival</div>
           <!-- <div
             class="col-6"
             style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)"
           >view all</div>-->
         </div>
 
-        <v-sheet class="mx-auto" max-width="970" color:red style="background-color:black">
+        <v-sheet class="mx-auto" width="1100" color:red style="background-color:black">
           <v-slide-group
             multiple
             show-arrows
@@ -166,7 +169,7 @@
           >
             <v-icon slot="prependIcon" large color="primary">mdi-home</v-icon>
             <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
-              <div class="m-3" style="width: 11.5rem; ">
+              <div class="m-3 bookSize">
                 <div style="background-color:rgb(230, 230, 230)">
                   <v-img
                     style="  "
@@ -184,11 +187,11 @@
                         @click="openModal(item)"
                       >mdi-star</v-icon>
                     </div>
-                    <div class="col-4">
+                    <div class="col-5">
                       <!-- <v-icon size="20" color="#1B6761" left style="padding-right:10px">mdi-star</v-icon> -->
                       4.5/5
                     </div>
-                    <div class="col-6" style="text-align:right; color: #1B6761;">
+                    <div class="col-5" style="text-align:right; color: #1B6761;">
                       <!-- <strong>NGN{{ item.price }}</strong> -->
                       <v-icon size="25" left style="padding-right:">mdi-bookmark-outline</v-icon>
                     </div>
@@ -215,7 +218,7 @@
                   class
                   @click="addToCart(item)"
                   data-dismiss="modal"
-                  color="success"
+                  style="background-color:rgb(0, 204, 0)"
                 >Add to cart</v-btn>
               </div>
             </v-slide-item>
@@ -239,28 +242,9 @@ padding-bottom:40px;
 align-items: center;
 text-align: center
 margin-top:20px"
-            >
-              <!-- <button
-                style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 600;
-font-size: 17px;
-line-height: 17px;
-margin-left:20px;
-color: green;
-text-align:right"
-                @click="showLessBooks = !showLessBooks"
-              >{{showLessBooks===true? "Show All Books" : "Show Less"}}</button>-->
-            </div>
+            ></div>
           </div>
         </div>
-
-        <!-- <button
-          type="button"
-          class="btn btn-primary"
-          data-toggle="modal"
-          data-target="#exampleModalCenter"
-        >Launch demo modal</button>-->
 
         <!-- Modal -->
         <div
@@ -278,109 +262,65 @@ text-align:right"
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-             
-                <div class="checkout" v-show="verified" style="font-family:Alegreya">
-                  <h5 v-for="(item,i) in items" :key="i">
-                    <strong>{{ item.quantity }}</strong>
-                    - {{ item.title }}
-                    <span>NGN {{ item.price * item.quantity }}</span>
-                  </h5>
-                  <hr />
-                  <div class="row">
-                    <div>
-                      <h5>
-                        Total:
-                        <span style="color:red">NGN {{ total }}</span>
-                      </h5>
 
-                      <div class="row">
-                        <v-btn
-                          @click="verified=false"
-                          class="ma-2"
-                          outlined
-                          tile
-                          small
-                          color="#1b6761"
-                          dark
-                        >Back to books</v-btn>
-                        <paystack
-                          :amount="amount"
-                          :email="email"
-                          :paystackkey="paystackkey"
-                          :reference="reference"
-                          :callback="callback"
-                          :close="close"
-                          :embed="false"
-                        >
-                          <v-btn  small tile color="red" dark>Make Payment</v-btn>
-                        </paystack>
-                      </div>
+              <div class="checkout" v-show="verified" style="font-family:Alegreya">
+                <h5 v-for="(item,i) in items" :key="i">
+                  <strong>{{ item.quantity }}</strong>
+                  - {{ item.title }}
+                  <span>NGN {{ item.price * item.quantity }}</span>
+                </h5>
+                <hr />
+                <div class="row">
+                  <div>
+                    <h5>
+                      Total:
+                      <span style="color:red">NGN {{ total }}</span>
+                    </h5>
+
+                    <div class="row">
+                      <v-btn
+                        @click="verified=false"
+                        class="ma-2"
+                        outlined
+                        tile
+                        small
+                        color="#1b6761"
+                        dark
+                      >Back to books</v-btn>
+                      <paystack
+                        :amount="amount"
+                        :email="email"
+                        :paystackkey="paystackkey"
+                        :reference="reference"
+                        :callback="callback"
+                        :close="close"
+                        :embed="false"
+                      >
+                        <v-btn small tile color="red" dark>Make Payment</v-btn>
+                      </paystack>
                     </div>
                   </div>
                 </div>
-             
-              <!-- <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div> -->
-            </div>
-          </div>
-        </div>
-
-        <!-- <div class="checkout" v-show="verified" style="font-family:Alegreya">
-          <h5 v-for="(item,i) in items" :key="i">
-            <strong>{{ item.quantity }}</strong>
-            - {{ item.title }}
-            <span>NGN {{ item.price * item.quantity }}</span>
-          </h5>
-          <hr />
-          <div class="row">
-            <div>
-              <h5>
-                Total:
-                <span style="color:green">NGN {{ total }}</span>
-              </h5>
-
-              <div class="row">
-                <v-btn
-                  @click="verified=false"
-                  class="ma-2"
-                  outlined
-                  tile
-                  small
-                  color="orange"
-                  dark
-                >Back to books</v-btn>
-                <paystack
-                  :amount="amount"
-                  :email="email"
-                  :paystackkey="paystackkey"
-                  :reference="reference"
-                  :callback="callback"
-                  :close="close"
-                  :embed="false"
-                >
-                  <v-btn outlined small tile color="green" dark>Make Payment</v-btn>
-                </paystack>
               </div>
             </div>
           </div>
-        </div>-->
+        </div>
       </div>
     </div>
     <!-- this holds the category cards -->
-    <div style="background-color:rgb(25, 77, 51); padding:40px; width:100%; margin:0px">
-      <h2
-        style="padding:5px 0px 0px 11%; color:white; text-align:left; letter-spacing: 0.4em;"
-      >Collection</h2>
+    <div class="greenBack" style=" padding:60px; width:100%; margin:0px">
+      <div
+        class="col-6"
+        style="color:white; padding-left:90px; text-align:left;  font-size: 30px"
+      >Collection</div>
 
-      <v-sheet class="mx-auto" max-width="1100" style="background-color:rgb(25, 77, 51)">
-        <v-slide-group v-model="model" class="pa-4" multiple show-arrows>
-          <v-slide-item v-for="n in 15" :key="n">
+      <v-sheet class="mx-auto" max-width="1100" style=" background: rgba(76, 175, 80, 0.0);">
+        <v-slide-group multiple show-arrows>
+          <v-slide-item v-for="(cat, n) in category" :key="n">
             <div style="padding:10px">
               <v-card
                 class="mx-auto"
-                max-width="300"
+                max-width="330"
                 style="background-color:rgb(121, 210, 166); color:rgb(0, 51, 0)"
               >
                 <v-img
@@ -389,13 +329,13 @@ text-align:right"
                   src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
                 ></v-img>
 
-                <v-card-title>Stories for the little ones</v-card-title>
+                <v-card-title>{{cat.name}}</v-card-title>
 
                 <v-card-text class style="color:rgb(0, 51, 0)">
-                  <div>Whitsunday Island, Whitsunday Islands</div>
+                  <div>{{cat.description}}</div>
                 </v-card-text>
 
-                <v-card-actions style="padding-left:80%">
+                <v-card-actions style="padding-left:80%" @click="getBooksByFilter(cat)">
                   <v-icon style color="black darken-2">mdi-arrow-right-circle-outline</v-icon>
                 </v-card-actions>
               </v-card>
@@ -405,19 +345,22 @@ text-align:right"
       </v-sheet>
     </div>
 
-    <div class="row">
-      <div class="col-6" style="color:white; padding-left:235px; text-align:left">New Arrival</div>
+    <div class="row" style="padding-top:70px"> 
+      <div
+        class="col-6"
+        style="color:white; padding-left:170px; text-align:left;  font-size: 25px"
+      >New Arrival</div>
       <!-- <div class="col-6" style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)">view all</div> -->
       <div
         class="col-6"
-        style="padding-right:235px;text-align:right; color:rgb(0, 255, 0)"
-        @click="showLessBooks = !showLessBooks"
+        style="  font-size: 25px ; padding-right:200px; text-align:right; color:rgb(0, 255, 0)"
+        @click="showLessBooks = !showLessBooks; getBooksByFilter() "
       >{{showLessBooks===true? "Show All Books" : "Show Less"}}</div>
     </div>
     <v-sheet
       v-show="showLessBooks"
       class="mx-auto"
-      max-width="970"
+      max-width="1100"
       color:red
       style="background-color:black"
     >
@@ -430,7 +373,7 @@ text-align:right"
       >
         <v-icon slot="prependIcon" large color="primary">mdi-home</v-icon>
         <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
-          <div class="m-3" style="width: 11.5rem; ">
+          <div class="m-3 bookSize">
             <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
             <div style="background-color:white">
               <div class="row" style="font-size:15px; width:100%;  margin:0px">
@@ -483,9 +426,9 @@ text-align:right"
     </v-sheet>
     <!-- this will show all the books -->
 
-    <div class="row" v-show="showLessBooks==false" style="margin-left:8%">
+    <div class="row" v-show="showLessBooks==false" style="margin-left:10%">
       <div v-for="(item,i) in  shopsToDisplay" :key="i">
-        <div class="m-3" style="width: 11.5rem; ">
+        <div class="m-3 bookSize">
           <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
           <div style="background-color:white">
             <div class="row" style="font-size:15px; width:100%;  margin:0px">
@@ -564,6 +507,16 @@ export default {
     ],
     model: null,
     slides: ["First", "Second", "Third", "Fourth", "Fifth"],
+    category: [
+      { name: "African Novels", img: "", description: "continue" },
+      { name: "Kids", img: "", description: "continue" },
+      { name: "TOEFL | IELTS,", img: "", description: "continue" },
+      { name: "IT Certifications", img: "", description: "continue" },
+      { name: "SAT | GRE | GMAT ", img: "", description: "continue" },
+      { name: "TOEFL | IELTS,", img: "", description: "continue" },
+      { name: "IT Certifications", img: "", description: "continue" },
+      { name: "SAT | GRE | GMAT ", img: "", description: "continue" },
+    ],
     hooperSettings: {
       itemsToShow: null,
       centerMode: true,
@@ -652,6 +605,33 @@ export default {
     close: function () {
       console.log("Payment closed");
     },
+    getBooks() {},
+    getBooksByFilter(item) {
+      serv
+        .getRequest(`books/allBooks/${item.name}`)
+        .then((response) => {
+          // JSON responses are automatically parsed.
+          this.shop = response.data.result;
+
+          for (let i = 0; i <= response.data.result.length - 1; i++) {
+            // eslint-disable-next-line no-console
+            // console.log(this.shop[i], 'shops');
+            let today = new Date().toISOString().substr(0, 10);
+            if (response.data.result[i].topTrend > today) {
+              this.weeksTop.push(response.data.result[i]);
+            } // eslint-disable-next-line no-console
+            console.log(this.weeksTop, "weeks trop");
+          }
+        })
+        .catch((e) => {
+          // this.errors.push(e);
+
+          // eslint-disable-next-line no-console
+          console.log(e);
+        });
+      //  eslint-disable-next-line no-console
+      console.log(item);
+    },
     isMobile() {
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
       // var element = document.getElementById("text");
@@ -703,6 +683,13 @@ export default {
 </script>
 
 <style scoped lang="css">
+.greenBack {
+  background-image: url("./../assets/greenbgg.jpg");
+}
+
+.bookSize {
+  width: 13.5rem;
+}
 .arch {
   background-image: url("../assets/carousel.jpg");
   position: cover;
@@ -724,16 +711,7 @@ export default {
   -o-background-size: cover;
   background-size: cover;
 }
-.wrapper {
-  position: relative;
-}
-.wrapper span {
-  position: absolute;
-  top: 22px;
-  right: 0px;
-  outline-style: solid;
-  outline-color: black;
-}
+
 .v-input__control {
   min-height: 10px !important;
 }
@@ -846,12 +824,11 @@ li {
 
 .checkout {
   background: #fff;
- color:#1b6761;
-  
+  color: #1b6761;
+
   padding: 50px 60px;
 }
 .checkout h3 {
-  
   margin: 0%;
   left: -30px;
   color: rgba(255, 255, 255, 0.3);
@@ -946,7 +923,7 @@ li {
   }
   .vImage {
     max-width: 100%;
-    height: 18vw;
+    height: 15vw;
     object-fit: contain;
   }
 }

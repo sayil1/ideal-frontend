@@ -41,7 +41,13 @@ import Contest from '../views/Contest.vue'
 import emailUpdates from '../views/adminViews/emailUpdates.vue'
 
 Vue.use(VueRouter)
-Vue.use(VueMeta);
+Vue.use(VueMeta, {
+  keyName: 'metaInfo',
+  attribute: 'data-vue-meta',
+  ssrAttribute: 'data-vue-meta-server-rendered',
+  tagIDKeyName: 'vmid',
+  refreshOnceOnNavigation: true
+})
 
 const routes = [
   {
@@ -246,4 +252,4 @@ const router = new VueRouter({
   routes
 })
 
-export default router
+export default  router

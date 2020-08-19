@@ -292,7 +292,7 @@ padding:50px"
         </hooper>
       </div>
       <div class="member">
-        <div class="big-text">Proud Member of</div>
+        <div class="big-text">Our Clients</div>
 
         <div class="row">
           <img

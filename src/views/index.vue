@@ -517,7 +517,7 @@ font-size: 14px;"
           </div>
 
           <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="web">
+            <router-link style="text-decoration:none" class="route" to="webs">
               <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Webinars</a>
                 <a href="#" class="card-link" style="float:right; ">

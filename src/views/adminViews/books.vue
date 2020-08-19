@@ -77,7 +77,7 @@
                                         <v-select
                                           :items="category"
                                           label="Category"
-                                          multiple
+                                          
                                           v-model="books.category"
                                           chips
                                           persistent-hint
@@ -243,7 +243,7 @@ export default {
     menu: false,
     modal2: false,
     update: false,
-    category: ["Comics", "History", "Health", "ICT"],
+    category: ["African Novels", "Kids", "TOEFL | IELTS", "IT Certifications", "SAT | GRE | GMAT"],
     books: {
       image: "",
       title: "",
