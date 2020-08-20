@@ -39,6 +39,7 @@ import Web from '../views/Webinar.vue'
 import contest from '../views/contest.vue'
 import Contest from '../views/Contest.vue'
 import emailUpdates from '../views/adminViews/emailUpdates.vue'
+import whatWeDo from "../views/whatWeDo.vue"
 
 Vue.use(VueRouter)
 Vue.use(VueMeta, {
@@ -70,6 +71,11 @@ const routes = [
     path: '/contests',
     name: 'contests',
     component: contest
+  },
+  {
+    path: '/what-we-do',
+    name: 'whatWeDo',
+    component: whatWeDo
   },
   {
     path: '/email-updates',

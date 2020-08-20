@@ -213,13 +213,9 @@
                     </div>
                   </div>
                 </div>
-                <v-btn
-                  block
-                  class
-                  @click="addToCart(item)"
-                  data-dismiss="modal"
-                  style="background-color:rgb(0, 204, 0)"
-                >Add to cart</v-btn>
+                   <button type="button"  @click="addToCart(item)"
+              data-dismiss="modal"
+              style="background-color:rgb(0, 204, 0)" class="btn btn-block">Add to cart</button>
               </div>
             </v-slide-item>
           </v-slide-group>
@@ -335,7 +331,7 @@ margin-top:20px"
                   <div>{{cat.description}}</div>
                 </v-card-text>
 
-                <v-card-actions style="padding-left:80%" @click="getBooksByFilter(cat)">
+                <v-card-actions style="padding-left:80%;  cursor: pointer;" @click="getBooksByFilter(cat)">
                   <v-icon style color="black darken-2">mdi-arrow-right-circle-outline</v-icon>
                 </v-card-actions>
               </v-card>
@@ -353,7 +349,7 @@ margin-top:20px"
       <!-- <div class="col-6" style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)">view all</div> -->
       <div
         class="col-6"
-        style="  font-size: 25px ; padding-right:200px; text-align:right; color:rgb(0, 255, 0)"
+        style=" cursor: pointer;  font-size: 25px ; padding-right:200px; text-align:right; color:rgb(0, 255, 0)"
         @click="showLessBooks = !showLessBooks; getBooksByFilter() "
       >{{showLessBooks===true? "Show All Books" : "Show Less"}}</div>
     </div>
@@ -413,13 +409,17 @@ margin-top:20px"
               </div>
             </div>
 
-            <v-btn
+            <!-- <v-btn
               block
               class
               @click="addToCart(item)"
               data-dismiss="modal"
-              color="success"
-            >Add to cart</v-btn>
+              style="background-color:rgb(0, 204, 0)"
+            >Add to cart</v-btn> -->
+
+            <button type="button"  @click="addToCart(item)"
+              data-dismiss="modal"
+              style="background-color:rgb(0, 204, 0)" class="btn btn-block">Add to cart</button>
           </div>
         </v-slide-item>
       </v-slide-group>
@@ -468,13 +468,9 @@ margin-top:20px"
             </div>
           </div>
 
-          <v-btn
-            block
-            class
-            @click="addToCart(item)"
-            data-dismiss="modal"
-            color="success"
-          >Add to cart</v-btn>
+            <button type="button"  @click="addToCart(item)"
+              data-dismiss="modal"
+              style="background-color:rgb(0, 204, 0)" class="btn btn-block">Add to cart</button>
         </div>
       </div>
     </div>
