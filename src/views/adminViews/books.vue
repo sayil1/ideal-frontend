@@ -243,7 +243,7 @@ export default {
     menu: false,
     modal2: false,
     update: false,
-    category: ["African Novels", "Kids", "TOEFL | IELTS", "IT Certifications", "SAT | GRE | GMAT"],
+    category: ["African Literatures", "Kids Novels", "TOEFL | IELTS | PTE", "Science and Technology", "GRE | GMAT | SAT", "Free Books"],
     books: {
       image: "",
       title: "",

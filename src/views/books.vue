@@ -42,13 +42,37 @@
         <div class="row" style="background-color:black">
           <div style class="col-md-10">
             <div class="form-group">
-              <input
+              <!-- <input
+                v-model="search"
+                placeholder="Search with title.."
                 type="email"
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden; margin:25px; margin-left:60px; width:300px; height:30px"
-              />
+              />-->
+            </div>
+            <div style="  width: 40%;  margin-left:60px;">
+              <div class="input-group">
+                <input
+                  v-model="search"
+                  type="text"
+                  width="60%"
+                  class="form-control col-xs-3"
+                  placeholder="Search by title, category.."
+                  style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden;min-width:30px; "
+                />
+                <div class="input-group-append">
+                  <button
+                    class="btn"
+                    style="background-color:rgb(64, 64, 64);outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden;"
+                    type="button"
+                    @click="getBooks()"
+                  >
+                    <v-icon color="white" small>mdi-magnify</v-icon>
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -213,9 +237,13 @@
                     </div>
                   </div>
                 </div>
-                   <button type="button"  @click="addToCart(item)"
-              data-dismiss="modal"
-              style="background-color:rgb(0, 204, 0)" class="btn btn-block">Add to cart</button>
+                <button
+                  type="button"
+                  @click="addToCart(item)"
+                  data-dismiss="modal"
+                  style="background-color:rgb(0, 204, 0)"
+                  class="btn btn-block"
+                >Add to cart</button>
               </div>
             </v-slide-item>
           </v-slide-group>
@@ -331,7 +359,10 @@ margin-top:20px"
                   <div>{{cat.description}}</div>
                 </v-card-text>
 
-                <v-card-actions style="padding-left:80%;  cursor: pointer;" @click="getBooksByFilter(cat)">
+                <v-card-actions
+                  style="padding-left:80%;  cursor: pointer;"
+                  @click=" getBooksByFilter(cat)"
+                >
                   <v-icon style color="black darken-2">mdi-arrow-right-circle-outline</v-icon>
                 </v-card-actions>
               </v-card>
@@ -341,7 +372,7 @@ margin-top:20px"
       </v-sheet>
     </div>
 
-    <div class="row" style="padding-top:70px"> 
+    <div class="row" style="padding-top:70px">
       <div
         class="col-6"
         style="color:white; padding-left:170px; text-align:left;  font-size: 25px"
@@ -415,11 +446,15 @@ margin-top:20px"
               @click="addToCart(item)"
               data-dismiss="modal"
               style="background-color:rgb(0, 204, 0)"
-            >Add to cart</v-btn> -->
+            >Add to cart</v-btn>-->
 
-            <button type="button"  @click="addToCart(item)"
+            <button
+              type="button"
+              @click="addToCart(item)"
               data-dismiss="modal"
-              style="background-color:rgb(0, 204, 0)" class="btn btn-block">Add to cart</button>
+              style="background-color:rgb(0, 204, 0)"
+              class="btn btn-block"
+            >Add to cart</button>
           </div>
         </v-slide-item>
       </v-slide-group>
@@ -468,9 +503,13 @@ margin-top:20px"
             </div>
           </div>
 
-            <button type="button"  @click="addToCart(item)"
-              data-dismiss="modal"
-              style="background-color:rgb(0, 204, 0)" class="btn btn-block">Add to cart</button>
+          <button
+            type="button"
+            @click="addToCart(item)"
+            data-dismiss="modal"
+            style="background-color:rgb(0, 204, 0)"
+            class="btn btn-block"
+          >Add to cart</button>
         </div>
       </div>
     </div>
@@ -504,14 +543,32 @@ export default {
     model: null,
     slides: ["First", "Second", "Third", "Fourth", "Fifth"],
     category: [
-      { name: "African Novels", img: "", description: "continue" },
-      { name: "Kids", img: "", description: "continue" },
-      { name: "TOEFL | IELTS,", img: "", description: "continue" },
-      { name: "IT Certifications", img: "", description: "continue" },
-      { name: "SAT | GRE | GMAT ", img: "", description: "continue" },
-      { name: "TOEFL | IELTS,", img: "", description: "continue" },
-      { name: "IT Certifications", img: "", description: "continue" },
-      { name: "SAT | GRE | GMAT ", img: "", description: "continue" },
+      {
+        name: "African Literature",
+        filter: "african",
+        img: "",
+        description: "continue",
+      },
+      { name: "Kids Novels", img: "", filter: "kids", description: "continue" },
+      {
+        name: "IELTS | TOEFL | IELTS,",
+        filter: "ielts",
+        img: "",
+        description: "continue",
+      },
+      {
+        name: "Science and Technology",
+        filter: "science",
+        img: "",
+        description: "continue",
+      },
+      {
+        name: "GRE | GMAT | SAT",
+        filter: "gre",
+        img: "",
+        description: "continue",
+      },
+      { name: "Free Books", filter: "free", img: "", description: "continue" },
     ],
     hooperSettings: {
       itemsToShow: null,
@@ -522,6 +579,7 @@ export default {
       playspeed: 1000,
     },
     e: [],
+    search: "",
     showLessBooks: true,
     hopper: true,
     shop: [],
@@ -555,56 +613,37 @@ export default {
     },
 
     shopsToDisplay: function () {
-      if (this.showLessBooks) {
-        return this.shop.slice(0, 8);
-      } else {
-        return this.shop;
-      }
+      // this.getBooks();
+
+      // if (this.showLessBooks) {
+      //   return this.shop.filter((post) => {
+      //     return post.title
+      //       .toLowerCase()
+      //       .includes(this.search.toLowerCase().slice(0, 8)) ;
+      //   });
+      // } else {
+      //   return this.shop.filter((post) => {
+      //     return post.title.toLowerCase().includes(this.search.toLowerCase());
+      //     // eslint-disable-next-line no-console
+      //     console.log(this.search);
+      //   });
+      // }
+      return this.shop;
     },
+    // filteredList(filter) {
+    //   return this.shop.filter((post) => {
+    //     return post.title.toLowerCase().includes(filter.toLowerCase());
+    //   });
+    // },
   },
-  watch: {},
-  created() {
-    this.isMobile();
-    serv
-      .getRequest("books/allBooks")
-      .then((response) => {
-        // JSON responses are automatically parsed.
-        this.shop = response.data.result;
-
-        for (let i = 0; i <= response.data.result.length - 1; i++) {
-          // eslint-disable-next-line no-console
-          // console.log(this.shop[i], 'shops');
-          let today = new Date().toISOString().substr(0, 10);
-          if (response.data.result[i].topTrend > today) {
-            this.weeksTop.push(response.data.result[i]);
-          } // eslint-disable-next-line no-console
-          console.log(this.weeksTop, "weeks trop");
-        }
-      })
-      .catch((e) => {
-        // this.errors.push(e);
-
-        // eslint-disable-next-line no-console
-        console.log(e);
-      });
-    // alert("see ya");
+  created(){
+   this.getBooks()
   },
+
   methods: {
-    openModal(item) {
-      // eslint-disable-next-line no-console
-      console.log(item);
-      this.e = item;
-    },
-    callback: function (response) {
-      console.log(response);
-    },
-    close: function () {
-      console.log("Payment closed");
-    },
-    getBooks() {},
-    getBooksByFilter(item) {
+    getBooks() {
       serv
-        .getRequest(`books/allBooks/${item.name}`)
+        .getRequest(`books/allBooks/${this.search}`)
         .then((response) => {
           // JSON responses are automatically parsed.
           this.shop = response.data.result;
@@ -625,8 +664,42 @@ export default {
           // eslint-disable-next-line no-console
           console.log(e);
         });
-      //  eslint-disable-next-line no-console
+      // alert("see ya");
+    },
+    openModal(item) {
+      // eslint-disable-next-line no-console
       console.log(item);
+      this.e = item;
+    },
+    callback: function (response) {
+      console.log(response);
+    },
+    close: function () {
+      console.log("Payment closed");
+    },
+
+    getBooksByFilter(item) {
+      serv
+        .getRequest(`books/allBookscat/${item.filter}`)
+        .then((response) => {
+          // JSON responses are automatically parsed.
+          this.shop = response.data.result;
+
+          for (let i = 0; i <= response.data.result.length - 1; i++) {
+            // eslint-disable-next-line no-console
+            // console.log(this.shop[i], 'shops');
+            let today = new Date().toISOString().substr(0, 10);
+            if (response.data.result[i].topTrend > today) {
+              this.weeksTop.push(response.data.result[i]);
+            } // eslint-disable-next-line no-console
+            console.log(this.weeksTop, "weeks trop");
+          }
+        })
+        .catch((e) => {
+         
+          console.log(e);
+        });
+      console.log(this.shop);
     },
     isMobile() {
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -679,6 +752,16 @@ export default {
 </script>
 
 <style scoped lang="css">
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.btn:focus{
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
 .greenBack {
   background-image: url("./../assets/greenbgg.jpg");
 }
