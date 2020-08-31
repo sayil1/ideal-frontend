@@ -10,7 +10,7 @@
             <div style="margin-top:px ; ">
               <div class="car" style="margin-left:40px; margin-right:40px">
                 <div class="car-head">
-                  <span class="white--text">IDEAL IT-CENTER</span>
+                  <span class="white--text">IT CERTIFICATIONS</span>
                   <hr
                     style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
                   />

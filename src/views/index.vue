@@ -7,7 +7,41 @@
       <div>
         <div style=" padding:5px" class="arch">
           <div class="carouselHolder">
-       
+            <!-- serach here -->
+      
+          <!-- <div>
+              <v-toolbar flat color="transparent" style="width:300px">
+                <div>
+                  
+                </div>
+                <input style="color:white" placeholder="search" class="mac-style" v-model="search" label="Search Page" single-line>
+                <v-btn style="mac-style" icon @click="show = !show">
+                  <v-icon color="white">mdi-magnify</v-icon>
+                </v-btn>
+              </v-toolbar>
+              <div v-if="show">
+                <v-card-text class="py-0">
+                  <v-chip v-for="(keyword, i) in keywords" :key="i" class="mr-2">{{ keyword }}</v-chip>
+                </v-card-text>
+
+                <v-list three-line>
+                  <v-list-item v-for="(item, i) in searching" :key="i" ripple @click="() => {}">
+                    <v-img :src="item.image" class="mr-4" max-width="64" min-width="64"></v-img>
+
+                    <v-list-item-content>
+                      <span
+                        class="text-uppercase font-weight-regular caption"
+                        v-text="item.category"
+                      ></span>
+
+                      <div v-text="item.title"></div>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-list>
+              </div>
+          </div> -->
+          
+            <!-- search here -->
             <v-carousel
               :show-arrows="false"
               hide-delimiters
@@ -20,9 +54,7 @@
             >
               <v-carousel-item class="div0">
                 <div style=" height:100%" class="cov">
-                  <div class="card-size">
-                    
-                  </div>
+                  <div class="card-size"></div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div1">
@@ -642,7 +674,7 @@ font-size: 48px; "
         <hr style="color:orange; width:700px; border: 1px solid #FF8A00;" />
       </div>
       <div>
-        <div  class="row form-inputs">
+        <div class="row form-inputs">
           <div class="col-md-12">
             <label
               for="exampleFormControlInput1"
@@ -695,8 +727,7 @@ font-size: 13px;"
             <br />
 
             <input
-             v-model="emailUpdates.zipCode"
-             
+              v-model="emailUpdates.zipCode"
               class="form-control"
               id="exampleFormControlInput1"
               style="background-color:#CAD9D8"
@@ -711,12 +742,10 @@ font-size: 13px;"
                 <strong>Subscribe to Email Updates</strong>
               </label>
             </div>
-         <button  @click="subscribe()" class="btn">SUBSCRIBE</button>
-         <loader v-if="send" />
+            <button @click="subscribe()" class="btn">SUBSCRIBE</button>
+            <loader v-if="send" />
           </div>
-         
         </div>
-            
       </div>
       <br />
     </div>
@@ -746,6 +775,47 @@ export default {
   },
 
   data: () => ({
+    itemsS: [
+      {
+        image:
+          "https://cdn-images-1.medium.com/max/1024/1*9C9hLji68wV373tk8okLYA.jpeg",
+        title: "TBI’s 5 Best: SF Mocktails to Finish Dry January Strong",
+        category: "Travel",
+        keyword: "Drinks",
+      },
+      {
+        image:
+          "https://cdn-images-1.medium.com/max/1024/1*BBNtYUieAqHoXKjiJ2mMjQ.png",
+        title:
+          "PWAs on iOS 12.2 beta: the good, the bad, and the “not sure yet if good”",
+        category: "Technology",
+        keyword: "Phones",
+      },
+      {
+        image:
+          "https://cdn-images-1.medium.com/max/1024/1*rTEtei1UEmNqbq6evRsExw.jpeg",
+        title: "How to Get Media Mentions for Your Business",
+        category: "Media",
+        keyword: "Social",
+      },
+      {
+        image:
+          "https://cdn-images-1.medium.com/max/1024/1*FD2nkJewVeQnGf0ommQfrw.jpeg",
+        title:
+          "The Pitfalls Of Outsourcing Self-Awareness To Artificial Intelligence",
+        category: "Technology",
+        keyword: "Military",
+      },
+      {
+        image:
+          "https://cdn-images-1.medium.com/max/1024/1*eogFpsVgNzXQLCVgFzT_-A.jpeg",
+        title: "Degrees of Freedom and Sudoko",
+        category: "Travel",
+        keyword: "Social",
+      },
+    ],
+    search: "",
+    show:false,
     hooperSettings: {
       itemsToShow: null,
       centerMode: true,
@@ -768,10 +838,10 @@ export default {
       "computer server",
       "school books",
     ],
-    emailUpdates:{
-       email:"",
-       country:"",
-       zipCode:""
+    emailUpdates: {
+      email: "",
+      country: "",
+      zipCode: "",
     },
     project: {
       fname: "",
@@ -780,7 +850,7 @@ export default {
       phone: "",
       interests: "",
     },
-    
+
     itemss: [
       {
         src: "https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg",
@@ -796,6 +866,30 @@ export default {
       },
     ],
   }),
+  computed: {
+    keywords() {
+      if (!this.search) return [];
+
+      const keywords = [];
+
+      for (const search of this.searching) {
+        keywords.push(search.keyword);
+      }
+
+      return keywords;
+    },
+    searching() {
+      if (!this.search) return this.itemsS;
+
+      const search = this.search.toLowerCase();
+
+      return this.itemsS.filter((item) => {
+        const text = item.title.toLowerCase();
+
+        return text.indexOf(search) > -1;
+      });
+    },
+  },
   created() {
     this.isMobile();
     this.initialize();
@@ -865,7 +959,6 @@ export default {
         email: this.emailUpdates.email,
         country: this.emailUpdates.country,
         zipCode: this.emailUpdates.zipCode,
-      
       };
 
       serv.postRequest("emailUpdates/subscribe", newData).then((response) => {
