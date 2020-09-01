@@ -1145,7 +1145,7 @@ header {
   background-repeat: no-repeat;
 }
 /* Mobile Styles */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 700px) and (orientation : portrait){
   .iconHolder {
     padding-left: 18%;
   }

@@ -14,7 +14,7 @@
           </div>
           <!-- filter search -->
           <div>
-            <v-toolbar flat color="transparent" style="width:300px">
+            <v-toolbar flat color="transparent" class="search-input">
               <div></div>
               <input
                 style="color:white; padding:1px;  border: 1px  white;  border-radius: 10px;"
@@ -25,27 +25,29 @@
                 single-line
                 @focus="show = true"
               />
-              <v-btn ref="s-btn" style="mac-style" icon v-click-outside="hide" @click="show = !show">
+              <v-btn
+                ref="s-btn"
+                style="mac-style"
+                icon
+                v-click-outside="hide"
+                @click="show = !show"
+              >
                 <v-icon color="white">mdi-magnify</v-icon>
               </v-btn>
             </v-toolbar>
-            <div
-              v-show="show"
-              style="position:fixed"
-             
-            >
-              <v-card-text class="py-0">
+            <div v-show="show" style="position:fixed;">
+              <!-- <v-card-text class="py-0">
                 <v-chip v-for="(keyword, i) in keywords" :key="i" class="mr-2">{{ keyword }}</v-chip>
-              </v-card-text>
+              </v-card-text> -->
 
-              <v-list three-line style="width:60%; background-color:rgb(217, 217, 217)">
+              <v-list three-line class="search-results" style="  overflow: scroll;">
                 <v-list-item v-for="(item, i) in searching" :key="i" ripple @click="() => {}">
                   <a :href="`${item.route}`">
                     <v-img :src="item.image" class="mr-4" max-width="64" min-width="64"></v-img>
 
-                    <v-list-item-content>
+                    <v-list-item-content >
                       <span
-                        class="text-uppercase font-weight-regular caption"
+                        class="text-uppercase  caption"
                         v-text="item.category"
                       ></span>
 
@@ -71,11 +73,7 @@
             <v-icon class="navbar-toggler-icon" color="white">mdi-chevron-down</v-icon>
           </button>
 
-          <div
-            class="nava collapse navbar-collapse nav-width"
-            id="navbarCollapse"
-         
-          >
+          <div class="nava collapse navbar-collapse nav-width" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item active"></li>
               <router-link class="nav-link" to="/" style>
@@ -138,7 +136,7 @@
                   <router-link class="route" to="over">
                     <li class="dropdown-item">INTERNSHIP</li>
                   </router-link>
-                       <li class="dropdown-item dropdown">
+                  <li class="dropdown-item dropdown">
                     <a
                       class="dropdown-toggle"
                       id="dropdown1-1"
@@ -204,8 +202,6 @@
                 <router-link class="route" to="career">CAREER DEVELOPMENT</router-link>
                   </li>-->
 
-             
-
                   <ul></ul>
                 </ul>
               </li>
@@ -265,9 +261,8 @@
 </template>
  <script src="../index.js"></script>
 <script>
-
 import { Services } from "../service";
-import ClickOutside from 'vue-click-outside'
+import ClickOutside from "vue-click-outside";
 var serv = new Services();
 export default {
   data() {
@@ -276,43 +271,42 @@ export default {
       itemsS: [
         {
           image: "",
-          title: "The Test of English as a Foreign Language® TOEFLis a standardized test that measures",
+          title:
+            "The Test of English as a Foreign Language® TOEFLis a standardized test that measures",
           category: "TOEFL",
           keyword: "TOEFL",
           route: "toefl",
         },
         {
-          image:
-            "",
+          image: "",
           title:
             "Our Authorized Pearson VUE Test center runs IT certification examinations for leading vendors",
           category: "Pearson Vue",
           keyword: "Pearson",
-            route: "pearson",
+          route: "pearson",
         },
         {
-          
-          title: "The Institute of Commercial Management (ICM) is the leading professional body providing qualifications",
+          title:
+            "The Institute of Commercial Management (ICM) is the leading professional body providing qualifications",
           category: "ICM UK",
           keyword: "ICM UK",
-           route: "icm",
+          route: "icm",
         },
         {
-          image:
-            "",
+          image: "",
           title:
             "IT CERTIFICATION | The need for the teaming population of young people to access information: java ",
           category: "IT CERTIFICATION",
           keyword: "IT CERTIFICATION, java, ",
-           route: "prof",
+          route: "prof",
         },
         {
-          image:
-            "",
-          title: "TEST PREPARATION | We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.",
+          image: "",
+          title:
+            "TEST PREPARATION | We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.",
           category: "TEST PREPARATION",
           keyword: "TEST PREPARATION",
-           route: "test",
+          route: "test",
         },
       ],
       search: "",
@@ -354,12 +348,12 @@ export default {
     },
   },
   methods: {
-     hide () {
-      this.show = false
+    hide() {
+      this.show = false;
     },
-     onClose () {
-    this.show = false
-  },
+    onClose() {
+      this.show = false;
+    },
     initialize() {
       serv
         .getRequest("news/getNews")
@@ -390,24 +384,32 @@ export default {
           console.log(e);
         });
     },
-    
   },
-   
-  mounted () {
+
+  mounted() {
     // prevent click outside event with popupItem.
-    this.popupItem = this.$el
+    this.popupItem = this.$el;
   },
- 
+
   // do not forget this section
   directives: {
-    ClickOutside
-  }
+    ClickOutside,
+  },
 };
 </script>
 
 <style lang="css" scoped>
+.search-input {
+  width: 250px;
+}
+.search-results{
+  width:200px;
+  margin-left: -100px;
+  font-size: 10px;
+   overflow: scroll;
+}
 .mac-style {
-  width: 50px;
+  width: 70px;
   -webkit-transition: width 1s ease-in-out;
   -moz-transition: width 1s ease-in-out;
   -o-transition: width 1s ease-in-out;
@@ -421,7 +423,7 @@ export default {
 header {
   margin-top: 0px;
 }
-.nav-width{
+.nav-width {
   margin-left: 5%;
 }
 .navbar-nav li:hover > ul.dropdown-menu {
@@ -507,11 +509,25 @@ ul.dropdown-menu {
 }
 
 @media only screen and (max-width: 400px) {
+  .mac-style {
+    width: 50px;
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+    float: right;
+    margin-left: -60px;
+  }
+
+  .search-input {
+    width: 0px;
+    padding-left: -100px;
+  }
   template {
     width: 100%;
   }
   .nava {
-    margin-left: 1%;
+    margin-left: 0%;
   }
   .icons {
     margin-left: 20px;
@@ -526,8 +542,11 @@ ul.dropdown-menu {
   }
 }
 
-@media only screen and (min-width: 401px) and (max-width: 960px) {
- .navbar .dropdown-toggle:not(.nav-link)::after {
+@media only screen and (min-width: 401px) and (max-width: 960px) and (orientation : portrait){
+  .search-input {
+    width: -10px;
+  }
+  .navbar .dropdown-toggle:not(.nav-link)::after {
     display: inline-block;
     width: 0;
     height: 0;
@@ -538,8 +557,15 @@ ul.dropdown-menu {
     border-left: 0.3em solid;
   }
   .nava {
-    /* margin-left: ; */
+    margin-left: -100px;
+    font-size: 10px;
   }
+  .nav-link {
+  color: white;
+  /* font-weight: bold; */
+  font-size: 10px;
+  text-decoration: none;
+}
   .navas {
     width: 150%;
   }
@@ -551,7 +577,40 @@ ul.dropdown-menu {
   }
 }
 
-@media (min-width: 767px) {
- 
+@media only screen and (min-width: 401px) and (max-width: 1024px) and (orientation : landscape){
+  .search-input {
+    width: -10px;
+  }
+  .navbar .dropdown-toggle:not(.nav-link)::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.5em;
+    vertical-align: 0;
+    border-bottom: 0.3em solid transparent;
+    border-top: 0.3em solid transparent;
+    border-left: 0.3em solid;
+  }
+  .nava {
+    margin-left: -10px;
+    font-size: 10px;
+  }
+  .nav-link {
+  color: white;
+  /* font-weight: bold; */
+  font-size: 10px;
+  text-decoration: none;
 }
+  .navas {
+    width: 150%;
+  }
+  .infos {
+    margin-left: 100px;
+  }
+  .nav2 {
+    /* padding-top: 80px */
+  }
+}
+
+
 </style>
