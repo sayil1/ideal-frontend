@@ -40,6 +40,7 @@ import contest from '../views/contest.vue'
 import Contest from '../views/Contest.vue'
 import emailUpdates from '../views/adminViews/emailUpdates.vue'
 import whatWeDo from "../views/whatWeDo.vue"
+import notFound from "../components/notFound.vue"
 
 Vue.use(VueRouter)
 Vue.use(VueMeta, {
@@ -51,6 +52,7 @@ Vue.use(VueMeta, {
 })
 
 const routes = [
+  { path: '*', component: notFound },
   {
     path: '/',
     name: 'index',

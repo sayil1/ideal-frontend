@@ -17,7 +17,7 @@
             <v-toolbar flat color="transparent" style="width:300px">
               <div></div>
               <input
-                style="color:white; padding:1px"
+                style="color:white; padding:1px;  border: 1px  white;  border-radius: 10px;"
                 placeholder="search"
                 class="mac-style"
                 v-model="search"
