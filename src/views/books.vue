@@ -9,14 +9,14 @@
           delimiter-icon="mdi-minus"
           cycle
           style="max-height:400px; margin:auto; max-width:1000px"
-          show-arrows-on-hover
+          :show-arrows="false"
           interval="3000"
           height="400"
         >
           <v-carousel-item v-for="(slide, i) in slides" :key="i">
             <v-sheet :color="colors[i]" height="100%">
               <v-row class="fill-height" align="center" justify="center">
-                <div class="display-3">{{ slide }} Slide</div>
+                <div class="display-3">{{ slide }} </div>
               </v-row>
             </v-sheet>
           </v-carousel-item>
@@ -24,43 +24,18 @@
       </div>
     </div>
     <div class>
-      <!-- <div class="conts">
-        <div style class="cont-text">
-          <span style>
-            Shop a set of 10 books &
-            <br />Get 50% off on your next
-            <br />book purchase. Hurry up!
-          </span>
-        </div>
-      </div>-->
-
-      <!-- <vue-position-sticky :offsetTop="10" sticky-class="myClass" />
- 
-<vue-position-sticky :offsetBottom="0" @change="handleStickyChange" />
-      -->
       <vue-position-sticky :offsetTop="84" style="z-index:-2000">
-        <div class="row" style="background-color:black">
-          <div style class="col-md-10">
-            <div class="form-group">
-              <!-- <input
-                v-model="search"
-                placeholder="Search with title.."
-                type="email"
-                class="form-control"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
-                style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden; margin:25px; margin-left:60px; width:300px; height:30px"
-              />-->
-            </div>
-            <div style="  width: 40%;  margin-left:60px;">
+        <div class="row" style="background-color:black; padding:2px">
+          <div style class="col-sm-8 col-8">
+            <div class="search-bar" style=" ">
               <div class="input-group">
                 <input
                   v-model="search"
                   type="text"
-                  width="60%"
-                  class="form-control col-xs-3"
+                  width="100%"
+                  class="form-control"
                   placeholder="Search by title, category.."
-                  style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden;min-width:30px; "
+                  style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden;width:50px; "
                 />
                 <div class="input-group-append">
                   <button
@@ -76,12 +51,9 @@
             </div>
           </div>
 
-          <div style="  z-index:200" class>
+          <div style="  z-index:200" class="col-sm-2 col-2">
             <div class="row">
-              <div style="padding:35px 0px 23px 0px; color:white">
-                <!-- <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
-
-                <span class="badge badge-light">{{quantity}}</span>-->
+              <div style="0px 15px 0px; color:white" class="cart">
                 <v-badge
                   bordered
                   :content="quantity"
@@ -92,28 +64,16 @@
                 >
                   <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
                 </v-badge>
+                <!-- <span style="color:white">Cart</span> -->
               </div>
-              <span style="color:white; padding:35px 0px 23px 10px">cart</span>
             </div>
           </div>
         </div>
       </vue-position-sticky>
     </div>
     <div
-      style="padding:65px; color:rgb(0, 255, 0); background-color:rgb(64, 64, 64); text-align:center; letter-spacing: 0.4em;"
-    >
-      WHERE ALL STORIES BEGIN
-      <!-- <v-btn
-            
-                  @click="showCart = !showCart"
-          
-                  class="ma-2"
-                  color="success"
-                >
-                  <v-icon dark>mdi-home</v-icon>
-                  <span style="color:white">Checkout</span>
-      </v-btn>-->
-    </div>
+      style="padding:55px; color:rgb(0, 255, 0); background-color:rgb(64, 64, 64); text-align:center; letter-spacing: 0.4em;"
+    >WHERE ALL STORIES BEGIN</div>
 
     <div id="app" style>
       <vue-position-sticky :offsetTop="150" style="z-index:-2000">
@@ -140,7 +100,7 @@
               </li>
               <br />
             </ul>
-            <div>
+            <div class="row">
               <v-btn
                 class="ma-2"
                 tile
@@ -171,19 +131,10 @@
         </div>
       </vue-position-sticky>
 
-      <div class="container">
-        <div class="row">
-          <div
-            class="col-6"
-            style="color:white; padding-left:90px; text-align:left;  font-size: 25px"
-          >New Arrival</div>
-          <!-- <div
-            class="col-6"
-            style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)"
-          >view all</div>-->
-        </div>
+      <div class="containe">
+        <div class="header-text" style="padding-top:70px;">New Arrival</div>
 
-        <v-sheet class="mx-auto" width="1100" color:red style="background-color:black">
+        <v-sheet class="mx-auto" max-width="1100" style=" background: rgba(76, 175, 80, 0.0);">
           <v-slide-group
             multiple
             show-arrows
@@ -191,7 +142,6 @@
             prev-icon="mdi-chevron-left"
             next-icon="mdi-chevron-right"
           >
-            <v-icon slot="prependIcon" large color="primary">mdi-home</v-icon>
             <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
               <div class="m-3 bookSize">
                 <div style="background-color:rgb(230, 230, 230)">
@@ -200,39 +150,13 @@
                     class="white--text align-end vImage"
                     v-bind:src="item.imagesPath"
                   ></v-img>
-                  <div class="row" style="font-size:15px; width:100%;  margin:0px">
-                    <div class="col-1">
-                      <v-icon
-                        size="20"
-                        color="orange"
-                        style="padding-right:10px"
-                        data-toggle="modal"
-                        data-target="#exampleModal"
-                        @click="openModal(item)"
-                      >mdi-star</v-icon>
-                    </div>
-                    <div class="col-5">
-                      <!-- <v-icon size="20" color="#1B6761" left style="padding-right:10px">mdi-star</v-icon> -->
-                      4.5/5
-                    </div>
-                    <div class="col-5" style="text-align:right; color: #1B6761;">
-                      <!-- <strong>NGN{{ item.price }}</strong> -->
-                      <v-icon size="25" left style="padding-right:">mdi-bookmark-outline</v-icon>
-                    </div>
-                  </div>
-                  <div>
-                    <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                      <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
-                        <strong>{{ item.title }}</strong>
-                        <br />
 
-                        <div style="margin-top:-10px" class="row">
-                          <div class="col-8" style="font-size:10px;">By Austin MAikano</div>
-                          <strong
-                            class="col-4"
-                            style="font-size:13px; color:red; text-align:right"
-                          >N{{ item.price }}</strong>
-                        </div>
+                  <div style="padding-top:10px">
+                    <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
+                      <div class="card-title" style=";font-size:15px;color: #092E2B;">
+                        <strong>{{ item.title }}</strong>
+                        <div style="font-size:12px;">By Austin MAikano</div>
+                        <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
                       </div>
                     </div>
                   </div>
@@ -332,24 +256,20 @@ margin-top:20px"
       </div>
     </div>
     <!-- this holds the category cards -->
-    <div class="greenBack" style=" padding:60px; width:100%; margin:0px">
-      <div
-        class="col-6"
-        style="color:white; padding-left:90px; text-align:left;  font-size: 30px"
-      >Collection</div>
-
+    <div class="greenBack">
+      <div class="header-text" style="padding-top:60px; ">Collections</div>
       <v-sheet class="mx-auto" max-width="1100" style=" background: rgba(76, 175, 80, 0.0);">
         <v-slide-group multiple show-arrows>
           <v-slide-item v-for="(cat, n) in category" :key="n">
             <div style="padding:10px">
               <v-card
                 class="mx-auto"
-                max-width="330"
+                max-width="250"
                 style="background-color:rgb(121, 210, 166); color:rgb(0, 51, 0)"
               >
                 <v-img
                   class="white--text align-end"
-                  height="200px"
+                  height="150px"
                   src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
                 ></v-img>
 
@@ -372,15 +292,12 @@ margin-top:20px"
       </v-sheet>
     </div>
 
-    <div class="row" style="padding-top:70px">
-      <div
-        class="col-6"
-        style="color:white; padding-left:170px; text-align:left;  font-size: 25px"
-      >New Arrival</div>
+    <div class="row header-text" style="padding-top:70px">
+      <div class="col-6">Books Store</div>
       <!-- <div class="col-6" style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)">view all</div> -->
       <div
         class="col-6"
-        style=" cursor: pointer;  font-size: 25px ; padding-right:200px; text-align:right; color:rgb(0, 255, 0)"
+        style=" cursor: pointer; color:rgb(0, 255, 0); text-align:right"
         @click="showLessBooks = !showLessBooks; getBooksByFilter() "
       >{{showLessBooks===true? "Show All Books" : "Show Less"}}</div>
     </div>
@@ -402,39 +319,13 @@ margin-top:20px"
         <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
           <div class="m-3 bookSize">
             <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
-            <div style="background-color:white">
-              <div class="row" style="font-size:15px; width:100%;  margin:0px">
-                <div class="col-1">
-                  <v-icon
-                    size="20"
-                    color="orange"
-                    style="padding-right:10px"
-                    data-toggle="modal"
-                    data-target="#exampleModal"
-                  >mdi-star</v-icon>
-                </div>
-                <div class="col-4">
-                  <!-- <v-icon size="20" color="#1B6761" left style="padding-right:10px">mdi-star</v-icon> -->
-                  4.5/5
-                </div>
-                <div class="col-6" style="text-align:right; color: #1B6761;">
-                  <!-- <strong>NGN{{ item.price }}</strong> -->
-                  <v-icon size="25" left style="padding-right:">mdi-bookmark-outline</v-icon>
-                </div>
-              </div>
+            <div style="background-color:white; padding-top:10px">
               <div>
                 <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                  <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
+                  <div class="card-title" style=";font-size:15px;color: #092E2B;">
                     <strong>{{ item.title }}</strong>
-                    <br />
-
-                    <div style="margin-top:-10px" class="row">
-                      <div class="col-8" style="font-size:10px;">By Austin MAikano</div>
-                      <strong
-                        class="col-4"
-                        style="font-size:13px; color:red; text-align:right"
-                      >N{{ item.price }}</strong>
-                    </div>
+                    <div style="font-size:12px;">By Austin MAikano</div>
+                    <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
                   </div>
                 </div>
               </div>
@@ -461,56 +352,31 @@ margin-top:20px"
     </v-sheet>
     <!-- this will show all the books -->
 
-    <div class="row" v-show="showLessBooks==false" style="margin-left:10%">
+    <div class="row" v-show="showLessBooks==false" style="margin-left:5px; margin-right:5px">
       <div v-for="(item,i) in  shopsToDisplay" :key="i">
-        <div class="m-3 bookSize">
-          <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
-          <div style="background-color:white">
-            <div class="row" style="font-size:15px; width:100%;  margin:0px">
-              <div class="col-1">
-                <v-icon
-                  size="20"
-                  color="orange"
-                  style="padding-right:10px"
-                  data-toggle="modal"
-                  data-target="#exampleModal"
-                >mdi-star</v-icon>
-              </div>
-              <div class="col-4">
-                <!-- <v-icon size="20" color="#1B6761" left style="padding-right:10px">mdi-star</v-icon> -->
-                4.5/5
-              </div>
-              <div class="col-6" style="text-align:right; color: #1B6761;">
-                <!-- <strong>NGN{{ item.price }}</strong> -->
-                <v-icon size="25" left style="padding-right:">mdi-bookmark-outline</v-icon>
-              </div>
-            </div>
-            <div>
-              <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                <div class="card-title" style="left: 9.96%;font-size:15px;color: #092E2B;">
-                  <strong>{{ item.title }}</strong>
-                  <br />
-
-                  <div style="margin-top:-10px" class="row">
-                    <div class="col-8" style="font-size:10px;">By Austin MAikano</div>
-                    <strong
-                      class="col-4"
-                      style="font-size:13px; color:red; text-align:right"
-                    >N{{ item.price }}</strong>
+     
+          <div class="m-3 bookSize">
+            <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
+            <div style="background-color:white; padding-top:10px">
+              <div>
+                <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
+                  <div class="card-title" style=";font-size:15px;color: #092E2B;">
+                    <strong>{{ item.title }}</strong>
+                    <div style="font-size:12px;">By Austin MAikano</div>
+                    <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <button
-            type="button"
-            @click="addToCart(item)"
-            data-dismiss="modal"
-            style="background-color:rgb(0, 204, 0)"
-            class="btn btn-block"
-          >Add to cart</button>
-        </div>
+            <button
+              type="button"
+              @click="addToCart(item)"
+              data-dismiss="modal"
+              style="background-color:rgb(0, 204, 0)"
+              class="btn btn-block"
+            >Add to cart</button>
+             </div>
       </div>
     </div>
   </div>
@@ -541,7 +407,7 @@ export default {
       "deep-purple accent-4",
     ],
     model: null,
-    slides: ["First", "Second", "Third", "Fourth", "Fifth"],
+    slides: ["African Literature", "Kids Novels", "Science and Tech", "GRE | GMAT | SAT", "Free Books"],
     category: [
       {
         name: "African Literature",
@@ -557,7 +423,7 @@ export default {
         description: "continue",
       },
       {
-        name: "Science and Technology",
+        name: "Science and Tech",
         filter: "science",
         img: "",
         description: "continue",
@@ -636,8 +502,8 @@ export default {
     //   });
     // },
   },
-  created(){
-   this.getBooks()
+  created() {
+    this.getBooks();
   },
 
   methods: {
@@ -696,7 +562,6 @@ export default {
           }
         })
         .catch((e) => {
-         
           console.log(e);
         });
       console.log(this.shop);
@@ -752,12 +617,23 @@ export default {
 </script>
 
 <style scoped lang="css">
+.header-text {
+  color: white;
+  text-align: left;
+  font-size: 25px;
+  padding-left: 12%;
+  padding-right: 12%;
+}
+.search-bar {
+  width: 40%;
+  margin-left: 60px;
+}
 .form-control:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.btn:focus{
+.btn:focus {
   border-color: inherit;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -770,7 +646,7 @@ export default {
   width: 13.5rem;
 }
 .arch {
-  background-image: url("../assets/carousel.jpg");
+  background-image: url("../assets/book-background.jpg");
   position: cover;
   background-attachment: fixed;
   background-position: center;
@@ -812,14 +688,7 @@ div.sticky {
   font-weight: bolder;
   margin: 10px 20px;
 }
-/* .header button {
-  border: 0;
-  background: #ffdbe0;
-  transition: all 0.1s ease-out;
-}
-.header button:hover {
-  background: #ffd1d7;
-} */
+
 .header div {
   float: right;
   display: inline;
@@ -844,31 +713,8 @@ li {
   opacity: 0;
 }
 
-.cart > div {
-  z-index: 200;
-  background: #fff;
-  padding: 20px 30px;
-  position: absolute;
-  right: 30px;
-  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
-}
-.cart > div div {
-  text-align: center;
-}
-.cart ul,
-.cart li,
-.cart p {
-  margin-bottom: 0;
-}
-.cart button {
-  margin: 20px 0 10px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-.cart input {
-  width: 30px;
+.cart {
+  padding-left: 100%;
 }
 
 .shop h3 {
@@ -921,6 +767,19 @@ li {
 }
 
 @media only screen and (max-width: 400px) {
+  .bookSize {
+    width: 8.5rem;
+  }
+  .header-text {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 0px;
+  }
+  .search-bar {
+    width: 100%;
+    margin-left: 10px;
+  }
   .book-card {
     padding-left: 60px;
     padding-top: 800px;
@@ -956,7 +815,7 @@ li {
     text-align: left;
   }
   .vImage {
-    height: 65vw;
+    height: 35vw;
   }
 }
 
@@ -966,7 +825,7 @@ li {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  hooper {
+  .hooper {
     margin-top: 00px;
     padding-left: 60px;
     margin-top: 100px;

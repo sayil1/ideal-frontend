@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueMeta from 'vue-meta';
+
 
 // import Home from '../views/Home.vue'
 import hello from '../components/HelloWorld.vue'
@@ -43,13 +43,7 @@ import whatWeDo from "../views/whatWeDo.vue"
 import notFound from "../components/notFound.vue"
 
 Vue.use(VueRouter)
-Vue.use(VueMeta, {
-  keyName: 'metaInfo',
-  attribute: 'data-vue-meta',
-  ssrAttribute: 'data-vue-meta-server-rendered',
-  tagIDKeyName: 'vmid',
-  refreshOnceOnNavigation: true
-})
+
 
 const routes = [
   { path: '*', component: notFound },

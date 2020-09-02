@@ -8,7 +8,7 @@
       <div class="row" style="margin-left:30px; margin-right:30px">
         <div style="padding:3px" class="col-md-7">
           <v-hover v-slot:default="{ hover }">
-            <v-card class="cardB" max-width height="300">
+            <v-card class="cardA" max-width height="300">
               <div>
                 <div style="padding:5%; color:white; font-weight: bold;">Capacity Development</div>
 
@@ -48,7 +48,7 @@
         </div>
         <div style="padding:3px" class="col-md-12">
           <v-hover v-slot:default="{ hover }">
-            <v-card class="cardB" max-width height="300">
+            <v-card class="cardC" max-width height="300">
               <div>
                 <div style="padding:5%; color:white; font-weight: bold;">Digital Inclusion</div>
 
@@ -68,7 +68,7 @@
         </div>
         <div style="padding:3px" class="col-md-5">
           <v-hover v-slot:default="{ hover }">
-            <v-card class="cardB" max-width height="300">
+            <v-card class="cardD" max-width height="300">
               <div>
                 <div style="padding:5%; color:white; font-weight: bold;">Train The Trainer</div>
 
@@ -88,7 +88,7 @@
         </div>
         <div style="padding:3px" class="col-md-7">
           <v-hover v-slot:default="{ hover }">
-            <v-card class="cardB" max-width height="300">
+            <v-card class="cardE" max-width height="300">
               <div>
                 <div style="padding:5%; color:white; font-weight: bold;">Internship</div>
 
@@ -142,8 +142,24 @@ export default {
 .animate__animated.animate__backInDown {
   --animate-duration: 0.5s;
 }
+.cardA {
+  background-image: url("../assets/capacityIDE1.png");
+  background-size: cover;
+}
 .cardB {
-  background-image: url("../assets/girlLib.jpg");
+  background-image: url("../assets/sport3IDE.png");
+  background-size: cover;
+}
+.cardC {
+  background-image: url("../assets/digitIDE1.png");
+  background-size: cover;
+}
+.cardD {
+  background-image: url("../assets/trainIDE2.png");
+  background-size: cover;
+}
+.cardE {
+  background-image: url("../assets/train1.svg");
   background-size: cover;
 }
 .card-text {
@@ -153,7 +169,13 @@ export default {
   padding-right: 5%;
   font-size: 20px;
 }
+.cardA:hover {
+  background: rgba(9, 46, 43, 1);
+}
 .cardB:hover {
+  background: rgba(9, 46, 43, 1);
+}
+.cardC:hover {
   background: rgba(9, 46, 43, 1);
 }
 
