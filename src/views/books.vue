@@ -14,9 +14,9 @@
           height="400"
         >
           <v-carousel-item v-for="(slide, i) in slides" :key="i">
-            <v-sheet :color="colors[i]" height="100%">
+            <v-sheet style="background: rgba(0, 0, 0, 0.3)" height="100%">
               <v-row class="fill-height" align="center" justify="center">
-                <div class="display-3">{{ slide }} </div>
+                <div class="display-3">{{ slide }}</div>
               </v-row>
             </v-sheet>
           </v-carousel-item>
@@ -51,10 +51,11 @@
             </div>
           </div>
 
-          <div style="  z-index:200" class="col-sm-2 col-2">
+             <div style="  z-index:200" class="col-sm-2 col-2 ">
             <div class="row">
-              <div style="0px 15px 0px; color:white" class="cart">
+              <div style="0px 15px 0px; color:white ; padding-left:100%" >
                 <v-badge
+                 class=""
                   bordered
                   :content="quantity"
                   :value="quantity"
@@ -76,20 +77,20 @@
     >WHERE ALL STORIES BEGIN</div>
 
     <div id="app" style>
-      <vue-position-sticky :offsetTop="150" style="z-index:-2000">
+      <vue-position-sticky :offsetTop="150" style="z-index:-200">
         <div class="cart" v-show="showCart">
           <div v-show="items.length > 0" style="position: ; background-color:#1b6761">
             <ul>
               <li v-for="(item, i) in items" :key="i" transition="fade">
-                <div style="font-family:Alegraya; color:white; margin:0px" class="row">
-                  <div class="col-8">
+                <div style="font-family:Alegraya; color:white; margin:0px; padding:0px" class="row">
+                  <div class="col-10" style="text-align:left">
                     <strong>{{ item.quantity }}X</strong>
                     - {{ item.title }}
                   </div>
 
                   <v-icon
-                    style="margin:0px"
-                    class="col-4"
+                    style="margin:0px; "
+                    class="col-2"
                     size="20"
                     color="white"
                     right
@@ -354,29 +355,28 @@ margin-top:20px"
 
     <div class="row" v-show="showLessBooks==false" style="margin-left:5px; margin-right:5px">
       <div v-for="(item,i) in  shopsToDisplay" :key="i">
-     
-          <div class="m-3 bookSize">
-            <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
-            <div style="background-color:white; padding-top:10px">
-              <div>
-                <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                  <div class="card-title" style=";font-size:15px;color: #092E2B;">
-                    <strong>{{ item.title }}</strong>
-                    <div style="font-size:12px;">By Austin MAikano</div>
-                    <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
-                  </div>
+        <div class="m-3 bookSize">
+          <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
+          <div style="background-color:white; padding-top:10px">
+            <div>
+              <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
+                <div class="card-title" style=";font-size:15px;color: #092E2B;">
+                  <strong>{{ item.title }}</strong>
+                  <div style="font-size:12px;">By Austin MAikano</div>
+                  <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
                 </div>
               </div>
             </div>
+          </div>
 
-            <button
-              type="button"
-              @click="addToCart(item)"
-              data-dismiss="modal"
-              style="background-color:rgb(0, 204, 0)"
-              class="btn btn-block"
-            >Add to cart</button>
-             </div>
+          <button
+            type="button"
+            @click="addToCart(item)"
+            data-dismiss="modal"
+            style="background-color:rgb(0, 204, 0)"
+            class="btn btn-block"
+          >Add to cart</button>
+        </div>
       </div>
     </div>
   </div>
@@ -407,7 +407,13 @@ export default {
       "deep-purple accent-4",
     ],
     model: null,
-    slides: ["African Literature", "Kids Novels", "Science and Tech", "GRE | GMAT | SAT", "Free Books"],
+    slides: [
+      "African Literature",
+      "Kids Novels",
+      "Science and Tech",
+      "GRE | GMAT | SAT",
+      "Free Books",
+    ],
     category: [
       {
         name: "African Literature",
@@ -712,11 +718,36 @@ li {
 .fade-leave {
   opacity: 0;
 }
-
 .cart {
-  padding-left: 100%;
+  
 }
 
+.cart > div {
+  z-index: 200;
+  background: #fff;
+  padding: 20px 30px;
+  position: absolute;
+  right: 30px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.cart > div div {
+  text-align: center;
+}
+.cart ul,
+.cart li,
+.cart p {
+  margin-bottom: 0;
+}
+.cart button {
+  margin: 20px 0 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.cart input {
+  width: 30px;
+}
 .shop h3 {
   position: absolute;
   top: -85px;

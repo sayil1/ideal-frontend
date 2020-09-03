@@ -8,24 +8,27 @@
       <div class="row" style="margin-left:30px; margin-right:30px">
         <div style="padding:3px" class="col-md-7">
           <v-hover v-slot:default="{ hover }">
-            <v-card class="cardA" max-width height="300">
-              <div>
-                <div style="padding:5%; color:white; font-weight: bold;">Capacity Development</div>
+            <router-link  to="capacity" style>
+              <v-card class="cardA" max-width height="300">
+                <div>
+                  <div style="padding:5%; color:white; font-weight: bold;">Capacity Development</div>
 
-                <div
-                  transition="slide-x-transition"
-                  v-if="hover"
-                  class="d-flex darken-2 v-card--reveal white--text"
-                  style="height: 100%;"
-                >
                   <div
-                    class="animate__animated animate__fadeIn card-text"
-                  >We focus on increasing organizations' strength by measuring internal successes, constraints and external impacts.</div>
+                    transition="slide-x-transition"
+                    v-if="hover"
+                    class="d-flex darken-2 v-card--reveal white--text"
+                    style="height: 100%;"
+                  >
+                    <div
+                      class="animate__animated animate__fadeIn card-text"
+                    >We focus on increasing organizations' strength by measuring internal successes, constraints and external impacts.</div>
+                  </div>
                 </div>
-              </div>
-            </v-card>
+              </v-card>
+            </router-link>
           </v-hover>
         </div>
+
         <div style="padding:3px" class="col-md-5">
           <v-hover v-slot:default="{ hover }">
             <v-card class="cardB" max-width height="300">
@@ -143,24 +146,26 @@ export default {
   --animate-duration: 0.5s;
 }
 .cardA {
-  background-image: url("../assets/capacityIDE1.png");
+  background-image: url("../assets/slide3.jpg");
   background-size: cover;
 }
 .cardB {
-  background-image: url("../assets/sport3IDE.png");
+  background-image: url("../assets/sport-what-we-do.jpg.jpg");
   background-size: cover;
 }
 .cardC {
-  background-image: url("../assets/digitIDE1.png");
+  background-image: url("../assets/digital-what-we-do.jpg");
   background-size: cover;
+  background-position: center;
 }
 .cardD {
-  background-image: url("../assets/trainIDE2.png");
+  background-image: url("../assets/trainb.jpg");
   background-size: cover;
 }
 .cardE {
-  background-image: url("../assets/train1.svg");
+  background-image: url("../assets/intern-what-we-do.jpg");
   background-size: cover;
+  background-position: center;
 }
 .card-text {
   color: white;
@@ -176,6 +181,12 @@ export default {
   background: rgba(9, 46, 43, 1);
 }
 .cardC:hover {
+  background: rgba(9, 46, 43, 1);
+}
+.cardD:hover {
+  background: rgba(9, 46, 43, 1);
+}
+.cardE:hover {
   background: rgba(9, 46, 43, 1);
 }
 

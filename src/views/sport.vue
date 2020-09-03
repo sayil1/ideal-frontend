@@ -79,12 +79,12 @@ letter-spacing: 0.02em;"
         </div>
       </div>
     </div>
-    <hr style="border: 0.5px solid #639B97;" />
+    <!-- <hr style="border: 0.5px solid #639B97;" /> -->
     <div class="body" style="padding-top:20px">
       
-      <div style>
+      <!-- <div style>
         <img class="responsiveIM" src="../assets/sportIDE.jpg" alt style="" />
-      </div>
+      </div> -->
 
       <div
         style="font-family: SF UI Display;
@@ -92,7 +92,7 @@ letter-spacing: 0.02em;"
 font-style: normal;
 font-weight: bold;
 font-size: 35px;
-line-height: 108.34%; padding-top:40px; padding-bottom:40px"
+line-height: 108.34%; padding-bottom:40px"
       >Barriers to sports Development:</div>
       <div
         style="font-family: SF UI Display;

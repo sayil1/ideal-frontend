@@ -110,8 +110,8 @@
                 </ul>
               </li>-->
               <li class="nav-item dropdown">
-                <router-link class="route" to="what-we-do">
-                  <a
+               
+                  <a href="./../views/whatWeDo.vue"
                     class="nav-link dropdown-toggle"
                     id="dropdown1"
                     data-toggle="dropdown"
@@ -119,7 +119,7 @@
                     aria-expanded="false"
                     style="color:white"
                   >WHAT WE DO</a>
-                </router-link>
+             
                 <ul class="dropdown-menu" aria-labelledby>
                   <router-link class="route" to="capacity">
                     <li class="dropdown-item">CAPACITY DEVELOPMENT</li>

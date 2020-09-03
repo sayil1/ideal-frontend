@@ -83,7 +83,7 @@ line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;"
                 >
-                  <router-link to="cont">Contact us</router-link>for more information
+                  <router-link to="cont">Contact us</router-link> for more information
                 </div>
               </div>
             </div>

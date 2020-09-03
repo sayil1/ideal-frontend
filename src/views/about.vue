@@ -68,7 +68,7 @@ padding:50px"
             :key="imageIndex"
             @click="index = imageIndex"
           >
-            <v-img :src="image" :lazy-src="image" class="grey lighten-2 image"></v-img>
+            <v-img :src="image"  class="grey lighten-2 image"></v-img>
             <!-- <img :src="image" class="image" alt=""> -->
           </div>
 
