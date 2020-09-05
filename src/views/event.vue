@@ -32,18 +32,68 @@ color: #1B6761;"
               @click="snackbar = true; onCopy()"
             >mdi-content-copy</v-icon>
 
-            <a
-              style="text-decoration:none"
-              class="resp-sharing-button__link"
-              href="https://twitter.com/intent/tweet/?text=.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com"
-              target="_blank"
-              rel="noopener"
-              aria-label
-            >
-              <v-icon size="20" color="orange darken-2" right>mdi-twitter</v-icon>
-            </a>
+            <v-icon
+              style="padding-left:5%"
+              size="20"
+              color="orange darken-2"
+              data-toggle="modal"
+              data-target="#staticBackdrop"
+            >mdi-share-variant</v-icon>
           </v-card-actions>
         </v-card>
+
+        <!-- modal for social shares -->
+
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-backdrop="static"
+          data-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Share this event with...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <vue-goodshare-twitter
+                  button_design="gradient"
+                  page_url="https://vuejsfeed.com/"
+                  has_icon
+                  has_square_edges
+                ></vue-goodshare-twitter>
+                <vue-goodshare-telegram
+                  button_design="gradient"
+                  page_url="https://vuejsfeed.com/"
+                  has_icon
+                  has_square_edges
+                ></vue-goodshare-telegram>
+                <vue-goodshare-facebook
+                  page_url="https://github.com/koddr/vue-goodshare"
+                  title_social
+                  has_icon
+                ></vue-goodshare-facebook>
+                  <vue-goodshare-whatsapp
+                  page_url="https://github.com/koddr/vue-goodshare"
+                  title_social
+                  has_icon
+                ></vue-goodshare-whatsapp>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- social share ends here -->
+
         <div style="margin-left:20px" class="col-md-6">
           <div class="col-md-8">
             <div class="card-body">
@@ -175,6 +225,10 @@ color: #1B6761;
 </template>
 
 <script>
+import VueGoodshareFacebook from "vue-goodshare/src/providers/Facebook.vue";
+import VueGoodshareTwitter from "vue-goodshare/src/providers/Twitter.vue";
+import VueGoodshareTelegram from "vue-goodshare/src/providers/Telegram.vue";
+import VueGoodshareWhatsapp from "vue-goodshare/src/providers/WhatsApp.vue";
 import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
@@ -187,11 +241,15 @@ export default {
   //   title: "sayil",
   //   titleTemplate: '%s | vue-meta Example App'
   // },
-  
+
   components: {
     nava,
     foota,
     loader,
+    VueGoodshareFacebook,
+    VueGoodshareTwitter,
+    VueGoodshareTelegram,
+    VueGoodshareWhatsapp,
   },
 
   data: () => ({
