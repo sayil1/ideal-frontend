@@ -62,28 +62,39 @@ color: #1B6761;"
                 </button>
               </div>
               <div class="modal-body">
+                
                 <vue-goodshare-twitter
+                 data-toggle="tooltip" data-placement="top" title="Twitter"
                   button_design="gradient"
-                  page_url="https://vuejsfeed.com/"
+                  :page_url=eventUrl
                   has_icon
                   has_square_edges
                 ></vue-goodshare-twitter>
                 <vue-goodshare-telegram
+                 data-toggle="tooltip" data-placement="top" title="Telegram"
                   button_design="gradient"
                   page_url="https://vuejsfeed.com/"
                   has_icon
                   has_square_edges
                 ></vue-goodshare-telegram>
                 <vue-goodshare-facebook
-                  page_url="https://github.com/koddr/vue-goodshare"
+                 data-toggle="tooltip" data-placement="top" title="Facebook"
+                   :page_url=eventUrl
                   title_social
                   has_icon
                 ></vue-goodshare-facebook>
-                  <vue-goodshare-whatsapp
+                <vue-goodshare-whatsapp
+                 data-toggle="tooltip" data-placement="top" title="Whatsapp"
                   page_url="https://github.com/koddr/vue-goodshare"
                   title_social
                   has_icon
                 ></vue-goodshare-whatsapp>
+                  <VueGoodshareLinkedIn
+                   data-toggle="tooltip" data-placement="top" title="LinkedIn"
+                  page_url="https://github.com/koddr/vue-goodshare"
+                  title_social
+                  has_icon
+                ></VueGoodshareLinkedIn>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -229,6 +240,7 @@ import VueGoodshareFacebook from "vue-goodshare/src/providers/Facebook.vue";
 import VueGoodshareTwitter from "vue-goodshare/src/providers/Twitter.vue";
 import VueGoodshareTelegram from "vue-goodshare/src/providers/Telegram.vue";
 import VueGoodshareWhatsapp from "vue-goodshare/src/providers/WhatsApp.vue";
+import VueGoodshareLinkedIn from "vue-goodshare/src/providers/LinkedIn.vue";
 import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
@@ -236,12 +248,15 @@ import foota from "../components/footer";
 import loader from "../components/loader";
 
 export default {
-  // metaInfo: {
 
-  //   title: "sayil",
-  //   titleTemplate: '%s | vue-meta Example App'
-  // },
-
+// metaInfo: {
+//       title: 'My Example App',
+//       titleTemplate: '%s - Yay!',
+//       htmlAttrs: {
+//         lang: 'en',
+//         amp: true
+//       }
+//     },
   components: {
     nava,
     foota,
@@ -250,11 +265,13 @@ export default {
     VueGoodshareTwitter,
     VueGoodshareTelegram,
     VueGoodshareWhatsapp,
+    VueGoodshareLinkedIn,
   },
 
   data: () => ({
     loading: false,
     event: {},
+    eventUrl :"",
     errors: [],
     eventId: "",
     dialog: false,
@@ -283,11 +300,21 @@ export default {
           content:
             "Epiloge is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work.",
         },
-        {
-          property: "og:title",
-          content: "Epiloge - Build your network in your field of interest",
+         {
+          property: "og:description",
+          content: `${this.event.description}`,
         },
-        { property: "og:site_name", content: "Epiloge" },
+         {
+          property: "og:title",
+          content: `${this.event.title}`,
+        },
+        
+        {
+          property: "twitter:title",
+          content: "Ideal It center, Asaba TT",
+        },
+        { property: "og:site_name", content: "Ideal IT Center" },
+           { property: "og:image", content: `${this.event.imagesPath}`},
         { property: "og:type", content: "website" },
         { name: "robots", content: "index,follow" },
       ],
@@ -296,9 +323,14 @@ export default {
 
   created() {
     this.initialize();
+     this.getUrl()
   },
 
   methods: {
+     getUrl(){
+       let url = serv.getUrl();
+      this.eventUrl = `${url}/event?eid=${this.$route.query.eid}`;
+    },
     show() {
       // eslint-disable-next-line no-console
       console.log(this.events, "show");

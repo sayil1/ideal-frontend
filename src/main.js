@@ -9,7 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import BootstrapVue from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
-import VueMeta from 'vue-meta'
+
 import VueClipboard from 'vue-clipboard2'
 import Sticky from 'vue-sticky-directive'
 import vuePositionSticky from 'vue-position-sticky'
@@ -19,14 +19,12 @@ import 'aos/dist/aos.css'
 
 import CoolLightBox from 'vue-cool-lightbox'
 import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
-
+import Meta from "vue-meta";
+Vue.use(Meta);
 Vue.use(CoolLightBox)
 
 
 Vue.use(BootstrapVue)
-Vue.use(VueMeta, {
-  keyName: 'head'
-});
 
 Vue.use(require("vue-moment"));
 Vue.use(VueClipboard)
@@ -40,7 +38,7 @@ new Vue({
   router,
   store,
   vuetify,
-  created () {
+  created() {
     AOS.init()
   },
 
