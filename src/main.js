@@ -20,7 +20,14 @@ import 'aos/dist/aos.css'
 import CoolLightBox from 'vue-cool-lightbox'
 import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 import Meta from "vue-meta";
-Vue.use(Meta);
+Vue.use(Meta,
+   // optional pluginOptions
+   {
+    keyName: 'metaInfo', // the component option name that vue-meta looks for meta info on.
+    attribute: "a", // the attribute name vue-meta adds to the tags it observes
+   
+  }
+   );
 Vue.use(CoolLightBox)
 
 

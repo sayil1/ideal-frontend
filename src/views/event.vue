@@ -85,7 +85,7 @@ color: #1B6761;"
                 ></vue-goodshare-facebook>
                 <vue-goodshare-whatsapp
                  data-toggle="tooltip" data-placement="top" title="Whatsapp"
-                  page_url="https://github.com/koddr/vue-goodshare"
+                    :page_url=eventUrl
                   title_social
                   has_icon
                 ></vue-goodshare-whatsapp>
@@ -314,6 +314,7 @@ export default {
           content: "Ideal It center, Asaba TT",
         },
         { property: "og:site_name", content: "Ideal IT Center" },
+          { property: "og:url", content: `${this.eventUrl}` },
            { property: "og:image", content: `${this.event.imagesPath}`},
         { property: "og:type", content: "website" },
         { name: "robots", content: "index,follow" },
