@@ -40,8 +40,9 @@ export default {
       { property: "og:site_name", content: "Epiloge" },
       { property: "og:type", content: "website" },
       { name: "robots", content: "index,follow" },
+      
     ],
- 
+   __dangerouslyDisableSanitizers: ['script'],
   },
 };
 </script>
