@@ -48,14 +48,7 @@ letter-spacing: 0.02em;"
             <div class>
               <p
                 class="car-text first"
-                style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
+               
               >
                 <strong>Train-the-trainers</strong>
                 <br />We are empowering Trainers with the knowledge, abilities, and attitudes, in an integrated way needed for the development of their vocation.
@@ -129,6 +122,37 @@ export default {
   width: 100%;
   height: auto;
 }
+ .body {
+    margin:50px
+  }
+
+  .conts {
+    background-image: url("../assets/trainIDE2.png");
+
+  }
+  img {
+    padding-top: 80px;
+  }
+  .header {
+    height: 500px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 25%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 70px;
+    padding-left: 150px;
+    color: white;
+  }
+  .hold-header {
+    padding-top: 60px;
+  }
+
+
 @media only screen and (max-width: 400px) {
   .first {
     /* padding: 30px; */
@@ -148,11 +172,11 @@ export default {
     padding-top: 10px;
     text-align: left;
   }
- .conts {
+ /* .conts {
     background-image: url("../assets/trainIDE2.png");
     background-size: contain;
     background-position: center center;
-  }
+  } */
     .header {
     height: 250px;
     position: relative;
@@ -200,29 +224,6 @@ export default {
     margin-top: 30px;
   }
 
-  /* .first {
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-  } */
-  .car {
-    padding: 10px;
-  }
-  .car-head {
-    font-size: 34px;
-    text-align: center;
-    font-family: "Lora";
-  }
-  .car-text {
-    font-size: 21px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-    border-radius: 45px;
-    text-align: left;
-    font-family: "Alegreya";
-  }
   .conts {
     background-image: url("../assets/trainIDE2.png");
 

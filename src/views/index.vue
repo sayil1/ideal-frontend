@@ -1237,10 +1237,10 @@ header {
     /* margin-bottom: 90px; */
   }
   .carouselHolder {
-    margin-top: 15px;
+    margin-top: 25px;
     margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* margin-left: 10px;
+    margin-right: 10px; */
   }
 }
 

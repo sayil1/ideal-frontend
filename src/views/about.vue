@@ -538,7 +538,7 @@ template {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 300px;
-    font-size: 18px;
+    font-size: 15px;
   }
   .greenBg {
     background-image: url("../assets/greenbgg.jpg");

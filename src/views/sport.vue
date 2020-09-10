@@ -3,7 +3,7 @@
     <nava />
 
     <!-- card -->
-     <div class="hold-header">
+    <div class="hold-header">
       <div class="conts">
         <div class="header">
           <span class="header-text" style=" ">
@@ -15,101 +15,50 @@
     </div>
 
     <div class="body" style="background: #F6F6F6">
-      <div class="row" style="background-color:rgb(255, 255, 255)">
-        <div class="col-sm-12 col-md-12">
-          <div class="first" style>
-            <div class>
-              <p
-                class="car-text first"
-                style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-              >
-                Our sport development projects aim at devising better and more effective ways of promoting interest, participation and performance of sport in communities.
-                <br />So far, we depend mainly on collaboration, partnerships and networking with a wide range of international organisations, community groups, local authorities and voluntary groups for sports programmes that go a long way in the attainment of personal and community goals while promoting peace and development.
-                <br />
-                <br />
-                <strong>Building true sportsmanship-</strong>
-                we encourage children and youth through sporting activities to learn to act with fairness and empathy, acquire life skills such as teamwork, leadership, problem solving and interpersonal skill. Building self-esteem, improving academic performance, and a sense of hope for the youth. <br>
-                We are recording lesser cases of drop-outs and higher aspiration to further studies.
-              </p>
-            </div>
-          </div>
+      <div>
+        <div>
+          <p class="small-text">
+            Our sport development projects aim at devising better and more effective ways of promoting interest, participation and performance of sport in communities.
+            <br />So far, we depend mainly on collaboration, partnerships and networking with a wide range of international organisations, community groups, local authorities and voluntary groups for sports programmes that go a long way in the attainment of personal and community goals while promoting peace and development.
+            <br />
+            <br />
+            <strong>Building true sportsmanship-</strong>
+            we encourage children and youth through sporting activities to learn to act with fairness and empathy, acquire life skills such as teamwork, leadership, problem solving and interpersonal skill. Building self-esteem, improving academic performance, and a sense of hope for the youth.
+            <br />We are recording lesser cases of drop-outs and higher aspiration to further studies.
+          </p>
         </div>
       </div>
-    </div>
-    <div class="row body-text car-text first" style="">
-     <div>
-       
-     </div>
-      <div class="col-md-9">
-        <div
-          style="font-family: SF UI Display;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 108.34%;"
-        >Why sports Development?</div>
-        <br />
-        <div
-          style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-        >
+
+      <div class style>
+        <div class="big-text">Why sports Development?</div>
+
+        <div class="small-text">
           We offer training and consultancy services in good governance and leadership. They are both inextricably intertwined in building our society. On completion of courses in this category, participants should be able to:
           <br />
           <br />• To advance and promote sports opportunities for youth in local communities
-          <br />
+         
           <br />• Removing barriers to participation
-          <br />
+        
           <br />• Developing personal, social and community development.
-          <br />
+         
           <br />• Teaching real-life skills
           <br />• Create sporting new sporting facilities, rehabilitation and Upgrade of old sporting facilities.
         </div>
       </div>
     </div>
-    <!-- <hr style="border: 0.5px solid #639B97;" /> -->
-    <div class="body" style="padding-top:20px">
-      
-      <!-- <div style>
-        <img class="responsiveIM" src="../assets/sportIDE.jpg" alt style="" />
-      </div> -->
 
-      <div
-        style="font-family: SF UI Display;
-        color: #092E2B;
-font-style: normal;
-font-weight: bold;
-font-size: 35px;
-line-height: 108.34%; padding-bottom:40px"
-      >Barriers to sports Development:</div>
-      <div
-        style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-      >
+    <!-- <hr style="border: 0.5px solid #639B97;" /> -->
+    <div class="body" >
+     
+
+      <div class="big-text">Barriers to sports Development:</div>
+      <div class="small-text">
         There is a considerable gap comparing local communities in our region to other developed areas of the world in sports participation. Through our interactions and activities so far, we have identified two categories of barriers:
         <br />
         <br />
         <strong>Social pressures</strong>
         <br />Societal, families and peers can deter individuals from actively participating in sports.
-        <br />
+     
         <br />• societal beliefs and traditions within a community
         <br />• the parental expectation of their children and also Little or no family support in sporting activities
         <br />• The conflicting interest in recreational activities.
@@ -123,41 +72,24 @@ letter-spacing: 0.02em;"
         <br />• access to sports equipment and facilities
       </div>
 
-      <div
-        style="font-family: SF UI Display;
-       color: #092E2B;
-font-style: normal;
-font-weight: bold;
-font-size: 35px;
-line-height: 108.34%; padding-top:40px; padding-bottom:40px"
-      >
+      <div class="big-text">
         How IDEaL is overcoming barriers
-        <br />to Sports Development:
+       to Sports Development:
       </div>
       <br />
-      <div
-        style="font-family: SF UI Display;
-            color: #1B6761;
-            
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-      >
+      <div class="small-text">
         • Recognize what motivates youths to engage in sports
-        <br />
+        
         <br />• Set up the critical partnership with sports equipment and service providers
-        <br />
+       
         <br />• Team up with schools and communities to build a more inclusive and positive sports culture among individuals.
-        <br />
+      
         <br />• Boosting confidence building in individuals and encouraging them to engage in suitable and enjoyable sports.
-        <br />
+      
         <br />• Supply of sports equipment and building sporting infrastructure around the country
-        <br />
+       
         <br />• We are distributing sports gear at free or discount prices.
-        <br />
+       
         <br />• Ensure that women and girls, irrespective of abilities or experience, get the opportunity to be an active part of activities.
       </div>
     </div>
@@ -173,7 +105,7 @@ import foota from "../components/footer";
 export default {
   components: {
     nava,
-    foota
+    foota,
   },
   data: () => ({
     image: true,
@@ -186,14 +118,14 @@ export default {
       {
         text: "Customer Service Training",
         icon: "mdi-face-agent",
-        color: "red"
+        color: "red",
       },
       {
         text: "Soft skills Training for Employees",
         icon: "mdi-laptop",
-        color: "brown"
-      }
-    ]
+        color: "brown",
+      },
+    ],
   }),
 
   created() {
@@ -210,8 +142,8 @@ export default {
         // alert(this.image);
         this.image = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
@@ -234,114 +166,14 @@ export default {
 .responsiveIM {
   width: 100%;
   height: auto;
+
 }
-
-@media only screen and (max-width: 400px) {
-  .body {
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  .first {
-  }
-  .car {
-    font-size: 2px;
-    margin: 0px;
-  }
-  .car-head {
-    font-size: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: "lora";
-  }
-  .car-text {
-    font-size: 14px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    padding-top: 20px;
-    text-align: left;
-  }
-  .conts {
-    background-image: url("../assets/sport3IDE.png");
-    background-size: contain;
-    background-position: center center;
-  }
-  .body-text{
-    padding:40px;
-     padding-left:auto
-   
-  }
-    .header {
-    height: 250px;
-    position: relative;
-  }
-  .header-text {
-    margin: 0;
-    position: absolute;
-    top: 35%;
-    font-family: SF UI Display;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    padding-left: 30px;
-    color: white;
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #f5cf8e; /* Yellow */
-  }
-    .header {
-    height: 250px;
-    position: relative;
-  }
-  .header-text {
-    margin: 0;
-    position: absolute;
-    top: 35%;
-    font-family: SF UI Display;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    padding-left: 30px;
-    color: white;
-  }
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-  .body {
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-  }
-
-  .first {
-    padding-top: 20px;
-  }
-  .car {
-    padding: 30px;
-  }
-  .car-head {
-    font-size: 34px;
-    text-align: center;
-    font-family: "Lora";
-  }
-  .car-text {
-    font-size: 21px;
-    /* background-color: rgba(21, 22, 21, 0.4); */
-    height: 100%;
-    padding: 10px;
-    text-align: center;
-    border-radius: 45px;
-    text-align: left;
-    font-family: "Alegreya";
-  }
-  .conts {
+ .conts {
     background-image: url("../assets/sport3IDE.png");
   }
-  .body-text{
-    padding:50px; padding-left:90px
+  .body-text {
+    padding: 50px;
+    padding-left: 90px;
   }
 
   .header {
@@ -362,5 +194,93 @@ export default {
   .hold-header {
     padding-top: 60px;
   }
+
+@media only screen and (max-width: 400px) {
+   .small-text {
+    font-family: SF UI Display;
+    color: #1b6761;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+  
+  }
+  .big-text {
+    font-family: SF UI Display;
+    color: #092e2b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 108.34%;
+    padding-top: 10px;
+    text-align: center;
+  }
+   .header {
+    height: 250px;
+    position: relative;
+  }
+  .header-text {
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    font-family: SF UI Display;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 30px;
+    color: white;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .small-text {
+    font-family: SF UI Display;
+    color: #1b6761;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+  
+  }
+  .big-text {
+    font-family: SF UI Display;
+    color: #092e2b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 108.34%;
+    padding-top: 10px;
+    text-align: center;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .small-text {
+    font-family: SF UI Display;
+    color: #1b6761;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+  
+  }
+  .big-text {
+    font-family: SF UI Display;
+    color: #092e2b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 108.34%;
+    padding-top: 10px;
+  }
+ 
 }
 </style>

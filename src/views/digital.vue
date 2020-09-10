@@ -15,50 +15,20 @@
       </div>
     </div>
 
-    <div class="" style="background: #F6F6F6">
-      <div class="row" style="background-color:rgb(255, 255, 255)">
-        <div class="col-sm-12 col-md-12">
-          <div class="" style>
-            <div class>
-              <p
-                class="car-text first"
-                style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-              >We provide a practical approach to addressing the needs of individuals and communities to embrace the digital age fully. As the digital revolution intensifies, the internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
-            </div>
+    <div class="body small-text" >
+      <div class style="background: #F6F6F6">
+        <div class style>
+          <div class>
+            <p>We provide a practical approach to addressing the needs of individuals and communities to embrace the digital age fully. As the digital revolution intensifies, the internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
           </div>
         </div>
       </div>
-<!-- 
-       <img src="../assets/slide5.jpg" alt style="width: 70% he;
- " /> -->
 
-      <!-- <img src="../assets/black.jpg" alt style="width: 100%;
-height: 400px; padding-top:80px" /> -->
-    </div>
-
-    <div class="" style="background: #F6F6F6">
-      <div class="row" style="background-color:rgb(255, 255, 255)">
-        <div class="col-sm-12 col-md-12">
-          <div class="" style>
+      <div class style="background: #F6F6F6">
+       
+          <div class style>
             <div class>
-              <p
-                class="car-text first"
-                style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
-              >
+              <p>
                 We work to ensure Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) to participate in and benefit from today's growing knowledge and information society. IDEaL’s Digital inclusion actions cover the gap in these areas:
                 <br />We promote digital inclusion in various ways:
                 <br />
@@ -72,11 +42,10 @@ letter-spacing: 0.02em;"
                 <br />•Providing Accessibility services designed to meet users’ needs, including those dependent on assistive technology to access digital services.
               </p>
             </div>
-          </div>
+       
         </div>
       </div>
     </div>
-
     <foota />
   </div>
 </template>
@@ -88,7 +57,7 @@ import foota from "../components/footer";
 export default {
   components: {
     nava,
-    foota
+    foota,
   },
   data: () => ({
     image: true,
@@ -101,14 +70,14 @@ export default {
       {
         text: "Customer Service Training",
         icon: "mdi-face-agent",
-        color: "red"
+        color: "red",
       },
       {
         text: "Soft skills Training for Employees",
         icon: "mdi-laptop",
-        color: "brown"
-      }
-    ]
+        color: "brown",
+      },
+    ],
   }),
 
   created() {
@@ -125,17 +94,13 @@ export default {
         // alert(this.image);
         this.image = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
 
 <style scoped lang="css">
-template {
-  margin-left: 40px;
-  margin-right: 40px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
+
 .div1 {
   background-image: url("../assets/profb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
@@ -154,14 +119,53 @@ template {
 .body {
   margin: 50px;
 }
-
-@media only screen and (max-width: 400px) {
-.first {
-    padding-top: 0px;
-    padding-left: 1px;
-    padding-right: 1px;
+ .small-text {
+    font-family: SF UI Display;
+    color: #1b6761;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+  
+  }
+  .big-text {
+    font-family: SF UI Display;
+    color: #092e2b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 108.34%;
+    padding-top: 10px;
+    text-align: center;
   }
 
+@media only screen and (max-width: 400px) {
+.body {
+  margin: 20px;
+}
+ .small-text {
+    font-family: SF UI Display;
+    color: #1b6761;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 29px;
+    text-align: justify;
+    letter-spacing: 0.02em;
+  
+  }
+  .big-text {
+    font-family: SF UI Display;
+    color: #092e2b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 108.34%;
+    padding-top: 10px;
+    text-align: center;
+  }
   .conts {
     background-image: url("../assets/digitIDE1.png");
     background-size: contain;
@@ -193,18 +197,7 @@ template {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-  .first {
-    padding-top: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-  .car {
-  }
 
-  .car-text {
-    font-family: "Alegreya";
-    text-align: left;
-  }
   .cont {
     padding-top: 100px;
   }
