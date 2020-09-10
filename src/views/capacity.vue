@@ -209,7 +209,7 @@ letter-spacing: 0.02em;
             color: #1B6761;
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
+font-size: 15px;
 line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em;

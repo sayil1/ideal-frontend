@@ -355,8 +355,7 @@ export default {
         "https://res.cloudinary.com/sayil/image/upload/v1596632927/ideal-gallery/girlLib.jpg",
         "https://res.cloudinary.com/sayil/image/upload/v1596634756/ideal-gallery/train2IDE.png",
         "https://res.cloudinary.com/sayil/image/upload/v1596281094/ideal-gallery/car3.jpg",
-        "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/nature-quotes-1557340276.jpg?crop=0.666xw:1.00xh;0.168xw,0&resize=640:*",
-        "https://res.cloudinary.com/sayil/image/upload/v1595445197/hkhphgwxf0dwgaijdvqp.png",
+      
       ],
       hooperSettings: {
         itemsToShow: null,
@@ -539,7 +538,7 @@ template {
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 300px;
-    font-size: 15px;
+    font-size: 18px;
   }
   .greenBg {
     background-image: url("../assets/greenbgg.jpg");

@@ -20,7 +20,7 @@
       </div>
     </div>
 
-    <div style="padding:40px">
+    <div style="padding:20px">
       <div class="row">
         <div class="col-sm-12 col-md-12">
           <div

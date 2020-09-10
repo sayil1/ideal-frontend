@@ -458,7 +458,7 @@ font-size: 14px;"
         >Quick link to the most searched offer</div>
       </div>
       <div class="small">
-        <div class="row" style="margin-left:auto; margin-right:0">
+        <div class="row" >
           <div class="col-md-4" style="width: 18rem;">
             <div class="item" data-aos="fade-up">
               <router-link style="text-decoration:none" class="route" to="cont">
@@ -1036,7 +1036,7 @@ header {
   background-position: center -50px;
 }
 .div1 {
-  background-image: url("../assets/car1.jpg");
+  background-image: url("../assets/car1).jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -1054,7 +1054,7 @@ header {
   filter: grayscale(100%);
 }
 .div3 {
-  background-image: url("../assets/car3.jpg");
+  background-image: url("../assets/car33.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -1193,7 +1193,7 @@ header {
   .card2 {
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    height: 400px;
   }
   .card3 {
     margin-left: auto;
@@ -1283,7 +1283,7 @@ header {
   .card1 {
     margin-left: auto;
     margin-right: -60px;
-    height: 100%;
+    min-height: 100%;
   }
   .card1:hover {
     /* height:102% */
@@ -1291,7 +1291,7 @@ header {
   .card2 {
     margin-left: auto;
     margin-right: auto;
-    height: 100%;
+    min-height: 100%;
   }
   .card3 {
     margin-left: -60px;
