@@ -25,7 +25,7 @@ text-align: center;
 color: #092E2B;">
   Featured Contests
         </div>
-        <loader v-if="loading" />
+        <loader style="text-align:center; padding-top:40px" v-if="loading" />
       
       </div>
 
@@ -83,13 +83,14 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
-import loader from "../components/loader"
+import loader from "../components/loader";
 
 export default {
   components: {
     nava,
     foota,
-    loader
+    loader,
+   
   },
   data: () => ({
     contest: {},

@@ -56,17 +56,78 @@ color: #1B6761;"
               v-clipboard:error="onError"
               @click="snackbar = true; onCopy()"
             >mdi-content-copy</v-icon>
+              <v-icon
+              style="padding-left:5%"
+              size="20"
+              color="orange darken-2"
+              data-toggle="modal"
+              data-target="#staticBackdrop"
+            >mdi-share-variant</v-icon>
 
-            <a
-              style="text-decoration:none"
-              class="resp-sharing-button__link"
-              href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com"
-              target="_blank"
-              rel="noopener"
-              aria-label
-            >
-              <v-icon size="20" color="orange darken-2" right>mdi-twitter</v-icon>
-            </a>
+   <!-- modal for social shares -->
+
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-backdrop="static"
+          data-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Share this event with...</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                
+                <vue-goodshare-twitter
+                 data-toggle="tooltip" data-placement="top" title="Twitter"
+                  button_design="gradient"
+                  :page_url=eventUrl
+                  has_icon
+                  has_square_edges
+                ></vue-goodshare-twitter>
+                <vue-goodshare-telegram
+                 data-toggle="tooltip" data-placement="top" title="Telegram"
+                  button_design="gradient"
+                  page_url="https://vuejsfeed.com/"
+                  has_icon
+                  has_square_edges
+                ></vue-goodshare-telegram>
+                <vue-goodshare-facebook
+                 data-toggle="tooltip" data-placement="top" title="Facebook"
+                   :page_url=eventUrl
+                  title_social
+                  has_icon
+                ></vue-goodshare-facebook>
+                <vue-goodshare-whatsapp
+                 data-toggle="tooltip" data-placement="top" title="Whatsapp"
+                    :page_url=eventUrl
+                  title_social
+                  has_icon
+                ></vue-goodshare-whatsapp>
+                  <VueGoodshareLinkedIn
+                   data-toggle="tooltip" data-placement="top" title="LinkedIn"
+                  page_url="https://github.com/koddr/vue-goodshare"
+                  title_social
+                  has_icon
+                ></VueGoodshareLinkedIn>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- social share ends here -->
+
+            
           </v-card-actions>
         </v-card>
         <div style="margin-left:20px" class="col-md-6">
@@ -203,6 +264,11 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import VueGoodshareFacebook from "vue-goodshare/src/providers/Facebook.vue";
+import VueGoodshareTwitter from "vue-goodshare/src/providers/Twitter.vue";
+import VueGoodshareTelegram from "vue-goodshare/src/providers/Telegram.vue";
+import VueGoodshareWhatsapp from "vue-goodshare/src/providers/WhatsApp.vue";
+import VueGoodshareLinkedIn from "vue-goodshare/src/providers/LinkedIn.vue";
 
 export default {
   // metaInfo: {
@@ -212,7 +278,12 @@ export default {
   // },
   components: {
     nava,
-    foota
+    foota,
+       VueGoodshareFacebook,
+    VueGoodshareTwitter,
+    VueGoodshareTelegram,
+    VueGoodshareWhatsapp,
+    VueGoodshareLinkedIn,
   },
  
 
@@ -235,35 +306,47 @@ export default {
       email:""
     }
   }),
-    metaInfo () {
+   metaInfo() {
     return {
       title: `IDeal-IT | ${this.contest.title}`,
-      image:this.contest.imagesPath,
-       meta: [
-      { charset: 'utf-8' },
-      {
-        property: "twitter:title",
-        content: `IDeal-IT | ${this.contest.title}`,
-        // following template options are identical
-        // template: '%s - My page',
-       
-        vmid: 'twitter:title'
-      },
-       {
-        property: "twitter:title",
-        content: `IDeal-IT | ${this.contest.title}`,
-        // following template options are identical
-        // template: '%s - My page',
-       
-        vmid: 'twitter:title'
-      },]
-    }
+
+      meta: [
+        {
+          name: "description",
+          content:
+            "Epiloge is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work.",
+        },
+        {
+          property: "og:description",
+          content: `${this.event.description}`,
+        },
+        {
+          property: "og:title",
+          content: `${this.event.title}`,
+        },
+
+        {
+          property: "twitter:title",
+          content: "Ideal It center, Asaba TT",
+        },
+        { property: "og:site_name", content: "Ideal IT Center" },
+        { property: "og:url", content: `${this.eventUrl}` },
+        { property: "og:image", content: `${this.event.imagesPath}` },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
   },
   created() {
     this.initialize();
+     this.getUrl();
   },
   
   methods: {
+      getUrl() {
+      let url = serv.getUrl();
+      this.eventUrl = `${url}/contest?cid=${this.$route.query.cid}`;
+    },
     show() {
       // eslint-disable-next-line no-console
       console.log(this.events, "show");
@@ -323,4 +406,5 @@ export default {
 .links {
   color: black;
 }
+
 </style>

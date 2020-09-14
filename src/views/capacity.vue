@@ -192,9 +192,7 @@ export default {
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #f5cf8e; /* Yellow */
-  }
+
   .first {
     padding-top: 0px;
     padding-left: 5px;

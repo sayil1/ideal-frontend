@@ -59,8 +59,8 @@ letter-spacing: 0.02em; "
         <div
           style="margin-top:40px; text-align:center; color: #092E2B; font-family: SF UI Display;
 font-style: normal;
-font-weight: 800;
-font-size: 38px;"
+font-weight: 500;
+font-size: 34px;"
         >
           <strong>PROFESSIONAL IT COURSES</strong>
           <hr
@@ -79,7 +79,7 @@ line-height: 29px;
 text-align: justify;
 letter-spacing: 0.02em; "
       >
-        <div style="margin-left:50px; margin-right:30px; margin-top:20px" class="col-md-8">
+        <div style="margin-left:30px; margin-right:30px; margin-top:20px" class="col-md-8">
           <p class="card-text --text">
             Our training solutions offer job and career relevant courses for individuals, teams and organizations
             <strong>across the Information and Communication Technology (ICT) and Business Development spectrum.</strong>
@@ -139,7 +139,7 @@ letter-spacing: 0.02em; "
         </div>
         <!-- testing new cards -->
         <div class="row">
-          <v-card class="mx-auto" color="#1B6761" dark max-width="300">
+          <v-card style="margin:5px" class="mx-auto" color="#1B6761" dark max-width="300">
             <v-card-title>
               <v-icon large left>mdi-palette</v-icon>
               <span class="title font-weight-bold">creative design</span>
@@ -161,21 +161,20 @@ letter-spacing: 0.02em; "
               </v-list-item>
             </v-card-actions>
           </v-card>
-           <v-card class="mx-auto" color="#1B6761" dark max-width="300">
+          <v-card style="margin:5px" class="mx-auto" color="#1B6761" dark max-width="300">
             <v-card-title>
               <v-icon large left>mdi-desktop-classic</v-icon>
               <span class="title font-weight-bold">Computer Technology</span>
             </v-card-title>
 
             <v-card-text class>
-             Cloud computing,
-Networking,
-Database Management,
-Software/Application development,
-Systems Administration,
-It Security,
-Data Science,
-
+              Cloud computing,
+              Networking,
+              Database Management,
+              Software/Application development,
+              Systems Administration,
+              It Security,
+              Data Science,
             </v-card-text>
 
             <v-card-actions>
@@ -186,18 +185,17 @@ Data Science,
               </v-list-item>
             </v-card-actions>
           </v-card>
-           <v-card class="mx-auto" color="#1B6761" dark max-width="300">
+          <v-card style="margin:5px" class="mx-auto" color="#1B6761" dark max-width="300">
             <v-card-title>
               <v-icon large left>mdi-cash-multiple</v-icon>
               <span class="title font-weight-bold">E-Business</span>
             </v-card-title>
 
             <v-card-text class>
-            compTIA Project,
-Digital Marketing,
-Customer Relationship Management (CRM),
-Project Management Professional (PMP)
-
+              compTIA Project,
+              Digital Marketing,
+              Customer Relationship Management (CRM),
+              Project Management Professional (PMP)
             </v-card-text>
 
             <v-card-actions>
@@ -212,7 +210,6 @@ Project Management Professional (PMP)
         <div class="text-center">
           <div class="container">
             <div class="row pt-0">
-            
               <div class="col-md-4">
                 <div class="card mb-4 box-shadow">
                   <div class="card-header">
@@ -220,7 +217,7 @@ Project Management Professional (PMP)
                       style="margin-top:0px; text-align:center; color: #092E2B; font-family: SF UI Display;
 font-style: normal;
 font-weight: 800;
-font-size: 38px;"
+font-size: 25px;"
                     >Training Delivery Styles</h3>
                   </div>
                   <div
@@ -256,7 +253,7 @@ letter-spacing: 0.02em; "
                       style="margin-top:0px; text-align:center; color: #092E2B; font-family: SF UI Display;
 font-style: normal;
 font-weight: 800;
-font-size: 38px;"
+font-size: 25px;"
                     >Hands-on practical:</h3>
                   </div>
                   <div

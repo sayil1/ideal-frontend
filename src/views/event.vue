@@ -3,11 +3,7 @@
     <nava />
     <div style="padding-top:150px;">
       <div style="padding-left:0px; " class="row">
-        <v-card
-          class="col-md-4"
-          max-width="450"
-          style="margin-left:100px; margin-bottom:100px; background-color:#CAD9D8"
-        >
+        <v-card class="col-md-4 cards" >
           <v-img class="white--text align-end" height="250px" v-bind:src="event.imagesPath"></v-img>
           <hr />
           <v-card-subtitle class="pb-0" style="color: #1B676; ">
@@ -62,36 +58,43 @@ color: #1B6761;"
                 </button>
               </div>
               <div class="modal-body">
-                
                 <vue-goodshare-twitter
-                 data-toggle="tooltip" data-placement="top" title="Twitter"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Twitter"
                   button_design="gradient"
-                  :page_url=eventUrl
+                  :page_url="eventUrl"
                   has_icon
-                  has_square_edges
                 ></vue-goodshare-twitter>
                 <vue-goodshare-telegram
-                 data-toggle="tooltip" data-placement="top" title="Telegram"
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Telegram"
                   button_design="gradient"
-                  page_url="https://vuejsfeed.com/"
+                  :page_url="eventUrl"
                   has_icon
-                  has_square_edges
                 ></vue-goodshare-telegram>
                 <vue-goodshare-facebook
-                 data-toggle="tooltip" data-placement="top" title="Facebook"
-                   :page_url=eventUrl
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Facebook"
+                  :page_url="eventUrl"
                   title_social
                   has_icon
                 ></vue-goodshare-facebook>
                 <vue-goodshare-whatsapp
-                 data-toggle="tooltip" data-placement="top" title="Whatsapp"
-                    :page_url=eventUrl
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="Whatsapp"
+                  :page_url="eventUrl"
                   title_social
                   has_icon
                 ></vue-goodshare-whatsapp>
-                  <VueGoodshareLinkedIn
-                   data-toggle="tooltip" data-placement="top" title="LinkedIn"
-                  page_url="https://github.com/koddr/vue-goodshare"
+                <VueGoodshareLinkedIn
+                  data-toggle="tooltip"
+                  data-placement="top"
+                  title="LinkedIn"
+                  :page_url="eventUrl"
                   title_social
                   has_icon
                 ></VueGoodshareLinkedIn>
@@ -163,7 +166,7 @@ color:orange
                       color="white"
                     >Register For Event</v-btn>
                   </template>
-                  <v-card>
+                  <v-card style="margin-top:50px"> 
                     <v-card-title>
                       <span
                         class="headline"
@@ -174,6 +177,7 @@ font-size: 36px;
 line-height: 108.34%;
 letter-spacing: 0.02em;
 color: #1B6761;
+
 "
                       >{{event.title}}</span>
                     </v-card-title>
@@ -248,15 +252,14 @@ import foota from "../components/footer";
 import loader from "../components/loader";
 
 export default {
-
-// metaInfo: {
-//       title: 'My Example App',
-//       titleTemplate: '%s - Yay!',
-//       htmlAttrs: {
-//         lang: 'en',
-//         amp: true
-//       }
-//     },
+  // metaInfo: {
+  //       title: 'My Example App',
+  //       titleTemplate: '%s - Yay!',
+  //       htmlAttrs: {
+  //         lang: 'en',
+  //         amp: true
+  //       }
+  //     },
   components: {
     nava,
     foota,
@@ -271,7 +274,7 @@ export default {
   data: () => ({
     loading: false,
     event: {},
-    eventUrl :"",
+    eventUrl: "",
     errors: [],
     eventId: "",
     dialog: false,
@@ -300,22 +303,22 @@ export default {
           content:
             "Epiloge is about connecting in your field of interest. Our vision is to help people share their knowledge, work, projects, papers and ideas and build their network through what they do rather where they live, study or work.",
         },
-         {
+        {
           property: "og:description",
           content: `${this.event.description}`,
         },
-         {
+        {
           property: "og:title",
           content: `${this.event.title}`,
         },
-        
+
         {
           property: "twitter:title",
           content: "Ideal It center, Asaba TT",
         },
         { property: "og:site_name", content: "Ideal IT Center" },
-          { property: "og:url", content: `${this.eventUrl}` },
-           { property: "og:image", content: `${this.event.imagesPath}`},
+        { property: "og:url", content: `${this.eventUrl}` },
+        { property: "og:image", content: `${this.event.imagesPath}` },
         { property: "og:type", content: "website" },
         { name: "robots", content: "index,follow" },
       ],
@@ -324,12 +327,12 @@ export default {
 
   created() {
     this.initialize();
-     this.getUrl()
+    this.getUrl();
   },
 
   methods: {
-     getUrl(){
-       let url = serv.getUrl();
+    getUrl() {
+      let url = serv.getUrl();
       this.eventUrl = `${url}/event?eid=${this.$route.query.eid}`;
     },
     show() {
@@ -397,5 +400,26 @@ export default {
 .loader {
   margin-right: auto;
   margin-left: 50px;
+}
+
+@media only screen and (max-width: 400px) {
+.cards{
+   margin:20px; background-color:#CAD9D8;
+   max-width: 350px;
+  
+}
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+.cards{
+   margin-left:100px; margin-bottom:100px; background-color:#CAD9D8;
+    max-width: 450;
+}
 }
 </style>
