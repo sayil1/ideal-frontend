@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <v-dialog v-model="dialog" persistent max-width="600px" style="z-index:20000">
+  <div >
+    <v-dialog v-model="dialog" persistent max-width="500px" style="z-index:50000;">
       <template v-slot:activator="{ on }">
         <v-btn color="" outlined dark v-on="on">Register</v-btn>
       </template>
-      <v-card>
+      <v-card >
         <v-card-title>
           <span class="headline">Course Registration Form</span>
         </v-card-title>

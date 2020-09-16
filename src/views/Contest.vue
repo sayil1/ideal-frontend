@@ -28,11 +28,7 @@
           </div>
       </span>-->
       <div style="padding-left:0px; " class="row">
-        <v-card
-          class="col-md-4"
-          max-width="450"
-          style="margin-left:100px; margin-bottom:100px; background-color:#CAD9D8"
-        >
+        <v-card class="col-md-4 cards" style=" background-color:#CAD9D8">
           <v-img class="white--text align-end" height="250px" v-bind:src="contest.imagesPath"></v-img>
           <hr />
           <v-card-subtitle class="pb-0" style="color: #1B676; ">
@@ -56,7 +52,7 @@ color: #1B6761;"
               v-clipboard:error="onError"
               @click="snackbar = true; onCopy()"
             >mdi-content-copy</v-icon>
-              <v-icon
+            <v-icon
               style="padding-left:5%"
               size="20"
               color="orange darken-2"
@@ -64,73 +60,80 @@ color: #1B6761;"
               data-target="#staticBackdrop"
             >mdi-share-variant</v-icon>
 
-   <!-- modal for social shares -->
+            <!-- modal for social shares -->
 
-        <div
-          class="modal fade"
-          id="staticBackdrop"
-          data-backdrop="static"
-          data-keyboard="false"
-          tabindex="-1"
-          aria-labelledby="staticBackdropLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">Share this event with...</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                
-                <vue-goodshare-twitter
-                 data-toggle="tooltip" data-placement="top" title="Twitter"
-                  button_design="gradient"
-                  :page_url=eventUrl
-                  has_icon
-                  has_square_edges
-                ></vue-goodshare-twitter>
-                <vue-goodshare-telegram
-                 data-toggle="tooltip" data-placement="top" title="Telegram"
-                  button_design="gradient"
-                  page_url="https://vuejsfeed.com/"
-                  has_icon
-                  has_square_edges
-                ></vue-goodshare-telegram>
-                <vue-goodshare-facebook
-                 data-toggle="tooltip" data-placement="top" title="Facebook"
-                   :page_url=eventUrl
-                  title_social
-                  has_icon
-                ></vue-goodshare-facebook>
-                <vue-goodshare-whatsapp
-                 data-toggle="tooltip" data-placement="top" title="Whatsapp"
-                    :page_url=eventUrl
-                  title_social
-                  has_icon
-                ></vue-goodshare-whatsapp>
-                  <VueGoodshareLinkedIn
-                   data-toggle="tooltip" data-placement="top" title="LinkedIn"
-                  page_url="https://github.com/koddr/vue-goodshare"
-                  title_social
-                  has_icon
-                ></VueGoodshareLinkedIn>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-backdrop="static"
+              data-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Share this event with...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <vue-goodshare-twitter
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Twitter"
+                      button_design="gradient"
+                      :page_url="eventUrl"
+                      has_icon
+                      has_square_edges
+                    ></vue-goodshare-twitter>
+                    <vue-goodshare-telegram
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Telegram"
+                      button_design="gradient"
+                      page_url="https://vuejsfeed.com/"
+                      has_icon
+                      has_square_edges
+                    ></vue-goodshare-telegram>
+                    <vue-goodshare-facebook
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Facebook"
+                      :page_url="eventUrl"
+                      title_social
+                      has_icon
+                    ></vue-goodshare-facebook>
+                    <vue-goodshare-whatsapp
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Whatsapp"
+                      :page_url="eventUrl"
+                      title_social
+                      has_icon
+                    ></vue-goodshare-whatsapp>
+                    <VueGoodshareLinkedIn
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="LinkedIn"
+                      page_url="https://github.com/koddr/vue-goodshare"
+                      title_social
+                      has_icon
+                    ></VueGoodshareLinkedIn>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
 
-        <!-- social share ends here -->
-
-            
+            <!-- social share ends here -->
           </v-card-actions>
         </v-card>
-        <div style="margin-left:20px" class="col-md-6">
+        <div class="col-md-6">
           <div class="col-md-8">
             <div class="card-body">
               <h4
@@ -144,16 +147,6 @@ letter-spacing: 0.02em;
 color: orange;
 "
               >{{contest.title}}</h4>
-              <p
-                class="card-text"
-                style="font-family: SF UI Display;
-font-style: normal;
-font-weight: 500;
-font-size: 15px;
-line-height: 129.84%;
-letter-spacing: 0.02em;
-color: orange;"
-              >This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
 
               <p
                 style="font-family: SF UI Display;
@@ -206,16 +199,13 @@ color: #1B6761;
                             <v-text-field v-model="participants.fname" label="First name" required></v-text-field>
                           </v-col>
                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field
-                              label="Last name"
-                              v-model="participants.lname"
-                            ></v-text-field>
+                            <v-text-field label="Last name" v-model="participants.lname"></v-text-field>
                           </v-col>
 
                           <v-col cols="12" sm="6" md="6">
                             <v-text-field v-model="participants.email" label="Email*" required></v-text-field>
                           </v-col>
-                            <v-col cols="12" sm="6" md="6">
+                          <v-col cols="12" sm="6" md="6">
                             <v-text-field v-model="participants.phone" label="Phone" required></v-text-field>
                           </v-col>
                         </v-row>
@@ -225,7 +215,11 @@ color: #1B6761;
                     <v-card-actions>
                       <v-spacer></v-spacer>
                       <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-                      <v-btn color="blue darken-1" text @click="saveContest(), dialog = false">Register</v-btn>
+                      <v-btn
+                        color="blue darken-1"
+                        text
+                        @click="saveContest(), dialog = false"
+                      >Register</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
@@ -272,20 +266,19 @@ import VueGoodshareLinkedIn from "vue-goodshare/src/providers/LinkedIn.vue";
 
 export default {
   // metaInfo: {
-    
+
   //   title: "",
   //   titleTemplate: '%s | vue-meta Example App'
   // },
   components: {
     nava,
     foota,
-       VueGoodshareFacebook,
+    VueGoodshareFacebook,
     VueGoodshareTwitter,
     VueGoodshareTelegram,
     VueGoodshareWhatsapp,
     VueGoodshareLinkedIn,
   },
- 
 
   data: () => ({
     contest: {},
@@ -299,14 +292,14 @@ export default {
     timeout: 6000,
     x: null,
     y: "top",
-     participants:{
-      fname:"",
-      lname:"",
-      phone:"",
-      email:""
-    }
+    participants: {
+      fname: "",
+      lname: "",
+      phone: "",
+      email: "",
+    },
   }),
-   metaInfo() {
+  metaInfo() {
     return {
       title: `IDeal-IT | ${this.contest.title}`,
 
@@ -339,11 +332,11 @@ export default {
   },
   created() {
     this.initialize();
-     this.getUrl();
+    this.getUrl();
   },
-  
+
   methods: {
-      getUrl() {
+    getUrl() {
       let url = serv.getUrl();
       this.eventUrl = `${url}/contest?cid=${this.$route.query.cid}`;
     },
@@ -351,7 +344,7 @@ export default {
       // eslint-disable-next-line no-console
       console.log(this.events, "show");
     },
-    onCopy: function() {
+    onCopy: function () {
       // alert('You just copied: ' + e.text)
 
       // eslint-disable-next-line no-console
@@ -359,7 +352,7 @@ export default {
       let url = serv.getUrl();
       this.message = `${url}/contest?cid=${this.$route.query.cid}`;
     },
-    onError: function() {
+    onError: function () {
       // alert('Failed to copy texts' + e)
     },
     initialize() {
@@ -369,36 +362,37 @@ export default {
 
       serv
         .getRequest(`contest/get-contest/${this.contestId}`)
-        .then(response => {
+        .then((response) => {
           // JSON responses are automatically parsed.
           this.contest = response.data.result[0];
-          
+
           // eslint-disable-next-line no-console
           console.log(response.data.result[0], " the events");
         })
-        .catch(e => {
+        .catch((e) => {
           // this.errors.push(e);
 
           // eslint-disable-next-line no-console
           console.log(e);
         });
     },
-        saveContest(){
-       let newData = {
+    saveContest() {
+      let newData = {
         fname: this.participants.fname,
         lname: this.participants.lname,
         email: this.participants.email,
         phone: this.participants.phone,
-      
       };
-       // eslint-disable-next-line no-console
-      console.log("working ooo",  this.contestId, newData)
+      // eslint-disable-next-line no-console
+      console.log("working ooo", this.contestId, newData);
 
-       serv.putRequest(`contest/update-contest/${this.contestId}`, newData ).then(response=>{
-             this.$alertify.success(response.data);
-       })
-    }
-  }
+      serv
+        .putRequest(`contest/update-contest/${this.contestId}`, newData)
+        .then((response) => {
+          this.$alertify.success(response.data);
+        });
+    },
+  },
 };
 </script>
 
@@ -407,4 +401,25 @@ export default {
   color: black;
 }
 
+@media only screen and (max-width: 400px) {
+  .cards {
+    margin: 20px;
+    background-color: #cad9d8;
+    max-width: 350px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .cards {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    background-color: #cad9d8;
+    max-width: 450;
+  }
+}
 </style>

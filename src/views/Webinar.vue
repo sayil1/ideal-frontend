@@ -29,9 +29,9 @@
       </span>-->
       <div style="padding-left:0px; " class="row">
         <v-card
-          class="col-md-4"
-          max-width="450"
-          style="margin-left:100px; margin-bottom:100px; background-color:#CAD9D8"
+          class="col-md-4 cards"
+        
+          style="background-color:#CAD9D8"
         >
           <v-img class="white--text align-end" height="250px" v-bind:src="web.imagesPath"></v-img>
           <hr />
@@ -48,6 +48,8 @@ color: #1B6761;"
 
           <v-card-actions>
             <v-icon
+              data-placement="top"
+              title="Copy"
               size="20"
               color="orange darken-2"
               right
@@ -56,17 +58,82 @@ color: #1B6761;"
               v-clipboard:error="onError"
               @click="snackbar = true; onCopy()"
             >mdi-content-copy</v-icon>
-
-            <a
-              style="text-decoration:none"
-              class="resp-sharing-button__link"
-              href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fhttps://ideal-it.herokuapp.com"
-              target="_blank"
-              rel="noopener"
-              aria-label
+            <v-icon
+              data-placement="top"
+              title="Share"
+              style="padding-left:5%"
+              size="20"
+              color="orange darken-2"
+              data-toggle="modal"
+              data-target="#staticBackdrop"
+            >mdi-share-variant</v-icon>
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-backdrop="static"
+              data-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
             >
-              <v-icon size="20" color="orange darken-2" right>mdi-twitter</v-icon>
-            </a>
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Share this event with...</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <vue-goodshare-twitter
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Twitter"
+                      button_design="gradient"
+                      :page_url="WebinarUrl"
+                      has_icon
+                      has_square_edges
+                    ></vue-goodshare-twitter>
+                    <vue-goodshare-telegram
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Telegram"
+                      button_design="gradient"
+                      page_url="https://vuejsfeed.com/"
+                      has_icon
+                      has_square_edges
+                    ></vue-goodshare-telegram>
+                    <vue-goodshare-facebook
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Facebook"
+                      :page_url="WebinarUrl"
+                      title_social
+                      has_icon
+                    ></vue-goodshare-facebook>
+                    <vue-goodshare-whatsapp
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="Whatsapp"
+                      :page_url="WebinarUrl"
+                      title_social
+                      has_icon
+                    ></vue-goodshare-whatsapp>
+                    <VueGoodshareLinkedIn
+                      data-toggle="tooltip"
+                      data-placement="top"
+                      title="LinkedIn"
+                      page_url="https://github.com/koddr/vue-goodshare"
+                      title_social
+                      has_icon
+                    ></VueGoodshareLinkedIn>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </v-card-actions>
         </v-card>
         <div style="margin-left:20px" class="col-md-6">
@@ -142,32 +209,28 @@ color: #1B6761;
                       <v-container>
                         <v-row>
                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field label="First name" required></v-text-field>
+                            <v-text-field v-model="participants.fname" label="First Name" required></v-text-field>
                           </v-col>
                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field
-                              label="Last name"
-                              
-                            ></v-text-field>
+                            <v-text-field v-model="participants.lname" label="Last Name"></v-text-field>
                           </v-col>
-                           <v-col cols="12" sm="6" md="6">
-                            <v-text-field
-                              label="Phone"
-                              hint="example of helper text only on focus"
-                            ></v-text-field>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field v-model="participants.phone" label="Phone Number"></v-text-field>
                           </v-col>
 
-                          <v-col cols="12">
-                            <v-text-field label="Email*" required></v-text-field>
+                          <v-col cols="12" sm="6" md="6">
+                            <v-text-field v-model="participants.email" label="Email*" required></v-text-field>
                           </v-col>
                         </v-row>
                       </v-container>
                       <small style="color:black">*Ticket ID will be sent to your mail</small>
                     </v-card-text>
+                       <loader v-if="loading" class="loader" />
                     <v-card-actions>
                       <v-spacer></v-spacer>
+                      
                       <v-btn color="blue darken-1" text @click="dialog = false">Close</v-btn>
-                      <v-btn color="blue darken-1" text @click="dialog = false">Register</v-btn>
+                     <v-btn color="blue darken-1" text @click="saveEvent()">Register</v-btn>
                     </v-card-actions>
                   </v-card>
                 </v-dialog>
@@ -206,20 +269,31 @@ import { Services } from "../service";
 var serv = new Services();
 import nava from "../components/newNav";
 import foota from "../components/footer";
-
+import VueGoodshareFacebook from "vue-goodshare/src/providers/Facebook.vue";
+import VueGoodshareTwitter from "vue-goodshare/src/providers/Twitter.vue";
+import VueGoodshareTelegram from "vue-goodshare/src/providers/Telegram.vue";
+import VueGoodshareWhatsapp from "vue-goodshare/src/providers/WhatsApp.vue";
+import VueGoodshareLinkedIn from "vue-goodshare/src/providers/LinkedIn.vue";
+import loader from "../components/loader";
 export default {
   // metaInfo: {
-    
+
   //   title: "",
   //   titleTemplate: '%s | vue-meta Example App'
   // },
   components: {
     nava,
-    foota
+    foota,
+    loader,
+    VueGoodshareFacebook,
+    VueGoodshareTwitter,
+    VueGoodshareTelegram,
+    VueGoodshareWhatsapp,
+    VueGoodshareLinkedIn,
   },
- 
 
   data: () => ({
+     loading: false,
     web: {},
     errors: [],
     webId: "",
@@ -229,44 +303,57 @@ export default {
     color: "",
     mode: "",
     timeout: 6000,
+    WebinarUrl:"",
     x: null,
     y: "top",
-    n:"]lp"
+    n: "]lp",
+     participants: {
+      fname: "",
+      lname: "",
+      phone: "",
+      email: "",
+    },
   }),
-    metaInfo () {
+  metaInfo() {
     return {
       title: `IDeal-IT | ${this.web.title}`,
-      image:this.web.imagesPath,
-       meta: [
-      { charset: 'utf-8' },
-      {
-        property: "twitter:title",
-        content: `IDeal-IT | ${this.web.title}`,
-        // following template options are identical
-        // template: '%s - My page',
-       
-        vmid: 'twitter:title'
-      },
-       {
-        property: "twitter:title",
-        content: `IDeal-IT | ${this.web.title}`,
-        // following template options are identical
-        // template: '%s - My page',
-       
-        vmid: 'twitter:title'
-      },]
-    }
+      image: this.web.imagesPath,
+      meta: [
+        { charset: "utf-8" },
+        {
+          property: "twitter:title",
+          content: `IDeal-IT | ${this.web.title}`,
+          // following template options are identical
+          // template: '%s - My page',
+
+          vmid: "twitter:title",
+        },
+        {
+          property: "twitter:title",
+          content: `IDeal-IT | ${this.web.title}`,
+          // following template options are identical
+          // template: '%s - My page',
+
+          vmid: "twitter:title",
+        },
+      ],
+    };
   },
   created() {
     this.initialize();
+    this.getUrl();
   },
-  
+
   methods: {
+      getUrl() {
+      let url = serv.getUrl();
+      this.WebinarUrl = `${url}/web?wid=${this.$route.query.wid}`;
+    },
     show() {
       // eslint-disable-next-line no-console
       console.log(this.events, "show");
     },
-    onCopy: function() {
+    onCopy: function () {
       // alert('You just copied: ' + e.text)
 
       // eslint-disable-next-line no-console
@@ -274,36 +361,75 @@ export default {
       let url = serv.getUrl();
       this.message = `${url}/web?wid=${this.$route.query.wid}`;
     },
-    onError: function() {
+    onError: function () {
       // alert('Failed to copy texts' + e)
     },
     initialize() {
       this.webId = this.$route.query.wid;
       // eslint-disable-next-line no-console
-      console.log(this.eventId, "is the id");
+      console.log(this.webId, "is the id");
 
       serv
         .getRequest(`web/get-webinar/${this.webId}`)
-        .then(response => {
+        .then((response) => {
           // JSON responses are automatically parsed.
           this.web = response.data.result[0];
-          
+
           // eslint-disable-next-line no-console
           console.log(response.data.result[0], " the events");
         })
-        .catch(e => {
+        .catch((e) => {
           // this.errors.push(e);
 
           // eslint-disable-next-line no-console
           console.log(e);
         });
-    }
-  }
+    },
+       saveEvent() {
+      let newData = {
+        fname: this.participants.fname,
+        lname: this.participants.lname,
+        email: this.participants.email,
+        phone: this.participants.phone,
+      };
+      // eslint-disable-next-line no-console
+      console.log("working ooo", this.webId);
+      this.loading = true;
+      serv
+        .putRequest(`web/update-webinar/${this.webId}`, newData)
+        .then((response) => {
+          this.loading = false;
+          this.$alertify.success(response.data);
+        });
+    },
+  },
 };
 </script>
 
 <style lang="css" scoped>
 .links {
   color: black;
+}
+
+@media only screen and (max-width: 400px) {
+  .cards {
+    margin: 20px;
+    background-color: #cad9d8;
+    max-width: 350px;
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .cards {
+    margin-left: 100px;
+    margin-bottom: 100px;
+    background-color: #cad9d8;
+    max-width: 450;
+  }
 }
 </style>
