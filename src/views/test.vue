@@ -43,15 +43,15 @@
                   <br />Classes are centered on test-taking tactics that highlights the skills needed for exam success in the English exams and covers reading, listening, speaking and writing.
                   <br />This preparatory course is ideal for students who:
                   <v-list-item>
-                    <v-list-item-content>
-                      <v-list-item-subtitle>- Want to attain a good score on the internationally recognized English exams.</v-list-item-subtitle>
-                      <v-list-item-subtitle>IELTS (Academic & General), PTE, and Cambridge English.</v-list-item-subtitle>
+                    <v-list-item-content >
+                      <v-list-item-subtitle style="color: #1b6761;">- Want to attain a good score on the internationally recognized English exams.</v-list-item-subtitle>
+                      <v-list-item-subtitle style="color: #1b6761;">IELTS (Academic & General), PTE, and Cambridge English.</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-subtitle>- Want to prepare for university in the USA or Canada or other countries that</v-list-item-subtitle>
-                      <v-list-item-subtitle>require the scores.</v-list-item-subtitle>
+                      <v-list-item-subtitle style="color: #1b6761;">- Want to prepare for university in the USA or Canada or other countries that</v-list-item-subtitle>
+                      <v-list-item-subtitle style="color: #1b6761;">require the scores.</v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
                 </p>
@@ -114,10 +114,10 @@
                     <!-- <v-subheader>REPORTS</v-subheader> -->
                     <v-list-item-group v-model="item2" color>
                       <v-list-item v-for="(item2, i) in items2" :key="i">
-                        <v-list-item-icon>
+                        <v-list-item-icon style="color: #1b6761;">
                           <v-icon v-text="item2.icon"></v-icon>
                         </v-list-item-icon>
-                        <v-list-item-content>
+                        <v-list-item-content style="color: #1b6761;">
                           <v-list-item-title v-text="item2.text"></v-list-item-title>
                         </v-list-item-content>
                       </v-list-item>

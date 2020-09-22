@@ -221,18 +221,11 @@ font-size: 25px;"
                     >Training Delivery Styles</h3>
                   </div>
                   <div
-                    class="y"
-                    style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: center;
-letter-spacing: 0.02em; "
+                  
+                   
                   >
                     <!-- <h1><b>$29 </b><small class="text-muted">/ mo</small></h1> -->
-                    <ul class="list-unstyled">
+                    <ul style="padding-left:0px; padding-top:10px;  color: #1B6761; " class="list-unstyled">
                       <li>Lectures (face-to-face or Online)</li>
                       <li>Demonstrations</li>
                       <li>Problem solving</li>

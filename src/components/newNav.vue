@@ -42,7 +42,7 @@
 
               <v-list three-line class="search-results" style="  overflow: scroll;">
                 <v-list-item v-for="(item, i) in searching" :key="i" ripple @click="() => {}">
-                  <a :href="`${item.route}`">
+                  <router-link :to="`${item.route}`">
                     <v-img :src="item.image" class="mr-4" max-width="64" min-width="64"></v-img>
 
                     <v-list-item-content >
@@ -53,7 +53,7 @@
 
                       <div v-text="item.title"></div>
                     </v-list-item-content>
-                  </a>
+                  </router-link>
                 </v-list-item>
               </v-list>
             </div>
@@ -150,13 +150,13 @@
                       aria-labelledby="dropdown1-1"
                     >
                       <router-link class="route" to="toefl">
-                        <li>TOEFL</li>
+                        <li style="color:orange">TOEFL</li>
                       </router-link>
                       <router-link class="route" to="pearson">
-                        <li>PEARSON VUE</li>
+                        <li style="color:orange">PEARSON VUE</li>
                       </router-link>
                       <router-link class="route" to="icm">
-                        <li>ICM UK QUALIFICATION</li>
+                        <li style="color:orange">ICM UK QUALIFICATION</li>
                       </router-link>
                     </ul>
                   </li>

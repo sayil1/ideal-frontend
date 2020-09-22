@@ -1184,6 +1184,10 @@ header {
 
     font-size: 16px;
   }
+  .card-faintN {
+  background-color: rgb(9, 47, 44);
+  
+}
   .card1 {
     margin-left: auto;
     margin-right: auto;

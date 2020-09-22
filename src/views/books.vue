@@ -11,10 +11,10 @@
           style="max-height:400px; margin:auto; max-width:1000px"
           :show-arrows="false"
           interval="3000"
-          height="300"
+          height="100"
         >
           <v-carousel-item v-for="(slide, i) in slides" :key="i">
-            <v-sheet style="background: rgba(0, 0, 0, 0.3)" height="100%">
+            <v-sheet style="background: rgba(0, 0, 0, 0.5)" height="100%">
               <v-row class="fill-height" align="center" justify="center">
                 <div style="text-align:center" class="display-3">{{ slide }}</div>
               </v-row>

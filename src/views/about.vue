@@ -419,6 +419,7 @@ export default {
   background-image: url("../assets/aboutnew2.jpg");
   filter: grayscale(100%);
   height: 400px;
+  width:100%;
   /* background-attachment: fixed; */
   background-size: contain;
   /* background-position: 20%; */
