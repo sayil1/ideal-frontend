@@ -6,7 +6,7 @@
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
           <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
             <div class="car-head">
-              <span class="white--text" style>OVERSEAS ADMISSION CONSULTING</span>
+              <span class="white--text" style>TEST PREPARATION</span>
               <hr
                 style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
               />
@@ -44,14 +44,14 @@
                   <br />This preparatory course is ideal for students who:
                   <v-list-item>
                     <v-list-item-content >
-                      <v-list-item-subtitle style="color: #1b6761;">- Want to attain a good score on the internationally recognized English exams.</v-list-item-subtitle>
-                      <v-list-item-subtitle style="color: #1b6761;">IELTS (Academic & General), PTE, and Cambridge English.</v-list-item-subtitle>
+                      <v-list-item- style="color: #1b6761;">- Want to attain a good score on the internationally recognized English exams. IELTS (Academic & General), PTE, and Cambridge English.</v-list-item->
+                     
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item-subtitle style="color: #1b6761;">- Want to prepare for university in the USA or Canada or other countries that</v-list-item-subtitle>
-                      <v-list-item-subtitle style="color: #1b6761;">require the scores.</v-list-item-subtitle>
+                      <v-list-item- style="color: #1b6761;">- Want to prepare for university in the USA or Canada or other countries that. require the scores.</v-list-item->
+                    
                     </v-list-item-content>
                   </v-list-item>
                 </p>
@@ -113,7 +113,7 @@
                   <v-list dense>
                     <!-- <v-subheader>REPORTS</v-subheader> -->
                     <v-list-item-group v-model="item2" color>
-                      <v-list-item v-for="(item2, i) in items2" :key="i">
+                      <v-list-item style="" v-for="(item2, i) in items2" :key="i">
                         <v-list-item-icon style="color: #1b6761;">
                           <v-icon v-text="item2.icon"></v-icon>
                         </v-list-item-icon>
@@ -127,7 +127,7 @@
                      
                     
                     class="first-text" 
-                    >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10, 000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
+                    >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10,000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
                   </v-list>
                 </p>
               </div>
@@ -172,9 +172,11 @@
                 </td>
               </tbody>
             </table>
-            <div>Students also have Acess to Study guides, Practice tests, Structured study sessions, Preparation lessons, Online and paper-based simulation tests</div>
+           
           </div>
+          
         </div>
+         <div class="row first-text">Students also have Acess to Study guides, Practice tests, Structured study sessions, Preparation lessons, Online and paper-based simulation tests</div>
       </div>
     </div>
 

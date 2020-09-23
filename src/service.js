@@ -8,7 +8,9 @@ import axios from 'axios';
 
 const API_URL = `https://ideal-back.herokuapp.com`
 
-const frontURL = `https://ideal-it.herokuapp.com`
+// const frontURL = `https://ideal-it.herokuapp.com`
+
+const frontURL = `https://www.ideal-nig.org`
 // eslint-disable-next-line no-unused-vars
 
 export class Services {
