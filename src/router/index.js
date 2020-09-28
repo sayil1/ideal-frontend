@@ -13,7 +13,7 @@ import profEd from '../views/profEdu'
 import icm from '../views/icm'
 import train from '../views/train'
 import test from '../views/test'
-import overs from '../views/over-seas'
+import interns from '../views/intern'
 import toefl from '../views/toefl'
 import pearson from '../views/pearson'
 import itCenter from '../views/it-center'
@@ -189,9 +189,9 @@ const routes = [
     component: toefl
   },
   {
-    path: '/over',
-    name: 'over',
-    component: overs
+    path: '/intern',
+    name: 'intern',
+    component: interns
   },
   {
     path: '/icm',

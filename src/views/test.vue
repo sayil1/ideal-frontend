@@ -1,16 +1,29 @@
 <template>
-  <div style="color:black">
+  <div style="color: black">
     <nava />
     <div style="background-color: " class="cont">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
-          <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+          <div
+            class="car font-weight-regular"
+            style="margin-left: 40px; margin-right: 40px"
+          >
             <div class="car-head">
               <span class="white--text" style>TEST PREPARATION</span>
               <hr
-                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                style="
+                  color: orange;
+                  width: 150px;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border: 2px solid orange;
+                "
               />
-              <router-link to="cont" class="success--text" style="text-decoration:none;">
+              <router-link
+                to="cont"
+                class="success--text"
+                style="text-decoration: none"
+              >
                 <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
               </router-link>
             </div>
@@ -22,8 +35,12 @@
       <!-- money -->
       <div class="first-text">
         <div>
-          We run high-quality test preparation designed to increase students' performance on international standardized tests like IELTS, PTE, Cambridge English, GRE, GMAT, SAT, ACT.
-          <br />Learners are imparted to grasp aspects that they may not be so confident with, and common exam topics with the overall aim of improving their exam techniques, and overall scores.
+          We run high-quality test preparation designed to increase students'
+          performance on international standardized tests like IELTS, PTE,
+          Cambridge English, GRE, GMAT, SAT, ACT.
+          <br />Learners are imparted to grasp aspects that they may not be so
+          confident with, and common exam topics with the overall aim of
+          improving their exam techniques, and overall scores.
           <br />
         </div>
       </div>
@@ -33,63 +50,94 @@
       <div class style>
         <!-- card -->
         <div class="row first-text">
-          <div class="col-sm-12 col-md-6" style="margin-bottom:0px">
+          <div class="col-sm-12 col-md-6" style="margin-bottom: 0px">
             <div class="card-size">
               <div class>
                 <p class="card-text --text font-weight-regular">
                   <br />
-                  <strong>English Test preparation (IELTS, PTE, Cambridge English)</strong>
+                  <strong
+                    >English Test preparation (IELTS, PTE, Cambridge
+                    English)</strong
+                  >
                   <br />
-                  <br />Classes are centered on test-taking tactics that highlights the skills needed for exam success in the English exams and covers reading, listening, speaking and writing.
+                  <br />Classes are centered on test-taking tactics that
+                  highlights the skills needed for exam success in the English
+                  exams and covers reading, listening, speaking and writing.
                   <br />This preparatory course is ideal for students who:
                   <v-list-item>
-                    <v-list-item-content >
-                      <v-list-item- style="color: #1b6761;">- Want to attain a good score on the internationally recognized English exams. IELTS (Academic & General), PTE, and Cambridge English.</v-list-item->
-                     
+                    <v-list-item-content>
+                      <v-list-item- style="color: #1b6761"
+                        >- Want to attain a good score on the internationally
+                        recognized English exams. IELTS (Academic & General),
+                        PTE, and Cambridge English.</v-list-item-
+                      >
                     </v-list-item-content>
                   </v-list-item>
                   <v-list-item>
                     <v-list-item-content>
-                      <v-list-item- style="color: #1b6761;">- Want to prepare for university in the USA or Canada or other countries that. require the scores.</v-list-item->
-                    
+                      <v-list-item- style="color: #1b6761"
+                        >- Want to prepare for university in the USA or Canada
+                        or other countries that. require the
+                        scores.</v-list-item-
+                      >
                     </v-list-item-content>
                   </v-list-item>
                 </p>
+                 <router-link
+                      style="text-decoration: none"
+                      class="route"
+                      to="prof"
+                    >
+                      <button
+                        type="button"
+                        style="background-color: #1b6761; color: white"
+                        class="btn btn-lg btn-block"
+                      >
+                        Register
+                      </button>
+                    </router-link>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-5" style=" margin:2px">
+          <div class="col-sm-12 col-md-5" style="margin: 2px">
             <div
-              style="color:; text-align:center; margin-bottom:20px"
+              style="color: ; text-align: center; margin-bottom: 20px"
               class="display-1"
-            >IMPORTANT FACTS</div>
-            <table class="table table-bordered " style=" ">
+            >
+              IMPORTANT FACTS
+            </div>
+            <table class="table table-bordered" style="">
               <thead>
                 <tr>
-                  <th style="border-color:black; " scope="col">COURSE LENGTH</th>
-                  <th style="border-color:black; " scope="col">2 - 8 Weeks</th>
+                  <th style="border-color: black" scope="col">COURSE LENGTH</th>
+                  <th style="border-color: black" scope="col">2 - 8 Weeks</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th style="border-color:black; " scope="col">ENTRY LEVEL</th>
-                  <th style="border-color:black; " scope="col">Intermediate to Advanced English</th>
-                </tr>
-                <tr>
-                  <th style="border-color:black; " scope="col">LESSON LENGTH</th>
-                  <th style="border-color:black;" scope="col">2 hours per weekday</th>
-                </tr>
-                <tr>
-                  <th style="border-color:black; " scope="row">CLASS SIZE</th>
-                  <th style="border-color:black;">
-                    10 persons:
-                    Note that seats fill up quickly, and is on a first-come-first-serve basis. Register now.
+                  <th style="border-color: black" scope="col">ENTRY LEVEL</th>
+                  <th style="border-color: black" scope="col">
+                    Intermediate to Advanced English
                   </th>
                 </tr>
-                <th style="border-color:black; " scope="col">TIMETABLE</th>
-                <td style="border-color:black; " scope="col">
-                  For weekdays (Monday-Thursday, with morning and afternoon classes only)
-                  For weekends (Saturdays and Sundays 4 hours per day)
+                <tr>
+                  <th style="border-color: black" scope="col">LESSON LENGTH</th>
+                  <th style="border-color: black" scope="col">
+                    2 hours per weekday
+                  </th>
+                </tr>
+                <tr>
+                  <th style="border-color: black" scope="row">CLASS SIZE</th>
+                  <th style="border-color: black">
+                    10 persons: Note that seats fill up quickly, and is on a
+                    first-come-first-serve basis. Register now.
+                  </th>
+                </tr>
+                <th style="border-color: black" scope="col">TIMETABLE</th>
+                <td style="border-color: black" scope="col">
+                  For weekdays (Monday-Thursday, with morning and afternoon
+                  classes only) For weekends (Saturdays and Sundays 4 hours per
+                  day)
                 </td>
               </tbody>
             </table>
@@ -97,86 +145,108 @@
         </div>
       </div>
 
-      <div
-        class
-       
-      >
+      <div class>
         <!-- card -->
         <div class="row first-text">
           <div class="col-sm-12 col-md-6">
-            <div class style=" margin-left:20px; margin-right:20px;">
+            <div class style="margin-left: 20px; margin-right: 20px">
               <div style>
                 <p class="card-text --text font-weight-regular">
-                  <strong>Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong>
+                  <strong
+                    >Other Standardized tests (GRE®, SAT, ACT, GMAT)</strong
+                  >
                   <br />
-                  <br />These Exam Preparation Courses include exclusive learning materials that will enable you acquire test-taking skills relevant to the structure of the examinations, the types of questions and to expect, ultimately improving your score on the test.
+                  <br />These Exam Preparation Courses include exclusive
+                  learning materials that will enable you acquire test-taking
+                  skills relevant to the structure of the examinations, the
+                  types of questions and to expect, ultimately improving your
+                  score on the test.
                   <v-list dense>
                     <!-- <v-subheader>REPORTS</v-subheader> -->
                     <v-list-item-group v-model="item2" color>
-                      <v-list-item style="" v-for="(item2, i) in items2" :key="i">
-                        <v-list-item-icon style="color: #1b6761;">
+                      <v-list-item
+                        style=""
+                        v-for="(item2, i) in items2"
+                        :key="i"
+                      >
+                        <v-list-item-icon style="color: #1b6761">
                           <v-icon v-text="item2.icon"></v-icon>
                         </v-list-item-icon>
-                        <v-list-item-content style="color: #1b6761;">
-                          <v-list-item-title v-text="item2.text"></v-list-item-title>
+                        <v-list-item-content style="color: #1b6761">
+                          <v-list-item-title
+                            v-text="item2.text"
+                          ></v-list-item-title>
                         </v-list-item-content>
                       </v-list-item>
                     </v-list-item-group>
                     <br />
-                    <div
-                     
-                    
-                    class="first-text" 
-                    >If you would like to take your exam on another day, kindly send us an inquiry. Please understand that we charge a processing fee of N10,000 per exam for individually desired dates in addition to the examination fee, payable by bank transfer or in cash on the day of the exam.</div>
+                    <router-link
+                      style="text-decoration: none"
+                      class="route"
+                      to="prof"
+                    >
+                      <button
+                        type="button"
+                        style="background-color: #1b6761; color: white"
+                        class="btn btn-lg btn-block"
+                      >
+                        Register
+                      </button>
+                    </router-link>
                   </v-list>
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col-sm col-md-5" >
+          <div class="col-sm col-md-5">
             <div
-              style="color:rgb; text-align:center; margin-bottom:20px"
+              style="color: rgb; text-align: center; margin-bottom: 20px"
               class="display-1"
-            >IMPORTANT FACTS</div>
-            <table
-             
-              class="table table-bordered card-size"
             >
+              IMPORTANT FACTS
+            </div>
+            <table class="table table-bordered card-size">
               <thead>
                 <tr>
-                  <th style="border-color:black; " scope="col">COURSE LENGTH</th>
-                  <th style="border-color:black;" scope="col">6- 12 Weeks</th>
+                  <th style="border-color: black" scope="col">COURSE LENGTH</th>
+                  <th style="border-color: black" scope="col">6- 12 Weeks</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <th style="border-color:black;" scope="col">ENTRY LEVEL</th>
-                  <th style="border-color:black;" scope="col">TOEFL 70, IELTS 6.5</th>
-                </tr>
-                <tr>
-                  <th style="border-color:black;" scope="col">LESSON LENGTH</th>
-                  <th style="border-color:black;" scope="col">2 hours per weekday</th>
-                </tr>
-                <tr>
-                  <th style="border-color:black;" scope="row">CLASS SIZE</th>
-                  <th style="border-color:black;">
-                    10 persons:
-                    Note that seats fill up quickly, and is on a first-come-first-serve basis. Register now.
+                  <th style="border-color: black" scope="col">ENTRY LEVEL</th>
+                  <th style="border-color: black" scope="col">
+                    TOEFL 70, IELTS 6.5
                   </th>
                 </tr>
-                <th style="border-color:black;" scope="col">TIMETABLE</th>
-                <td style="border-color:black;" scope="col">
-                  All courses are Monday-Thursday, with morning and afternoon classes only
-                  Weekends Saturdays and Sundays 3 hours per day
+                <tr>
+                  <th style="border-color: black" scope="col">LESSON LENGTH</th>
+                  <th style="border-color: black" scope="col">
+                    2 hours per weekday
+                  </th>
+                </tr>
+                <tr>
+                  <th style="border-color: black" scope="row">CLASS SIZE</th>
+                  <th style="border-color: black">
+                    10 persons: Note that seats fill up quickly, and is on a
+                    first-come-first-serve basis. Register now.
+                  </th>
+                </tr>
+                <th style="border-color: black" scope="col">TIMETABLE</th>
+                <td style="border-color: black" scope="col">
+                  All courses are Monday-Thursday, with morning and afternoon
+                  classes only Weekends Saturdays and Sundays 3 hours per day
                 </td>
               </tbody>
             </table>
-           
           </div>
-          
         </div>
-         <div class="row first-text">Students also have Acess to Study guides, Practice tests, Structured study sessions, Preparation lessons, Online and paper-based simulation tests</div>
+        <div class="row first-text">
+          Students also have Acess to Study guides, Practice tests, Structured
+          study sessions, Preparation lessons, Online and paper-based simulation
+          tests
+        </div>
       </div>
     </div>
 
@@ -264,7 +334,6 @@ table {
   font-style: normal;
   font-weight: 200;
   font-size: 15px;
- 
 }
 table,
 th,
@@ -278,15 +347,14 @@ td {
   background-position: center;
 }
 @media only screen and (max-width: 400px) {
-
   .big-text {
-  font-family: SF UI Display;
-  color: #092e2b;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 108.34%;
-}
+    font-family: SF UI Display;
+    color: #092e2b;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 108.34%;
+  }
   .first {
     padding-top: px;
     padding-left: 20px;
@@ -299,9 +367,9 @@ td {
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-  
+
     text-align: justify;
-   
+
     padding-top: 0px;
   }
 

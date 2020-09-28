@@ -14,7 +14,7 @@
     <div
       style="text-align:right"
       class="nava collapse navbar-collapse white--text"
-    >iDeal-IT {{today}}</div>
+    >&copy;  iDeal-IT {{today}}</div>
   </div>
 </template>
 <script>

@@ -85,9 +85,9 @@
                 <div style="font-family:Alegraya; color:white; margin:0px; padding:0px" class="row">
                   <div class="col-10" style="text-align:left">
                     <strong>{{ item.quantity }}X</strong>
-                    - {{ item.title }}
+                    - {{ item.title }} 
                   </div>
-
+                    
                   <v-icon
                     style="margin:0px; "
                     class="col-2"
@@ -155,8 +155,9 @@
                   <div style="padding-top:10px">
                     <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
                       <div class="card-title" style=";font-size:15px;color: #092E2B;">
-                        <strong>{{ item.title }}</strong>
-                        <div style="font-size:12px;">By Austin MAikano</div>
+                        <strong>{{ item.title }}</strong> <br>
+                         <i>{{ item.description }}</i> <br>
+                        <!-- <div style="font-size:12px;">By Austin MAikano</div> -->
                         <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
                       </div>
                     </div>
@@ -247,9 +248,25 @@ margin-top:20px"
                       >
                         <v-btn small tile color="red" dark>Make Payment</v-btn>
                       </paystack>
+                      <br> 
+                    
                     </div>
+                   
+                      
                   </div>
+                 
                 </div>
+                <hr>
+                <p style="color:green; text-align:center">OR</p>
+                <hr>
+                <p style="text-align:center"> pay <strong>NGN{{total}}</strong>  to this account<br>
+                Account Name: 12345678; <br>
+                Account Name: Ideal it center; <br>
+                Bank: Keystone Bank
+                </p> <hr>
+                <p>
+                  Send details to mail@mail.com OR whatsapp 09030031914
+                </p>
               </div>
             </div>
           </div>
