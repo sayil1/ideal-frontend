@@ -1,16 +1,29 @@
 <template>
-  <div style="background-color:">
+  <div style="background-color: ">
     <nava />
     <div style="background-color: " class="cont">
       <div class="card-size div1">
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
-          <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
+          <div
+            class="car font-weight-regular"
+            style="margin-left: 40px; margin-right: 40px"
+          >
             <div class="car-head">
               <span class="white--text" style>PEARSON VUE CENTER</span>
               <hr
-                style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
+                style="
+                  color: orange;
+                  width: 150px;
+                  margin-left: auto;
+                  margin-right: auto;
+                  border: 2px solid orange;
+                "
               />
-              <router-link to="cont" class="success--text" style="text-decoration:none;">
+              <router-link
+                to="cont"
+                class="success--text"
+                style="text-decoration: none"
+              >
                 <v-btn class="ma-2" outlined color="success">Contact Us</v-btn>
               </router-link>
             </div>
@@ -18,66 +31,73 @@
         </div>
       </div>
     </div>
-    <v-alert style="margin:10px" type="success" border="right">
+    <v-alert style="margin: 10px" type="success" border="right">
       <p class="car-text --text font-weight-regular">
-        Kindly note that due to the high number of exams offered, we cannot provide details on individual exams via call or live chat.
-        For information on a specific exam duration, fee, language, etc., please refer to the
-        <strong>
-          <a style="color:orange;" href="http://home.pearsonvue.com">website</a>
-        </strong> of the particular provider.
+        Kindly note that due to the high number of exams offered, we cannot
+        provide details on individual exams via call or live chat. For
+        information on a specific exam duration, fee, language, etc., please
+        refer to the
+        <span>
+          <a style="color: black" href="http://home.pearsonvue.com">website</a>
+        </span>
+        of the particular provider.
         <!-- <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.
         <br />-->
       </p>
       <p class="card-text font-weight-regular"></p>
     </v-alert>
     <div class="body" style>
+      <!-- div -->
 
-
-
-
-<!-- div -->
-
-  <!-- card -->
+      <!-- card -->
       <div class="row">
         <div class="col-sm-12 col-md-8">
           <div
             class=""
-            style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em; "
+            style="
+              font-family: SF UI Display;
+              color: #1b6761;
+              font-style: normal;
+              font-weight: 500;
+              font-size: 18px;
+              line-height: 29px;
+              text-align: justify;
+              letter-spacing: 0.02em;
+            "
           >
             <div class style>
               <p class>
-             
-              <strong>PEARSON VUE CENTER</strong> Our Authorized Pearson VUE Test center runs IT certification examinations for leading vendors like Microsoft, Cisco, Nursing and Midwifery Council (NMC), PMI, Linux, Juniper, Oracle, CompTIA, CIW, HP, PeopleCert etc.
+                <strong>PEARSON VUE CENTER</strong> Our Authorized Pearson VUE
+                Test center runs IT certification examinations for leading
+                vendors like Microsoft, Cisco, Nursing and Midwifery Council
+                (NMC), PMI, Linux, Juniper, Oracle, CompTIA, CIW, HP, PeopleCert
+                etc.
                 <br />
                 <br />
-                <strong>IT CERTIFICATIONS</strong>  are recognized worldwide and serve as benchmarks to specific skills set based on standardized testing. They help demonstrate your dedication and technical knowledge on a specific platform.
-                <br />Once earned, IT Certifications can you help achieve the following:
-
+                <strong>IT CERTIFICATIONS</strong> are recognized worldwide and
+                serve as benchmarks to specific skills set based on standardized
+                testing. They help demonstrate your dedication and technical
+                knowledge on a specific platform. <br />Once earned, IT
+                Certifications can you help achieve the following:
               </p>
               <ul>
-                <li v-for="(items, i) in items" :key="i">{{items.text}}</li>
+                <li v-for="(items, i) in items" :key="i">{{ items.text }}</li>
               </ul>
             </div>
-              <div
-              style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
+            <div
+              style="
+                font-family: SF UI Display;
+                color: #1b6761;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 29px;
+                text-align: justify;
+                letter-spacing: 0.02em;
+              "
             >
               <div>
                 <p>
-               
                   <!-- <strong>Social pressures</strong>
         <br />Societal, families and peers can deter individuals from actively participating in sports.
         <br />
@@ -88,21 +108,22 @@ letter-spacing: 0.02em;"
         <br />
                   <br />-->
                 </p>
-               
 
                 <div
                   class
-                  style="font-family: SF UI Display;
-            color: #1B6761;
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 29px;
-text-align: justify;
-letter-spacing: 0.02em;"
+                  style="
+                    font-family: SF UI Display;
+                    color: #1b6761;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 29px;
+                    text-align: justify;
+                    letter-spacing: 0.02em;
+                  "
                 >
-                 
-                  <router-link to="cont">Contact us</router-link> for more information
+                  <router-link to="cont">Contact us</router-link> for more
+                  information
                 </div>
               </div>
             </div>
@@ -110,18 +131,26 @@ letter-spacing: 0.02em;"
         </div>
         <div
           class="col-sm col-md-4"
-          style="margin-top:0px; padding:20px; background-color:rgb(240, 245, 245)"
-          
+          style="
+            margin-top: 0px;
+            padding: 20px;
+            background-color: rgb(240, 245, 245);
+          "
         >
           <div
-            style="text-align:center; font-family: SF UI Display;
-       color: #092E2B;
-font-style: normal;
-font-weight: bold;
-font-size: 30px;
-line-height: 108.34%;
-padding:20px"
-          >Register for this exam.</div>
+            style="
+              text-align: center;
+              font-family: SF UI Display;
+              color: #092e2b;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 30px;
+              line-height: 108.34%;
+              padding: 20px;
+            "
+          >
+            Register for this exam.
+          </div>
           <div class="col">
             <input
               type="text"
@@ -131,10 +160,20 @@ padding:20px"
             />
           </div>
           <div class="col">
-            <input type="text" v-model="pearson.fname" class="form-control" placeholder="First name" />
+            <input
+              type="text"
+              v-model="pearson.fname"
+              class="form-control"
+              placeholder="First name"
+            />
           </div>
           <div class="col">
-            <input type="text" v-model="pearson.mname" class="form-control" placeholder="Middle name" />
+            <input
+              type="text"
+              v-model="pearson.mname"
+              class="form-control"
+              placeholder="Middle name"
+            />
           </div>
           <!-- <div class="col">
             <input type="text" v-model="pearson.date" class="form-control" placeholder="Date" />
@@ -193,7 +232,9 @@ padding:20px"
               <v-date-picker v-model="date" no-title scrollable>
                 <v-spacer></v-spacer>
                 <v-btn text color="primary" @click="menu = false">Cancel</v-btn>
-                <v-btn text color="primary" @click="$refs.menu.save(date)">OK</v-btn>
+                <v-btn text color="primary" @click="$refs.menu.save(date)"
+                  >OK</v-btn
+                >
               </v-date-picker>
             </v-menu>
             <!-- <input
@@ -204,24 +245,42 @@ padding:20px"
             />-->
           </div>
           <div class="col upload-btn-wrapper">
-            <button class="btnn">Upload international Passport (Data)</button> <br>
-              <div v-if="saving" style="text-align:center">saving...</div>
-            <input type="file" name="myfile" class="custom-file-input" @change="onFileChanged" />
+            <button class="btnn">
+              Upload international Passport (Data) {{ pearson.image.name }}
+            </button>
+            <br />
+            <div v-if="saving" style="text-align: center">saving...</div>
+            <span v-if="!imageUploaded" style="text-align: center; color: red"
+              >no image selected</span
+            >
+            <span
+              v-else-if="imageUploaded"
+              style="text-align: center; color: green"
+            >
+              {{ pearson.image.name }} selected
+            </span>
+            <input
+              type="file"
+              name="myfile"
+              class="custom-file-input"
+              @change="onFileChanged"
+            />
           </div>
           <div>
             <button
               type="button"
               @click="save"
               class="btn btn btn-primary btn-lg btn-block"
-            >{{this.processing ? "Register": "Registered"}}</button>
+            >
+              {{ this.processing ? "Register" : "Registered" }}
+            </button>
           </div>
         </div>
       </div>
-
     </div>
-<div>
-  <cards/>
-</div>
+    <div>
+      <cards />
+    </div>
     <foota />
   </div>
 </template>
@@ -237,14 +296,15 @@ export default {
   components: {
     nava,
     foota,
-    cards
+    cards,
   },
   data: () => ({
+    imageUploaded: false,
     item: 1,
     image: true,
     item2: 1,
     processing: true,
-    saving:false,
+    saving: false,
     menu: false,
     modal: false,
     date: new Date().toISOString().substr(0, 10),
@@ -258,40 +318,40 @@ export default {
       { text: "Personal Goal", icon: "mdi-check-decagram" },
       {
         text: "Professional or Corporate Requirement",
-        icon: "mdi-bullseye-arrow"
-      }
+        icon: "mdi-bullseye-arrow",
+      },
     ],
-     pearson: {
+    pearson: {
       sname: "",
       fname: "",
       mname: "",
       email: "",
-      date: "",
+    
       contAdress: "",
       country: "",
       examDate: "",
       examCenter: "",
-      image: ""
+      image: "",
     },
     items2: [
       {
         text: "Students planning to study at a higher education institution",
-        icon: "mdi-school"
+        icon: "mdi-school",
       },
       {
         text: "English-language learning program admissions and exit",
-        icon: "mdi-school-outline"
+        icon: "mdi-school-outline",
       },
       {
         text: "Scholarship and certification candidates",
-        icon: "mdi-page-next"
+        icon: "mdi-page-next",
       },
       {
         text: "English-language learners who want to track their progress",
-        icon: "mdi-radar"
+        icon: "mdi-radar",
       },
-      { text: "Students and workers applying for visas", icon: "mdi-passport" }
-    ]
+      { text: "Students and workers applying for visas", icon: "mdi-passport" },
+    ],
   }),
   created() {
     this.isMobile();
@@ -308,36 +368,52 @@ export default {
         this.image = true;
       }
     },
-     onFileChanged(event) {
+    onFileChanged(event) {
       this.pearson.image = event.target.files[0];
+      this.imageUploaded = true;
     },
 
     save() {
-      // this.alerts = true;
-       this.saving = true
-      this.pearson.date = new Date();
-      const formData = new FormData();
-      formData.append("image", this.pearson.image);
-      formData.append("sname", this.pearson.sname);
-      formData.append("fname", this.pearson.fname);
-      formData.append("mname", this.pearson.mname);
-      formData.append("email", this.pearson.email);
-      formData.append("date", this.pearson.date);
-      formData.append("contAdress", this.pearson.contAdress);
-      formData.append("country", this.pearson.country);
-      formData.append("examDate", this.pearson.examDate);
-      formData.append("examCenter", this.pearson.examCenter);
-
-      // eslint-disable-next-line no-console
-      console.log(this.pearson);
-      serv.postRequest("pearson/newpearson", formData).then(response => {
+      if (
+        !this.pearson.sname ||
+        !this.pearson.fname ||
+        !this.pearson.email ||
+        !this.pearson.image ||
+        !this.pearson.contAdress ||
+        !this.pearson.country ||
+        !this.pearson.examDate ||
+        !this.pearson.examCenter
+      ) {
+        this.$alertify.error("please fill out required data");
         // eslint-disable-next-line no-console
-        console.log(response);
-        this.processing = false;
-        this.saving = false;
-      });
-    }
-  }
+        console.log(this.pearson);
+      } else {
+        // this.alerts = true;
+        this.saving = true;
+        this.pearson.date = new Date();
+        const formData = new FormData();
+        formData.append("image", this.pearson.image);
+        formData.append("sname", this.pearson.sname);
+        formData.append("fname", this.pearson.fname);
+        formData.append("mname", this.pearson.mname);
+        formData.append("email", this.pearson.email);
+        formData.append("date", this.pearson.date);
+        formData.append("contAdress", this.pearson.contAdress);
+        formData.append("country", this.pearson.country);
+        formData.append("examDate", this.pearson.examDate);
+        formData.append("examCenter", this.pearson.examCenter);
+
+        // eslint-disable-next-line no-console
+        console.log(this.pearson);
+        serv.postRequest("pearson/newpearson", formData).then((response) => {
+          // eslint-disable-next-line no-console
+          console.log(response);
+          this.processing = false;
+          this.saving = false;
+        });
+      }
+    },
+  },
 };
 </script>
 

@@ -161,15 +161,20 @@ export default {
       };
       // alert(newData);
       this.alertify = true;
-      this.send = true;
-
-      serv.postRequest("cont/newCont", newData).then(response => {
+    
+     if (!newData.fname || !newData.lname || !newData.email) {
+       this.$alertify.error("please fill out required data");
+     }else{
+         this.send = true;
+        serv.postRequest("cont/newCont", newData).then(response => {
         this.$alertify.success(response.data);
       
         this.send = false;
       // eslint-disable-next-line no-console
       console.log(response)
       });
+     }
+     
     }
   }
 };

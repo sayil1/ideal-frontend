@@ -1,15 +1,15 @@
 <template>
-  <div style="width:100%">
+  <div style="width: 100%">
     <!-- <nava /> -->
     <nav2 />
 
-    <header style="width:100%; ">
+    <header style="width: 100%">
       <div>
-        <div style=" padding:5px" class="arch">
+        <div style="padding: 5px" class="arch">
           <div class="carouselHolder">
             <!-- serach here -->
-      
-          <!-- <div>
+
+            <!-- <div>
               <v-toolbar flat color="transparent" style="width:300px">
                 <div>
                   
@@ -40,7 +40,7 @@
                 </v-list>
               </div>
           </div> -->
-          
+
             <!-- search here -->
             <v-carousel
               :show-arrows="false"
@@ -48,53 +48,53 @@
               hide-delimiter-background
               delimiter-icon="mdi-minus"
               cycle
-              style="max-height:400px"
+              style="max-height: 400px"
               show-arrows-on-hover
               interval="3000"
             >
               <v-carousel-item class="div0">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size"></div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div1">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
-                        <div style=" " class="text-center"></div>
+                        <div style="" class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div0">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
-                        <div style=" " class="text-center"></div>
+                        <div style="" class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div2">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
-                      <div style="margin-top:px ; ">
+                      <div style="margin-top: px">
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
                         <div class="text-center"></div>
                       </div>
@@ -103,28 +103,28 @@
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div0">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
-                        <div style=" " class="text-center"></div>
+                        <div style="" class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div3">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
-                      <div style="margin-top:px ; ">
+                      <div style="margin-top: px">
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
                         <div class="text-center"></div>
                       </div>
@@ -133,28 +133,28 @@
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div0">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
-                        <div style=" " class="text-center"></div>
+                        <div style="" class="text-center"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div4">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
-                      <div style="margin-top:px ; ">
+                      <div style="margin-top: px">
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
                         <div class="text-center"></div>
                       </div>
@@ -163,15 +163,15 @@
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div0">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
-                        <div style=" " class="text-center"></div>
+                        <div style="" class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -179,13 +179,13 @@
               </v-carousel-item>
 
               <v-carousel-item class="div5">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
-                      <div style="margin-top:px ; ">
+                      <div style="margin-top: px">
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
                         <div class="text-center"></div>
                       </div>
@@ -194,15 +194,15 @@
                 </div>
               </v-carousel-item>
               <v-carousel-item class="div0">
-                <div style=" height:100%" class="cov">
+                <div style="height: 100%" class="cov">
                   <div class="card-size">
                     <div class="card-body" style>
                       <div>
                         <div
                           class="car card-text white--text font-weight-regular"
-                          style="margin-left:40px; margin-right:40px"
+                          style="margin-left: 40px; margin-right: 40px"
                         ></div>
-                        <div style=" " class="text-center"></div>
+                        <div style="" class="text-center"></div>
                       </div>
                     </div>
                   </div>
@@ -214,26 +214,36 @@
                 <div class="row iconHolder">
                   <div
                     class="col-md-4 col-sm-4 col-3"
-                    style="text-align:center ; text-decoration:none"
+                    style="text-align: center; text-decoration: none"
                   >
                     <a
                       href="https://web.facebook.com/idealcenter.ng/?_rdc=1&_rdr"
-                      style="text-decoration:none"
+                      style="text-decoration: none"
                     >
                       <v-icon size="20" class="icon" right>mdi-facebook</v-icon>
                     </a>
                   </div>
-                  <div class="col-md-4 col-sm-4 col-3" style="text-align:center">
-                    <a href="https://twitter.com/IdealcenterN" style="text-decoration:none">
-                      <v-icon size="20" class="icon" colo right>mdi-twitter</v-icon>
+                  <div
+                    class="col-md-4 col-sm-4 col-3"
+                    style="text-align: center"
+                  >
+                    <a
+                      href="https://twitter.com/IdealcenterN"
+                      style="text-decoration: none"
+                    >
+                      <v-icon size="20" class="icon" colo right
+                        >mdi-twitter</v-icon
+                      >
                     </a>
                   </div>
-                  <div class="col-md-4 col-3" style="text-align:center">
+                  <div class="col-md-4 col-3" style="text-align: center">
                     <a
-                      style="text-decoration:none"
+                      style="text-decoration: none"
                       href="https://www.instagram.com/explore/locations/1019278922/initiative-for-development-education-and-learning-ideal/"
                     >
-                      <v-icon size="20" class="icon" right>mdi-instagram</v-icon>
+                      <v-icon size="20" class="icon" right
+                        >mdi-instagram</v-icon
+                      >
                     </a>
                   </div>
                   <!-- <div class="col-md-3 col-3" style="text-align:center">
@@ -248,55 +258,94 @@
     </header>
 
     <div class="goals">
-      <div class="row" style="padding-top:90px;padding-bottom:90px;  height:100%;">
+      <div
+        class="row"
+        style="padding-top: 90px; padding-bottom: 90px; height: 100%"
+      >
         <div class="col-md-4 col-sm-12">
-          <div class="card1 card-faintN" style=" width:75%">
-            <v-icon large color="orange darken-2 " style="margin:16px">mdi-bullseye-arrow</v-icon>
+          <div class="card1 card-faintN" style="width: 75%">
+            <v-icon large color="orange darken-2 " style="margin: 16px"
+              >mdi-bullseye-arrow</v-icon
+            >
             <div class="-header text-left p-3">
               <div data-aos="zoom-in">
                 <h3 class="white--text bold">OUR MAJOR GOAL</h3>
               </div>
 
-              <hr style="color:orange; width:45px; margin-left:0px; border: 1px solid orange;" />
+              <hr
+                style="
+                  color: orange;
+                  width: 45px;
+                  margin-left: 0px;
+                  border: 1px solid orange;
+                "
+              />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
-              <div
-                class="text-left white--text p-3"
-                style="padding:10px"
-              >In our ever globalizing world where there are constant introductions of new technologies, groundbreaking inventions and disruptions, there is a need for a critical look at how individuals can be a part of all these successes. ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless..</div>
+              <div class="text-left white--text p-3" style="padding: 10px">
+                In our ever globalizing world where there are constant
+                introductions of new technologies, groundbreaking inventions and
+                disruptions, there is a need for a critical look at how
+                individuals can be a part of all these successes. ICT is an
+                integral part of all our programmes, serving as a platform where
+                opportunities are boundless..
+              </div>
             </div>
           </div>
         </div>
         <div class="col-md-4 col-sm-12">
-          <div class="card2 card-faintN" style=" width:75%; ">
-            <v-icon large color="orange darken-2" style="margin:16px">mdi-eye</v-icon>
+          <div class="card2 card-faintN" style="width: 75%">
+            <v-icon large color="orange darken-2" style="margin: 16px"
+              >mdi-eye</v-icon
+            >
             <div class="-header t p-3">
               <h3 class="white--text bold">VISION</h3>
-              <hr style="color:orange; width:45px; margin-left:0px; border: 1px solid #FF8A00;" />
+              <hr
+                style="
+                  color: orange;
+                  width: 45px;
+                  margin-left: 0px;
+                  border: 1px solid #ff8a00;
+                "
+              />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
-              <div
-                class="text-left white--text p-3"
-              >Develop individuals and communities towards a knowledge-based society.</div>
+              <div class="text-left white--text p-3">
+                Develop individuals and communities towards a knowledge-based
+                society.
+              </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-4 col-sm-12">
-          <div class="card3 card-faintN" style=" width:75%; ">
-            <v-icon large style="margin:16px; color:#FF8A00;">mdi-lightbulb-on</v-icon>
+          <div class="card3 card-faintN" style="width: 75%">
+            <v-icon large style="margin: 16px; color: #ff8a00"
+              >mdi-lightbulb-on</v-icon
+            >
             <div class="-header p-3">
               <h3 class="white--text bold">OUR APPROACH</h3>
-              <hr style="color:#FF8A00; width:45px; margin-left:0px; border: 1px solid #FF8A00;" />
+              <hr
+                style="
+                  color: #ff8a00;
+                  width: 45px;
+                  margin-left: 0px;
+                  border: 1px solid #ff8a00;
+                "
+              />
             </div>
             <div class>
               <!-- <h1><b>$0 </b><small class="text-muted">/ mo</small></h1> -->
-              <div
-                class="text-left white--text p-3"
-                style="padding:10px"
-              >In our ever globalizing world where there are constant introductions of new technologies, ground breaking inventions and disruptions, there is a need for a critical look on how individuals can be a part of all these successes. This is why ICT is an integral part of all our programmes, serving as a platform where opportunities are boundless.</div>
+              <div class="text-left white--text p-3" style="padding: 10px">
+                In our ever globalizing world where there are constant
+                introductions of new technologies, ground breaking inventions
+                and disruptions, there is a need for a critical look on how
+                individuals can be a part of all these successes. This is why
+                ICT is an integral part of all our programmes, serving as a
+                platform where opportunities are boundless.
+              </div>
             </div>
           </div>
         </div>
@@ -323,7 +372,11 @@
                   <v-container>
                     <v-row>
                       <v-col cols="12" sm="6" md="6">
-                        <v-text-field label="First name" v-model="project.fname" required></v-text-field>
+                        <v-text-field
+                          label="First name"
+                          v-model="project.fname"
+                          required
+                        ></v-text-field>
                       </v-col>
 
                       <v-col cols="12" sm="6" md="6">
@@ -335,10 +388,18 @@
                         ></v-text-field>
                       </v-col>
                       <v-col cols="12">
-                        <v-text-field label="Email" v-model="project.email" required></v-text-field>
+                        <v-text-field
+                          label="Email"
+                          v-model="project.email"
+                          required
+                        ></v-text-field>
                       </v-col>
                       <v-col cols="12">
-                        <v-text-field label="Phone" v-model="project.phone" required></v-text-field>
+                        <v-text-field
+                          label="Phone"
+                          v-model="project.phone"
+                          required
+                        ></v-text-field>
                       </v-col>
 
                       <v-col cols="12" sm="12">
@@ -355,35 +416,44 @@
                     </v-row>
                   </v-container>
                   <small>*indicates required field</small>
-                  <loader style="position:fixed; " v-if="send" />
+                  <loader style="position: fixed" v-if="send" />
                 </v-card-text>
                 <br />
               </v-card>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" v-on:click="submit">Submit</button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary" v-on:click="submit">
+                Submit
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="greenBg" style=" text-align:center">
+    <div class="greenBg" style="text-align: center">
       <div class="col-md-12">
         <div>
           <div
             class="item"
             data-aos="slide-up"
             style="
-font-family: Sans-Serif;
-font-style: normal;
-color:white;
-font-size: 24px;
-line-height: 140.84%;
-margin:40px;
-text-align: center;
-letter-spacing: 0.02em;  "
+              font-family: Sans-Serif;
+              font-style: normal;
+              color: white;
+              font-size: 24px;
+              line-height: 140.84%;
+              margin: 40px;
+              text-align: center;
+              letter-spacing: 0.02em;
+            "
           >
             <br />“Collectively we could ensure that children go to school
             <br />and also remain in school” - IDEAL
@@ -396,75 +466,126 @@ letter-spacing: 0.02em;  "
           <br />
 
           <div class="item" data-aos="fade-up">
-            <div class="row" style="text-align:center">
+            <div class="row" style="text-align: center">
               <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
                 <v-icon large color="#1B6761">mdi-school</v-icon>
                 <!-- <i class="material-icons outlined" style=" font-size: 50px; outline" >school</i> -->
-                <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Books</div>
+                <div
+                  class="demo-content"
+                  style="color: #ff8a00; margin-top: 10px"
+                >
+                  School Books
+                </div>
               </div>
 
               <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
                 <v-icon large color="#1B6761">mdi-tshirt-v-outline</v-icon>
-                <div class="demo-content" style="color:#FF8A00;margin-top:10px">Uniforms</div>
+                <div
+                  class="demo-content"
+                  style="color: #ff8a00; margin-top: 10px"
+                >
+                  Uniforms
+                </div>
               </div>
               <div class="col-md-2 col-sm-3 col-6 subtitle-2 font-weight-black">
                 <v-icon large color="#1B6761">mdi-cash</v-icon>
-                <div class="demo-content" style="color:#FF8A00; margin-top:10px">Fees</div>
+                <div
+                  class="demo-content"
+                  style="color: #ff8a00; margin-top: 10px"
+                >
+                  Fees
+                </div>
               </div>
               <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
                 <v-icon large color="#1B6761">mdi-home-city-outline</v-icon>
-                <div class="demo-content" style="color:#FF8A00; margin-top:10px">School Renovations</div>
+                <div
+                  class="demo-content"
+                  style="color: #ff8a00; margin-top: 10px"
+                >
+                  School Renovations
+                </div>
               </div>
               <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
                 <v-icon large color="#1B6761">mdi-teach</v-icon>
-                <div class="demo-content" style="color:#FF8A00; margin-top:10px">Training</div>
+                <div
+                  class="demo-content"
+                  style="color: #ff8a00; margin-top: 10px"
+                >
+                  Training
+                </div>
               </div>
               <div class="col-md-2 col-sm-6 col-6 subtitle-2 font-weight-black">
                 <v-icon large color="#1B6761">mdi-server-network</v-icon>
-                <div class="demo-content" style="color:#FF8A00; margin-top:10px">Computer Server</div>
+                <div
+                  class="demo-content"
+                  style="color: #ff8a00; margin-top: 10px"
+                >
+                  Computer Server
+                </div>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-4"></div>
-            <div class="col-md-4" style="margin-top:70px; margin-bottom:70px">
+            <div class="col-md-4" style="margin-top: 70px; margin-bottom: 70px">
               <button
                 type="button"
                 class="btn"
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
-              >Support a project</button>
+              >
+                Support a project
+              </button>
             </div>
             <div class="col-md-4"></div>
           </div>
         </div>
       </div>
     </div>
-    <div style="width:100%">
+    <div style="width: 100%">
       <div class="item" data-aos="slide-up">
         <div
           class="display-1 animate__animated animate__bounce"
-          style="margin-top:40px; text-align:center; color: #092E2B; font-family: Sans-Serif;
-font-style: normal;
-font-weight: 800;
-font-size: 48px;"
-        >Quick Offers</div>
+          style="
+            margin-top: 40px;
+            text-align: center;
+            color: #092e2b;
+            font-family: Sans-Serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+          "
+        >
+          Quick Offers
+        </div>
         <div
-          style="height: 26px; margin-top:10px; text-align:center; color:#1B6761;font-family: Sans-Serif;
-font-style: normal;
-font-weight: normal;
-font-size: 14px;"
-        >Quick link to the most searched offer</div>
+          style="
+            height: 26px;
+            margin-top: 10px;
+            text-align: center;
+            color: #1b6761;
+            font-family: Sans-Serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+          "
+        >
+          Quick link to the most searched offer
+        </div>
       </div>
       <div class="small">
-        <div class="row" >
-          <div class="col-md-4" style="width: 18rem;">
+        <div class="row">
+          <div class="col-md-4" style="width: 18rem">
             <div class="item" data-aos="fade-up">
-              <router-link style="text-decoration:none" class="route" to="cont">
+              <router-link
+                style="text-decoration: none"
+                class="route"
+                to="cont"
+              >
                 <div class="card-body card-bullet">
                   <a class="card-link white--text">Internship</a>
-                  <a class="card-link" style="float:right; ">
+                  <a class="card-link" style="float: right">
                     <v-icon color="white">mdi-arrow-right</v-icon>
                   </a>
                 </div>
@@ -472,12 +593,16 @@ font-size: 14px;"
             </div>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
+          <div class="col-md-4" style="width: 18rem">
             <div class="item" data-aos="fade-up">
-              <router-link style="text-decoration:none" class="route" to="test">
+              <router-link
+                style="text-decoration: none"
+                class="route"
+                to="test"
+              >
                 <div class="card-body card-bulletMain" style>
                   <a href="#" class="card-link white--text">Test Preparation</a>
-                  <a href="#" class="card-link" style="float:right; ">
+                  <a href="#" class="card-link" style="float: right">
                     <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
                   </a>
                 </div>
@@ -485,12 +610,18 @@ font-size: 14px;"
             </div>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
+          <div class="col-md-4" style="width: 18rem">
             <div class="item" data-aos="fade-up">
-              <router-link style="text-decoration:none" class="route" to="prof">
+              <router-link
+                style="text-decoration: none"
+                class="route"
+                to="prof"
+              >
                 <div class="card-body card-bullet">
-                  <a href="#" class="card-link white--text">Professional IT Courses</a>
-                  <a href="#" class="card-link" style="float:right; ">
+                  <a href="#" class="card-link white--text"
+                    >Professional IT Courses</a
+                  >
+                  <a href="#" class="card-link" style="float: right">
                     <v-icon color="white">mdi-arrow-right</v-icon>
                   </a>
                 </div>
@@ -498,12 +629,16 @@ font-size: 14px;"
             </div>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
+          <div class="col-md-4" style="width: 18rem">
             <div class="item" data-aos="fade-up">
-              <router-link style="text-decoration:none" class="route" to="books">
+              <router-link
+                style="text-decoration: none"
+                class="route"
+                to="books"
+              >
                 <div class="card-body card-bullet">
                   <a href="#" class="card-link white--text">Book Shops</a>
-                  <a href="#" class="card-link" style="float:right; ">
+                  <a href="#" class="card-link" style="float: right">
                     <v-icon color="white">mdi-arrow-right</v-icon>
                   </a>
                 </div>
@@ -511,12 +646,12 @@ font-size: 14px;"
             </div>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
+          <div class="col-md-4" style="width: 18rem">
             <div class="item" data-aos="fade-up">
-              <router-link style="text-decoration:none" class="route" to="diy">
+              <router-link style="text-decoration: none" class="route" to="diy">
                 <div class="card-body card-bullet">
                   <a href="#" class="card-link white--text">DIY Kits</a>
-                  <a href="#" class="card-link" style="float:right; ">
+                  <a href="#" class="card-link" style="float: right">
                     <v-icon color="white">mdi-arrow-right</v-icon>
                   </a>
                 </div>
@@ -524,12 +659,16 @@ font-size: 14px;"
             </div>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
+          <div class="col-md-4" style="width: 18rem">
             <div class="item" data-aos="fade-up">
-              <router-link style="text-decoration:none" class="route" to="events">
+              <router-link
+                style="text-decoration: none"
+                class="route"
+                to="events"
+              >
                 <div class="card-body card-bullet">
                   <a href="#" class="card-link white--text">Events</a>
-                  <a href="#" class="card-link" style="float:right; ">
+                  <a href="#" class="card-link" style="float: right">
                     <v-icon color="white">mdi-arrow-right</v-icon>
                   </a>
                 </div>
@@ -537,33 +676,37 @@ font-size: 14px;"
             </div>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="contest">
+          <div class="col-md-4" style="width: 18rem">
+            <router-link
+              style="text-decoration: none"
+              class="route"
+              to="contest"
+            >
               <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Apply For Contests</a>
-                <a href="#" class="card-link" style="float:right; ">
+                <a href="#" class="card-link" style="float: right">
                   <v-icon color="white">mdi-arrow-right</v-icon>
                 </a>
               </div>
             </router-link>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="webs">
+          <div class="col-md-4" style="width: 18rem">
+            <router-link style="text-decoration: none" class="route" to="webs">
               <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Webinars</a>
-                <a href="#" class="card-link" style="float:right; ">
+                <a href="#" class="card-link" style="float: right">
                   <v-icon color="white">mdi-arrow-right</v-icon>
                 </a>
               </div>
             </router-link>
           </div>
 
-          <div class="col-md-4" style="width: 18rem;">
-            <router-link style="text-decoration:none" class="route" to="/">
+          <div class="col-md-4" style="width: 18rem">
+            <router-link style="text-decoration: none" class="route" to="/">
               <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Surport a Project</a>
-                <a href="#" class="card-link" style="float:right; ">
+                <a href="#" class="card-link" style="float: right">
                   <v-icon color="white">mdi-arrow-right</v-icon>
                 </a>
               </div>
@@ -578,29 +721,40 @@ font-size: 14px;"
         <div class="item" data-aos="fade-up">
           <div
             class="display-1"
-            style="margin-top:80px; margin-bottom:40px; text-align:center; color:black;
-      font-family: Sans-Serif;
-font-style: normal;
-font-weight: 800;
-font-size: 48px; "
-          >Our Partners</div>
+            style="
+              margin-top: 80px;
+              margin-bottom: 40px;
+              text-align: center;
+              color: black;
+              font-family: Sans-Serif;
+              font-style: normal;
+              font-weight: 800;
+              font-size: 48px;
+            "
+          >
+            Our Partners
+          </div>
         </div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
           :autoPlay="true"
           :playSpeed="4000"
-          style="margin-bottom:20px; margin-left:-25px "
+          style="margin-bottom: 20px; margin-left: -25px"
         >
           <slide>
             <v-col style>
               <img
                 src="../assets/toefl.png"
-                style=" display: block;
-   width: 100px;
-    height: 100px; text-align:center; display: block;
-  margin-left: auto;
-  margin-right: auto;"
+                style="
+                  display: block;
+                  width: 100px;
+                  height: 100px;
+                  text-align: center;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
               />
             </v-col>
           </slide>
@@ -608,11 +762,14 @@ font-size: 48px; "
             <v-col>
               <img
                 src="../assets/icm.png"
-                style=" display: block;
-   width: 100px;
-    height: 100px; display: block;
-  margin-left: auto;
-  margin-right: auto;"
+                style="
+                  display: block;
+                  width: 100px;
+                  height: 100px;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
               />
             </v-col>
           </slide>
@@ -620,11 +777,14 @@ font-size: 48px; "
             <v-col>
               <img
                 src="../assets/pearson.png"
-                style=" display: block;
-    width: 100px;
-    height: 100px; display: block;
-  margin-left: auto;
-  margin-right: auto;"
+                style="
+                  display: block;
+                  width: 100px;
+                  height: 100px;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
               />
             </v-col>
           </slide>
@@ -632,11 +792,14 @@ font-size: 48px; "
             <v-col>
               <img
                 src="../assets/cisco.png"
-                style=" display: block;
-    width: 100px;
-    height: 100px; display: block;
-  margin-left: auto;
-  margin-right: auto;"
+                style="
+                  display: block;
+                  width: 100px;
+                  height: 100px;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
               />
             </v-col>
           </slide>
@@ -656,11 +819,14 @@ font-size: 48px; "
             <v-col>
               <img
                 src="../assets/national.png"
-                style=" display: block;
-  width: 100px;
-    height: 100px; display: block;
-  margin-left: auto;
-  margin-right: auto;"
+                style="
+                  display: block;
+                  width: 100px;
+                  height: 100px;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
               />
             </v-col>
           </slide>
@@ -669,60 +835,66 @@ font-size: 48px; "
     </section>
 
     <div class="formHolder">
-      <div class="form" style="padding-left:9%">
+      <div class="form" style="padding-left: 9%">
         <h1>GET UPDATES</h1>
-        <hr style="color:orange; width:700px; border: 1px solid #FF8A00;" />
+        <hr style="color: orange; width: 700px; border: 1px solid #ff8a00" />
       </div>
       <div>
         <div class="row form-inputs">
           <div class="col-md-12">
             <label
               for="exampleFormControlInput1"
-              style="font-family: Sans-Serif;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;"
+              style="
+                font-family: Sans-Serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+              "
             >
               EMAIL ADDRESS
-              <span style="color:red">*</span>
+              <span style="color: red">*</span>
             </label>
             <input
               type="email"
               v-model="emailUpdates.email"
               class="form-control"
               id="exampleFormControlInput1"
-              style="background-color:#CAD9D8"
+              style="background-color: #cad9d8"
             />
           </div>
           <div class="col-md-7">
             <label
               for="exampleFormControlInput1"
-              style="font-family: Sans-Serif;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;"
+              style="
+                font-family: Sans-Serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+              "
             >
               COUNTRY
-              <span style="color:red">*</span>
+              <span style="color: red">*</span>
             </label>
             <input
               v-model="emailUpdates.country"
               class="form-control"
               id="exampleFormControlInput1"
-              style="background-color:#CAD9D8"
+              style="background-color: #cad9d8"
             />
             <br />
           </div>
           <div class="col-md-5 col-sm-12">
             <label
               for="exampleFormControlInput1"
-              style="font-family: Sans-Serif;
-font-style: normal;
-font-weight: bold;
-font-size: 13px;"
+              style="
+                font-family: Sans-Serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+              "
             >
               ZIP CODE
-              <span style="color:red">*</span>
+              <span style="color: red">*</span>
             </label>
             <br />
 
@@ -730,11 +902,15 @@ font-size: 13px;"
               v-model="emailUpdates.zipCode"
               class="form-control"
               id="exampleFormControlInput1"
-              style="background-color:#CAD9D8"
+              style="background-color: #cad9d8"
+              type="numbers"
             />
           </div>
-          <div style="margin:0px; padding-left:10px" class="subscribe">
-            <strong>By submitting this form, you agree to the iDeal-IT Privacy Policy</strong>
+          <div style="margin: 0px; padding-left: 10px" class="subscribe">
+            <strong
+              >By submitting this form, you agree to the iDeal-IT Privacy
+              Policy</strong
+            >
             <br />
             <div class>
               <input type="checkbox" class id="exampleCheck1" />
@@ -815,7 +991,7 @@ export default {
       },
     ],
     search: "",
-    show:false,
+    show: false,
     hooperSettings: {
       itemsToShow: null,
       centerMode: true,
@@ -938,7 +1114,6 @@ export default {
       alert("see me");
     },
     submit: function () {
-      this.send = true;
       let newData = {
         fname: this.project.fname,
         lname: this.project.lname,
@@ -946,26 +1121,39 @@ export default {
         phone: this.project.phone,
         Interests: this.project.interests,
       };
+      if (
+        !newData.fname ||
+        !newData.lname ||
+        !newData.email ||
+        !newData.Interests
+      ) {
+        this.$alertify.error("please fill out required data");
+      } else {
+        this.send = true;
+        serv.postRequest("proj/newProj", newData).then((response) => {
+          this.$alertify.success(response.data);
 
-      serv.postRequest("proj/newProj", newData).then((response) => {
-        this.$alertify.success(response.data);
-
-        this.send = false;
-      });
+          this.send = false;
+        });
+      }
     },
     subscribe: function () {
-      this.send = true;
+  
       let newData = {
         email: this.emailUpdates.email,
         country: this.emailUpdates.country,
         zipCode: this.emailUpdates.zipCode,
       };
+      if (!newData.email || !newData.country || !newData.zipCode) {
+        this.$alertify.error("please fill out required data");
+      } else {
+            this.send = true;
+        serv.postRequest("emailUpdates/subscribe", newData).then((response) => {
+          this.$alertify.success(response.data);
 
-      serv.postRequest("emailUpdates/subscribe", newData).then((response) => {
-        this.$alertify.success(response.data);
-
-        this.send = false;
-      });
+          this.send = false;
+        });
+      }
     },
     isMobile() {
       var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
@@ -1145,7 +1333,7 @@ header {
   background-repeat: no-repeat;
 }
 /* Mobile Styles */
-@media only screen and (max-width: 700px) and (orientation : portrait){
+@media only screen and (max-width: 700px) and (orientation: portrait) {
   .iconHolder {
     padding-left: 18%;
   }
@@ -1185,9 +1373,8 @@ header {
     font-size: 16px;
   }
   .card-faintN {
-  background-color: rgb(9, 47, 44);
-  
-}
+    background-color: rgb(9, 47, 44);
+  }
   .card1 {
     margin-left: auto;
     margin-right: auto;

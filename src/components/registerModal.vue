@@ -79,7 +79,7 @@
             </v-row>
           </v-container>
           <small>*indicates required field</small> <br />
-          <h4 v-if="saving" style="color:green">saving...</h4>
+          <h4 v-if="saving" style="color: green">saving...</h4>
         </v-card-text>
         <v-card-actions>
           <v-spacer></v-spacer>
@@ -109,8 +109,23 @@ export default {
   }),
   methods: {
     reg() {
-         this.alertify = true;
-      this.saving = true;
+      this.alertify = true;
+    
+        if (
+      
+        !this.fname ||
+        !this.email ||
+        !this.lname ||
+        !this.phone ||
+        !this.session ||
+        !this.course 
+      
+      ) {
+        this.$alertify.error("please fill out required data");
+        // eslint-disable-next-line no-console
+        console.log(this);
+      } else {
+          this.saving = true;
       let data = {
         fname: this.fname,
         lname: this.lname,
@@ -127,7 +142,7 @@ export default {
         this.saving = false;
         // eslint-disable-next-line no-console
         console.log(response);
-      });
+      });}
     },
   },
 };

@@ -1,14 +1,17 @@
 <template>
-  <div style="background-color:black">
+  <div style="background-color: black">
     <nava />
-    <div style=" padding:5px;" class="arch">
-      <div style="margin-top:160px; margin-bottom:100px" class="carouselHolde">
+    <div style="padding: 5px" class="arch">
+      <div
+        style="margin-top: 160px; margin-bottom: 100px"
+        class="carouselHolde"
+      >
         <v-carousel
           hide-delimiters
           hide-delimiter-background
           delimiter-icon="mdi-minus"
           cycle
-          style="max-height:400px; margin:auto; max-width:1000px"
+          style="max-height: 400px; margin: auto; max-width: 1000px"
           :show-arrows="false"
           interval="3000"
           height="100"
@@ -16,7 +19,9 @@
           <v-carousel-item v-for="(slide, i) in slides" :key="i">
             <v-sheet style="background: rgba(0, 0, 0, 0.5)" height="100%">
               <v-row class="fill-height" align="center" justify="center">
-                <div style="text-align:center" class="display-3">{{ slide }}</div>
+                <div style="text-align: center" class="display-3">
+                  {{ slide }}
+                </div>
               </v-row>
             </v-sheet>
           </v-carousel-item>
@@ -24,10 +29,10 @@
       </div>
     </div>
     <div class>
-      <vue-position-sticky :offsetTop="84" style="z-index:-2000">
-        <div class="row" style="background-color:black; padding:2px">
+      <vue-position-sticky :offsetTop="84" style="z-index: -2000">
+        <div class="row" style="background-color: black; padding: 2px">
           <div style class="col-sm-8 col-8">
-            <div class="search-bar" style=" ">
+            <div class="search-bar" style="">
               <div class="input-group">
                 <input
                   v-model="search"
@@ -35,12 +40,28 @@
                   width="100%"
                   class="form-control"
                   placeholder="Search by title, category.."
-                  style="background-color:rgb(64, 64, 64); color:white;   outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden;width:50px; "
+                  style="
+                    background-color: rgb(64, 64, 64);
+                    color: white;
+                    outline: none;
+                    border-top-style: hidden;
+                    border-right-style: hidden;
+                    border-left-style: hidden;
+                    border-bottom-style: hidden;
+                    width: 50px;
+                  "
                 />
                 <div class="input-group-append">
                   <button
                     class="btn"
-                    style="background-color:rgb(64, 64, 64);outline: none;  border-top-style: hidden; border-right-style: hidden;border-left-style: hidden;border-bottom-style: hidden;"
+                    style="
+                      background-color: rgb(64, 64, 64);
+                      outline: none;
+                      border-top-style: hidden;
+                      border-right-style: hidden;
+                      border-left-style: hidden;
+                      border-bottom-style: hidden;
+                    "
                     type="button"
                     @click="getBooks()"
                   >
@@ -51,19 +72,21 @@
             </div>
           </div>
 
-             <div style="  z-index:200" class="col-sm-2 col-2 ">
+          <div style="z-index: 200" class="col-sm-2 col-2">
             <div class="row">
-              <div style="0px 15px 0px; color:white ; padding-left:100%" >
+              <div style="0px 15px 0px; color:white ; padding-left:100%">
                 <v-badge
-                 class=""
+                  class=""
                   bordered
                   :content="quantity"
                   :value="quantity"
-                  style="color:blue"
+                  style="color: blue"
                   color="red"
                   overlap
                 >
-                  <v-icon @click="showCart = !showCart" color="white" large>mdi-cart</v-icon>
+                  <v-icon @click="showCart = !showCart" color="white" large
+                    >mdi-cart</v-icon
+                  >
                 </v-badge>
                 <!-- <span style="color:white">Cart</span> -->
               </div>
@@ -73,29 +96,49 @@
       </vue-position-sticky>
     </div>
     <div
-      style="padding:55px; color:rgb(0, 255, 0); background-color:rgb(64, 64, 64); text-align:center; letter-spacing: 0.4em;"
-    >WHERE ALL STORIES BEGIN</div>
+      style="
+        padding: 55px;
+        color: rgb(0, 255, 0);
+        background-color: rgb(64, 64, 64);
+        text-align: center;
+        letter-spacing: 0.4em;
+      "
+    >
+      WHERE ALL STORIES BEGIN
+    </div>
 
     <div id="app" style>
-      <vue-position-sticky :offsetTop="150" style="z-index:-200">
+      <vue-position-sticky :offsetTop="150" style="z-index: -200">
         <div class="cart" v-show="showCart">
-          <div v-show="items.length > 0" style="position: ; background-color:#1b6761">
+          <div
+            v-show="items.length > 0"
+            style="position: ; background-color: #1b6761"
+          >
             <ul>
               <li v-for="(item, i) in items" :key="i" transition="fade">
-                <div style="font-family:Alegraya; color:white; margin:0px; padding:0px" class="row">
-                  <div class="col-10" style="text-align:left">
+                <div
+                  style="
+                    font-family: Alegraya;
+                    color: white;
+                    margin: 0px;
+                    padding: 0px;
+                  "
+                  class="row"
+                >
+                  <div class="col-10" style="text-align: left">
                     <strong>{{ item.quantity }}X</strong>
-                    - {{ item.title }} 
+                    - {{ item.title }}
                   </div>
-                    
+
                   <v-icon
-                    style="margin:0px; "
+                    style="margin: 0px"
                     class="col-2"
                     size="20"
                     color="white"
                     right
                     @click="removeFromCart(item)"
-                  >mdi-delete</v-icon>
+                    >mdi-delete</v-icon
+                  >
                   <!-- <i class="mdi-trash" @click="removeFromCart(item)"></i> -->
                 </div>
               </li>
@@ -111,8 +154,9 @@
                 outlined
                 data-toggle="modal"
                 data-target="#exampleModalCenter"
-                @click="verified = true, showCart = false, hopper=false"
-              >Check out</v-btn>
+                @click="(verified = true), (showCart = false), (hopper = false)"
+                >Check out</v-btn
+              >
               <v-btn
                 class="ma-2"
                 tile
@@ -121,21 +165,26 @@
                 small
                 outlined
                 @click="clearCart()"
-              >Clear Cart</v-btn>
+                >Clear Cart</v-btn
+              >
 
               <!-- <button @click="verified = true, showCart = false">Check out</button> -->
             </div>
           </div>
-          <div style="z-index:1" v-show="items.length === 0">
+          <div style="z-index: 1" v-show="items.length === 0">
             <p>Your cart is empty!</p>
           </div>
         </div>
       </vue-position-sticky>
 
       <div class="containe">
-        <div class="header-text" style="padding-top:70px;">New Arrival</div>
+        <div class="header-text" style="padding-top: 70px">New Arrival</div>
 
-        <v-sheet class="mx-auto" max-width="1100" style=" background: rgba(76, 175, 80, 0.0);">
+        <v-sheet
+          class="mx-auto"
+          max-width="1100"
+          style="background: rgba(76, 175, 80, 0)"
+        >
           <v-slide-group
             multiple
             show-arrows
@@ -143,22 +192,56 @@
             prev-icon="mdi-chevron-left"
             next-icon="mdi-chevron-right"
           >
-            <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
+            <v-slide-item v-for="(item, i) in shopsToDisplay" :key="i">
               <div class="m-3 bookSize">
-                <div style="background-color:rgb(230, 230, 230)">
+                <div style="background-color: rgb(230, 230, 230)">
                   <v-img
-                    style="  "
+                    style=""
                     class="white--text align-end vImage"
                     v-bind:src="item.imagesPath"
                   ></v-img>
 
-                  <div style="padding-top:10px">
-                    <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                      <div class="card-title" style=";font-size:15px;color: #092E2B;">
-                        <strong>{{ item.title }}</strong> <br>
-                         <i>{{ item.description }}</i> <br>
+                  <div style="padding-top: 10px">
+                    <div
+                      style="
+                        padding-left: 7%;
+                        padding-right: 7%;
+                        margin-top: -10px;
+                      "
+                    >
+                      <div
+                        class="card-title"
+                        style="font-size: 15px; color: #092e2b"
+                      >
+                        <strong
+                          style="
+                            overflow-wrap: break-word;
+                            word-wrap: break-word;
+                            -ms-word-break: break-all;                            
+                            word-break: break-all;                        
+                            word-break: break-word;                         
+                            -ms-hyphens: auto;
+                            -moz-hyphens: auto;
+                            -webkit-hyphens: auto;
+                            hyphens: auto;
+                          "
+                          >{{ item.title }}</strong
+                        >
+                        <br />
+                        <v-tooltip style="background-color: red" bottom>
+                          <template v-slot:activator="{ on, attrs }">
+                            <i v-bind="attrs" v-on="on">{{
+                              item.description | truncate(20, "...")
+                            }}</i>
+                            <br />
+                          </template>
+                          <span>{{ item.description }}</span>
+                        </v-tooltip>
+                        <br />
                         <!-- <div style="font-size:12px;">By Austin MAikano</div> -->
-                        <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
+                        <strong style="font-size: 13px; color: red"
+                          >N{{ item.price }}</strong
+                        >
                       </div>
                     </div>
                   </div>
@@ -167,9 +250,11 @@
                   type="button"
                   @click="addToCart(item)"
                   data-dismiss="modal"
-                  style="background-color:rgb(0, 204, 0)"
+                  style="background-color: rgb(0, 204, 0)"
                   class="btn btn-block"
-                >Add to cart</button>
+                >
+                  Add to cart
+                </button>
               </div>
             </v-slide-item>
           </v-slide-group>
@@ -208,13 +293,22 @@ margin-top:20px"
           <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
               <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
 
-              <div class="checkout" v-show="verified" style="font-family:Alegreya">
-                <h5 v-for="(item,i) in items" :key="i">
+              <div
+                class="checkout"
+                v-show="verified"
+                style="font-family: Alegreya"
+              >
+                <h5 v-for="(item, i) in items" :key="i">
                   <strong>{{ item.quantity }}</strong>
                   - {{ item.title }}
                   <span>NGN {{ item.price * item.quantity }}</span>
@@ -224,19 +318,20 @@ margin-top:20px"
                   <div>
                     <h5>
                       Total:
-                      <span style="color:red">NGN {{ total }}</span>
+                      <span style="color: red">NGN {{ total }}</span>
                     </h5>
 
                     <div class="row">
                       <v-btn
-                        @click="verified=false"
+                        @click="verified = false"
                         class="ma-2"
                         outlined
                         tile
                         small
                         color="#1b6761"
                         dark
-                      >Back to books</v-btn>
+                        >Back to books</v-btn
+                      >
                       <paystack
                         :amount="amount"
                         :email="email"
@@ -248,25 +343,21 @@ margin-top:20px"
                       >
                         <v-btn small tile color="red" dark>Make Payment</v-btn>
                       </paystack>
-                      <br> 
-                    
+                      <br />
                     </div>
-                   
-                      
                   </div>
-                 
                 </div>
-                <hr>
-                <p style="color:green; text-align:center">OR</p>
-                <hr>
-                <p style="text-align:center"> pay <strong>NGN{{total}}</strong>  to this account<br>
-                Account Name: 12345678; <br>
-                Account Name: Ideal it center; <br>
-                Bank: Keystone Bank
-                </p> <hr>
-                <p>
-                  Send details to mail@mail.com OR whatsapp 09030031914
+                <hr />
+                <p style="color: green; text-align: center">OR</p>
+                <hr />
+                <p style="text-align: center">
+                  pay <strong>NGN{{ total }}</strong> to this account<br />
+                  Account Name: 12345678; <br />
+                  Account Name: Ideal it center; <br />
+                  Bank: Keystone Bank
                 </p>
+                <hr />
+                <p>Send details to mail@mail.com OR whatsapp 09030031914</p>
               </div>
             </div>
           </div>
@@ -275,15 +366,22 @@ margin-top:20px"
     </div>
     <!-- this holds the category cards -->
     <div class="greenBack">
-      <div class="header-text" style="padding-top:60px; ">Collections</div>
-      <v-sheet class="mx-auto" max-width="1100" style=" background: rgba(76, 175, 80, 0.0);">
+      <div class="header-text" style="padding-top: 60px">Collections</div>
+      <v-sheet
+        class="mx-auto"
+        max-width="1100"
+        style="background: rgba(76, 175, 80, 0)"
+      >
         <v-slide-group multiple show-arrows>
           <v-slide-item v-for="(cat, n) in category" :key="n">
-            <div style="padding:10px">
+            <div style="padding: 10px">
               <v-card
                 class="mx-auto"
                 max-width="250"
-                style="background-color:rgb(121, 210, 166); color:rgb(0, 51, 0)"
+                style="
+                  background-color: rgb(121, 210, 166);
+                  color: rgb(0, 51, 0);
+                "
               >
                 <v-img
                   class="white--text align-end"
@@ -291,17 +389,19 @@ margin-top:20px"
                   src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
                 ></v-img>
 
-                <v-card-title>{{cat.name}}</v-card-title>
+                <v-card-title>{{ cat.name }}</v-card-title>
 
-                <v-card-text class style="color:rgb(0, 51, 0)">
-                  <div>{{cat.description}}</div>
+                <v-card-text class style="color: rgb(0, 51, 0)">
+                  <div>{{ cat.description }}</div>
                 </v-card-text>
 
                 <v-card-actions
-                  style="padding-left:80%;  cursor: pointer;"
-                  @click=" getBooksByFilter(cat)"
+                  style="padding-left: 80%; cursor: pointer"
+                  @click="getBooksByFilter(cat)"
                 >
-                  <v-icon style color="black darken-2">mdi-arrow-right-circle-outline</v-icon>
+                  <v-icon style color="black darken-2"
+                    >mdi-arrow-right-circle-outline</v-icon
+                  >
                 </v-card-actions>
               </v-card>
             </div>
@@ -310,21 +410,26 @@ margin-top:20px"
       </v-sheet>
     </div>
 
-    <div class="row header-text" style="padding-top:70px">
+    <div class="row header-text" style="padding-top: 70px">
       <div class="col-6">Books Store</div>
       <!-- <div class="col-6" style="padding-right:150px;text-align:right; color:rgb(0, 255, 0)">view all</div> -->
       <div
         class="col-6"
-        style=" cursor: pointer; color:rgb(0, 255, 0); text-align:right"
-        @click="showLessBooks = !showLessBooks; getBooksByFilter() "
-      >{{showLessBooks===true? "Show All Books" : "Show Less"}}</div>
+        style="cursor: pointer; color: rgb(0, 255, 0); text-align: right"
+        @click="
+          showLessBooks = !showLessBooks;
+          getBooksByFilter();
+        "
+      >
+        {{ showLessBooks === true ? "Show All Books" : "Show Less" }}
+      </div>
     </div>
     <v-sheet
       v-show="showLessBooks"
       class="mx-auto"
       max-width="1100"
       color:red
-      style="background-color:black"
+      style="background-color: black"
     >
       <v-slide-group
         multiple
@@ -334,16 +439,27 @@ margin-top:20px"
         next-icon="mdi-chevron-right"
       >
         <v-icon slot="prependIcon" large color="primary">mdi-home</v-icon>
-        <v-slide-item v-for="(item,i) in  shopsToDisplay" :key="i">
+        <v-slide-item v-for="(item, i) in shopsToDisplay" :key="i">
           <div class="m-3 bookSize">
-            <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
-            <div style="background-color:white; padding-top:10px">
+            <v-img
+              style=""
+              class="white--text align-end vImage"
+              v-bind:src="item.imagesPath"
+            ></v-img>
+            <div style="background-color: white; padding-top: 10px">
               <div>
-                <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                  <div class="card-title" style=";font-size:15px;color: #092E2B;">
+                <div
+                  style="padding-left: 7%; padding-right: 7%; margin-top: -10px"
+                >
+                  <div
+                    class="card-title"
+                    style="font-size: 15px; color: #092e2b"
+                  >
                     <strong>{{ item.title }}</strong>
-                    <div style="font-size:12px;">By Austin MAikano</div>
-                    <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
+                    <div style="font-size: 12px">By Austin MAikano</div>
+                    <strong style="font-size: 13px; color: red"
+                      >N{{ item.price }}</strong
+                    >
                   </div>
                 </div>
               </div>
@@ -361,26 +477,40 @@ margin-top:20px"
               type="button"
               @click="addToCart(item)"
               data-dismiss="modal"
-              style="background-color:rgb(0, 204, 0)"
+              style="background-color: rgb(0, 204, 0)"
               class="btn btn-block"
-            >Add to cart</button>
+            >
+              Add to cart
+            </button>
           </div>
         </v-slide-item>
       </v-slide-group>
     </v-sheet>
     <!-- this will show all the books -->
 
-    <div class="row" v-show="showLessBooks==false" style="margin-left:5px; margin-right:5px">
-      <div v-for="(item,i) in  shopsToDisplay" :key="i">
+    <div
+      class="row"
+      v-show="showLessBooks == false"
+      style="margin-left: 5px; margin-right: 5px"
+    >
+      <div v-for="(item, i) in shopsToDisplay" :key="i">
         <div class="m-3 bookSize">
-          <v-img style="  " class="white--text align-end vImage" v-bind:src="item.imagesPath"></v-img>
-          <div style="background-color:white; padding-top:10px">
+          <v-img
+            style=""
+            class="white--text align-end vImage"
+            v-bind:src="item.imagesPath"
+          ></v-img>
+          <div style="background-color: white; padding-top: 10px">
             <div>
-              <div style="padding-left:7%;padding-right:7%; margin-top:-10px">
-                <div class="card-title" style=";font-size:15px;color: #092E2B;">
+              <div
+                style="padding-left: 7%; padding-right: 7%; margin-top: -10px"
+              >
+                <div class="card-title" style="font-size: 15px; color: #092e2b">
                   <strong>{{ item.title }}</strong>
-                  <div style="font-size:12px;">By Austin MAikano</div>
-                  <strong style="font-size:13px; color:red; ">N{{ item.price }}</strong>
+                  <div style="font-size: 12px">By Austin MAikano</div>
+                  <strong style="font-size: 13px; color: red"
+                    >N{{ item.price }}</strong
+                  >
                 </div>
               </div>
             </div>
@@ -390,9 +520,11 @@ margin-top:20px"
             type="button"
             @click="addToCart(item)"
             data-dismiss="modal"
-            style="background-color:rgb(0, 204, 0)"
+            style="background-color: rgb(0, 204, 0)"
             class="btn btn-block"
-          >Add to cart</button>
+          >
+            Add to cart
+          </button>
         </div>
       </div>
     </div>
@@ -736,7 +868,6 @@ li {
   opacity: 0;
 }
 .cart {
-  
 }
 
 .cart > div {
