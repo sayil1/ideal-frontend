@@ -19,7 +19,7 @@
           <v-carousel-item v-for="(slide, i) in slides" :key="i">
             <v-sheet style="background: rgba(0, 0, 0, 0.5)" height="100%">
               <v-row class="fill-height" align="center" justify="center">
-                <div style="text-align: center" class="display-3">
+                <div style="text-align: center" class="text-wrap display-2">
                   {{ slide }}
                 </div>
               </v-row>
@@ -214,6 +214,7 @@
                         style="font-size: 15px; color: #092e2b"
                       >
                         <strong
+                        class="text-wrap"
                           style="
                             overflow-wrap: break-word;
                             word-wrap: break-word;
@@ -229,9 +230,9 @@
                         >
                         <br />
                         <v-tooltip style="background-color: red" bottom>
-                          <template v-slot:activator="{ on, attrs }">
-                            <i v-bind="attrs" v-on="on">{{
-                              item.description | truncate(20, "...")
+                          <template  v-slot:activator="{ on, attrs }">
+                            <i  v-bind="attrs" v-on="on">{{
+                              item.description | truncate(15, "...")
                             }}</i>
                             <br />
                           </template>
@@ -455,8 +456,17 @@ margin-top:20px"
                     class="card-title"
                     style="font-size: 15px; color: #092e2b"
                   >
-                    <strong>{{ item.title }}</strong>
-                    <div style="font-size: 12px">By Austin MAikano</div>
+                    <strong class="text-wrap">{{ item.title }}</strong> <br>
+                     <v-tooltip style="background-color: red" bottom>
+                          <template  v-slot:activator="{ on, attrs }">
+                            <i  v-bind="attrs" v-on="on">{{
+                              item.description | truncate(15, "...")
+                            }}</i>
+                            <br />
+                          </template>
+                          <span>{{ item.description }}</span>
+                        </v-tooltip>
+                  <br>
                     <strong style="font-size: 13px; color: red"
                       >N{{ item.price }}</strong
                     >
@@ -464,14 +474,6 @@ margin-top:20px"
                 </div>
               </div>
             </div>
-
-            <!-- <v-btn
-              block
-              class
-              @click="addToCart(item)"
-              data-dismiss="modal"
-              style="background-color:rgb(0, 204, 0)"
-            >Add to cart</v-btn>-->
 
             <button
               type="button"
@@ -507,7 +509,7 @@ margin-top:20px"
               >
                 <div class="card-title" style="font-size: 15px; color: #092e2b">
                   <strong>{{ item.title }}</strong>
-                  <div style="font-size: 12px">By Austin MAikano</div>
+               
                   <strong style="font-size: 13px; color: red"
                     >N{{ item.price }}</strong
                   >

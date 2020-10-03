@@ -106,7 +106,7 @@
             >
               IMPORTANT FACTS
             </div>
-            <table class="table table-bordered" style="">
+            <table class=" table-bordered" style="">
               <thead>
                 <tr>
                   <th style="border-color: black" scope="col">COURSE LENGTH</th>
@@ -134,18 +134,18 @@
                   </th>
                 </tr>
                 <th style="border-color: black" scope="col">TIMETABLE</th>
-                <td style="border-color: black" scope="col">
+                <th style="border-color: black" scope="col">
                   For weekdays (Monday-Thursday, with morning and afternoon
                   classes only) For weekends (Saturdays and Sundays 4 hours per
                   day)
-                </td>
+                </th>
               </tbody>
             </table>
           </div>
         </div>
       </div>
 
-      <div class>
+      <div style="margin-top:80px" class>
         <!-- card -->
         <div class="row first-text">
           <div class="col-sm-12 col-md-6">
@@ -206,7 +206,7 @@
             >
               IMPORTANT FACTS
             </div>
-            <table class="table table-bordered card-size">
+            <table class="table-bordered card-size">
               <thead>
                 <tr>
                   <th style="border-color: black" scope="col">COURSE LENGTH</th>
@@ -234,10 +234,10 @@
                   </th>
                 </tr>
                 <th style="border-color: black" scope="col">TIMETABLE</th>
-                <td style="border-color: black" scope="col">
+                <th style="border-color: black" scope="col">
                   All courses are Monday-Thursday, with morning and afternoon
                   classes only Weekends Saturdays and Sundays 3 hours per day
-                </td>
+                </th>
               </tbody>
             </table>
           </div>
@@ -332,9 +332,14 @@ table {
   font-family: SF UI Display;
   color: #1b6761;
   font-style: normal;
-  font-weight: 200;
+  width:500px;
   font-size: 15px;
 }
+th{
+ padding-left:10px;
+ padding-right:10px
+}
+
 table,
 th,
 td {
@@ -392,6 +397,13 @@ td {
   .cont {
     padding-top: 100px;
   }
+  table {
+  font-family: SF UI Display;
+  color: #1b6761;
+  font-style: normal;
+  width:100%;
+  font-size: 15px;
+}
 }
 
 /* Tablet Styles */

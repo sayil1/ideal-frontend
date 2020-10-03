@@ -1,21 +1,13 @@
-<template class="footer">
-  <div
-    style="width:100%; "
-    id="page-container"
-    class="navbar navbar-expand-md navas bg"
-    role="navigation"
-  >
-    <div style="margin:0px" id="footer">
-      <router-link to="/">
-        <img src="../assets/logo.png" alt style="height:70px; " />
-      </router-link>
-    </div>
-
-    <div
-      style="text-align:right"
-      class="nava collapse navbar-collapse white--text"
-    >&copy;  iDeal-IT {{today}}</div>
-  </div>
+<template class="footer bg">
+   <v-footer padless class="bg">
+    <v-col
+      class="text-center white--text"
+      cols="12"
+    >
+      {{ new Date().getFullYear() }} — <strong>&#169;
+ Initiative for Development, Education and Learning.</strong>
+    </v-col>
+  </v-footer>
 </template>
 <script>
 import * as moment from "moment/moment";

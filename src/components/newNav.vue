@@ -133,8 +133,8 @@
                   <router-link class="route" to="train">
                     <li class="dropdown-item">TRAIN-THE-TRAINERS</li>
                   </router-link>
-                  <router-link class="route" to="over">
-                    <li class="dropdown-item">INTERNSHIP</li>
+                  <router-link class="route" to="counselling">
+                    <li class="dropdown-item">EDUCATIONAL COUNSELLING</li>
                   </router-link>
                   <li class="dropdown-item dropdown">
                     <a
