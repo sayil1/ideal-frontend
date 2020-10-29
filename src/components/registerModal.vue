@@ -70,7 +70,13 @@
                     'C#',
                     'Desktop Publishing',
                     'CCNA',
-                    'Autcard',
+                    'AutoCAD',
+                    'Server Administration',
+                    'CCNP',
+                    'ITIL',
+                    'PMP',
+                    'Oracle',
+                    'Cloud Computing'
                   ]"
                   label="Select Prefered Course"
                   multiple

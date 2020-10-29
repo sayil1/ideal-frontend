@@ -6,7 +6,7 @@
         <div class="card-body" style="background-color: rgba(21, 22, 21, 0.9)">
           <div class="car font-weight-regular" style="margin-left:40px; margin-right:40px">
             <div class="car-head">
-              <span class="white--text" style>ICM CENTER</span>
+              <span class="white--text" style>Institute of Commercial Management (ICM UK)<br> Approved Center</span>
               <hr
                 style="color:orange; width:150px; margin-left:auto; margin-right:auto; border: 2px solid orange;"
               />
@@ -38,7 +38,8 @@ letter-spacing: 0.02em; "
           >
             <div class style>
               <p class>
-                The Institute of Commercial Management (ICM) is the leading professional body providing qualifications that are recognized globally in business, management and related vocational areas. The programmes are designed to address and respond to the training needs as well as the personal development of learners, whether entering or continuing to work within the wide and varied commercial sector.
+                <a href="http://icm.education"> The Institute of Commercial Management (ICM)</a>
+                is the leading professional body providing qualifications that are recognized globally in business, management and related vocational areas. The programmes are designed to address and respond to the training needs as well as the personal development of learners, whether entering or continuing to work within the wide and varied commercial sector. <br>
                 <br />IDEaL, as an ICM Approved Teaching and Examination Center ensures that the best possible education and support is given to learners in this region.
                 <br />
                 <br />
@@ -111,7 +112,7 @@ letter-spacing: 0.02em;"
                         <v-list-item-title>-Project Management</v-list-item-title>
                      
                     
-                 
+                 <br> 
                       <span
                         class="font-weight-bold"  style=" color: #1B6761;
 font-style: normal;

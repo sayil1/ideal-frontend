@@ -156,7 +156,7 @@
               type="text"
               v-model="pearson.sname"
               class="form-control"
-              placeholder="Sunamer name"
+              placeholder="Surame name"
             />
           </div>
           <div class="col">
@@ -173,6 +173,14 @@
               v-model="pearson.mname"
               class="form-control"
               placeholder="Middle name"
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              v-model="pearson.phone"
+              class="form-control"
+              placeholder="Phone Number"
             />
           </div>
           <!-- <div class="col">
@@ -326,7 +334,7 @@ export default {
       fname: "",
       mname: "",
       email: "",
-    
+      phone: "",
       contAdress: "",
       country: "",
       examDate: "",
@@ -378,6 +386,7 @@ export default {
         !this.pearson.sname ||
         !this.pearson.fname ||
         !this.pearson.email ||
+        !this.pearson.phone ||
         !this.pearson.image ||
         !this.pearson.contAdress ||
         !this.pearson.country ||
@@ -395,6 +404,7 @@ export default {
         formData.append("image", this.pearson.image);
         formData.append("sname", this.pearson.sname);
         formData.append("fname", this.pearson.fname);
+        formData.append("phone", this.pearson.phone);
         formData.append("mname", this.pearson.mname);
         formData.append("email", this.pearson.email);
         formData.append("date", this.pearson.date);

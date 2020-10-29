@@ -52,17 +52,17 @@
             <div class style>
               <p class>
                 The
-                <strong>Test of English as a Foreign Language® TOEFL</strong>is
+                <strong>Test of English as a Foreign Language® TOEFL </strong>is
                 a standardized test that measures the ability of non- native
                 speakers to use and understand English at the university level,
                 evaluating how well they combine reading, listening, speaking
                 and writing skills to perform academic tasks.
                 <br />
-                <br />As an <strong>Authorized TOEFL iBT® Test center</strong> ,
+                <br />As an <strong>Authorized TOEFL iBT® Test center</strong>,
                 we administer the test all year round, particularly on weekends.
                 Due to the high demand for the test, seats fill up quickly, so
                 students are encouraged to register ahead of time in order to
-                get their preferred test dates.
+                get their preferred test dates. <a href="http://ets.org/toefl">See available dates here</a>
                 <br />
                 <br />
                 <strong v-subheader style=" ;">Why Take the TOEFL Test?</strong>
@@ -123,9 +123,10 @@
                   "
                 >
                   IMPORTANT UPDATE: Every test taker is expected to present a
-                  valid international passport to be allowed to take the TOEFL
+                  <strong>valid international passport </strong>
+                to be allowed to take the TOEFL
                   iBT® test.
-                  <router-link to="cont">Contact us</router-link>for more
+                  <router-link to="cont">Contact us </router-link>for more
                   information
                 </div>
               </div>
@@ -187,6 +188,14 @@
               v-model="toefl.email"
               class="form-control"
               placeholder="Email Address *"
+            />
+          </div>
+           <div class="col-sm-12">
+            <input
+              type="text"
+              v-model="toefl.phone"
+              class="form-control"
+              placeholder="Phone Number*"
             />
           </div>
           <div class="col-sm-12">
@@ -352,6 +361,7 @@ export default {
       sname: "",
       fname: "",
       mname: "",
+      phone: "",
       email: "",
       date: "",
       contAdress: "",
@@ -390,6 +400,7 @@ export default {
       formData.append("image", this.toefl.image);
       formData.append("sname", this.toefl.sname);
       formData.append("fname", this.toefl.fname);
+      formData.append("phone", this.toefl.phone);
       formData.append("mname", this.toefl.mname);
       formData.append("email", this.toefl.email);
       formData.append("date", this.toefl.date);
@@ -405,6 +416,7 @@ export default {
         !this.toefl.fname ||
         !this.toefl.email ||
         !this.toefl.date ||
+          !this.toefl.phone ||
         !this.toefl.contAdress ||
         !this.toefl.country ||
         !this.toefl.examDate ||

@@ -442,6 +442,7 @@
       <div class="col-md-12">
         <div>
           <div
+          id="project"
             class="item"
             data-aos="slide-up"
             style="
@@ -601,7 +602,8 @@
                 to="test"
               >
                 <div class="card-body card-bulletMain" style>
-                  <a href="#" class="card-link white--text">Test Preparation</a>
+                  <a href="#" class="card-link white--text">Test Preparation – IELTS, GRE,
+SAT.</a>
                   <a href="#" class="card-link" style="float: right">
                     <v-icon color="#FF8A00">mdi-arrow-right</v-icon>
                   </a>
@@ -637,7 +639,7 @@
                 to="books"
               >
                 <div class="card-body card-bullet">
-                  <a href="#" class="card-link white--text">Book Shops</a>
+                  <a href="#" class="card-link white--text">Book Shop</a>
                   <a href="#" class="card-link" style="float: right">
                     <v-icon color="white">mdi-arrow-right</v-icon>
                   </a>
@@ -680,10 +682,10 @@
             <router-link
               style="text-decoration: none"
               class="route"
-              to="contest"
+              to="counselling"
             >
               <div class="card-body card-bullet">
-                <a href="#" class="card-link white--text">Apply For Contests</a>
+                <a href="#" class="card-link white--text">Study Abroad</a>
                 <a href="#" class="card-link" style="float: right">
                   <v-icon color="white">mdi-arrow-right</v-icon>
                 </a>
@@ -702,10 +704,41 @@
             </router-link>
           </div>
 
-          <div class="col-md-4" style="width: 18rem">
-            <router-link style="text-decoration: none" class="route" to="/">
+          <div class="col-md-4" style="width: 18rem" v-scroll-to="'#project'">
+           
               <div class="card-body card-bullet">
                 <a href="#" class="card-link white--text">Surport a Project</a>
+                <a href="#" class="card-link" style="float: right">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            
+          </div>
+
+           <div class="col-md-4" style="width: 18rem">
+            <router-link style="text-decoration: none" class="route" to="/toefl">
+              <div class="card-body card-bullet">
+                <a href="#" class="card-link white--text">TOEFL</a>
+                <a href="#" class="card-link" style="float: right">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
+          </div>
+           <div class="col-md-4" style="width: 18rem">
+            <router-link style="text-decoration: none" class="route" to="/icm">
+              <div class="card-body card-bullet">
+                <a href="#" class="card-link white--text">ICM UK Qualifications</a>
+                <a href="#" class="card-link" style="float: right">
+                  <v-icon color="white">mdi-arrow-right</v-icon>
+                </a>
+              </div>
+            </router-link>
+          </div>
+           <div class="col-md-4" style="width: 18rem">
+            <router-link style="text-decoration: none" class="route" to="/pearson">
+              <div class="card-body card-bullet">
+                <a href="#" class="card-link white--text">Pearson VUE</a>
                 <a href="#" class="card-link" style="float: right">
                   <v-icon color="white">mdi-arrow-right</v-icon>
                 </a>

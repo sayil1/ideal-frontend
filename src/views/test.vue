@@ -243,8 +243,8 @@
           </div>
         </div>
         <div class="row first-text">
-          Students also have Acess to Study guides, Practice tests, Structured
-          study sessions, Preparation lessons, Online and paper-based simulation
+          Students also have access to Study guides, Practice tests, Structured
+          study sessions, Preparation lessons, Online and paper-based simulation.
           tests
         </div>
       </div>

@@ -1,10 +1,10 @@
 <template>
-  <div style="background-color:">
+  <div style="background-color: ">
     <nava />
 
     <div class>
       <div class="hold-header">
-        <div class="conts" style="padding-top:40px">
+        <div class="conts" style="padding-top: 40px">
           <div class="header">
             <span class="header-text">
               Digital
@@ -15,34 +15,57 @@
       </div>
     </div>
 
-    <div class="body small-text" >
-      <div class style="background: #F6F6F6">
+    <div class="body small-text">
+      <div class style="background: #f6f6f6">
         <div class style>
           <div class>
-            <p>We provide a practical approach to addressing the needs of individuals and communities to embrace the digital age fully. As the digital revolution intensifies, the internet has become more embedded in the lives of individuals, societies and commerce. Hence digital literacy has become more critical than ever before to create a more enabling and competitive society.</p>
+            <p>
+              We provide a practical approach to addressing the needs of
+              individuals and communities to embrace the digital age fully. As
+              the digital revolution intensifies, the internet has become more
+              embedded in the lives of individuals, societies and commerce.
+              Hence digital literacy has become more critical than ever before
+              to create a more enabling and competitive society.
+            </p>
           </div>
         </div>
       </div>
 
-      <div class style="background: #F6F6F6">
-       
-          <div class style>
-            <div class>
-              <p>
-                We work to ensure Individuals and disadvantaged groups should have access to, as well as skills to use Information and Communication Technologies (ICT) to participate in and benefit from today's growing knowledge and information society. IDEaL’s Digital inclusion actions cover the gap in these areas:
-                <br />We promote digital inclusion in various ways:
-                <br />
+      <div class style="background: #f6f6f6">
+        <div class style>
+          <div class>
+            <p>
+              We work to ensure Individuals and disadvantaged groups should have
+              access to, as well as skills to use Information and Communication
+              Technologies (ICT) to participate in and benefit from today's
+              growing knowledge and information society. <br />
+              <br />
+              IDEaL’s Digital inclusion actions cover the gap in these areas:
 
-                <br />•Providing free access to digital technologies including hardware and software. GCFLearnFree.
-                <br />
-                <br />•Improving digital literacy skills through practical training programs and workshops.
-                <br />
-                <br />•Creating a more digitally savvy consumer and workforce.
-                <br />
-                <br />•Providing Accessibility services designed to meet users’ needs, including those dependent on assistive technology to access digital services.
-              </p>
-            </div>
-       
+              <br />
+
+              <br />•Partnership with global educational organisation
+              <a href="http://edu.gcfglobal.org"> GCFglobal,</a> providing free
+              access to technology, job training, math and core skills.
+              <br />
+              <br />•Improving digital literacy skills through practical
+              training programs and workshops.
+              <br />
+              <br />•Creating a more digitally savvy consumer and workforce.
+              <br />
+              <br />•Providing accessibility services designed to meet users’
+              needs, including those dependent on assistive technology to access
+              digital services.
+            </p>
+<p style="text-align:center">
+ <strong>
+              Contact us for installation of free learning resources for your
+              schools, library or community. Send us a message
+              <router-link to="cont"> here </router-link>
+            </strong>
+</p>
+           
+          </div>
         </div>
       </div>
     </div>
@@ -100,7 +123,6 @@ export default {
 </script>
 
 <style scoped lang="css">
-
 .div1 {
   background-image: url("../assets/profb.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
@@ -119,33 +141,32 @@ export default {
 .body {
   margin: 50px;
 }
- .small-text {
-    font-family: SF UI Display;
-    color: #1b6761;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 29px;
-    text-align: justify;
-    letter-spacing: 0.02em;
-  
-  }
-  .big-text {
-    font-family: SF UI Display;
-    color: #092e2b;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 108.34%;
-    padding-top: 10px;
-    text-align: center;
-  }
+.small-text {
+  font-family: SF UI Display;
+  color: #1b6761;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  text-align: justify;
+  letter-spacing: 0.02em;
+}
+.big-text {
+  font-family: SF UI Display;
+  color: #092e2b;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 108.34%;
+  padding-top: 10px;
+  text-align: center;
+}
 
 @media only screen and (max-width: 400px) {
-.body {
-  margin: 20px;
-}
- .small-text {
+  .body {
+    margin: 20px;
+  }
+  .small-text {
     font-family: SF UI Display;
     color: #1b6761;
     font-style: normal;
@@ -154,7 +175,6 @@ export default {
     line-height: 29px;
     text-align: justify;
     letter-spacing: 0.02em;
-  
   }
   .big-text {
     font-family: SF UI Display;
@@ -197,7 +217,6 @@ export default {
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
-
   .cont {
     padding-top: 100px;
   }

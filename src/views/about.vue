@@ -21,7 +21,7 @@ padding:150px"
     </div>
     <div>
       <div class="big-text" style=" ">
-        WE are young professionals
+        We are young professionals
         <br />with the quest to building a platform,
         <br />an avenue for youth to
         rediscover
@@ -46,9 +46,9 @@ padding:50px"
 
         <div class="small-text">
           <p style>
-            Young professionals founded INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL). We believe that youth can contribute significantly to building a better society—having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps. We are taking Practical action!!!
+            Young professionals founded INITIATIVE FOR DEVELOPMENT EDUCATION AND LEARNING (IDEaL). We believe that youth can contribute significantly to building a better society — having identified the challenges faced in gaining quality education, access to information, value orientation as well as their existing gaps. We are taking Practical action!!!
             <br />
-            <br />"COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL" - IDEAL.
+            <br />"COLLECTIVELY WE COULD ENSURE THAT CHILDREN GO TO SCHOOL AND ALSO REMAIN IN SCHOOL" - IDEaL.
           </p>
         </div>
       </div>
@@ -222,7 +222,7 @@ padding:50px"
       -->
 
       <div style class="greenBg">
-        <div class="big-text" style="color:white">Our Qualifications</div>
+        <div class="big-text" style="color:white">Our Partners</div>
         <hooper
           :settings="hooperSettings"
           :progress="true"
@@ -291,7 +291,7 @@ padding:50px"
           </slide>
         </hooper>
       </div>
-      <div class="member">
+      <!-- <div class="member">
         <div class="big-text">Our Clients</div>
 
         <div class="row">
@@ -322,7 +322,7 @@ padding:50px"
   margin-right: auto;"
           />
         </div>
-      </div>
+      </div> -->
     </div>
 
     <foota />

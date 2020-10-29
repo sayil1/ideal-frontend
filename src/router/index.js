@@ -37,10 +37,11 @@ import diy from '../views/diy.vue'
 import web from '../views/webinar.vue'
 import Web from '../views/Webinar.vue'
 import contest from '../views/contest.vue'
-import Contest from '../views/Contest.vue'
+import Contest from "../views/Contest.vue"
 import emailUpdates from '../views/adminViews/emailUpdates.vue'
 import whatWeDo from "../views/whatWeDo.vue"
 import notFound from "../components/notFound.vue"
+import counselling from "../views/counselling.vue"
 
 Vue.use(VueRouter)
 
@@ -57,6 +58,11 @@ const routes = [
     path: '/hell',
     name: 'hello',
     component: hello
+  },
+  {
+    path: '/counselling',
+    name: 'counselling',
+    component: counselling
   },
   {
     path: '/testt',

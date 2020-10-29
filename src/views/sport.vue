@@ -71,7 +71,7 @@
         <br />• Limited opportunities for participation in training and competition
         <br />• access to sports equipment and facilities
       </div>
-
+ <br>
       <div class="big-text">
         How IDEaL is overcoming barriers
        to Sports Development:

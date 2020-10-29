@@ -353,12 +353,12 @@ margin-top:20px"
                 <hr />
                 <p style="text-align: center">
                   pay <strong>NGN{{ total }}</strong> to this account<br />
-                  Account Name: 12345678; <br />
-                  Account Name: Ideal it center; <br />
-                  Bank: Keystone Bank
+                  Account Number: 9202157715; <br />
+                  Account Name: Initiative for development, Education and Learning; <br />
+                  Bank: Stanbic IBTC.
                 </p>
                 <hr />
-                <p>Send details to mail@mail.com OR whatsapp 09030031914</p>
+                <p>Send details to info@ideal-nig.org OR whatsapp 08030493091</p>
               </div>
             </div>
           </div>

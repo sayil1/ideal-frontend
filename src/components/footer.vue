@@ -5,7 +5,7 @@
       cols="12"
     >
       {{ new Date().getFullYear() }} — <strong>&#169;
- Initiative for Development, Education and Learning.</strong>
+ Initiative for Development, Education and Learning (IDEal). </strong>
     </v-col>
   </v-footer>
 </template>

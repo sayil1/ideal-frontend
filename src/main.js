@@ -20,6 +20,7 @@ import 'aos/dist/aos.css'
 import CoolLightBox from 'vue-cool-lightbox'
 import 'vue-cool-lightbox/dist/vue-cool-lightbox.min.css'
 import Meta from "vue-meta";
+var VueScrollTo = require('vue-scrollto');
 Vue.use(Meta,
    // optional pluginOptions
    {
@@ -32,7 +33,19 @@ Vue.use(CoolLightBox)
 
 
 Vue.use(BootstrapVue)
-
+Vue.use(VueScrollTo, {
+  container: "body",
+  duration: 500,
+  easing: "ease",
+  offset: -100,
+  force: true,
+  cancelable: true,
+  onStart: false,
+  onDone: false,
+  onCancel: false,
+  x: false,
+  y: true
+})
 Vue.use(require("vue-moment"));
 Vue.use(VueClipboard)
 Vue.use(Sticky)
