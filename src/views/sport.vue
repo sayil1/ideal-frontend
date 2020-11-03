@@ -6,7 +6,7 @@
     <div class="hold-header">
       <div class="conts">
         <div class="header">
-          <span class="header-text" style=" ">
+          <span class="header-text" style="">
             Sport
             <br />Development
           </span>
@@ -19,7 +19,7 @@
         <div>
           <p class="small-text">
             Our sport development projects aim at devising better and more effective ways of promoting interest, participation and performance of sport in communities.
-            <br />So far, we depend mainly on collaboration, partnerships and networking with a wide range of international organisations, community groups, local authorities and voluntary groups for sports programmes that go a long way in the attainment of personal and community goals while promoting peace and development.
+            <br />So far, we depend mainly on collaboration, partnerships and with a wide range of international organisations, community groups, local authorities and voluntary groups for sports programmes that go a long way in the attainment of personal and community goals while promoting peace and development.
             <br />
             <br />
             <strong>Building true sportsmanship-</strong>
@@ -149,7 +149,7 @@ export default {
 
 <style scoped lang="css">
 .div1 {
-  background-image: url("../assets/profb.jpg");
+  background-image: url("../assets/african-sport.jpg");
   /* background: rgba(21, 22, 21, 0.1); */
   background-size: cover;
 }
@@ -169,7 +169,7 @@ export default {
 
 }
  .conts {
-    background-image: url("../assets/sport3IDE.png");
+    background-image: url("../assets/african-sport.jpg");
   }
   .body-text {
     padding: 50px;
@@ -189,7 +189,7 @@ export default {
     font-weight: bold;
     font-size: 70px;
     padding-left: 150px;
-    color: white;
+       color: #1b6761;
   }
   .hold-header {
     padding-top: 60px;
