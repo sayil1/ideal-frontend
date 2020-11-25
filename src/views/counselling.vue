@@ -168,9 +168,12 @@
                 career building.
               </p>
             
-                  <router-link to="cont"
-                    >Schedule for an appointment</router-link
-                  >
+                 
+                    <v-btn    class="ma-2"
+      outlined
+      color="primary">
+      <router-link to="cont">Schedule for an appointment</router-link>
+                    </v-btn>
           
             </div>
 
@@ -239,9 +242,11 @@ letter-spacing: 0.02em;"
       </div>
 
             
-                  <router-link to="cont"
-                    >Schedule for an appointment</router-link
-                  >
+                   <v-btn    class="ma-2"
+      outlined
+      color="primary">
+      <router-link to="cont">Contact Us</router-link>
+                    </v-btn>
           
             </div>
 

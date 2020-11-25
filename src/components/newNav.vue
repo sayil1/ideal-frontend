@@ -212,7 +212,7 @@
                   data-toggle="dropdown"
                   aria-haspopup="true"
                   aria-expanded="false"
-                >SHOPS</a>
+                >SHOP</a>
                 <ul class="dropdown-menu" aria-labelledby="dropdown1">
                   <router-link class="route" to="books">
                     <li class="dropdown-item">BOOKS</li>
