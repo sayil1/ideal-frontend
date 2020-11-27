@@ -83,19 +83,19 @@
                     </v-list-item-content>
                   </v-list-item>
                 </p>
-                 <router-link
+                 <!-- <router-link
                       style="text-decoration: none"
                       class="route"
                       to="prof"
-                    >
+                    > -->
                       <button
                         type="button"
                         style="background-color: #1b6761; color: white"
-                        class="btn btn-lg btn-block"
+                        class=""
                       >
-                        Register
+                      <reg/>
                       </button>
-                    </router-link>
+                    <!-- </router-link> -->
               </div>
             </div>
           </div>
@@ -180,19 +180,13 @@
                       </v-list-item>
                     </v-list-item-group>
                     <br />
-                    <router-link
-                      style="text-decoration: none"
-                      class="route"
-                      to="prof"
-                    >
-                      <button
+                     <button
                         type="button"
                         style="background-color: #1b6761; color: white"
-                        class="btn btn-lg btn-block"
+                        class=""
                       >
-                        Register
+                      <reg/>
                       </button>
-                    </router-link>
                   </v-list>
                 </p>
               </div>
@@ -258,10 +252,12 @@
 <script>
 import nava from "../components/newNav";
 import foota from "../components/footer";
+import reg from "../components/registerModal";
 export default {
   components: {
     nava,
     foota,
+    reg
   },
   data: () => ({
     item: 1,
