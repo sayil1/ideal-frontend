@@ -62,7 +62,7 @@
                 we administer the test all year round, particularly on weekends.
                 Due to the high demand for the test, seats fill up quickly, so
                 students are encouraged to register ahead of time in order to
-                get their preferred test dates. <a href="http://ets.org/toefl">See available dates here</a>
+                get their preferred test dates. <a href="http://ets.org/toefl" target="_blank">See available dates here</a>
                 <br />
                 <br />
                 <strong v-subheader style=" ;">Why Take the TOEFL Test?</strong>

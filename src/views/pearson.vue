@@ -38,7 +38,7 @@
         information on a specific exam duration, fee, language, etc., please
         refer to the
         <span>
-          <a style="color: black" href="http://home.pearsonvue.com">website</a>
+          <a style="color: black" target="_blank" href="http://home.pearsonvue.com">website</a>
         </span>
         of the particular provider.
         <!-- <br />Please note: You can register for exams directly with Pearson VUE at no added cost. Our test center is open on Tuesdays and Thursdays from 10:00 to 16:00.

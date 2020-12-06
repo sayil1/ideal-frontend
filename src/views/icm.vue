@@ -38,7 +38,7 @@ letter-spacing: 0.02em; "
           >
             <div class style>
               <p class>
-                <a href="http://icm.education"> The Institute of Commercial Management (ICM)</a>
+                <a target="_blank" href="http://icm.education"> The Institute of Commercial Management (ICM)</a>
                 is the leading professional body providing qualifications that are recognized globally in business, management and related vocational areas. The programmes are designed to address and respond to the training needs as well as the personal development of learners, whether entering or continuing to work within the wide and varied commercial sector. <br>
                 <br />IDEaL, as an ICM Approved Teaching and Examination Center ensures that the best possible education and support is given to learners in this region.
                 <br />
